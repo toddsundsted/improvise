@@ -1,6 +1,6 @@
 ** LambdaMOO Database, Format Version 12 **
-11
-94
+58
+209
 0
 2
 5
@@ -14,9 +14,13 @@ System
 4
 0
 4
-1
+3
 1
 3
+1
+21
+1
+37
 4
 0
 19
@@ -96,7 +100,7 @@ _generate_content_type
 2
 172
 -1
-10
+12
 system
 server_options
 nothing
@@ -107,7 +111,9 @@ disable_passkey_login
 external_compilers
 last_login_connection
 welcome_message
-14
+dialog
+mustache
+25
 1
 0
 2
@@ -141,7 +147,11 @@ welcome_message
 5
 0
 10
-0
+1
+2
+application/x-mustache
+1
+57
 2
 1
 1
@@ -152,8 +162,13 @@ welcome_message
 Welcome to Stunt!  For information about Stunt, check out http://stunt.io/.  To connect to the server, type "connect <credentials>".
 2
 1
-5
-2
+1
+41
+39
+1
+1
+56
+54
 1
 5
 2
@@ -163,6 +178,43 @@ Welcome to Stunt!  For information about Stunt, check out http://stunt.io/.  To 
 1
 5
 2
+1
+5
+2
+1
+5
+20
+1
+5
+20
+1
+5
+20
+1
+5
+20
+1
+5
+20
+1
+5
+20
+1
+4
+3
+1
+31
+1
+44
+1
+45
+20
+1
+5
+20
+1
+5
+35
 1
 #1
 Server Options
@@ -436,7 +488,7 @@ Object
 1
 -1
 4
-6
+14
 1
 8
 1
@@ -449,6 +501,22 @@ Object
 2
 1
 5
+1
+38
+1
+41
+1
+42
+1
+43
+1
+46
+1
+52
+1
+53
+1
+57
 0
 1
 aliases
@@ -481,8 +549,8 @@ huh
 1
 passkey
 2
-0
-0
+2
+95A6199406E446408A43588357F36FB4833CAAB9CC0CD8A9C3624672CAFA21D6
 5
 0
 5
@@ -504,8 +572,8 @@ Programmer
 1
 passkey
 2
-0
-0
+2
+29D4B10E91B64A722F02F4A416C360C17E036EAAC1D5F6FF3EBAADD11FA9195B
 5
 0
 5
@@ -844,13 +912,43 @@ archive_port
 archive_base_uri
 10
 4
-1
+6
 1
 2
+1
+20
+1
+35
+1
+39
+1
+49
+1
+54
 2
 0
 10
+6
+2
+dialog
+10
 1
+2
+0.0.1
+4
+1
+1
+39
+2
+dialog_extras
+10
+1
+2
+0.0.1
+4
+1
+1
+49
 2
 kernel
 10
@@ -862,17 +960,269 @@ kernel
 1
 2
 2
+mustache
+10
+1
+2
+0.0.1
+4
+1
+1
+54
+2
+persistent
+10
+1
+2
+0.0.1
+4
+1
+1
+35
+2
+primitive
+10
+1
+2
+0.0.2
+4
+1
+1
+20
+2
 0
 10
-0
+3
+2
+dialog
+10
+1
+2
+0.0.1
+4
+1
+1
+49
+2
+kernel
+10
+1
+2
+1.0.7
+4
+5
+1
+20
+1
+35
+1
+39
+1
+49
+1
+54
+2
+primitive
+10
+1
+2
+0.0.2
+4
+3
+1
+39
+1
+49
+1
+54
 2
 0
 0
-0
+1329959963
 2
 0
 10
-0
+15
+2
+autoport
+10
+3
+2
+0.0.1
+2
+packages/dc2brcceev.json
+2
+0.0.2
+2
+packages/jfyf7t2wlf.json
+2
+0.0.3
+2
+packages/fd5jpcg8w7.json
+2
+checkpointer
+10
+5
+2
+0.0.1
+2
+packages/lhr8cbgcr7.json
+2
+0.0.2
+2
+packages/ss1vlqdq1g.json
+2
+0.0.3
+2
+packages/o3dfn0dr7a.json
+2
+0.0.4
+2
+packages/lvid3c7ygf.json
+2
+0.0.5
+2
+packages/xuwxcs9icv.json
+2
+core
+10
+2
+2
+1.0.4
+2
+packages/tvghx595ft.json
+2
+1.0.5
+2
+packages/nuc67gn3gu.json
+2
+dialog
+10
+1
+2
+0.0.1
+2
+packages/dialog_0_0_1.json
+2
+dialog_extras
+10
+1
+2
+0.0.1
+2
+packages/dialog_extras_0_0_1.json
+2
+kernel
+10
+4
+2
+1.0.4
+2
+packages/ok94lc4g38.json
+2
+1.0.5
+2
+packages/nodlg69qcb.json
+2
+1.0.6
+2
+packages/kernel_1_0_6.json
+2
+1.0.7
+2
+packages/kernel_1_0_7.json
+2
+kernel_tests
+10
+1
+2
+1.0.9
+2
+packages/kernel_tests_1_0_9.json
+2
+lambdacore
+10
+4
+2
+0.0.1
+2
+packages/rg8dm92s7y.json
+2
+0.0.2
+2
+packages/kdklzgfe1a.json
+2
+0.0.3
+2
+packages/nvnt0s221h.json
+2
+0.0.4
+2
+packages/2u1e6sdlih.json
+2
+martian
+10
+1
+2
+0.0.1
+2
+packages/0bd9syaqvj.json
+2
+mustache
+10
+1
+2
+0.0.1
+2
+packages/mustache_0_0_1.json
+2
+mustache_tests
+10
+1
+2
+0.0.1
+2
+packages/mustache_tests_0_0_1.json
+2
+persistent
+10
+1
+2
+0.0.1
+2
+packages/persistent_0_0_1.json
+2
+primitive
+10
+2
+2
+0.0.1
+2
+packages/primitive_0_0_1.json
+2
+0.0.2
+2
+packages/primitive_0_0_2.json
+2
+primitive_tests
+10
+2
+2
+0.0.1
+2
+packages/primitive_tests_0_0_1.json
+2
+0.0.2
+2
+packages/primitive_tests_0_0_2.json
+2
+unit
+10
+1
+2
+1.0.4
+2
+packages/unit_1_0_4.json
 2
 0
 10
@@ -1038,6 +1388,2081 @@ Added `fg/bg_seconds', `fg/bg_ticks' and `max_concat_catchable' properties to `$
 In the `@import' command, set the seconds/ticks to a large number so suspending is not necessary.
 2
 1
+#11 recycled
+#12 recycled
+#13 recycled
+#14 recycled
+#15 recycled
+#16 recycled
+#17 recycled
+#18 recycled
+#19 recycled
+#20
+Primitive Package
+0
+20
+1
+-1
+4
+14
+1
+21
+1
+22
+1
+23
+1
+24
+1
+25
+1
+26
+1
+27
+1
+28
+1
+29
+1
+30
+1
+31
+1
+32
+1
+33
+1
+34
+1
+-1
+4
+0
+0
+10
+identifier
+version
+manifest
+relocate
+requires
+instructions
+description
+authors
+homepage
+license
+10
+2
+primitive
+20
+1
+2
+0.0.2
+20
+1
+4
+9
+4
+2
+1
+20
+2
+package
+4
+2
+1
+21
+2
+dictionary
+4
+2
+1
+24
+2
+int_proto
+4
+2
+1
+25
+2
+float_proto
+4
+2
+1
+27
+2
+str_proto
+4
+2
+1
+28
+2
+err_proto
+4
+2
+1
+29
+2
+list_proto
+4
+2
+1
+30
+2
+map_proto
+4
+2
+1
+31
+2
+lambda_proto
+20
+1
+4
+8
+2
+dictionary.int_proto
+2
+dictionary.float_proto
+2
+dictionary.str_proto
+2
+dictionary.err_proto
+2
+dictionary.list_proto
+2
+dictionary.map_proto
+2
+dictionary.lambda_proto
+2
+dictionary.frobs
+20
+1
+4
+1
+4
+2
+2
+kernel
+2
+>= 1.0.4
+20
+1
+4
+1
+2
+install-dictionary
+20
+1
+2
+The primitive package comprises prototype objects for LambdaMOO primitive data-types, utility operations on primitives, and objects for basic functional-style programming.
+20
+1
+4
+1
+2
+Todd Sundsted
+20
+1
+2
+http://stunt.io/packages/primitive
+20
+1
+2
+FreeBSD License
+20
+1
+#21
+Primitive Dictionary
+0
+20
+1
+20
+4
+0
+1
+-1
+4
+1
+1
+0
+1
+lambda
+20
+172
+-1
+8
+int_proto
+float_proto
+str_proto
+err_proto
+list_proto
+map_proto
+frobs
+lambda_proto
+8
+1
+24
+20
+1
+1
+25
+20
+1
+1
+27
+20
+1
+1
+28
+20
+1
+1
+32
+20
+1
+1
+33
+20
+1
+4
+1
+1
+31
+20
+1
+1
+31
+20
+1
+#22
+Base Primitive
+0
+20
+1
+20
+4
+0
+1
+-1
+4
+6
+1
+24
+1
+25
+1
+27
+1
+28
+1
+29
+1
+30
+3
+_suspend_if_necessary
+20
+172
+-1
+type_of typeof
+20
+172
+-1
+to_json tojson
+20
+172
+-1
+0
+0
+#23
+Numeric Primitive
+0
+20
+1
+20
+4
+0
+1
+-1
+4
+2
+1
+24
+1
+25
+1
+abs
+20
+172
+-1
+0
+0
+#24
+Integer Prototype
+0
+20
+1
+20
+4
+0
+4
+2
+1
+22
+1
+23
+4
+0
+2
+up_to upto
+5
+172
+-1
+down_to downto
+5
+172
+-1
+0
+0
+#25
+Float Prototype
+0
+20
+1
+20
+4
+0
+4
+2
+1
+22
+1
+23
+4
+0
+0
+0
+0
+#26
+Sequence Primitive
+0
+20
+1
+20
+4
+0
+1
+-1
+4
+3
+1
+27
+1
+29
+1
+30
+10
+_lambdafy
+20
+172
+-1
+each
+5
+172
+-1
+collect map
+5
+172
+-1
+inject reduce fold
+5
+172
+-1
+detect find
+5
+172
+-1
+select find_all
+5
+172
+-1
+reject
+5
+172
+-1
+every
+5
+172
+-1
+some
+5
+172
+-1
+length
+20
+172
+-1
+0
+0
+#27
+String Prototype
+0
+20
+1
+20
+4
+0
+4
+2
+1
+22
+1
+26
+4
+0
+7
+to_lambda tolambda
+20
+172
+-1
+eval
+5
+172
+-1
+index rindex match rmatch
+20
+172
+-1
+split explode
+20
+172
+-1
+trim triml trimr
+20
+172
+-1
+strsub
+20
+172
+-1
+strtr
+20
+172
+-1
+0
+0
+#28
+Error Prototype
+0
+20
+1
+20
+4
+0
+4
+1
+1
+22
+4
+0
+0
+0
+0
+#29
+List Prototype
+0
+20
+1
+20
+4
+0
+4
+2
+1
+22
+1
+26
+4
+1
+1
+32
+12
+to_lambda tolambda
+20
+172
+-1
+eval
+5
+172
+-1
+setadd
+20
+172
+-1
+setremove
+20
+172
+-1
+union
+20
+172
+-1
+intersection
+20
+172
+-1
+difference
+20
+172
+-1
+join
+20
+172
+-1
+sort
+20
+172
+-1
+reverse
+20
+172
+-1
+slice
+20
+172
+-1
+flatten
+20
+172
+-1
+0
+0
+#30
+Map Prototype
+0
+20
+1
+20
+4
+0
+4
+2
+1
+22
+1
+26
+4
+1
+1
+33
+6
+keys
+20
+172
+-1
+values
+20
+172
+-1
+delete
+20
+172
+-1
+value_by_path
+20
+172
+-1
+set_value_by_path
+20
+172
+-1
+merge
+20
+172
+-1
+0
+0
+#31
+Lambda Prototype
+0
+20
+1
+20
+4
+0
+1
+-1
+4
+0
+8
+create
+20
+172
+-1
+type_of typeof
+20
+172
+-1
+to_lambda tolambda
+20
+172
+-1
+_params_and_body
+20
+172
+-1
+_prepend_assignments
+20
+172
+-1
+partial
+20
+172
+-1
+bind
+20
+172
+-1
+call
+5
+172
+-1
+0
+0
+#32
+List-Based Frob Prototype
+0
+20
+1
+20
+4
+0
+4
+1
+1
+29
+4
+0
+1
+*
+5
+172
+-1
+0
+0
+#33
+Map-Based Frob Prototype
+0
+20
+1
+20
+4
+0
+4
+1
+1
+30
+4
+0
+1
+*
+5
+172
+-1
+0
+0
+#34
+Changelog
+0
+20
+1
+20
+4
+0
+1
+-1
+4
+0
+0
+3
+1321837971
+1322305336
+1329066914
+3
+2
+Added support for functional-style programming via string lambdas.
+20
+1
+2
+Implemented first-pass primitives (with tests) including basic support for functional-style programming.
+20
+1
+2
+Updated verbs to use the new for loop syntax.
+20
+1
+#35
+Persistent Package
+0
+35
+1
+-1
+4
+3
+1
+36
+1
+37
+1
+38
+1
+-1
+4
+0
+0
+10
+identifier
+version
+manifest
+relocate
+requires
+instructions
+description
+authors
+homepage
+license
+10
+2
+persistent
+35
+1
+2
+0.0.1
+35
+1
+4
+4
+4
+2
+1
+35
+2
+package
+4
+2
+1
+36
+2
+changelog
+4
+2
+1
+37
+2
+dictionary
+4
+2
+1
+38
+2
+attachable
+35
+1
+4
+1
+2
+dictionary.attachable
+35
+1
+4
+1
+4
+2
+2
+kernel
+2
+>= 1.0.6
+35
+1
+4
+1
+2
+install-dictionary
+35
+1
+2
+Persistent creates and manages the associated Stunt filesystem.  The package includes the $attachable mixin.
+35
+1
+4
+1
+2
+Todd Sundsted
+35
+1
+2
+http://stunt.io/packages/persistent
+35
+1
+2
+FreeBSD License
+35
+1
+#36
+Changelog
+0
+35
+1
+35
+4
+0
+1
+-1
+4
+0
+0
+4
+1312670738
+1313453111
+1321630702
+1329737917
+4
+2
+Added $attachable/Attachable.
+35
+1
+2
+Create directory structure under files/ on startup.
+35
+1
+2
+Cleanup in $attachable.  Removed use of `call_function()'.  Deal with missing helper executables better.
+35
+1
+2
+Updated code to use new `for' loop functionality.
+35
+1
+#37
+Dictionary
+0
+35
+1
+35
+4
+0
+1
+-1
+4
+1
+1
+0
+1
+server_started
+5
+172
+-1
+1
+attachable
+1
+1
+38
+35
+1
+#38
+Attachable
+128
+35
+1
+35
+4
+0
+4
+1
+1
+4
+4
+0
+8
+attachments
+35
+172
+-1
+check_attachment
+5
+172
+-1
+recycle
+5
+172
+-1
+_path_for
+5
+172
+-1
+add_attachment_from_tmp_file
+5
+172
+-1
+delete_attachment
+5
+172
+-1
+_identify
+5
+172
+-1
+_thumbnail
+5
+172
+-1
+2
+attachment_pools
+attachments
+3
+10
+2
+2
+private
+2
+private/app
+2
+public
+2
+public/app
+35
+0
+10
+0
+35
+0
+5
+35
+4
+#39
+Dialog, Web Server Package
+0
+39
+1
+-1
+4
+8
+1
+40
+1
+41
+1
+42
+1
+43
+1
+44
+1
+45
+1
+46
+1
+47
+1
+-1
+4
+0
+2
+after_install
+5
+172
+-1
+before_uninstall
+5
+172
+-1
+10
+identifier
+version
+manifest
+relocate
+requires
+instructions
+description
+authors
+homepage
+license
+10
+2
+dialog
+39
+1
+2
+0.0.1
+39
+1
+4
+9
+4
+2
+1
+39
+2
+package
+4
+2
+1
+40
+2
+changelog
+4
+2
+1
+41
+2
+dictionary
+4
+2
+1
+42
+2
+utilities
+4
+2
+1
+43
+2
+server
+4
+2
+1
+44
+2
+request_proto
+4
+2
+1
+45
+2
+response_proto
+4
+2
+1
+46
+2
+route
+4
+2
+1
+47
+2
+player_in_session
+39
+1
+4
+10
+2
+dictionary.utilities
+2
+dictionary.server
+2
+dictionary.request_proto
+2
+dictionary.response_proto
+2
+dictionary.route
+2
+dictionary.player_in_session
+2
+server.utilities
+2
+server.request_proto
+2
+server.response_proto
+2
+server.route
+39
+1
+4
+2
+4
+2
+2
+kernel
+2
+>= 1.0.6
+4
+2
+2
+primitive
+2
+>= 0.0.2
+39
+1
+4
+1
+2
+install-namespace
+39
+1
+2
+Dialog is the Stunt HTTP server.
+39
+1
+4
+1
+2
+Todd Sundsted
+39
+1
+2
+http://stunt.io/packages/dialog
+39
+1
+2
+
+39
+1
+#40
+Changelog
+0
+39
+1
+39
+4
+0
+1
+-1
+4
+0
+0
+11
+1316094194
+1316358449
+1318324724
+1318324757
+1318346368
+1319025413
+1319025667
+1319388751
+1319388831
+1329657368
+1329684677
+11
+2
+Added HTTP server framework (basic) including external file serving, routing to object/verb handlers and a database example.
+39
+1
+2
+Unescape URL encoded POST data.
+39
+1
+2
+Modified HTTP server `session()' verb to get session from task local value.
+39
+1
+2
+Modified HTTP server `internal()' verb to properly set `player' and perms.
+39
+1
+2
+Removed player()/set_player() from request; moved authenticated player persistence into task local storage.
+39
+1
+2
+Refactored HTTP server chaining; support external chain steps; removed upgrade from default chain; added external log and upgrade steps.
+39
+1
+2
+Removed internal dependency on storing the player in the HTTP session.
+39
+1
+2
+The HTTP server `external()' verb looks up mime type by extension and by exec'ing `identify'.
+39
+1
+2
+`_do_chain()' tries to be smarter about cleanup on error.
+39
+1
+2
+Moved HTTP status codes into a property.
+39
+1
+2
+Removed `external()' and renamed `internal()' to `serve()'.
+39
+1
+#41
+Dialog Dictionary
+0
+39
+1
+39
+4
+0
+4
+1
+1
+4
+4
+0
+0
+6
+server
+request_proto
+response_proto
+utilities
+route
+player_in_session
+7
+1
+43
+39
+1
+1
+44
+39
+1
+1
+45
+39
+1
+1
+42
+39
+1
+1
+46
+39
+1
+1
+47
+39
+1
+5
+39
+4
+#42
+Dialog Utilities
+0
+39
+1
+39
+4
+0
+4
+1
+1
+4
+4
+0
+4
+generate_query_string
+39
+172
+-1
+parse_query_string
+39
+172
+-1
+escape
+39
+172
+-1
+unescape
+39
+172
+-1
+0
+1
+5
+39
+4
+#43
+HTTP Server
+0
+39
+1
+39
+4
+1
+1
+48
+4
+1
+1
+4
+4
+0
+21
+_log
+5
+172
+-1
+_key
+39
+172
+-1
+start
+5
+172
+-1
+stop
+5
+172
+-1
+_read_http
+5
+172
+-1
+_notify
+5
+172
+-1
+_read_from_connection
+39
+172
+-1
+_write_to_connection
+39
+172
+-1
+_do_request
+39
+172
+-1
+do_login_command
+5
+172
+-1
+session
+5
+172
+-1
+player
+5
+172
+-1
+route
+39
+172
+-1
+parameters
+5
+172
+-1
+serve
+5
+172
+-1
+cleanup
+5
+172
+-1
+404 500
+39
+172
+-1
+traceback
+39
+172
+-1
+trampoline
+5
+172
+-1
+_drop_perms_and_call_verb
+5
+172
+-1
+_do_chain
+5
+172
+-1
+8
+port
+key
+default_chain
+utilities
+request_proto
+response_proto
+route
+status_codes
+9
+0
+8888
+39
+1
+0
+0
+5
+1
+4
+7
+2
+session
+2
+player
+2
+parameters
+2
+route
+2
+serve
+2
+cleanup
+2
+404
+39
+4
+1
+42
+39
+1
+1
+44
+39
+1
+1
+45
+39
+1
+1
+46
+39
+1
+10
+9
+0
+200
+2
+Ok
+0
+201
+2
+Created
+0
+204
+2
+No Content
+0
+302
+2
+Moved
+0
+400
+2
+Bad Request
+0
+403
+2
+Forbidden
+0
+404
+2
+Not Found
+0
+422
+2
+Unprocessable Entity
+0
+500
+2
+Server Error
+39
+1
+5
+39
+4
+#44
+HTTP Request Prototype
+16
+39
+1
+39
+4
+0
+1
+-1
+4
+0
+8
+create
+39
+172
+-1
+method uri headers body parameters session handler exception
+39
+172
+-1
+set_method set_uri set_headers set_body set_parameters set_session set_handler set_exception
+39
+172
+-1
+cookies
+39
+172
+-1
+path
+39
+172
+-1
+query
+39
+172
+-1
+type length
+39
+172
+-1
+set_type set_length
+39
+172
+-1
+0
+0
+#45
+HTTP Response Prototype
+16
+39
+1
+39
+4
+0
+1
+-1
+4
+0
+4
+create
+39
+172
+-1
+status headers body session
+39
+172
+-1
+set_status set_headers set_body set_session
+39
+172
+-1
+set_type set_length set_location
+39
+172
+-1
+0
+0
+#46
+HTTP Route Prototype
+0
+39
+1
+39
+4
+0
+4
+1
+1
+4
+4
+3
+1
+48
+1
+50
+1
+51
+1
+match
+39
+172
+-1
+0
+1
+5
+39
+4
+#47
+Player in Session Capability
+0
+39
+1
+39
+4
+0
+1
+-1
+4
+0
+2
+set_player
+5
+172
+-1
+player
+5
+172
+-1
+1
+prototypes
+1
+4
+0
+5
+0
+#48
+It Works!
+0
+39
+1
+43
+4
+0
+4
+1
+1
+46
+4
+0
+2
+match
+39
+172
+-1
+it_works!
+39
+172
+-1
+0
+1
+5
+39
+4
+#49
+Dialog, Extras
+0
+49
+1
+-1
+4
+4
+1
+50
+1
+51
+1
+52
+1
+53
+1
+-1
+4
+0
+0
+10
+identifier
+version
+manifest
+relocate
+requires
+instructions
+description
+authors
+homepage
+license
+10
+2
+dialog_extras
+49
+1
+2
+0.0.1
+49
+1
+4
+5
+4
+2
+1
+49
+2
+package
+4
+2
+1
+50
+2
+file_server
+4
+2
+1
+51
+2
+db_server
+4
+2
+1
+52
+2
+upgrade_handler
+4
+2
+1
+53
+2
+logger
+49
+1
+4
+0
+49
+1
+4
+3
+4
+2
+2
+kernel
+2
+>= 1.0.7
+4
+2
+2
+primitive
+2
+>= 0.0.2
+4
+2
+2
+dialog
+2
+>= 0.0.1
+49
+1
+4
+0
+49
+1
+2
+The Dialog Extras package contains objects that extend Dialog: file server, db object server, upgrade protocol handler, and logger.
+49
+1
+4
+1
+2
+Todd Sundsted
+49
+1
+2
+http://stunt.io/packages/dialog_extras
+49
+1
+2
+FreeBSD License
+49
+1
+#50
+HTTP File Server
+0
+49
+1
+49
+4
+0
+4
+1
+1
+46
+4
+0
+2
+match
+5
+172
+-1
+get
+5
+172
+-1
+0
+1
+5
+49
+4
+#51
+HTTP Database Server
+0
+49
+1
+49
+4
+0
+4
+1
+1
+46
+4
+0
+2
+match
+49
+172
+-1
+get
+5
+172
+-1
+0
+1
+5
+49
+4
+#52
+HTTP Upgrade Handler
+0
+49
+1
+49
+4
+0
+4
+1
+1
+4
+4
+0
+1
+upgrade
+5
+172
+-1
+0
+1
+5
+49
+4
+#53
+HTTP Logger
+0
+49
+1
+49
+4
+0
+4
+1
+1
+4
+4
+0
+1
+log
+5
+172
+-1
+0
+1
+5
+49
+4
+#54
+Mustache Templating Language Package
+0
+54
+1
+-1
+4
+3
+1
+55
+1
+56
+1
+57
+1
+-1
+4
+0
+2
+after_install
+5
+172
+-1
+before_uninstall
+5
+172
+-1
+11
+identifier
+version
+manifest
+relocate
+requires
+provides
+instructions
+description
+authors
+homepage
+license
+11
+2
+mustache
+54
+1
+2
+0.0.1
+54
+1
+4
+4
+4
+2
+1
+54
+2
+package
+4
+2
+1
+55
+2
+changelog
+4
+2
+1
+56
+2
+dictionary
+4
+2
+1
+57
+2
+compiler
+54
+1
+4
+1
+2
+dictionary.compiler
+54
+1
+4
+2
+4
+2
+2
+kernel
+2
+>= 1.0.6
+4
+2
+2
+primitive
+2
+>= 0.0.2
+54
+1
+4
+0
+54
+1
+4
+1
+2
+install-namespace
+54
+1
+2
+A MOO/Stunt port of the popular Mustache templating language (http://mustache.github.com/).
+54
+1
+4
+1
+2
+Todd Sundsted
+54
+1
+2
+http://stunt.io/packages/mustache
+54
+1
+2
+FreeBSD License
+54
+1
+#55
+Changelog
+0
+54
+1
+54
+4
+0
+1
+-1
+4
+0
+0
+3
+1317769370
+1317897840
+1319399411
+3
+2
+Initial release candidate.
+54
+1
+2
+Fixed a bug in pushing/popping context frames.
+54
+1
+2
+Fixed a bug in handling dotted notation.
+54
+1
+#56
+Dictionary
+0
+54
+1
+54
+4
+0
+1
+-1
+4
+0
+0
+1
+compiler
+1
+1
+57
+54
+1
+#57
+Mustache Compiler
+0
+54
+1
+54
+4
+0
+4
+1
+1
+4
+4
+0
+2
+_log
+5
+172
+-1
+compile
+54
+172
+-1
+0
+1
+5
+54
+4
 #0:0
 $private();
 {e} = args;
@@ -3775,6 +6200,3842 @@ return;
 "chunk_type:source";
 "content_type:application/x-moocode";
 "updated_at:Tue Oct 25 06:17:39 2011 EDT";
+"-=-=-mxyzptlk-=-=-";
+.
+#21:0
+if (`args[$][1] ! E_TYPE, E_RANGE' == ";")
+args[$] = tostr("return ", args[$][2..$], ";");
+endif
+return {$lambda_proto, @args};
+return;
+"if (`args[$][1] ! E_TYPE, E_RANGE' == \";\")";
+"  args[$] = tostr(\"return \", args[$][2..$], \";\");";
+"endif";
+"return {$lambda_proto, @args};";
+"";
+"chunk_length:4";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#22:0
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+return;
+"(ticks_left() < 10000 || seconds_left() < 2) && suspend(0);";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#22:1
+{?old_school = 0} = args;
+return (!old_school) ? ([0 -> $int_proto, 2 -> $str_proto, 3 -> $err_proto, 4 -> $list_proto, 10 -> $map_proto, 9 -> $float_proto])[typeof(this)] | typeof(this);
+return;
+"{?old_school = 0} = args;";
+"return !old_school ? [0 -> $int_proto, 2 -> $str_proto, 3 -> $err_proto, 4 -> $list_proto, 10 -> $map_proto, 9 -> $float_proto][typeof(this)] | typeof(this);";
+"";
+"chunk_length:2";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#22:2
+return generate_json(this, @args);
+return;
+"return generate_json(this, @args);";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#23:0
+return abs(this);
+return;
+"return abs(this);";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#24:0
+set_task_perms(caller_perms());
+{limit, @args} = args;
+if (limit < this)
+return this;
+endif
+lambda = args:_lambdafy();
+while (limit >= this)
+this:_suspend_if_necessary();
+args && lambda:call(this);
+this = this + 1;
+endwhile
+return this - 1;
+return;
+"set_task_perms(caller_perms());";
+"";
+"{limit, @args} = args;";
+"";
+"if (limit < this)";
+"  return this;";
+"endif";
+"";
+"lambda = args:_lambdafy();";
+"";
+"while (limit >= this)";
+"  this:_suspend_if_necessary();";
+"  args && lambda:call(this);";
+"  this = this + 1;";
+"endwhile";
+"";
+"return this - 1;";
+"";
+"chunk_length:17";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#24:1
+set_task_perms(caller_perms());
+{limit, @args} = args;
+if (limit > this)
+return this;
+endif
+lambda = args:_lambdafy();
+while (limit <= this)
+this:_suspend_if_necessary();
+args && lambda:call(this);
+this = this - 1;
+endwhile
+return this + 1;
+return;
+"set_task_perms(caller_perms());";
+"";
+"{limit, @args} = args;";
+"";
+"if (limit > this)";
+"  return this;";
+"endif";
+"";
+"lambda = args:_lambdafy();";
+"";
+"while (limit <= this)";
+"  this:_suspend_if_necessary();";
+"  args && lambda:call(this);";
+"  this = this - 1;";
+"endwhile";
+"";
+"return this + 1;";
+"";
+"chunk_length:17";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#26:0
+args && raise(E_ARGS);
+if (`this[1][1] ! E_TYPE, E_RANGE' == $lambda_proto)
+return this[1];
+elseif ((t = typeof(this)) == LIST)
+return ((length(this) == 1) && (typeof(this[1]) == LIST)) ? $lambda(@this[1]) | $lambda(@this);
+elseif (t == STR)
+return $lambda(this);
+else
+raise(E_INVIND);
+endif
+return;
+"args && raise(E_ARGS);";
+"";
+"if (`this[1][1] ! E_TYPE, E_RANGE' == $lambda_proto)";
+"  return this[1];";
+"";
+"elseif ((t = typeof(this)) == LIST)";
+"  return length(this) == 1 && typeof(this[1]) == LIST ? $lambda(@this[1]) | $lambda(@this);";
+"";
+"elseif (t == STR)";
+"  return $lambda(this);";
+"";
+"else";
+"  raise(E_INVIND);";
+"";
+"endif";
+"";
+"chunk_length:15";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#26:1
+set_task_perms(caller_perms());
+lambda = args:_lambdafy();
+if ((((t = typeof(this)) == MAP) || (t == LIST)) || (t == STR))
+for v, k in (this)
+this:_suspend_if_necessary();
+lambda:call(v, k, this);
+endfor
+else
+raise(E_INVIND);
+endif
+return this;
+return;
+"set_task_perms(caller_perms());";
+"";
+"lambda = args:_lambdafy();";
+"";
+"if ((t = typeof(this)) == MAP || t == LIST || t == STR)";
+"  for v, k in (this)";
+"    this:_suspend_if_necessary();";
+"    lambda:call(v, k, this);";
+"  endfor";
+"else";
+"  raise(E_INVIND);";
+"endif";
+"";
+"return this;";
+"";
+"chunk_length:14";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#26:2
+set_task_perms(caller_perms());
+lambda = args:_lambdafy();
+if ((t = typeof(this)) == MAP)
+result = [];
+for v, k in (this)
+this:_suspend_if_necessary();
+result[k] = lambda:call(v, k, this);
+endfor
+elseif (t == LIST)
+result = {};
+for v, i in (this)
+this:_suspend_if_necessary();
+result = {@result, lambda:call(v, i, this)};
+endfor
+elseif (t == STR)
+result = "";
+for v, i in (this)
+this:_suspend_if_necessary();
+result = tostr(result, lambda:call(v, i, this));
+endfor
+else
+raise(E_INVIND);
+endif
+return result;
+return;
+"set_task_perms(caller_perms());";
+"";
+"lambda = args:_lambdafy();";
+"";
+"if ((t = typeof(this)) == MAP)";
+"  result = [];";
+"  for v, k in (this)";
+"    this:_suspend_if_necessary();";
+"    result[k] = lambda:call(v, k, this);";
+"  endfor";
+"elseif (t == LIST)";
+"  result = {};";
+"  for v, i in (this)";
+"    this:_suspend_if_necessary();";
+"    result = {@result, lambda:call(v, i, this)};";
+"  endfor";
+"elseif (t == STR)";
+"  result = \"\";";
+"  for v, i in (this)";
+"    this:_suspend_if_necessary();";
+"    result = tostr(result, lambda:call(v, i, this));";
+"  endfor";
+"else";
+"  raise(E_INVIND);";
+"endif";
+"";
+"return result;";
+"";
+"chunk_length:27";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#26:3
+set_task_perms(caller_perms());
+{initial, @args} = args;
+lambda = args:_lambdafy();
+if ((((t = typeof(this)) == MAP) || (t == LIST)) || (t == STR))
+for v, k in (this)
+this:_suspend_if_necessary();
+initial = lambda:call(initial, v, k, this);
+endfor
+else
+raise(E_INVIND);
+endif
+return initial;
+return;
+"set_task_perms(caller_perms());";
+"";
+"{initial, @args} = args;";
+"";
+"lambda = args:_lambdafy();";
+"";
+"if ((t = typeof(this)) == MAP || t == LIST || t == STR)";
+"  for v, k in (this)";
+"    this:_suspend_if_necessary();";
+"    initial = lambda:call(initial, v, k, this);";
+"  endfor";
+"else";
+"  raise(E_INVIND);";
+"endif";
+"";
+"return initial;";
+"";
+"chunk_length:16";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#26:4
+set_task_perms(caller_perms());
+lambda = args:_lambdafy();
+if ((t = typeof(this)) == MAP)
+for v, k in (this)
+this:_suspend_if_necessary();
+if (lambda:call(v, k, this))
+return [k -> v];
+endif
+endfor
+elseif (t == LIST)
+for v, i in (this)
+this:_suspend_if_necessary();
+if (lambda:call(v, i, this))
+return v;
+endif
+endfor
+elseif (t == STR)
+for v, i in (this)
+this:_suspend_if_necessary();
+if (lambda:call(v, i, this))
+return v;
+endif
+endfor
+else
+raise(E_INVIND);
+endif
+return E_RANGE;
+return;
+"set_task_perms(caller_perms());";
+"";
+"lambda = args:_lambdafy();";
+"";
+"if ((t = typeof(this)) == MAP)";
+"  for v, k in (this)";
+"    this:_suspend_if_necessary();";
+"    if (lambda:call(v, k, this))";
+"      return [k -> v];";
+"    endif";
+"  endfor";
+"elseif (t == LIST)";
+"  for v, i in (this)";
+"    this:_suspend_if_necessary();";
+"    if (lambda:call(v, i, this))";
+"      return v;";
+"    endif";
+"  endfor";
+"elseif (t == STR)";
+"  for v, i in (this)";
+"    this:_suspend_if_necessary();";
+"    if (lambda:call(v, i, this))";
+"      return v;";
+"    endif";
+"  endfor";
+"else";
+"  raise(E_INVIND);";
+"endif";
+"";
+"return E_RANGE;";
+"";
+"chunk_length:30";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#26:5
+set_task_perms(caller_perms());
+lambda = args:_lambdafy();
+if ((t = typeof(this)) == MAP)
+result = [];
+for v, k in (this)
+this:_suspend_if_necessary();
+if (lambda:call(v, k, this))
+result[k] = v;
+endif
+endfor
+elseif (t == LIST)
+result = {};
+for v, i in (this)
+this:_suspend_if_necessary();
+if (lambda:call(v, i, this))
+result = {@result, v};
+endif
+endfor
+elseif (t == STR)
+result = "";
+for v, i in (this)
+this:_suspend_if_necessary();
+if (lambda:call(v, i, this))
+result = tostr(result, v);
+endif
+endfor
+else
+raise(E_INVIND);
+endif
+return result;
+return;
+"set_task_perms(caller_perms());";
+"";
+"lambda = args:_lambdafy();";
+"";
+"if ((t = typeof(this)) == MAP)";
+"  result = [];";
+"  for v, k in (this)";
+"    this:_suspend_if_necessary();";
+"    if (lambda:call(v, k, this))";
+"      result[k] = v;";
+"    endif";
+"  endfor";
+"elseif (t == LIST)";
+"  result = {};";
+"  for v, i in (this)";
+"    this:_suspend_if_necessary();";
+"    if (lambda:call(v, i, this))";
+"      result = {@result, v};";
+"    endif";
+"  endfor";
+"elseif (t == STR)";
+"  result = \"\";";
+"  for v, i in (this)";
+"    this:_suspend_if_necessary();";
+"    if (lambda:call(v, i, this))";
+"      result = tostr(result, v);";
+"    endif";
+"  endfor";
+"else";
+"  raise(E_INVIND);";
+"endif";
+"";
+"return result;";
+"";
+"chunk_length:33";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#26:6
+set_task_perms(caller_perms());
+lambda = args:_lambdafy();
+if ((t = typeof(this)) == MAP)
+result = [];
+for v, k in (this)
+this:_suspend_if_necessary();
+if (!lambda:call(v, k, this))
+result[k] = v;
+endif
+endfor
+elseif (t == LIST)
+result = {};
+for v, i in (this)
+this:_suspend_if_necessary();
+if (!lambda:call(v, i, this))
+result = {@result, v};
+endif
+endfor
+elseif (t == STR)
+result = "";
+for v, i in (this)
+this:_suspend_if_necessary();
+if (!lambda:call(v, i, this))
+result = tostr(result, v);
+endif
+endfor
+else
+raise(E_INVIND);
+endif
+return result;
+return;
+"set_task_perms(caller_perms());";
+"";
+"lambda = args:_lambdafy();";
+"";
+"if ((t = typeof(this)) == MAP)";
+"  result = [];";
+"  for v, k in (this)";
+"    this:_suspend_if_necessary();";
+"    if (!lambda:call(v, k, this))";
+"      result[k] = v;";
+"    endif";
+"  endfor";
+"elseif (t == LIST)";
+"  result = {};";
+"  for v, i in (this)";
+"    this:_suspend_if_necessary();";
+"    if (!lambda:call(v, i, this))";
+"      result = {@result, v};";
+"    endif";
+"  endfor";
+"elseif (t == STR)";
+"  result = \"\";";
+"  for v, i in (this)";
+"    this:_suspend_if_necessary();";
+"    if (!lambda:call(v, i, this))";
+"      result = tostr(result, v);";
+"    endif";
+"  endfor";
+"else";
+"  raise(E_INVIND);";
+"endif";
+"";
+"return result;";
+"";
+"chunk_length:33";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#26:7
+set_task_perms(caller_perms());
+lambda = args:_lambdafy();
+if ((((t = typeof(this)) == MAP) || (t == LIST)) || (t == STR))
+for v, k in (this)
+this:_suspend_if_necessary();
+if (!lambda:call(v, k, this))
+return 0;
+endif
+endfor
+else
+raise(E_INVIND);
+endif
+return 1;
+return;
+"set_task_perms(caller_perms());";
+"";
+"lambda = args:_lambdafy();";
+"";
+"if ((t = typeof(this)) == MAP || t == LIST || t == STR)";
+"  for v, k in (this)";
+"    this:_suspend_if_necessary();";
+"    if (!lambda:call(v, k, this))";
+"      return 0;";
+"    endif";
+"  endfor";
+"else";
+"  raise(E_INVIND);";
+"endif";
+"";
+"return 1;";
+"";
+"chunk_length:16";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#26:8
+set_task_perms(caller_perms());
+lambda = args:_lambdafy();
+if ((((t = typeof(this)) == MAP) || (t == LIST)) || (t == STR))
+for v, k in (this)
+this:_suspend_if_necessary();
+if (lambda:call(v, k, this))
+return 1;
+endif
+endfor
+else
+raise(E_INVIND);
+endif
+return 0;
+return;
+"set_task_perms(caller_perms());";
+"";
+"lambda = args:_lambdafy();";
+"";
+"if ((t = typeof(this)) == MAP || t == LIST || t == STR)";
+"  for v, k in (this)";
+"    this:_suspend_if_necessary();";
+"    if (lambda:call(v, k, this))";
+"      return 1;";
+"    endif";
+"  endfor";
+"else";
+"  raise(E_INVIND);";
+"endif";
+"";
+"return 0;";
+"";
+"chunk_length:16";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#26:9
+return length(this);
+return;
+"return length(this);";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#27:0
+return this:_lambdafy();
+return;
+"return this:_lambdafy();";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#27:1
+set_task_perms(caller_perms());
+return this:_lambdafy():call(@args);
+return;
+"set_task_perms(caller_perms());";
+"";
+"return this:_lambdafy():call(@args);";
+"";
+"chunk_length:3";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#27:2
+return call_function(verb, this, @args);
+return;
+"return call_function(verb, this, @args);";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#27:3
+{?sep = " "} = args;
+l = length(sep);
+this = this + sep;
+parts = {};
+while (this)
+this:_suspend_if_necessary();
+if ((i = index(this, sep)) > 1)
+parts = {@parts, this[1..i - 1]};
+endif
+this = this[i + l..$];
+endwhile
+return parts;
+return;
+"{?sep = \" \"} = args;";
+"l = length(sep);";
+"this = this + sep;";
+"parts = {};";
+"while (this)";
+"  this:_suspend_if_necessary();";
+"  if ((i = index(this, sep)) > 1)";
+"    parts = {@parts, this[1..i - 1]};";
+"  endif";
+"  this = this[i + l..$];";
+"endwhile";
+"return parts;";
+"";
+"chunk_length:12";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#27:4
+{?pattern = " "} = args;
+if ((verb == "trim") || (verb == "triml"))
+if ((this && pattern) && (r = match(this, tostr("^%(", pattern, "%)*"))))
+this = this[r[2] + 1..$];
+endif
+endif
+if ((verb == "trim") || (verb == "trimr"))
+if ((this && pattern) && (r = match(this, tostr("%(", pattern, "%)*$"))))
+this = this[1..r[1] - 1];
+endif
+endif
+return this;
+return;
+"{?pattern = \" \"} = args;";
+"if (verb == \"trim\" || verb == \"triml\")";
+"  if (this && pattern && (r = match(this, tostr(\"^%(\", pattern, \"%)*\"))))";
+"    this = this[r[2] + 1..$];";
+"  endif";
+"endif";
+"if (verb == \"trim\" || verb == \"trimr\")";
+"  if (this && pattern && (r = match(this, tostr(\"%(\", pattern, \"%)*$\"))))";
+"    this = this[1..r[1] - 1];";
+"  endif";
+"endif";
+"return this;";
+"";
+"chunk_length:12";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#27:5
+if (args && (typeof(args[1]) == MAP))
+{subs, ?case = 0} = args;
+for value, key in (subs)
+this:_suspend_if_necessary();
+this = strsub(this, key, value, case);
+endfor
+elseif (args && (typeof(args[1]) == LIST))
+{subs, ?case = 0} = args;
+for item in (subs)
+this:_suspend_if_necessary();
+this = strsub(this, item[1], item[2], case);
+endfor
+elseif (args && (typeof(args[1]) == STR))
+{from, to, ?case = 0} = args;
+this = strsub(this, from, to, case);
+else
+raise(E_INVARG);
+endif
+return this;
+return;
+"if (args && typeof(args[1]) == MAP)";
+"  {subs, ?case = 0} = args;";
+"  for value, key in (subs)";
+"    this:_suspend_if_necessary();";
+"    this = strsub(this, key, value, case);";
+"  endfor";
+"elseif (args && typeof(args[1]) == LIST)";
+"  {subs, ?case = 0} = args;";
+"  for item in (subs)";
+"    this:_suspend_if_necessary();";
+"    this = strsub(this, item[1], item[2], case);";
+"  endfor";
+"elseif (args && typeof(args[1]) == STR)";
+"  {from, to, ?case = 0} = args;";
+"  this = strsub(this, from, to, case);";
+"else";
+"  raise(E_INVARG);";
+"endif";
+"return this;";
+"";
+"chunk_length:19";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#27:6
+{from, to, ?case = 0} = args;
+((len = length(from)) == length(to)) || raise(E_INVARG);
+for i in [1..len]
+this:_suspend_if_necessary();
+this = strsub(this, from[i], to[i], case);
+endfor
+return this;
+return;
+"{from, to, ?case = 0} = args;";
+"(len = length(from)) == length(to) || raise(E_INVARG);";
+"for i in [1..len]";
+"  this:_suspend_if_necessary();";
+"  this = strsub(this, from[i], to[i], case);";
+"endfor";
+"return this;";
+"";
+"chunk_length:7";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#29:0
+return this:_lambdafy();
+return;
+"return this:_lambdafy();";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#29:1
+set_task_perms(caller_perms());
+return this:_lambdafy():call(@args);
+return;
+"set_task_perms(caller_perms());";
+"";
+"return this:_lambdafy():call(@args);";
+"";
+"chunk_length:3";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#29:2
+return setadd(this, @args);
+return;
+"return setadd(this, @args);";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#29:3
+return setremove(this, @args);
+return;
+"return setremove(this, @args);";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#29:4
+{LIST} = args;
+for i in (LIST)
+this:_suspend_if_necessary();
+this = setadd(this, i);
+endfor
+return this;
+return;
+"{list} = args;";
+"";
+"for i in (list)";
+"  this:_suspend_if_necessary();";
+"  this = setadd(this, i);";
+"endfor";
+"";
+"return this;";
+"";
+"chunk_length:8";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#29:5
+{LIST} = args;
+result = {};
+for i in (LIST)
+this:_suspend_if_necessary();
+if (i in this)
+result = setadd(result, i);
+endif
+endfor
+return result;
+return;
+"{list} = args;";
+"";
+"result = {};";
+"";
+"for i in (list)";
+"  this:_suspend_if_necessary();";
+"  if (i in this)";
+"    result = setadd(result, i);";
+"  endif";
+"endfor";
+"";
+"return result;";
+"";
+"chunk_length:12";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#29:6
+{LIST} = args;
+for i in (LIST)
+this:_suspend_if_necessary();
+this = setremove(this, i);
+endfor
+return this;
+return;
+"{list} = args;";
+"";
+"for i in (list)";
+"  this:_suspend_if_necessary();";
+"  this = setremove(this, i);";
+"endfor";
+"";
+"return this;";
+"";
+"chunk_length:8";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#29:7
+{?sep = " "} = args;
+res = "";
+for i in (this)
+this:_suspend_if_necessary();
+i = tostr(i);
+res = res + (res ? sep + i | i);
+endfor
+return res;
+return;
+"{?sep = \" \"} = args;";
+"";
+"res = \"\";";
+"";
+"for i in (this)";
+"  this:_suspend_if_necessary();";
+"  i = tostr(i);";
+"  res = res + (res ? sep + i | i);";
+"endfor";
+"";
+"return res;";
+"";
+"chunk_length:11";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#29:8
+args && raise(E_ARGS);
+l = length(this);
+i = 1;
+while (i <= l)
+v = this[i];
+j = i - 1;
+while (j > 0)
+this:_suspend_if_necessary();
+if (this[j] <= v)
+break;
+endif
+this[j + 1] = this[j];
+j = j - 1;
+endwhile
+this[j + 1] = v;
+i = i + 1;
+endwhile
+return this;
+return;
+"args && raise(E_ARGS);";
+"";
+"l = length(this);";
+"i = 1;";
+"while (i <= l)";
+"  v = this[i];";
+"  j = i - 1;";
+"  while (j > 0)";
+"    this:_suspend_if_necessary();";
+"    if (this[j] <= v)";
+"      break;";
+"    endif";
+"    this[j + 1] = this[j];";
+"    j = j - 1;";
+"  endwhile";
+"  this[j + 1] = v;";
+"  i = i + 1;";
+"endwhile";
+"";
+"return this;";
+"";
+"chunk_length:20";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#29:9
+args && raise(E_ARGS);
+l = length(this);
+i = 1;
+while (i <= (l / 2))
+this:_suspend_if_necessary();
+t = this[i];
+this[i] = this[($ - i) + 1];
+this[($ - i) + 1] = t;
+i = i + 1;
+endwhile
+return this;
+return;
+"args && raise(E_ARGS);";
+"";
+"l = length(this);";
+"i = 1;";
+"while (i <= l / 2)";
+"  this:_suspend_if_necessary();";
+"  t = this[i];";
+"  this[i] = this[$ - i + 1];";
+"  this[$ - i + 1] = t;";
+"  i = i + 1;";
+"endwhile";
+"";
+"return this;";
+"";
+"chunk_length:13";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#29:10
+nth = args ? (length(args) > 1) ? args | args[1] | 1;
+res = {};
+if (typeof(nth) == LIST)
+for i in (this)
+out = {};
+for n in (nth)
+this:_suspend_if_necessary();
+out = {@out, i[n]};
+endfor
+res = {@res, out};
+endfor
+else
+for i in (this)
+this:_suspend_if_necessary();
+res = {@res, i[nth]};
+endfor
+endif
+return res;
+return;
+"nth = args ? length(args) > 1 ? args | args[1] | 1;";
+"";
+"res = {};";
+"";
+"if (typeof(nth) == LIST)";
+"  for i in (this)";
+"    out = {};";
+"    for n in (nth)";
+"      this:_suspend_if_necessary();";
+"      out = {@out, i[n]};";
+"    endfor";
+"    res = {@res, out};";
+"  endfor";
+"else";
+"  for i in (this)";
+"    this:_suspend_if_necessary();";
+"    res = {@res, i[nth]};";
+"  endfor";
+"endif";
+"";
+"return res;";
+"";
+"chunk_length:21";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:09 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#29:11
+{?depth = 2147483647} = args;
+new = {};
+for item in (this)
+this:_suspend_if_necessary();
+if ((typeof(item) == LIST) && depth)
+new = {@new, @item:flatten(depth - 1)};
+else
+new = {@new, item};
+endif
+endfor
+return new;
+.
+#30:0
+return mapkeys(this);
+return;
+"return mapkeys(this);";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:10 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#30:1
+return mapvalues(this);
+return;
+"return mapvalues(this);";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:10 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#30:2
+for arg in (args)
+this:_suspend_if_necessary();
+this = mapdelete(this, arg);
+endfor
+return this;
+return;
+"for arg in (args)";
+"  this:_suspend_if_necessary();";
+"  this = mapdelete(this, arg);";
+"endfor";
+"";
+"return this;";
+"";
+"chunk_length:6";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:10 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#30:3
+{p, ?d = E_RANGE} = args;
+{f, @r} = p;
+v = `r ? (typeof(this[f]) == MAP) ? this[f]:value_by_path(r) | E_RANGE | this[f] ! E_RANGE => d';
+return v;
+return;
+"{p, ?d = E_RANGE} = args;";
+"";
+"{f, @r} = p;";
+"";
+"v = `r ? typeof(this[f]) == MAP ? this[f]:value_by_path(r) | E_RANGE | this[f] ! E_RANGE => d';";
+"";
+"return v;";
+"";
+"chunk_length:7";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:10 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#30:4
+{p, v} = args;
+{f, @r} = p;
+this[f] = r ? `(typeof(this[f]) == MAP) ? this[f] | ([]) ! E_RANGE => []':set_value_by_path(r, v) | v;
+return this;
+return;
+"{p, v} = args;";
+"";
+"{f, @r} = p;";
+"";
+"this[f] = r ? `typeof(this[f]) == MAP ? this[f] | [] ! E_RANGE => []':set_value_by_path(r, v) | v;";
+"";
+"return this;";
+"";
+"chunk_length:7";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:10 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#30:5
+{MAP} = args;
+for value, key in (MAP)
+this:_suspend_if_necessary();
+this[key] = value;
+endfor
+return this;
+return;
+"{map} = args;";
+"for value, key in (map)";
+"  this:_suspend_if_necessary();";
+"  this[key] = value;";
+"endfor";
+"return this;";
+"";
+"chunk_length:6";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:10 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#31:0
+(this == $lambda_proto) || raise(E_VERBNF);
+return $lambda(@args);
+return;
+"this == $lambda_proto || raise(E_VERBNF);";
+"return $lambda(@args);";
+"";
+"chunk_length:2";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:10 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#31:1
+return this;
+return;
+"return this;";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:10 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#31:2
+return caller;
+return;
+"return caller;";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:10 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#31:3
+{args} = args;
+if ((l = length(args)) > 1)
+return {args[2..l - 1], args[$]};
+else
+return {{}, ""};
+endif
+return;
+"{args} = args;";
+"";
+"if ((l = length(args)) > 1)";
+"  return {args[2..l - 1], args[$]};";
+"else";
+"  return {{}, \"\"};";
+"endif";
+"";
+"chunk_length:7";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:10 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#31:4
+{MAP, params, body} = args;
+for value, key in (MAP)
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+if (key in params)
+params = setremove(params, key);
+else
+raise(E_INVARG, tostr("Not a formal parameter:  ", key));
+endif
+body = tostr(key, " = ", toliteral(value), "; ", body);
+endfor
+return {params, body};
+return;
+"{map, params, body} = args;";
+"";
+"for value, key in (map)";
+"  (ticks_left() < 10000 || seconds_left() < 2) && suspend(0);";
+"  if (key in params)";
+"    params = setremove(params, key);";
+"  else";
+"    raise(E_INVARG, tostr(\"Not a formal parameter:  \", key));";
+"  endif";
+"  body = tostr(key, \" = \", toliteral(value), \"; \", body);";
+"endfor";
+"";
+"return {params, body};";
+"";
+"chunk_length:13";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:10 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#31:5
+{?MAP = []} = args;
+{params, body} = this:_params_and_body(caller);
+{params, body} = this:_prepend_assignments(MAP, params, body);
+return $lambda(@params, body);
+return;
+"{?map = []} = args;";
+"";
+"{params, body} = this:_params_and_body(caller);";
+"";
+"{params, body} = this:_prepend_assignments(map, params, body);";
+"";
+"return $lambda(@params, body);";
+"";
+"chunk_length:7";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:10 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#31:6
+{object, ?MAP = []} = args;
+{params, body} = this:_params_and_body(caller);
+{params, body} = this:_prepend_assignments(MAP, params, body);
+body = tostr("this = ", toliteral(object), "; ", body);
+return $lambda(@params, body);
+return;
+"{object, ?map = []} = args;";
+"";
+"{params, body} = this:_params_and_body(caller);";
+"";
+"{params, body} = this:_prepend_assignments(map, params, body);";
+"";
+"body = tostr(\"this = \", toliteral(object), \"; \", body);";
+"";
+"return $lambda(@params, body);";
+"";
+"chunk_length:9";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:10 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#31:7
+set_task_perms(caller_perms());
+{params, body} = this:_params_and_body(caller);
+if (length(args) < (l = length(params)))
+raise(E_ARGS, tostr("Too few arguments:  ", params:join(", "), " required"));
+endif
+for i in [1..l]
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+body = tostr(params[i], " = ", toliteral(args[i]), "; ", body);
+endfor
+result = eval(body);
+result[1] || raise("E_SYNTAX", "Syntax error", result[2]);
+return result[2];
+return;
+"set_task_perms(caller_perms());";
+"";
+"{params, body} = this:_params_and_body(caller);";
+"";
+"if (length(args) < (l = length(params)))";
+"  raise(E_ARGS, tostr(\"Too few arguments:  \", params:join(\", \"), \" required\"));";
+"endif";
+"";
+"for i in [1..l]";
+"  (ticks_left() < 10000 || seconds_left() < 2) && suspend(0);";
+"  body = tostr(params[i], \" = \", toliteral(args[i]), \"; \", body);";
+"endfor";
+"";
+"result = eval(body);";
+"";
+"result[1] || raise(\"E_SYNTAX\", \"Syntax error\", result[2]);";
+"";
+"return result[2];";
+"";
+"chunk_length:18";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:10 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#32:0
+set_task_perms(caller_perms());
+(typeof(this) == LIST) || raise(E_INVIND, "Only type list");
+{_, name, programmer, location, _} = callers()[1];
+if ((name && (programmer == $nothing)) && (location == $nothing))
+return;
+endif
+if (this && ((prototype = this[1]) in $frobs))
+return prototype:(verb)(@args);
+endif
+return pass(@args);
+return;
+"set_task_perms(caller_perms());";
+"";
+"/* only lists */";
+"typeof(this) == LIST || raise(E_INVIND, \"Only type list\");";
+"";
+"/* don't respond to calls from built-ins */";
+"{_, name, programmer, location, _} = callers()[1];";
+"if (name && programmer == $nothing && location == $nothing)";
+"  return;";
+"endif";
+"";
+"if (this && (prototype = this[1]) in $frobs)";
+"  return prototype:(verb)(@args);";
+"endif";
+"";
+"return pass(@args);";
+"";
+"chunk_length:16";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:10 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#33:0
+set_task_perms(caller_perms());
+(typeof(this) == MAP) || raise(E_INVIND, "Only type map");
+{_, name, programmer, location, _} = callers()[1];
+if ((name && (programmer == $nothing)) && (location == $nothing))
+return;
+endif
+if (this && (`prototype = this["prototype"] ! E_RANGE' in $frobs))
+return prototype:(verb)(@args);
+endif
+return pass(@args);
+return;
+"set_task_perms(caller_perms());";
+"";
+"/* only maps */";
+"typeof(this) == MAP || raise(E_INVIND, \"Only type map\");";
+"";
+"/* don't respond to calls from built-ins */";
+"{_, name, programmer, location, _} = callers()[1];";
+"if (name && programmer == $nothing && location == $nothing)";
+"  return;";
+"endif";
+"";
+"if (this && `prototype = this[\"prototype\"] ! E_RANGE' in $frobs)";
+"  return prototype:(verb)(@args);";
+"endif";
+"";
+"return pass(@args);";
+"";
+"chunk_length:16";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:10 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#37:0
+$restrict_to_caller($system, "server_started");
+try
+file_stat(".");
+`file_mkdir("private") || server_log(tostr(file_version(), ": created \"files/private\"")) ! E_FILE';
+`file_mkdir("private/app") || server_log(tostr(file_version(), ": created \"files/private/app\"")) ! E_FILE';
+`file_mkdir("public") || server_log(tostr(file_version(), ": created \"files/public\"")) ! E_FILE';
+`file_mkdir("public/app") || server_log(tostr(file_version(), ": created \"files/public/app\"")) ! E_FILE';
+`file_mkdir("public/css") || server_log(tostr(file_version(), ": created \"files/public/css\"")) ! E_FILE';
+`file_mkdir("public/img") || server_log(tostr(file_version(), ": created \"files/public/img\"")) ! E_FILE';
+`file_mkdir("public/js") || server_log(tostr(file_version(), ": created \"files/public/js\"")) ! E_FILE';
+`file_mkdir("tmp") || server_log(tostr(file_version(), ": created \"files/tmp\"")) ! E_FILE';
+except (ANY)
+server_log(tostr(file_version(), ": missing \"files\" directory"));
+endtry
+return;
+"$restrict_to_caller($system, \"server_started\");";
+"try";
+"  file_stat(\".\");";
+"  `file_mkdir(\"private\") || server_log(tostr(file_version(), \": created \\\"files/private\\\"\")) ! E_FILE';";
+"  `file_mkdir(\"private/app\") || server_log(tostr(file_version(), \": created \\\"files/private/app\\\"\")) ! E_FILE';";
+"  `file_mkdir(\"public\") || server_log(tostr(file_version(), \": created \\\"files/public\\\"\")) ! E_FILE';";
+"  `file_mkdir(\"public/app\") || server_log(tostr(file_version(), \": created \\\"files/public/app\\\"\")) ! E_FILE';";
+"  `file_mkdir(\"public/css\") || server_log(tostr(file_version(), \": created \\\"files/public/css\\\"\")) ! E_FILE';";
+"  `file_mkdir(\"public/img\") || server_log(tostr(file_version(), \": created \\\"files/public/img\\\"\")) ! E_FILE';";
+"  `file_mkdir(\"public/js\") || server_log(tostr(file_version(), \": created \\\"files/public/js\\\"\")) ! E_FILE';";
+"  `file_mkdir(\"tmp\") || server_log(tostr(file_version(), \": created \\\"files/tmp\\\"\")) ! E_FILE';";
+"except (ANY)";
+"  server_log(tostr(file_version(), \": missing \\\"files\\\" directory\"));";
+"endtry";
+"";
+"chunk_length:14";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:22 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#38:0
+$permit("wizard", "owner");
+{?full = 1} = args;
+if (full)
+return mapvalues(this.attachments);
+else
+return mapkeys(this.attachments);
+endif
+.
+#38:1
+$permit("wizard", "owner");
+{attachment} = args;
+`this.attachments[attachment] ! E_RANGE => raise(E_INVARG, tostr("Not an attachment:  ", attachment), attachment)';
+`file_stat(filename = this.attachments[attachment][2]) ! E_FILE => raise(E_FILE, tostr("No such file:  ", filename), filename)';
+.
+#38:2
+$restrict_to_builtin("recycle");
+args && raise(E_ARGS);
+for attachment in (this.attachments)
+`file_remove(attachment[2]) ! E_FILE';
+endfor
+.
+#38:3
+$private();
+{name, pool, ?mkdir = 1} = args;
+name || raise(E_INVARG, name);
+`this.attachment_pools[pool] ! E_RANGE' || raise(E_INVARG, pool);
+path = string_hash(tostr(this, name, pool), "md5");
+path[3] = "/";
+path[6] = "/";
+path[9] = "/";
+if (mkdir)
+parts = {path[1..2], path[1..5], path[1..8]};
+for part in (parts)
+`file_mkdir(tostr(this.attachment_pools[pool], "/", part)) ! E_FILE';
+endfor
+endif
+return path;
+.
+#38:4
+$permit("wizard", "owner");
+{filename, attachment, pool, type, ?processors = []} = args;
+`this.attachments[attachment] ! E_RANGE' && raise(E_INVARG, attachment);
+`this.attachment_pools[pool] ! E_RANGE' || raise(E_INVARG, pool);
+for path in ({filename, attachment})
+("." == path) && raise(E_INVARG, path);
+(".." == path) && raise(E_INVARG, path);
+index(path, "./") && raise(E_INVARG, path);
+endfor
+old_path = tostr("tmp/", filename);
+new_path = tostr(this.attachment_pools[pool], "/", this:_path_for(attachment, pool));
+file_rename(old_path, new_path);
+this.attachments[attachment] = {attachment, new_path, pool, type};
+for _, process in (processors)
+if ("thumbnail" == process)
+sizes = processors["thumbnail"];
+sizes = (typeof(sizes) == STR) ? {sizes} | sizes;
+this:_thumbnail(attachment, new_path, pool, type, sizes);
+else
+raise(E_INVARG, process);
+endif
+endfor
+return this;
+.
+#38:5
+$permit("wizard", "owner");
+{attachment} = args;
+`this.attachments[attachment] ! E_RANGE' || raise(E_INVARG, attachment);
+`file_remove(this.attachments[attachment][2]) ! E_FILE';
+this.attachments = mapdelete(this.attachments, attachment);
+return this;
+.
+#38:6
+$private();
+{path} = args;
+try
+{code, out, ERR} = exec({"identify", "-format", "%m", path});
+except (E_INVARG, E_FILE)
+return 0;
+endtry
+code && raise(E_INVARG, tostr("Can't identify:  ", decode_binary(ERR)[1]));
+return decode_binary(out)[1];
+.
+#38:7
+$private();
+{attachment, path, pool, type, sizes} = args;
+if (!this:_identify(tostr("files/", path)))
+return;
+endif
+for size in (sizes)
+match(size, "^%([1-9][0-9][0-9]?%)x%([1-9][0-9][0-9]?%)$") || raise(E_INVARG, size);
+thumbnail = tostr(this.attachment_pools[pool], "/", this:_path_for(size + ".png", pool));
+exec({"convert", tostr("files/", path), "-thumbnail", size, "-bordercolor", "white", "-border", "60", "-gravity", "center", "-crop", size + "+0+0", "+repage", tostr("files/", thumbnail)});
+this.attachments[size + ".png"] = {size + ".png", thumbnail, pool, "image/png"};
+endfor
+.
+#39:0
+$restrict_to_caller($composed);
+$frobs = setadd($frobs, $dialog.request_proto);
+$frobs = setadd($frobs, $dialog.response_proto);
+return;
+"$restrict_to_caller($composed);";
+"";
+"$frobs = setadd($frobs, $dialog.request_proto);";
+"$frobs = setadd($frobs, $dialog.response_proto);";
+"";
+"chunk_length:4";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#39:1
+$restrict_to_caller($composed);
+$frobs = setremove($frobs, $dialog.request_proto);
+$frobs = setremove($frobs, $dialog.response_proto);
+return;
+"$restrict_to_caller($composed);";
+"";
+"$frobs = setremove($frobs, $dialog.request_proto);";
+"$frobs = setremove($frobs, $dialog.response_proto);";
+"";
+"chunk_length:4";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#42:0
+{h, ?p = ""} = args;
+q = "";
+for vl, k in (h)
+for v in ((typeof(vl) == LIST) ? vl | {vl})
+q = q ? q + "&" | q;
+if (typeof(v) == MAP)
+q = tostr(q, this:generate_query_string(v, ((p + "[") + k) + "]"));
+else
+q = tostr(q, p, k, "=", v);
+endif
+endfor
+endfor
+return q;
+.
+#42:1
+{s} = args;
+if (!s)
+return [];
+endif
+h = [];
+l = {};
+s = s + "&";
+while (s)
+i = index(s, "&");
+l = {@l, s[1..i - 1]};
+s[1..i] = "";
+endwhile
+for p in (l)
+i = index(p, "=");
+f = i ? p[1..i - 1] | p;
+v = i ? p[i + 1..$] | "";
+t = f;
+ll = {};
+while (t)
+if (r = match(t, "^%[[^][]*%]"))
+ll = {@ll, t[r[1] + 1..r[2] - 1]};
+t[r[1]..r[2]] = "";
+else
+break;
+endif
+endwhile
+ll = {@ll, t};
+t = "";
+f = ll;
+if (f)
+if ((z = h:value_by_path(f)) != E_RANGE)
+h = h:set_value_by_path(f, (typeof(z) == LIST) ? {@z, v} | {z, v});
+else
+h = h:set_value_by_path(f, v);
+endif
+endif
+endfor
+return h;
+.
+#42:2
+{uri} = args;
+new = "";
+while (uri)
+if (r = match(uri, "[][!*'();:@&=+$,?#/ ]"))
+i = uri[r[1]..r[2]] in this.reserved;
+new = (new + uri[1..r[1] - 1]) + this.escaped[i];
+uri[1..r[2]] = "";
+else
+new = tostr(new, uri);
+uri = "";
+endif
+endwhile
+return new;
+.
+#42:3
+{uri} = args;
+new = "";
+while (uri)
+if (r = match(uri, "%%[a-fA-F0-9][a-fA-F0-9]%|%+"))
+chr = (uri[r[1]] != "+") ? "~" + uri[r[1] + 1..r[2]] | "~20";
+new = (new + uri[1..r[1] - 1]) + decode_binary(chr)[1];
+uri[1..r[2]] = "";
+else
+new = tostr(new, uri);
+uri = "";
+endif
+endwhile
+return new;
+.
+#43:0
+$private();
+server_log(tostr(@args));
+return;
+"$private();";
+"";
+"server_log(tostr(@args));";
+"";
+"chunk_length:3";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:1
+$private();
+bytes = {};
+for i in [1..128 / 3]
+n = random((256 * 256) * 256);
+while (n)
+bytes = {n % 256, @bytes};
+n = n / 256;
+endwhile
+endfor
+return encode_binary(bytes);
+return;
+"$private();";
+"";
+"bytes = {};";
+"for i in [1..128 / 3]";
+"  n = random(256 * 256 * 256);";
+"  while (n)";
+"    bytes = {n % 256, @bytes};";
+"    n = n / 256;";
+"  endwhile";
+"endfor";
+"";
+"return encode_binary(bytes);";
+"";
+"chunk_length:12";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:2
+$permit("owner", "wizard");
+`{port} = args ! E_ARGS => raise(E_ARGS, "Incorrect number of arguments:  port")';
+this.key = this:_key();
+listen(this, port, 0);
+this.port = port;
+return;
+"$permit(\"owner\", \"wizard\");";
+"";
+"`{port} = args ! E_ARGS => raise(E_ARGS, \"Incorrect number of arguments:  port\")';";
+"";
+"this.key = this:_key();";
+"";
+"listen(this, port, 0);";
+"";
+"this.port = port;";
+"";
+"chunk_length:9";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:3
+$permit("owner", "wizard");
+args && raise(E_ARGS);
+port = 0;
+for listener in (listeners())
+if (listener[1] == this)
+port = listener[2];
+break;
+endif
+endfor
+(!port) && raise(E_INVARG, "Server not running");
+unlisten(port);
+this.key = 0;
+return;
+"$permit(\"owner\", \"wizard\");";
+"";
+"args && raise(E_ARGS);";
+"";
+"port = 0;";
+"";
+"for listener in (listeners())";
+"  if (listener[1] == this)";
+"    port = listener[2];";
+"    break;";
+"  endif";
+"endfor";
+"";
+"!port && raise(E_INVARG, \"Server not running\");";
+"";
+"unlisten(port);";
+"";
+"this.key = 0;";
+"";
+"chunk_length:18";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:4
+$private();
+return read_http("request", @args);
+return;
+"$private();";
+"";
+"/* provides a place to redefine network behavior in a child */";
+"return read_http(\"request\", @args);";
+"";
+"chunk_length:4";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:5
+$private();
+return notify(@args);
+return;
+"$private();";
+"";
+"/* provides a place to redefine network behavior in a child */";
+"return notify(@args);";
+"";
+"chunk_length:4";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:6
+$private();
+{connection, request} = args;
+return this:_read_http(connection):merge(request);
+return;
+"$private();";
+"";
+"{connection, request} = args;";
+"";
+"return this:_read_http(connection):merge(request);";
+"";
+"chunk_length:5";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:7
+$private();
+{connection, response} = args;
+status_codes = this.status_codes;
+status = `response["status"] ! E_RANGE => 0';
+`status_codes[status] ! E_RANGE' || raise(E_INVARG, tostr("Status code must be one of:  ", status_codes:keys():join(", ")));
+if (`body = response["body"] ! E_RANGE' != E_RANGE)
+if (typeof(body) == LIST)
+body = body:join("~0D~0A") + "~0D~0A";
+endif
+content_type = `response["headers"]["content-type"] ! E_RANGE => "text/plain"';
+content_length = `response["headers"]["content-length"] ! E_RANGE => length(decode_binary(body, 1))';
+this:_notify(connection, tostr("HTTP/1.1 ", status, " ", status_codes[status], "~0D~0A"));
+this:_notify(connection, tostr("Content-Type: ", content_type, "~0D~0A"));
+this:_notify(connection, tostr("Content-Length: ", content_length, "~0D~0A"));
+for value, field in (`response["headers"] ! E_RANGE => []')
+if (!(field in {"Content-Type", "Content-Length"}))
+this:_notify(connection, tostr(field, ": ", value, "~0D~0A"));
+endif
+endfor
+this:_notify(connection, "~0D~0A");
+this:_notify(connection, body);
+else
+this:_notify(connection, tostr("HTTP/1.1 ", status, " ", status_codes[status], "~0D~0A"));
+for value, field in (`response["headers"] ! E_RANGE => []')
+this:_notify(connection, tostr(field, ": ", value, "~0D~0A"));
+endfor
+this:_notify(connection, "~0D~0A");
+endif
+return;
+"$private();";
+"";
+"{connection, response} = args;";
+"";
+"status_codes = this.status_codes;";
+"status = `response[\"status\"] ! E_RANGE => 0';";
+"`status_codes[status] ! E_RANGE' || raise(E_INVARG, tostr(\"Status code must be one of:  \", status_codes:keys():join(\", \")));";
+"";
+"if (`body = response[\"body\"] ! E_RANGE' != E_RANGE)";
+"  if (typeof(body) == LIST)";
+"    body = body:join(\"~0D~0A\") + \"~0D~0A\";";
+"  endif";
+"  content_type = `response[\"headers\"][\"content-type\"] ! E_RANGE => \"text/plain\"';";
+"  content_length = `response[\"headers\"][\"content-length\"] ! E_RANGE => length(decode_binary(body, 1))';";
+"  this:_notify(connection, tostr(\"HTTP/1.1 \", status, \" \", status_codes[status], \"~0D~0A\"));";
+"  this:_notify(connection, tostr(\"Content-Type: \", content_type, \"~0D~0A\"));";
+"  this:_notify(connection, tostr(\"Content-Length: \", content_length, \"~0D~0A\"));";
+"  for value, field in (`response[\"headers\"] ! E_RANGE => []')";
+"    if (!(field in {\"Content-Type\", \"Content-Length\"}))";
+"      this:_notify(connection, tostr(field, \": \", value, \"~0D~0A\"));";
+"    endif";
+"  endfor";
+"  this:_notify(connection, \"~0D~0A\");";
+"  this:_notify(connection, body);";
+"else";
+"  this:_notify(connection, tostr(\"HTTP/1.1 \", status, \" \", status_codes[status], \"~0D~0A\"));";
+"  for value, field in (`response[\"headers\"] ! E_RANGE => []')";
+"    this:_notify(connection, tostr(field, \": \", value, \"~0D~0A\"));";
+"  endfor";
+"  this:_notify(connection, \"~0D~0A\");";
+"endif";
+"";
+"chunk_length:31";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:8
+$private();
+{connection, chain} = args;
+request = this.request_proto:create();
+response = this.response_proto:create();
+request = this:_read_from_connection(connection, request);
+if (`request["error"] ! E_RANGE')
+return 0;
+endif
+{request, response} = this:_do_chain(request, response, chain);
+this:_write_to_connection(connection, response);
+return 1;
+return;
+"$private();";
+"";
+"{connection, chain} = args;";
+"";
+"request = this.request_proto:create();";
+"response = this.response_proto:create();";
+"";
+"request = this:_read_from_connection(connection, request);";
+"";
+"if (`request[\"error\"] ! E_RANGE')";
+"  return 0;";
+"endif";
+"";
+"/* chains of processing steps handle HTTP request */";
+"{request, response} = this:_do_chain(request, response, chain);";
+"";
+"this:_write_to_connection(connection, response);";
+"";
+"return 1;";
+"";
+"chunk_length:19";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:9
+$restrict_to_server();
+set_connection_option(player, "hold-input", 1);
+set_connection_option(player, "disable-oob", 1);
+set_connection_option(player, "binary", 1);
+while (1)
+if (!this:_do_request(player, this.default_chain))
+boot_player(player);
+break;
+endif
+endwhile
+return;
+"$restrict_to_server();";
+"";
+"set_connection_option(player, \"hold-input\", 1);";
+"set_connection_option(player, \"disable-oob\", 1);";
+"set_connection_option(player, \"binary\", 1);";
+"";
+"/* Loop forever (or until the client closes the connection or until";
+" * failure).";
+" */";
+"while (1)";
+"  if (!this:_do_request(player, this.default_chain))";
+"    boot_player(player);";
+"    break;";
+"  endif";
+"endwhile";
+"";
+"chunk_length:15";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:10
+{request, response, chain} = args;
+$private();
+try
+cookies = request:cookies();
+if (`cookie = cookies["_session"] ! E_RANGE')
+try
+i = cookie:index("-");
+hmac = decode_base64(cookie[1..i - 1]);
+session = decode_base64(cookie[i + 1..$]);
+if ((hmac && session) && (string_hmac(session, this.key) == hmac))
+try
+session = parse_json(session, "embedded-types");
+if ((session["stamp"] + 604800) < time())
+session = [];
+endif
+session["data"];
+except (ANY)
+session = [];
+endtry
+else
+session = [];
+endif
+except (ANY)
+session = [];
+endtry
+else
+session = [];
+endif
+if (session)
+session = session["data"];
+endif
+request = request:set_session(session);
+response = response:set_session(session);
+return {request, response, chain};
+except ex (ANY)
+request = request:set_exception(ex);
+return {request, response, {"cleanup", "500"}};
+endtry
+return;
+"{request, response, chain} = args;";
+"";
+"$private();";
+"";
+"try";
+"  cookies = request:cookies();";
+"  if (`cookie = cookies[\"_session\"] ! E_RANGE')";
+"    try";
+"      i = cookie:index(\"-\");";
+"      hmac = decode_base64(cookie[1..i - 1]);";
+"      session = decode_base64(cookie[i + 1..$]);";
+"      if (hmac && session && string_hmac(session, this.key) == hmac)";
+"        try";
+"          session = parse_json(session, \"embedded-types\");";
+"          if (session[\"stamp\"] + 604800 < time())";
+"            session = [];";
+"          endif";
+"          session[\"data\"];";
+"        except (ANY)";
+"          session = [];";
+"        endtry";
+"      else";
+"        session = [];";
+"      endif";
+"    except (ANY)";
+"      session = [];";
+"    endtry";
+"  else";
+"    session = [];";
+"  endif";
+"";
+"  if (session)";
+"    session = session[\"data\"];";
+"  endif";
+"";
+"  request = request:set_session(session);";
+"  response = response:set_session(session);";
+"";
+"  return {request, response, chain};";
+"";
+"except ex (ANY)";
+"  request = request:set_exception(ex);";
+"  return {request, response, {\"cleanup\", \"500\"}};";
+"endtry";
+"";
+"chunk_length:44";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:11
+{request, response, chain} = args;
+$private();
+player = `request:session()["player"] ! E_RANGE => $nothing';
+player = (valid(player) && is_player(player)) ? player | $nothing;
+set_task_local(task_local():merge(["http" -> ["session" -> ["player" -> player]]]));
+return {request, response, chain};
+return;
+"{request, response, chain} = args;";
+"";
+"$private();";
+"";
+"/* Validate the player value stored in the session and store it in a";
+" * tamper-proof container.";
+" */";
+"player = `request:session()[\"player\"] ! E_RANGE => $nothing';";
+"player = valid(player) && is_player(player) ? player | $nothing;";
+"";
+"set_task_local(task_local():merge([\"http\" -> [\"session\" -> [\"player\" -> player]]]));";
+"";
+"return {request, response, chain};";
+"";
+"chunk_length:13";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:12
+{request, response, chain} = args;
+$private();
+for item in (this.contents)
+if (isa(item, this.route))
+if (route = item:match(request))
+{object, verb, parameters} = route;
+request = request:set_parameters(`request:parameters() ! E_RANGE => []':merge(parameters));
+request = request:set_handler({object, verb});
+break;
+endif
+endif
+endfor
+return {request, response, chain};
+return;
+"{request, response, chain} = args;";
+"";
+"$private();";
+"";
+"for item in (this.contents)";
+"  if (isa(item, this.route))";
+"    if (route = item:match(request))";
+"      {object, verb, parameters} = route;";
+"      request = request:set_parameters(`request:parameters() ! E_RANGE => []':merge(parameters));";
+"      request = request:set_handler({object, verb});";
+"      break;";
+"    endif";
+"  endif";
+"endfor";
+"";
+"return {request, response, chain};";
+"";
+"chunk_length:16";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:13
+{request, response, chain} = args;
+$private();
+try
+parameters = `request:parameters() ! E_RANGE => []';
+parameters = parameters:merge(this.utilities:parse_query_string(this.utilities:unescape(request:query())));
+if (type = `request:type():split(";") ! E_RANGE')
+if (((len = length(type)) > 0) && ((type1 = type[1]:trim()) == "application/x-www-form-urlencoded"))
+parameters = parameters:merge(this.utilities:parse_query_string(this.utilities:unescape(`request:body() ! E_RANGE => ""')));
+elseif ((len > 1) && (type1 == "multipart/form-data"))
+for attr in (type[2..$])
+attr = attr:split("=");
+if ((length(attr) > 1) && (attr[1]:trim() == "boundary"))
+boundary = attr[2]:trim();
+break;
+endif
+endfor
+if (`boundary ! E_VARNF')
+body = request:body():trimr(tostr("--", boundary, "--~0D~0A"));
+for part in (body:split(tostr("--", boundary, "~0D~0A")))
+content_disposition = {};
+content_type = {"text/plain"};
+while (c = part:index("~0D~0A"))
+if (c > 1)
+header = part[1..c - 1]:split(":");
+field = header[1]:trim();
+value = header[2]:trim():split(";");
+for i in [1..length(value)]
+if (i > 1)
+j = value[i]:index("=");
+value[i] = {value[i][1..j - 1]:trim(), value[i][j + 1..$]:trim()};
+else
+value[i] = value[i]:trim();
+endif
+endfor
+if (field == "Content-Disposition")
+content_disposition = value;
+elseif (field == "Content-Type")
+content_type = value;
+endif
+part = part[c + 6..$];
+else
+part = part[c + 6..$];
+break;
+endif
+endwhile
+value = part[1..$ - 6];
+if (((len = length(content_disposition)) > 0) && (content_disposition[1] == "form-data"))
+for attr in (content_disposition[2..$])
+if (attr[1] == "name")
+name = attr[2]:trim("\"");
+elseif (attr[1] == "filename")
+filename = attr[2]:trim("\"");
+value = ["filename" -> filename, "content-type" -> content_type, "data" -> value];
+endif
+endfor
+if (`name ! E_VARNF')
+parameters = parameters:merge([name -> value]);
+endif
+endif
+endfor
+endif
+endif
+endif
+for v, k in (parameters)
+if (((typeof(v) == MAP) && `v["filename"] ! E_RANGE') && `v["data"] ! E_RANGE')
+file_mkdir(tostr("tmp/", task_id()));
+filename = tostr("tmp/", task_id(), "/", value_hash(random(), "md5"));
+f = 0;
+try
+f = file_open(filename, "w-bn");
+file_write(f, v["data"]);
+finally
+f && file_close(f);
+endtry
+v["data"] = filename;
+endif
+ll = {};
+oldk = k;
+while (oldk)
+if (r = match(oldk, "^%[[^][]*%]"))
+ll = {@ll, r[4][r[1] + 1..r[2] - 1]};
+oldk[r[1]..r[2]] = "";
+else
+ll = {@ll, oldk};
+oldk = "";
+endif
+endwhile
+if (ll)
+parameters = parameters:delete(k);
+if ((z = parameters:value_by_path(ll)) != E_RANGE)
+parameters = parameters:set_value_by_path(ll, (typeof(z) == LIST) ? {@z, v} | {z, v});
+else
+parameters = parameters:set_value_by_path(ll, v);
+endif
+endif
+endfor
+request = request:set_parameters(parameters);
+return {request, response, chain};
+except ex (ANY)
+request = request:set_exception(ex);
+return {request, response, {"cleanup", "500"}};
+endtry
+return;
+"{request, response, chain} = args;";
+"";
+"$private();";
+"";
+"try";
+"  /* parameters set in route */";
+"  parameters = `request:parameters() ! E_RANGE => []';";
+"";
+"  /* parameters from the query string */";
+"  parameters = parameters:merge(this.utilities:parse_query_string(this.utilities:unescape(request:query())));";
+"";
+"  if (type = `request:type():split(\";\") ! E_RANGE')";
+"    /* urlencoded parameters from the POST body */";
+"    if ((len = length(type)) > 0 && (type1 = type[1]:trim()) == \"application/x-www-form-urlencoded\")";
+"      parameters = parameters:merge(this.utilities:parse_query_string(this.utilities:unescape(`request:body() ! E_RANGE => \"\"')));";
+"";
+"    /* multipart form-data parameters from the POST body */";
+"    elseif (len > 1 && type1 == \"multipart/form-data\")";
+"      /* find the boundary */";
+"      for attr in (type[2..$])";
+"        attr = attr:split(\"=\");";
+"        if (length(attr) > 1 && attr[1]:trim() == \"boundary\")";
+"          boundary = attr[2]:trim();";
+"          break;";
+"        endif";
+"      endfor";
+"      if (`boundary ! E_VARNF')";
+"        /* trim the fat and process each part */";
+"        body = request:body():trimr(tostr(\"--\", boundary, \"--~0D~0A\"));";
+"        for part in (body:split(tostr(\"--\", boundary, \"~0D~0A\")))";
+"          content_disposition = {};";
+"          content_type = {\"text/plain\"};";
+"          /* process headers */";
+"          while (c = part:index(\"~0D~0A\"))";
+"            if (c > 1)";
+"              header = part[1..c - 1]:split(\":\");";
+"              field = header[1]:trim();";
+"              value = header[2]:trim():split(\";\");";
+"              for i in [1..length(value)]";
+"                if (i > 1)";
+"                  j = value[i]:index(\"=\");";
+"                  value[i] = {value[i][1..j - 1]:trim(), value[i][j + 1..$]:trim()};";
+"                else";
+"                  value[i] = value[i]:trim();";
+"                endif";
+"              endfor";
+"              if (field == \"Content-Disposition\")";
+"                content_disposition = value;";
+"              elseif (field == \"Content-Type\")";
+"                content_type = value;";
+"              endif";
+"              part = part[c + 6..$];";
+"            else";
+"              part = part[c + 6..$];";
+"              break;";
+"            endif";
+"          endwhile";
+"          /* the value is what remains */";
+"          value = part[1..$ - 6];";
+"          /* add parameter */";
+"          if ((len = length(content_disposition)) > 0 && content_disposition[1] == \"form-data\")";
+"            for attr in (content_disposition[2..$])";
+"              if (attr[1] == \"name\")";
+"                name = attr[2]:trim(\"\\\"\");";
+"              elseif (attr[1] == \"filename\")";
+"                filename = attr[2]:trim(\"\\\"\");";
+"                value = [\"filename\" -> filename, \"content-type\" -> content_type, \"data\" -> value];";
+"              endif";
+"            endfor";
+"            if (`name ! E_VARNF')";
+"              parameters = parameters:merge([name -> value]);";
+"            endif";
+"          endif";
+"        endfor";
+"      endif";
+"    endif";
+"  endif";
+"";
+"  /* post-process parameters */";
+"  for v, k in (parameters)";
+"    if (typeof(v) == MAP && `v[\"filename\"] ! E_RANGE' && `v[\"data\"] ! E_RANGE')";
+"      file_mkdir(tostr(\"tmp/\", task_id()));";
+"      filename = tostr(\"tmp/\", task_id(), \"/\", value_hash(random(), \"md5\"));";
+"      f = 0;";
+"      try";
+"        f = file_open(filename, \"w-bn\");";
+"        file_write(f, v[\"data\"]);";
+"      finally";
+"        f && file_close(f);";
+"      endtry";
+"      v[\"data\"] = filename;";
+"    endif";
+"    ll = {};";
+"    oldk = k;";
+"    while (oldk)";
+"      if (r = match(oldk, \"^%[[^][]*%]\"))";
+"        ll = {@ll, r[4][r[1] + 1..r[2] - 1]};";
+"        oldk[r[1]..r[2]] = \"\";";
+"      else";
+"        ll = {@ll, oldk};";
+"        oldk = \"\";";
+"      endif";
+"    endwhile";
+"    if (ll)";
+"      parameters = parameters:delete(k);";
+"      if ((z = parameters:value_by_path(ll)) != E_RANGE)";
+"        parameters = parameters:set_value_by_path(ll, typeof(z) == LIST ? {@z, v} | {z, v});";
+"      else";
+"        parameters = parameters:set_value_by_path(ll, v);";
+"      endif";
+"    endif";
+"  endfor";
+"";
+"  request = request:set_parameters(parameters);";
+"";
+"  return {request, response, chain};";
+"";
+"except ex (ANY)";
+"  request = request:set_exception(ex);";
+"  return {request, response, {\"cleanup\", \"500\"}};";
+"endtry";
+"";
+"chunk_length:121";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:14
+{request, response, chain} = args;
+$private();
+if (`handler = request:handler() ! E_RANGE')
+{object, verb} = handler;
+server_log(tostr("DIALOG: serving request with ", object, ":", verb));
+player = `task_local()["http"]["session"]["player"] ! E_RANGE => $nothing';
+{request, response} = this:_drop_perms_and_call_verb(object, verb, request, response);
+chain = chain:setremove("404");
+endif
+return {request, response, chain};
+return;
+"{request, response, chain} = args;";
+"";
+"$private();";
+"";
+"if (`handler = request:handler() ! E_RANGE')";
+"  {object, verb} = handler;";
+"";
+"  server_log(tostr(\"DIALOG: serving request with \", object, \":\", verb));";
+"";
+"  /* Set player and then drop perms in a wrapper verb so that the";
+"   * dropped perms don't make us lose the player change.";
+"   */";
+"  player = `task_local()[\"http\"][\"session\"][\"player\"] ! E_RANGE => $nothing';";
+"";
+"  {request, response} = this:_drop_perms_and_call_verb(object, verb, request, response);";
+"";
+"  /* If successful, remove the 404 -- if present, this should be";
+"   * the first, last and only 404.";
+"   */";
+"  chain = chain:setremove(\"404\");";
+"endif";
+"";
+"return {request, response, chain};";
+"";
+"chunk_length:23";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:15
+{request, response, chain} = args;
+$private();
+try
+data = `response:session() ! E_RANGE => []';
+`data = data:delete("player") ! E_RANGE';
+if (typeof(player = `task_local()["http"]["session"]["player"] ! E_RANGE') == OBJ)
+data["player"] = player;
+endif
+session = ["data" -> data, "stamp" -> time()];
+session = generate_json(session, "embedded-types");
+hmac = string_hmac(session, this.key);
+session = encode_base64(session);
+hmac = encode_base64(hmac);
+headers = `response:headers() ! E_RANGE => []';
+set_cookie = `headers["Set-Cookie"] ! E_RANGE => {}';
+set_cookie = {@set_cookie, tostr("_session=", hmac, "-", session, ";path=/;")};
+headers["Set-Cookie"] = set_cookie:join(",");
+response = response:set_headers(headers);
+try
+for file in (file_list(tostr("tmp/", task_id())))
+file_remove(tostr("tmp/", task_id(), "/", file));
+endfor
+file_rmdir(tostr("tmp/", task_id()));
+except (E_FILE)
+endtry
+return {request, response, chain};
+except ex (ANY)
+request = request:set_exception(ex);
+return {request, response, {"500"}};
+endtry
+return;
+"{request, response, chain} = args;";
+"";
+"$private();";
+"";
+"try";
+"  /* Preserve the player data in the session.  The only way to";
+"   * change this is by changing a task local value (see the \"Set";
+"   * Player in Session\" capability).";
+"   */";
+"  data = `response:session() ! E_RANGE => []';";
+"";
+"  `data = data:delete(\"player\") ! E_RANGE';";
+"";
+"  if (typeof(player = `task_local()[\"http\"][\"session\"][\"player\"] ! E_RANGE') == OBJ)";
+"    data[\"player\"] = player;";
+"  endif";
+"";
+"  /* secure session */";
+"  session = [\"data\" -> data, \"stamp\" -> time()];";
+"  session = generate_json(session, \"embedded-types\");";
+"  hmac = string_hmac(session, this.key);";
+"  session = encode_base64(session);";
+"  hmac = encode_base64(hmac);";
+"";
+"  /* store in cookie */";
+"  headers = `response:headers() ! E_RANGE => []';";
+"  set_cookie = `headers[\"Set-Cookie\"] ! E_RANGE => {}';";
+"  set_cookie = {@set_cookie, tostr(\"_session=\", hmac, \"-\", session, \";path=/;\")};";
+"  headers[\"Set-Cookie\"] = set_cookie:join(\",\");";
+"  response = response:set_headers(headers);";
+"";
+"  /* clean temporary files */";
+"  try";
+"    for file in (file_list(tostr(\"tmp/\", task_id())))";
+"      file_remove(tostr(\"tmp/\", task_id(), \"/\", file));";
+"    endfor";
+"    file_rmdir(tostr(\"tmp/\", task_id()));";
+"  except (E_FILE)";
+"  endtry";
+"";
+"  return {request, response, chain};";
+"";
+"except ex (ANY)";
+"  request = request:set_exception(ex);";
+"  return {request, response, {\"500\"}};";
+"endtry";
+"";
+"chunk_length:46";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:16
+{request, response, chain} = args;
+$private();
+response = response:set_type("text/html");
+body = "<html><head><title>%m</title></head><body><h1>%m</h1>%c</body></html>";
+if (("500" == verb) && `ex = request:exception() ! E_RANGE')
+body = body:strsub(["%m" -> "Internal Server Error", "%c" -> this:traceback(ex)]);
+response = response:set_status(500):set_body(body);
+elseif ("500" == verb)
+body = body:strsub(["%m" -> "Internal Server Error", "%c" -> ""]);
+response = response:set_status(500):set_body(body);
+elseif ("404" == verb)
+body = body:strsub(["%m" -> "Not Found", "%c" -> ""]);
+response = response:set_status(404):set_body(body);
+endif
+return {request, response, chain};
+return;
+"{request, response, chain} = args;";
+"$private();";
+"response = response:set_type(\"text/html\");";
+"body = \"<html><head><title>%m</title></head><body><h1>%m</h1>%c</body></html>\";";
+"if (\"500\" == verb && `ex = request:exception() ! E_RANGE')";
+"  body = body:strsub([\"%m\" -> \"Internal Server Error\", \"%c\" -> this:traceback(ex)]);";
+"  response = response:set_status(500):set_body(body);";
+"elseif (\"500\" == verb)";
+"  body = body:strsub([\"%m\" -> \"Internal Server Error\", \"%c\" -> \"\"]);";
+"  response = response:set_status(500):set_body(body);";
+"elseif (\"404\" == verb)";
+"  body = body:strsub([\"%m\" -> \"Not Found\", \"%c\" -> \"\"]);";
+"  response = response:set_status(404):set_body(body);";
+"endif";
+"return {request, response, chain};";
+"";
+"chunk_length:15";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:17
+{ex} = args;
+$private();
+{l, @r} = ex[4];
+tb = "<ol>";
+tb = tostr(tb, "<li><code>", l[4], ":", l[2], @(l[4] != l[1]) ? {" (this == ", toliteral(l[1]), ")"} | {}, ", line ", l[6], ": ", ex[2], "</code></li>");
+for l in (r)
+tb = tostr(tb, "<li><code>... called from ", l[4], ":", l[2], @(l[4] != l[1]) ? {" (this == ", toliteral(l[1]), ")"} | {}, ", line ", l[6], "</code></li>");
+endfor
+tb = tostr(tb, "<li><code>(End of traceback)</code></li>");
+tb = tostr(tb, "</ol>");
+return tb;
+.
+#43:18
+{verb, @args} = args;
+$permit("wizard");
+set_task_perms(caller_perms());
+(verb in {"_do_request", "external", "session", "player", "route", "parameters", "serve", "cleanup", "404", "500"}) || raise(E_INVARG);
+return this:(verb)(@args);
+return;
+"{verb, @args} = args;";
+"$permit(\"wizard\");";
+"set_task_perms(caller_perms());";
+"verb in {\"_do_request\", \"external\", \"session\", \"player\", \"route\", \"parameters\", \"serve\", \"cleanup\", \"404\", \"500\"} || raise(E_INVARG);";
+"return this:(verb)(@args);";
+"";
+"chunk_length:5";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:19
+{object, verb, request, response} = args;
+$private();
+set_task_perms(player);
+return object:(verb)(request, response);
+return;
+"{object, verb, request, response} = args;";
+"$private();";
+"set_task_perms(player);";
+"return object:(verb)(request, response);";
+"";
+"chunk_length:4";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:20
+$private();
+{request, response, chain} = args;
+set_task_perms($nothing);
+try
+while (chain)
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+{top, @chain} = chain;
+if (typeof(top) == LIST)
+{object, verb} = top;
+else
+object = this;
+verb = top;
+endif
+if ((object == this) || (object in this.contents))
+{request, response, chain} = object:(verb)(request, response, chain);
+else
+raise(E_PERM, tostr("Permission denied:  chain to ", object, ":", verb));
+endif
+endwhile
+except ex (ANY)
+request = request:set_exception(ex);
+if ("cleanup" in chain)
+{request, response, chain} = this:cleanup(request, response, chain);
+endif
+{request, response, chain} = this:("500")(request, response, chain);
+endtry
+return {request, response};
+return;
+"$private();";
+"";
+"{request, response, chain} = args;";
+"";
+"/* Drop perms here as a precaution.  Any special (wiz) verbs called";
+" * below won't see themselves as having been called with special (wiz)";
+" * permissions.";
+" */";
+"set_task_perms($nothing);";
+"";
+"try";
+"";
+"  while (chain)";
+"    ticks_left() < 10000 || seconds_left() < 2 && suspend(0);";
+"";
+"    {top, @chain} = chain;";
+"";
+"    if (typeof(top) == LIST)";
+"      {object, verb} = top;";
+"    else";
+"      object = this;";
+"      verb = top;";
+"    endif";
+"";
+"    /* For boots and suspenders, make sure the object on which the";
+"     * verb is being invoked is on this or in the contents of this.";
+"     */";
+"    if (object == this || object in this.contents)";
+"      {request, response, chain} = object:(verb)(request, response, chain);";
+"    else";
+"      raise(E_PERM, tostr(\"Permission denied:  chain to \", object, \":\", verb));";
+"    endif";
+"  endwhile";
+"";
+"/* Try to be smart about failure.  No matter what's left in the chain,";
+" * only do the \"cleanup\" and \"500\" steps -- if we fail while doing";
+" * them, _don't_ fail again.";
+" */";
+"except ex (ANY)";
+"  request = request:set_exception(ex);";
+"";
+"  if (\"cleanup\" in chain)";
+"    {request, response, chain} = this:cleanup(request, response, chain);";
+"  endif";
+"";
+"  {request, response, chain} = this:(\"500\")(request, response, chain);";
+"endtry";
+"";
+"";
+"return {request, response};";
+"";
+"chunk_length:50";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#44:0
+return ["prototype" -> this];
+.
+#44:1
+return caller[verb];
+.
+#44:2
+{value} = args;
+caller[verb[5..$]] = value;
+return caller;
+.
+#44:3
+cookies = [];
+cookie = `caller["headers"]["cookie"] ! ANY => ""';
+for cookie in (cookie:split(";"))
+i = index(cookie, "=");
+key = cookie[1..i - 1]:trim();
+value = cookie[i + 1..$]:trim();
+cookies[key] = value;
+endfor
+return cookies;
+.
+#44:4
+i = caller["uri"]:index("?");
+return i ? caller["uri"][1..i - 1] | caller["uri"];
+.
+#44:5
+i = caller["uri"]:index("?");
+return i ? caller["uri"][i + 1..$] | "";
+.
+#44:6
+fields = ["type" -> "Content-Type", "length" -> "Content-Length"];
+return caller["headers"][fields[verb]];
+.
+#44:7
+{value} = args;
+fields = ["set_type" -> "Content-Type", "set_length" -> "Content-Length"];
+(`caller["headers"] ! E_RANGE' != E_RANGE) || (caller["headers"] = []);
+caller["headers"][fields[verb]] = value;
+return caller;
+.
+#45:0
+return ["prototype" -> this];
+.
+#45:1
+return caller[verb];
+.
+#45:2
+{value} = args;
+caller[verb[5..$]] = value;
+return caller;
+.
+#45:3
+{value} = args;
+headers = `caller["headers"] ! E_RANGE => []';
+fields = ["set_type" -> "Content-Type", "set_length" -> "Content-Length", "set_location" -> "Location"];
+headers[fields[verb]] = value;
+caller["headers"] = headers;
+return caller;
+.
+#46:0
+return {};
+return;
+"/* A route can match on anything in a request -- common criteria are";
+" * HTTP method and URI.  A matched route returns the object/verb that";
+" * will handle the request, as well as parameters that will be added";
+" * to the other parameters in the request.";
+" *";
+" * In:";
+" *  MAP request";
+" * Out:";
+" *  OBJ receiver";
+" *  STR verb";
+" *  MAP parameters";
+" */";
+"return {};";
+"";
+"chunk_length:13";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#47:0
+$permit("owner", "wizard");
+`{player} = args ! E_ARGS => raise(E_ARGS, "Incorrect number of arguments:  OBJ player")';
+(valid(player) || (player == $nothing)) || raise(E_INVARG, tostr("Invalid argument:  ", player), player);
+(valid(player) && (player.wizard || player.programmer)) && raise(E_INVARG, tostr("Invalid argument:  ", player), player);
+if (valid(player))
+valid = 0;
+for prototype in (this.prototypes)
+if (isa(player, prototype))
+valid = 1;
+break;
+endif
+endfor
+else
+valid = 1;
+endif
+valid || raise(E_PERM);
+set_task_local(task_local():merge(["http" -> ["session" -> ["player" -> player]]]));
+return;
+"$permit(\"owner\", \"wizard\");";
+"";
+"`{player} = args ! E_ARGS => raise(E_ARGS, \"Incorrect number of arguments:  OBJ player\")';";
+"";
+"(valid(player) || player == $nothing) || raise(E_INVARG, tostr(\"Invalid argument:  \", player), player);";
+"valid(player) && (player.wizard || player.programmer) && raise(E_INVARG, tostr(\"Invalid argument:  \", player), player);";
+"";
+"if (valid(player))";
+"  valid = 0;";
+"  for prototype in (this.prototypes)";
+"    if (isa(player, prototype))";
+"      valid = 1;";
+"      break;";
+"    endif";
+"  endfor";
+"else";
+"  valid = 1;";
+"endif";
+"valid || raise(E_PERM);";
+"";
+"set_task_local(task_local():merge([\"http\" -> [\"session\" -> [\"player\" -> player]]]));";
+"";
+"chunk_length:21";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#47:1
+$permit("owner", "wizard");
+args && raise(E_ARGS);
+return task_local()["http"]["session"]["player"];
+return;
+"$permit(\"owner\", \"wizard\");";
+"";
+"args && raise(E_ARGS);";
+"";
+"return task_local()[\"http\"][\"session\"][\"player\"];";
+"";
+"chunk_length:5";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#48:0
+$restrict_to_caller(this.location);
+{request} = args;
+if (request:uri() == "/")
+return {this, "it_works!", []};
+else
+return {};
+endif
+return;
+"$restrict_to_caller(this.location);";
+"";
+"{request} = args;";
+"";
+"if (request:uri() == \"/\")";
+"  return {this, \"it_works!\", []};";
+"else";
+"  return {};";
+"endif";
+"";
+"chunk_length:9";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#48:1
+$restrict_to_caller(this.location);
+{request, response} = args;
+body = {"<html>", "<head>", "<title>It Works!</title>", "</head>", "<body>", "<h1>It Works!</h1>", "<p>Welcome to Stunt!  For information about Stunt, check out <a href='http://stunt.io/'>http://stunt.io/</a>.</p>", "", "</body>", "</html>"};
+response = response:set_status(200):set_type("text/html"):set_body(body);
+return {request, response};
+return;
+"$restrict_to_caller(this.location);";
+"";
+"{request, response} = args;";
+"";
+"body = {";
+"  \"<html>\",";
+"    \"<head>\",";
+"      \"<title>It Works!</title>\",";
+"    \"</head>\",";
+"    \"<body>\",";
+"      \"<h1>It Works!</h1>\",";
+"      \"<p>Welcome to Stunt!  For information about Stunt, check out <a href='http://stunt.io/'>http://stunt.io/</a>.</p>\",";
+"      \"\",";
+"    \"</body>\",";
+"  \"</html>\"";
+"};";
+"";
+"response = response:set_status(200):set_type(\"text/html\"):set_body(body);";
+"";
+"return {request, response};";
+"";
+"chunk_length:20";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#50:0
+$restrict_to_caller($dialog.server, "route");
+{request} = args;
+uri = request:uri();
+uri = uri:strsub(["%20" -> " "]);
+if ("/" == uri[$])
+uri = uri + "index.html";
+endif
+if (`file_stat("public" + uri) ! E_FILE')
+return {this, "get", []};
+endif
+return {};
+return;
+"$restrict_to_caller($dialog.server, \"route\");";
+"";
+"{request} = args;";
+"";
+"uri = request:uri();";
+"";
+"/* replace common URI escapes */";
+"uri = uri:strsub([\"%20\" ->\" \"]);";
+"";
+"/* questionably, handle the common case of directory access */";
+"if (\"/\" == uri[$])";
+"  uri = uri + \"index.html\";";
+"endif";
+"";
+"if (`file_stat(\"public\" + uri) ! E_FILE')";
+"  return {this, \"get\", []};";
+"endif";
+"";
+"return {};";
+"";
+"chunk_length:19";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:19:07 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#50:1
+$restrict_to_caller($dialog.server, "_drop_perms_and_call_verb", "serve");
+{request, response} = args;
+try
+uri = request:uri();
+uri = uri:strsub(["%20" -> " "]);
+if ("/" == uri[$])
+uri = uri + "index.html";
+endif
+file = "public" + uri;
+data = "";
+if (size = file_size(file))
+f = 0;
+try
+f = file_open(file, "r-bn");
+while (!file_eof(f))
+chunk = file_read(f, 10000);
+data = data + chunk;
+endwhile
+finally
+f && file_close(f);
+endtry
+endif
+type = "application/octet-stream";
+ext = (length(parts = uri:split(".")) > 1) ? parts[$] | "";
+if ("txt" == ext)
+type = "text/plain";
+elseif ("html" == ext)
+type = "text/html";
+elseif ("jpeg" == ext)
+type = "image/jpeg";
+elseif ("jpg" == ext)
+type = "image/jpeg";
+elseif ("png" == ext)
+type = "image/png";
+elseif ("gif" == ext)
+type = "image/gif";
+elseif ("css" == ext)
+type = "text/css";
+elseif ("less" == ext)
+type = "text/css";
+elseif ("js" == ext)
+type = "text/javascript";
+elseif ("json" == ext)
+type = "application/json";
+elseif ("xml" == ext)
+type = "application/xml";
+elseif (("moo" == ext) || ("moocode" == ext))
+type = "application/moocode";
+else
+try
+{code, out, ERR} = exec({"identify", "-format", "%m", "files/" + file});
+if (!code)
+if ("JPEG" == (out = decode_binary(out)[1]))
+type = "image/jpeg";
+elseif ("PNG" == out)
+type = "image/png";
+elseif ("GIF" == out)
+type = "image/gif";
+endif
+endif
+except (E_INVARG, E_EXEC)
+endtry
+endif
+server_log(tostr("EXTERNAL: serving file: ", file));
+response = response:set_status(200):set_body(data):set_type(type):set_length(size);
+return {request, response};
+except (E_FILE)
+endtry
+return {request, response};
+return;
+"$restrict_to_caller($dialog.server, \"_drop_perms_and_call_verb\", \"serve\");";
+"";
+"{request, response} = args;";
+"";
+"try";
+"  uri = request:uri();";
+"";
+"  /* replace common URI escapes */";
+"  uri = uri:strsub([\"%20\" ->\" \"]);";
+"";
+"  /* questionably, handle the common case of directory access */";
+"  if (\"/\" == uri[$])";
+"    uri = uri + \"index.html\";";
+"  endif";
+"";
+"  file = \"public\" + uri;";
+"";
+"  /* read data */";
+"  data = \"\";";
+"  if (size = file_size(file))";
+"    f = 0;";
+"    try";
+"      f = file_open(file, \"r-bn\");";
+"      while (!file_eof(f))";
+"        chunk = file_read(f, 10000);";
+"        data = data + chunk;";
+"      endwhile";
+"    finally";
+"      f && file_close(f);";
+"    endtry";
+"  endif";
+"";
+"  /* determine the type */";
+"  /* the default should be \"text/plain but I don't buy that \"*/";
+"  type = \"application/octet-stream\";";
+"";
+"  ext = length(parts = uri:split(\".\")) > 1 ? parts[$] | \"\";";
+"";
+"  if (\"txt\" == ext)";
+"    type = \"text/plain\";";
+"  elseif (\"html\" == ext)";
+"    type = \"text/html\";";
+"  elseif (\"jpeg\" == ext)";
+"    type = \"image/jpeg\";";
+"  elseif (\"jpg\" == ext)";
+"    type = \"image/jpeg\";";
+"  elseif (\"png\" == ext)";
+"    type = \"image/png\";";
+"  elseif (\"gif\" == ext)";
+"    type = \"image/gif\";";
+"  elseif (\"css\" == ext)";
+"    type = \"text/css\";";
+"  elseif (\"less\" == ext)";
+"    type = \"text/css\";";
+"  elseif (\"js\" == ext)";
+"    type = \"text/javascript\";";
+"  elseif (\"json\" == ext)";
+"    type = \"application/json\";";
+"  elseif (\"xml\" == ext)";
+"    type = \"application/xml\";";
+"  elseif (\"moo\" == ext || \"moocode\" == ext)";
+"    type = \"application/moocode\";";
+"  else";
+"    /* last ditch effort, try to exec `identify' */";
+"    try";
+"      {code, out, err} = exec({\"identify\", \"-format\", \"%m\", \"files/\" + file});";
+"      if (!code)";
+"        if (\"JPEG\" == (out = decode_binary(out)[1]))";
+"          type = \"image/jpeg\";";
+"        elseif (\"PNG\" == out)";
+"          type = \"image/png\";";
+"        elseif (\"GIF\" == out)";
+"          type = \"image/gif\";";
+"        endif";
+"      endif";
+"    except (E_INVARG, E_EXEC)";
+"    endtry";
+"  endif";
+"";
+"  server_log(tostr(\"EXTERNAL: serving file: \", file));";
+"";
+"  response = response:set_status(200):set_body(data):set_type(type):set_length(size);;";
+"";
+"  return {request, response};";
+"";
+"except (E_FILE)";
+"endtry";
+"";
+"return {request, response};";
+"";
+"chunk_length:89";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:19:07 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#51:0
+$restrict_to_caller($dialog.server, "route");
+{request} = args;
+if ((request:method() == "get") && (request:uri():index("///") == 1))
+return {this, "get", []};
+endif
+return {};
+return;
+"$restrict_to_caller($dialog.server, \"route\");";
+"";
+"{request} = args;";
+"";
+"if (request:method() == \"get\" && request:uri():index(\"///\") == 1)";
+"  return {this, \"get\", []};";
+"endif";
+"";
+"return {};";
+"";
+"chunk_length:9";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:19:07 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#51:1
+$restrict_to_caller($dialog.server, "_drop_perms_and_call_verb", "serve");
+set_task_perms(caller_perms());
+{request, response} = args;
+uri = request:uri();
+if (uri:index("///") == 1)
+if (r = uri:match((("^///" + "%(%(%w+%)/%(%w+%)?%)?") + "%(/%(%w+%)/%(%w+%)?%)?") + "$"))
+a1 = r[4][r[3][2][1]..r[3][2][2]];
+a2 = r[4][r[3][3][1]..r[3][3][2]];
+b1 = r[4][r[3][5][1]..r[3][5][2]];
+b2 = r[4][r[3][6][1]..r[3][6][2]];
+if ("///" == r[4])
+response = response:set_status(200);
+response = response:set_type("application/json");
+response = response:set_body("{}");
+elseif (((("objects" == a1) && a2) && (!b1)) && (!b2))
+response = response:set_status(200);
+response = response:set_type("application/json");
+response = response:set_body(generate_json($shapes:read_object(toobj(a2)), "embedded-types"));
+elseif (((("objects" == a1) && a2) && ("attributes" == b1)) && b2)
+response = response:set_status(200);
+response = response:set_type("application/json");
+response = response:set_body(generate_json($shapes:read_attribute(toobj(a2), b2), "embedded-types"));
+elseif (((("objects" == a1) && a2) && ("properties" == b1)) && b2)
+response = response:set_status(200);
+response = response:set_type("application/json");
+response = response:set_body(generate_json($shapes:read_property(toobj(a2), toint(b2)), "embedded-types"));
+elseif (((("objects" == a1) && a2) && ("verbs" == b1)) && b2)
+response = response:set_status(200);
+response = response:set_type("application/json");
+response = response:set_body(generate_json($shapes:read_verb(toobj(a2), toint(b2)), "embedded-types"));
+else
+response = response:set_status(404);
+response = response:set_type("application/json");
+response = response:set_body("{}");
+endif
+else
+response = response:set_status(404);
+response = response:set_type("application/json");
+response = response:set_body("{}");
+endif
+endif
+return {request, response};
+return;
+"$restrict_to_caller($dialog.server, \"_drop_perms_and_call_verb\", \"serve\");";
+"";
+"set_task_perms(caller_perms());";
+"";
+"{request, response} = args;";
+"";
+"uri = request:uri();";
+"";
+"if (uri:index(\"///\") == 1)";
+"  if (r = uri:match(\"^///\" + \"%(%(%w+%)/%(%w+%)?%)?\" + \"%(/%(%w+%)/%(%w+%)?%)?\" + \"$\"))";
+"    a1 = r[4][r[3][2][1]..r[3][2][2]];";
+"    a2 = r[4][r[3][3][1]..r[3][3][2]];";
+"    b1 = r[4][r[3][5][1]..r[3][5][2]];";
+"    b2 = r[4][r[3][6][1]..r[3][6][2]];";
+"    if (\"///\" == r[4])";
+"      response = response:set_status(200);";
+"      response = response:set_type(\"application/json\");";
+"      response = response:set_body(\"{}\");";
+"    elseif (\"objects\" == a1 && a2 && !b1 && !b2)";
+"      response = response:set_status(200);";
+"      response = response:set_type(\"application/json\");";
+"      response = response:set_body(generate_json($shapes:read_object(toobj(a2)), \"embedded-types\"));";
+"    elseif (\"objects\" == a1 && a2 && \"attributes\" == b1 && b2)";
+"      response = response:set_status(200);";
+"      response = response:set_type(\"application/json\");";
+"      response = response:set_body(generate_json($shapes:read_attribute(toobj(a2), b2), \"embedded-types\"));";
+"    elseif (\"objects\" == a1 && a2 && \"properties\" == b1 && b2)";
+"      response = response:set_status(200);";
+"      response = response:set_type(\"application/json\");";
+"      response = response:set_body(generate_json($shapes:read_property(toobj(a2), toint(b2)), \"embedded-types\"));";
+"    elseif (\"objects\" == a1 && a2 && \"verbs\" == b1 && b2)";
+"      response = response:set_status(200);";
+"      response = response:set_type(\"application/json\");";
+"      response = response:set_body(generate_json($shapes:read_verb(toobj(a2), toint(b2)), \"embedded-types\"));";
+"    else";
+"      response = response:set_status(404);";
+"      response = response:set_type(\"application/json\");";
+"      response = response:set_body(\"{}\");";
+"    endif";
+"  else";
+"    response = response:set_status(404);";
+"    response = response:set_type(\"application/json\");";
+"    response = response:set_body(\"{}\");";
+"  endif";
+"endif";
+"";
+"return {request, response};";
+"";
+"chunk_length:47";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:19:07 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#52:0
+$restrict_to_caller($dialog.server, "_do_chain");
+{request, response, chain} = args;
+if (`request["upgrade"] ! E_RANGE')
+if (`request["headers"]["upgrade"] ! E_RANGE' == "moo")
+if (((typeof(new_player = `task_local()["http"]["session"]["player"] ! E_RANGE') == OBJ) && valid(new_player)) && is_player(new_player))
+set_connection_option(player, "hold-input", 0);
+set_connection_option(player, "disable-oob", 0);
+set_connection_option(player, "binary", 0);
+switch_player(player, new_player);
+else
+boot_player(player);
+endif
+else
+boot_player(player);
+endif
+return {request, response, {}};
+endif
+return {request, response, chain};
+return;
+"$restrict_to_caller($dialog.server, \"_do_chain\");";
+"";
+"{request, response, chain} = args;";
+"";
+"if (`request[\"upgrade\"] ! E_RANGE')";
+"  if (`request[\"headers\"][\"upgrade\"] ! E_RANGE' == \"moo\")";
+"    if (typeof(new_player = `task_local()[\"http\"][\"session\"][\"player\"] ! E_RANGE') == OBJ && valid(new_player) && is_player(new_player))";
+"      set_connection_option(player, \"hold-input\", 0);";
+"      set_connection_option(player, \"disable-oob\", 0);";
+"      set_connection_option(player, \"binary\", 0);";
+"      switch_player(player, new_player);";
+"    else";
+"      boot_player(player);";
+"    endif";
+"  else";
+"    boot_player(player);";
+"  endif";
+"";
+"  return {request, response, {}};";
+"endif";
+"";
+"return {request, response, chain};";
+"";
+"chunk_length:22";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:19:07 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#53:0
+$restrict_to_caller($dialog.server, "_do_chain");
+{request, response, chain} = args;
+{_, _, _, host, _, _} = connection_name(player):split();
+player = `task_local()["http"]["session"]["player"] ! E_RANGE => $nothing';
+name = `player.name ! E_INVIND => ""';
+server_log(tostr("HTTP: ", host:trim(","), " \"", name, "\" (", player, ") \"", request:method(), " ", request:uri(), "\" ", response:status()));
+return {request, response, chain};
+return;
+"$restrict_to_caller($dialog.server, \"_do_chain\");";
+"";
+"{request, response, chain} = args;";
+"";
+"{_, _, _, host, _, _} = connection_name(player):split();";
+"";
+"player = `task_local()[\"http\"][\"session\"][\"player\"] ! E_RANGE => $nothing';";
+"name = `player.name ! E_INVIND => \"\"';";
+"";
+"server_log(tostr(\"HTTP: \", host:trim(\",\"), \" \\\"\", name, \"\\\" (\", player, \") \\\"\", request:method(), \" \", request:uri(), \"\\\" \", response:status()));";
+"";
+"return {request, response, chain};";
+"";
+"chunk_length:12";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:19:07 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#54:0
+$restrict_to_caller($composed);
+$external_compilers["application/x-mustache"] = $mustache.compiler;
+return;
+"$restrict_to_caller($composed);";
+"";
+"$external_compilers[\"application/x-mustache\"] = $mustache.compiler;";
+"";
+"chunk_length:3";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:19:23 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#54:1
+$restrict_to_caller($composed);
+$external_compilers = $external_compilers:delete("application/x-mustache");
+return;
+"$restrict_to_caller($composed);";
+"";
+"$external_compilers = $external_compilers:delete(\"application/x-mustache\");";
+"";
+"chunk_length:3";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:19:23 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#57:0
+$private();
+server_log(tostr(@args));
+return;
+"$private();";
+"server_log(tostr(@args));";
+"";
+"chunk_length:2";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:19:23 2012 EST";
+"-=-=-mxyzptlk-=-=-";
+.
+#57:1
+{source, ?options = []} = args;
+code = {"stack = args;", "output = {};"};
+start_delim = "{{";
+end_delim = "}}";
+had_partial = 0;
+in_comment = 0;
+tag_count = 0;
+for line in (source)
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+if (in_comment)
+e = end_delim;
+if (!(i = line:index(e)))
+line = "";
+else
+line = line[i + length(e)..$];
+tag_count = tag_count + 1;
+in_comment = 0;
+endif
+else
+code = {@code, tostr("output = output ? {@output, ", tag_count, "} | output;")};
+if (line == "")
+code = {@code, "output = {@output, \"\"};"};
+endif
+tag_count = 0;
+endif
+while (line)
+escaped = 1;
+start_new_context = 0;
+start_new_inverted_context = 0;
+end_context = 0;
+include_partial = 0;
+set_delimiters = 0;
+comment = 0;
+s = start_delim;
+if (!(i = line:index(s)))
+code = {@code, tostr("output = {@output, ", toliteral(line), "};")};
+line = "";
+continue;
+endif
+if ((c = line[i + length(s)]) == "{")
+escaped = 0;
+s = start_delim + "{";
+e = "}" + end_delim;
+elseif (c == "&")
+escaped = 0;
+s = start_delim + "&";
+e = end_delim;
+elseif (c == "#")
+start_new_context = 1;
+s = start_delim + "#";
+e = end_delim;
+elseif (c == "^")
+start_new_inverted_context = 1;
+s = start_delim + "^";
+e = end_delim;
+elseif (c == "/")
+end_context = 1;
+s = start_delim + "/";
+e = end_delim;
+elseif (c == ">")
+include_partial = 1;
+s = start_delim + ">";
+e = end_delim;
+elseif (c == "=")
+set_delimiters = 1;
+s = start_delim + "=";
+e = "=" + end_delim;
+elseif (c == "!")
+comment = 1;
+s = start_delim + "!";
+e = end_delim;
+else
+s = start_delim;
+e = end_delim;
+endif
+content = line[1..i - 1];
+rest = line[i + length(s)..$];
+if ((!(j = rest:index(e))) && comment)
+code = {@code, tostr("output = {@output, ", toliteral(content), "};")};
+line = "";
+in_comment = 1;
+continue;
+elseif (!j)
+code = {@code, tostr("output = {@output, ", toliteral(line), "};")};
+line = "";
+continue;
+endif
+j = ((j + i) + length(s)) - 1;
+tag = original_tag = line[i + length(s)..j - 1]:trim();
+tag_list = original_tag_list = (tag != ".") ? tag:split(".") | {"."};
+code = {@code, tostr("output = {@output, ", toliteral(content), "};")};
+line = line[j + length(e)..$];
+if (comment)
+tag_count = tag_count + 1;
+elseif (include_partial)
+had_partial = 1;
+code = {@code, tostr("verb = `this:(\"", original_tag, "\")(@stack) ! E_VERBNF => {}';")};
+code = {@code, "output = {@output, verb};"};
+tag_count = tag_count + 1;
+elseif (set_delimiters)
+{start_delim, end_delim} = original_tag:split();
+tag_count = tag_count + 1;
+elseif (start_new_context)
+if ((l = length(original_tag_list)) > 1)
+code = {@code, "failed = 0;"};
+tag = original_tag_list[1];
+code = {@code, tostr("if (top = `stack[1][\"", tag, "\"] ! E_RANGE')")};
+code = {@code, "stack = {stack[1]:merge(typeof(top) == MAP ? top | []), @stack};"};
+code = {@code, "else"};
+code = {@code, "stack = {[], @stack}; failed = 1;"};
+code = {@code, "endif"};
+for tag in (original_tag_list[2..$ - 1])
+code = {@code, tostr("if (top = `stack[1][\"", tag, "\"] ! E_RANGE')")};
+code = {@code, "stack = {typeof(top) == MAP ? top | [], @stack};"};
+code = {@code, "else"};
+code = {@code, "stack = {[], @stack}; failed = 1;"};
+code = {@code, "endif"};
+endfor
+tag = original_tag_list[$];
+code = {@code, tostr("if (!failed && (top = `stack[1][\"", tag, "\"] ! E_RANGE'))")};
+code = {@code, "for item in (typeof(top) == LIST ? top | {top})"};
+code = {@code, "ticks_left() < 10000 || seconds_left() < 2 && suspend(0);"};
+code = {@code, "stack = {typeof(item) == MAP ? item | [\".\" -> item], @stack};"};
+else
+tag = original_tag_list[1];
+code = {@code, tostr("if (top = `stack[1][\"", tag, "\"] ! E_RANGE')")};
+code = {@code, "for item in (typeof(top) == LIST ? top | {top})"};
+code = {@code, "ticks_left() < 10000 || seconds_left() < 2 && suspend(0);"};
+code = {@code, "stack = {stack[1]:merge(typeof(item) == MAP ? item | [\".\" -> item]), @stack};"};
+endif
+tag_count = tag_count + 1;
+elseif (start_new_inverted_context)
+if ((l = length(original_tag_list)) > 1)
+code = {@code, "failed = 0;"};
+tag = original_tag_list[1];
+code = {@code, tostr("if (top = `stack[1][\"", tag, "\"] ! E_RANGE')")};
+code = {@code, "stack = {stack[1]:merge(typeof(top) == MAP ? top | []), @stack};"};
+code = {@code, "else"};
+code = {@code, "stack = {[], @stack}; failed = 1;"};
+code = {@code, "endif"};
+for tag in (original_tag_list[2..$ - 1])
+code = {@code, tostr("if (top = `stack[1][\"", tag, "\"] ! E_RANGE')")};
+code = {@code, "stack = {typeof(top) == MAP ? top | [], @stack};"};
+code = {@code, "else"};
+code = {@code, "stack = {[], @stack}; failed = 1;"};
+code = {@code, "endif"};
+endfor
+tag = original_tag_list[$];
+code = {@code, tostr("if (failed || !(top = `stack[1][\"", tag, "\"] ! E_RANGE'))")};
+code = {@code, "for item in ({\"\"})"};
+code = {@code, "ticks_left() < 10000 || seconds_left() < 2 && suspend(0);"};
+code = {@code, "stack = {typeof(item) == MAP ? item | [\".\" -> item], @stack};"};
+else
+tag = original_tag_list[1];
+code = {@code, tostr("if (!(top = `stack[1][\"", tag, "\"] ! E_RANGE'))")};
+code = {@code, "for item in ({\"\"})"};
+code = {@code, "ticks_left() < 10000 || seconds_left() < 2 && suspend(0);"};
+code = {@code, "stack = {stack[1]:merge(typeof(item) == MAP ? item | [\".\" -> item]), @stack};"};
+endif
+tag_count = tag_count + 1;
+elseif (end_context)
+code = {@code, "stack = stack[2..$];", "endfor", "endif"};
+if ((l = length(original_tag_list)) > 1)
+code = {@code, tostr("stack = stack[", l, "..$];")};
+endif
+tag_count = tag_count + 1;
+else
+if ((l = length(original_tag_list)) > 1)
+for tag in (original_tag_list[1..$ - 1])
+code = {@code, tostr("top = `stack[1][\"", tag, "\"] ! E_RANGE';")};
+code = {@code, "stack = {typeof(top) == MAP ? top | [], @stack};"};
+endfor
+endif
+tag = original_tag_list[$];
+if (escaped)
+code = {@code, tostr("output = {@output, strsub(strsub(strsub(strsub(", "`tostr(stack[1][\"", tag, "\"]) ! E_RANGE => \"\"'", ", \"&\", \"&amp;\"), \"<\", \"&lt;\"), \">\", \"&gt;\"), \"\\\"\", \"&quot;\")};")};
+else
+code = {@code, tostr("output = {@output, `tostr(stack[1][\"", tag, "\"]) ! E_RANGE => \"\"'};")};
+endif
+if (l > 1)
+code = {@code, tostr("stack = stack[", l, "..$];")};
+endif
+endif
+endwhile
+endfor
+code = {@code, tostr("output = output ? {@output, ", tag_count, "} | output;")};
+code = {@code, "out = {}; acc = {}; indent = \"\";"};
+code = {@code, "while (output)"};
+code = {@code, "{line, @output} = output;"};
+code = {@code, "ticks_left() < 10000 || seconds_left() < 2 && suspend(0);"};
+code = {@code, "if (typeof(line) == LIST)"};
+if (had_partial)
+code = {@code, "if (lines = line)"};
+code = {@code, "if (length(lines) > 1)"};
+code = {@code, "temp = {lines[1], 0};"};
+code = {@code, "for line in (lines[2..$ - 1])"};
+code = {@code, "temp = {@temp, indent + line, 0};"};
+code = {@code, "endfor"};
+code = {@code, "temp = {@temp, indent + lines[$]};"};
+code = {@code, "output = {@temp, @output};"};
+code = {@code, "else"};
+code = {@code, "output = {lines[1], @output};"};
+code = {@code, "endif"};
+code = {@code, "endif"};
+endif
+code = {@code, "elseif (typeof(line) == INT)"};
+code = {@code, "if (line > 0)"};
+code = {@code, "if (match(acc = tostr(@acc), \"[^ ]\"))"};
+code = {@code, "out = {@out, acc};"};
+code = {@code, "endif"};
+code = {@code, "else"};
+code = {@code, "out = {@out, tostr(@acc)};"};
+code = {@code, "endif"};
+code = {@code, "acc = {};"};
+if (had_partial)
+code = {@code, "indent = \"\";"};
+endif
+code = {@code, "else"};
+if (had_partial)
+code = {@code, "if (!match(line, \"[^ ]\"))"};
+code = {@code, "indent = line;"};
+code = {@code, "endif"};
+endif
+code = {@code, "acc = {@acc, line};"};
+code = {@code, "endif"};
+code = {@code, "endwhile"};
+code = {@code, "return out;"};
+return code;
+return;
+"{source, ?options = []} = args;";
+"";
+"/* NOTES:";
+" * LambdaMOO currently only has one kind of whitespace -- a single";
+" * space -- therefore many of the associated tests from the";
+" * specification don't quite work as-is.  In sames cases, I have";
+" * replaced tab (\\t) and newline (\\n) with a single space.  In other";
+" * cases, I have used lists to represent lines separated by a newline";
+" * (or return/newline).  Other tests just won't pass as-is without";
+" * finer control over line-endings.";
+" */";
+"";
+"code = {\"stack = args;\", \"output = {};\"};";
+"";
+"/* the initial delimiters */";
+"start_delim = \"{{\";";
+"end_delim = \"}}\";";
+"";
+"/* if true, the template had a partial */";
+"had_partial = 0;";
+"";
+"/* if true, we're processing a multiline comment */";
+"in_comment = 0;";
+"";
+"/* the number of tags in the line */";
+"tag_count = 0;";
+"";
+"/* process each line */";
+"for line in (source)";
+"  ticks_left() < 10000 || seconds_left() < 2 && suspend(0);";
+"";
+"  /* if we're processing a multiline comment, look for the end";
+"   * delimiter -- once found, continue with the rest of the line as if";
+"   * it were a continuation of the line on which the comment started";
+"   */";
+"  if (in_comment)";
+"    e = end_delim;";
+"    if (!(i = line:index(e)))";
+"      line = \"\";";
+"    else";
+"      line = line[i + length(e)..$];";
+"      tag_count = tag_count + 1;";
+"      in_comment = 0;";
+"    endif";
+"";
+"  else";
+"    /* add previous line's terminator */";
+"    code = {@code, tostr(\"output = output ? {@output, \", tag_count, \"} | output;\")};";
+"";
+"    /* preserve empty lines */";
+"    if (line == \"\")";
+"      code = {@code, \"output = {@output, \\\"\\\"};\"};";
+"    endif";
+"";
+"    tag_count = 0;";
+"";
+"  endif";
+"";
+"  /* chop each line into pieces of content separated by tags -- each";
+"   * pass through the loop tries to find a tag and the piece of";
+"   * content preceding it";
+"   */";
+"  while (line)";
+"    escaped = 1;";
+"    start_new_context = 0;";
+"    start_new_inverted_context = 0;";
+"    end_context = 0;";
+"    include_partial = 0;";
+"    set_delimiters = 0;";
+"    comment = 0;";
+"";
+"    /* look for a starting delimiter */";
+"    s = start_delim;";
+"    if (!(i = line:index(s)))";
+"      /* no delimiter! */";
+"      code = {@code, tostr(\"output = {@output, \", toliteral(line), \"};\")};";
+"      line = \"\";";
+"      continue;";
+"    endif";
+"";
+"    if ((c = line[i + length(s)]) == \"{\")";
+"      escaped = 0;";
+"      s = start_delim + \"{\";";
+"      e = \"}\" + end_delim;";
+"    elseif (c == \"&\")";
+"      escaped = 0;";
+"      s = start_delim + \"&\";";
+"      e = end_delim;";
+"    elseif (c == \"#\")";
+"      start_new_context = 1;";
+"      s = start_delim + \"#\";";
+"      e = end_delim;";
+"    elseif (c == \"^\")";
+"      start_new_inverted_context = 1;";
+"      s = start_delim + \"^\";";
+"      e = end_delim;";
+"    elseif (c == \"/\")";
+"      end_context = 1;";
+"      s = start_delim + \"/\";";
+"      e = end_delim;";
+"    elseif (c == \">\")";
+"      include_partial = 1;";
+"      s = start_delim + \">\";";
+"      e = end_delim;";
+"    elseif (c == \"=\")";
+"      set_delimiters = 1;";
+"      s = start_delim + \"=\";";
+"      e = \"=\" + end_delim;";
+"    elseif (c == \"!\")";
+"      comment = 1;";
+"      s = start_delim + \"!\";";
+"      e = end_delim;";
+"    else";
+"      s = start_delim;";
+"      e = end_delim;";
+"    endif";
+"";
+"    content = line[1..i - 1];";
+"    rest = line[i + length(s)..$];";
+"";
+"    /* look for an ending delimiter */";
+"    if (!(j = rest:index(e)) && comment)";
+"      /* no delimiter! but we're inside a comment */";
+"      code = {@code, tostr(\"output = {@output, \", toliteral(content), \"};\")};";
+"      line = \"\";";
+"      in_comment = 1;";
+"      continue;";
+"    elseif (!j)";
+"      /* no delimiter! */";
+"      code = {@code, tostr(\"output = {@output, \", toliteral(line), \"};\")};";
+"      line = \"\";";
+"      continue;";
+"    endif";
+"";
+"    /* make j relative to the beginning of the line */";
+"    j = j + i + length(s) - 1;";
+"";
+"    /* parse the tag */";
+"    tag = original_tag = line[i + length(s)..j - 1]:trim();";
+"    tag_list = original_tag_list = tag != \".\" ? tag:split(\".\") | {\".\"};";
+"";
+"    code = {@code, tostr(\"output = {@output, \", toliteral(content), \"};\")};";
+"";
+"    line = line[j + length(e)..$];";
+"";
+"    if (comment)";
+"      tag_count = tag_count + 1;";
+"";
+"    elseif (include_partial)";
+"      had_partial = 1;";
+"      code = {@code, tostr(\"verb = `this:(\\\"\", original_tag, \"\\\")(@stack) ! E_VERBNF => {}';\")};";
+"      code = {@code, \"output = {@output, verb};\"};";
+"      tag_count = tag_count + 1;";
+"";
+"    elseif (set_delimiters)";
+"      {start_delim, end_delim} = original_tag:split();";
+"      tag_count = tag_count + 1;";
+"";
+"    elseif (start_new_context)";
+"      /* if all parts succeed, consider the tag truthy */";
+"      /* always increase the stack depth so that the end-tag pops the correct number of frames off */";
+"      if ((l = length(original_tag_list)) > 1)";
+"        code = {@code, \"failed = 0;\"};";
+"        tag = original_tag_list[1];";
+"        code = {@code, tostr(\"if (top = `stack[1][\\\"\", tag, \"\\\"] ! E_RANGE')\")};";
+"        code = {@code, \"stack = {stack[1]:merge(typeof(top) == MAP ? top | []), @stack};\"};";
+"        code = {@code, \"else\"};";
+"        code = {@code, \"stack = {[], @stack}; failed = 1;\"};";
+"        code = {@code, \"endif\"};";
+"        for tag in (original_tag_list[2..$ - 1])";
+"          code = {@code, tostr(\"if (top = `stack[1][\\\"\", tag, \"\\\"] ! E_RANGE')\")};";
+"          code = {@code, \"stack = {typeof(top) == MAP ? top | [], @stack};\"};";
+"          code = {@code, \"else\"};";
+"          code = {@code, \"stack = {[], @stack}; failed = 1;\"};";
+"          code = {@code, \"endif\"};";
+"        endfor";
+"        tag = original_tag_list[$];";
+"        code = {@code, tostr(\"if (!failed && (top = `stack[1][\\\"\", tag, \"\\\"] ! E_RANGE'))\")};";
+"        code = {@code, \"for item in (typeof(top) == LIST ? top | {top})\"};";
+"        code = {@code, \"ticks_left() < 10000 || seconds_left() < 2 && suspend(0);\"};";
+"        code = {@code, \"stack = {typeof(item) == MAP ? item | [\\\".\\\" -> item], @stack};\"};";
+"      else";
+"        tag = original_tag_list[1];";
+"        code = {@code, tostr(\"if (top = `stack[1][\\\"\", tag, \"\\\"] ! E_RANGE')\")};";
+"        code = {@code, \"for item in (typeof(top) == LIST ? top | {top})\"};";
+"        code = {@code, \"ticks_left() < 10000 || seconds_left() < 2 && suspend(0);\"};";
+"        code = {@code, \"stack = {stack[1]:merge(typeof(item) == MAP ? item | [\\\".\\\" -> item]), @stack};\"};";
+"      endif";
+"      tag_count = tag_count + 1;";
+"";
+"    elseif (start_new_inverted_context)";
+"      /* if any part fails, consider the tag falsey */";
+"      /* always increase the stack depth so that the end-tag pops the correct number of frames off */";
+"      if ((l = length(original_tag_list)) > 1)";
+"        code = {@code, \"failed = 0;\"};";
+"        tag = original_tag_list[1];";
+"        code = {@code, tostr(\"if (top = `stack[1][\\\"\", tag, \"\\\"] ! E_RANGE')\")};";
+"        code = {@code, \"stack = {stack[1]:merge(typeof(top) == MAP ? top | []), @stack};\"};";
+"        code = {@code, \"else\"};";
+"        code = {@code, \"stack = {[], @stack}; failed = 1;\"};";
+"        code = {@code, \"endif\"};";
+"        for tag in (original_tag_list[2..$ - 1])";
+"          code = {@code, tostr(\"if (top = `stack[1][\\\"\", tag, \"\\\"] ! E_RANGE')\")};";
+"          code = {@code, \"stack = {typeof(top) == MAP ? top | [], @stack};\"};";
+"          code = {@code, \"else\"};";
+"          code = {@code, \"stack = {[], @stack}; failed = 1;\"};";
+"          code = {@code, \"endif\"};";
+"        endfor";
+"        tag = original_tag_list[$];";
+"        code = {@code, tostr(\"if (failed || !(top = `stack[1][\\\"\", tag, \"\\\"] ! E_RANGE'))\")};";
+"        code = {@code, \"for item in ({\\\"\\\"})\"};";
+"        code = {@code, \"ticks_left() < 10000 || seconds_left() < 2 && suspend(0);\"};";
+"        code = {@code, \"stack = {typeof(item) == MAP ? item | [\\\".\\\" -> item], @stack};\"};";
+"      else";
+"        tag = original_tag_list[1];";
+"        code = {@code, tostr(\"if (!(top = `stack[1][\\\"\", tag, \"\\\"] ! E_RANGE'))\")};";
+"        code = {@code, \"for item in ({\\\"\\\"})\"};";
+"        code = {@code, \"ticks_left() < 10000 || seconds_left() < 2 && suspend(0);\"};";
+"        code = {@code, \"stack = {stack[1]:merge(typeof(item) == MAP ? item | [\\\".\\\" -> item]), @stack};\"};";
+"      endif";
+"      tag_count = tag_count + 1;";
+"";
+"    elseif (end_context)";
+"      code = {@code, \"stack = stack[2..$];\", \"endfor\", \"endif\"};";
+"      if ((l = length(original_tag_list)) > 1)";
+"	code = {@code, tostr(\"stack = stack[\", l, \"..$];\")};";
+"      endif";
+"      tag_count = tag_count + 1;";
+"";
+"    else";
+"      if ((l = length(original_tag_list)) > 1)";
+"        for tag in (original_tag_list[1..$ - 1])";
+"          code = {@code, tostr(\"top = `stack[1][\\\"\", tag, \"\\\"] ! E_RANGE';\")};";
+"          code = {@code, \"stack = {typeof(top) == MAP ? top | [], @stack};\"};";
+"        endfor";
+"      endif";
+"      tag = original_tag_list[$];";
+"      if (escaped)";
+"        code = {@code, tostr(\"output = {@output, strsub(strsub(strsub(strsub(\", \"`tostr(stack[1][\\\"\", tag, \"\\\"]) ! E_RANGE => \\\"\\\"'\", \", \\\"&\\\", \\\"&amp;\\\"), \\\"<\\\", \\\"&lt;\\\"), \\\">\\\", \\\"&gt;\\\"), \\\"\\\\\\\"\\\", \\\"&quot;\\\")};\")};";
+"      else";
+"        code = {@code, tostr(\"output = {@output, `tostr(stack[1][\\\"\", tag, \"\\\"]) ! E_RANGE => \\\"\\\"'};\")};";
+"      endif";
+"      if (l > 1)";
+"        code = {@code, tostr(\"stack = stack[\", l, \"..$];\")};";
+"      endif";
+"    endif";
+"";
+"  endwhile";
+"";
+"endfor";
+"";
+"/* add final terminator */";
+"code = {@code, tostr(\"output = output ? {@output, \", tag_count, \"} | output;\")};";
+"";
+"/* Clean up and render.";
+" * `0' terminates lines of original content _without_ tags, otherwise";
+" * the number indicates the number of tags in the line of original";
+" * content.  Lists hold partial content, and must be indented.";
+" */";
+"code = {@code, \"out = {}; acc = {}; indent = \\\"\\\";\"};";
+"code = {@code, \"while (output)\"};";
+"code = {@code, \"{line, @output} = output;\"};";
+"code = {@code, \"ticks_left() < 10000 || seconds_left() < 2 && suspend(0);\"};";
+"code = {@code, \"if (typeof(line) == LIST)\"};";
+"if (had_partial)";
+"  code = {@code, \"if (lines = line)\"};";
+"  code = {@code, \"if (length(lines) > 1)\"};";
+"  code = {@code, \"temp = {lines[1], 0};\"};";
+"  code = {@code, \"for line in (lines[2..$ - 1])\"};";
+"  code = {@code, \"temp = {@temp, indent + line, 0};\"};";
+"  code = {@code, \"endfor\"};";
+"  code = {@code, \"temp = {@temp, indent + lines[$]};\"};";
+"  code = {@code, \"output = {@temp, @output};\"};";
+"  code = {@code, \"else\"};";
+"  code = {@code, \"output = {lines[1], @output};\"};";
+"  code = {@code, \"endif\"};";
+"  code = {@code, \"endif\"};";
+"endif";
+"code = {@code, \"elseif (typeof(line) == INT)\"};";
+"code = {@code, \"if (line > 0)\"};";
+"code = {@code, \"if (match(acc = tostr(@acc), \\\"[^ ]\\\"))\"};";
+"code = {@code, \"out = {@out, acc};\"};";
+"code = {@code, \"endif\"};";
+"code = {@code, \"else\"};";
+"code = {@code, \"out = {@out, tostr(@acc)};\"};";
+"code = {@code, \"endif\"};";
+"code = {@code, \"acc = {};\"};";
+"if (had_partial)";
+"  code = {@code, \"indent = \\\"\\\";\"};";
+"endif";
+"code = {@code, \"else\"};";
+"if (had_partial)";
+"  code = {@code, \"if (!match(line, \\\"[^ ]\\\"))\"};";
+"  code = {@code, \"indent = line;\"};";
+"  code = {@code, \"endif\"};";
+"endif";
+"code = {@code, \"acc = {@acc, line};\"};";
+"code = {@code, \"endif\"};";
+"code = {@code, \"endwhile\"};";
+"code = {@code, \"return out;\"};";
+"";
+"return code;";
+"";
+"chunk_length:302";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed Feb 22 20:19:23 2012 EST";
 "-=-=-mxyzptlk-=-=-";
 .
 0 clocks
