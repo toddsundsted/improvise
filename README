@@ -19,8 +19,8 @@ FAQ:
    connect to the running server and type "connect " followed by the
    hexadecimal string.  Ex:
      connect D210CA62C37E841CD6936146A9768EA9246D3A7917EDE3BFC1A29C63C058F783
-   If successful, you'll be created by the string "*** Connected ***"
- * How do I see what packages are installed?
+   If successful, you'll be greeted by the string "*** Connected ***"
+ * How do I see which packages are installed?
    Once logged in type:
      @list packages with $composed
    `$composed' is the reference to the package manager.  The command output
