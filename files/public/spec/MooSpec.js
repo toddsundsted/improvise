@@ -365,6 +365,30 @@ describe('Moo.Property', function() {
     v.set('Property', 'five');
     expect(v.isValid()).toBeFalsy();
   });
+
+  describe('property in the context of an object', function() {
+
+    var o;
+
+    beforeEach(function() {
+      o = new Moo.Object({
+        Attributes: {},
+        Values: {name: {Value: {value: 'Test'}}},
+        Properties: [],
+        Verbs: []
+      });
+    });
+
+    it('should ensure isDenied() returns true if access to the property with the specified id is denied', function() {
+      o.properties.add({id: 0, Meta: {status: 'denied'}, Property: {}});
+      expect(o.properties.get(0).isDenied()).toBeTruthy();
+    });
+
+    it('should ensure isDenied() returns false if access to the property with the requested id was not denied', function() {
+      o.properties.add({id: 0, Meta: {}, Property: {}});
+      expect(o.properties.get(0).isDenied()).toBeFalsy();
+    });
+  });
 });
 
 describe('Moo.Verb', function() {
@@ -500,6 +524,30 @@ describe('Moo.Verb', function() {
     expect(v.isValid()).toBeFalsy();
     v.set('Verb', 'five');
     expect(v.isValid()).toBeFalsy();
+  });
+
+  describe('verb in the context of an object', function() {
+
+    var o;
+
+    beforeEach(function() {
+      o = new Moo.Object({
+        Attributes: {},
+        Values: {name: {Value: {value: 'Test'}}},
+        Properties: [],
+        Verbs: []
+      });
+    });
+
+    it('should ensure isDenied() returns true if access to the verb with the specified id is denied', function() {
+      o.verbs.add({id: 0, Meta: {status: 'denied'}, Verb: {}});
+      expect(o.verbs.get(0).isDenied()).toBeTruthy();
+    });
+
+    it('should ensure isDenied() returns false if access to the verb with the requested id was not denied', function() {
+      o.verbs.add({id: 0, Meta: {}, Verb: {}});
+      expect(o.verbs.get(0).isDenied()).toBeFalsy();
+    });
   });
 });
 
@@ -699,8 +747,8 @@ describe('widget $().simpleObjectPanel', function() {
     o = new Moo.Object({
       Attributes: {},
       Values: {name: {Value: {value: 'Test'}}},
-      Properties: [],
-      Verbs: []
+      Properties: [{Property: {name: 'Test Property'}}],
+      Verbs: [{Verb: {names: 'Test Verb'}}]
     });
   });
 
@@ -799,5 +847,31 @@ describe('widget $().simpleObjectPanel', function() {
     expect(p.find('h1 > .parents').length).toEqual(1);
   });
 
+  it('should display the property name in the properties table', function() {
+    var s = spyOn(o.properties.get(0), 'isDenied').andReturn(0);
+    p.simpleObjectPanel({object: o});
+    expect(p.find('table.properties tr:first > td').text()).toContain('Test Property');
+    expect(s).toHaveBeenCalled();
+  });
 
+  it('should display "denied" in the properties table if access to the property is denied', function() {
+    var s = spyOn(o.properties.get(0), 'isDenied').andReturn(1);
+    p.simpleObjectPanel({object: o});
+    expect(p.find('table.properties tr:first > td').text()).toContain('denied');
+    expect(s).toHaveBeenCalled();
+  });
+
+  it('should display the verb names in the verbs table', function() {
+    var s = spyOn(o.verbs.get(0), 'isDenied').andReturn(0);
+    p.simpleObjectPanel({object: o});
+    expect(p.find('table.verbs tr:first > td').text()).toContain('Test Verb');
+    expect(s).toHaveBeenCalled();
+  });
+
+  it('should display "denied" in the verbs table if access to the verb is denied', function() {
+    var s = spyOn(o.verbs.get(0), 'isDenied').andReturn(1);
+    p.simpleObjectPanel({object: o});
+    expect(p.find('table.verbs tr:first > td').text()).toContain('denied');
+    expect(s).toHaveBeenCalled();
+  });
 });

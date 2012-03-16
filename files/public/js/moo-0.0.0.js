@@ -140,6 +140,10 @@ var Moo = {};
         return a;
       }, {});
 
+      /* remove `toHTML' from attributes */
+      /* it is a side-effect caused by adding `toHTML()' to `Object' */
+      delete attributes.toHTML;
+
       _.each(attrs, function(value, attr) {
         var path = attr.split('.'),
             root = path.shift();
@@ -189,6 +193,10 @@ var Moo = {};
         return "invalid property: `owner' must be an object number";
       if (property && 'Property' in property && 'perms' in property.Property && !Moo.isValidPerms(property.Property.perms, 'rwc'))
         return "invalid property: `perms' must be in the set 'rwc'";
+    },
+
+    isDenied: function() {
+      return this.get('Meta.status') == 'denied';
     }
   });
 
@@ -211,6 +219,10 @@ var Moo = {};
         return "invalid verb: `iobj' must be valid";
       if (verb && 'Verb' in verb && 'code' in verb.Verb && !Moo.isValidCode(verb.Verb.code))
         return "invalid verb: `code' must be an array of strings";
+    },
+
+    isDenied: function() {
+      return this.get('Meta.status') == 'denied';
     }
   });
 
@@ -394,8 +406,8 @@ var Moo = {};
             '</h1>' +
           '</div>' +
           '<div class="span4">' +
-            '<h2>Properties</h2>' +
-            '<table class="table table-condensed">' +
+            '<h2>Values</h2>' +
+            '<table class="table table-condensed values">' +
               '<% _.each(object.values.models, function(value) {' +
                 'var v = value.get("Value.value"); %>' +
                 '<tr><td><%= value.get("id") %></td><td><%= v !== undefined ? v.toHTML() : "---" %></td></tr>' +
@@ -404,9 +416,19 @@ var Moo = {};
           '</div>' +
           '<div class="span4">' +
             '<h2>Property Definitions</h2>' +
+            '<table class="table table-condensed properties">' +
+              '<% _.each(object.properties.models, function(property) { %>' +
+                '<tr><td><%= !property.isDenied() ? property.get("Property.name") : "<em>denied</em>" %></td></tr>' +
+              '<% }); %>' +
+            '</table>' +
           '</div>' +
           '<div class="span4">' +
             '<h2>Verb Definitions</h2>' +
+            '<table class="table table-condensed verbs">' +
+              '<% _.each(object.verbs.models, function(verb) { %>' +
+                '<tr><td><%= !verb.isDenied() ? verb.get("Verb.names") : "<em>denied</em>" %></td></tr>' +
+              '<% }); %>' +
+            '</table>' +
           '</div>' +
         '</div>'
     },
