@@ -747,8 +747,8 @@ describe('widget $().simpleObjectPanel', function() {
     o = new Moo.Object({
       Attributes: {},
       Values: {name: {Value: {value: 'Test'}}},
-      Properties: [{Property: {name: 'Test Property'}}],
-      Verbs: [{Verb: {names: 'Test Verb'}}]
+      Properties: [{Property: {name: 'Test Property', owner: '#1|obj', perms: ''}}],
+      Verbs: [{Verb: {names: 'Test Verb', owner: '#1|obj', perms: ''}}]
     });
   });
 
@@ -850,28 +850,28 @@ describe('widget $().simpleObjectPanel', function() {
   it('should display the property name in the properties table', function() {
     var s = spyOn(o.properties.get(0), 'isDenied').andReturn(0);
     p.simpleObjectPanel({object: o});
-    expect(p.find('table.properties tr:first > td').text()).toContain('Test Property');
+    expect(p.find('.properties .property > td').text()).toContain('Test Property');
     expect(s).toHaveBeenCalled();
   });
 
   it('should display "denied" in the properties table if access to the property is denied', function() {
     var s = spyOn(o.properties.get(0), 'isDenied').andReturn(1);
     p.simpleObjectPanel({object: o});
-    expect(p.find('table.properties tr:first > td').text()).toContain('denied');
+    expect(p.find('.properties .property > td').text()).toContain('denied');
     expect(s).toHaveBeenCalled();
   });
 
   it('should display the verb names in the verbs table', function() {
     var s = spyOn(o.verbs.get(0), 'isDenied').andReturn(0);
     p.simpleObjectPanel({object: o});
-    expect(p.find('table.verbs tr:first > td').text()).toContain('Test Verb');
+    expect(p.find('.verbs .verb > td').text()).toContain('Test Verb');
     expect(s).toHaveBeenCalled();
   });
 
   it('should display "denied" in the verbs table if access to the verb is denied', function() {
     var s = spyOn(o.verbs.get(0), 'isDenied').andReturn(1);
     p.simpleObjectPanel({object: o});
-    expect(p.find('table.verbs tr:first > td').text()).toContain('denied');
+    expect(p.find('.verbs .verb > td').text()).toContain('denied');
     expect(s).toHaveBeenCalled();
   });
 });

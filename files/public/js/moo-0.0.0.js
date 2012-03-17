@@ -370,7 +370,7 @@ var Moo = {};
 
     options: {
       object: null,
-      template: '<div class="row">' +
+      template: '<div class="row-fluid">' +
           '<div class="span12">' +
             '<h1>' +
               '<% if (object.isNotFound()) { %>' +
@@ -405,29 +405,62 @@ var Moo = {};
               '<% } %>' +
             '</h1>' +
           '</div>' +
+        '</div>' +
+        '<div class="row-fluid">' +
           '<div class="span4">' +
             '<h2>Values</h2>' +
             '<table class="table table-condensed values">' +
-              '<% _.each(object.values.models, function(value) {' +
-                'var v = value.get("Value.value"); %>' +
-                '<tr><td><%= value.get("id") %></td><td><%= v !== undefined ? v.toHTML() : "---" %></td></tr>' +
-              '<% }); %>' +
+              '<thead>' +
+                '<tr><th>Name</th><th>Value</th></tr>' +
+              '</thead>' +
+              '<tbody>' +
+                '<% _.each(object.values.models, function(value) {' +
+                  'var v = value.get("Value.value"); %>' +
+                  '<tr><td><%= value.get("id") %></td><td><%= v !== undefined ? v.toHTML() : "---" %></td></tr>' +
+                '<% }); %>' +
+              '</tbody>' +
             '</table>' +
           '</div>' +
           '<div class="span4">' +
             '<h2>Property Definitions</h2>' +
             '<table class="table table-condensed properties">' +
-              '<% _.each(object.properties.models, function(property) { %>' +
-                '<tr><td><%= !property.isDenied() ? property.get("Property.name") : "<em>denied</em>" %></td></tr>' +
-              '<% }); %>' +
+              '<thead>' +
+                '<tr><th>Name</th><th>Owner</th><th>Perms</th></tr>' +
+              '</thead>' +
+              '<tbody>' +
+                '<% _.each(object.properties.models, function(property) {' +
+                  'if (!property.isDenied()) { %>' +
+                    '<tr class="property">' +
+                      '<td><%= property.get("Property.name") %></td>' +
+                      '<td><%= property.get("Property.owner").toHTML() %></td>' +
+                      '<td><%= property.get("Property.perms").toHTML() %></td>' +
+                    '</tr>' +
+                  '<% } else { %>' +
+                    '<tr class="property"><td colspan="2"><em>denied</em></td></tr>' +
+                  '<% }' +
+                '}); %>' +
+              '</tbody>' +
             '</table>' +
           '</div>' +
           '<div class="span4">' +
             '<h2>Verb Definitions</h2>' +
             '<table class="table table-condensed verbs">' +
-              '<% _.each(object.verbs.models, function(verb) { %>' +
-                '<tr><td><%= !verb.isDenied() ? verb.get("Verb.names") : "<em>denied</em>" %></td></tr>' +
-              '<% }); %>' +
+              '<thead>' +
+                '<tr><th>Names</th><th>Owner</th><th>Perms</th></tr>' +
+              '</thead>' +
+              '<tbody>' +
+                '<% _.each(object.verbs.models, function(verb) {' +
+                  'if (!verb.isDenied()) { %>' +
+                    '<tr class="verb">' +
+                      '<td><%= verb.get("Verb.names") %></td>' +
+                      '<td><%= verb.get("Verb.owner").toHTML() %></td>' +
+                      '<td><%= verb.get("Verb.perms").toHTML() %></td>' +
+                    '</tr>' +
+                  '<% } else { %>' +
+                    '<tr class="verb"><td colspan="2"><em>denied</em></td></tr>' +
+                  '<% }' +
+                '}); %>' +
+              '</tbody>' +
             '</table>' +
           '</div>' +
         '</div>'
