@@ -16,7 +16,7 @@ var Moo = {};
     return '<span class="moo-num">' + this + '</span>';
   };
 
-  String.prototype.toHTML = function() {
+  String.prototype.toHTML = function(literal) {
     var str, num;
     if (endsWith(this, '|err')) {
       str = _.escape(this.slice(0, this.length - 4));
@@ -37,20 +37,20 @@ var Moo = {};
     }
     else if (endsWith(this, '|str')) {
       str = _.escape(this.slice(0, this.length - 4));
-      return '<span class="moo-str">"' +  str + '"</span>';
+      return '<span class="moo-str">' +  (literal ? '"' + str + '"' : str) + '</span>';
     }
     else {
       str = _.escape(this);
-      return '<span class="moo-str">"' + str + '"</span>';
+      return '<span class="moo-str">' + (literal ? '"' + str + '"' : str) + '</span>';
     }
   };
 
   Array.prototype.toHTML = function() {
-    return '<span class="moo-list">{ ' + _.map(this, function(v) { return v.toHTML(); }).join(', ') + ' }</span>';
+    return '<span class="moo-list">{ ' + _.map(this, function(v) { return v.toHTML(true); }).join(', ') + ' }</span>';
   };
 
   Object.prototype.toHTML = function() {
-    return '<span class="moo-map">[ ' + _.map(this, function(v, k) { return k.toHTML() + ' -> ' + v.toHTML(); }).join(', ') + ' ]</span>';
+    return '<span class="moo-map">[ ' + _.map(this, function(v, k) { return k.toHTML(true) + ' -> ' + v.toHTML(true); }).join(', ') + ' ]</span>';
   };
 
   _.extend(Moo, {
@@ -380,28 +380,28 @@ var Moo = {};
               '<% } else if (object.failed()) { %>' +
                 '<em>Request Failed</em>' +
               '<% } else { %>' +
-                '<%= object.values.get("name").get("Value.value") %>' +
+                '<%= object.values.get("name").get("Value.value").toHTML() %>' +
               '<% } %>' +
-              '<% if ((p = object.attributez.get("player")) && (p = p.get("Value.value"))) { %> ' +
+              '<% if ((p = object.attributez.get("player")) && p.get("Value.value")) { %> ' +
                 '<small class="player-flag">player</small>' +
               '<% } %>' +
-              '<% if ((p = object.values.get("programmer")) && (p = p.get("Value.value"))) { %> ' +
+              '<% if ((p = object.values.get("programmer")) && p.get("Value.value")) { %> ' +
                 '<small class="programmer-flag">programmer</small>' +
               '<% } %>' +
-              '<% if ((p = object.values.get("wizard")) && (p = p.get("Value.value"))) { %> ' +
+              '<% if ((p = object.values.get("wizard")) && p.get("Value.value")) { %> ' +
                 '<small class="wizard-flag">wizard</small>' +
               '<% } %>' +
-              '<% if ((v = object.values.get("r")) && (v = v.get("Value.value"))) { %> ' +
+              '<% if ((v = object.values.get("r")) && v.get("Value.value")) { %> ' +
                 '<small class="read-flag">R</small>' +
               '<% } %>' +
-              '<% if ((v = object.values.get("w")) && (v = v.get("Value.value"))) { %> ' +
+              '<% if ((v = object.values.get("w")) && v.get("Value.value")) { %> ' +
                 '<small class="write-flag">W</small>' +
               '<% } %>' +
-              '<% if ((v = object.values.get("f")) && (v = v.get("Value.value"))) { %> ' +
+              '<% if ((v = object.values.get("f")) && v.get("Value.value")) { %> ' +
                 '<small class="fertile-flag">F</small>' +
               '<% } %>' +
               '<% if ((p = object.attributez.get("parents")) && (p = p.get("Value.value")) && p.length > 0) { %> ' +
-                ' <small class="parents"><%= p.toHTML() %></small>' +
+                ' <small class="parents"><%= p.toHTML(true) %></small>' +
               '<% } %>' +
             '</h1>' +
           '</div>' +
@@ -416,7 +416,7 @@ var Moo = {};
               '<tbody>' +
                 '<% _.each(object.values.models, function(value) {' +
                   'var v = value.get("Value.value"); %>' +
-                  '<tr><td><%= value.get("id") %></td><td><%= v !== undefined ? v.toHTML() : "---" %></td></tr>' +
+                  '<tr><td><%= value.get("id") %></td><td><%= v !== undefined ? v.toHTML(true) : "---" %></td></tr>' +
                 '<% }); %>' +
               '</tbody>' +
             '</table>' +
@@ -431,7 +431,7 @@ var Moo = {};
                 '<% _.each(object.properties.models, function(property) {' +
                   'if (!property.isDenied()) { %>' +
                     '<tr class="property">' +
-                      '<td><%= property.get("Property.name") %></td>' +
+                      '<td><%= property.get("Property.name").toHTML() %></td>' +
                       '<td><%= property.get("Property.owner").toHTML() %></td>' +
                       '<td><%= property.get("Property.perms").toHTML() %></td>' +
                     '</tr>' +
@@ -452,7 +452,7 @@ var Moo = {};
                 '<% _.each(object.verbs.models, function(verb) {' +
                   'if (!verb.isDenied()) { %>' +
                     '<tr class="verb">' +
-                      '<td><%= verb.get("Verb.names") %></td>' +
+                      '<td><%= verb.get("Verb.names").toHTML() %></td>' +
                       '<td><%= verb.get("Verb.owner").toHTML() %></td>' +
                       '<td><%= verb.get("Verb.perms").toHTML() %></td>' +
                     '</tr>' +

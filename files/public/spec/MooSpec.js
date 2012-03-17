@@ -38,20 +38,34 @@ describe('String', function() {
   it('should HTML-ize a tricky MOO string', function() {
     var $v = $('#0|obj|str'.toHTML());
     expect($v.hasClass('moo-str')).toBeTruthy();
-    expect($v.text()).toEqual('"#0|obj"');
+    expect($v.text()).toEqual('#0|obj');
   });
 
   it('should HTML-ize a simple MOO string', function() {
     var $v = $('str'.toHTML());
     expect($v.hasClass('moo-str')).toBeTruthy();
-    expect($v.text()).toEqual('"str"');
+    expect($v.text()).toEqual('str');
+  });
+
+  describe('as a MOO-value literal', function() {
+    it('should HTML-ize a tricky MOO string', function() {
+      var $v = $('#0|obj|str'.toHTML(true));
+      expect($v.hasClass('moo-str')).toBeTruthy();
+      expect($v.text()).toEqual('"#0|obj"');
+    });
+
+    it('should HTML-ize a simple MOO string', function() {
+      var $v = $('str'.toHTML(true));
+      expect($v.hasClass('moo-str')).toBeTruthy();
+      expect($v.text()).toEqual('"str"');
+    });
   });
 
   it('should sanitize HTML', function() {
     var $v = $('<script>alert("bang!");</script>'.toHTML());
     expect($v.hasClass('moo-str')).toBeTruthy();
-    expect($v.html()).toEqual('"&lt;script&gt;alert("bang!");&lt;/script&gt;"');
-    expect($v.text()).toEqual('"<script>alert("bang!");</script>"');
+    expect($v.html()).toEqual('&lt;script&gt;alert("bang!");&lt;/script&gt;');
+    expect($v.text()).toEqual('<script>alert("bang!");</script>');
   });
 });
 
