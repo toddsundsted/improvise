@@ -761,8 +761,8 @@ describe('widget $().simpleObjectPanel', function() {
     o = new Moo.Object({
       Attributes: {},
       Values: {name: {Value: {value: 'Test'}}},
-      Properties: [{Property: {name: 'Test Property', owner: '#1|obj', perms: ''}}],
-      Verbs: [{Verb: {names: 'Test Verb', owner: '#1|obj', perms: ''}}]
+      Properties: [{Property: {name: 'Test Property', owner: '#1|obj', perms: '', value: 0}}],
+      Verbs: [{Verb: {names: 'Test Verb', owner: '#1|obj', perms: '', dobj: '', prep: '', iobj: '', code: []}}]
     });
   });
 

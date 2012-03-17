@@ -370,98 +370,129 @@ var Moo = {};
 
     options: {
       object: null,
-      template: '<div class="row-fluid">' +
-          '<div class="span12">' +
-            '<h1>' +
-              '<% if (object.isNotFound()) { %>' +
-                '<em>Not Found</em>' +
-              '<% } else if (object.isDenied()) { %>' +
-                '<em>Request Denied</em>' +
-              '<% } else if (object.failed()) { %>' +
-                '<em>Request Failed</em>' +
-              '<% } else { %>' +
-                '<%= object.values.get("name").get("Value.value").toHTML() %>' +
-              '<% } %>' +
-              '<% if ((p = object.attributez.get("player")) && p.get("Value.value")) { %> ' +
-                '<small class="player-flag">player</small>' +
-              '<% } %>' +
-              '<% if ((p = object.values.get("programmer")) && p.get("Value.value")) { %> ' +
-                '<small class="programmer-flag">programmer</small>' +
-              '<% } %>' +
-              '<% if ((p = object.values.get("wizard")) && p.get("Value.value")) { %> ' +
-                '<small class="wizard-flag">wizard</small>' +
-              '<% } %>' +
-              '<% if ((v = object.values.get("r")) && v.get("Value.value")) { %> ' +
-                '<small class="read-flag">R</small>' +
-              '<% } %>' +
-              '<% if ((v = object.values.get("w")) && v.get("Value.value")) { %> ' +
-                '<small class="write-flag">W</small>' +
-              '<% } %>' +
-              '<% if ((v = object.values.get("f")) && v.get("Value.value")) { %> ' +
-                '<small class="fertile-flag">F</small>' +
-              '<% } %>' +
-              '<% if ((p = object.attributez.get("parents")) && (p = p.get("Value.value")) && p.length > 0) { %> ' +
-                ' <small class="parents"><%= p.toHTML(true) %></small>' +
-              '<% } %>' +
-            '</h1>' +
+      template: '' +
+        '<div class="simple-object-panel">' +
+          '<div class="row-fluid">' +
+            '<div class="span12">' +
+              '<h1>' +
+                '<% if (object.isNotFound()) { %>' +
+                  '<em>Not Found</em>' +
+                '<% } else if (object.isDenied()) { %>' +
+                  '<em>Request Denied</em>' +
+                '<% } else if (object.failed()) { %>' +
+                  '<em>Request Failed</em>' +
+                '<% } else { %>' +
+                  '<%= object.values.get("name").get("Value.value").toHTML() %>' +
+                '<% } %>' +
+                '<% if ((p = object.attributez.get("player")) && p.get("Value.value")) { %> ' +
+                  '<small class="player-flag">player</small>' +
+                '<% } %>' +
+                '<% if ((p = object.values.get("programmer")) && p.get("Value.value")) { %> ' +
+                  '<small class="programmer-flag">programmer</small>' +
+                '<% } %>' +
+                '<% if ((p = object.values.get("wizard")) && p.get("Value.value")) { %> ' +
+                  '<small class="wizard-flag">wizard</small>' +
+                '<% } %>' +
+                '<% if ((v = object.values.get("r")) && v.get("Value.value")) { %> ' +
+                  '<small class="read-flag">R</small>' +
+                '<% } %>' +
+                '<% if ((v = object.values.get("w")) && v.get("Value.value")) { %> ' +
+                  '<small class="write-flag">W</small>' +
+                '<% } %>' +
+                '<% if ((v = object.values.get("f")) && v.get("Value.value")) { %> ' +
+                  '<small class="fertile-flag">F</small>' +
+                '<% } %>' +
+                '<% if ((p = object.attributez.get("parents")) && (p = p.get("Value.value")) && p.length > 0) { %> ' +
+                  ' <small class="parents"><%= p.toHTML(true) %></small>' +
+                '<% } %>' +
+              '</h1>' +
+            '</div>' +
           '</div>' +
-        '</div>' +
-        '<div class="row-fluid">' +
-          '<div class="span4">' +
-            '<h2>Values</h2>' +
-            '<table class="table table-condensed values">' +
-              '<thead>' +
-                '<tr><th>Name</th><th>Value</th></tr>' +
-              '</thead>' +
-              '<tbody>' +
-                '<% _.each(object.values.models, function(value) {' +
-                  'var v = value.get("Value.value"); %>' +
-                  '<tr><td><%= value.get("id") %></td><td><%= v !== undefined ? v.toHTML(true) : "---" %></td></tr>' +
-                '<% }); %>' +
-              '</tbody>' +
-            '</table>' +
-          '</div>' +
-          '<div class="span4">' +
-            '<h2>Property Definitions</h2>' +
-            '<table class="table table-condensed properties">' +
-              '<thead>' +
-                '<tr><th>Name</th><th>Owner</th><th>Perms</th></tr>' +
-              '</thead>' +
-              '<tbody>' +
-                '<% _.each(object.properties.models, function(property) {' +
-                  'if (!property.isDenied()) { %>' +
-                    '<tr class="property">' +
-                      '<td><%= property.get("Property.name").toHTML() %></td>' +
-                      '<td><%= property.get("Property.owner").toHTML() %></td>' +
-                      '<td><%= property.get("Property.perms").toHTML() %></td>' +
-                    '</tr>' +
-                  '<% } else { %>' +
-                    '<tr class="property"><td colspan="2"><em>denied</em></td></tr>' +
-                  '<% }' +
-                '}); %>' +
-              '</tbody>' +
-            '</table>' +
-          '</div>' +
-          '<div class="span4">' +
-            '<h2>Verb Definitions</h2>' +
-            '<table class="table table-condensed verbs">' +
-              '<thead>' +
-                '<tr><th>Names</th><th>Owner</th><th>Perms</th></tr>' +
-              '</thead>' +
-              '<tbody>' +
-                '<% _.each(object.verbs.models, function(verb) {' +
-                  'if (!verb.isDenied()) { %>' +
-                    '<tr class="verb">' +
-                      '<td><%= verb.get("Verb.names").toHTML() %></td>' +
-                      '<td><%= verb.get("Verb.owner").toHTML() %></td>' +
-                      '<td><%= verb.get("Verb.perms").toHTML() %></td>' +
-                    '</tr>' +
-                  '<% } else { %>' +
-                    '<tr class="verb"><td colspan="2"><em>denied</em></td></tr>' +
-                  '<% }' +
-                '}); %>' +
-              '</tbody>' +
-            '</table>' +
+          '<div class="row-fluid">' +
+            '<div class="span4">' +
+              '<h2>Values</h2>' +
+              '<table class="table table-condensed values">' +
+                '<tbody>' +
+                  '<% _.each(object.values.models, function(value) {' +
+                    'var v = value.get("Value.value");' +
+                    'if (v !== undefined) { %>' +
+                      '<tr>' +
+                        '<td rowspan="2" width="5%">&bull;</td>' +
+                        '<td><strong><%= value.get("id") %></strong></td>' +
+                      '</tr>' +
+                      '<tr>' +
+                        '<td class="ellipsis"><%= v.toHTML(true) %></td>' +
+                      '</tr>' +
+                    '<% } else { %>' +
+                      '<tr>' +
+                        '<td rowspan="2" width="5%">&bull;</td>' +
+                        '<td><strong><%= value.get("id") %></strong></td>' +
+                      '</tr>' +
+                      '<tr>' +
+                        '<td><em>denied</em></td>' +
+                      '</tr>' +
+                    '<% }' +
+                  '}); %>' +
+                '</tbody>' +
+              '</table>' +
+            '</div>' +
+            '<div class="span4">' +
+              '<h2>Property Definitions</h2>' +
+              '<table class="table table-condensed properties">' +
+                '<tbody>' +
+                  '<% _.each(object.properties.models, function(property) {' +
+                    'if (!property.isDenied()) { %>' +
+                      '<tr class="property">' +
+                        '<td rowspan="3" width="5%">&bull;</td>' +
+                        '<td colspan="2" class="name"><strong><%= property.get("Property.name").toHTML() %></strong></td>' +
+                      '</tr>' +
+                      '<tr class="property">' +
+                        '<td><%= property.get("Property.owner").toHTML() %></td>' +
+                        '<td><%= property.get("Property.perms").toHTML() %></td>' +
+                      '</tr>' +
+                      '<tr class="property">' +
+                        '<td colspan="2" class="ellipsis"><%= property.get("Property.value").toHTML() %></td>' +
+                      '</tr>' +
+                    '<% } else { %>' +
+                      '<tr class="property">' +
+                        '<td width="5%">&bull;</td>' +
+                        '<td colspan="2"><em>denied</em></td>' +
+                      '</tr>' +
+                    '<% }' +
+                  '}); %>' +
+                '</tbody>' +
+              '</table>' +
+            '</div>' +
+            '<div class="span4">' +
+              '<h2>Verb Definitions</h2>' +
+              '<table class="table table-condensed verbs">' +
+                '<tbody>' +
+                  '<% _.each(object.verbs.models, function(verb) {' +
+                    'if (!verb.isDenied()) { %>' +
+                      '<tr class="verb">' +
+                        '<td rowspan="3" width="5%">&bull;</td>' +
+                        '<td colspan="5" class="names"><strong><%= verb.get("Verb.names").toHTML() %></strong></td>' +
+                      '</tr>' +
+                      '<tr class="verb">' +
+                        '<td><%= verb.get("Verb.owner").toHTML() %></td>' +
+                        '<td><%= verb.get("Verb.perms").toHTML() %></td>' +
+                        '<td><%= verb.get("Verb.dobj").toHTML() %></td>' +
+                        '<td><%= verb.get("Verb.prep").toHTML() %></td>' +
+                        '<td><%= verb.get("Verb.iobj").toHTML() %></td>' +
+                      '</tr>' +
+                      '<tr class="verb">' +
+                        '<td colspan="5" class="ellipsis"><%= verb.get("Verb.code").toHTML() %></td>' +
+                      '</tr>' +
+                    '<% } else { %>' +
+                      '<tr class="verb">' +
+                        '<td width="5%">&bull;</td>' +
+                        '<td colspan="5"><em>denied</em></td>' +
+                      '</tr>' +
+                    '<% }' +
+                  '}); %>' +
+                '</tbody>' +
+              '</table>' +
+            '</div>' +
           '</div>' +
         '</div>'
     },
@@ -489,11 +520,12 @@ var Moo = {};
     },
 
     _create: function() {
-      this.options.originalContent = this.element.html();
+      //this.options.originalContent = this.element.html();
     },
 
     destroy: function() {
-      this.element.html(this.options.originalContent);
+      //this.element.html(this.options.originalContent);
+      this.element.html('');
     }
   });
 
