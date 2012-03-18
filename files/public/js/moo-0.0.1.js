@@ -1,4 +1,4 @@
-/* global $ _ Backbone */
+/* global $ _ Backbone SocketManager Socket */
 
 var Moo = {};
 
@@ -520,11 +520,100 @@ var Moo = {};
     },
 
     _create: function() {
-      //this.options.originalContent = this.element.html();
     },
 
     destroy: function() {
-      //this.element.html(this.options.originalContent);
+      this.element.html('');
+    }
+  });
+
+  $.widget('moo.commandPanel', {
+
+    options: {
+      host: 'localhost',
+      port: 8888
+    },
+
+    _setOption: function(key, value) {
+    },
+
+    _create: function() {
+      var widget = this;
+
+      widget.output = $('<div class="top"></div>');
+      widget.input = $('<div class="bottom"><input type="text"></div>');
+      var panel = $('<div class="command-panel"></div>');
+      panel.append(widget.output);
+      panel.append(widget.input);
+      widget.element.append(panel);
+
+      var groove = function(type, text) {
+        var $this = widget.output;
+        var $last = $this.children(':last');
+        if (!$last.hasClass(type)) {
+          $last = $("<div class='" + type + "'></div>");
+          $this.append($last);
+        }
+        $last.text($last.text() + text);
+        widget.input.get(0).scrollIntoView(false);
+      };
+
+      var history = [];
+      var position = -1;
+
+      $('input', widget.input).keypress(function(event) {
+        var text;
+        if (event.which == 13) {
+          if ((text = $(this).val())) {
+            event.preventDefault();
+            history.unshift(text);
+            position = -1;
+            text = text + '\n';
+            groove('input', text);
+            widget.socket.send(text);
+            $(this).val('');
+          }
+        }
+      });
+      $('input', widget.input).keyup(function(event) {
+        var text;
+        if (event.which == 38) {
+          if ((text = history[position + 1])) {
+            $(this).val(text);
+            position++;
+          }
+        }
+        else if (event.which == 40) {
+          if ((text = history[position - 1])) {
+            $(this).val(text);
+            position--;
+          }
+        }
+      });
+
+      SocketManager.observe('loaded', function() {
+        widget.socket = new Socket({
+          ready: function() {
+            widget.socket.connect(widget.options.host, widget.options.port);
+          },
+          connected: function() {
+            widget.socket.send('GET /... HTTP/1.1\n');
+            widget.socket.send('Host: ' + widget.options.host + ':' + widget.options.port + '\n');
+            widget.socket.send('Cookie: ' + document.cookie + '\n');
+            widget.socket.send('Upgrade: moo\n');
+            widget.socket.send('\n\n');
+          },
+          receive: function(data) {
+            groove('output', data);
+          }
+        }, true);
+      });
+    },
+
+    _init: function() {
+    },
+
+    destroy: function() {
       this.element.html('');
     }
   });

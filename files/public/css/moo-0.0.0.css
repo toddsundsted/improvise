@@ -7,3 +7,44 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+#JavascriptSocket {
+  position: absolute;
+  top: -1000px;
+}
+
+.command-panel {
+}
+
+.command-panel .top, .command-panel .bottom {
+  font-family: monospace;
+  line-height: 1.25em;
+  width: 100%;
+  clear: both;
+}
+
+.command-panel .input, .command-panel .output {
+  white-space: pre;
+}
+
+.command-panel .input {
+  background-color: #eee;
+}
+
+.command-panel .output {
+  background-color: #fff;
+}
+
+.command-panel .bottom {
+  height: 2em;
+  background-color: #ddd;
+}
+
+.command-panel .bottom input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
