@@ -1,6 +1,6 @@
 ** LambdaMOO Database, Format Version 12 **
-73
-223
+77
+233
 0
 2
 5
@@ -158,7 +158,7 @@ application/x-mustache
 2
 1
 1
--1
+-573
 2
 1
 2
@@ -208,13 +208,45 @@ Welcome to Stunt!  For information about Stunt, check out http://stunt.io/.  To 
 20
 1
 4
-3
+19
 1
 31
 1
 44
 1
 45
+1
+84
+1
+85
+1
+86
+1
+87
+1
+89
+1
+90
+1
+91
+1
+93
+1
+92
+1
+88
+1
+95
+1
+96
+1
+97
+1
+98
+1
+99
+1
+100
 20
 1
 5
@@ -566,7 +598,7 @@ huh
 passkey
 2
 2
-D210CA62C37E841CD6936146A9768EA9246D3A7917EDE3BFC1A29C63C058F783
+A1E0844C1B8AF421B12B3A723B4C8B0F3108C71B0355FF18D8F4F142B649A6D7
 5
 0
 5
@@ -589,7 +621,7 @@ Programmer
 passkey
 2
 2
-5F9E926A35374355AA6982B77C0D33DDDE51DE5F25DAFB4306D161B5D77D3072
+E1AAEE2D8EA694FB9C30504CD7C70AB9499BC2FFD752C92CFD9996DCC83177A5
 5
 0
 5
@@ -956,7 +988,7 @@ application
 10
 1
 2
-0.0.1
+0.0.2
 4
 1
 1
@@ -966,7 +998,7 @@ dialog
 10
 1
 2
-0.0.1
+0.0.3
 4
 1
 1
@@ -976,7 +1008,7 @@ dialog_extras
 10
 1
 2
-0.0.1
+0.0.2
 4
 1
 1
@@ -1050,7 +1082,7 @@ dialog
 10
 1
 2
-0.0.1
+0.0.3
 4
 2
 1
@@ -1062,7 +1094,7 @@ dialog_extras
 10
 1
 2
-0.0.1
+0.0.2
 4
 1
 1
@@ -1106,11 +1138,11 @@ primitive
 2
 0
 0
-1330085522
+1332246168
 2
 0
 10
-17
+18
 2
 autoport
 10
@@ -1166,19 +1198,27 @@ packages/nuc67gn3gu.json
 2
 dialog
 10
-1
+2
 2
 0.0.1
 2
 packages/dialog_0_0_1.json
 2
+0.0.3
+2
+packages/dialog_0_0_3.json
+2
 dialog_extras
 10
-1
+2
 2
 0.0.1
 2
 packages/dialog_extras_0_0_1.json
+2
+0.0.2
+2
+packages/dialog_extras_0_0_2.json
 2
 identity
 10
@@ -1268,6 +1308,14 @@ persistent
 2
 packages/persistent_0_0_1.json
 2
+plastic
+10
+1
+2
+0.0.0
+2
+packages/plastic_0_0_0.json
+2
 player
 10
 1
@@ -1316,7 +1364,7 @@ application
 10
 1
 2
-0.0.0
+0.0.2
 10
 2
 2
@@ -1334,9 +1382,9 @@ Version
 2
 Objects
 10
-4
+8
 2
-__59__
+__70__
 10
 5
 2
@@ -1404,7 +1452,7 @@ Meta
 2
 id
 0
-59
+70
 2
 status
 2
@@ -1416,7 +1464,7 @@ Properties
 2
 Values
 10
-17
+19
 2
 aliases
 10
@@ -1532,6 +1580,42 @@ value
 0
 0
 2
+flash_socket_policy
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+flash_socket_policy
+2
+status
+2
+writable
+2
+Value
+10
+4
+2
+clear
+0
+0
+2
+owner
+2
+package
+2
+perms
+2
+c
+2
+value
+2
+<?xml version="1.0"?><cross-domain-policy><allow-access-from domain="localhost" to-ports="*"/></cross-domain-policy>
+2
 key
 10
 2
@@ -1557,8 +1641,8 @@ clear
 0
 2
 value
-0
-0
+2
+~B6~B9~F4~E15~1BC~F8@~A5~0B~EB~9Bh~FD~81~C3~89_~D0J~0F~E8p~7F~10~850~9CB~1F~DF8~C9~DC~1E5~FB~A3?~B9~98XJ~078~EA~C4m@~08~8B~0F8~ECj~84~17~C0~B1l~8Ct{%~94@~B0~89E*$`~0C>~A9j~E9~D4~0B^~A6~9Fg~91N~03l~1F~E1~A6~994~9B~DB~81~83;x~9De~DFSz~C5.~13~8E~E0PTd~94~DDA~C9~0FH~04~B4~B3^]B~9E~FC
 2
 location
 10
@@ -1764,7 +1848,7 @@ value
 1
 45
 2
-route
+route_proto
 10
 2
 2
@@ -1774,7 +1858,7 @@ Meta
 2
 id
 2
-route
+route_proto
 2
 status
 2
@@ -1791,6 +1875,42 @@ clear
 value
 1
 46
+2
+session_cookie_name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+session_cookie_name
+2
+status
+2
+writable
+2
+Value
+10
+4
+2
+clear
+0
+1
+2
+owner
+2
+package
+2
+perms
+2
+c
+2
+value
+2
+_stunt_session
 2
 status_codes
 10
@@ -1936,7 +2056,7 @@ Verbs
 4
 0
 2
-__60__
+__71__
 10
 5
 2
@@ -2000,7 +2120,7 @@ Meta
 2
 id
 0
-60
+71
 2
 status
 2
@@ -2096,7 +2216,7 @@ Value
 2
 value
 2
-__59__
+__70__
 2
 name
 10
@@ -2246,7 +2366,7 @@ Verbs
 4
 0
 2
-__61__
+__72__
 10
 5
 2
@@ -2310,7 +2430,7 @@ Meta
 2
 id
 0
-61
+72
 2
 status
 2
@@ -2406,7 +2526,7 @@ Value
 2
 value
 2
-__59__
+__70__
 2
 name
 10
@@ -2556,6 +2676,1286 @@ Verbs
 4
 0
 2
+__74__
+10
+5
+2
+Attributes
+10
+2
+2
+parents
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+parents
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+4
+1
+2
+route_proto|dialog
+2
+player
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+player
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Meta
+10
+2
+2
+id
+0
+74
+2
+status
+2
+writable
+2
+Properties
+4
+0
+2
+Values
+10
+9
+2
+aliases
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+aliases
+2
+status
+2
+writable
+2
+Value
+10
+4
+2
+clear
+0
+1
+2
+owner
+2
+package
+2
+perms
+2
+c
+2
+value
+4
+0
+2
+f
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+f
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+location
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+location
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+__70__
+2
+name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+name
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+Home
+2
+owner
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+owner
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+programmer
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+programmer
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+r
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+r
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+w
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+w
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+wizard
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+wizard
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Verbs
+4
+1
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+1
+2
+status
+2
+writable
+2
+Verb
+10
+8
+2
+code
+4
+20
+2
+{request} = args;
+2
+
+2
+path = request:path():split("/");
+2
+method = request:method();
+2
+
+2
+{host, ?port = 80} = `request:headers()["host"]:split(":") ! E_RANGE => {""}';
+2
+
+2
+parameters = ["__base_uri__" -> host ? tostr("http://", host, ":", port) | ""];
+2
+
+2
+if (!path && method == "get")
+2
+  return {$lookup("home_controller"), "index", parameters};
+2
+elseif (length(path) == 2 && path[1] == "objects" && method == "get")
+2
+  return {$lookup("home_controller"), "browse", parameters:merge(["id" -> path[2]])};
+2
+elseif (path == {"session", "create"} && method == "post")
+2
+  return {$lookup("session_controller"), path[2], parameters};
+2
+elseif (path == {"session", "destroy"} && method == "post")
+2
+  return {$lookup("session_controller"), path[2], parameters};
+2
+endif
+2
+
+2
+return {};
+2
+content_type
+2
+application/x-moocode
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+match
+2
+owner
+2
+package
+2
+perms
+2
+xd
+2
+prep
+2
+none
+2
+home_controller
+10
+5
+2
+Attributes
+10
+2
+2
+parents
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+parents
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+4
+0
+2
+player
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+player
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Meta
+10
+2
+2
+id
+0
+75
+2
+status
+2
+writable
+2
+Properties
+4
+0
+2
+Values
+10
+8
+2
+f
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+f
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+location
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+location
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+__70__
+2
+name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+name
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+Home Controller
+2
+owner
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+owner
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+programmer
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+programmer
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+r
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+r
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+w
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+w
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+wizard
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+wizard
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Verbs
+4
+1
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+1
+2
+status
+2
+writable
+2
+Verb
+10
+8
+2
+code
+4
+13
+2
+$restrict_to_caller($dialog.server);
+2
+
+2
+{request, response} = args;
+2
+
+2
+parameters = request:parameters();
+2
+
+2
+if (valid(player))
+2
+  parameters = parameters:merge(["player" -> ["name" -> player.name]]);
+2
+endif
+2
+
+2
+response = response:set_status(200):set_type("text/html"):set_body($lookup("home_views"):index(parameters));
+2
+
+2
+return {request, response};
+2
+content_type
+2
+application/x-moocode
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+index browse
+2
+owner
+2
+package
+2
+perms
+2
+xd
+2
+prep
+2
+none
+2
+home_views
+10
+5
+2
+Attributes
+10
+2
+2
+parents
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+parents
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+4
+0
+2
+player
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+player
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Meta
+10
+2
+2
+id
+0
+78
+2
+status
+2
+writable
+2
+Properties
+4
+0
+2
+Values
+10
+8
+2
+f
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+f
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+location
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+location
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+home_controller
+2
+name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+name
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+Home Views
+2
+owner
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+owner
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+programmer
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+programmer
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+r
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+r
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+w
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+w
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+wizard
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+wizard
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Verbs
+4
+1
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+1
+2
+status
+2
+writable
+2
+Verb
+10
+8
+2
+code
+4
+105
+2
+<!DOCTYPE html>
+2
+<html lang="en">
+2
+<head>
+2
+<title>Stunt | Improvise</title>
+2
+<link type="text/css" rel="stylesheet" href="/css/bootstrap-2.0.1.min.css">
+2
+<link type="text/css" rel="stylesheet" href="/css/bootstrap-responsive-2.0.1.min.css">
+2
+<link type="text/css" rel="stylesheet" href="/css/moo-0.0.0.min.css">
+2
+<script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+2
+<script type="text/javascript" src="/js/jquery.ui.core-1.8.18.min.js"></script>
+2
+<script type="text/javascript" src="/js/jquery.ui.widget-1.8.18.min.js"></script>
+2
+<script type="text/javascript" src="/js/underscore-1.3.1.min.js"></script>
+2
+<script type="text/javascript" src="/js/backbone-0.9.1.min.js"></script>
+2
+<script type="text/javascript" src="/js/swfobject-2.1.min.js"></script>
+2
+<script type="text/javascript" src="/js/moo-0.0.1.min.js"></script>
+2
+<script type="text/javascript" src="/js/Socket.js"></script>
+2
+<script type="text/javascript">
+2
+var flashvars = {};
+2
+var params = {menu: 'false', scale: 'noScale', allowFullscreen: 'true', allowScriptAccess: 'always', bgcolor: '#FFFFFF'};
+2
+var attributes = {id: 'JavascriptSocket', name: 'JavascriptSocket'};
+2
+swfobject.embedSWF('/flash/javascriptsocket.swf', 'flash-content', '100%', '100%', '9.0.0', null, flashvars, params, attributes);
+2
+</script>
+2
+</head>
+2
+<body>
+2
+  <div class="container">
+2
+    &nbsp;
+2
+    <div class="row">
+2
+      <div class="span4">
+2
+        {{^player}}
+2
+          <form class="well form-inline" action="/session/create" method="post">
+2
+            <input type="text" name="credentials" placeholder="player object number, e.g. #5">
+2
+            <button type="submit" name="submit">Connect</button>
+2
+          </form>
+2
+        {{/player}}
+2
+        {{#player}}
+2
+          <form class="well form-inline" action="/session/destroy" method="post">
+2
+            <button type="submit" name="submit">Disconnect</button>
+2
+          </form>
+2
+        {{/player}}
+2
+      </div>
+2
+      <div class="span8">
+2
+        {{^player}}
+2
+          <h2>Welcome!</h2>
+2
+          <p>&larr; Use the form on the left to connect to a specific player object by its object number.</p>
+2
+        {{/player}}
+2
+        {{#player}}
+2
+          <h2>Welcome, {{player.name}}!</h2>
+2
+          <p>Start browsing by clicking on the object number to the right &rarr; <a rel="object" data-object-number="0" href="/objects/0">#0</a>.</p>
+2
+        {{/player}}
+2
+      </div>
+2
+    </div>
+2
+    {{#player}}
+2
+      <p id="browser"></p>
+2
+      <hr>
+2
+      <p id="terminal"></p>
+2
+      <p>
+2
+        &uarr; Send commands to the server by typing them in the input above (e.g. <code>@list packages with $composed</code> or <code>; 5 + 3</code>).
+2
+      </p>
+2
+    {{/player}}
+2
+    <div id="flash-content"></div>
+2
+  </div>
+2
+  <script type="text/javascript">
+2
+    $(function() {
+2
+      Moo.Object.prototype.urlRoot = 'http://' + window.location.host + '///objects';
+2
+
+2
+      var $terminal = $('#terminal');
+2
+      $terminal.commandPanel({host: window.location.hostname, port: window.location.port});
+2
+
+2
+      var $browser = $('#browser');
+2
+      $browser.simpleObjectPanel();
+2
+
+2
+      Moo.Space = Backbone.Router.extend({
+2
+        routes: {
+2
+          'objects/:number': 'browse'
+2
+        },
+2
+        browse: function(number) {
+2
+          var o = new Moo.Object({id: number});
+2
+          o.fetch({
+2
+            success: function(model, response) {
+2
+              $browser.simpleObjectPanel({object: o});
+2
+              $browser.get(0).scrollIntoView(true);
+2
+            },
+2
+            error: function(model, response) {
+2
+              $browser.simpleObjectPanel({object: o});
+2
+              $browser.get(0).scrollIntoView(true);
+2
+            }
+2
+          });
+2
+        }
+2
+      });
+2
+      var moo = new Moo.Space;
+2
+
+2
+      $('body').on('click', 'a[rel*=object]', function(e) {
+2
+        e.preventDefault();
+2
+        var o = $(e.target).data('object-number');
+2
+        moo.navigate('/objects/' + o, {trigger: true});
+2
+      });
+2
+
+2
+      Backbone.history.start({pushState: true});
+2
+
+2
+      {{#id}}
+2
+        moo.navigate('/objects/{{id}}');
+2
+      {{/id}}
+2
+    });
+2
+  </script>
+2
+</body>
+2
+</html>
+2
+content_type
+2
+application/x-mustache
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+index
+2
+owner
+2
+package
+2
+perms
+2
+xd
+2
+prep
+2
+none
+2
 package
 10
 5
@@ -2618,7 +4018,7 @@ Meta
 2
 id
 0
-58
+69
 2
 status
 2
@@ -2694,7 +4094,7 @@ r
 2
 value
 2
-0.0.0
+0.0.2
 10
 2
 2
@@ -2728,9 +4128,15 @@ r
 2
 value
 4
-1
+4
 2
 package
+2
+home_controller
+2
+home_views
+2
+session_controller
 10
 2
 2
@@ -3262,9 +4668,15 @@ clear
 2
 value
 4
-1
+4
 2
 package
+2
+home_controller
+2
+home_views
+2
+session_controller
 2
 name
 10
@@ -3484,7 +4896,7 @@ clear
 2
 value
 2
-0.0.0
+0.0.2
 2
 w
 10
@@ -3537,6 +4949,420 @@ value
 Verbs
 4
 0
+2
+session_controller
+10
+5
+2
+Attributes
+10
+2
+2
+parents
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+parents
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+4
+0
+2
+player
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+player
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Meta
+10
+2
+2
+id
+0
+77
+2
+status
+2
+writable
+2
+Properties
+4
+0
+2
+Values
+10
+8
+2
+f
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+f
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+location
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+location
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+__70__
+2
+name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+name
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+Session Controller
+2
+owner
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+owner
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+programmer
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+programmer
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+r
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+r
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+w
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+w
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+wizard
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+wizard
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Verbs
+4
+2
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+1
+2
+status
+2
+writable
+2
+Verb
+10
+8
+2
+code
+4
+12
+2
+$restrict_to_caller($dialog.server);
+2
+
+2
+{request, response} = args;
+2
+
+2
+player = `request:parameters()["credentials"] ! E_RANGE => $nothing';
+2
+if (valid(player = toobj(player)))
+2
+  set_task_local(task_local():merge(["http" -> ["session" -> ["player" -> player]]]));
+2
+endif
+2
+
+2
+response = response:set_status(302):set_location(request:parameters()["__base_uri__"] + "/"):set_body("");
+2
+
+2
+return {request, response};
+2
+content_type
+2
+application/x-moocode
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+create
+2
+owner
+2
+__wizard__
+2
+perms
+2
+xd
+2
+prep
+2
+none
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+2
+2
+status
+2
+writable
+2
+Verb
+10
+8
+2
+code
+4
+9
+2
+$restrict_to_caller($dialog.server);
+2
+
+2
+{request, response} = args;
+2
+
+2
+set_task_local(task_local():merge(["http" -> ["session" -> ["player" -> $nothing]]]));
+2
+
+2
+response = response:set_status(302):set_location(request:parameters()["__base_uri__"] + "/"):set_body("");
+2
+
+2
+return {request, response};
+2
+content_type
+2
+application/x-moocode
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+destroy
+2
+owner
+2
+__wizard__
+2
+perms
+2
+xd
+2
+prep
+2
+none
 2
 0
 2
@@ -4701,7 +6527,7 @@ dialog
 39
 1
 2
-0.0.1
+0.0.3
 39
 1
 4
@@ -4753,7 +6579,7 @@ response_proto
 1
 46
 2
-route
+route_proto
 4
 2
 1
@@ -4773,7 +6599,7 @@ dictionary.request_proto
 2
 dictionary.response_proto
 2
-dictionary.route
+dictionary.route_proto
 2
 dictionary.player_in_session
 2
@@ -4783,7 +6609,7 @@ server.request_proto
 2
 server.response_proto
 2
-server.route
+server.route_proto
 39
 1
 4
@@ -4823,7 +6649,7 @@ http://stunt.io/packages/dialog
 39
 1
 2
-
+FreeBSD License
 39
 1
 #40
@@ -4839,7 +6665,7 @@ Changelog
 4
 0
 0
-11
+19
 1316094194
 1316358449
 1318324724
@@ -4851,7 +6677,15 @@ Changelog
 1319388831
 1329657368
 1329684677
-11
+1331257920
+1331258266
+1331905594
+1331908171
+1332104162
+1332104693
+1332106296
+1332244717
+19
 2
 Added HTTP server framework (basic) including external file serving, routing to object/verb handlers and a database example.
 39
@@ -4896,6 +6730,38 @@ Moved HTTP status codes into a property.
 Removed `external()' and renamed `internal()' to `serve()'.
 39
 1
+2
+Added a configurable session cookie name.
+39
+1
+2
+Fixed the ownership and perms of `key'.
+39
+1
+2
+Handle too-large bodies in cleanup.
+39
+1
+2
+Added better diagnostics in session validation.
+39
+1
+2
+Added support for flash socket policy file requests.
+39
+1
+2
+Fixed the handling of upgrade requests.
+39
+1
+2
+Renamed "route" to "route_proto" in all the right places.
+39
+1
+2
+Moved the flash socket policy logic back into `do_login_command()'.
+39
+1
 #41
 Dialog Dictionary
 0
@@ -4915,8 +6781,8 @@ Dialog Dictionary
 server
 request_proto
 response_proto
+route_proto
 utilities
-route
 player_in_session
 7
 1
@@ -4932,11 +6798,11 @@ player_in_session
 39
 1
 1
-42
+46
 39
 1
 1
-46
+42
 39
 1
 1
@@ -4999,8 +6865,8 @@ HTTP Server
 4
 1
 1
-70
-21
+73
+22
 _log
 5
 172
@@ -5025,6 +6891,10 @@ _notify
 5
 172
 -1
+_session_cookie_name _flash_socket_policy
+5
+172
+-1
 _read_from_connection
 39
 172
@@ -5042,7 +6912,7 @@ do_login_command
 172
 -1
 session
-5
+39
 172
 -1
 player
@@ -5085,24 +6955,26 @@ _do_chain
 5
 172
 -1
-8
+10
 port
 key
 default_chain
 utilities
 request_proto
 response_proto
-route
+route_proto
 status_codes
-9
+session_cookie_name
+flash_socket_policy
+11
 0
 8888
 39
 1
 0
 0
-5
-1
+39
+0
 4
 7
 2
@@ -5177,6 +7049,14 @@ Unprocessable Entity
 Server Error
 39
 1
+2
+_stunt_session
+39
+4
+0
+0
+39
+4
 5
 39
 4
@@ -5271,13 +7151,15 @@ HTTP Route Prototype
 1
 4
 4
-3
+4
 1
 48
 1
 50
 1
 51
+1
+76
 1
 match
 39
@@ -5382,7 +7264,7 @@ dialog_extras
 49
 1
 2
-0.0.1
+0.0.2
 49
 1
 4
@@ -5442,7 +7324,7 @@ primitive
 2
 dialog
 2
->= 0.0.1
+>= 0.0.2
 49
 1
 4
@@ -5482,7 +7364,7 @@ HTTP File Server
 4
 1
 1
-71
+74
 2
 match
 5
@@ -5512,13 +7394,29 @@ HTTP Database Server
 4
 1
 1
-72
-2
+75
+6
 match
 49
 172
 -1
+_match_uri
+49
+172
+-1
 get
+5
+172
+-1
+put
+5
+172
+-1
+post
+5
+172
+-1
+delete
 5
 172
 -1
@@ -5542,7 +7440,7 @@ HTTP Upgrade Handler
 4
 1
 1
-70
+73
 1
 upgrade
 5
@@ -5568,7 +7466,7 @@ HTTP Logger
 4
 1
 1
-70
+73
 1
 log
 5
@@ -6304,7 +8202,7 @@ Application Package
 4
 1
 1
-70
+73
 1
 -1
 4
@@ -6328,17 +8226,35 @@ application
 69
 1
 2
-0.0.1
+0.0.2
 69
 1
 4
-1
+4
 4
 2
 1
 69
 2
 package
+4
+2
+1
+70
+2
+home_controller
+4
+2
+1
+71
+2
+home_views
+4
+2
+1
+72
+2
+session_controller
 69
 1
 4
@@ -6386,17 +8302,86 @@ dialog_extras
 69
 1
 #70
+Home Controller
+0
+69
+1
+73
+4
+1
+1
+71
+1
+-1
+4
+0
+1
+index browse
+69
+172
+-1
+0
+0
+#71
+Home Views
+0
+69
+1
+70
+4
+0
+1
+-1
+4
+0
+1
+index
+69
+172
+-1
+0
+0
+#72
+Session Controller
+0
+69
+1
+73
+4
+0
+1
+-1
+4
+0
+2
+create
+5
+172
+-1
+destroy
+5
+172
+-1
+0
+0
+#73
 HTTP Server
 0
 69
 1
 69
 4
-2
+5
 1
-71
+70
 1
 72
+1
+74
+1
+75
+1
+76
 4
 3
 1
@@ -6409,15 +8394,15 @@ HTTP Server
 0
 0
 0
-9
+11
 0
 12346
 39
 1
 0
 0
-5
-1
+39
+0
 4
 9
 2
@@ -6458,12 +8443,19 @@ log
 5
 69
 4
-#71
+2
+<?xml version="1.0"?><cross-domain-policy><allow-access-from domain="localhost" to-ports="*"/></cross-domain-policy>
+69
+4
+5
+69
+4
+#74
 File Server
 0
 69
 1
-70
+73
 4
 0
 4
@@ -6478,12 +8470,12 @@ File Server
 5
 69
 4
-#72
+#75
 Database Server
 0
 69
 1
-70
+73
 4
 0
 4
@@ -6493,6 +8485,30 @@ Database Server
 4
 0
 0
+0
+1
+5
+69
+4
+#76
+Home
+0
+69
+1
+73
+4
+0
+4
+1
+1
+46
+4
+0
+1
+match
+69
+172
+-1
 0
 1
 5
@@ -10793,7 +12809,7 @@ return;
 "chunk_length:4";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #39:1
@@ -10809,7 +12825,7 @@ return;
 "chunk_length:4";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #42:0
@@ -10908,7 +12924,7 @@ return;
 "chunk_length:3";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:1
@@ -10939,7 +12955,7 @@ return;
 "chunk_length:12";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:2
@@ -10962,7 +12978,7 @@ return;
 "chunk_length:9";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:3
@@ -11001,7 +13017,7 @@ return;
 "chunk_length:18";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:4
@@ -11016,7 +13032,7 @@ return;
 "chunk_length:4";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:5
@@ -11031,10 +13047,33 @@ return;
 "chunk_length:4";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:6
+$private();
+if (verb == "_session_cookie_name")
+return this.session_cookie_name;
+elseif (verb == "_flash_socket_policy")
+return this.flash_socket_policy;
+endif
+return;
+"$private();";
+"";
+"/* centralizes wiz-perm code for access to `c' properties on children */";
+"if (verb == \"_session_cookie_name\")";
+"  return this.session_cookie_name;";
+"elseif (verb == \"_flash_socket_policy\")";
+"  return this.flash_socket_policy;";
+"endif";
+"";
+"chunk_length:8";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:7
 $private();
 {connection, request} = args;
 return this:_read_http(connection):merge(request);
@@ -11048,21 +13087,18 @@ return;
 "chunk_length:5";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
-#43:7
+#43:8
 $private();
 {connection, response} = args;
 status_codes = this.status_codes;
 status = `response["status"] ! E_RANGE => 0';
 `status_codes[status] ! E_RANGE' || raise(E_INVARG, tostr("Status code must be one of:  ", status_codes:keys():join(", ")));
 if (`body = response["body"] ! E_RANGE' != E_RANGE)
-if (typeof(body) == LIST)
-body = body:join("~0D~0A") + "~0D~0A";
-endif
-content_type = `response["headers"]["content-type"] ! E_RANGE => "text/plain"';
-content_length = `response["headers"]["content-length"] ! E_RANGE => length(decode_binary(body, 1))';
+content_type = response["headers"]["content-type"];
+content_length = response["headers"]["content-length"];
 this:_notify(connection, tostr("HTTP/1.1 ", status, " ", status_codes[status], "~0D~0A"));
 this:_notify(connection, tostr("Content-Type: ", content_type, "~0D~0A"));
 this:_notify(connection, tostr("Content-Length: ", content_length, "~0D~0A"));
@@ -11090,11 +13126,9 @@ return;
 "`status_codes[status] ! E_RANGE' || raise(E_INVARG, tostr(\"Status code must be one of:  \", status_codes:keys():join(\", \")));";
 "";
 "if (`body = response[\"body\"] ! E_RANGE' != E_RANGE)";
-"  if (typeof(body) == LIST)";
-"    body = body:join(\"~0D~0A\") + \"~0D~0A\";";
-"  endif";
-"  content_type = `response[\"headers\"][\"content-type\"] ! E_RANGE => \"text/plain\"';";
-"  content_length = `response[\"headers\"][\"content-length\"] ! E_RANGE => length(decode_binary(body, 1))';";
+"  content_type = response[\"headers\"][\"content-type\"];";
+"  content_length = response[\"headers\"][\"content-length\"];";
+"";
 "  this:_notify(connection, tostr(\"HTTP/1.1 \", status, \" \", status_codes[status], \"~0D~0A\"));";
 "  this:_notify(connection, tostr(\"Content-Type: \", content_type, \"~0D~0A\"));";
 "  this:_notify(connection, tostr(\"Content-Length: \", content_length, \"~0D~0A\"));";
@@ -11105,21 +13139,23 @@ return;
 "  endfor";
 "  this:_notify(connection, \"~0D~0A\");";
 "  this:_notify(connection, body);";
+"";
 "else";
 "  this:_notify(connection, tostr(\"HTTP/1.1 \", status, \" \", status_codes[status], \"~0D~0A\"));";
 "  for value, field in (`response[\"headers\"] ! E_RANGE => []')";
 "    this:_notify(connection, tostr(field, \": \", value, \"~0D~0A\"));";
 "  endfor";
 "  this:_notify(connection, \"~0D~0A\");";
+"";
 "endif";
 "";
 "chunk_length:31";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
-#43:8
+#43:9
 $private();
 {connection, chain} = args;
 request = this.request_proto:create();
@@ -11145,24 +13181,33 @@ return;
 "  return 0;";
 "endif";
 "";
-"/* chains of processing steps handle HTTP request */";
 "{request, response} = this:_do_chain(request, response, chain);";
 "";
 "this:_write_to_connection(connection, response);";
 "";
 "return 1;";
 "";
-"chunk_length:19";
+"chunk_length:18";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
-#43:9
+#43:10
 $restrict_to_server();
 set_connection_option(player, "hold-input", 1);
 set_connection_option(player, "disable-oob", 1);
 set_connection_option(player, "binary", 1);
+if (flash_socket_policy = this:_flash_socket_policy())
+if ((line = read(player)) == "<policy-file-request/>~00")
+this:_log("DIALOG:  serving policy file:  ", flash_socket_policy);
+notify(player, flash_socket_policy);
+boot_player(player);
+return;
+else
+force_input(player, line);
+endif
+endif
 while (1)
 if (!this:_do_request(player, this.default_chain))
 boot_player(player);
@@ -11176,8 +13221,23 @@ return;
 "set_connection_option(player, \"disable-oob\", 1);";
 "set_connection_option(player, \"binary\", 1);";
 "";
+"/* If a flash socket policy is set, peek at the first line.  If it's a";
+" * policy file request, serve the policy and finish; otherwise, put";
+" * the line back and continue.";
+" */";
+"if (flash_socket_policy = this:_flash_socket_policy())";
+"  if ((line = read(player)) == \"<policy-file-request/>~00\")";
+"    this:_log(\"DIALOG:  serving policy file:  \", flash_socket_policy);";
+"    notify(player, flash_socket_policy);";
+"    boot_player(player);";
+"    return;";
+"  else";
+"    force_input(player, line);";
+"  endif";
+"endif";
+"";
 "/* Loop forever (or until the client closes the connection or until";
-" * failure).";
+" * failure or until something else happens).";
 " */";
 "while (1)";
 "  if (!this:_do_request(player, this.default_chain))";
@@ -11186,41 +13246,41 @@ return;
 "  endif";
 "endwhile";
 "";
-"chunk_length:15";
+"chunk_length:30";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
-#43:10
+#43:11
 {request, response, chain} = args;
 $private();
 try
 cookies = request:cookies();
-if (`cookie = cookies["_session"] ! E_RANGE')
 try
+if (`cookie = cookies[this:_session_cookie_name()] ! E_RANGE')
 i = cookie:index("-");
 hmac = decode_base64(cookie[1..i - 1]);
 session = decode_base64(cookie[i + 1..$]);
 if ((hmac && session) && (string_hmac(session, this.key) == hmac))
-try
 session = parse_json(session, "embedded-types");
-if ((session["stamp"] + 604800) < time())
-session = [];
-endif
+if ((session["stamp"] + 604800) > time())
 session["data"];
-except (ANY)
+else
+this:_log("DIALOG:  session cookie has expired");
 session = [];
-endtry
+endif
+else
+this:_log("DIALOG:  session cookie hmac does not match");
+session = [];
+endif
 else
 session = [];
 endif
 except (ANY)
+this:_log("DIALOG:  session cookie is invalid");
 session = [];
 endtry
-else
-session = [];
-endif
 if (session)
 session = session["data"];
 endif
@@ -11238,30 +13298,33 @@ return;
 "";
 "try";
 "  cookies = request:cookies();";
-"  if (`cookie = cookies[\"_session\"] ! E_RANGE')";
-"    try";
+"";
+"  try";
+"    if (`cookie = cookies[this:_session_cookie_name()] ! E_RANGE')";
 "      i = cookie:index(\"-\");";
 "      hmac = decode_base64(cookie[1..i - 1]);";
 "      session = decode_base64(cookie[i + 1..$]);";
 "      if (hmac && session && string_hmac(session, this.key) == hmac)";
-"        try";
-"          session = parse_json(session, \"embedded-types\");";
-"          if (session[\"stamp\"] + 604800 < time())";
-"            session = [];";
-"          endif";
+"        session = parse_json(session, \"embedded-types\");";
+"        if (session[\"stamp\"] + 604800 > time())";
+"          /* probe the value */";
 "          session[\"data\"];";
-"        except (ANY)";
+"        else";
+"          this:_log(\"DIALOG:  session cookie has expired\");";
 "          session = [];";
-"        endtry";
+"        endif";
 "      else";
+"        this:_log(\"DIALOG:  session cookie hmac does not match\");";
 "        session = [];";
 "      endif";
-"    except (ANY)";
+"    else";
+"      /* no session cookie */";
 "      session = [];";
-"    endtry";
-"  else";
+"    endif";
+"  except (ANY)";
+"    this:_log(\"DIALOG:  session cookie is invalid\");";
 "    session = [];";
-"  endif";
+"  endtry";
 "";
 "  if (session)";
 "    session = session[\"data\"];";
@@ -11277,13 +13340,13 @@ return;
 "  return {request, response, {\"cleanup\", \"500\"}};";
 "endtry";
 "";
-"chunk_length:44";
+"chunk_length:47";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
-#43:11
+#43:12
 {request, response, chain} = args;
 $private();
 player = `request:session()["player"] ! E_RANGE => $nothing';
@@ -11308,14 +13371,14 @@ return;
 "chunk_length:13";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
-#43:12
+#43:13
 {request, response, chain} = args;
 $private();
 for item in (this.contents)
-if (isa(item, this.route))
+if (isa(item, this.route_proto))
 if (route = item:match(request))
 {object, verb, parameters} = route;
 request = request:set_parameters(`request:parameters() ! E_RANGE => []':merge(parameters));
@@ -11331,7 +13394,7 @@ return;
 "$private();";
 "";
 "for item in (this.contents)";
-"  if (isa(item, this.route))";
+"  if (isa(item, this.route_proto))";
 "    if (route = item:match(request))";
 "      {object, verb, parameters} = route;";
 "      request = request:set_parameters(`request:parameters() ! E_RANGE => []':merge(parameters));";
@@ -11346,10 +13409,10 @@ return;
 "chunk_length:16";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
-#43:13
+#43:14
 {request, response, chain} = args;
 $private();
 try
@@ -11578,15 +13641,14 @@ return;
 "chunk_length:121";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
-#43:14
+#43:15
 {request, response, chain} = args;
 $private();
 if (`handler = request:handler() ! E_RANGE')
 {object, verb} = handler;
-server_log(tostr("DIALOG: serving request with ", object, ":", verb));
 player = `task_local()["http"]["session"]["player"] ! E_RANGE => $nothing';
 {request, response} = this:_drop_perms_and_call_verb(object, verb, request, response);
 chain = chain:setremove("404");
@@ -11600,8 +13662,6 @@ return;
 "if (`handler = request:handler() ! E_RANGE')";
 "  {object, verb} = handler;";
 "";
-"  server_log(tostr(\"DIALOG: serving request with \", object, \":\", verb));";
-"";
 "  /* Set player and then drop perms in a wrapper verb so that the";
 "   * dropped perms don't make us lose the player change.";
 "   */";
@@ -11609,21 +13669,21 @@ return;
 "";
 "  {request, response} = this:_drop_perms_and_call_verb(object, verb, request, response);";
 "";
-"  /* If successful, remove the 404 -- if present, this should be";
-"   * the first, last and only 404.";
+"  /* If successful, remove the 404 -- if 404 is present, it";
+"   * should be the first, last and only 404.";
 "   */";
 "  chain = chain:setremove(\"404\");";
 "endif";
 "";
 "return {request, response, chain};";
 "";
-"chunk_length:23";
+"chunk_length:21";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
-#43:15
+#43:16
 {request, response, chain} = args;
 $private();
 try
@@ -11639,7 +13699,7 @@ session = encode_base64(session);
 hmac = encode_base64(hmac);
 headers = `response:headers() ! E_RANGE => []';
 set_cookie = `headers["Set-Cookie"] ! E_RANGE => {}';
-set_cookie = {@set_cookie, tostr("_session=", hmac, "-", session, ";path=/;")};
+set_cookie = {@set_cookie, tostr(this.session_cookie_name, "=", hmac, "-", session, ";path=/;")};
 headers["Set-Cookie"] = set_cookie:join(",");
 response = response:set_headers(headers);
 try
@@ -11649,6 +13709,14 @@ endfor
 file_rmdir(tostr("tmp/", task_id()));
 except (E_FILE)
 endtry
+if (`body = response:body() ! E_RANGE' != E_RANGE)
+if (typeof(body) == LIST)
+body = body:join("~0D~0A") + "~0D~0A";
+endif
+headers["Content-Type"] = `headers["Content-Type"] ! E_RANGE => "text/plain"';
+headers["Content-Length"] = `headers["Content-Length"] ! E_RANGE => length(decode_binary(body, 1))';
+response = response:set_headers(headers):set_body(body);
+endif
 return {request, response, chain};
 except ex (ANY)
 request = request:set_exception(ex);
@@ -11682,7 +13750,7 @@ return;
 "  /* store in cookie */";
 "  headers = `response:headers() ! E_RANGE => []';";
 "  set_cookie = `headers[\"Set-Cookie\"] ! E_RANGE => {}';";
-"  set_cookie = {@set_cookie, tostr(\"_session=\", hmac, \"-\", session, \";path=/;\")};";
+"  set_cookie = {@set_cookie, tostr(this.session_cookie_name, \"=\", hmac, \"-\", session, \";path=/;\")};";
 "  headers[\"Set-Cookie\"] = set_cookie:join(\",\");";
 "  response = response:set_headers(headers);";
 "";
@@ -11695,6 +13763,22 @@ return;
 "  except (E_FILE)";
 "  endtry";
 "";
+"  /* Deal with the body.  Processing can fail with E_QUOTA/E_INVARG";
+"   * when concatenating strings and computing the length of the body.";
+"   */";
+"  if (`body = response:body() ! E_RANGE' != E_RANGE)";
+"    /* if the body is a list, make it a string */";
+"    if (typeof(body) == LIST)";
+"      body = body:join(\"~0D~0A\") + \"~0D~0A\";";
+"    endif";
+"";
+"    /* ensure we have content type and content length */";
+"    headers[\"Content-Type\"] = `headers[\"Content-Type\"] ! E_RANGE => \"text/plain\"';";
+"    headers[\"Content-Length\"] = `headers[\"Content-Length\"] ! E_RANGE => length(decode_binary(body, 1))';";
+"";
+"    response = response:set_headers(headers):set_body(body);";
+"  endif";
+"";
 "  return {request, response, chain};";
 "";
 "except ex (ANY)";
@@ -11702,26 +13786,26 @@ return;
 "  return {request, response, {\"500\"}};";
 "endtry";
 "";
-"chunk_length:46";
+"chunk_length:62";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
-#43:16
+#43:17
 {request, response, chain} = args;
 $private();
 response = response:set_type("text/html");
 body = "<html><head><title>%m</title></head><body><h1>%m</h1>%c</body></html>";
 if (("500" == verb) && `ex = request:exception() ! E_RANGE')
 body = body:strsub(["%m" -> "Internal Server Error", "%c" -> this:traceback(ex)]);
-response = response:set_status(500):set_body(body);
+response = response:set_status(500):set_type("text/html"):set_length(length(body)):set_body(body);
 elseif ("500" == verb)
 body = body:strsub(["%m" -> "Internal Server Error", "%c" -> ""]);
-response = response:set_status(500):set_body(body);
+response = response:set_status(500):set_type("text/html"):set_length(length(body)):set_body(body);
 elseif ("404" == verb)
 body = body:strsub(["%m" -> "Not Found", "%c" -> ""]);
-response = response:set_status(404):set_body(body);
+response = response:set_status(404):set_type("text/html"):set_length(length(body)):set_body(body);
 endif
 return {request, response, chain};
 return;
@@ -11731,23 +13815,23 @@ return;
 "body = \"<html><head><title>%m</title></head><body><h1>%m</h1>%c</body></html>\";";
 "if (\"500\" == verb && `ex = request:exception() ! E_RANGE')";
 "  body = body:strsub([\"%m\" -> \"Internal Server Error\", \"%c\" -> this:traceback(ex)]);";
-"  response = response:set_status(500):set_body(body);";
+"  response = response:set_status(500):set_type(\"text/html\"):set_length(length(body)):set_body(body);";
 "elseif (\"500\" == verb)";
 "  body = body:strsub([\"%m\" -> \"Internal Server Error\", \"%c\" -> \"\"]);";
-"  response = response:set_status(500):set_body(body);";
+"  response = response:set_status(500):set_type(\"text/html\"):set_length(length(body)):set_body(body);";
 "elseif (\"404\" == verb)";
 "  body = body:strsub([\"%m\" -> \"Not Found\", \"%c\" -> \"\"]);";
-"  response = response:set_status(404):set_body(body);";
+"  response = response:set_status(404):set_type(\"text/html\"):set_length(length(body)):set_body(body);";
 "endif";
 "return {request, response, chain};";
 "";
 "chunk_length:15";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
-#43:17
+#43:18
 {ex} = args;
 $private();
 {l, @r} = ex[4];
@@ -11760,7 +13844,7 @@ tb = tostr(tb, "<li><code>(End of traceback)</code></li>");
 tb = tostr(tb, "</ol>");
 return tb;
 .
-#43:18
+#43:19
 {verb, @args} = args;
 $permit("wizard");
 set_task_perms(caller_perms());
@@ -11776,10 +13860,10 @@ return;
 "chunk_length:5";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
-#43:19
+#43:20
 {object, verb, request, response} = args;
 $private();
 set_task_perms(player);
@@ -11793,10 +13877,10 @@ return;
 "chunk_length:4";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
-#43:20
+#43:21
 $private();
 {request, response, chain} = args;
 set_task_perms($nothing);
@@ -11879,7 +13963,7 @@ return;
 "chunk_length:50";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #44:0
@@ -11962,7 +14046,7 @@ return;
 "chunk_length:13";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #47:0
@@ -12009,7 +14093,7 @@ return;
 "chunk_length:21";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #47:1
@@ -12026,7 +14110,7 @@ return;
 "chunk_length:5";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #48:0
@@ -12051,7 +14135,7 @@ return;
 "chunk_length:9";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #48:1
@@ -12085,7 +14169,7 @@ return;
 "chunk_length:20";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:18:47 2012 EST";
+"updated_at:Tue Mar 20 08:20:33 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #50:0
@@ -12124,7 +14208,7 @@ return;
 "chunk_length:19";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:19:07 2012 EST";
+"updated_at:Tue Mar 20 08:20:48 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #50:1
@@ -12291,14 +14375,23 @@ return;
 "chunk_length:89";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:19:07 2012 EST";
+"updated_at:Tue Mar 20 08:20:48 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #51:0
 $restrict_to_caller($dialog.server, "route");
 {request} = args;
-if ((request:method() == "get") && (request:uri():index("///") == 1))
+uri = request:uri();
+if (uri:index("///") == 1)
+if (request:method() == "get")
 return {this, "get", []};
+elseif (request:method() == "put")
+return {this, "put", []};
+elseif (request:method() == "post")
+return {this, "post", []};
+elseif (request:method() == "delete")
+return {this, "delete", []};
+endif
 endif
 return {};
 return;
@@ -12306,49 +14399,86 @@ return;
 "";
 "{request} = args;";
 "";
-"if (request:method() == \"get\" && request:uri():index(\"///\") == 1)";
-"  return {this, \"get\", []};";
+"uri = request:uri();";
+"";
+"if (uri:index(\"///\") == 1)";
+"  if (request:method() == \"get\")";
+"    return {this, \"get\", []};";
+"  elseif (request:method() == \"put\")";
+"    return {this, \"put\", []};";
+"  elseif (request:method() == \"post\")";
+"    return {this, \"post\", []};";
+"  elseif (request:method() == \"delete\")";
+"    return {this, \"delete\", []};";
+"  endif";
 "endif";
 "";
 "return {};";
 "";
-"chunk_length:9";
+"chunk_length:19";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:19:07 2012 EST";
+"updated_at:Tue Mar 20 08:20:48 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #51:1
+$private();
+{uri} = args;
+if ((uri:index("///") == 1) && ((r = uri:split("/")):length() < 5))
+{?a = "", ?b = "", ?c = "", ?d = ""} = r;
+return {a, b, c, d};
+else
+return 0;
+endif
+return;
+"$private();";
+"";
+"{uri} = args;";
+"";
+"/*";
+"if (r = uri:match(\"^///\" + \"%(%(%w+%)/%(%w+%)?%)?\" + \"%(/%(%w+%)/%(%w+%)?%)?\" + \"$\"))";
+"  a1 = r[4][r[3][2][1]..r[3][2][2]];";
+"  a2 = r[4][r[3][3][1]..r[3][3][2]];";
+"  b1 = r[4][r[3][5][1]..r[3][5][2]];";
+"  b2 = r[4][r[3][6][1]..r[3][6][2]];";
+"  return {a1, a2, b1, b2};";
+"*/";
+"if (uri:index(\"///\") == 1 && (r = uri:split(\"/\")):length() < 5)";
+"  {?a = \"\", ?b = \"\", ?c = \"\", ?d = \"\"} = r;";
+"  return {a, b, c, d};";
+"else";
+"  return 0;";
+"endif";
+"";
+"chunk_length:18";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Tue Mar 20 08:20:48 2012 EDT";
+"-=-=-mxyzptlk-=-=-";
+.
+#51:2
 $restrict_to_caller($dialog.server, "_drop_perms_and_call_verb", "serve");
 set_task_perms(caller_perms());
 {request, response} = args;
 uri = request:uri();
-if (uri:index("///") == 1)
-if (r = uri:match((("^///" + "%(%(%w+%)/%(%w+%)?%)?") + "%(/%(%w+%)/%(%w+%)?%)?") + "$"))
-a1 = r[4][r[3][2][1]..r[3][2][2]];
-a2 = r[4][r[3][3][1]..r[3][3][2]];
-b1 = r[4][r[3][5][1]..r[3][5][2]];
-b2 = r[4][r[3][6][1]..r[3][6][2]];
-if ("///" == r[4])
+if (r = this:_match_uri(uri))
+{a1, a2, b1, b2} = r;
+if ((((!a1) && (!a2)) && (!b1)) && (!b2))
+response = response:set_status(200);
+response = response:set_type("application/json");
+response = response:set_body("{}");
+elseif (((("objects" == a1) && (!a2)) && (!b1)) && (!b2))
 response = response:set_status(200);
 response = response:set_type("application/json");
 response = response:set_body("{}");
 elseif (((("objects" == a1) && a2) && (!b1)) && (!b2))
-response = response:set_status(200);
+o = toobj(a2);
+o = $shapes:read_object(o);
+status = o["Meta"]["status"];
+status = (status == "invalid") ? 404 | ((status == "denied") ? 403 | 200);
+response = response:set_status(status);
 response = response:set_type("application/json");
-response = response:set_body(generate_json($shapes:read_object(toobj(a2)), "embedded-types"));
-elseif (((("objects" == a1) && a2) && ("attributes" == b1)) && b2)
-response = response:set_status(200);
-response = response:set_type("application/json");
-response = response:set_body(generate_json($shapes:read_attribute(toobj(a2), b2), "embedded-types"));
-elseif (((("objects" == a1) && a2) && ("properties" == b1)) && b2)
-response = response:set_status(200);
-response = response:set_type("application/json");
-response = response:set_body(generate_json($shapes:read_property(toobj(a2), toint(b2)), "embedded-types"));
-elseif (((("objects" == a1) && a2) && ("verbs" == b1)) && b2)
-response = response:set_status(200);
-response = response:set_type("application/json");
-response = response:set_body(generate_json($shapes:read_verb(toobj(a2), toint(b2)), "embedded-types"));
+response = response:set_body(generate_json(o, "embedded-types"):strsub("~", "~7E"));
 else
 response = response:set_status(404);
 response = response:set_type("application/json");
@@ -12358,7 +14488,6 @@ else
 response = response:set_status(404);
 response = response:set_type("application/json");
 response = response:set_body("{}");
-endif
 endif
 return {request, response};
 return;
@@ -12370,50 +14499,227 @@ return;
 "";
 "uri = request:uri();";
 "";
-"if (uri:index(\"///\") == 1)";
-"  if (r = uri:match(\"^///\" + \"%(%(%w+%)/%(%w+%)?%)?\" + \"%(/%(%w+%)/%(%w+%)?%)?\" + \"$\"))";
-"    a1 = r[4][r[3][2][1]..r[3][2][2]];";
-"    a2 = r[4][r[3][3][1]..r[3][3][2]];";
-"    b1 = r[4][r[3][5][1]..r[3][5][2]];";
-"    b2 = r[4][r[3][6][1]..r[3][6][2]];";
-"    if (\"///\" == r[4])";
-"      response = response:set_status(200);";
-"      response = response:set_type(\"application/json\");";
-"      response = response:set_body(\"{}\");";
-"    elseif (\"objects\" == a1 && a2 && !b1 && !b2)";
-"      response = response:set_status(200);";
-"      response = response:set_type(\"application/json\");";
-"      response = response:set_body(generate_json($shapes:read_object(toobj(a2)), \"embedded-types\"));";
-"    elseif (\"objects\" == a1 && a2 && \"attributes\" == b1 && b2)";
-"      response = response:set_status(200);";
-"      response = response:set_type(\"application/json\");";
-"      response = response:set_body(generate_json($shapes:read_attribute(toobj(a2), b2), \"embedded-types\"));";
-"    elseif (\"objects\" == a1 && a2 && \"properties\" == b1 && b2)";
-"      response = response:set_status(200);";
-"      response = response:set_type(\"application/json\");";
-"      response = response:set_body(generate_json($shapes:read_property(toobj(a2), toint(b2)), \"embedded-types\"));";
-"    elseif (\"objects\" == a1 && a2 && \"verbs\" == b1 && b2)";
-"      response = response:set_status(200);";
-"      response = response:set_type(\"application/json\");";
-"      response = response:set_body(generate_json($shapes:read_verb(toobj(a2), toint(b2)), \"embedded-types\"));";
-"    else";
-"      response = response:set_status(404);";
-"      response = response:set_type(\"application/json\");";
-"      response = response:set_body(\"{}\");";
-"    endif";
+"if (r = this:_match_uri(uri))";
+"  {a1, a2, b1, b2} = r;";
+"  if (!a1 && !a2 && !b1 && !b2)";
+"    response = response:set_status(200);";
+"    response = response:set_type(\"application/json\");";
+"    response = response:set_body(\"{}\");";
+"  elseif (\"objects\" == a1 && !a2 && !b1 && !b2)";
+"    response = response:set_status(200);";
+"    response = response:set_type(\"application/json\");";
+"    response = response:set_body(\"{}\");";
+"  elseif (\"objects\" == a1 && a2 && !b1 && !b2)";
+"    o = toobj(a2);";
+"    o = $shapes:read_object(o);";
+"    status = o[\"Meta\"][\"status\"];";
+"    status = (status == \"invalid\" ? 404 | (status == \"denied\" ? 403 | 200));";
+"    response = response:set_status(status);";
+"    response = response:set_type(\"application/json\");";
+"    response = response:set_body(generate_json(o, \"embedded-types\"):strsub(\"~\", \"~7E\"));";
+"  /*";
+"  elseif (\"objects\" == a1 && a2 && \"attributes\" == b1 && b2)";
+"    response = response:set_status(200);";
+"    response = response:set_type(\"application/json\");";
+"    response = response:set_body(generate_json($shapes:read_attribute(toobj(a2), b2), \"embedded-types\"));";
+"  elseif (\"objects\" == a1 && a2 && \"properties\" == b1 && b2)";
+"    response = response:set_status(200);";
+"    response = response:set_type(\"application/json\");";
+"    response = response:set_body(generate_json($shapes:read_property(toobj(a2), toint(b2)), \"embedded-types\"));";
+"  elseif (\"objects\" == a1 && a2 && \"verbs\" == b1 && b2)";
+"    response = response:set_status(200);";
+"    response = response:set_type(\"application/json\");";
+"    response = response:set_body(generate_json($shapes:read_verb(toobj(a2), toint(b2)), \"embedded-types\"));";
+"  */";
 "  else";
 "    response = response:set_status(404);";
 "    response = response:set_type(\"application/json\");";
 "    response = response:set_body(\"{}\");";
 "  endif";
+"else";
+"  response = response:set_status(404);";
+"  response = response:set_type(\"application/json\");";
+"  response = response:set_body(\"{}\");";
 "endif";
 "";
 "return {request, response};";
 "";
-"chunk_length:47";
+"chunk_length:52";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:19:07 2012 EST";
+"updated_at:Tue Mar 20 08:20:48 2012 EDT";
+"-=-=-mxyzptlk-=-=-";
+.
+#51:3
+$restrict_to_caller($dialog.server, "_drop_perms_and_call_verb", "serve");
+set_task_perms(caller_perms());
+{request, response} = args;
+uri = request:uri();
+if (r = this:_match_uri(uri))
+{ars, aid, brs, bid} = r;
+if (((("objects" == ars) && aid) && (!brs)) && (!bid))
+response = response:set_status(200);
+response = response:set_type("application/json");
+response = response:set_body(generate_json($shapes:write_object(toobj(aid), parse_json(request:body(), "embedded-types")), "embedded-types"));
+else
+response = response:set_status(404);
+response = response:set_type("application/json");
+response = response:set_body("{}");
+endif
+else
+response = response:set_status(404);
+response = response:set_type("application/json");
+response = response:set_body("{}");
+endif
+return {request, response};
+return;
+"$restrict_to_caller($dialog.server, \"_drop_perms_and_call_verb\", \"serve\");";
+"";
+"set_task_perms(caller_perms());";
+"";
+"{request, response} = args;";
+"";
+"uri = request:uri();";
+"";
+"if (r = this:_match_uri(uri))";
+"  {ars, aid, brs, bid} = r;";
+"  if (\"objects\" == ars && aid && !brs && !bid)";
+"    response = response:set_status(200);";
+"    response = response:set_type(\"application/json\");";
+"    response = response:set_body(generate_json($shapes:write_object(toobj(aid), parse_json(request:body(), \"embedded-types\")), \"embedded-types\"));";
+"  else";
+"    response = response:set_status(404);";
+"    response = response:set_type(\"application/json\");";
+"    response = response:set_body(\"{}\");";
+"  endif";
+"else";
+"  response = response:set_status(404);";
+"  response = response:set_type(\"application/json\");";
+"  response = response:set_body(\"{}\");";
+"endif";
+"";
+"return {request, response};";
+"";
+"chunk_length:26";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Tue Mar 20 08:20:48 2012 EDT";
+"-=-=-mxyzptlk-=-=-";
+.
+#51:4
+$restrict_to_caller($dialog.server, "_drop_perms_and_call_verb", "serve");
+set_task_perms(caller_perms());
+{request, response} = args;
+uri = request:uri();
+if (r = this:_match_uri(uri))
+{ars, aid, brs, bid} = r;
+if (((("objects" == ars) && (!aid)) && (!brs)) && (!bid))
+o = create($nothing);
+response = response:set_status(201);
+response = response:set_type("application/json");
+response = response:set_body(generate_json($shapes:write_object(o, parse_json(request:body(), "embedded-types")), "embedded-types"));
+else
+response = response:set_status(404);
+response = response:set_type("application/json");
+response = response:set_body("{}");
+endif
+else
+response = response:set_status(404);
+response = response:set_type("application/json");
+response = response:set_body("{}");
+endif
+return {request, response};
+return;
+"$restrict_to_caller($dialog.server, \"_drop_perms_and_call_verb\", \"serve\");";
+"";
+"set_task_perms(caller_perms());";
+"";
+"{request, response} = args;";
+"";
+"uri = request:uri();";
+"";
+"if (r = this:_match_uri(uri))";
+"  {ars, aid, brs, bid} = r;";
+"  if (\"objects\" == ars && !aid && !brs && !bid)";
+"    o = create($nothing);";
+"    response = response:set_status(201);";
+"    response = response:set_type(\"application/json\");";
+"    response = response:set_body(generate_json($shapes:write_object(o, parse_json(request:body(), \"embedded-types\")), \"embedded-types\"));";
+"  else";
+"    response = response:set_status(404);";
+"    response = response:set_type(\"application/json\");";
+"    response = response:set_body(\"{}\");";
+"  endif";
+"else";
+"  response = response:set_status(404);";
+"  response = response:set_type(\"application/json\");";
+"  response = response:set_body(\"{}\");";
+"endif";
+"";
+"return {request, response};";
+"";
+"chunk_length:27";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Tue Mar 20 08:20:48 2012 EDT";
+"-=-=-mxyzptlk-=-=-";
+.
+#51:5
+$restrict_to_caller($dialog.server, "_drop_perms_and_call_verb", "serve");
+set_task_perms(caller_perms());
+{request, response} = args;
+uri = request:uri();
+if (r = this:_match_uri(uri))
+{ars, aid, brs, bid} = r;
+if (((("objects" == ars) && aid) && (!brs)) && (!bid))
+recycle(toobj(aid));
+response = response:set_status(200);
+response = response:set_type("application/json");
+response = response:set_body("{}");
+else
+response = response:set_status(404);
+response = response:set_type("application/json");
+response = response:set_body("{}");
+endif
+else
+response = response:set_status(404);
+response = response:set_type("application/json");
+response = response:set_body("{}");
+endif
+return {request, response};
+return;
+"$restrict_to_caller($dialog.server, \"_drop_perms_and_call_verb\", \"serve\");";
+"";
+"set_task_perms(caller_perms());";
+"";
+"{request, response} = args;";
+"";
+"uri = request:uri();";
+"";
+"if (r = this:_match_uri(uri))";
+"  {ars, aid, brs, bid} = r;";
+"  if (\"objects\" == ars && aid && !brs && !bid)";
+"    recycle(toobj(aid)); /* can fail for a variety of reasons... deal with these... */";
+"    response = response:set_status(200);";
+"    response = response:set_type(\"application/json\");";
+"    response = response:set_body(\"{}\");";
+"  else";
+"    response = response:set_status(404);";
+"    response = response:set_type(\"application/json\");";
+"    response = response:set_body(\"{}\");";
+"  endif";
+"else";
+"  response = response:set_status(404);";
+"  response = response:set_type(\"application/json\");";
+"  response = response:set_body(\"{}\");";
+"endif";
+"";
+"return {request, response};";
+"";
+"chunk_length:27";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Tue Mar 20 08:20:48 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #52:0
@@ -12426,12 +14732,10 @@ set_connection_option(player, "hold-input", 0);
 set_connection_option(player, "disable-oob", 0);
 set_connection_option(player, "binary", 0);
 switch_player(player, new_player);
-else
-boot_player(player);
+kill_task(task_id());
 endif
-else
-boot_player(player);
 endif
+boot_player(player);
 return {request, response, {}};
 endif
 return {request, response, chain};
@@ -12447,22 +14751,25 @@ return;
 "      set_connection_option(player, \"disable-oob\", 0);";
 "      set_connection_option(player, \"binary\", 0);";
 "      switch_player(player, new_player);";
-"    else";
-"      boot_player(player);";
+"      /* This is clumsy, but... when we successfully upgrade the";
+"       * connection, end the task/request without booting the player";
+"       * and let MOO's own command handling take over.";
+"       */";
+"      kill_task(task_id());";
 "    endif";
-"  else";
-"    boot_player(player);";
 "  endif";
+"";
+"  boot_player(player);";
 "";
 "  return {request, response, {}};";
 "endif";
 "";
 "return {request, response, chain};";
 "";
-"chunk_length:22";
+"chunk_length:25";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:19:07 2012 EST";
+"updated_at:Tue Mar 20 08:20:48 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #53:0
@@ -12470,7 +14777,7 @@ $restrict_to_caller($dialog.server, "_do_chain");
 {request, response, chain} = args;
 {_, _, _, host, _, _} = connection_name(player):split();
 player = `task_local()["http"]["session"]["player"] ! E_RANGE => $nothing';
-name = `player.name ! E_INVIND => ""';
+name = `player.name ! E_TYPE, E_INVIND => ""';
 server_log(tostr("HTTP: ", host:trim(","), " \"", name, "\" (", player, ") \"", request:method(), " ", request:uri(), "\" ", response:status()));
 return {request, response, chain};
 return;
@@ -12481,7 +14788,7 @@ return;
 "{_, _, _, host, _, _} = connection_name(player):split();";
 "";
 "player = `task_local()[\"http\"][\"session\"][\"player\"] ! E_RANGE => $nothing';";
-"name = `player.name ! E_INVIND => \"\"';";
+"name = `player.name ! E_TYPE, E_INVIND => \"\"';";
 "";
 "server_log(tostr(\"HTTP: \", host:trim(\",\"), \" \\\"\", name, \"\\\" (\", player, \") \\\"\", request:method(), \" \", request:uri(), \"\\\" \", response:status()));";
 "";
@@ -12490,7 +14797,7 @@ return;
 "chunk_length:12";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:19:07 2012 EST";
+"updated_at:Tue Mar 20 08:20:48 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #54:0
@@ -12504,7 +14811,7 @@ return;
 "chunk_length:3";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:19:23 2012 EST";
+"updated_at:Tue Mar 20 08:21:20 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #54:1
@@ -12518,7 +14825,7 @@ return;
 "chunk_length:3";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:19:23 2012 EST";
+"updated_at:Tue Mar 20 08:21:20 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #57:0
@@ -12531,7 +14838,7 @@ return;
 "chunk_length:2";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:19:23 2012 EST";
+"updated_at:Tue Mar 20 08:21:20 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #57:1
@@ -13070,7 +15377,7 @@ return;
 "chunk_length:302";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 20:19:23 2012 EST";
+"updated_at:Tue Mar 20 08:21:20 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #60:0
@@ -13105,7 +15412,7 @@ return;
 "chunk_length:14";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Fri Feb 24 07:09:38 2012 EST";
+"updated_at:Tue Mar 20 08:21:39 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #61:0
@@ -13447,6 +15754,529 @@ endif
 endfor
 endif
 notify(player, "===================================");
+.
+#70:0
+$restrict_to_caller($dialog.server);
+{request, response} = args;
+parameters = request:parameters();
+if (valid(player))
+parameters = parameters:merge(["player" -> ["name" -> player.name]]);
+endif
+response = response:set_status(200):set_type("text/html"):set_body($lookup("home_views"):index(parameters));
+return {request, response};
+return;
+"$restrict_to_caller($dialog.server);";
+"";
+"{request, response} = args;";
+"";
+"parameters = request:parameters();";
+"";
+"if (valid(player))";
+"  parameters = parameters:merge([\"player\" -> [\"name\" -> player.name]]);";
+"endif";
+"";
+"response = response:set_status(200):set_type(\"text/html\"):set_body($lookup(\"home_views\"):index(parameters));";
+"";
+"return {request, response};";
+"";
+"chunk_length:13";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Tue Mar 20 08:22:31 2012 EDT";
+"-=-=-mxyzptlk-=-=-";
+.
+#71:0
+stack = args;
+output = {};
+output = output ? {@output, 0} | output;
+output = {@output, "<!DOCTYPE html>"};
+output = output ? {@output, 0} | output;
+output = {@output, "<html lang=\"en\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "<head>"};
+output = output ? {@output, 0} | output;
+output = {@output, "<title>Stunt | Improvise</title>"};
+output = output ? {@output, 0} | output;
+output = {@output, "<link type=\"text/css\" rel=\"stylesheet\" href=\"/css/bootstrap-2.0.1.min.css\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "<link type=\"text/css\" rel=\"stylesheet\" href=\"/css/bootstrap-responsive-2.0.1.min.css\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "<link type=\"text/css\" rel=\"stylesheet\" href=\"/css/moo-0.0.0.min.css\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "<script type=\"text/javascript\" src=\"/js/jquery-1.7.1.min.js\"></script>"};
+output = output ? {@output, 0} | output;
+output = {@output, "<script type=\"text/javascript\" src=\"/js/jquery.ui.core-1.8.18.min.js\"></script>"};
+output = output ? {@output, 0} | output;
+output = {@output, "<script type=\"text/javascript\" src=\"/js/jquery.ui.widget-1.8.18.min.js\"></script>"};
+output = output ? {@output, 0} | output;
+output = {@output, "<script type=\"text/javascript\" src=\"/js/underscore-1.3.1.min.js\"></script>"};
+output = output ? {@output, 0} | output;
+output = {@output, "<script type=\"text/javascript\" src=\"/js/backbone-0.9.1.min.js\"></script>"};
+output = output ? {@output, 0} | output;
+output = {@output, "<script type=\"text/javascript\" src=\"/js/swfobject-2.1.min.js\"></script>"};
+output = output ? {@output, 0} | output;
+output = {@output, "<script type=\"text/javascript\" src=\"/js/moo-0.0.1.min.js\"></script>"};
+output = output ? {@output, 0} | output;
+output = {@output, "<script type=\"text/javascript\" src=\"/js/Socket.js\"></script>"};
+output = output ? {@output, 0} | output;
+output = {@output, "<script type=\"text/javascript\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "var flashvars = {};"};
+output = output ? {@output, 0} | output;
+output = {@output, "var params = {menu: 'false', scale: 'noScale', allowFullscreen: 'true', allowScriptAccess: 'always', bgcolor: '#FFFFFF'};"};
+output = output ? {@output, 0} | output;
+output = {@output, "var attributes = {id: 'JavascriptSocket', name: 'JavascriptSocket'};"};
+output = output ? {@output, 0} | output;
+output = {@output, "swfobject.embedSWF('/flash/javascriptsocket.swf', 'flash-content', '100%', '100%', '9.0.0', null, flashvars, params, attributes);"};
+output = output ? {@output, 0} | output;
+output = {@output, "</script>"};
+output = output ? {@output, 0} | output;
+output = {@output, "</head>"};
+output = output ? {@output, 0} | output;
+output = {@output, "<body>"};
+output = output ? {@output, 0} | output;
+output = {@output, "  <div class=\"container\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "    &nbsp;"};
+output = output ? {@output, 0} | output;
+output = {@output, "    <div class=\"row\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "      <div class=\"span4\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "        "};
+if (!(top = `stack[1]["player"] ! E_RANGE'))
+for item in ({""})
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+stack = {stack[1]:merge((typeof(item) == MAP) ? item | (["." -> item])), @stack};
+output = output ? {@output, 1} | output;
+output = {@output, "          <form class=\"well form-inline\" action=\"/session/create\" method=\"post\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "            <input type=\"text\" name=\"credentials\" placeholder=\"player object number, e.g. #5\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "            <button type=\"submit\" name=\"submit\">Connect</button>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          </form>"};
+output = output ? {@output, 0} | output;
+output = {@output, "        "};
+stack = stack[2..$];
+endfor
+endif
+output = output ? {@output, 1} | output;
+output = {@output, "        "};
+if (top = `stack[1]["player"] ! E_RANGE')
+for item in ((typeof(top) == LIST) ? top | {top})
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+stack = {stack[1]:merge((typeof(item) == MAP) ? item | (["." -> item])), @stack};
+output = output ? {@output, 1} | output;
+output = {@output, "          <form class=\"well form-inline\" action=\"/session/destroy\" method=\"post\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "            <button type=\"submit\" name=\"submit\">Disconnect</button>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          </form>"};
+output = output ? {@output, 0} | output;
+output = {@output, "        "};
+stack = stack[2..$];
+endfor
+endif
+output = output ? {@output, 1} | output;
+output = {@output, "      </div>"};
+output = output ? {@output, 0} | output;
+output = {@output, "      <div class=\"span8\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "        "};
+if (!(top = `stack[1]["player"] ! E_RANGE'))
+for item in ({""})
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+stack = {stack[1]:merge((typeof(item) == MAP) ? item | (["." -> item])), @stack};
+output = output ? {@output, 1} | output;
+output = {@output, "          <h2>Welcome!</h2>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          <p>&larr; Use the form on the left to connect to a specific player object by its object number.</p>"};
+output = output ? {@output, 0} | output;
+output = {@output, "        "};
+stack = stack[2..$];
+endfor
+endif
+output = output ? {@output, 1} | output;
+output = {@output, "        "};
+if (top = `stack[1]["player"] ! E_RANGE')
+for item in ((typeof(top) == LIST) ? top | {top})
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+stack = {stack[1]:merge((typeof(item) == MAP) ? item | (["." -> item])), @stack};
+output = output ? {@output, 1} | output;
+output = {@output, "          <h2>Welcome, "};
+top = `stack[1]["player"] ! E_RANGE';
+stack = {(typeof(top) == MAP) ? top | ([]), @stack};
+output = {@output, strsub(strsub(strsub(strsub(`tostr(stack[1]["name"]) ! E_RANGE => ""', "&", "&amp;"), "<", "&lt;"), ">", "&gt;"), "\"", "&quot;")};
+stack = stack[2..$];
+output = {@output, "!</h2>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          <p>Start browsing by clicking on the object number to the right &rarr; <a rel=\"object\" data-object-number=\"0\" href=\"/objects/0\">#0</a>.</p>"};
+output = output ? {@output, 0} | output;
+output = {@output, "        "};
+stack = stack[2..$];
+endfor
+endif
+output = output ? {@output, 1} | output;
+output = {@output, "      </div>"};
+output = output ? {@output, 0} | output;
+output = {@output, "    </div>"};
+output = output ? {@output, 0} | output;
+output = {@output, "    "};
+if (top = `stack[1]["player"] ! E_RANGE')
+for item in ((typeof(top) == LIST) ? top | {top})
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+stack = {stack[1]:merge((typeof(item) == MAP) ? item | (["." -> item])), @stack};
+output = output ? {@output, 1} | output;
+output = {@output, "      <p id=\"browser\"></p>"};
+output = output ? {@output, 0} | output;
+output = {@output, "      <hr>"};
+output = output ? {@output, 0} | output;
+output = {@output, "      <p id=\"terminal\"></p>"};
+output = output ? {@output, 0} | output;
+output = {@output, "      <p>"};
+output = output ? {@output, 0} | output;
+output = {@output, "        &uarr; Send commands to the server by typing them in the input above (e.g. <code>@list packages with $composed</code> or <code>; 5 + 3</code>)."};
+output = output ? {@output, 0} | output;
+output = {@output, "      </p>"};
+output = output ? {@output, 0} | output;
+output = {@output, "    "};
+stack = stack[2..$];
+endfor
+endif
+output = output ? {@output, 1} | output;
+output = {@output, "    <div id=\"flash-content\"></div>"};
+output = output ? {@output, 0} | output;
+output = {@output, "  </div>"};
+output = output ? {@output, 0} | output;
+output = {@output, "  <script type=\"text/javascript\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "    $(function() {"};
+output = output ? {@output, 0} | output;
+output = {@output, "      Moo.Object.prototype.urlRoot = 'http://' + window.location.host + '///objects';"};
+output = output ? {@output, 0} | output;
+output = {@output, ""};
+output = output ? {@output, 0} | output;
+output = {@output, "      var $terminal = $('#terminal');"};
+output = output ? {@output, 0} | output;
+output = {@output, "      $terminal.commandPanel({host: window.location.hostname, port: window.location.port});"};
+output = output ? {@output, 0} | output;
+output = {@output, ""};
+output = output ? {@output, 0} | output;
+output = {@output, "      var $browser = $('#browser');"};
+output = output ? {@output, 0} | output;
+output = {@output, "      $browser.simpleObjectPanel();"};
+output = output ? {@output, 0} | output;
+output = {@output, ""};
+output = output ? {@output, 0} | output;
+output = {@output, "      Moo.Space = Backbone.Router.extend({"};
+output = output ? {@output, 0} | output;
+output = {@output, "        routes: {"};
+output = output ? {@output, 0} | output;
+output = {@output, "          'objects/:number': 'browse'"};
+output = output ? {@output, 0} | output;
+output = {@output, "        },"};
+output = output ? {@output, 0} | output;
+output = {@output, "        browse: function(number) {"};
+output = output ? {@output, 0} | output;
+output = {@output, "          var o = new Moo.Object({id: number});"};
+output = output ? {@output, 0} | output;
+output = {@output, "          o.fetch({"};
+output = output ? {@output, 0} | output;
+output = {@output, "            success: function(model, response) {"};
+output = output ? {@output, 0} | output;
+output = {@output, "              $browser.simpleObjectPanel({object: o});"};
+output = output ? {@output, 0} | output;
+output = {@output, "              $browser.get(0).scrollIntoView(true);"};
+output = output ? {@output, 0} | output;
+output = {@output, "            },"};
+output = output ? {@output, 0} | output;
+output = {@output, "            error: function(model, response) {"};
+output = output ? {@output, 0} | output;
+output = {@output, "              $browser.simpleObjectPanel({object: o});"};
+output = output ? {@output, 0} | output;
+output = {@output, "              $browser.get(0).scrollIntoView(true);"};
+output = output ? {@output, 0} | output;
+output = {@output, "            }"};
+output = output ? {@output, 0} | output;
+output = {@output, "          });"};
+output = output ? {@output, 0} | output;
+output = {@output, "        }"};
+output = output ? {@output, 0} | output;
+output = {@output, "      });"};
+output = output ? {@output, 0} | output;
+output = {@output, "      var moo = new Moo.Space;"};
+output = output ? {@output, 0} | output;
+output = {@output, ""};
+output = output ? {@output, 0} | output;
+output = {@output, "      $('body').on('click', 'a[rel*=object]', function(e) {"};
+output = output ? {@output, 0} | output;
+output = {@output, "        e.preventDefault();"};
+output = output ? {@output, 0} | output;
+output = {@output, "        var o = $(e.target).data('object-number');"};
+output = output ? {@output, 0} | output;
+output = {@output, "        moo.navigate('/objects/' + o, {trigger: true});"};
+output = output ? {@output, 0} | output;
+output = {@output, "      });"};
+output = output ? {@output, 0} | output;
+output = {@output, ""};
+output = output ? {@output, 0} | output;
+output = {@output, "      Backbone.history.start({pushState: true});"};
+output = output ? {@output, 0} | output;
+output = {@output, ""};
+output = output ? {@output, 0} | output;
+output = {@output, "      "};
+if (top = `stack[1]["id"] ! E_RANGE')
+for item in ((typeof(top) == LIST) ? top | {top})
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+stack = {stack[1]:merge((typeof(item) == MAP) ? item | (["." -> item])), @stack};
+output = output ? {@output, 1} | output;
+output = {@output, "        moo.navigate('/objects/"};
+output = {@output, strsub(strsub(strsub(strsub(`tostr(stack[1]["id"]) ! E_RANGE => ""', "&", "&amp;"), "<", "&lt;"), ">", "&gt;"), "\"", "&quot;")};
+output = {@output, "');"};
+output = output ? {@output, 0} | output;
+output = {@output, "      "};
+stack = stack[2..$];
+endfor
+endif
+output = output ? {@output, 1} | output;
+output = {@output, "    });"};
+output = output ? {@output, 0} | output;
+output = {@output, "  </script>"};
+output = output ? {@output, 0} | output;
+output = {@output, "</body>"};
+output = output ? {@output, 0} | output;
+output = {@output, "</html>"};
+output = output ? {@output, 0} | output;
+out = {};
+acc = {};
+indent = "";
+while (output)
+{line, @output} = output;
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+if (typeof(line) == LIST)
+elseif (typeof(line) == INT)
+if (line > 0)
+if (match(acc = tostr(@acc), "[^ ]"))
+out = {@out, acc};
+endif
+else
+out = {@out, tostr(@acc)};
+endif
+acc = {};
+else
+acc = {@acc, line};
+endif
+endwhile
+return out;
+return;
+"<!DOCTYPE html>";
+"<html lang=\"en\">";
+"<head>";
+"<title>Stunt | Improvise</title>";
+"<link type=\"text/css\" rel=\"stylesheet\" href=\"/css/bootstrap-2.0.1.min.css\">";
+"<link type=\"text/css\" rel=\"stylesheet\" href=\"/css/bootstrap-responsive-2.0.1.min.css\">";
+"<link type=\"text/css\" rel=\"stylesheet\" href=\"/css/moo-0.0.0.min.css\">";
+"<script type=\"text/javascript\" src=\"/js/jquery-1.7.1.min.js\"></script>";
+"<script type=\"text/javascript\" src=\"/js/jquery.ui.core-1.8.18.min.js\"></script>";
+"<script type=\"text/javascript\" src=\"/js/jquery.ui.widget-1.8.18.min.js\"></script>";
+"<script type=\"text/javascript\" src=\"/js/underscore-1.3.1.min.js\"></script>";
+"<script type=\"text/javascript\" src=\"/js/backbone-0.9.1.min.js\"></script>";
+"<script type=\"text/javascript\" src=\"/js/swfobject-2.1.min.js\"></script>";
+"<script type=\"text/javascript\" src=\"/js/moo-0.0.1.min.js\"></script>";
+"<script type=\"text/javascript\" src=\"/js/Socket.js\"></script>";
+"<script type=\"text/javascript\">";
+"var flashvars = {};";
+"var params = {menu: 'false', scale: 'noScale', allowFullscreen: 'true', allowScriptAccess: 'always', bgcolor: '#FFFFFF'};";
+"var attributes = {id: 'JavascriptSocket', name: 'JavascriptSocket'};";
+"swfobject.embedSWF('/flash/javascriptsocket.swf', 'flash-content', '100%', '100%', '9.0.0', null, flashvars, params, attributes);";
+"</script>";
+"</head>";
+"<body>";
+"  <div class=\"container\">";
+"    &nbsp;";
+"    <div class=\"row\">";
+"      <div class=\"span4\">";
+"        {{^player}}";
+"          <form class=\"well form-inline\" action=\"/session/create\" method=\"post\">";
+"            <input type=\"text\" name=\"credentials\" placeholder=\"player object number, e.g. #5\">";
+"            <button type=\"submit\" name=\"submit\">Connect</button>";
+"          </form>";
+"        {{/player}}";
+"        {{#player}}";
+"          <form class=\"well form-inline\" action=\"/session/destroy\" method=\"post\">";
+"            <button type=\"submit\" name=\"submit\">Disconnect</button>";
+"          </form>";
+"        {{/player}}";
+"      </div>";
+"      <div class=\"span8\">";
+"        {{^player}}";
+"          <h2>Welcome!</h2>";
+"          <p>&larr; Use the form on the left to connect to a specific player object by its object number.</p>";
+"        {{/player}}";
+"        {{#player}}";
+"          <h2>Welcome, {{player.name}}!</h2>";
+"          <p>Start browsing by clicking on the object number to the right &rarr; <a rel=\"object\" data-object-number=\"0\" href=\"/objects/0\">#0</a>.</p>";
+"        {{/player}}";
+"      </div>";
+"    </div>";
+"    {{#player}}";
+"      <p id=\"browser\"></p>";
+"      <hr>";
+"      <p id=\"terminal\"></p>";
+"      <p>";
+"        &uarr; Send commands to the server by typing them in the input above (e.g. <code>@list packages with $composed</code> or <code>; 5 + 3</code>).";
+"      </p>";
+"    {{/player}}";
+"    <div id=\"flash-content\"></div>";
+"  </div>";
+"  <script type=\"text/javascript\">";
+"    $(function() {";
+"      Moo.Object.prototype.urlRoot = 'http://' + window.location.host + '///objects';";
+"";
+"      var $terminal = $('#terminal');";
+"      $terminal.commandPanel({host: window.location.hostname, port: window.location.port});";
+"";
+"      var $browser = $('#browser');";
+"      $browser.simpleObjectPanel();";
+"";
+"      Moo.Space = Backbone.Router.extend({";
+"        routes: {";
+"          'objects/:number': 'browse'";
+"        },";
+"        browse: function(number) {";
+"          var o = new Moo.Object({id: number});";
+"          o.fetch({";
+"            success: function(model, response) {";
+"              $browser.simpleObjectPanel({object: o});";
+"              $browser.get(0).scrollIntoView(true);";
+"            },";
+"            error: function(model, response) {";
+"              $browser.simpleObjectPanel({object: o});";
+"              $browser.get(0).scrollIntoView(true);";
+"            }";
+"          });";
+"        }";
+"      });";
+"      var moo = new Moo.Space;";
+"";
+"      $('body').on('click', 'a[rel*=object]', function(e) {";
+"        e.preventDefault();";
+"        var o = $(e.target).data('object-number');";
+"        moo.navigate('/objects/' + o, {trigger: true});";
+"      });";
+"";
+"      Backbone.history.start({pushState: true});";
+"";
+"      {{#id}}";
+"        moo.navigate('/objects/{{id}}');";
+"      {{/id}}";
+"    });";
+"  </script>";
+"</body>";
+"</html>";
+"";
+"chunk_length:105";
+"chunk_type:source";
+"content_type:application/x-mustache";
+"updated_at:Tue Mar 20 08:22:31 2012 EDT";
+"-=-=-mxyzptlk-=-=-";
+.
+#72:0
+$restrict_to_caller($dialog.server);
+{request, response} = args;
+player = `request:parameters()["credentials"] ! E_RANGE => $nothing';
+if (valid(player = toobj(player)))
+set_task_local(task_local():merge(["http" -> ["session" -> ["player" -> player]]]));
+endif
+response = response:set_status(302):set_location(request:parameters()["__base_uri__"] + "/"):set_body("");
+return {request, response};
+return;
+"$restrict_to_caller($dialog.server);";
+"";
+"{request, response} = args;";
+"";
+"player = `request:parameters()[\"credentials\"] ! E_RANGE => $nothing';";
+"if (valid(player = toobj(player)))";
+"  set_task_local(task_local():merge([\"http\" -> [\"session\" -> [\"player\" -> player]]]));";
+"endif";
+"";
+"response = response:set_status(302):set_location(request:parameters()[\"__base_uri__\"] + \"/\"):set_body(\"\");";
+"";
+"return {request, response};";
+"";
+"chunk_length:12";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Tue Mar 20 08:22:31 2012 EDT";
+"-=-=-mxyzptlk-=-=-";
+.
+#72:1
+$restrict_to_caller($dialog.server);
+{request, response} = args;
+set_task_local(task_local():merge(["http" -> ["session" -> ["player" -> $nothing]]]));
+response = response:set_status(302):set_location(request:parameters()["__base_uri__"] + "/"):set_body("");
+return {request, response};
+return;
+"$restrict_to_caller($dialog.server);";
+"";
+"{request, response} = args;";
+"";
+"set_task_local(task_local():merge([\"http\" -> [\"session\" -> [\"player\" -> $nothing]]]));";
+"";
+"response = response:set_status(302):set_location(request:parameters()[\"__base_uri__\"] + \"/\"):set_body(\"\");";
+"";
+"return {request, response};";
+"";
+"chunk_length:9";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Tue Mar 20 08:22:31 2012 EDT";
+"-=-=-mxyzptlk-=-=-";
+.
+#76:0
+{request} = args;
+path = request:path():split("/");
+method = request:method();
+{host, ?port = 80} = `request:headers()["host"]:split(":") ! E_RANGE => {""}';
+parameters = ["__base_uri__" -> host ? tostr("http://", host, ":", port) | ""];
+if ((!path) && (method == "get"))
+return {$lookup("home_controller"), "index", parameters};
+elseif (((length(path) == 2) && (path[1] == "objects")) && (method == "get"))
+return {$lookup("home_controller"), "browse", parameters:merge(["id" -> path[2]])};
+elseif ((path == {"session", "create"}) && (method == "post"))
+return {$lookup("session_controller"), path[2], parameters};
+elseif ((path == {"session", "destroy"}) && (method == "post"))
+return {$lookup("session_controller"), path[2], parameters};
+endif
+return {};
+return;
+"{request} = args;";
+"";
+"path = request:path():split(\"/\");";
+"method = request:method();";
+"";
+"{host, ?port = 80} = `request:headers()[\"host\"]:split(\":\") ! E_RANGE => {\"\"}';";
+"";
+"parameters = [\"__base_uri__\" -> host ? tostr(\"http://\", host, \":\", port) | \"\"];";
+"";
+"if (!path && method == \"get\")";
+"  return {$lookup(\"home_controller\"), \"index\", parameters};";
+"elseif (length(path) == 2 && path[1] == \"objects\" && method == \"get\")";
+"  return {$lookup(\"home_controller\"), \"browse\", parameters:merge([\"id\" -> path[2]])};";
+"elseif (path == {\"session\", \"create\"} && method == \"post\")";
+"  return {$lookup(\"session_controller\"), path[2], parameters};";
+"elseif (path == {\"session\", \"destroy\"} && method == \"post\")";
+"  return {$lookup(\"session_controller\"), path[2], parameters};";
+"endif";
+"";
+"return {};";
+"";
+"chunk_length:20";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Tue Mar 20 08:22:31 2012 EDT";
+"-=-=-mxyzptlk-=-=-";
 .
 0 clocks
 0 queued tasks
