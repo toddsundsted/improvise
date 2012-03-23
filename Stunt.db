@@ -158,7 +158,7 @@ application/x-mustache
 2
 1
 1
--573
+-5
 2
 1
 2
@@ -208,45 +208,13 @@ Welcome to Stunt!  For information about Stunt, check out http://stunt.io/.  To 
 20
 1
 4
-19
+3
 1
 31
 1
 44
 1
 45
-1
-84
-1
-85
-1
-86
-1
-87
-1
-89
-1
-90
-1
-91
-1
-93
-1
-92
-1
-88
-1
-95
-1
-96
-1
-97
-1
-98
-1
-99
-1
-100
 20
 1
 5
@@ -598,7 +566,7 @@ huh
 passkey
 2
 2
-A1E0844C1B8AF421B12B3A723B4C8B0F3108C71B0355FF18D8F4F142B649A6D7
+D58A01E697FE48708BFD0729EEB6E1CDFE3B8D44C8CF5C17CEF41E937842DE47
 5
 0
 5
@@ -621,7 +589,7 @@ Programmer
 passkey
 2
 2
-E1AAEE2D8EA694FB9C30504CD7C70AB9499BC2FFD752C92CFD9996DCC83177A5
+E799FF92F2B2C29331ED186D19DD7A46F9991D8AD1E35A4000E52CB7D9DA2AF1
 5
 0
 5
@@ -1138,7 +1106,7 @@ primitive
 2
 0
 0
-1332246168
+1332545072
 2
 0
 10
@@ -8491,7 +8459,7 @@ Database Server
 69
 4
 #76
-Home
+Routes
 0
 69
 1
@@ -15760,7 +15728,8 @@ $restrict_to_caller($dialog.server);
 {request, response} = args;
 parameters = request:parameters();
 if (valid(player))
-parameters = parameters:merge(["player" -> ["name" -> player.name]]);
+MAP = ["links" -> {["id" -> tonum($system), "name" -> "$system"], ["id" -> tonum(player.location), "name" -> "home"], ["id" -> tonum(player), "name" -> "me"]}];
+parameters = parameters:merge(["player" -> ["id" -> tonum(player), "name" -> player.name]]):merge(MAP);
 endif
 response = response:set_status(200):set_type("text/html"):set_body($lookup("home_views"):index(parameters));
 return {request, response};
@@ -15772,17 +15741,24 @@ return;
 "parameters = request:parameters();";
 "";
 "if (valid(player))";
-"  parameters = parameters:merge([\"player\" -> [\"name\" -> player.name]]);";
+"  map = [";
+"    \"links\" -> {";
+"      [\"id\" -> tonum($system), \"name\" -> \"$system\"],";
+"      [\"id\" -> tonum(player.location), \"name\" -> \"home\"],";
+"      [\"id\" -> tonum(player), \"name\" -> \"me\"]";
+"    }";
+"  ];";
+"  parameters = parameters:merge([\"player\" -> [\"id\" -> tonum(player), \"name\" -> player.name]]):merge(map);";
 "endif";
 "";
 "response = response:set_status(200):set_type(\"text/html\"):set_body($lookup(\"home_views\"):index(parameters));";
 "";
 "return {request, response};";
 "";
-"chunk_length:13";
+"chunk_length:20";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:22:31 2012 EDT";
+"updated_at:Fri Mar 23 19:16:40 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #71:0
@@ -15911,7 +15887,30 @@ output = {@output, strsub(strsub(strsub(strsub(`tostr(stack[1]["name"]) ! E_RANG
 stack = stack[2..$];
 output = {@output, "!</h2>"};
 output = output ? {@output, 0} | output;
-output = {@output, "          <p>Start browsing by clicking on the object number to the right &rarr; <a rel=\"object\" data-object-number=\"0\" href=\"/objects/0\">#0</a>.</p>"};
+output = {@output, "          <p>"};
+output = output ? {@output, 0} | output;
+output = {@output, "            Start browsing by clicking on the object references to the right &rarr;"};
+output = output ? {@output, 0} | output;
+output = {@output, "            "};
+if (top = `stack[1]["links"] ! E_RANGE')
+for item in ((typeof(top) == LIST) ? top | {top})
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+stack = {stack[1]:merge((typeof(item) == MAP) ? item | (["." -> item])), @stack};
+output = output ? {@output, 1} | output;
+output = {@output, "              <a rel=\"object\" data-object-number=\""};
+output = {@output, strsub(strsub(strsub(strsub(`tostr(stack[1]["id"]) ! E_RANGE => ""', "&", "&amp;"), "<", "&lt;"), ">", "&gt;"), "\"", "&quot;")};
+output = {@output, "\" href=\"/objects/"};
+output = {@output, strsub(strsub(strsub(strsub(`tostr(stack[1]["id"]) ! E_RANGE => ""', "&", "&amp;"), "<", "&lt;"), ">", "&gt;"), "\"", "&quot;")};
+output = {@output, "\">"};
+output = {@output, strsub(strsub(strsub(strsub(`tostr(stack[1]["name"]) ! E_RANGE => ""', "&", "&amp;"), "<", "&lt;"), ">", "&gt;"), "\"", "&quot;")};
+output = {@output, "</a>"};
+output = output ? {@output, 0} | output;
+output = {@output, "            "};
+stack = stack[2..$];
+endfor
+endif
+output = output ? {@output, 1} | output;
+output = {@output, "          </p>"};
 output = output ? {@output, 0} | output;
 output = {@output, "        "};
 stack = stack[2..$];
@@ -15936,7 +15935,7 @@ output = {@output, "      <p id=\"terminal\"></p>"};
 output = output ? {@output, 0} | output;
 output = {@output, "      <p>"};
 output = output ? {@output, 0} | output;
-output = {@output, "        &uarr; Send commands to the server by typing them in the input above (e.g. <code>@list packages with $composed</code> or <code>; 5 + 3</code>)."};
+output = {@output, "        &uarr; Send commands to the server by typing them in the input above (e.g. <code>; players()</code> or <code>; 5 + 3</code>)."};
 output = output ? {@output, 0} | output;
 output = {@output, "      </p>"};
 output = output ? {@output, 0} | output;
@@ -16116,7 +16115,12 @@ return;
 "        {{/player}}";
 "        {{#player}}";
 "          <h2>Welcome, {{player.name}}!</h2>";
-"          <p>Start browsing by clicking on the object number to the right &rarr; <a rel=\"object\" data-object-number=\"0\" href=\"/objects/0\">#0</a>.</p>";
+"          <p>";
+"            Start browsing by clicking on the object references to the right &rarr;";
+"            {{#links}}";
+"              <a rel=\"object\" data-object-number=\"{{id}}\" href=\"/objects/{{id}}\">{{name}}</a>";
+"            {{/links}}";
+"          </p>";
 "        {{/player}}";
 "      </div>";
 "    </div>";
@@ -16125,7 +16129,7 @@ return;
 "      <hr>";
 "      <p id=\"terminal\"></p>";
 "      <p>";
-"        &uarr; Send commands to the server by typing them in the input above (e.g. <code>@list packages with $composed</code> or <code>; 5 + 3</code>).";
+"        &uarr; Send commands to the server by typing them in the input above (e.g. <code>; players()</code> or <code>; 5 + 3</code>).";
 "      </p>";
 "    {{/player}}";
 "    <div id=\"flash-content\"></div>";
@@ -16176,10 +16180,10 @@ return;
 "</body>";
 "</html>";
 "";
-"chunk_length:105";
+"chunk_length:110";
 "chunk_type:source";
 "content_type:application/x-mustache";
-"updated_at:Tue Mar 20 08:22:31 2012 EDT";
+"updated_at:Fri Mar 23 19:16:40 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #72:0
@@ -16239,7 +16243,7 @@ return;
 path = request:path():split("/");
 method = request:method();
 {host, ?port = 80} = `request:headers()["host"]:split(":") ! E_RANGE => {""}';
-parameters = ["__base_uri__" -> host ? tostr("http://", host, ":", port) | ""];
+parameters = ["__base_uri__" -> host ? tostr("http://", host, ":", port) | "", "__connection__" -> player];
 if ((!path) && (method == "get"))
 return {$lookup("home_controller"), "index", parameters};
 elseif (((length(path) == 2) && (path[1] == "objects")) && (method == "get"))
@@ -16258,7 +16262,10 @@ return;
 "";
 "{host, ?port = 80} = `request:headers()[\"host\"]:split(\":\") ! E_RANGE => {\"\"}';";
 "";
-"parameters = [\"__base_uri__\" -> host ? tostr(\"http://\", host, \":\", port) | \"\"];";
+"parameters = [";
+"  \"__base_uri__\" -> host ? tostr(\"http://\", host, \":\", port) | \"\",";
+"  \"__connection__\" -> player";
+"];";
 "";
 "if (!path && method == \"get\")";
 "  return {$lookup(\"home_controller\"), \"index\", parameters};";
@@ -16272,10 +16279,10 @@ return;
 "";
 "return {};";
 "";
-"chunk_length:20";
+"chunk_length:23";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:22:31 2012 EDT";
+"updated_at:Fri Mar 23 19:16:40 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 0 clocks
