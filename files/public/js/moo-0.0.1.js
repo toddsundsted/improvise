@@ -226,19 +226,47 @@ var Moo = {};
     }
   });
 
-  Moo.Attributes = Backbone.Collection.extend({
+  Moo.Collection = Backbone.Collection.extend({
+
+    add: function(models, opts) {
+      models = _.isArray(models) ? models.slice() : [models];
+
+      var mapped = this instanceof Moo.Attributes || this instanceof Moo.Values;
+
+      models = _.chain(models).map(function (model) {
+        if (!('id' in model))
+          if (mapped) {
+            /* transform attributes and values from {foo: {...}}} to {id: foo, ...} */
+            return _.map(model, function(v, k) {
+              v.id = k;
+              return v;
+            });
+          }
+          else {
+            /* add an id to properties and verbs */
+            model.id = models.length;
+            return model;
+          }
+        return model;
+      }).flatten().value();
+
+      return Backbone.Collection.prototype.add.call(this, models, opts);
+    }
+  });
+
+  Moo.Attributes = Moo.Collection.extend({
     model: Moo.Attribute
   });
 
-  Moo.Values = Backbone.Collection.extend({
+  Moo.Values = Moo.Collection.extend({
     model: Moo.Value
   });
 
-  Moo.Properties = Backbone.Collection.extend({
+  Moo.Properties = Moo.Collection.extend({
     model: Moo.Property
   });
 
-  Moo.Verbs = Backbone.Collection.extend({
+  Moo.Verbs = Moo.Collection.extend({
     model: Moo.Verb
   });
 

@@ -567,134 +567,195 @@ describe('Moo.Verb', function() {
 
 describe('Moo.Object', function() {
 
-  it('should allow attributes to be created via the object constructor', function() {
-    var o = new Moo.Object({Attributes: {player: {Value: {value: 0}}}});
-    expect(o.attributez.get('player').get('Value.value')).toEqual(0);
+  describe('construction', function() {
+
+    it('should allow attributes to be add via the object constructor', function() {
+      var o = new Moo.Object({Attributes: {player: {Value: {value: 0}}}});
+      expect(o.attributez.get('player').get('Value.value')).toEqual(0);
+    });
+
+    it('should allow values to be add via the object constructor', function() {
+      var o = new Moo.Object({Values: {name: {Value: {value: 'test'}}}});
+      expect(o.values.get('name').get('Value.value')).toEqual('test');
+    });
+
+    it('should allow properties to be add via the object constructor', function() {
+      var o = new Moo.Object({Properties: [{Property: {name: 'foo'}}, {Property: {name: 'bar'}}]});
+      expect(o.properties.get(0).get('Property.name')).toEqual('foo');
+      expect(o.properties.get(1).get('Property.name')).toEqual('bar');
+    });
+
+    it('should allow verbs to be add via the object constructor', function() {
+      var o = new Moo.Object({Verbs: [{Verb: {names: 'foo bar'}}, {Verb: {names: 'one two'}}]});
+      expect(o.verbs.get(0).get('Verb.names')).toEqual('foo bar');
+      expect(o.verbs.get(1).get('Verb.names')).toEqual('one two');
+    });
   });
 
-  it('should output attributes in the JSON', function() {
-    var o = new Moo.Object({Attributes: {player: {Value: {value: 0}}}});
-    expect(o.toJSON().Attributes.player.Value.value).toEqual(0);
+  describe('modification', function() {
+
+    var o;
+
+    beforeEach(function() {
+      o = new Moo.Object({
+            Values: {zorch: {'Value.value': 'abc'}},
+            Properties: [{'Property.name': 'test'}],
+            Verbs : [{'Verb.names': 'test'}]
+          });
+    });
+
+    describe('as raw attributes', function() {
+
+      it('should allow attributes to be added after construction', function() {
+        o.attributez.add({parents: {Value: {value: []}}, player: {Value: {value: 1}}});
+        expect(o.attributez.get('parents').get('Value.value')).toEqual([]);
+        expect(o.attributez.get('player').get('Value.value')).toEqual(1);
+      });
+
+      it('should allow values to be added after construction', function() {
+        o.values.add({name: {Value: {value: 'test'}}, f: {Value: {value: 0}}});
+        expect(o.values.get('name').get('Value.value')).toEqual('test');
+        expect(o.values.get('f').get('Value.value')).toEqual(0);
+      });
+
+      it('should allow properties to be added after construction', function() {
+        o.properties.add({Property: {name: 'foo', perms: ''}});
+        expect(o.properties.get(1).get('Property.name')).toEqual('foo');
+        expect(o.properties.get(1).get('Property.perms')).toEqual('');
+      });
+
+      it('should allow verbs to be added after construction', function() {
+        o.verbs.add({Verb: {names: 'foo', perms: ''}});
+        expect(o.verbs.get(1).get('Verb.names')).toEqual('foo');
+        expect(o.verbs.get(1).get('Verb.perms')).toEqual('');
+      });
+    });
   });
 
-  it('should allow values to be created via the object constructor', function() {
-    var o = new Moo.Object({Values: {name: {Value: {value: 'test'}}}});
-    expect(o.values.get('name').get('Value.value')).toEqual('test');
+  describe('to json', function() {
+
+    it('should output attributes in the JSON', function() {
+      var o = new Moo.Object({Attributes: {player: {Value: {value: 0}}}});
+      expect(o.toJSON().Attributes.player.Value.value).toEqual(0);
+    });
+
+    it('should output values in the JSON', function() {
+      var o = new Moo.Object({Values: {name: {Value: {value: 'test'}}}});
+      expect(o.toJSON().Values.name.Value.value).toEqual('test');
+    });
   });
 
-  it('should output values in the JSON', function() {
-    var o = new Moo.Object({Values: {name: {Value: {value: 'test'}}}});
-    expect(o.toJSON().Values.name.Value.value).toEqual('test');
-  });
+  describe('validations', function() {
 
-  it('should fail to validate if the player attribute is not 0 or 1', function() {
-    var o = new Moo.Object;
-    o.attributez.add({id: 'player', Value: {value: 'test'}});
-    expect(o.isValid()).toBeFalsy();
-    o.attributez.get('player').set('Value.value', 5);
-    expect(o.isValid()).toBeFalsy();
-    o.attributez.get('player').set('Value.value', 1);
-    expect(o.isValid()).toBeTruthy();
-  });
+    it('should fail to validate if the player attribute is not 0 or 1', function() {
+      var o = new Moo.Object;
+      o.attributez.add({id: 'player', Value: {value: 'test'}});
+      expect(o.isValid()).toBeFalsy();
+      o.attributez.get('player').set('Value.value', 5);
+      expect(o.isValid()).toBeFalsy();
+      o.attributez.get('player').set('Value.value', 1);
+      expect(o.isValid()).toBeTruthy();
+    });
 
-  it('should fail to validate if the parents attribute is not an array of object numbers', function() {
-    var o = new Moo.Object;
-    o.attributez.add({id: 'parents', Value: {value: 'test'}});
-    expect(o.isValid()).toBeFalsy();
-    o.attributez.get('parents').set('Value.value', ['test']);
-    expect(o.isValid()).toBeFalsy();
-    o.attributez.get('parents').set('Value.value', ['#1|obj']);
-    expect(o.isValid()).toBeTruthy();
-  });
+    it('should fail to validate if the parents attribute is not an array of object numbers', function() {
+      var o = new Moo.Object;
+      o.attributez.add({id: 'parents', Value: {value: 'test'}});
+      expect(o.isValid()).toBeFalsy();
+      o.attributez.get('parents').set('Value.value', ['test']);
+      expect(o.isValid()).toBeFalsy();
+      o.attributez.get('parents').set('Value.value', ['#1|obj']);
+      expect(o.isValid()).toBeTruthy();
+    });
 
-  it('should fail to validate if the name value is not a string', function() {
-    var o = new Moo.Object;
-    o.values.add({id: 'name', Value: {value: '#1|obj'}});
-    expect(o.isValid()).toBeFalsy();
-    o.values.get('name').set('Value.value', 5);
-    expect(o.isValid()).toBeFalsy();
-    o.values.get('name').set('Value.value', '5');
-    expect(o.isValid()).toBeTruthy();
-  });
+    it('should fail to validate if the name value is not a string', function() {
+      var o = new Moo.Object;
+      o.values.add({id: 'name', Value: {value: '#1|obj'}});
+      expect(o.isValid()).toBeFalsy();
+      o.values.get('name').set('Value.value', 5);
+      expect(o.isValid()).toBeFalsy();
+      o.values.get('name').set('Value.value', '5');
+      expect(o.isValid()).toBeTruthy();
+    });
 
-  it('should fail to validate if the owner value is not an object number', function() {
-    var o = new Moo.Object;
-    o.values.add({id: 'owner', Value: {value: '#1'}});
-    expect(o.isValid()).toBeFalsy();
-    o.values.get('owner').set('Value.value', 5);
-    expect(o.isValid()).toBeFalsy();
-    o.values.get('owner').set('Value.value', '#5|obj');
-    expect(o.isValid()).toBeTruthy();
-  });
+    it('should fail to validate if the owner value is not an object number', function() {
+      var o = new Moo.Object;
+      o.values.add({id: 'owner', Value: {value: '#1'}});
+      expect(o.isValid()).toBeFalsy();
+      o.values.get('owner').set('Value.value', 5);
+      expect(o.isValid()).toBeFalsy();
+      o.values.get('owner').set('Value.value', '#5|obj');
+      expect(o.isValid()).toBeTruthy();
+    });
 
-  it('should fail to validate if the location value is not an object number', function() {
-    var o = new Moo.Object;
-    o.values.add({id: 'location', Value: {value: '#1'}});
-    expect(o.isValid()).toBeFalsy();
-    o.values.get('location').set('Value.value', 5);
-    expect(o.isValid()).toBeFalsy();
-    o.values.get('location').set('Value.value', '#5|obj');
-    expect(o.isValid()).toBeTruthy();
-  });
+    it('should fail to validate if the location value is not an object number', function() {
+      var o = new Moo.Object;
+      o.values.add({id: 'location', Value: {value: '#1'}});
+      expect(o.isValid()).toBeFalsy();
+      o.values.get('location').set('Value.value', 5);
+      expect(o.isValid()).toBeFalsy();
+      o.values.get('location').set('Value.value', '#5|obj');
+      expect(o.isValid()).toBeTruthy();
+    });
 
-  it('should fail to validate if the contents value is not an array of object numbers', function() {
-    var o = new Moo.Object;
-    o.values.add({id: 'contents', Value: {value: 'test'}});
-    expect(o.isValid()).toBeFalsy();
-    o.values.get('contents').set('Value.value', ['test']);
-    expect(o.isValid()).toBeFalsy();
-    o.values.get('contents').set('Value.value', ['#1|obj']);
-    expect(o.isValid()).toBeTruthy();
-  });
+    it('should fail to validate if the contents value is not an array of object numbers', function() {
+      var o = new Moo.Object;
+      o.values.add({id: 'contents', Value: {value: 'test'}});
+      expect(o.isValid()).toBeFalsy();
+      o.values.get('contents').set('Value.value', ['test']);
+      expect(o.isValid()).toBeFalsy();
+      o.values.get('contents').set('Value.value', ['#1|obj']);
+      expect(o.isValid()).toBeTruthy();
+    });
 
-  it('should fail to validate if the programmer value is not 0 or 1', function() {
-    var o = new Moo.Object;
-    o.values.add({id: 'programmer', Value: {value: 'test'}});
-    expect(o.isValid()).toBeFalsy();
-    o.values.get('programmer').set('Value.value', 5);
-    expect(o.isValid()).toBeFalsy();
-    o.values.get('programmer').set('Value.value', 1);
-    expect(o.isValid()).toBeTruthy();
-  });
+    it('should fail to validate if the programmer value is not 0 or 1', function() {
+      var o = new Moo.Object;
+      o.values.add({id: 'programmer', Value: {value: 'test'}});
+      expect(o.isValid()).toBeFalsy();
+      o.values.get('programmer').set('Value.value', 5);
+      expect(o.isValid()).toBeFalsy();
+      o.values.get('programmer').set('Value.value', 1);
+      expect(o.isValid()).toBeTruthy();
+    });
 
-  it('should fail to validate if the wizard value is not 0 or 1', function() {
-    var o = new Moo.Object;
-    o.values.add({id: 'wizard', Value: {value: 'test'}});
-    expect(o.isValid()).toBeFalsy();
-    o.values.get('wizard').set('Value.value', 5);
-    expect(o.isValid()).toBeFalsy();
-    o.values.get('wizard').set('Value.value', 1);
-    expect(o.isValid()).toBeTruthy();
-  });
+    it('should fail to validate if the wizard value is not 0 or 1', function() {
+      var o = new Moo.Object;
+      o.values.add({id: 'wizard', Value: {value: 'test'}});
+      expect(o.isValid()).toBeFalsy();
+      o.values.get('wizard').set('Value.value', 5);
+      expect(o.isValid()).toBeFalsy();
+      o.values.get('wizard').set('Value.value', 1);
+      expect(o.isValid()).toBeTruthy();
+    });
 
-  it('should fail to validate if the r (read) value is not 0 or 1', function() {
-    var o = new Moo.Object;
-    o.values.add({id: 'r', Value: {value: 'test'}});
-    expect(o.isValid()).toBeFalsy();
-    o.values.get('r').set('Value.value', 5);
-    expect(o.isValid()).toBeFalsy();
-    o.values.get('r').set('Value.value', 1);
-    expect(o.isValid()).toBeTruthy();
-  });
+    it('should fail to validate if the r (read) value is not 0 or 1', function() {
+      var o = new Moo.Object;
+      o.values.add({id: 'r', Value: {value: 'test'}});
+      expect(o.isValid()).toBeFalsy();
+      o.values.get('r').set('Value.value', 5);
+      expect(o.isValid()).toBeFalsy();
+      o.values.get('r').set('Value.value', 1);
+      expect(o.isValid()).toBeTruthy();
+    });
 
-  it('should fail to validate if the w (write) value is not 0 or 1', function() {
-    var o = new Moo.Object;
-    o.values.add({id: 'w', Value: {value: 'test'}});
-    expect(o.isValid()).toBeFalsy();
-    o.values.get('w').set('Value.value', 5);
-    expect(o.isValid()).toBeFalsy();
-    o.values.get('w').set('Value.value', 1);
-    expect(o.isValid()).toBeTruthy();
-  });
+    it('should fail to validate if the w (write) value is not 0 or 1', function() {
+      var o = new Moo.Object;
+      o.values.add({id: 'w', Value: {value: 'test'}});
+      expect(o.isValid()).toBeFalsy();
+      o.values.get('w').set('Value.value', 5);
+      expect(o.isValid()).toBeFalsy();
+      o.values.get('w').set('Value.value', 1);
+      expect(o.isValid()).toBeTruthy();
+    });
 
-  it('should fail to validate if the f (fertile) value is not 0 or 1', function() {
-    var o = new Moo.Object;
-    o.values.add({id: 'f', Value: {value: 'test'}});
-    expect(o.isValid()).toBeFalsy();
-    o.values.get('f').set('Value.value', 5);
-    expect(o.isValid()).toBeFalsy();
-    o.values.get('f').set('Value.value', 1);
-    expect(o.isValid()).toBeTruthy();
+    it('should fail to validate if the f (fertile) value is not 0 or 1', function() {
+      var o = new Moo.Object;
+      o.values.add({id: 'f', Value: {value: 'test'}});
+      expect(o.isValid()).toBeFalsy();
+      o.values.get('f').set('Value.value', 5);
+      expect(o.isValid()).toBeFalsy();
+      o.values.get('f').set('Value.value', 1);
+      expect(o.isValid()).toBeTruthy();
+    });
   });
 
   it('should ensure failed() returns true if fetch() failed for some reason', function() {
