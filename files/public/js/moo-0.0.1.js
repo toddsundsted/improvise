@@ -323,15 +323,15 @@ var Moo = {};
 
       var attributez = response.Attributes;
       delete response.Attributes;
-      this.attributez.reset(
-        _.chain(attributez).reduce(id_g, []).value()
-      );
+      this.attributez.reset(attributez);
+      //  _.chain(attributez).reduce(id_g, []).value()
+      //);
 
       var values = response.Values;
       delete response.Values;
-      this.values.reset(
-        _.chain(values).reduce(id_g, []).value()
-      );
+      this.values.reset(values);
+      //  _.chain(values).reduce(id_g, []).value()
+      //);
 
       var properties = response.Properties;
       delete response.Properties;
@@ -344,6 +344,10 @@ var Moo = {};
       this.verbs.reset(
         _.chain(verbs).reduce(id_g, []).value()
       );
+
+      /* set the id */
+      if ('Meta' in response && 'id' in response.Meta)
+        this.id = response.Meta.id;
 
       return response;
     },

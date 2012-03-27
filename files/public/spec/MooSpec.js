@@ -758,6 +758,27 @@ describe('Moo.Object', function() {
     });
   });
 
+  describe('save', function() {
+
+    it('should assign an id to a newly saved object', function() {
+      spyOn($, "ajax").andCallFake(function(options) {
+        options.success({Meta: {id: 1}});
+      });
+      var o = new Moo.Object;
+      o.save();
+      expect(o.id).toBeTruthy();
+    });
+
+    it('should preserve the id of an existing object', function() {
+      spyOn($, "ajax").andCallFake(function(options) {
+        options.success({Meta: {id: 2}}, 'success');
+      });
+      var o = new Moo.Object({id: 2});
+      o.save();
+      expect(o.id).toEqual(2);
+    });
+  });
+
   it('should ensure failed() returns true if fetch() failed for some reason', function() {
     spyOn($, "ajax").andCallFake(function(options) {
       options.error({status: 500}, 'error', 'Internal Server Error');
