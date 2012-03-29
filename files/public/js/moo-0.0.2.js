@@ -179,6 +179,18 @@ var Moo = {};
         return 'invalid value';
       if (value && 'Value' in value && 'clear' in value.Value && !Moo.isBinary(value.Value.clear))
         return "invalid value: `clear' must be 0 or 1";
+    },
+
+    isReadable: function() {
+      return this.get('Meta.status') == 'readable';
+    },
+
+    isWritable: function() {
+      return this.get('Meta.status') == 'writable';
+    },
+
+    isDenied: function() {
+      return this.get('Meta.status') == 'denied';
     }
   });
 
@@ -193,6 +205,14 @@ var Moo = {};
         return "invalid property: `owner' must be an object number";
       if (property && 'Property' in property && 'perms' in property.Property && !Moo.isValidPerms(property.Property.perms, 'rwc'))
         return "invalid property: `perms' must be in the set 'rwc'";
+    },
+
+    isReadable: function() {
+      return this.get('Meta.status') == 'readable';
+    },
+
+    isWritable: function() {
+      return this.get('Meta.status') == 'writable';
     },
 
     isDenied: function() {
@@ -219,6 +239,14 @@ var Moo = {};
         return "invalid verb: `iobj' must be valid";
       if (verb && 'Verb' in verb && 'code' in verb.Verb && !Moo.isValidCode(verb.Verb.code))
         return "invalid verb: `code' must be an array of strings";
+    },
+
+    isReadable: function() {
+      return this.get('Meta.status') == 'readable';
+    },
+
+    isWritable: function() {
+      return this.get('Meta.status') == 'writable';
     },
 
     isDenied: function() {
@@ -377,6 +405,16 @@ var Moo = {};
       return this.httpResponseStatus == 403;
     },
 
+    isReadable: function() {
+      var meta;
+      return (meta = this.get('Meta')) && meta.status == 'readable';
+    },
+
+    isWritable: function() {
+      var meta;
+      return (meta = this.get('Meta')) && meta.status == 'writable';
+    },
+
     toJSON: function() {
       var to_map = function(a, v, k) {
         a[v.id] = v;
@@ -401,132 +439,8 @@ var Moo = {};
   $.widget('moo.simpleObjectPanel', {
 
     options: {
-      object: null,
-      template: '' +
-        '<div class="simple-object-panel">' +
-          '<div class="row-fluid">' +
-            '<div class="span12">' +
-              '<h1>' +
-                '<% if (object.isNotFound()) { %>' +
-                  '<em>Not Found</em>' +
-                '<% } else if (object.isDenied()) { %>' +
-                  '<em>Request Denied</em>' +
-                '<% } else if (object.failed()) { %>' +
-                  '<em>Request Failed</em>' +
-                '<% } else { %>' +
-                  '<%= object.values.get("name").get("Value.value").toHTML() %>' +
-                '<% } %>' +
-                '<% if ((p = object.attributez.get("player")) && p.get("Value.value")) { %> ' +
-                  '<small class="player-flag">player</small>' +
-                '<% } %>' +
-                '<% if ((p = object.values.get("programmer")) && p.get("Value.value")) { %> ' +
-                  '<small class="programmer-flag">programmer</small>' +
-                '<% } %>' +
-                '<% if ((p = object.values.get("wizard")) && p.get("Value.value")) { %> ' +
-                  '<small class="wizard-flag">wizard</small>' +
-                '<% } %>' +
-                '<% if ((v = object.values.get("r")) && v.get("Value.value")) { %> ' +
-                  '<small class="read-flag">R</small>' +
-                '<% } %>' +
-                '<% if ((v = object.values.get("w")) && v.get("Value.value")) { %> ' +
-                  '<small class="write-flag">W</small>' +
-                '<% } %>' +
-                '<% if ((v = object.values.get("f")) && v.get("Value.value")) { %> ' +
-                  '<small class="fertile-flag">F</small>' +
-                '<% } %>' +
-                '<% if ((p = object.attributez.get("parents")) && (p = p.get("Value.value")) && p.length > 0) { %> ' +
-                  ' <small class="parents"><%= p.toHTML(true) %></small>' +
-                '<% } %>' +
-              '</h1>' +
-            '</div>' +
-          '</div>' +
-          '<div class="row-fluid">' +
-            '<div class="span4">' +
-              '<h2>Values</h2>' +
-              '<table class="table table-condensed values">' +
-                '<tbody>' +
-                  '<% _.each(object.values.models, function(value) {' +
-                    'var v = value.get("Value.value");' +
-                    'if (v !== undefined) { %>' +
-                      '<tr>' +
-                        '<td rowspan="2" width="5%">&bull;</td>' +
-                        '<td><strong><%= value.get("id") %></strong></td>' +
-                      '</tr>' +
-                      '<tr>' +
-                        '<td class="ellipsis"><%= v.toHTML(true) %></td>' +
-                      '</tr>' +
-                    '<% } else { %>' +
-                      '<tr>' +
-                        '<td rowspan="2" width="5%">&bull;</td>' +
-                        '<td><strong><%= value.get("id") %></strong></td>' +
-                      '</tr>' +
-                      '<tr>' +
-                        '<td><em>denied</em></td>' +
-                      '</tr>' +
-                    '<% }' +
-                  '}); %>' +
-                '</tbody>' +
-              '</table>' +
-            '</div>' +
-            '<div class="span4">' +
-              '<h2>Property Definitions</h2>' +
-              '<table class="table table-condensed properties">' +
-                '<tbody>' +
-                  '<% _.each(object.properties.models, function(property) {' +
-                    'if (!property.isDenied()) { %>' +
-                      '<tr class="property">' +
-                        '<td rowspan="3" width="5%">&bull;</td>' +
-                        '<td colspan="2" class="name"><strong><%= property.get("Property.name").toHTML() %></strong></td>' +
-                      '</tr>' +
-                      '<tr class="property">' +
-                        '<td><%= property.get("Property.owner").toHTML() %></td>' +
-                        '<td><%= property.get("Property.perms").toHTML() %></td>' +
-                      '</tr>' +
-                      '<tr class="property">' +
-                        '<td colspan="2" class="ellipsis"><%= property.get("Property.value").toHTML() %></td>' +
-                      '</tr>' +
-                    '<% } else { %>' +
-                      '<tr class="property">' +
-                        '<td width="5%">&bull;</td>' +
-                        '<td colspan="2"><em>denied</em></td>' +
-                      '</tr>' +
-                    '<% }' +
-                  '}); %>' +
-                '</tbody>' +
-              '</table>' +
-            '</div>' +
-            '<div class="span4">' +
-              '<h2>Verb Definitions</h2>' +
-              '<table class="table table-condensed verbs">' +
-                '<tbody>' +
-                  '<% _.each(object.verbs.models, function(verb) {' +
-                    'if (!verb.isDenied()) { %>' +
-                      '<tr class="verb">' +
-                        '<td rowspan="3" width="5%">&bull;</td>' +
-                        '<td colspan="5" class="names"><strong><%= verb.get("Verb.names").toHTML() %></strong></td>' +
-                      '</tr>' +
-                      '<tr class="verb">' +
-                        '<td><%= verb.get("Verb.owner").toHTML() %></td>' +
-                        '<td><%= verb.get("Verb.perms").toHTML() %></td>' +
-                        '<td><%= verb.get("Verb.dobj").toHTML() %></td>' +
-                        '<td><%= verb.get("Verb.prep").toHTML() %></td>' +
-                        '<td><%= verb.get("Verb.iobj").toHTML() %></td>' +
-                      '</tr>' +
-                      '<tr class="verb">' +
-                        '<td colspan="5" class="ellipsis"><%= verb.get("Verb.code").toHTML() %></td>' +
-                      '</tr>' +
-                    '<% } else { %>' +
-                      '<tr class="verb">' +
-                        '<td width="5%">&bull;</td>' +
-                        '<td colspan="5"><em>denied</em></td>' +
-                      '</tr>' +
-                    '<% }' +
-                  '}); %>' +
-                '</tbody>' +
-              '</table>' +
-            '</div>' +
-          '</div>' +
-        '</div>'
+      template: null,
+      object: null
     },
 
     _setOption: function(key, value) {
@@ -536,7 +450,7 @@ var Moo = {};
           this._jamba();
           break;
         case 'template':
-          this.options.template = value;
+          this.options.template = _.template(value);
           this._jamba();
           break;
       }
@@ -544,14 +458,20 @@ var Moo = {};
 
     _jamba: function() {
       if (this.options.object) {
-        var template = _.template(this.options.template);
-        this.element.html(template({
+        this.element.html(this.options.template({
           object: this.options.object
         }));
       }
     },
 
     _create: function() {
+      var that = this;
+      if (!this.options.template) {
+        $.get('/html/moo-0.0.2.html', function(template) {
+          that.options.template = _.template(template);
+          that._jamba();
+        });
+      }
     },
 
     destroy: function() {

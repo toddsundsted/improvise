@@ -1,0 +1,151 @@
+<%
+  function lookup(collection, index, accessor) {
+    return (p = collection.get(index)) && p.get(accessor);
+  }
+  function accessIcon(thing) {
+    if (thing.isWritable())
+      return '<i class="icon-pencil"></i>';
+    else if (thing.isReadable())
+      return '<i class="icon-lock"></i>';
+    else
+      return '<i class="icon-ban-circle"></i>';
+  }
+  function accessClass(thing, base) {
+    if (thing.isWritable())
+      return base ? base + ' writable' : 'writable';
+    else if (thing.isReadable())
+      return base ? base + ' readable' : 'readable';
+    else
+      return base ? base + ' invalid' : 'invalid';
+  }
+%>
+<div class="simple-object-panel">
+  <div class="object-summary row-fluid">
+    <div class="span2">
+      <div class="access-level">
+        <%= accessIcon(object) %>
+      </div>
+      <div class="flag player-flag">
+        <span class="<%= !lookup(object.attributez, 'player', 'Value.value') && 'disabled' || '' %>">player</span>
+      </div>
+      <div class="flag programmer-flag">
+        <span class="<%= !lookup(object.values, 'programmer', 'Value.value') && 'disabled' || '' %>">programmer</span>
+      </div>
+      <div class="flag wizard-flag">
+        <span class="<%= !lookup(object.values, 'wizard', 'Value.value') && 'disabled' || '' %>">wizard</span>
+      </div>
+      <div class="flag">
+        <span class="<%= !lookup(object.values, 'r', 'Value.value') && 'disabled' || '' %>">r</span>
+        <span class="<%= !lookup(object.values, 'w', 'Value.value') && 'disabled' || '' %>">w</span>
+        <span class="<%= !lookup(object.values, 'f', 'Value.value') && 'disabled' || '' %>">f</span>
+      </div>
+    </div>
+    <div class="span10">
+      <div class="object-name">
+        <h1>
+          <% if (object.isNotFound()) { %>
+            <em>Not Found</em>
+          <% } else if (object.isDenied()) { %>
+            <em>Request Denied</em>
+          <% } else if (object.failed()) { %>
+            <em>Request Failed</em>
+          <% } else { %>
+            <%= object.values.get("name").get("Value.value").toHTML() %>
+          <% } %>
+        </h1>
+      </div>
+      <div class="parents">
+        Parents:
+        <% var parents = lookup(object.attributez, 'parents', 'Value.value');
+           if (parents) {
+             _.each(parents, function(value) { %>
+               <%= value.toHTML() %>
+            <% })
+        } %>
+      </div>
+    </div>
+  </div>
+  <div class="object-details row-fluid">
+    <div class="span4 values">
+      <h2>Values</h2>
+      <table class="table table-condensed">
+        <tbody>
+          <% _.each(object.values.models, function(value) {
+            var icon = accessIcon(value),
+                clazz = accessClass(value);
+            if (!value.isDenied()) { %>
+              <tr class="<%= clazz %>">
+                <td width="5%"><%= icon %></td>
+                <td class="ellipsis"><strong><%= value.get("id") %></strong> <%= value.get('Value.value').toHTML(true) %></td>
+              </tr>
+            <% } else { %>
+              <tr class="<%= clazz %>">
+                <td width="5%"><%= icon %></i></td>
+                <td><em><%= value.get("id") %></em></td>
+              </tr>
+            <% }
+          }); %>
+        </tbody>
+      </table>
+    </div>
+    <div class="span4">
+      <h2>Property Definitions</h2>
+      <table class="table table-condensed properties">
+        <tbody>
+          <% _.each(object.properties.models, function(property) {
+            var icon = accessIcon(property),
+                clazz = accessClass(property, 'property');
+            if (!property.isDenied()) { %>
+              <tr class="<%= clazz %>">
+                <td rowspan="2" width="5%"><%= icon %></td>
+                <td class="name"><strong><%= property.get("Property.name").toHTML() %></strong></td>
+              </tr>
+              <tr class="<%= clazz %>">
+                <td>
+                  <span class="owner"><%= property.get("Property.owner").toHTML() %></span>
+                  <span class="perms"><%= property.get("Property.perms").toHTML() %></span>
+                </td>
+              </tr>
+            <% } else { %>
+              <tr class="<%= clazz %>">
+                <td width="5%"><%= icon %></td>
+                <td><em>denied</em></td>
+              </tr>
+            <% }
+          }); %>
+        </tbody>
+      </table>
+    </div>
+    <div class="span4">
+      <h2>Verb Definitions</h2>
+      <table class="table table-condensed verbs">
+        <tbody>
+          <% _.each(object.verbs.models, function(verb) {
+            var icon = accessIcon(verb),
+                clazz = accessClass(verb, 'verb');
+            if (!verb.isDenied()) { %>
+              <tr class="<%= clazz %>">
+                <td rowspan="2" width="5%"><%= icon %></td>
+                <td class="names"><strong><%= verb.get("Verb.names").toHTML() %></strong></td>
+              </tr>
+              <tr class="<%= clazz %>">
+                <td>
+                  <span class="owner"><%= verb.get("Verb.owner").toHTML() %></span>
+                  <span class="perms"><%= verb.get("Verb.perms").toHTML() %></span>
+                  <span class="dobj"><%= verb.get("Verb.dobj").toHTML() %></span>
+                  <span class="prep"><%= verb.get("Verb.prep").toHTML() %></span>
+                  <span class="iobj"><%= verb.get("Verb.iobj").toHTML() %></span>
+                </td>
+              </tr>
+            <% } else { %>
+              <tr class="<%= clazz %>">
+                <td width="5%"><%= icon %></td>
+                <td><em>denied</em></td>
+              </tr>
+            <% }
+          }); %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
