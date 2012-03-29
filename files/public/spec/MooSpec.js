@@ -304,6 +304,36 @@ describe('Moo.Value', function() {
       expect(v.get('Value.value')).toEqual(0.1);
     });
   });
+
+  describe('value in the context of an object', function() {
+
+    var o;
+
+    beforeEach(function() {
+      o = new Moo.Object({
+        Attributes: {},
+        Values: {readable: {Meta: {status: 'readable'}}, writable: {Meta: {status: 'writable'}}, foobar: {Meta: {status: 'foobar'}}},
+        Properties: [],
+        Verbs: []
+      });
+    });
+
+    it('should ensure isReadable() returns true if the value is readable on the server', function() {
+      expect(o.values.get('readable').isReadable()).toBeTruthy();
+    });
+
+    it('should ensure isReadable() returns false if the value is readable on the server', function() {
+      expect(o.values.get('foobar').isReadable()).toBeFalsy();
+    });
+
+    it('should ensure isWritable() returns true if the value is writable on the server', function() {
+      expect(o.values.get('writable').isWritable()).toBeTruthy();
+    });
+
+    it('should ensure isWritable() returns false if the value is writable on the server', function() {
+      expect(o.values.get('foobar').isWritable()).toBeFalsy();
+    });
+  });
 });
 
 describe('Moo.Property', function() {
@@ -832,6 +862,43 @@ describe('Moo.Object', function() {
     o.fetch();
     expect(o.isNotFound()).toBeFalsy();
   });
+
+  it('should ensure isReadable() returns true if the object is readable on the server', function() {
+    spyOn($, "ajax").andCallFake(function(options) {
+      options.success({Meta: {status: 'readable'}}, 'Ok', {status: 200});
+    });
+    var o = new Moo.Object({id: 1});
+    o.fetch();
+    expect(o.isReadable()).toBeTruthy();
+  });
+
+  it('should ensure isReadable() returns false if the object is not readable on the server', function() {
+    spyOn($, "ajax").andCallFake(function(options) {
+      options.success({Meta: {status: 'foobar'}}, 'Ok', {status: 200});
+    });
+    var o = new Moo.Object({id: 1});
+    o.fetch();
+    expect(o.isReadable()).toBeFalsy();
+  });
+
+
+  it('should ensure isWritable() returns true if the object is writable on the server', function() {
+    spyOn($, "ajax").andCallFake(function(options) {
+      options.success({Meta: {status: 'writable'}}, 'Ok', {status: 200});
+    });
+    var o = new Moo.Object({id: 1});
+    o.fetch();
+    expect(o.isWritable()).toBeTruthy();
+  });
+
+  it('should ensure isWritable() returns false if the object is not writable on the server', function() {
+    spyOn($, "ajax").andCallFake(function(options) {
+      options.success({Meta: {status: 'foobar'}}, 'Ok', {status: 200});
+    });
+    var o = new Moo.Object({id: 1});
+    o.fetch();
+    expect(o.isWritable()).toBeFalsy();
+  });
 });
 
 describe('widget $().simpleObjectPanel', function() {
@@ -839,7 +906,9 @@ describe('widget $().simpleObjectPanel', function() {
   var o, p;
 
   beforeEach(function() {
-    p = $('<div></div>').simpleObjectPanel();
+    p = $('<div></div>').simpleObjectPanel({
+      template: _.template('')
+    });
     o = new Moo.Object({
       Attributes: {},
       Values: {name: {Value: {value: 'Test'}}},
@@ -915,13 +984,13 @@ describe('widget $().simpleObjectPanel', function() {
     expect(p.find('h1 > .read-flag').length).toEqual(0);
   });
 
-  it('should display the write flag in the heading if the object is writeable', function() {
+  it('should display the write flag in the heading if the object is writable', function() {
     o.values.add({id: 'w', 'Value.value': 1});
     p.simpleObjectPanel({object: o});
     expect(p.find('h1 > .write-flag').length).toEqual(1);
   });
 
-  it('should not display the write flag in the heading if the object is not writeable', function() {
+  it('should not display the write flag in the heading if the object is not writable', function() {
     p.simpleObjectPanel({object: o});
     expect(p.find('h1 > .write-flag').length).toEqual(0);
   });
