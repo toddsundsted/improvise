@@ -34,10 +34,10 @@
       <div class="flag wizard-flag">
         <span class="<%= !lookup(object.values, 'wizard', 'Value.value') && 'disabled' || '' %>">wizard</span>
       </div>
-      <div class="flag">
-        <span class="<%= !lookup(object.values, 'r', 'Value.value') && 'disabled' || '' %>">r</span>
-        <span class="<%= !lookup(object.values, 'w', 'Value.value') && 'disabled' || '' %>">w</span>
-        <span class="<%= !lookup(object.values, 'f', 'Value.value') && 'disabled' || '' %>">f</span>
+      <div class="flag-container">
+        <span class="<%= !lookup(object.values, 'r', 'Value.value') && 'flag read-flag disabled' || 'flag read-flag' %>">r</span>
+        <span class="<%= !lookup(object.values, 'w', 'Value.value') && 'flag write-flag disabled' || 'flag write-flag' %>">w</span>
+        <span class="<%= !lookup(object.values, 'f', 'Value.value') && 'flag fertile-flag disabled' || 'flag fertile-flag' %>">f</span>
       </div>
     </div>
     <div class="span10">

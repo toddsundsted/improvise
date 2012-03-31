@@ -48,7 +48,7 @@ text-shadow: 1px 1px 2px #000;
 filter: dropshadow(color=#000, offx=1, offy=1);
 }
 
-.simple-object-panel .object-summary .flag {
+.simple-object-panel .object-summary .flag, .simple-object-panel .object-summary .flag-container {
   font-size: 16px;
   line-height: 16px;
 

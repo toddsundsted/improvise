@@ -903,11 +903,20 @@ describe('Moo.Object', function() {
 
 describe('widget $().simpleObjectPanel', function() {
 
-  var o, p;
+  var template, o, p;
+
+  $.ajax({
+    async: false,
+    type: 'get',
+    url: '/html/moo-0.0.2.html',
+    success: function(data) {
+      template = data;
+    }
+  });
 
   beforeEach(function() {
     p = $('<div></div>').simpleObjectPanel({
-      template: _.template('')
+      template: _.template(template)
     });
     o = new Moo.Object({
       Attributes: {},
@@ -940,76 +949,94 @@ describe('widget $().simpleObjectPanel', function() {
     expect(p.find('h1').text()).toContain('Not Found');
   });
 
-  it('should display the player flag in the heading if the object is a player', function() {
+  it('should display an enabled player indicator in the summary if the object is a player', function() {
     o.attributez.add({id: 'player', 'Value.value': 1});
     p.simpleObjectPanel({object: o});
-    expect(p.find('h1 > .player-flag').length).toEqual(1);
+    expect(p.find('.object-summary .player-flag').length).toEqual(1);
+    expect(p.find('.object-summary .player-flag .disabled').length).toEqual(0);
   });
 
-  it('should not display the player flag in the heading if the object is not a player', function() {
+  it('should display a disabled player indicator in the summary if the object is not a player', function() {
+    o.attributez.add({id: 'player', 'Value.value': 0});
     p.simpleObjectPanel({object: o});
-    expect(p.find('h1 > .player-flag').length).toEqual(0);
+    expect(p.find('.object-summary .player-flag').length).toEqual(1);
+    expect(p.find('.object-summary .player-flag .disabled').length).toEqual(1);
   });
 
-  it('should display the programmer flag in the heading if the object is a programmer', function() {
+  it('should display an enabled programmer indicator in the summary if the object is a programmer', function() {
     o.values.add({id: 'programmer', 'Value.value': 1});
     p.simpleObjectPanel({object: o});
-    expect(p.find('h1 > .programmer-flag').length).toEqual(1);
+    expect(p.find('.object-summary .programmer-flag').length).toEqual(1);
+    expect(p.find('.object-summary .programmer-flag .disabled').length).toEqual(0);
   });
 
-  it('should not display the programmer flag in the heading if the object is not a programmer', function() {
+  it('should display a disabled programmer indicator in the summary if the object is not a programmer', function() {
+    o.values.add({id: 'programmer', 'Value.value': 0});
     p.simpleObjectPanel({object: o});
-    expect(p.find('h1 > .programmer-flag').length).toEqual(0);
+    expect(p.find('.object-summary .programmer-flag').length).toEqual(1);
+    expect(p.find('.object-summary .programmer-flag .disabled').length).toEqual(1);
   });
 
-  it('should display the wizard flag in the heading if the object is a wizard', function() {
+  it('should display an enabled wizard indicator in the summary if the object is a wizard', function() {
     o.values.add({id: 'wizard', 'Value.value': 1});
     p.simpleObjectPanel({object: o});
-    expect(p.find('h1 > .wizard-flag').length).toEqual(1);
+    expect(p.find('.object-summary .wizard-flag').length).toEqual(1);
+    expect(p.find('.object-summary .wizard-flag .disabled').length).toEqual(0);
   });
 
-  it('should not display the wizard flag in the heading if the object is not a wizard', function() {
+  it('should display a disabled wizard indicator in the summary if the object is not a wizard', function() {
+    o.values.add({id: 'wizard', 'Value.value': 0});
     p.simpleObjectPanel({object: o});
-    expect(p.find('h1 > .wizard-flag').length).toEqual(0);
+    expect(p.find('.object-summary .wizard-flag').length).toEqual(1);
+    expect(p.find('.object-summary .wizard-flag .disabled').length).toEqual(1);
   });
 
-  it('should display the read flag in the heading if the object is readable', function() {
+  it('should display an enabled read indicator in the summary if the object is readable', function() {
     o.values.add({id: 'r', 'Value.value': 1});
     p.simpleObjectPanel({object: o});
-    expect(p.find('h1 > .read-flag').length).toEqual(1);
+    expect(p.find('.object-summary .read-flag').length).toEqual(1);
+    expect(p.find('.object-summary .read-flag.disabled').length).toEqual(0);
   });
 
-  it('should not display the read flag in the heading if the object is not readable', function() {
+  it('should display a disabled read indicator in the summary if the object is not readable', function() {
+    o.values.add({id: 'r', 'Value.value': 0});
     p.simpleObjectPanel({object: o});
-    expect(p.find('h1 > .read-flag').length).toEqual(0);
+    expect(p.find('.object-summary .read-flag').length).toEqual(1);
+    expect(p.find('.object-summary .read-flag.disabled').length).toEqual(1);
   });
 
-  it('should display the write flag in the heading if the object is writable', function() {
+  it('should display an enabled write indicator in the summary if the object is writable', function() {
     o.values.add({id: 'w', 'Value.value': 1});
     p.simpleObjectPanel({object: o});
-    expect(p.find('h1 > .write-flag').length).toEqual(1);
+    expect(p.find('.object-summary .write-flag').length).toEqual(1);
+    expect(p.find('.object-summary .write-flag.disabled').length).toEqual(0);
   });
 
-  it('should not display the write flag in the heading if the object is not writable', function() {
+  it('should display a disabled write indicator in the summary if the object is not writable', function() {
+    o.values.add({id: 'w', 'Value.value': 0});
     p.simpleObjectPanel({object: o});
-    expect(p.find('h1 > .write-flag').length).toEqual(0);
+    expect(p.find('.object-summary .write-flag').length).toEqual(1);
+    expect(p.find('.object-summary .write-flag.disabled').length).toEqual(1);
   });
 
-  it('should display the fertile flag in the heading if the object is fertile', function() {
+  it('should display an enabled fertile indicator in the summary if the object is fertile', function() {
     o.values.add({id: 'f', 'Value.value': 1});
     p.simpleObjectPanel({object: o});
-    expect(p.find('h1 > .fertile-flag').length).toEqual(1);
+    expect(p.find('.object-summary .fertile-flag').length).toEqual(1);
+    expect(p.find('.object-summary .fertile-flag.disabled').length).toEqual(0);
   });
 
-  it('should not display the fertile flag in the heading if the object is not fertileable', function() {
+  it('should display a disabled fertile indicator in the summary if the object is not fertileable', function() {
+    o.values.add({id: 'f', 'Value.value': 0});
     p.simpleObjectPanel({object: o});
-    expect(p.find('h1 > .fertile-flag').length).toEqual(0);
+    expect(p.find('.object-summary .fertile-flag').length).toEqual(1);
+    expect(p.find('.object-summary .fertile-flag.disabled').length).toEqual(1);
   });
 
   it('should display the parents in the heading', function() {
     o.attributez.add({id: 'parents', 'Value.value': ['#100|obj', '#200|obj']});
     p.simpleObjectPanel({object: o});
-    expect(p.find('h1 > .parents').length).toEqual(1);
+    expect(p.find('.object-summary .parents').length).toEqual(1);
   });
 
   it('should display the property name in the properties table', function() {
