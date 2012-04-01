@@ -69,13 +69,13 @@
     <div class="span12">
       <div class="alert alert-info">
         <i class="icon-arrow-down icon-large"></i>
-        Double-click on a row below to display the value.
+        Double-click on an entry below to display the value of the property or property definition, or the verb definition code.
       </div>
     </div>
   </div>
   <div class="object-details row-fluid">
     <div class="span4 values">
-      <h2>Values</h2>
+      <h2>Properties</h2>
       <table class="table table-condensed">
         <tbody>
           <% _.each(object.values.models, function(value) {
@@ -106,7 +106,7 @@
             if (!property.isDenied()) { %>
               <tr class="<%= clazz %>" data-id="<%= property.id %>">
                 <td rowspan="3" width="5%"><%= icon %></td>
-                <td class="name"><strong><%= property.get("Property.name").toHTML() %></strong></td>
+                <td class="name ellipsis"><strong><%= property.get("Property.name").toHTML() %></strong></td>
               </tr>
               <tr class="<%= clazz %>" data-id="<%= property.id %>">
                 <td>
@@ -137,7 +137,7 @@
             if (!verb.isDenied()) { %>
               <tr class="<%= clazz %>" data-id="<%= verb.id %>">
                 <td rowspan="3" width="5%"><%= icon %></td>
-                <td class="names"><strong><%= verb.get("Verb.names").toHTML() %></strong></td>
+                <td class="names ellipsis"><strong><%= verb.get("Verb.names").toHTML() %></strong></td>
               </tr>
               <tr class="<%= clazz %>" data-id="<%= verb.id %>">
                 <td>
