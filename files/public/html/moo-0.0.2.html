@@ -65,6 +65,14 @@
       </div>
     </div>
   </div>
+  <div class="help-and-information row-fluid">
+    <div class="span12">
+      <div class="alert alert-info">
+        <i class="icon-arrow-down icon-large"></i>
+        Double-click on a row below to display the value.
+      </div>
+    </div>
+  </div>
   <div class="object-details row-fluid">
     <div class="span4 values">
       <h2>Values</h2>
@@ -72,9 +80,9 @@
         <tbody>
           <% _.each(object.values.models, function(value) {
             var icon = accessIcon(value),
-                clazz = accessClass(value);
+                clazz = accessClass(value, 'value');
             if (!value.isDenied()) { %>
-              <tr class="<%= clazz %>">
+              <tr class="<%= clazz %>" data-name="<%= value.id %>">
                 <td width="5%"><%= icon %></td>
                 <td class="ellipsis"><strong><%= value.get("id") %></strong> <%= value.get('Value.value').toHTML(true) %></td>
               </tr>
@@ -146,6 +154,17 @@
           }); %>
         </tbody>
       </table>
+    </div>
+  </div>
+  <div class="modal fade hide" style="display: none;">
+    <div class="modal-header">
+      <h3></h3>
+    </div>
+    <div class="modal-body">
+      <pre class="textarea"></pre>
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="btn" data-dismiss="modal">Close</a>
     </div>
   </div>
 </div>

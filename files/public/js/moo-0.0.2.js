@@ -1,4 +1,4 @@
-/* global $ _ Backbone SocketManager Socket */
+/* global $ _ Backbone SocketManager Socket JSON */
 
 var Moo = {};
 
@@ -6,7 +6,7 @@ var Moo = {};
 
   /* utilities */
 
-  var endsWith = function(string, suffix) {
+  function endsWith(string, suffix) {
     return string.indexOf(suffix, string.length - suffix.length) !== -1;
   };
 
@@ -193,6 +193,59 @@ var Moo = {};
       return this.get('Meta.status') == 'denied';
     }
   });
+
+  function one(v) {
+    return Moo.Value.generate(v);
+  }
+
+  function make_one(indent) {
+    return function (v) { var next = indent + '  '; return next + Moo.Value.generate(v, next); };
+  }
+
+  function two(v, k) {
+    return Moo.Value.generate(k) + ' -> ' + Moo.Value.generate(v);
+  }
+
+  function make_two(indent) {
+    return function(v, k) { var next = indent + '  '; return next + Moo.Value.generate(k, next) + ' -> ' + Moo.Value.generate(v, next); };
+  }
+
+  Moo.Value.generate = function(v, indent) {
+    var next = indent;
+    if (indent != undefined) {
+      indent = (indent !== true) ? indent : '';
+      next = indent + '  ';
+    }
+
+    if (typeof(v) == 'object' && v instanceof Moo.Value)
+      v = v.get('Value.value');
+
+    if (v != undefined && v != null) {
+      if (typeof(v) == 'string')
+        if (endsWith(v, '|err'))
+          return v.slice(0, v.length - 4);
+        else if (endsWith(v, '|obj'))
+          return v.slice(0, v.length - 4);
+        else if (endsWith(v, '|int'))
+          return v.slice(0, v.length - 4);
+        else if (endsWith(v, '|float'))
+          return v.slice(0, v.length - 6);
+        else if (endsWith(v, '|str'))
+          return JSON.stringify(v.slice(0, v.length - 4));
+        else
+          return JSON.stringify(v);
+      else if (_.isArray(v) && indent != undefined)
+        return '{\n' + _.chain(v).map(make_one(indent)).join(',\n').value() + '\n' + indent + '}';
+      else if (_.isArray(v))
+        return '{' + _.chain(v).map(one).join(', ').value() + '}';
+      else if (_.isObject(v) && indent != undefined)
+        return '[\n' + _.chain(v).map(make_two(indent)).join(',\n').value() + '\n' + indent + ']';
+      else if (_.isObject(v))
+        return '[' + _.chain(v).map(two).join(', ').value() + ']';
+      return v.toString();
+    }
+    return undefined;
+  };
 
   Moo.Property = Moo.NestedModel.extend({
 
@@ -447,17 +500,17 @@ var Moo = {};
       switch (key) {
         case 'object':
           this.options.object = value;
-          this._jamba();
+          this._render();
           break;
         case 'template':
           this.options.template = _.template(value);
-          this._jamba();
+          this._render();
           break;
       }
     },
 
-    _jamba: function() {
-      if (this.options.object) {
+    _render: function() {
+      if (this.options.object && this.options.template) {
         this.element.html(this.options.template({
           object: this.options.object
         }));
@@ -469,9 +522,30 @@ var Moo = {};
       if (!this.options.template) {
         $.get('/html/moo-0.0.2.html', function(template) {
           that.options.template = _.template(template);
-          that._jamba();
         });
       }
+      this.element.on('dblclick', 'tr.value.readable, tr.value.writable', function(e) {
+        var object = that.options.object,
+            $target = $(e.target).parents('tr'),
+            name = $target.data('name'),
+            v = Moo.Value.generate(object.values.get(name), true),
+            l = Math.min(_.compact(v.split('\n')).length, 20),
+            $modal = $('.modal', this.element);
+
+        $('h3', $modal).text(name);
+        $('.textarea', $modal).attr('rows', l).text(v);
+
+        $modal.modal('show');
+
+        if (window.getSelection)
+          window.getSelection().removeAllRanges();
+        else if (document.selection)
+          document.selection.empty();
+      });
+    },
+
+    _init: function() {
+      this._render();
     },
 
     destroy: function() {

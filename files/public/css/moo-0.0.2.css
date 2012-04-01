@@ -100,6 +100,13 @@ filter: dropshadow(color=#000, offx=1, offy=1);
   color: #aaa;
 }
 
+.simple-object-panel .help-and-information .alert {
+  margin: 10px 0;
+  background-color: #c5c0cd;
+  border-color: #8786a7;
+  color: #3f4c6b;
+}
+
 .simple-object-panel .ellipsis {
   overflow: hidden;
   white-space: nowrap;
