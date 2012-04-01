@@ -52,14 +52,13 @@ filter: dropshadow(color=#000, offx=1, offy=1);
   font-size: 16px;
   line-height: 16px;
 
-  color: #ff9b00;
+  color: #fff;
   text-align: right;
   margin: 5px 0;
 }
 
-.simple-object-panel .object-summary .flag .disabled {
-  color: #1b1e21;
-  color: #6b6a75;
+.simple-object-panel .object-summary .flag .disabled, .simple-object-panel .object-summary .flag-container .disabled {
+  color: #6d6d98;
 }
 
 .simple-object-panel .object-summary .parents {
