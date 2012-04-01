@@ -339,62 +339,62 @@ describe('Moo.Value', function() {
 
     it ('should return the MOO literal representation of an integer', function() {
       var v = new Moo.Value({'Value.value': 11});
-      expect(Moo.Value.generate(v)).toEqual('11');
+      expect(Moo.Value.generate(v.get('Value.value'))).toEqual('11');
     });
 
     it ('should return the MOO literal representation of a float', function() {
       var v = new Moo.Value({'Value.value': 11.1});
-      expect(Moo.Value.generate(v)).toEqual('11.1');
+      expect(Moo.Value.generate(v.get('Value.value'))).toEqual('11.1');
     });
 
     it ('should return the MOO literal representation of a MOO integer', function() {
       var v = new Moo.Value({'Value.value': '11|int'});
-      expect(Moo.Value.generate(v)).toEqual('11');
+      expect(Moo.Value.generate(v.get('Value.value'))).toEqual('11');
     });
 
     it ('should return the MOO literal representation of a MOO float', function() {
       var v = new Moo.Value({'Value.value': '11.1|float'});
-      expect(Moo.Value.generate(v)).toEqual('11.1');
+      expect(Moo.Value.generate(v.get('Value.value'))).toEqual('11.1');
     });
 
     it ('should return the MOO literal representation of a MOO error', function() {
       var v = new Moo.Value({'Value.value': 'E_FOO|err'});
-      expect(Moo.Value.generate(v)).toEqual('E_FOO');
+      expect(Moo.Value.generate(v.get('Value.value'))).toEqual('E_FOO');
     });
 
     it ('should return the MOO literal representation of a MOO object number', function() {
       var v = new Moo.Value({'Value.value': '#0|obj'});
-      expect(Moo.Value.generate(v)).toEqual('#0');
+      expect(Moo.Value.generate(v.get('Value.value'))).toEqual('#0');
     });
 
     it ('should return the MOO literal representation of a MOO string', function() {
       var v = new Moo.Value({'Value.value': '#0|obj|str'});
-      expect(Moo.Value.generate(v)).toEqual('"#0|obj"');
+      expect(Moo.Value.generate(v.get('Value.value'))).toEqual('"#0|obj"');
     });
 
     it ('should return the MOO literal representation of a string', function() {
       var v = new Moo.Value({'Value.value': 'str'});
-      expect(Moo.Value.generate(v)).toEqual('"str"');
+      expect(Moo.Value.generate(v.get('Value.value'))).toEqual('"str"');
     });
 
     it ('should return the MOO literal representation of a list/array', function() {
       var v = new Moo.Value({'Value.value': ['1|int', '2.0|float', '#3|obj']});
-      expect(Moo.Value.generate(v)).toEqual('{1, 2.0, #3}');
+      expect(Moo.Value.generate(v.get('Value.value'))).toEqual('{1, 2.0, #3}');
     });
 
     it ('should return the MOO literal representation of a map/object', function() {
       var v = new Moo.Value({'Value.value': {'1|int': 'one', '2.0|float': 'two', '#3|obj': 'three'}});
-      expect(Moo.Value.generate(v)).toEqual('[1 -> "one", 2.0 -> "two", #3 -> "three"]');
+      expect(Moo.Value.generate(v.get('Value.value'))).toEqual('[1 -> "one", 2.0 -> "two", #3 -> "three"]');
     });
 
     it ('should return the MOO literal representation of a somewhat complicated value', function() {
       var v = new Moo.Value({'Value.value': ['abc', 'xyz', {'1|int': ['one'], '2.0|float': [['two']], '#3|obj': 'three'}, '']    });
-      expect(Moo.Value.generate(v)).toEqual('{"abc", "xyz", [1 -> {"one"}, 2.0 -> {{"two"}}, #3 -> "three"], ""}');
+      expect(Moo.Value.generate(v.get('Value.value'))).toEqual('{"abc", "xyz", [1 -> {"one"}, 2.0 -> {{"two"}}, #3 -> "three"], ""}');
     });
 
     it ('should pretty-print the MOO literal representation of a somewhat complicated value', function() {
       var v = new Moo.Value({'Value.value': ['abc', 'xyz', {'1|int': ['one'], '2.0|float': [['two']], '#3|obj': 'three'}, '']    });
-      expect(Moo.Value.generate(v, true)).toEqual('{\n  "abc",\n  "xyz",\n  [\n    1 -> {\n      "one"\n    },\n    2.0 -> {\n      {\n        "two"\n      }\n    },\n    #3 -> "three"\n  ],\n  ""\n}');
+      expect(Moo.Value.generate(v.get('Value.value'), true)).toEqual('{\n  "abc",\n  "xyz",\n  [\n    1 -> {\n      "one"\n    },\n    2.0 -> {\n      {\n        "two"\n      }\n    },\n    #3 -> "three"\n  ],\n  ""\n}');
     });
   });
 });
