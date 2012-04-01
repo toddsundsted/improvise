@@ -112,6 +112,18 @@ filter: dropshadow(color=#000, offx=1, offy=1);
   text-overflow: ellipsis;
 }
 
+.simple-object-panel .modal {
+  width: 800px;
+  margin: -250px 0 0 -400px;
+}
+
+.simple-object-panel .modal .textarea {
+  white-space: pre;
+  word-break: normal;
+  word-wrap: normal;
+  overflow-x: auto;
+}
+
 /* COMMAND PANEL */
 
 #JavascriptSocket {

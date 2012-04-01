@@ -36,12 +36,12 @@ var Moo = {};
       return '<span class="moo-num">' +  str + '</span>';
     }
     else if (endsWith(this, '|str')) {
-      str = _.escape(this.slice(0, this.length - 4));
-      return '<span class="moo-str">' +  (literal ? '"' + str + '"' : str) + '</span>';
+      str = this.slice(0, this.length - 4);
+      return '<span class="moo-str">' +  _.escape(literal ? '"' + str.replace(/"/gm, '\\\"') + '"' : str) + '</span>';
     }
     else {
-      str = _.escape(this);
-      return '<span class="moo-str">' + (literal ? '"' + str + '"' : str) + '</span>';
+      str = this;
+      return '<span class="moo-str">' + _.escape(literal ? '"' + str.replace(/"/gm, '\\\"') + '"' : str) + '</span>';
     }
   };
 
@@ -216,9 +216,6 @@ var Moo = {};
       indent = (indent !== true) ? indent : '';
       next = indent + '  ';
     }
-
-    if (typeof(v) == 'object' && v instanceof Moo.Value)
-      v = v.get('Value.value');
 
     if (v != undefined && v != null) {
       if (typeof(v) == 'string')
@@ -517,30 +514,57 @@ var Moo = {};
       }
     },
 
+    _modal: {
+      show: function($modal, title, body) {
+        $('h3', $modal).text(title);
+        $('.textarea', $modal).text(body);
+        $modal.modal('show');
+      },
+
+      resetSelection: function() {
+        if (window.getSelection)
+          window.getSelection().removeAllRanges();
+        else if (document.selection)
+          document.selection.empty();
+      }
+    },
+
     _create: function() {
       var that = this;
       if (!this.options.template) {
         $.get('/html/moo-0.0.2.html', function(template) {
           that.options.template = _.template(template);
+          that._render();
         });
       }
       this.element.on('dblclick', 'tr.value.readable, tr.value.writable', function(e) {
         var object = that.options.object,
+            $modal = $('.modal', that.element),
             $target = $(e.target).parents('tr'),
-            name = $target.data('name'),
-            v = Moo.Value.generate(object.values.get(name), true),
-            l = Math.min(_.compact(v.split('\n')).length, 20),
-            $modal = $('.modal', this.element);
-
-        $('h3', $modal).text(name);
-        $('.textarea', $modal).attr('rows', l).text(v);
-
-        $modal.modal('show');
-
-        if (window.getSelection)
-          window.getSelection().removeAllRanges();
-        else if (document.selection)
-          document.selection.empty();
+            name = $target.data('id'),
+            value = Moo.Value.generate(object.values.get(name).get('Value.value'), true);
+        that._modal.show($modal, name, value);
+        that._modal.resetSelection();
+      });
+      this.element.on('dblclick', 'tr.property.readable, tr.property.writable', function(e) {
+        var object = that.options.object,
+            $modal = $('.modal', that.element),
+            $target = $(e.target).parents('tr'),
+            id = $target.data('id'),
+            value = Moo.Value.generate(object.properties.get(id).get('Property.value'), true),
+            title = object.properties.get(id).get('Property.name');
+        that._modal.show($modal, title, value);
+        that._modal.resetSelection();
+      });
+      this.element.on('dblclick', 'tr.verb.readable, tr.verb.writable', function(e) {
+        var object = that.options.object,
+            $modal = $('.modal', that.element),
+            $target = $(e.target).parents('tr'),
+            id = $target.data('id'),
+            value = object.verbs.get(id).get('Verb.code').join('\n'),
+            title = object.verbs.get(id).get('Verb.names');
+        that._modal.show($modal, title, value);
+        that._modal.resetSelection();
       });
     },
 

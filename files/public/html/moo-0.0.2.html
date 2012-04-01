@@ -82,7 +82,7 @@
             var icon = accessIcon(value),
                 clazz = accessClass(value, 'value');
             if (!value.isDenied()) { %>
-              <tr class="<%= clazz %>" data-name="<%= value.id %>">
+              <tr class="<%= clazz %>" data-id="<%= value.id %>">
                 <td width="5%"><%= icon %></td>
                 <td class="ellipsis"><strong><%= value.get("id") %></strong> <%= value.get('Value.value').toHTML(true) %></td>
               </tr>
@@ -104,15 +104,18 @@
             var icon = accessIcon(property),
                 clazz = accessClass(property, 'property');
             if (!property.isDenied()) { %>
-              <tr class="<%= clazz %>">
-                <td rowspan="2" width="5%"><%= icon %></td>
+              <tr class="<%= clazz %>" data-id="<%= property.id %>">
+                <td rowspan="3" width="5%"><%= icon %></td>
                 <td class="name"><strong><%= property.get("Property.name").toHTML() %></strong></td>
               </tr>
-              <tr class="<%= clazz %>">
+              <tr class="<%= clazz %>" data-id="<%= property.id %>">
                 <td>
                   <span class="owner"><%= property.get("Property.owner").toHTML() %></span>
                   <span class="perms"><%= property.get("Property.perms").toHTML() %></span>
                 </td>
+              </tr>
+              <tr class="<%= clazz %>" data-id="<%= property.id %>">
+                <td class="ellipsis"><%= property.get('Property.value').toHTML(true) %></td>
               </tr>
             <% } else { %>
               <tr class="<%= clazz %>">
@@ -132,11 +135,11 @@
             var icon = accessIcon(verb),
                 clazz = accessClass(verb, 'verb');
             if (!verb.isDenied()) { %>
-              <tr class="<%= clazz %>">
-                <td rowspan="2" width="5%"><%= icon %></td>
+              <tr class="<%= clazz %>" data-id="<%= verb.id %>">
+                <td rowspan="3" width="5%"><%= icon %></td>
                 <td class="names"><strong><%= verb.get("Verb.names").toHTML() %></strong></td>
               </tr>
-              <tr class="<%= clazz %>">
+              <tr class="<%= clazz %>" data-id="<%= verb.id %>">
                 <td>
                   <span class="owner"><%= verb.get("Verb.owner").toHTML() %></span>
                   <span class="perms"><%= verb.get("Verb.perms").toHTML() %></span>
@@ -144,6 +147,9 @@
                   <span class="prep"><%= verb.get("Verb.prep").toHTML() %></span>
                   <span class="iobj"><%= verb.get("Verb.iobj").toHTML() %></span>
                 </td>
+              </tr>
+              <tr class="<%= clazz %>" data-id="<%= verb.id %>">
+                <td class="ellipsis"><%= verb.get('Verb.code').toHTML(true) %></td>
               </tr>
             <% } else { %>
               <tr class="<%= clazz %>">
