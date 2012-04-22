@@ -3,7 +3,7 @@
 describe('Number', function() {
   it('should HTML-ize a number', function() {
     var n = 123;
-    var $v = $(n.toHTML());
+    var $v = $(Moo.formatHTML(n));
     expect($v.hasClass('moo-num')).toBeTruthy();
     expect($v.text()).toEqual('123');
   });
@@ -11,58 +11,58 @@ describe('Number', function() {
 
 describe('String', function() {
   it('should HTML-ize a MOO error', function() {
-    var $v = $('E_FOO|err'.toHTML());
+    var $v = $(Moo.formatHTML('E_FOO|err'));
     expect($v.hasClass('moo-err')).toBeTruthy();
     expect($v.text()).toEqual('E_FOO');
   });
 
   it('should HTML-ize a MOO object number', function() {
-    var $v = $('#0|obj'.toHTML());
+    var $v = $(Moo.formatHTML('#0|obj'));
     expect($v.hasClass('moo-obj')).toBeTruthy();
     expect($v.attr('href')).toEqual('/objects/0');
     expect($v.text()).toEqual('#0');
   });
 
   it('should HTML-ize a MOO integer', function() {
-    var $v = $('123|int'.toHTML());
+    var $v = $(Moo.formatHTML('123|int'));
     expect($v.hasClass('moo-num')).toBeTruthy();
     expect($v.text()).toEqual('123');
   });
 
   it('should HTML-ize a MOO float', function() {
-    var $v = $('1.3|float'.toHTML());
+    var $v = $(Moo.formatHTML('1.3|float'));
     expect($v.hasClass('moo-num')).toBeTruthy();
     expect($v.text()).toEqual('1.3');
   });
 
   it('should HTML-ize a tricky MOO string', function() {
-    var $v = $('#0|obj|str'.toHTML());
+    var $v = $(Moo.formatHTML('#0|obj|str'));
     expect($v.hasClass('moo-str')).toBeTruthy();
     expect($v.text()).toEqual('#0|obj');
   });
 
   it('should HTML-ize a simple MOO string', function() {
-    var $v = $('str'.toHTML());
+    var $v = $(Moo.formatHTML('str'));
     expect($v.hasClass('moo-str')).toBeTruthy();
     expect($v.text()).toEqual('str');
   });
 
   describe('as a MOO-value literal', function() {
     it('should HTML-ize a tricky MOO string', function() {
-      var $v = $('#0|obj|str'.toHTML(true));
+      var $v = $(Moo.formatHTML('#0|obj|str', true));
       expect($v.hasClass('moo-str')).toBeTruthy();
       expect($v.text()).toEqual('"#0|obj"');
     });
 
     it('should HTML-ize a simple MOO string', function() {
-      var $v = $('str'.toHTML(true));
+      var $v = $(Moo.formatHTML('str', true));
       expect($v.hasClass('moo-str')).toBeTruthy();
       expect($v.text()).toEqual('"str"');
     });
   });
 
   it('should sanitize HTML', function() {
-    var $v = $('<script>alert("bang!");</script>'.toHTML());
+    var $v = $(Moo.formatHTML('<script>alert("bang!");</script>'));
     expect($v.hasClass('moo-str')).toBeTruthy();
     expect($v.html()).toEqual('&lt;script&gt;alert("bang!");&lt;/script&gt;');
     expect($v.text()).toEqual('<script>alert("bang!");</script>');
@@ -72,7 +72,7 @@ describe('String', function() {
 describe('Array', function() {
   it('should HTML-ize an array of values', function() {
     var a = [123, '123', '#123|obj'];
-    var $v = $(a.toHTML());
+    var $v = $(Moo.formatHTML(a));
     expect($v.hasClass('moo-list')).toBeTruthy();
     expect($v.children().length).toEqual(3);
     expect($v.find(':eq(0)').text()).toEqual('123');
@@ -84,7 +84,7 @@ describe('Array', function() {
 describe('Object', function() {
   it('should HTML-ize an object of value pairs', function() {
     var o = {'123|int': 123, '123|str': '123'};
-    var $v = $(o.toHTML());
+    var $v = $(Moo.formatHTML(o));
     expect($v.hasClass('moo-map')).toBeTruthy();
     expect($v.children().length).toEqual(4);
     expect($v.find(':eq(0)').text()).toEqual('123');
@@ -971,7 +971,7 @@ describe('widget $().simpleObjectPanel', function() {
   $.ajax({
     async: false,
     type: 'get',
-    url: '/html/moo-0.0.2.html',
+    url: '/html/moo-0.0.3.html',
     success: function(data) {
       template = data;
     }

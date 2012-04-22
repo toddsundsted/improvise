@@ -10,47 +10,46 @@ var Moo = {};
     return string.indexOf(suffix, string.length - suffix.length) !== -1;
   };
 
-  /* monkey patches / helpers */
+  /* helpers */
 
-  Number.prototype.toHTML = function() {
-    return '<span class="moo-num">' + this + '</span>';
-  };
-
-  String.prototype.toHTML = function(literal) {
-    var str, num;
-    if (endsWith(this, '|err')) {
-      str = _.escape(this.slice(0, this.length - 4));
-      return '<span class="moo-err">' + str + '</span>';
+  Moo.formatHTML = function(value, literal) {
+    if (_.isNumber(value)) {
+      return '<span class="moo-num">' + value + '</span>';
     }
-    else if (endsWith(this, '|obj')) {
-      str = _.escape(this.slice(0, this.length - 4));
-      num = _.escape(this.slice(0, this.length - 4).slice(1));
-      return '<a rel="object" data-object-number="' + num + '" class="moo-obj" href="/objects/' + num + '">' + str + '</a>';
+    else if (_.isString(value)) {
+      var str, num;
+      if (endsWith(value, '|err')) {
+        str = _.escape(value.slice(0, value.length - 4));
+        return '<span class="moo-err">' + str + '</span>';
+      }
+      else if (endsWith(value, '|obj')) {
+        str = _.escape(value.slice(0, value.length - 4));
+        num = _.escape(value.slice(0, value.length - 4).slice(1));
+        return '<a rel="object" data-object-number="' + num + '" class="moo-obj" href="/objects/' + num + '">' + str + '</a>';
+      }
+      else if (endsWith(value, '|int')) {
+        str = _.escape(value.slice(0, value.length - 4));
+        return '<span class="moo-num">' +  str + '</span>';
+      }
+      else if (endsWith(value, '|float')) {
+        str = _.escape(value.slice(0, value.length - 6));
+        return '<span class="moo-num">' +  str + '</span>';
+      }
+      else if (endsWith(value, '|str')) {
+        str = value.slice(0, value.length - 4);
+        return '<span class="moo-str">' +  _.escape(literal ? '"' + str.replace(/"/gm, '\\\"') + '"' : str) + '</span>';
+      }
+      else {
+        str = value;
+        return '<span class="moo-str">' + _.escape(literal ? '"' + str.replace(/"/gm, '\\\"') + '"' : str) + '</span>';
+      }
     }
-    else if (endsWith(this, '|int')) {
-      str = _.escape(this.slice(0, this.length - 4));
-      return '<span class="moo-num">' +  str + '</span>';
+    else if (_.isArray(value)) {
+      return '<span class="moo-list">{ ' + _.map(value, function(v) { return Moo.formatHTML(v, true); }).join(', ') + ' }</span>';
     }
-    else if (endsWith(this, '|float')) {
-      str = _.escape(this.slice(0, this.length - 6));
-      return '<span class="moo-num">' +  str + '</span>';
+    else if (_.isObject(value)) {
+      return '<span class="moo-map">[ ' + _.map(value, function(v, k) { return Moo.formatHTML(k, true) + ' -> ' + Moo.formatHTML(v, true); }).join(', ') + ' ]</span>';
     }
-    else if (endsWith(this, '|str')) {
-      str = this.slice(0, this.length - 4);
-      return '<span class="moo-str">' +  _.escape(literal ? '"' + str.replace(/"/gm, '\\\"') + '"' : str) + '</span>';
-    }
-    else {
-      str = this;
-      return '<span class="moo-str">' + _.escape(literal ? '"' + str.replace(/"/gm, '\\\"') + '"' : str) + '</span>';
-    }
-  };
-
-  Array.prototype.toHTML = function() {
-    return '<span class="moo-list">{ ' + _.map(this, function(v) { return v.toHTML(true); }).join(', ') + ' }</span>';
-  };
-
-  Object.prototype.toHTML = function() {
-    return '<span class="moo-map">[ ' + _.map(this, function(v, k) { return k.toHTML(true) + ' -> ' + v.toHTML(true); }).join(', ') + ' ]</span>';
   };
 
   _.extend(Moo, {
@@ -99,9 +98,6 @@ var Moo = {};
   Moo.NestedModel = Backbone.Model.extend({
 
     initialize: function(attributes) {
-      /* remove `toHTML' from attributes */
-      /* it is a side-effect caused by adding `toHTML()' to `Object' */
-      delete this.attributes.toHTML;
     },
 
     has: function(attr) {
@@ -139,10 +135,6 @@ var Moo = {};
         a[k] = _.clone(v);
         return a;
       }, {});
-
-      /* remove `toHTML' from attributes */
-      /* it is a side-effect caused by adding `toHTML()' to `Object' */
-      delete attributes.toHTML;
 
       _.each(attrs, function(value, attr) {
         var path = attr.split('.'),
@@ -532,7 +524,7 @@ var Moo = {};
     _create: function() {
       var that = this;
       if (!this.options.template) {
-        $.get('/html/moo-0.0.2.html', function(template) {
+        $.get('/html/moo-0.0.3.html', function(template) {
           that.options.template = _.template(template);
           that._render();
         });

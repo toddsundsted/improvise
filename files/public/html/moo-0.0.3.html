@@ -50,7 +50,7 @@
           <% } else if (object.failed()) { %>
             <em>Request Failed</em>
           <% } else { %>
-            <%= object.values.get("name").get("Value.value").toHTML() %>
+            <%= Moo.formatHTML(object.values.get("name").get("Value.value")) %>
           <% } %>
         </h1>
       </div>
@@ -59,7 +59,7 @@
         <% var parents = lookup(object.attributez, 'parents', 'Value.value');
            if (parents) {
              _.each(parents, function(value) { %>
-               <%= value.toHTML() %>
+               <%= Moo.formatHTML(value) %>
             <% })
         } %>
       </div>
@@ -84,7 +84,7 @@
             if (!value.isDenied()) { %>
               <tr class="<%= clazz %>" data-id="<%= value.id %>">
                 <td width="5%"><%= icon %></td>
-                <td class="ellipsis"><strong><%= value.get("id") %></strong> <%= value.get('Value.value').toHTML(true) %></td>
+                <td class="ellipsis"><strong><%= value.get("id") %></strong> <%= Moo.formatHTML(value.get('Value.value'), true) %></td>
               </tr>
             <% } else { %>
               <tr class="<%= clazz %>">
@@ -106,16 +106,16 @@
             if (!property.isDenied()) { %>
               <tr class="<%= clazz %>" data-id="<%= property.id %>">
                 <td rowspan="3" width="5%"><%= icon %></td>
-                <td class="name ellipsis"><strong><%= property.get("Property.name").toHTML() %></strong></td>
+                <td class="name ellipsis"><strong><%= Moo.formatHTML(property.get("Property.name")) %></strong></td>
               </tr>
               <tr class="<%= clazz %>" data-id="<%= property.id %>">
                 <td>
-                  <span class="owner"><%= property.get("Property.owner").toHTML() %></span>
-                  <span class="perms"><%= property.get("Property.perms").toHTML() %></span>
+                  <span class="owner"><%= Moo.formatHTML(property.get("Property.owner")) %></span>
+                  <span class="perms"><%= Moo.formatHTML(property.get("Property.perms")) %></span>
                 </td>
               </tr>
               <tr class="<%= clazz %>" data-id="<%= property.id %>">
-                <td class="ellipsis"><%= property.get('Property.value').toHTML(true) %></td>
+                <td class="ellipsis"><%= Moo.formatHTML(property.get('Property.value'), true) %></td>
               </tr>
             <% } else { %>
               <tr class="<%= clazz %>">
@@ -137,19 +137,19 @@
             if (!verb.isDenied()) { %>
               <tr class="<%= clazz %>" data-id="<%= verb.id %>">
                 <td rowspan="3" width="5%"><%= icon %></td>
-                <td class="names ellipsis"><strong><%= verb.get("Verb.names").toHTML() %></strong></td>
+                <td class="names ellipsis"><strong><%= Moo.formatHTML(verb.get("Verb.names")) %></strong></td>
               </tr>
               <tr class="<%= clazz %>" data-id="<%= verb.id %>">
                 <td>
-                  <span class="owner"><%= verb.get("Verb.owner").toHTML() %></span>
-                  <span class="perms"><%= verb.get("Verb.perms").toHTML() %></span>
-                  <span class="dobj"><%= verb.get("Verb.dobj").toHTML() %></span>
-                  <span class="prep"><%= verb.get("Verb.prep").toHTML() %></span>
-                  <span class="iobj"><%= verb.get("Verb.iobj").toHTML() %></span>
+                  <span class="owner"><%= Moo.formatHTML(verb.get("Verb.owner")) %></span>
+                  <span class="perms"><%= Moo.formatHTML(verb.get("Verb.perms")) %></span>
+                  <span class="dobj"><%= Moo.formatHTML(verb.get("Verb.dobj")) %></span>
+                  <span class="prep"><%= Moo.formatHTML(verb.get("Verb.prep")) %></span>
+                  <span class="iobj"><%= Moo.formatHTML(verb.get("Verb.iobj")) %></span>
                 </td>
               </tr>
               <tr class="<%= clazz %>" data-id="<%= verb.id %>">
-                <td class="ellipsis"><%= verb.get('Verb.code').toHTML(true) %></td>
+                <td class="ellipsis"><%= Moo.formatHTML(verb.get('Verb.code'), true) %></td>
               </tr>
             <% } else { %>
               <tr class="<%= clazz %>">
