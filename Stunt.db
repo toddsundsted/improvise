@@ -1,6 +1,6 @@
 ** LambdaMOO Database, Format Version 12 **
 77
-233
+234
 0
 2
 5
@@ -158,7 +158,7 @@ application/x-mustache
 2
 1
 1
--5
+-2
 2
 1
 2
@@ -208,13 +208,17 @@ Welcome to Stunt!  For information about Stunt, check out http://stunt.io/.  To 
 20
 1
 4
-3
+5
 1
 31
 1
 44
 1
 45
+1
+82
+1
+83
 20
 1
 5
@@ -510,8 +514,6 @@ Object
 1
 2
 1
-5
-1
 38
 1
 41
@@ -533,6 +535,8 @@ Object
 65
 1
 66
+1
+5
 0
 1
 aliases
@@ -549,6 +553,8 @@ Wizard
 7
 4
 0
+4
+1
 1
 4
 4
@@ -566,7 +572,7 @@ huh
 passkey
 2
 2
-D58A01E697FE48708BFD0729EEB6E1CDFE3B8D44C8CF5C17CEF41E937842DE47
+B94067558B21FF36B253B032B6E9FAF0DCC1F2CD3EA996A91530CE44B0711FBF
 5
 0
 5
@@ -589,7 +595,7 @@ Programmer
 passkey
 2
 2
-E799FF92F2B2C29331ED186D19DD7A46F9991D8AD1E35A4000E52CB7D9DA2AF1
+EEB99BF2701F2328E36DF26218C3F29EEC7CCB0B53B484CE118C3ADAF395E605
 5
 0
 5
@@ -956,7 +962,7 @@ application
 10
 1
 2
-0.0.2
+0.0.3
 4
 1
 1
@@ -966,7 +972,7 @@ dialog
 10
 1
 2
-0.0.3
+0.0.4
 4
 1
 1
@@ -976,7 +982,7 @@ dialog_extras
 10
 1
 2
-0.0.2
+0.0.3
 4
 1
 1
@@ -1050,7 +1056,7 @@ dialog
 10
 1
 2
-0.0.3
+0.0.4
 4
 2
 1
@@ -1062,7 +1068,7 @@ dialog_extras
 10
 1
 2
-0.0.2
+0.0.3
 4
 1
 1
@@ -1106,7 +1112,7 @@ primitive
 2
 0
 0
-1332545072
+1335646582
 2
 0
 10
@@ -1166,7 +1172,7 @@ packages/nuc67gn3gu.json
 2
 dialog
 10
-2
+3
 2
 0.0.1
 2
@@ -1176,9 +1182,13 @@ packages/dialog_0_0_1.json
 2
 packages/dialog_0_0_3.json
 2
+0.0.4
+2
+packages/dialog_0_0_4.json
+2
 dialog_extras
 10
-2
+3
 2
 0.0.1
 2
@@ -1187,6 +1197,10 @@ packages/dialog_extras_0_0_1.json
 0.0.2
 2
 packages/dialog_extras_0_0_2.json
+2
+0.0.3
+2
+packages/dialog_extras_0_0_3.json
 2
 identity
 10
@@ -1330,7 +1344,7 @@ packages/unit_1_0_4.json
 2
 application
 10
-1
+2
 2
 0.0.2
 10
@@ -1386,7 +1400,7 @@ value
 2
 server|dialog
 2
-upgrade_handler|dialog_extras
+streaming_handler|dialog_extras
 2
 logger|dialog_extras
 2
@@ -5332,6 +5346,4074 @@ prep
 2
 none
 2
+0.0.3
+10
+2
+2
+Configuration
+10
+2
+2
+top
+2
+package
+2
+Version
+2
+0.1
+2
+Objects
+10
+8
+2
+__73__
+10
+5
+2
+Attributes
+10
+2
+2
+parents
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+parents
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+4
+3
+2
+server|dialog
+2
+streaming_handler|dialog_extras
+2
+logger|dialog_extras
+2
+player
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+player
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Meta
+10
+2
+2
+id
+0
+73
+2
+status
+2
+writable
+2
+Properties
+4
+0
+2
+Values
+10
+20
+2
+aliases
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+aliases
+2
+status
+2
+writable
+2
+Value
+10
+4
+2
+clear
+0
+1
+2
+owner
+2
+package
+2
+perms
+2
+c
+2
+value
+4
+0
+2
+default_chain
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+default_chain
+2
+status
+2
+writable
+2
+Value
+10
+4
+2
+clear
+0
+0
+2
+owner
+2
+package
+2
+perms
+2
+c
+2
+value
+4
+10
+2
+session
+2
+player
+2
+parameters
+2
+do_socket
+2
+do_long_poll
+2
+route
+2
+serve
+2
+cleanup
+2
+404
+2
+log
+2
+description
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+description
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+1
+2
+value
+2
+HTTP streaming handlers for player interaction.  Currently socket based and long-polling.
+2
+f
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+f
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+flash_socket_policy
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+flash_socket_policy
+2
+status
+2
+writable
+2
+Value
+10
+4
+2
+clear
+0
+0
+2
+owner
+2
+package
+2
+perms
+2
+c
+2
+value
+2
+<?xml version="1.0"?><cross-domain-policy><allow-access-from domain="localhost" to-ports="*"/></cross-domain-policy>
+2
+key
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+key
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+0
+0
+2
+location
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+location
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+name
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+HTTP Server
+2
+owner
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+owner
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+port
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+port
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+0
+12346
+2
+programmer
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+programmer
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+r
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+r
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+request_proto
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+request_proto
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+1
+2
+value
+1
+44
+2
+response_proto
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+response_proto
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+1
+2
+value
+1
+45
+2
+route_proto
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+route_proto
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+1
+2
+value
+1
+46
+2
+session_cookie_name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+session_cookie_name
+2
+status
+2
+writable
+2
+Value
+10
+4
+2
+clear
+0
+1
+2
+owner
+2
+package
+2
+perms
+2
+c
+2
+value
+2
+_stunt_session
+2
+status_codes
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+status_codes
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+1
+2
+value
+10
+9
+0
+200
+2
+Ok
+0
+201
+2
+Created
+0
+204
+2
+No Content
+0
+302
+2
+Moved
+0
+400
+2
+Bad Request
+0
+403
+2
+Forbidden
+0
+404
+2
+Not Found
+0
+422
+2
+Unprocessable Entity
+0
+500
+2
+Server Error
+2
+utilities
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+utilities
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+1
+2
+value
+1
+42
+2
+w
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+w
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+wizard
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+wizard
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Verbs
+4
+0
+2
+__74__
+10
+5
+2
+Attributes
+10
+2
+2
+parents
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+parents
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+4
+1
+2
+file_server|dialog_extras
+2
+player
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+player
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Meta
+10
+2
+2
+id
+0
+74
+2
+status
+2
+writable
+2
+Properties
+4
+0
+2
+Values
+10
+9
+2
+aliases
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+aliases
+2
+status
+2
+writable
+2
+Value
+10
+4
+2
+clear
+0
+1
+2
+owner
+2
+package
+2
+perms
+2
+c
+2
+value
+4
+0
+2
+f
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+f
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+location
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+location
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+__73__
+2
+name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+name
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+File Server
+2
+owner
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+owner
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+programmer
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+programmer
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+r
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+r
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+w
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+w
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+wizard
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+wizard
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Verbs
+4
+0
+2
+__75__
+10
+5
+2
+Attributes
+10
+2
+2
+parents
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+parents
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+4
+1
+2
+db_server|dialog_extras
+2
+player
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+player
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Meta
+10
+2
+2
+id
+0
+75
+2
+status
+2
+writable
+2
+Properties
+4
+0
+2
+Values
+10
+9
+2
+aliases
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+aliases
+2
+status
+2
+writable
+2
+Value
+10
+4
+2
+clear
+0
+1
+2
+owner
+2
+package
+2
+perms
+2
+c
+2
+value
+4
+0
+2
+f
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+f
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+location
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+location
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+__73__
+2
+name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+name
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+Database Server
+2
+owner
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+owner
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+programmer
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+programmer
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+r
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+r
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+w
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+w
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+wizard
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+wizard
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Verbs
+4
+0
+2
+__76__
+10
+5
+2
+Attributes
+10
+2
+2
+parents
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+parents
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+4
+1
+2
+route_proto|dialog
+2
+player
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+player
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Meta
+10
+2
+2
+id
+0
+76
+2
+status
+2
+writable
+2
+Properties
+4
+0
+2
+Values
+10
+9
+2
+aliases
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+aliases
+2
+status
+2
+writable
+2
+Value
+10
+4
+2
+clear
+0
+1
+2
+owner
+2
+package
+2
+perms
+2
+c
+2
+value
+4
+0
+2
+f
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+f
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+location
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+location
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+__73__
+2
+name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+name
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+Routes
+2
+owner
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+owner
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+programmer
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+programmer
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+r
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+r
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+w
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+w
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+wizard
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+wizard
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Verbs
+4
+1
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+1
+2
+status
+2
+writable
+2
+Verb
+10
+8
+2
+code
+4
+23
+2
+{request} = args;
+2
+
+2
+path = request:path():split("/");
+2
+method = request:method();
+2
+
+2
+{host, ?port = 80} = `request:headers()["host"]:split(":") ! E_RANGE => {""}';
+2
+
+2
+parameters = [
+2
+  "__base_uri__" -> host ? tostr("http://", host, ":", port) | "",
+2
+  "__connection__" -> player
+2
+];
+2
+
+2
+if (!path && method == "get")
+2
+  return {$lookup("home_controller"), "index", parameters};
+2
+elseif (length(path) == 2 && path[1] == "objects" && method == "get")
+2
+  return {$lookup("home_controller"), "browse", parameters:merge(["id" -> path[2]])};
+2
+elseif (path == {"session", "create"} && method == "post")
+2
+  return {$lookup("session_controller"), path[2], parameters};
+2
+elseif (path == {"session", "destroy"} && method == "post")
+2
+  return {$lookup("session_controller"), path[2], parameters};
+2
+endif
+2
+
+2
+return {};
+2
+content_type
+2
+application/x-moocode
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+match
+2
+owner
+2
+package
+2
+perms
+2
+xd
+2
+prep
+2
+none
+2
+home_controller
+10
+5
+2
+Attributes
+10
+2
+2
+parents
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+parents
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+4
+0
+2
+player
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+player
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Meta
+10
+2
+2
+id
+0
+70
+2
+status
+2
+writable
+2
+Properties
+4
+0
+2
+Values
+10
+8
+2
+f
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+f
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+location
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+location
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+__73__
+2
+name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+name
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+Home Controller
+2
+owner
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+owner
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+programmer
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+programmer
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+r
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+r
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+w
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+w
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+wizard
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+wizard
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Verbs
+4
+1
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+1
+2
+status
+2
+writable
+2
+Verb
+10
+8
+2
+code
+4
+20
+2
+$restrict_to_caller($dialog.server);
+2
+
+2
+{request, response} = args;
+2
+
+2
+parameters = request:parameters();
+2
+
+2
+if (valid(player))
+2
+  map = [
+2
+    "links" -> {
+2
+      ["id" -> tonum($system), "name" -> "$system"],
+2
+      ["id" -> tonum(player.location), "name" -> "home"],
+2
+      ["id" -> tonum(player), "name" -> "me"]
+2
+    }
+2
+  ];
+2
+  parameters = parameters:merge(["player" -> ["id" -> tonum(player), "name" -> player.name]]):merge(map);
+2
+endif
+2
+
+2
+response = response:set_status(200):set_type("text/html"):set_body($lookup("home_views"):index(parameters));
+2
+
+2
+return {request, response};
+2
+content_type
+2
+application/x-moocode
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+index browse
+2
+owner
+2
+package
+2
+perms
+2
+xd
+2
+prep
+2
+none
+2
+home_views
+10
+5
+2
+Attributes
+10
+2
+2
+parents
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+parents
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+4
+0
+2
+player
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+player
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Meta
+10
+2
+2
+id
+0
+71
+2
+status
+2
+writable
+2
+Properties
+4
+0
+2
+Values
+10
+8
+2
+f
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+f
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+location
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+location
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+home_controller
+2
+name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+name
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+Home Views
+2
+owner
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+owner
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+programmer
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+programmer
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+r
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+r
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+w
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+w
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+wizard
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+wizard
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Verbs
+4
+1
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+1
+2
+status
+2
+writable
+2
+Verb
+10
+8
+2
+code
+4
+114
+2
+<!DOCTYPE html>
+2
+<html lang="en">
+2
+<head>
+2
+<title>Stunt | Improvise</title>
+2
+<link type="text/css" rel="stylesheet" href="/css/bootstrap-2.0.2.min.css">
+2
+<link type="text/css" rel="stylesheet" href="/css/bootstrap-responsive-2.0.2.min.css">
+2
+<link type="text/css" rel="stylesheet" href="/css/font-awesome-1.0.0-7.min.css">
+2
+<link type="text/css" rel="stylesheet" href="/css/moo-0.0.3.min.css">
+2
+<script type="text/javascript" src="/js/swfobject-2.1.min.js"></script>
+2
+<script type="text/javascript" src="/js/Socket.js"></script>
+2
+<script type="text/javascript">
+2
+var flashvars = {};
+2
+var params = {menu: 'false', scale: 'noScale', allowScriptAccess: 'always', bgcolor: '#FFFFFF'};
+2
+var attributes = {id: 'JavascriptSocket', name: 'JavascriptSocket'};
+2
+swfobject.embedSWF('/flash/javascriptsocket.swf', 'flash-content', '100%', '100%', '9.0.0', null, flashvars, params, attributes);
+2
+</script>
+2
+<script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+2
+<script type="text/javascript" src="/js/jquery.ui.core-1.8.18.min.js"></script>
+2
+<script type="text/javascript" src="/js/jquery.ui.widget-1.8.18.min.js"></script>
+2
+<script type="text/javascript" src="/js/underscore-1.3.1.min.js"></script>
+2
+<script type="text/javascript" src="/js/backbone-0.9.2.min.js"></script>
+2
+<script type="text/javascript" src="/js/bootstrap-modal-2.0.2.js"></script>
+2
+<script type="text/javascript" src="/js/bootstrap-transition-2.0.2.js"></script>
+2
+<script type="text/javascript" src="/js/moo-0.0.3.min.js"></script>
+2
+<script type="text/javascript" src="/js/moo-interactive-0.0.3.min.js"></script>
+2
+</head>
+2
+<body>
+2
+  <div id="flash-content"></div>
+2
+  <div class="container">
+2
+    &nbsp;
+2
+    <div class="row">
+2
+      <div class="span4">
+2
+        {{^player}}
+2
+          <form class="well form-inline" action="/session/create" method="post">
+2
+            <input type="text" name="credentials" placeholder="player object number, e.g. #5">
+2
+            <button type="submit" name="submit">Connect</button>
+2
+          </form>
+2
+        {{/player}}
+2
+        {{#player}}
+2
+          <form class="well form-inline" action="/session/destroy" method="post">
+2
+            <button type="submit" name="submit">Disconnect</button>
+2
+          </form>
+2
+        {{/player}}
+2
+      </div>
+2
+      <div class="span8">
+2
+        {{^player}}
+2
+          <h2>Welcome!</h2>
+2
+          <p>&larr; Use the form on the left to connect to a specific player object by its object number.</p>
+2
+        {{/player}}
+2
+        {{#player}}
+2
+          <h2>Welcome, {{player.name}}!</h2>
+2
+          <p>
+2
+            Start browsing by clicking on the object references to the right &rarr;
+2
+            {{#links}}
+2
+              <a rel="object" data-object-number="{{id}}" href="/objects/{{id}}">{{name}}</a>
+2
+            {{/links}}
+2
+          </p>
+2
+        {{/player}}
+2
+      </div>
+2
+    </div>
+2
+    {{#player}}
+2
+      <p id="browser"></p>
+2
+      <hr>
+2
+      <p id="terminal"></p>
+2
+      <p>
+2
+        &uarr; Send commands to the server by typing them in the input above (e.g. <code>; players()</code> or <code>; 5 + 3</code>).
+2
+      </p>
+2
+    {{/player}}
+2
+  </div>
+2
+  <script type="text/javascript">
+2
+    $(function() {
+2
+      Moo.Object.prototype.urlRoot = 'http://' + window.location.host + '///objects';
+2
+
+2
+      var $terminal = $('#terminal');
+2
+      $terminal.commandPanel({host: window.location.hostname, port: window.location.port});
+2
+
+2
+      var $browser = $('#browser');
+2
+      $browser.simpleObjectPanel();
+2
+
+2
+      Moo.Space = Backbone.Router.extend({
+2
+        routes: {
+2
+          'objects/:number': 'browse'
+2
+        },
+2
+        browse: function(number) {
+2
+          var o = new Moo.Object({id: number});
+2
+          o.fetch({
+2
+            success: function(model, response) {
+2
+              $browser.simpleObjectPanel({object: o});
+2
+              $browser.get(0).scrollIntoView(true);
+2
+            },
+2
+            error: function(model, response) {
+2
+              $browser.simpleObjectPanel({object: o});
+2
+              $browser.get(0).scrollIntoView(true);
+2
+            }
+2
+          });
+2
+        }
+2
+      });
+2
+      var moo = new Moo.Space;
+2
+
+2
+      $('body').on('click', 'a[rel*=object]', function(e) {
+2
+        e.preventDefault();
+2
+        var o = $(e.target).data('object-number');
+2
+        moo.navigate('/objects/' + o, {trigger: true});
+2
+      });
+2
+
+2
+      Backbone.history.start({pushState: true});
+2
+
+2
+      {{#id}}
+2
+        moo.navigate('/objects/{{id}}');
+2
+      {{/id}}
+2
+    });
+2
+  </script>
+2
+</body>
+2
+</html>
+2
+content_type
+2
+application/x-mustache
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+index
+2
+owner
+2
+package
+2
+perms
+2
+xd
+2
+prep
+2
+none
+2
+package
+10
+5
+2
+Attributes
+10
+2
+2
+parents
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+parents
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+4
+0
+2
+player
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+player
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Meta
+10
+2
+2
+id
+0
+69
+2
+status
+2
+writable
+2
+Properties
+4
+11
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+1
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+identifier
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+2
+application
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+2
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+version
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+2
+0.0.3
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+3
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+manifest
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+4
+4
+2
+package
+2
+home_controller
+2
+home_views
+2
+session_controller
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+4
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+requires
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+4
+2
+4
+2
+2
+dialog
+2
+>= 0.0.1
+4
+2
+2
+dialog_extras
+2
+>= 0.0.1
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+5
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+relocate
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+4
+0
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+6
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+provides
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+4
+0
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+7
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+instructions
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+4
+0
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+8
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+description
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+2
+
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+9
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+authors
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+4
+0
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+10
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+homepage
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+2
+
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+11
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+license
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+2
+
+2
+Values
+10
+19
+2
+authors
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+authors
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+4
+0
+2
+description
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+description
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+2
+
+2
+f
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+f
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+homepage
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+homepage
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+2
+
+2
+identifier
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+identifier
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+2
+application
+2
+instructions
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+instructions
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+4
+0
+2
+license
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+license
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+2
+
+2
+location
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+location
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+__nothing__
+2
+manifest
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+manifest
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+4
+4
+2
+package
+2
+home_controller
+2
+home_views
+2
+session_controller
+2
+name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+name
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+Application Package
+2
+owner
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+owner
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+programmer
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+programmer
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+provides
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+provides
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+4
+0
+2
+r
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+r
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+relocate
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+relocate
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+4
+0
+2
+requires
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+requires
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+4
+2
+4
+2
+2
+dialog
+2
+>= 0.0.1
+4
+2
+2
+dialog_extras
+2
+>= 0.0.1
+2
+version
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+version
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+2
+0.0.3
+2
+w
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+w
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+wizard
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+wizard
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Verbs
+4
+0
+2
+session_controller
+10
+5
+2
+Attributes
+10
+2
+2
+parents
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+parents
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+4
+0
+2
+player
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+player
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Meta
+10
+2
+2
+id
+0
+72
+2
+status
+2
+writable
+2
+Properties
+4
+0
+2
+Values
+10
+8
+2
+f
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+f
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+location
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+location
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+__73__
+2
+name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+name
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+Session Controller
+2
+owner
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+owner
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+programmer
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+programmer
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+r
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+r
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+w
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+w
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+wizard
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+wizard
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Verbs
+4
+2
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+1
+2
+status
+2
+writable
+2
+Verb
+10
+8
+2
+code
+4
+12
+2
+$restrict_to_caller($dialog.server);
+2
+
+2
+{request, response} = args;
+2
+
+2
+player = `request:parameters()["credentials"] ! E_RANGE => $nothing';
+2
+if (valid(player = toobj(player)))
+2
+  set_task_local(task_local():merge(["http" -> ["session" -> ["player" -> player]]]));
+2
+endif
+2
+
+2
+response = response:set_status(302):set_location(request:parameters()["__base_uri__"] + "/"):set_body("");
+2
+
+2
+return {request, response};
+2
+content_type
+2
+application/x-moocode
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+create
+2
+owner
+2
+__wizard__
+2
+perms
+2
+xd
+2
+prep
+2
+none
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+2
+2
+status
+2
+writable
+2
+Verb
+10
+8
+2
+code
+4
+9
+2
+$restrict_to_caller($dialog.server);
+2
+
+2
+{request, response} = args;
+2
+
+2
+set_task_local(task_local():merge(["http" -> ["session" -> ["player" -> $nothing]]]));
+2
+
+2
+response = response:set_status(302):set_location(request:parameters()["__base_uri__"] + "/"):set_body("");
+2
+
+2
+return {request, response};
+2
+content_type
+2
+application/x-moocode
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+destroy
+2
+owner
+2
+__wizard__
+2
+perms
+2
+xd
+2
+prep
+2
+none
+2
 0
 2
 stunt.io
@@ -6495,7 +10577,7 @@ dialog
 39
 1
 2
-0.0.3
+0.0.4
 39
 1
 4
@@ -6633,7 +10715,7 @@ Changelog
 4
 0
 0
-19
+20
 1316094194
 1316358449
 1318324724
@@ -6653,7 +10735,8 @@ Changelog
 1332104693
 1332106296
 1332244717
-19
+1335621656
+20
 2
 Added HTTP server framework (basic) including external file serving, routing to object/verb handlers and a database example.
 39
@@ -6728,6 +10811,10 @@ Renamed "route" to "route_proto" in all the right places.
 1
 2
 Moved the flash socket policy logic back into `do_login_command()'.
+39
+1
+2
+Explicitly send a content length of zero (0) when the body is empty.  Safari seems to want this on redirects.
 39
 1
 #41
@@ -7232,7 +11319,7 @@ dialog_extras
 49
 1
 2
-0.0.2
+0.0.3
 49
 1
 4
@@ -7260,7 +11347,7 @@ db_server
 1
 52
 2
-upgrade_handler
+streaming_handler
 4
 2
 1
@@ -7394,7 +11481,7 @@ delete
 49
 4
 #52
-HTTP Upgrade Handler
+HTTP Streaming Handler
 0
 49
 1
@@ -7409,12 +11496,21 @@ HTTP Upgrade Handler
 1
 1
 73
-1
-upgrade
+2
+do_socket
 5
 172
 -1
-0
+do_long_poll
+5
+172
+-1
+1
+description
+2
+2
+HTTP streaming handlers for player interaction.  Currently socket based and long-polling.
+49
 1
 5
 49
@@ -8194,7 +12290,7 @@ application
 69
 1
 2
-0.0.2
+0.0.3
 69
 1
 4
@@ -8362,7 +12458,7 @@ HTTP Server
 0
 0
 0
-11
+12
 0
 12346
 39
@@ -8372,7 +12468,7 @@ HTTP Server
 39
 0
 4
-9
+10
 2
 session
 2
@@ -8380,7 +12476,9 @@ player
 2
 parameters
 2
-upgrade
+do_socket
+2
+do_long_poll
 2
 route
 2
@@ -8418,6 +12516,9 @@ log
 5
 69
 4
+5
+49
+1
 #74
 File Server
 0
@@ -12777,7 +16878,7 @@ return;
 "chunk_length:4";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #39:1
@@ -12793,7 +16894,7 @@ return;
 "chunk_length:4";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #42:0
@@ -12892,7 +16993,7 @@ return;
 "chunk_length:3";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:1
@@ -12923,7 +17024,7 @@ return;
 "chunk_length:12";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:2
@@ -12946,7 +17047,7 @@ return;
 "chunk_length:9";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:3
@@ -12985,7 +17086,7 @@ return;
 "chunk_length:18";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:4
@@ -13000,7 +17101,7 @@ return;
 "chunk_length:4";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:5
@@ -13015,7 +17116,7 @@ return;
 "chunk_length:4";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:6
@@ -13038,7 +17139,7 @@ return;
 "chunk_length:8";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:7
@@ -13055,7 +17156,7 @@ return;
 "chunk_length:5";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:8
@@ -13079,6 +17180,7 @@ this:_notify(connection, "~0D~0A");
 this:_notify(connection, body);
 else
 this:_notify(connection, tostr("HTTP/1.1 ", status, " ", status_codes[status], "~0D~0A"));
+this:_notify(connection, tostr("Content-Length: ", 0, "~0D~0A"));
 for value, field in (`response["headers"] ! E_RANGE => []')
 this:_notify(connection, tostr(field, ": ", value, "~0D~0A"));
 endfor
@@ -13110,6 +17212,7 @@ return;
 "";
 "else";
 "  this:_notify(connection, tostr(\"HTTP/1.1 \", status, \" \", status_codes[status], \"~0D~0A\"));";
+"  this:_notify(connection, tostr(\"Content-Length: \", 0, \"~0D~0A\"));";
 "  for value, field in (`response[\"headers\"] ! E_RANGE => []')";
 "    this:_notify(connection, tostr(field, \": \", value, \"~0D~0A\"));";
 "  endfor";
@@ -13117,10 +17220,10 @@ return;
 "";
 "endif";
 "";
-"chunk_length:31";
+"chunk_length:32";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:9
@@ -13158,7 +17261,7 @@ return;
 "chunk_length:18";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:10
@@ -13168,7 +17271,7 @@ set_connection_option(player, "disable-oob", 1);
 set_connection_option(player, "binary", 1);
 if (flash_socket_policy = this:_flash_socket_policy())
 if ((line = read(player)) == "<policy-file-request/>~00")
-this:_log("DIALOG:  serving policy file:  ", flash_socket_policy);
+this:_log("DIALOG: serving policy file: ", flash_socket_policy);
 notify(player, flash_socket_policy);
 boot_player(player);
 return;
@@ -13192,10 +17295,14 @@ return;
 "/* If a flash socket policy is set, peek at the first line.  If it's a";
 " * policy file request, serve the policy and finish; otherwise, put";
 " * the line back and continue.";
+" *";
+" * A reasonable socket policy for localhost is:";
+" * \"<?xml version=\\\"1.0\\\"?><cross-domain-policy><allow-access-from domain=\\\"localhost\\\" to-ports=\\\"*\\\"/></cross-domain-policy>\"";
+" *";
 " */";
 "if (flash_socket_policy = this:_flash_socket_policy())";
 "  if ((line = read(player)) == \"<policy-file-request/>~00\")";
-"    this:_log(\"DIALOG:  serving policy file:  \", flash_socket_policy);";
+"    this:_log(\"DIALOG: serving policy file: \", flash_socket_policy);";
 "    notify(player, flash_socket_policy);";
 "    boot_player(player);";
 "    return;";
@@ -13214,10 +17321,10 @@ return;
 "  endif";
 "endwhile";
 "";
-"chunk_length:30";
+"chunk_length:34";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:11
@@ -13235,18 +17342,18 @@ session = parse_json(session, "embedded-types");
 if ((session["stamp"] + 604800) > time())
 session["data"];
 else
-this:_log("DIALOG:  session cookie has expired");
+this:_log("DIALOG: session cookie has expired");
 session = [];
 endif
 else
-this:_log("DIALOG:  session cookie hmac does not match");
+this:_log("DIALOG: session cookie hmac does not match");
 session = [];
 endif
 else
 session = [];
 endif
 except (ANY)
-this:_log("DIALOG:  session cookie is invalid");
+this:_log("DIALOG: session cookie is invalid");
 session = [];
 endtry
 if (session)
@@ -13278,11 +17385,11 @@ return;
 "          /* probe the value */";
 "          session[\"data\"];";
 "        else";
-"          this:_log(\"DIALOG:  session cookie has expired\");";
+"          this:_log(\"DIALOG: session cookie has expired\");";
 "          session = [];";
 "        endif";
 "      else";
-"        this:_log(\"DIALOG:  session cookie hmac does not match\");";
+"        this:_log(\"DIALOG: session cookie hmac does not match\");";
 "        session = [];";
 "      endif";
 "    else";
@@ -13290,7 +17397,7 @@ return;
 "      session = [];";
 "    endif";
 "  except (ANY)";
-"    this:_log(\"DIALOG:  session cookie is invalid\");";
+"    this:_log(\"DIALOG: session cookie is invalid\");";
 "    session = [];";
 "  endtry";
 "";
@@ -13311,7 +17418,7 @@ return;
 "chunk_length:47";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:12
@@ -13339,7 +17446,7 @@ return;
 "chunk_length:13";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:13
@@ -13377,7 +17484,7 @@ return;
 "chunk_length:16";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:14
@@ -13609,7 +17716,7 @@ return;
 "chunk_length:121";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:15
@@ -13648,7 +17755,7 @@ return;
 "chunk_length:21";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:16
@@ -13757,7 +17864,7 @@ return;
 "chunk_length:62";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:17
@@ -13796,7 +17903,7 @@ return;
 "chunk_length:15";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:18
@@ -13828,7 +17935,7 @@ return;
 "chunk_length:5";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:20
@@ -13845,7 +17952,7 @@ return;
 "chunk_length:4";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #43:21
@@ -13931,7 +18038,7 @@ return;
 "chunk_length:50";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #44:0
@@ -14014,7 +18121,7 @@ return;
 "chunk_length:13";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #47:0
@@ -14061,7 +18168,7 @@ return;
 "chunk_length:21";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #47:1
@@ -14078,7 +18185,7 @@ return;
 "chunk_length:5";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #48:0
@@ -14103,7 +18210,7 @@ return;
 "chunk_length:9";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #48:1
@@ -14137,7 +18244,7 @@ return;
 "chunk_length:20";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:33 2012 EDT";
+"updated_at:Sat Apr 28 15:51:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #50:0
@@ -14176,7 +18283,7 @@ return;
 "chunk_length:19";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:48 2012 EDT";
+"updated_at:Sat Apr 28 15:51:41 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #50:1
@@ -14343,7 +18450,7 @@ return;
 "chunk_length:89";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:48 2012 EDT";
+"updated_at:Sat Apr 28 15:51:41 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #51:0
@@ -14386,7 +18493,7 @@ return;
 "chunk_length:19";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:48 2012 EDT";
+"updated_at:Sat Apr 28 15:51:41 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #51:1
@@ -14421,7 +18528,7 @@ return;
 "chunk_length:18";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:48 2012 EDT";
+"updated_at:Sat Apr 28 15:51:41 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #51:2
@@ -14515,7 +18622,7 @@ return;
 "chunk_length:52";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:48 2012 EDT";
+"updated_at:Sat Apr 28 15:51:41 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #51:3
@@ -14571,7 +18678,7 @@ return;
 "chunk_length:26";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:48 2012 EDT";
+"updated_at:Sat Apr 28 15:51:41 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #51:4
@@ -14629,7 +18736,7 @@ return;
 "chunk_length:27";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:48 2012 EDT";
+"updated_at:Sat Apr 28 15:51:41 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #51:5
@@ -14687,14 +18794,14 @@ return;
 "chunk_length:27";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:48 2012 EDT";
+"updated_at:Sat Apr 28 15:51:41 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #52:0
 $restrict_to_caller($dialog.server, "_do_chain");
 {request, response, chain} = args;
 if (`request["upgrade"] ! E_RANGE')
-if (`request["headers"]["upgrade"] ! E_RANGE' == "moo")
+if ((`request["headers"]["upgrade"] ! E_RANGE' == "moo") && (`request["headers"]["X-Break-A-Leg"] ! E_RANGE' == "stunt"))
 if (((typeof(new_player = `task_local()["http"]["session"]["player"] ! E_RANGE') == OBJ) && valid(new_player)) && is_player(new_player))
 set_connection_option(player, "hold-input", 0);
 set_connection_option(player, "disable-oob", 0);
@@ -14702,9 +18809,9 @@ set_connection_option(player, "binary", 0);
 switch_player(player, new_player);
 kill_task(task_id());
 endif
-endif
 boot_player(player);
 return {request, response, {}};
+endif
 endif
 return {request, response, chain};
 return;
@@ -14713,8 +18820,9 @@ return;
 "{request, response, chain} = args;";
 "";
 "if (`request[\"upgrade\"] ! E_RANGE')";
-"  if (`request[\"headers\"][\"upgrade\"] ! E_RANGE' == \"moo\")";
+"  if (`request[\"headers\"][\"upgrade\"] ! E_RANGE' == \"moo\" && `request[\"headers\"][\"X-Break-A-Leg\"] ! E_RANGE' == \"stunt\")";
 "    if (typeof(new_player = `task_local()[\"http\"][\"session\"][\"player\"] ! E_RANGE') == OBJ && valid(new_player) && is_player(new_player))";
+"      /* put the connection into interactive mode */";
 "      set_connection_option(player, \"hold-input\", 0);";
 "      set_connection_option(player, \"disable-oob\", 0);";
 "      set_connection_option(player, \"binary\", 0);";
@@ -14725,19 +18833,97 @@ return;
 "       */";
 "      kill_task(task_id());";
 "    endif";
+"";
+"    /* It's a valid upgrade, but the session is out-of-date or bogus.";
+"     * For safety's sake, close the connection.";
+"     */";
+"    boot_player(player);";
+"    return {request, response, {}};";
+"  endif";
+"endif";
+"";
+"/* continue if not upgrading */";
+"return {request, response, chain};";
+"";
+"chunk_length:29";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Sat Apr 28 15:51:41 2012 EDT";
+"-=-=-mxyzptlk-=-=-";
+.
+#52:1
+$restrict_to_caller($dialog.server, "_do_chain");
+{request, response, chain} = args;
+if (request:path() == "/__long_poll")
+if (`request["headers"]["X-Break-A-Leg"] ! E_RANGE' == "stunt")
+if (((typeof(new_player = `task_local()["http"]["session"]["player"] ! E_RANGE') == OBJ) && valid(new_player)) && is_player(new_player))
+notify(player, tostr("HTTP/1.1 ", 200, " ", "Ok", "~0D~0A"));
+notify(player, tostr("Content-Type: ", "text/plain", "~0D~0A"));
+notify(player, "~0D~0A");
+for i in [1..16]
+notify(player, "                                                                                                                                ");
+endfor
+set_connection_option(player, "hold-input", 0);
+set_connection_option(player, "disable-oob", 0);
+set_connection_option(player, "binary", 0);
+switch_player(player, new_player);
+if (cmd = `request:body() ! E_RANGE')
+force_input(new_player, cmd);
+endif
+kill_task(task_id());
+endif
+boot_player(player);
+return {request, response, {}};
+endif
+endif
+return {request, response, chain};
+return;
+"$restrict_to_caller($dialog.server, \"_do_chain\");";
+"";
+"{request, response, chain} = args;";
+"";
+"if (request:path() == \"/__long_poll\")";
+"  if (`request[\"headers\"][\"X-Break-A-Leg\"] ! E_RANGE' == \"stunt\")";
+"    if (typeof(new_player = `task_local()[\"http\"][\"session\"][\"player\"] ! E_RANGE') == OBJ && valid(new_player) && is_player(new_player))";
+"      /* write a minimal header */";
+"      notify(player, tostr(\"HTTP/1.1 \", 200, \" \", \"Ok\", \"~0D~0A\"));";
+"      notify(player, tostr(\"Content-Type: \", \"text/plain\", \"~0D~0A\"));";
+"      notify(player, \"~0D~0A\");";
+"      /* write 2048 bytes to get chrome off its ass */";
+"      for i in [1..16]";
+"        notify(player, \"                                                                                                                                \");";
+"      endfor";
+"      /* put the connection into interactive mode */";
+"      set_connection_option(player, \"hold-input\", 0);";
+"      set_connection_option(player, \"disable-oob\", 0);";
+"      set_connection_option(player, \"binary\", 0);";
+"      switch_player(player, new_player);";
+"      /* finally, force the body as a command */";
+"      if (cmd = `request:body() ! E_RANGE')";
+"        force_input(new_player, cmd);";
+"      endif";
+"      /* This is clumsy, but... when we successfully set up the";
+"       * connection, end the task/request without booting the player";
+"       * and let MOO's own command handling take over.";
+"       */";
+"      kill_task(task_id());";
+"    endif";
+"";
+"    /* It's a valid poll, but the session is out-of-date or bogus.";
+"     * For safety's sake, close the connection.";
+"     */";
+"    boot_player(player);";
+"    return {request, response, {}};";
 "  endif";
 "";
-"  boot_player(player);";
-"";
-"  return {request, response, {}};";
 "endif";
 "";
 "return {request, response, chain};";
 "";
-"chunk_length:25";
+"chunk_length:41";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:48 2012 EDT";
+"updated_at:Sat Apr 28 15:51:41 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #53:0
@@ -14765,7 +18951,7 @@ return;
 "chunk_length:12";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:20:48 2012 EDT";
+"updated_at:Sat Apr 28 15:51:41 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #54:0
@@ -14779,7 +18965,7 @@ return;
 "chunk_length:3";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:21:20 2012 EDT";
+"updated_at:Sat Apr 28 15:51:59 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #54:1
@@ -14793,7 +18979,7 @@ return;
 "chunk_length:3";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:21:20 2012 EDT";
+"updated_at:Sat Apr 28 15:51:59 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #57:0
@@ -14806,7 +18992,7 @@ return;
 "chunk_length:2";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:21:20 2012 EDT";
+"updated_at:Sat Apr 28 15:51:59 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #57:1
@@ -15345,7 +19531,7 @@ return;
 "chunk_length:302";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:21:20 2012 EDT";
+"updated_at:Sat Apr 28 15:51:59 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #60:0
@@ -15380,7 +19566,7 @@ return;
 "chunk_length:14";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:21:39 2012 EDT";
+"updated_at:Sat Apr 28 15:52:19 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #61:0
@@ -15758,7 +19944,7 @@ return;
 "chunk_length:20";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Fri Mar 23 19:16:40 2012 EDT";
+"updated_at:Sat Apr 28 16:18:34 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #71:0
@@ -15781,6 +19967,22 @@ output = {@output, "<link type=\"text/css\" rel=\"stylesheet\" href=\"/css/font-
 output = output ? {@output, 0} | output;
 output = {@output, "<link type=\"text/css\" rel=\"stylesheet\" href=\"/css/moo-0.0.3.min.css\">"};
 output = output ? {@output, 0} | output;
+output = {@output, "<script type=\"text/javascript\" src=\"/js/swfobject-2.1.min.js\"></script>"};
+output = output ? {@output, 0} | output;
+output = {@output, "<script type=\"text/javascript\" src=\"/js/Socket.js\"></script>"};
+output = output ? {@output, 0} | output;
+output = {@output, "<script type=\"text/javascript\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "var flashvars = {};"};
+output = output ? {@output, 0} | output;
+output = {@output, "var params = {menu: 'false', scale: 'noScale', allowScriptAccess: 'always', bgcolor: '#FFFFFF'};"};
+output = output ? {@output, 0} | output;
+output = {@output, "var attributes = {id: 'JavascriptSocket', name: 'JavascriptSocket'};"};
+output = output ? {@output, 0} | output;
+output = {@output, "swfobject.embedSWF('/flash/javascriptsocket.swf', 'flash-content', '100%', '100%', '9.0.0', null, flashvars, params, attributes);"};
+output = output ? {@output, 0} | output;
+output = {@output, "</script>"};
+output = output ? {@output, 0} | output;
 output = {@output, "<script type=\"text/javascript\" src=\"/js/jquery-1.7.1.min.js\"></script>"};
 output = output ? {@output, 0} | output;
 output = {@output, "<script type=\"text/javascript\" src=\"/js/jquery.ui.core-1.8.18.min.js\"></script>"};
@@ -15795,27 +19997,15 @@ output = {@output, "<script type=\"text/javascript\" src=\"/js/bootstrap-modal-2
 output = output ? {@output, 0} | output;
 output = {@output, "<script type=\"text/javascript\" src=\"/js/bootstrap-transition-2.0.2.js\"></script>"};
 output = output ? {@output, 0} | output;
-output = {@output, "<script type=\"text/javascript\" src=\"/js/swfobject-2.1.min.js\"></script>"};
-output = output ? {@output, 0} | output;
 output = {@output, "<script type=\"text/javascript\" src=\"/js/moo-0.0.3.min.js\"></script>"};
 output = output ? {@output, 0} | output;
-output = {@output, "<script type=\"text/javascript\" src=\"/js/Socket.js\"></script>"};
-output = output ? {@output, 0} | output;
-output = {@output, "<script type=\"text/javascript\">"};
-output = output ? {@output, 0} | output;
-output = {@output, "var flashvars = {};"};
-output = output ? {@output, 0} | output;
-output = {@output, "var params = {menu: 'false', scale: 'noScale', allowFullscreen: 'true', allowScriptAccess: 'always', bgcolor: '#FFFFFF'};"};
-output = output ? {@output, 0} | output;
-output = {@output, "var attributes = {id: 'JavascriptSocket', name: 'JavascriptSocket'};"};
-output = output ? {@output, 0} | output;
-output = {@output, "swfobject.embedSWF('/flash/javascriptsocket.swf', 'flash-content', '100%', '100%', '9.0.0', null, flashvars, params, attributes);"};
-output = output ? {@output, 0} | output;
-output = {@output, "</script>"};
+output = {@output, "<script type=\"text/javascript\" src=\"/js/moo-interactive-0.0.3.min.js\"></script>"};
 output = output ? {@output, 0} | output;
 output = {@output, "</head>"};
 output = output ? {@output, 0} | output;
 output = {@output, "<body>"};
+output = output ? {@output, 0} | output;
+output = {@output, "  <div id=\"flash-content\"></div>"};
 output = output ? {@output, 0} | output;
 output = {@output, "  <div class=\"container\">"};
 output = output ? {@output, 0} | output;
@@ -15950,8 +20140,6 @@ stack = stack[2..$];
 endfor
 endif
 output = output ? {@output, 1} | output;
-output = {@output, "    <div id=\"flash-content\"></div>"};
-output = output ? {@output, 0} | output;
 output = {@output, "  </div>"};
 output = output ? {@output, 0} | output;
 output = {@output, "  <script type=\"text/javascript\">"};
@@ -16083,6 +20271,14 @@ return;
 "<link type=\"text/css\" rel=\"stylesheet\" href=\"/css/bootstrap-responsive-2.0.2.min.css\">";
 "<link type=\"text/css\" rel=\"stylesheet\" href=\"/css/font-awesome-1.0.0-7.min.css\">";
 "<link type=\"text/css\" rel=\"stylesheet\" href=\"/css/moo-0.0.3.min.css\">";
+"<script type=\"text/javascript\" src=\"/js/swfobject-2.1.min.js\"></script>";
+"<script type=\"text/javascript\" src=\"/js/Socket.js\"></script>";
+"<script type=\"text/javascript\">";
+"var flashvars = {};";
+"var params = {menu: 'false', scale: 'noScale', allowScriptAccess: 'always', bgcolor: '#FFFFFF'};";
+"var attributes = {id: 'JavascriptSocket', name: 'JavascriptSocket'};";
+"swfobject.embedSWF('/flash/javascriptsocket.swf', 'flash-content', '100%', '100%', '9.0.0', null, flashvars, params, attributes);";
+"</script>";
 "<script type=\"text/javascript\" src=\"/js/jquery-1.7.1.min.js\"></script>";
 "<script type=\"text/javascript\" src=\"/js/jquery.ui.core-1.8.18.min.js\"></script>";
 "<script type=\"text/javascript\" src=\"/js/jquery.ui.widget-1.8.18.min.js\"></script>";
@@ -16090,17 +20286,11 @@ return;
 "<script type=\"text/javascript\" src=\"/js/backbone-0.9.2.min.js\"></script>";
 "<script type=\"text/javascript\" src=\"/js/bootstrap-modal-2.0.2.js\"></script>";
 "<script type=\"text/javascript\" src=\"/js/bootstrap-transition-2.0.2.js\"></script>";
-"<script type=\"text/javascript\" src=\"/js/swfobject-2.1.min.js\"></script>";
 "<script type=\"text/javascript\" src=\"/js/moo-0.0.3.min.js\"></script>";
-"<script type=\"text/javascript\" src=\"/js/Socket.js\"></script>";
-"<script type=\"text/javascript\">";
-"var flashvars = {};";
-"var params = {menu: 'false', scale: 'noScale', allowFullscreen: 'true', allowScriptAccess: 'always', bgcolor: '#FFFFFF'};";
-"var attributes = {id: 'JavascriptSocket', name: 'JavascriptSocket'};";
-"swfobject.embedSWF('/flash/javascriptsocket.swf', 'flash-content', '100%', '100%', '9.0.0', null, flashvars, params, attributes);";
-"</script>";
+"<script type=\"text/javascript\" src=\"/js/moo-interactive-0.0.3.min.js\"></script>";
 "</head>";
 "<body>";
+"  <div id=\"flash-content\"></div>";
 "  <div class=\"container\">";
 "    &nbsp;";
 "    <div class=\"row\">";
@@ -16141,7 +20331,6 @@ return;
 "        &uarr; Send commands to the server by typing them in the input above (e.g. <code>; players()</code> or <code>; 5 + 3</code>).";
 "      </p>";
 "    {{/player}}";
-"    <div id=\"flash-content\"></div>";
 "  </div>";
 "  <script type=\"text/javascript\">";
 "    $(function() {";
@@ -16189,10 +20378,10 @@ return;
 "</body>";
 "</html>";
 "";
-"chunk_length:113";
+"chunk_length:114";
 "chunk_type:source";
 "content_type:application/x-mustache";
-"updated_at:Sat Mar 31 21:27:46 2012 EDT";
+"updated_at:Sat Apr 28 16:52:23 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #72:0
@@ -16221,7 +20410,7 @@ return;
 "chunk_length:12";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:22:31 2012 EDT";
+"updated_at:Sat Apr 28 15:56:00 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #72:1
@@ -16244,7 +20433,7 @@ return;
 "chunk_length:9";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Tue Mar 20 08:22:31 2012 EDT";
+"updated_at:Sat Apr 28 15:56:00 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #76:0
@@ -16291,7 +20480,7 @@ return;
 "chunk_length:23";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Fri Mar 23 19:16:40 2012 EDT";
+"updated_at:Sat Apr 28 16:08:08 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 0 clocks
