@@ -1,6 +1,7 @@
-/* global $ _ Backbone SocketManager Socket JSON */
+/* global Moo $ _ Backbone JSON */
 
-var Moo = {};
+if (!window.Moo && !document.Moo)
+  Moo = {};
 
 (function(Moo) {
 
@@ -589,11 +590,11 @@ var Moo = {};
       panel.append(widget.input);
       widget.element.append(panel);
 
-      var groove = function(type, text) {
+      var print = function(direction, text) {
         var $this = widget.output;
         var $last = $this.children(':last');
-        if (!$last.hasClass(type)) {
-          $last = $("<div class='" + type + "'></div>");
+        if (!$last.hasClass(direction)) {
+          $last = $("<div class='" + direction + "'></div>");
           $this.append($last);
         }
         $last.text($last.text() + text);
@@ -611,8 +612,8 @@ var Moo = {};
             history.unshift(text);
             position = -1;
             text = text + '\n';
-            groove('input', text);
-            widget.socket.send(text);
+            print('input', text);
+            interactive.send(text);
             $(this).val('');
           }
         }
@@ -633,22 +634,10 @@ var Moo = {};
         }
       });
 
-      SocketManager.observe('loaded', function() {
-        widget.socket = new Socket({
-          ready: function() {
-            widget.socket.connect(widget.options.host, widget.options.port);
-          },
-          connected: function() {
-            widget.socket.send('GET /... HTTP/1.1\n');
-            widget.socket.send('Host: ' + widget.options.host + ':' + widget.options.port + '\n');
-            widget.socket.send('Cookie: ' + document.cookie + '\n');
-            widget.socket.send('Upgrade: moo\n');
-            widget.socket.send('\n\n');
-          },
-          receive: function(data) {
-            groove('output', data);
-          }
-        }, true);
+      var interactive = new Moo.Interactive(widget.options.host, widget.options.port, {
+        callback: function(text) {
+          print('output', text);
+        }
       });
     },
 
