@@ -97,7 +97,7 @@
 
    That depends on where you want to end up.  If you want to learn
    more about Stunt, Improvise or LambdaMOO itself, check out the
-   references, below.
+   References, below.
 
    If you want to run Stunt | Improvise, then you need to:
 
@@ -114,21 +114,32 @@
    <path-to-stunt-repo>/moo Stunt.db Stunt.db.new 7777
    #+END_EXAMPLE
 
-** How do I log in?
+** How do I connect as a player?
 
-   See "How do I start the web server?" below for web-based access,
-   otherwise...  Passkeys for the two built-in players/users are
-   output to the console when the server loads the database.  Look for
-   lines that begin with ~PASSKEY for ...~.  The passkey is the long
-   hexadecimal string.  The server starts listening on port 7777 by
-   default.  Using telnet, connect to the running server and type
-   ~connect~ followed by the hexadecimal string.  Ex:
+   With the most recent release of the Improvise core, it's now
+   possible to connect to the server via a web-based user interface.
+   Of course, telnet is always an option, too.
+
+   Passkeys for the two built-in players/users (a wizard and a
+   programmer) are output to the console when the server loads the
+   database.  Look for lines that begin with ~PASSKEY for ...~.  The
+   passkey is the long hexadecimal string.  The server starts
+   listening for telnet connections on port 7777 by default, and for
+   browser connections on port 8888.
+
+   Using telnet, connect to the running server on port 7777 and type
+   ~connect~ followed by the hexadecimal passkey.  Ex:
 
    #+BEGIN_EXAMPLE
    connect D210CA62C37E841CD6936146A9768EA9246D3A7917EDE3BFC1A29C63C058F783
    #+END_EXAMPLE
 
    If successful, you'll be greeted by the string ~*** Connected ***~.
+
+   To connect via the browser, surf to the local Stunt | Improvise
+   homepage (something like http://localhost:8888/ should work) and
+   type or paste the hexadecimal passkey into the text input and press
+   "Connect".
 
 ** How do I see which packages are installed?
 
@@ -153,6 +164,9 @@
    #+END_EXAMPLE
 
 ** How do I start the web server?
+
+   The web server should start when the server starts, however, if
+   that's not the case...
 
    Assuming the "dialog" package is installed (it is by default), type
    the following as a wizardly player:
