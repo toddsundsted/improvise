@@ -1,6 +1,6 @@
 ** LambdaMOO Database, Format Version 12 **
-77
-234
+79
+242
 0
 2
 5
@@ -14,7 +14,7 @@ System
 4
 0
 4
-4
+5
 1
 3
 1
@@ -23,6 +23,8 @@ System
 37
 1
 60
+1
+78
 4
 0
 19
@@ -158,7 +160,7 @@ application/x-mustache
 2
 1
 1
--2
+-79
 2
 1
 2
@@ -572,7 +574,7 @@ huh
 passkey
 2
 2
-B94067558B21FF36B253B032B6E9FAF0DCC1F2CD3EA996A91530CE44B0711FBF
+0F31D3D5C120F04B9177D01D8A152C09DDFFBCF2007099206DDC61A5CFBE02CF
 5
 0
 5
@@ -595,7 +597,7 @@ Programmer
 passkey
 2
 2
-EEB99BF2701F2328E36DF26218C3F29EEC7CCB0B53B484CE118C3ADAF395E605
+7390C633D590201FCC78386186675AE4FD1077379D2F8DF458086D409FE52139
 5
 0
 5
@@ -962,7 +964,7 @@ application
 10
 1
 2
-0.0.3
+0.0.4
 4
 1
 1
@@ -1112,7 +1114,7 @@ primitive
 2
 0
 0
-1335646582
+1335961825
 2
 0
 10
@@ -1344,7 +1346,7 @@ packages/unit_1_0_4.json
 2
 application
 10
-2
+3
 2
 0.0.2
 10
@@ -9414,6 +9416,5476 @@ prep
 2
 none
 2
+0.0.4
+10
+2
+2
+Configuration
+10
+2
+2
+top
+2
+package
+2
+Version
+2
+0.1
+2
+Objects
+10
+10
+2
+__74__
+10
+5
+2
+Attributes
+10
+2
+2
+parents
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+parents
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+4
+1
+2
+file_server|dialog_extras
+2
+player
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+player
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Meta
+10
+2
+2
+id
+0
+74
+2
+status
+2
+writable
+2
+Properties
+4
+0
+2
+Values
+10
+9
+2
+aliases
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+aliases
+2
+status
+2
+writable
+2
+Value
+10
+4
+2
+clear
+0
+1
+2
+owner
+2
+package
+2
+perms
+2
+c
+2
+value
+4
+0
+2
+f
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+f
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+location
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+location
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+server
+2
+name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+name
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+File Server
+2
+owner
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+owner
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+programmer
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+programmer
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+r
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+r
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+w
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+w
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+wizard
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+wizard
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Verbs
+4
+0
+2
+__75__
+10
+5
+2
+Attributes
+10
+2
+2
+parents
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+parents
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+4
+1
+2
+db_server|dialog_extras
+2
+player
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+player
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Meta
+10
+2
+2
+id
+0
+75
+2
+status
+2
+writable
+2
+Properties
+4
+0
+2
+Values
+10
+9
+2
+aliases
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+aliases
+2
+status
+2
+writable
+2
+Value
+10
+4
+2
+clear
+0
+1
+2
+owner
+2
+package
+2
+perms
+2
+c
+2
+value
+4
+0
+2
+f
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+f
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+location
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+location
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+server
+2
+name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+name
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+Database Server
+2
+owner
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+owner
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+programmer
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+programmer
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+r
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+r
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+w
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+w
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+wizard
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+wizard
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Verbs
+4
+0
+2
+__76__
+10
+5
+2
+Attributes
+10
+2
+2
+parents
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+parents
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+4
+1
+2
+route_proto|dialog
+2
+player
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+player
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Meta
+10
+2
+2
+id
+0
+76
+2
+status
+2
+writable
+2
+Properties
+4
+0
+2
+Values
+10
+9
+2
+aliases
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+aliases
+2
+status
+2
+writable
+2
+Value
+10
+4
+2
+clear
+0
+1
+2
+owner
+2
+package
+2
+perms
+2
+c
+2
+value
+4
+0
+2
+f
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+f
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+location
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+location
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+server
+2
+name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+name
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+Routes
+2
+owner
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+owner
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+programmer
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+programmer
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+r
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+r
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+w
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+w
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+wizard
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+wizard
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Verbs
+4
+1
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+1
+2
+status
+2
+writable
+2
+Verb
+10
+8
+2
+code
+4
+23
+2
+{request} = args;
+2
+
+2
+path = request:path():split("/");
+2
+method = request:method();
+2
+
+2
+{host, ?port = 80} = `request:headers()["host"]:split(":") ! E_RANGE => {""}';
+2
+
+2
+parameters = [
+2
+  "__base_uri__" -> host ? tostr("http://", host, ":", port) | "",
+2
+  "__connection__" -> player
+2
+];
+2
+
+2
+if (!path && method == "get")
+2
+  return {$lookup("home_controller"), "home", parameters};
+2
+elseif (length(path) == 2 && path[1] == "objects" && method == "get")
+2
+  return {$lookup("home_controller"), "browse", parameters:merge(["id" -> path[2]])};
+2
+elseif (path == {"session", "create"} && method == "post")
+2
+  return {$lookup("session_controller"), path[2], parameters};
+2
+elseif (path == {"session", "destroy"} && method == "post")
+2
+  return {$lookup("session_controller"), path[2], parameters};
+2
+endif
+2
+
+2
+return {};
+2
+content_type
+2
+application/x-moocode
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+match
+2
+owner
+2
+package
+2
+perms
+2
+xd
+2
+prep
+2
+none
+2
+changelog
+10
+5
+2
+Attributes
+10
+2
+2
+parents
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+parents
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+4
+0
+2
+player
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+player
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Meta
+10
+2
+2
+id
+0
+77
+2
+status
+2
+writable
+2
+Properties
+4
+3
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+1
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+1335958995
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+2
+Major refactoring.
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+2
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+1335960351
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+2
+Updated the authentication.
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+3
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+1335961601
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+2
+Autostart the web server.
+2
+Values
+10
+11
+2
+1335958995
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+1335958995
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+2
+Major refactoring.
+2
+1335960351
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+1335960351
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+2
+Updated the authentication.
+2
+1335961601
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+1335961601
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+2
+Autostart the web server.
+2
+f
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+f
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+location
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+location
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+name
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+Changelog
+2
+owner
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+owner
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+programmer
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+programmer
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+r
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+r
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+w
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+w
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+wizard
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+wizard
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Verbs
+4
+0
+2
+dictionary
+10
+5
+2
+Attributes
+10
+2
+2
+parents
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+parents
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+4
+0
+2
+player
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+player
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Meta
+10
+2
+2
+id
+0
+78
+2
+status
+2
+writable
+2
+Properties
+4
+0
+2
+Values
+10
+8
+2
+f
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+f
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+location
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+location
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+name
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+Dictionary
+2
+owner
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+owner
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+programmer
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+programmer
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+r
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+r
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+w
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+w
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+wizard
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+wizard
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Verbs
+4
+1
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+1
+2
+status
+2
+writable
+2
+Verb
+10
+7
+2
+code
+4
+2
+2
+$restrict_to_caller($system, "server_started");
+2
+$lookup("server"):start(8888);
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+server_started
+2
+owner
+2
+__wizard__
+2
+perms
+2
+xd
+2
+prep
+2
+none
+2
+home_controller
+10
+5
+2
+Attributes
+10
+2
+2
+parents
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+parents
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+4
+0
+2
+player
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+player
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Meta
+10
+2
+2
+id
+0
+70
+2
+status
+2
+writable
+2
+Properties
+4
+0
+2
+Values
+10
+8
+2
+f
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+f
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+location
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+location
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+server
+2
+name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+name
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+Home Controller
+2
+owner
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+owner
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+programmer
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+programmer
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+r
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+r
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+w
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+w
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+wizard
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+wizard
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Verbs
+4
+3
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+1
+2
+status
+2
+writable
+2
+Verb
+10
+8
+2
+code
+4
+20
+2
+$private();
+2
+
+2
+if (valid(player))
+2
+  return [
+2
+    "links" -> {
+2
+      ["id" -> tonum($system), "name" -> "$system"],
+2
+      ["id" -> tonum(player.location), "name" -> "home"],
+2
+      ["id" -> tonum(player), "name" -> "me"]
+2
+    },
+2
+    "player" -> ["id" -> tonum(player), "name" -> player.name],
+2
+    "page" -> ["title" -> "Stunt | Improvise"]
+2
+  ];
+2
+else
+2
+  return [
+2
+    "links" -> {
+2
+      ["id" -> tonum($system), "name" -> "$system"]
+2
+    },
+2
+    "page" -> ["title" -> "Stunt | Improvise"]
+2
+  ];
+2
+endif
+2
+content_type
+2
+application/x-moocode
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+_common
+2
+owner
+2
+package
+2
+perms
+2
+xd
+2
+prep
+2
+none
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+2
+2
+status
+2
+writable
+2
+Verb
+10
+8
+2
+code
+4
+16
+2
+$restrict_to_caller($dialog.server);
+2
+
+2
+{request, response} = args;
+2
+
+2
+parameters = this:_common();
+2
+
+2
+if (valid(player))
+2
+  parameters = parameters:merge([ "page" -> ["title" -> "Stunt | Improvise", "swf" -> 1]]);
+2
+  view = "home";
+2
+else
+2
+  view = "public";
+2
+endif
+2
+
+2
+response = response:set_status(200):set_type("text/html"):set_body($lookup("home_views"):(view)(parameters));
+2
+
+2
+return {request, response};
+2
+content_type
+2
+application/x-moocode
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+home
+2
+owner
+2
+package
+2
+perms
+2
+xd
+2
+prep
+2
+none
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+3
+2
+status
+2
+writable
+2
+Verb
+10
+8
+2
+code
+4
+9
+2
+$restrict_to_caller($dialog.server);
+2
+
+2
+{request, response} = args;
+2
+
+2
+parameters = this:_common();
+2
+
+2
+response = response:set_status(200):set_type("text/html"):set_body($lookup("home_views"):browse(parameters));
+2
+
+2
+return {request, response};
+2
+content_type
+2
+application/x-moocode
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+browse
+2
+owner
+2
+package
+2
+perms
+2
+xd
+2
+prep
+2
+none
+2
+home_views
+10
+5
+2
+Attributes
+10
+2
+2
+parents
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+parents
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+4
+0
+2
+player
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+player
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Meta
+10
+2
+2
+id
+0
+71
+2
+status
+2
+writable
+2
+Properties
+4
+0
+2
+Values
+10
+8
+2
+f
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+f
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+location
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+location
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+home_controller
+2
+name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+name
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+Home Views
+2
+owner
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+owner
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+programmer
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+programmer
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+r
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+r
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+w
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+w
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+wizard
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+wizard
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Verbs
+4
+6
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+1
+2
+status
+2
+writable
+2
+Verb
+10
+8
+2
+code
+4
+27
+2
+<head>
+2
+  <title>{{page.title}}</title>
+2
+  {{#page.swf}}
+2
+    <script type="text/javascript" src="/js/Socket.js"></script>
+2
+    <script type="text/javascript" src="/js/swfobject-2.1.min.js"></script>
+2
+    <script type="text/javascript">
+2
+      var flashvars = {};
+2
+      var params = {menu: 'false', scale: 'noScale', allowScriptAccess: 'always', bgcolor: '#FFFFFF'};
+2
+      var attributes = {id: 'JavascriptSocket', name: 'JavascriptSocket'};
+2
+      swfobject.embedSWF('/flash/javascriptsocket.swf', 'flash-content', '100%', '100%', '9.0.0', null, flashvars, params, attributes);
+2
+    </script>
+2
+  {{/page.swf}}
+2
+  <link type="text/css" rel="stylesheet" href="/css/bootstrap-2.0.2.min.css">
+2
+  <link type="text/css" rel="stylesheet" href="/css/bootstrap-responsive-2.0.2.min.css">
+2
+  <link type="text/css" rel="stylesheet" href="/css/font-awesome-1.0.0-7.min.css">
+2
+  <link type="text/css" rel="stylesheet" href="/css/moo-0.0.3.min.css">
+2
+  <script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+2
+  <script type="text/javascript" src="/js/jquery.ui.core-1.8.18.min.js"></script>
+2
+  <script type="text/javascript" src="/js/jquery.ui.widget-1.8.18.min.js"></script>
+2
+  <script type="text/javascript" src="/js/underscore-1.3.1.min.js"></script>
+2
+  <script type="text/javascript" src="/js/backbone-0.9.2.min.js"></script>
+2
+  <script type="text/javascript" src="/js/bootstrap-dropdown-2.0.2.js"></script>
+2
+  <script type="text/javascript" src="/js/bootstrap-modal-2.0.2.js"></script>
+2
+  <script type="text/javascript" src="/js/bootstrap-transition-2.0.2.js"></script>
+2
+  <script type="text/javascript" src="/js/moo-0.0.3.min.js"></script>
+2
+  <script type="text/javascript" src="/js/moo-interactive-0.0.3.min.js"></script>
+2
+</head>
+2
+content_type
+2
+application/x-mustache
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+_head
+2
+owner
+2
+package
+2
+perms
+2
+xd
+2
+prep
+2
+none
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+2
+2
+status
+2
+writable
+2
+Verb
+10
+8
+2
+code
+4
+11
+2
+{{#page.swf}}
+2
+  <div id="flash-content"></div>
+2
+{{/page.swf}}
+2
+<script type="text/javascript">
+2
+  $('#disconnect').click(function(e) {
+2
+    e.preventDefault();
+2
+    $.post($(this).attr('href'), function() {
+2
+      window.location.href = '/';
+2
+    });
+2
+  });
+2
+</script>
+2
+content_type
+2
+application/x-mustache
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+_foot
+2
+owner
+2
+package
+2
+perms
+2
+xd
+2
+prep
+2
+none
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+3
+2
+status
+2
+writable
+2
+Verb
+10
+8
+2
+code
+4
+32
+2
+<div class="navbar navbar-fixed-top">
+2
+  <div class="navbar-inner">
+2
+    <div class="container">
+2
+      <a class="brand" href="/">
+2
+        {{page.title}}
+2
+      </a>
+2
+      <ul class="nav">
+2
+        {{#player}}
+2
+          <li>
+2
+            <a href="/">Console</a>
+2
+          </li>
+2
+        {{/player}}
+2
+        <li class="dropdown">
+2
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse To<b class="caret"></b></a>
+2
+          <ul class="dropdown-menu">
+2
+            {{#links}}
+2
+              <li><a rel="object" data-object-number="{{id}}" href="/objects/{{id}}">{{name}}</a></li>
+2
+            {{/links}}
+2
+          </ul>
+2
+        </li>
+2
+      </ul>
+2
+      <ul class="nav pull-right">
+2
+        {{#player}}
+2
+          <li><a id="disconnect" href="/session/destroy">Disconnect</a></li>
+2
+        {{/player}}
+2
+        {{^player}}
+2
+          <li><a href="/">Connect</a></li>
+2
+        {{/player}}
+2
+      </ul>
+2
+    </div>
+2
+  </div>
+2
+</div>
+2
+content_type
+2
+application/x-mustache
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+_nav
+2
+owner
+2
+package
+2
+perms
+2
+xd
+2
+prep
+2
+none
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+4
+2
+status
+2
+writable
+2
+Verb
+10
+8
+2
+code
+4
+76
+2
+<!DOCTYPE html>
+2
+<html lang="en">
+2
+{{> _head}}
+2
+<body>
+2
+  <style type="text/css">
+2
+    body .container .mark {
+2
+      font-weight: bold;
+2
+    }
+2
+    #logo {
+2
+      width: 450px;
+2
+      margin: 40px 10px;
+2
+    }
+2
+  </style>
+2
+  <div class="container">
+2
+    &nbsp;
+2
+    <div class="row">
+2
+      <div class="span12">
+2
+        <h1>Welcome to Stunt | Improvise</h1>
+2
+      </div>
+2
+    </div>
+2
+    &nbsp;
+2
+    <div class="row">
+2
+      <div class="span5">
+2
+        <form class="well form-inline" action="/session/create" method="post">
+2
+          <button type="submit" name="submit">Connect</button>
+2
+          <input class="span3" type="text" name="credentials" placeholder="credentials, ex: &lt;player&gt; &lt;password&gt;">
+2
+        </form>
+2
+        <img id="logo" src="/img/stunt.png">
+2
+      </div>
+2
+      <div class="span7">
+2
+        <h2>Get Started</h2>
+2
+        <p>
+2
+          &larr; Use the form on the left to connect to a specific player.
+2
+        </p>
+2
+        <h2>About Stunt | Improvise</h2>
+2
+        <p>
+2
+          <a href="https://github.com/toddsundsted/stunt">Stunt</a>
+2
+          is a set of extensions to the <a href="http://sourceforge.net/projects/lambdamoo/">LambdaMOO server</a>
+2
+          and <a href="https://github.com/toddsundsted/improvise">Improvise</a>
+2
+          is an associated framework that uses those extensions.
+2
+        </p>
+2
+        <p>
+2
+          <span class="mark">Stunt | Improvise</span> is well suited
+2
+          for building immersive, collaborative, Web-based
+2
+          applications &mdash; specifically, applications where
+2
+          every <em>user</em> is a <em>programmer</em>.
+2
+        </p>
+2
+        <p>
+2
+          Together, <span class="mark">Stunt | Improvise</span>
+2
+          comprise:
+2
+        </p>
+2
+        <ul>
+2
+          <li>a persistent, NoSQL object database with a simple JSON API</li>
+2
+          <li>an server-side HTTP-based MVC framework with support for HTML5 features like pushState</li>
+2
+          <li>a client-side RAI framework based on Backbone.js</li>
+2
+          <li>a framework for securely executing untrusted code</li>
+2
+          <li>a simple, embedded programming language</li>
+2
+          <li>integrated package management</li>
+2
+        </ul>
+2
+        <h2>Learn More</h2>
+2
+        <p>
+2
+          To learn more, check out:
+2
+        </p>
+2
+        <ul>
+2
+          <li><a href="http://stunt.io/">the Stunt.io website</a></li>
+2
+          <li><a href="https://github.com/toddsundsted/improvise/wiki">the Improvise wiki</a></li>
+2
+          <li><a href="http://stunt.io/ProgrammersManual.html">the LambdaMOO Programmers Manual</a></li>
+2
+          <li><a href="https://github.com/toddsundsted/stunt">the Stunt GitHub project</a></li>
+2
+          <li><a href="https://github.com/toddsundsted/improvise">the Improvise GitHub project</a></li>
+2
+        </ul>
+2
+      </div>
+2
+    </div>
+2
+  </div>
+2
+{{> _foot}}
+2
+</body>
+2
+</html>
+2
+content_type
+2
+application/x-mustache
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+public
+2
+owner
+2
+package
+2
+perms
+2
+xd
+2
+prep
+2
+none
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+5
+2
+status
+2
+writable
+2
+Verb
+10
+8
+2
+code
+4
+19
+2
+<!DOCTYPE html>
+2
+<html lang="en">
+2
+  {{> _head}}
+2
+  <body>
+2
+    {{> _nav}}
+2
+    <div id="top" class="container" style="padding-top: 60px;">
+2
+      <div id="terminal" class="terminal" data-placeholder="Send commands to the server by typing them in the input above (e.g. <code>; players()</code> or <code>; 5 + 3</code>)."></div>
+2
+    </div>
+2
+    <script type="text/javascript">
+2
+      $(function() {
+2
+        $('#terminal').commandPanel({
+2
+          host: window.location.hostname,
+2
+          port: window.location.port
+2
+        });
+2
+      });
+2
+    </script>
+2
+    {{> _foot}}
+2
+  </body>
+2
+</html>
+2
+content_type
+2
+application/x-mustache
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+home
+2
+owner
+2
+package
+2
+perms
+2
+xd
+2
+prep
+2
+none
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+6
+2
+status
+2
+writable
+2
+Verb
+10
+8
+2
+code
+4
+51
+2
+<!DOCTYPE html>
+2
+<html lang="en">
+2
+  {{> _head}}
+2
+  <body>
+2
+    {{> _nav}}
+2
+    <div id="top" class="container" style="padding-top: 60px;">
+2
+      <p id="browser" class="browser"></p>
+2
+    </div>
+2
+    <script type="text/javascript">
+2
+      $(function() {
+2
+        Moo.Object.prototype.urlRoot = 'http://' + window.location.host + '///objects';
+2
+
+2
+        var $browser = $('#browser');
+2
+        $browser.simpleObjectPanel();
+2
+
+2
+        Moo.Space = Backbone.Router.extend({
+2
+          routes: {
+2
+            'objects/:number': 'browse'
+2
+          },
+2
+          browse: function(number) {
+2
+            var o = new Moo.Object({id: number});
+2
+            o.fetch({
+2
+              success: function(model, response) {
+2
+                $browser.simpleObjectPanel({object: o});
+2
+                $('#top').get(0).scrollIntoView(true);
+2
+              },
+2
+              error: function(model, response) {
+2
+                $browser.simpleObjectPanel({object: o});
+2
+                $('#top').get(0).scrollIntoView(true);
+2
+              }
+2
+            });
+2
+          }
+2
+        });
+2
+        var moo = new Moo.Space;
+2
+
+2
+        $('body').on('click', 'a[rel*=object]', function(e) {
+2
+          e.preventDefault();
+2
+          var o = $(e.target).data('object-number');
+2
+          moo.navigate('/objects/' + o, {trigger: true});
+2
+        });
+2
+
+2
+        Backbone.history.start({pushState: true});
+2
+
+2
+        {{#id}}
+2
+          moo.navigate('/objects/{{id}}');
+2
+        {{/id}}
+2
+      });
+2
+    </script>
+2
+    {{> _foot}}
+2
+  </body>
+2
+</html>
+2
+content_type
+2
+application/x-mustache
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+browse
+2
+owner
+2
+package
+2
+perms
+2
+xd
+2
+prep
+2
+none
+2
+package
+10
+5
+2
+Attributes
+10
+2
+2
+parents
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+parents
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+4
+0
+2
+player
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+player
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Meta
+10
+2
+2
+id
+0
+69
+2
+status
+2
+writable
+2
+Properties
+4
+11
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+1
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+identifier
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+2
+application
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+2
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+version
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+2
+0.0.4
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+3
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+manifest
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+4
+7
+2
+package
+2
+changelog
+2
+dictionary
+2
+server
+2
+home_controller
+2
+home_views
+2
+session_controller
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+4
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+requires
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+4
+2
+4
+2
+2
+dialog
+2
+>= 0.0.1
+4
+2
+2
+dialog_extras
+2
+>= 0.0.1
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+5
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+relocate
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+4
+0
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+6
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+provides
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+4
+0
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+7
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+instructions
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+4
+1
+2
+install-dictionary
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+8
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+description
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+2
+
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+9
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+authors
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+4
+0
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+10
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+homepage
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+2
+
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+11
+2
+status
+2
+writable
+2
+Property
+10
+4
+2
+name
+2
+license
+2
+owner
+2
+package
+2
+perms
+2
+r
+2
+value
+2
+
+2
+Values
+10
+19
+2
+authors
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+authors
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+4
+0
+2
+description
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+description
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+2
+
+2
+f
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+f
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+homepage
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+homepage
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+2
+
+2
+identifier
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+identifier
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+2
+application
+2
+instructions
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+instructions
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+4
+1
+2
+install-dictionary
+2
+license
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+license
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+2
+
+2
+location
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+location
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+__nothing__
+2
+manifest
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+manifest
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+4
+7
+2
+package
+2
+changelog
+2
+dictionary
+2
+server
+2
+home_controller
+2
+home_views
+2
+session_controller
+2
+name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+name
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+Application Package
+2
+owner
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+owner
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+programmer
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+programmer
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+provides
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+provides
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+4
+0
+2
+r
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+r
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+relocate
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+relocate
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+4
+0
+2
+requires
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+requires
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+4
+2
+4
+2
+2
+dialog
+2
+>= 0.0.1
+4
+2
+2
+dialog_extras
+2
+>= 0.0.1
+2
+version
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+version
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+2
+0.0.4
+2
+w
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+w
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+wizard
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+wizard
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Verbs
+4
+0
+2
+server
+10
+5
+2
+Attributes
+10
+2
+2
+parents
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+parents
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+4
+3
+2
+server|dialog
+2
+streaming_handler|dialog_extras
+2
+logger|dialog_extras
+2
+player
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+player
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Meta
+10
+2
+2
+id
+0
+73
+2
+status
+2
+writable
+2
+Properties
+4
+0
+2
+Values
+10
+20
+2
+aliases
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+aliases
+2
+status
+2
+writable
+2
+Value
+10
+4
+2
+clear
+0
+1
+2
+owner
+2
+package
+2
+perms
+2
+c
+2
+value
+4
+0
+2
+default_chain
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+default_chain
+2
+status
+2
+writable
+2
+Value
+10
+4
+2
+clear
+0
+0
+2
+owner
+2
+package
+2
+perms
+2
+c
+2
+value
+4
+10
+2
+session
+2
+player
+2
+parameters
+2
+do_socket
+2
+do_long_poll
+2
+route
+2
+serve
+2
+cleanup
+2
+404
+2
+log
+2
+description
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+description
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+1
+2
+value
+2
+HTTP streaming handlers for player interaction.  Currently socket based and long-polling.
+2
+f
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+f
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+flash_socket_policy
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+flash_socket_policy
+2
+status
+2
+writable
+2
+Value
+10
+4
+2
+clear
+0
+0
+2
+owner
+2
+package
+2
+perms
+2
+c
+2
+value
+2
+<?xml version="1.0"?><cross-domain-policy><allow-access-from domain="localhost" to-ports="*"/></cross-domain-policy>
+2
+key
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+key
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+0
+0
+2
+location
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+location
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+name
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+HTTP Server
+2
+owner
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+owner
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+port
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+port
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+0
+2
+value
+0
+12346
+2
+programmer
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+programmer
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+r
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+r
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+request_proto
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+request_proto
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+1
+2
+value
+1
+44
+2
+response_proto
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+response_proto
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+1
+2
+value
+1
+45
+2
+route_proto
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+route_proto
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+1
+2
+value
+1
+46
+2
+session_cookie_name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+session_cookie_name
+2
+status
+2
+writable
+2
+Value
+10
+4
+2
+clear
+0
+1
+2
+owner
+2
+package
+2
+perms
+2
+c
+2
+value
+2
+_stunt_session
+2
+status_codes
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+status_codes
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+1
+2
+value
+10
+9
+0
+200
+2
+Ok
+0
+201
+2
+Created
+0
+204
+2
+No Content
+0
+302
+2
+Moved
+0
+400
+2
+Bad Request
+0
+403
+2
+Forbidden
+0
+404
+2
+Not Found
+0
+422
+2
+Unprocessable Entity
+0
+500
+2
+Server Error
+2
+utilities
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+utilities
+2
+status
+2
+writable
+2
+Value
+10
+2
+2
+clear
+0
+1
+2
+value
+1
+42
+2
+w
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+w
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+wizard
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+wizard
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Verbs
+4
+0
+2
+session_controller
+10
+5
+2
+Attributes
+10
+2
+2
+parents
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+parents
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+4
+0
+2
+player
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+player
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Meta
+10
+2
+2
+id
+0
+72
+2
+status
+2
+writable
+2
+Properties
+4
+0
+2
+Values
+10
+8
+2
+f
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+f
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+location
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+location
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+server
+2
+name
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+name
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+Session Controller
+2
+owner
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+owner
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+2
+package
+2
+programmer
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+programmer
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+r
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+r
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+w
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+w
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+wizard
+10
+2
+2
+Meta
+10
+2
+2
+id
+2
+wizard
+2
+status
+2
+writable
+2
+Value
+10
+1
+2
+value
+0
+0
+2
+Verbs
+4
+2
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+1
+2
+status
+2
+writable
+2
+Verb
+10
+8
+2
+code
+4
+13
+2
+$restrict_to_caller($dialog.server);
+2
+
+2
+{request, response} = args;
+2
+
+2
+credentials = `request:parameters()["credentials"] ! E_RANGE => ""';
+2
+
+2
+if (valid(player = $authenticate(@credentials:split())))
+2
+  set_task_local(task_local():merge(["http" -> ["session" -> ["player" -> player]]]));
+2
+endif
+2
+
+2
+response = response:set_status(302):set_location(request:parameters()["__base_uri__"] + "/"):set_body("");
+2
+
+2
+return {request, response};
+2
+content_type
+2
+application/x-moocode
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+create
+2
+owner
+2
+__wizard__
+2
+perms
+2
+xd
+2
+prep
+2
+none
+10
+2
+2
+Meta
+10
+2
+2
+id
+0
+2
+2
+status
+2
+writable
+2
+Verb
+10
+8
+2
+code
+4
+9
+2
+$restrict_to_caller($dialog.server);
+2
+
+2
+{request, response} = args;
+2
+
+2
+set_task_local(task_local():merge(["http" -> ["session" -> ["player" -> $nothing]]]));
+2
+
+2
+response = response:set_status(302):set_location(request:parameters()["__base_uri__"] + "/"):set_body("");
+2
+
+2
+return {request, response};
+2
+content_type
+2
+application/x-moocode
+2
+dobj
+2
+this
+2
+iobj
+2
+this
+2
+names
+2
+destroy
+2
+owner
+2
+__wizard__
+2
+perms
+2
+xd
+2
+prep
+2
+none
+2
 0
 2
 stunt.io
@@ -12264,9 +17736,13 @@ Application Package
 1
 -1
 4
-1
+3
 1
 73
+1
+77
+1
+78
 1
 -1
 4
@@ -12290,17 +17766,35 @@ application
 69
 1
 2
-0.0.3
+0.0.4
 69
 1
 4
-4
+7
 4
 2
 1
 69
 2
 package
+4
+2
+1
+77
+2
+changelog
+4
+2
+1
+78
+2
+dictionary
+4
+2
+1
+73
+2
+server
 4
 2
 1
@@ -12346,7 +17840,9 @@ dialog_extras
 69
 1
 4
-0
+1
+2
+install-dictionary
 69
 1
 2
@@ -12379,8 +17875,16 @@ Home Controller
 -1
 4
 0
-1
-index browse
+3
+_common
+69
+172
+-1
+home
+69
+172
+-1
+browse
 69
 172
 -1
@@ -12398,8 +17902,28 @@ Home Views
 -1
 4
 0
-1
-index
+6
+_head
+69
+172
+-1
+_foot
+69
+172
+-1
+_nav
+69
+172
+-1
+public
+69
+172
+-1
+home
+69
+172
+-1
+browse
 69
 172
 -1
@@ -12583,6 +18107,57 @@ match
 5
 69
 4
+#77
+Changelog
+0
+69
+1
+69
+4
+0
+1
+-1
+4
+0
+0
+3
+1335958995
+1335960351
+1335961601
+3
+2
+Major refactoring.
+69
+1
+2
+Updated the authentication.
+69
+1
+2
+Autostart the web server.
+69
+1
+#78
+Dictionary
+0
+69
+1
+69
+4
+0
+1
+-1
+4
+1
+1
+0
+1
+server_started
+5
+172
+-1
+0
+0
 #0:0
 $private();
 {e} = args;
@@ -19910,336 +25485,176 @@ endif
 notify(player, "===================================");
 .
 #70:0
+$private();
+if (valid(player))
+return ["links" -> {["id" -> tonum($system), "name" -> "$system"], ["id" -> tonum(player.location), "name" -> "home"], ["id" -> tonum(player), "name" -> "me"]}, "player" -> ["id" -> tonum(player), "name" -> player.name], "page" -> ["title" -> "Stunt | Improvise"]];
+else
+return ["links" -> {["id" -> tonum($system), "name" -> "$system"]}, "page" -> ["title" -> "Stunt | Improvise"]];
+endif
+return;
+"$private();";
+"";
+"if (valid(player))";
+"  return [";
+"    \"links\" -> {";
+"      [\"id\" -> tonum($system), \"name\" -> \"$system\"],";
+"      [\"id\" -> tonum(player.location), \"name\" -> \"home\"],";
+"      [\"id\" -> tonum(player), \"name\" -> \"me\"]";
+"    },";
+"    \"player\" -> [\"id\" -> tonum(player), \"name\" -> player.name],";
+"    \"page\" -> [\"title\" -> \"Stunt | Improvise\"]";
+"  ];";
+"else";
+"  return [";
+"    \"links\" -> {";
+"      [\"id\" -> tonum($system), \"name\" -> \"$system\"]";
+"    },";
+"    \"page\" -> [\"title\" -> \"Stunt | Improvise\"]";
+"  ];";
+"endif";
+"";
+"chunk_length:20";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed May  2 07:34:20 2012 EDT";
+"-=-=-mxyzptlk-=-=-";
+.
+#70:1
 $restrict_to_caller($dialog.server);
 {request, response} = args;
-parameters = request:parameters();
+parameters = this:_common();
 if (valid(player))
-MAP = ["links" -> {["id" -> tonum($system), "name" -> "$system"], ["id" -> tonum(player.location), "name" -> "home"], ["id" -> tonum(player), "name" -> "me"]}];
-parameters = parameters:merge(["player" -> ["id" -> tonum(player), "name" -> player.name]]):merge(MAP);
+parameters = parameters:merge(["page" -> ["title" -> "Stunt | Improvise", "swf" -> 1]]);
+view = "home";
+else
+view = "public";
 endif
-response = response:set_status(200):set_type("text/html"):set_body($lookup("home_views"):index(parameters));
+response = response:set_status(200):set_type("text/html"):set_body($lookup("home_views"):(view)(parameters));
 return {request, response};
 return;
 "$restrict_to_caller($dialog.server);";
 "";
 "{request, response} = args;";
 "";
-"parameters = request:parameters();";
+"parameters = this:_common();";
 "";
 "if (valid(player))";
-"  map = [";
-"    \"links\" -> {";
-"      [\"id\" -> tonum($system), \"name\" -> \"$system\"],";
-"      [\"id\" -> tonum(player.location), \"name\" -> \"home\"],";
-"      [\"id\" -> tonum(player), \"name\" -> \"me\"]";
-"    }";
-"  ];";
-"  parameters = parameters:merge([\"player\" -> [\"id\" -> tonum(player), \"name\" -> player.name]]):merge(map);";
+"  parameters = parameters:merge([ \"page\" -> [\"title\" -> \"Stunt | Improvise\", \"swf\" -> 1]]);";
+"  view = \"home\";";
+"else";
+"  view = \"public\";";
 "endif";
 "";
-"response = response:set_status(200):set_type(\"text/html\"):set_body($lookup(\"home_views\"):index(parameters));";
+"response = response:set_status(200):set_type(\"text/html\"):set_body($lookup(\"home_views\"):(view)(parameters));";
 "";
 "return {request, response};";
 "";
-"chunk_length:20";
+"chunk_length:16";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Sat Apr 28 16:18:34 2012 EDT";
+"updated_at:Wed May  2 07:34:20 2012 EDT";
+"-=-=-mxyzptlk-=-=-";
+.
+#70:2
+$restrict_to_caller($dialog.server);
+{request, response} = args;
+parameters = this:_common();
+response = response:set_status(200):set_type("text/html"):set_body($lookup("home_views"):browse(parameters));
+return {request, response};
+return;
+"$restrict_to_caller($dialog.server);";
+"";
+"{request, response} = args;";
+"";
+"parameters = this:_common();";
+"";
+"response = response:set_status(200):set_type(\"text/html\"):set_body($lookup(\"home_views\"):browse(parameters));";
+"";
+"return {request, response};";
+"";
+"chunk_length:9";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"updated_at:Wed May  2 07:34:20 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #71:0
 stack = args;
 output = {};
 output = output ? {@output, 0} | output;
-output = {@output, "<!DOCTYPE html>"};
-output = output ? {@output, 0} | output;
-output = {@output, "<html lang=\"en\">"};
-output = output ? {@output, 0} | output;
 output = {@output, "<head>"};
 output = output ? {@output, 0} | output;
-output = {@output, "<title>Stunt | Improvise</title>"};
+output = {@output, "  <title>"};
+top = `stack[1]["page"] ! E_RANGE';
+stack = {(typeof(top) == MAP) ? top | ([]), @stack};
+output = {@output, strsub(strsub(strsub(strsub(`tostr(stack[1]["title"]) ! E_RANGE => ""', "&", "&amp;"), "<", "&lt;"), ">", "&gt;"), "\"", "&quot;")};
+stack = stack[2..$];
+output = {@output, "</title>"};
 output = output ? {@output, 0} | output;
-output = {@output, "<link type=\"text/css\" rel=\"stylesheet\" href=\"/css/bootstrap-2.0.2.min.css\">"};
+output = {@output, "  "};
+failed = 0;
+if (top = `stack[1]["page"] ! E_RANGE')
+stack = {stack[1]:merge((typeof(top) == MAP) ? top | ([])), @stack};
+else
+stack = {[], @stack};
+failed = 1;
+endif
+if ((!failed) && (top = `stack[1]["swf"] ! E_RANGE'))
+for item in ((typeof(top) == LIST) ? top | {top})
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+stack = {(typeof(item) == MAP) ? item | (["." -> item]), @stack};
+output = output ? {@output, 1} | output;
+output = {@output, "    <script type=\"text/javascript\" src=\"/js/Socket.js\"></script>"};
 output = output ? {@output, 0} | output;
-output = {@output, "<link type=\"text/css\" rel=\"stylesheet\" href=\"/css/bootstrap-responsive-2.0.2.min.css\">"};
+output = {@output, "    <script type=\"text/javascript\" src=\"/js/swfobject-2.1.min.js\"></script>"};
 output = output ? {@output, 0} | output;
-output = {@output, "<link type=\"text/css\" rel=\"stylesheet\" href=\"/css/font-awesome-1.0.0-7.min.css\">"};
+output = {@output, "    <script type=\"text/javascript\">"};
 output = output ? {@output, 0} | output;
-output = {@output, "<link type=\"text/css\" rel=\"stylesheet\" href=\"/css/moo-0.0.3.min.css\">"};
+output = {@output, "      var flashvars = {};"};
 output = output ? {@output, 0} | output;
-output = {@output, "<script type=\"text/javascript\" src=\"/js/swfobject-2.1.min.js\"></script>"};
+output = {@output, "      var params = {menu: 'false', scale: 'noScale', allowScriptAccess: 'always', bgcolor: '#FFFFFF'};"};
 output = output ? {@output, 0} | output;
-output = {@output, "<script type=\"text/javascript\" src=\"/js/Socket.js\"></script>"};
+output = {@output, "      var attributes = {id: 'JavascriptSocket', name: 'JavascriptSocket'};"};
 output = output ? {@output, 0} | output;
-output = {@output, "<script type=\"text/javascript\">"};
+output = {@output, "      swfobject.embedSWF('/flash/javascriptsocket.swf', 'flash-content', '100%', '100%', '9.0.0', null, flashvars, params, attributes);"};
 output = output ? {@output, 0} | output;
-output = {@output, "var flashvars = {};"};
+output = {@output, "    </script>"};
 output = output ? {@output, 0} | output;
-output = {@output, "var params = {menu: 'false', scale: 'noScale', allowScriptAccess: 'always', bgcolor: '#FFFFFF'};"};
+output = {@output, "  "};
+stack = stack[2..$];
+endfor
+endif
+stack = stack[2..$];
+output = output ? {@output, 1} | output;
+output = {@output, "  <link type=\"text/css\" rel=\"stylesheet\" href=\"/css/bootstrap-2.0.2.min.css\">"};
 output = output ? {@output, 0} | output;
-output = {@output, "var attributes = {id: 'JavascriptSocket', name: 'JavascriptSocket'};"};
+output = {@output, "  <link type=\"text/css\" rel=\"stylesheet\" href=\"/css/bootstrap-responsive-2.0.2.min.css\">"};
 output = output ? {@output, 0} | output;
-output = {@output, "swfobject.embedSWF('/flash/javascriptsocket.swf', 'flash-content', '100%', '100%', '9.0.0', null, flashvars, params, attributes);"};
+output = {@output, "  <link type=\"text/css\" rel=\"stylesheet\" href=\"/css/font-awesome-1.0.0-7.min.css\">"};
 output = output ? {@output, 0} | output;
-output = {@output, "</script>"};
+output = {@output, "  <link type=\"text/css\" rel=\"stylesheet\" href=\"/css/moo-0.0.3.min.css\">"};
 output = output ? {@output, 0} | output;
-output = {@output, "<script type=\"text/javascript\" src=\"/js/jquery-1.7.1.min.js\"></script>"};
+output = {@output, "  <script type=\"text/javascript\" src=\"/js/jquery-1.7.1.min.js\"></script>"};
 output = output ? {@output, 0} | output;
-output = {@output, "<script type=\"text/javascript\" src=\"/js/jquery.ui.core-1.8.18.min.js\"></script>"};
+output = {@output, "  <script type=\"text/javascript\" src=\"/js/jquery.ui.core-1.8.18.min.js\"></script>"};
 output = output ? {@output, 0} | output;
-output = {@output, "<script type=\"text/javascript\" src=\"/js/jquery.ui.widget-1.8.18.min.js\"></script>"};
+output = {@output, "  <script type=\"text/javascript\" src=\"/js/jquery.ui.widget-1.8.18.min.js\"></script>"};
 output = output ? {@output, 0} | output;
-output = {@output, "<script type=\"text/javascript\" src=\"/js/underscore-1.3.1.min.js\"></script>"};
+output = {@output, "  <script type=\"text/javascript\" src=\"/js/underscore-1.3.1.min.js\"></script>"};
 output = output ? {@output, 0} | output;
-output = {@output, "<script type=\"text/javascript\" src=\"/js/backbone-0.9.2.min.js\"></script>"};
+output = {@output, "  <script type=\"text/javascript\" src=\"/js/backbone-0.9.2.min.js\"></script>"};
 output = output ? {@output, 0} | output;
-output = {@output, "<script type=\"text/javascript\" src=\"/js/bootstrap-modal-2.0.2.js\"></script>"};
+output = {@output, "  <script type=\"text/javascript\" src=\"/js/bootstrap-dropdown-2.0.2.js\"></script>"};
 output = output ? {@output, 0} | output;
-output = {@output, "<script type=\"text/javascript\" src=\"/js/bootstrap-transition-2.0.2.js\"></script>"};
+output = {@output, "  <script type=\"text/javascript\" src=\"/js/bootstrap-modal-2.0.2.js\"></script>"};
 output = output ? {@output, 0} | output;
-output = {@output, "<script type=\"text/javascript\" src=\"/js/moo-0.0.3.min.js\"></script>"};
+output = {@output, "  <script type=\"text/javascript\" src=\"/js/bootstrap-transition-2.0.2.js\"></script>"};
 output = output ? {@output, 0} | output;
-output = {@output, "<script type=\"text/javascript\" src=\"/js/moo-interactive-0.0.3.min.js\"></script>"};
+output = {@output, "  <script type=\"text/javascript\" src=\"/js/moo-0.0.3.min.js\"></script>"};
+output = output ? {@output, 0} | output;
+output = {@output, "  <script type=\"text/javascript\" src=\"/js/moo-interactive-0.0.3.min.js\"></script>"};
 output = output ? {@output, 0} | output;
 output = {@output, "</head>"};
-output = output ? {@output, 0} | output;
-output = {@output, "<body>"};
-output = output ? {@output, 0} | output;
-output = {@output, "  <div id=\"flash-content\"></div>"};
-output = output ? {@output, 0} | output;
-output = {@output, "  <div class=\"container\">"};
-output = output ? {@output, 0} | output;
-output = {@output, "    &nbsp;"};
-output = output ? {@output, 0} | output;
-output = {@output, "    <div class=\"row\">"};
-output = output ? {@output, 0} | output;
-output = {@output, "      <div class=\"span4\">"};
-output = output ? {@output, 0} | output;
-output = {@output, "        "};
-if (!(top = `stack[1]["player"] ! E_RANGE'))
-for item in ({""})
-((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
-stack = {stack[1]:merge((typeof(item) == MAP) ? item | (["." -> item])), @stack};
-output = output ? {@output, 1} | output;
-output = {@output, "          <form class=\"well form-inline\" action=\"/session/create\" method=\"post\">"};
-output = output ? {@output, 0} | output;
-output = {@output, "            <input type=\"text\" name=\"credentials\" placeholder=\"player object number, e.g. #5\">"};
-output = output ? {@output, 0} | output;
-output = {@output, "            <button type=\"submit\" name=\"submit\">Connect</button>"};
-output = output ? {@output, 0} | output;
-output = {@output, "          </form>"};
-output = output ? {@output, 0} | output;
-output = {@output, "        "};
-stack = stack[2..$];
-endfor
-endif
-output = output ? {@output, 1} | output;
-output = {@output, "        "};
-if (top = `stack[1]["player"] ! E_RANGE')
-for item in ((typeof(top) == LIST) ? top | {top})
-((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
-stack = {stack[1]:merge((typeof(item) == MAP) ? item | (["." -> item])), @stack};
-output = output ? {@output, 1} | output;
-output = {@output, "          <form class=\"well form-inline\" action=\"/session/destroy\" method=\"post\">"};
-output = output ? {@output, 0} | output;
-output = {@output, "            <button type=\"submit\" name=\"submit\">Disconnect</button>"};
-output = output ? {@output, 0} | output;
-output = {@output, "          </form>"};
-output = output ? {@output, 0} | output;
-output = {@output, "        "};
-stack = stack[2..$];
-endfor
-endif
-output = output ? {@output, 1} | output;
-output = {@output, "      </div>"};
-output = output ? {@output, 0} | output;
-output = {@output, "      <div class=\"span8\">"};
-output = output ? {@output, 0} | output;
-output = {@output, "        "};
-if (!(top = `stack[1]["player"] ! E_RANGE'))
-for item in ({""})
-((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
-stack = {stack[1]:merge((typeof(item) == MAP) ? item | (["." -> item])), @stack};
-output = output ? {@output, 1} | output;
-output = {@output, "          <h2>Welcome!</h2>"};
-output = output ? {@output, 0} | output;
-output = {@output, "          <p>&larr; Use the form on the left to connect to a specific player object by its object number.</p>"};
-output = output ? {@output, 0} | output;
-output = {@output, "        "};
-stack = stack[2..$];
-endfor
-endif
-output = output ? {@output, 1} | output;
-output = {@output, "        "};
-if (top = `stack[1]["player"] ! E_RANGE')
-for item in ((typeof(top) == LIST) ? top | {top})
-((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
-stack = {stack[1]:merge((typeof(item) == MAP) ? item | (["." -> item])), @stack};
-output = output ? {@output, 1} | output;
-output = {@output, "          <h2>Welcome, "};
-top = `stack[1]["player"] ! E_RANGE';
-stack = {(typeof(top) == MAP) ? top | ([]), @stack};
-output = {@output, strsub(strsub(strsub(strsub(`tostr(stack[1]["name"]) ! E_RANGE => ""', "&", "&amp;"), "<", "&lt;"), ">", "&gt;"), "\"", "&quot;")};
-stack = stack[2..$];
-output = {@output, "!</h2>"};
-output = output ? {@output, 0} | output;
-output = {@output, "          <p>"};
-output = output ? {@output, 0} | output;
-output = {@output, "            Start browsing by clicking on the object references to the right &rarr;"};
-output = output ? {@output, 0} | output;
-output = {@output, "            "};
-if (top = `stack[1]["links"] ! E_RANGE')
-for item in ((typeof(top) == LIST) ? top | {top})
-((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
-stack = {stack[1]:merge((typeof(item) == MAP) ? item | (["." -> item])), @stack};
-output = output ? {@output, 1} | output;
-output = {@output, "              <a rel=\"object\" data-object-number=\""};
-output = {@output, strsub(strsub(strsub(strsub(`tostr(stack[1]["id"]) ! E_RANGE => ""', "&", "&amp;"), "<", "&lt;"), ">", "&gt;"), "\"", "&quot;")};
-output = {@output, "\" href=\"/objects/"};
-output = {@output, strsub(strsub(strsub(strsub(`tostr(stack[1]["id"]) ! E_RANGE => ""', "&", "&amp;"), "<", "&lt;"), ">", "&gt;"), "\"", "&quot;")};
-output = {@output, "\">"};
-output = {@output, strsub(strsub(strsub(strsub(`tostr(stack[1]["name"]) ! E_RANGE => ""', "&", "&amp;"), "<", "&lt;"), ">", "&gt;"), "\"", "&quot;")};
-output = {@output, "</a>"};
-output = output ? {@output, 0} | output;
-output = {@output, "            "};
-stack = stack[2..$];
-endfor
-endif
-output = output ? {@output, 1} | output;
-output = {@output, "          </p>"};
-output = output ? {@output, 0} | output;
-output = {@output, "        "};
-stack = stack[2..$];
-endfor
-endif
-output = output ? {@output, 1} | output;
-output = {@output, "      </div>"};
-output = output ? {@output, 0} | output;
-output = {@output, "    </div>"};
-output = output ? {@output, 0} | output;
-output = {@output, "    "};
-if (top = `stack[1]["player"] ! E_RANGE')
-for item in ((typeof(top) == LIST) ? top | {top})
-((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
-stack = {stack[1]:merge((typeof(item) == MAP) ? item | (["." -> item])), @stack};
-output = output ? {@output, 1} | output;
-output = {@output, "      <p id=\"browser\"></p>"};
-output = output ? {@output, 0} | output;
-output = {@output, "      <hr>"};
-output = output ? {@output, 0} | output;
-output = {@output, "      <p id=\"terminal\"></p>"};
-output = output ? {@output, 0} | output;
-output = {@output, "      <p>"};
-output = output ? {@output, 0} | output;
-output = {@output, "        &uarr; Send commands to the server by typing them in the input above (e.g. <code>; players()</code> or <code>; 5 + 3</code>)."};
-output = output ? {@output, 0} | output;
-output = {@output, "      </p>"};
-output = output ? {@output, 0} | output;
-output = {@output, "    "};
-stack = stack[2..$];
-endfor
-endif
-output = output ? {@output, 1} | output;
-output = {@output, "  </div>"};
-output = output ? {@output, 0} | output;
-output = {@output, "  <script type=\"text/javascript\">"};
-output = output ? {@output, 0} | output;
-output = {@output, "    $(function() {"};
-output = output ? {@output, 0} | output;
-output = {@output, "      Moo.Object.prototype.urlRoot = 'http://' + window.location.host + '///objects';"};
-output = output ? {@output, 0} | output;
-output = {@output, ""};
-output = output ? {@output, 0} | output;
-output = {@output, "      var $terminal = $('#terminal');"};
-output = output ? {@output, 0} | output;
-output = {@output, "      $terminal.commandPanel({host: window.location.hostname, port: window.location.port});"};
-output = output ? {@output, 0} | output;
-output = {@output, ""};
-output = output ? {@output, 0} | output;
-output = {@output, "      var $browser = $('#browser');"};
-output = output ? {@output, 0} | output;
-output = {@output, "      $browser.simpleObjectPanel();"};
-output = output ? {@output, 0} | output;
-output = {@output, ""};
-output = output ? {@output, 0} | output;
-output = {@output, "      Moo.Space = Backbone.Router.extend({"};
-output = output ? {@output, 0} | output;
-output = {@output, "        routes: {"};
-output = output ? {@output, 0} | output;
-output = {@output, "          'objects/:number': 'browse'"};
-output = output ? {@output, 0} | output;
-output = {@output, "        },"};
-output = output ? {@output, 0} | output;
-output = {@output, "        browse: function(number) {"};
-output = output ? {@output, 0} | output;
-output = {@output, "          var o = new Moo.Object({id: number});"};
-output = output ? {@output, 0} | output;
-output = {@output, "          o.fetch({"};
-output = output ? {@output, 0} | output;
-output = {@output, "            success: function(model, response) {"};
-output = output ? {@output, 0} | output;
-output = {@output, "              $browser.simpleObjectPanel({object: o});"};
-output = output ? {@output, 0} | output;
-output = {@output, "              $browser.get(0).scrollIntoView(true);"};
-output = output ? {@output, 0} | output;
-output = {@output, "            },"};
-output = output ? {@output, 0} | output;
-output = {@output, "            error: function(model, response) {"};
-output = output ? {@output, 0} | output;
-output = {@output, "              $browser.simpleObjectPanel({object: o});"};
-output = output ? {@output, 0} | output;
-output = {@output, "              $browser.get(0).scrollIntoView(true);"};
-output = output ? {@output, 0} | output;
-output = {@output, "            }"};
-output = output ? {@output, 0} | output;
-output = {@output, "          });"};
-output = output ? {@output, 0} | output;
-output = {@output, "        }"};
-output = output ? {@output, 0} | output;
-output = {@output, "      });"};
-output = output ? {@output, 0} | output;
-output = {@output, "      var moo = new Moo.Space;"};
-output = output ? {@output, 0} | output;
-output = {@output, ""};
-output = output ? {@output, 0} | output;
-output = {@output, "      $('body').on('click', 'a[rel*=object]', function(e) {"};
-output = output ? {@output, 0} | output;
-output = {@output, "        e.preventDefault();"};
-output = output ? {@output, 0} | output;
-output = {@output, "        var o = $(e.target).data('object-number');"};
-output = output ? {@output, 0} | output;
-output = {@output, "        moo.navigate('/objects/' + o, {trigger: true});"};
-output = output ? {@output, 0} | output;
-output = {@output, "      });"};
-output = output ? {@output, 0} | output;
-output = {@output, ""};
-output = output ? {@output, 0} | output;
-output = {@output, "      Backbone.history.start({pushState: true});"};
-output = output ? {@output, 0} | output;
-output = {@output, ""};
-output = output ? {@output, 0} | output;
-output = {@output, "      "};
-if (top = `stack[1]["id"] ! E_RANGE')
-for item in ((typeof(top) == LIST) ? top | {top})
-((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
-stack = {stack[1]:merge((typeof(item) == MAP) ? item | (["." -> item])), @stack};
-output = output ? {@output, 1} | output;
-output = {@output, "        moo.navigate('/objects/"};
-output = {@output, strsub(strsub(strsub(strsub(`tostr(stack[1]["id"]) ! E_RANGE => ""', "&", "&amp;"), "<", "&lt;"), ">", "&gt;"), "\"", "&quot;")};
-output = {@output, "');"};
-output = output ? {@output, 0} | output;
-output = {@output, "      "};
-stack = stack[2..$];
-endfor
-endif
-output = output ? {@output, 1} | output;
-output = {@output, "    });"};
-output = output ? {@output, 0} | output;
-output = {@output, "  </script>"};
-output = output ? {@output, 0} | output;
-output = {@output, "</body>"};
-output = output ? {@output, 0} | output;
-output = {@output, "</html>"};
 output = output ? {@output, 0} | output;
 out = {};
 acc = {};
@@ -20263,132 +25678,903 @@ endif
 endwhile
 return out;
 return;
+"<head>";
+"  <title>{{page.title}}</title>";
+"  {{#page.swf}}";
+"    <script type=\"text/javascript\" src=\"/js/Socket.js\"></script>";
+"    <script type=\"text/javascript\" src=\"/js/swfobject-2.1.min.js\"></script>";
+"    <script type=\"text/javascript\">";
+"      var flashvars = {};";
+"      var params = {menu: 'false', scale: 'noScale', allowScriptAccess: 'always', bgcolor: '#FFFFFF'};";
+"      var attributes = {id: 'JavascriptSocket', name: 'JavascriptSocket'};";
+"      swfobject.embedSWF('/flash/javascriptsocket.swf', 'flash-content', '100%', '100%', '9.0.0', null, flashvars, params, attributes);";
+"    </script>";
+"  {{/page.swf}}";
+"  <link type=\"text/css\" rel=\"stylesheet\" href=\"/css/bootstrap-2.0.2.min.css\">";
+"  <link type=\"text/css\" rel=\"stylesheet\" href=\"/css/bootstrap-responsive-2.0.2.min.css\">";
+"  <link type=\"text/css\" rel=\"stylesheet\" href=\"/css/font-awesome-1.0.0-7.min.css\">";
+"  <link type=\"text/css\" rel=\"stylesheet\" href=\"/css/moo-0.0.3.min.css\">";
+"  <script type=\"text/javascript\" src=\"/js/jquery-1.7.1.min.js\"></script>";
+"  <script type=\"text/javascript\" src=\"/js/jquery.ui.core-1.8.18.min.js\"></script>";
+"  <script type=\"text/javascript\" src=\"/js/jquery.ui.widget-1.8.18.min.js\"></script>";
+"  <script type=\"text/javascript\" src=\"/js/underscore-1.3.1.min.js\"></script>";
+"  <script type=\"text/javascript\" src=\"/js/backbone-0.9.2.min.js\"></script>";
+"  <script type=\"text/javascript\" src=\"/js/bootstrap-dropdown-2.0.2.js\"></script>";
+"  <script type=\"text/javascript\" src=\"/js/bootstrap-modal-2.0.2.js\"></script>";
+"  <script type=\"text/javascript\" src=\"/js/bootstrap-transition-2.0.2.js\"></script>";
+"  <script type=\"text/javascript\" src=\"/js/moo-0.0.3.min.js\"></script>";
+"  <script type=\"text/javascript\" src=\"/js/moo-interactive-0.0.3.min.js\"></script>";
+"</head>";
+"";
+"chunk_length:27";
+"chunk_type:source";
+"content_type:application/x-mustache";
+"updated_at:Wed May  2 07:36:12 2012 EDT";
+"-=-=-mxyzptlk-=-=-";
+.
+#71:1
+stack = args;
+output = {};
+output = output ? {@output, 0} | output;
+output = {@output, ""};
+failed = 0;
+if (top = `stack[1]["page"] ! E_RANGE')
+stack = {stack[1]:merge((typeof(top) == MAP) ? top | ([])), @stack};
+else
+stack = {[], @stack};
+failed = 1;
+endif
+if ((!failed) && (top = `stack[1]["swf"] ! E_RANGE'))
+for item in ((typeof(top) == LIST) ? top | {top})
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+stack = {(typeof(item) == MAP) ? item | (["." -> item]), @stack};
+output = output ? {@output, 1} | output;
+output = {@output, "  <div id=\"flash-content\"></div>"};
+output = output ? {@output, 0} | output;
+output = {@output, ""};
+stack = stack[2..$];
+endfor
+endif
+stack = stack[2..$];
+output = output ? {@output, 1} | output;
+output = {@output, "<script type=\"text/javascript\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "  $('#disconnect').click(function(e) {"};
+output = output ? {@output, 0} | output;
+output = {@output, "    e.preventDefault();"};
+output = output ? {@output, 0} | output;
+output = {@output, "    $.post($(this).attr('href'), function() {"};
+output = output ? {@output, 0} | output;
+output = {@output, "      window.location.href = '/';"};
+output = output ? {@output, 0} | output;
+output = {@output, "    });"};
+output = output ? {@output, 0} | output;
+output = {@output, "  });"};
+output = output ? {@output, 0} | output;
+output = {@output, "</script>"};
+output = output ? {@output, 0} | output;
+out = {};
+acc = {};
+indent = "";
+while (output)
+{line, @output} = output;
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+if (typeof(line) == LIST)
+elseif (typeof(line) == INT)
+if (line > 0)
+if (match(acc = tostr(@acc), "[^ ]"))
+out = {@out, acc};
+endif
+else
+out = {@out, tostr(@acc)};
+endif
+acc = {};
+else
+acc = {@acc, line};
+endif
+endwhile
+return out;
+return;
+"{{#page.swf}}";
+"  <div id=\"flash-content\"></div>";
+"{{/page.swf}}";
+"<script type=\"text/javascript\">";
+"  $('#disconnect').click(function(e) {";
+"    e.preventDefault();";
+"    $.post($(this).attr('href'), function() {";
+"      window.location.href = '/';";
+"    });";
+"  });";
+"</script>";
+"";
+"chunk_length:11";
+"chunk_type:source";
+"content_type:application/x-mustache";
+"updated_at:Wed May  2 07:36:12 2012 EDT";
+"-=-=-mxyzptlk-=-=-";
+.
+#71:2
+stack = args;
+output = {};
+output = output ? {@output, 0} | output;
+output = {@output, "<div class=\"navbar navbar-fixed-top\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "  <div class=\"navbar-inner\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "    <div class=\"container\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "      <a class=\"brand\" href=\"/\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "        "};
+top = `stack[1]["page"] ! E_RANGE';
+stack = {(typeof(top) == MAP) ? top | ([]), @stack};
+output = {@output, strsub(strsub(strsub(strsub(`tostr(stack[1]["title"]) ! E_RANGE => ""', "&", "&amp;"), "<", "&lt;"), ">", "&gt;"), "\"", "&quot;")};
+stack = stack[2..$];
+output = output ? {@output, 0} | output;
+output = {@output, "      </a>"};
+output = output ? {@output, 0} | output;
+output = {@output, "      <ul class=\"nav\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "        "};
+if (top = `stack[1]["player"] ! E_RANGE')
+for item in ((typeof(top) == LIST) ? top | {top})
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+stack = {stack[1]:merge((typeof(item) == MAP) ? item | (["." -> item])), @stack};
+output = output ? {@output, 1} | output;
+output = {@output, "          <li>"};
+output = output ? {@output, 0} | output;
+output = {@output, "            <a href=\"/\">Console</a>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          </li>"};
+output = output ? {@output, 0} | output;
+output = {@output, "        "};
+stack = stack[2..$];
+endfor
+endif
+output = output ? {@output, 1} | output;
+output = {@output, "        <li class=\"dropdown\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "          <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Browse To<b class=\"caret\"></b></a>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          <ul class=\"dropdown-menu\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "            "};
+if (top = `stack[1]["links"] ! E_RANGE')
+for item in ((typeof(top) == LIST) ? top | {top})
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+stack = {stack[1]:merge((typeof(item) == MAP) ? item | (["." -> item])), @stack};
+output = output ? {@output, 1} | output;
+output = {@output, "              <li><a rel=\"object\" data-object-number=\""};
+output = {@output, strsub(strsub(strsub(strsub(`tostr(stack[1]["id"]) ! E_RANGE => ""', "&", "&amp;"), "<", "&lt;"), ">", "&gt;"), "\"", "&quot;")};
+output = {@output, "\" href=\"/objects/"};
+output = {@output, strsub(strsub(strsub(strsub(`tostr(stack[1]["id"]) ! E_RANGE => ""', "&", "&amp;"), "<", "&lt;"), ">", "&gt;"), "\"", "&quot;")};
+output = {@output, "\">"};
+output = {@output, strsub(strsub(strsub(strsub(`tostr(stack[1]["name"]) ! E_RANGE => ""', "&", "&amp;"), "<", "&lt;"), ">", "&gt;"), "\"", "&quot;")};
+output = {@output, "</a></li>"};
+output = output ? {@output, 0} | output;
+output = {@output, "            "};
+stack = stack[2..$];
+endfor
+endif
+output = output ? {@output, 1} | output;
+output = {@output, "          </ul>"};
+output = output ? {@output, 0} | output;
+output = {@output, "        </li>"};
+output = output ? {@output, 0} | output;
+output = {@output, "      </ul>"};
+output = output ? {@output, 0} | output;
+output = {@output, "      <ul class=\"nav pull-right\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "        "};
+if (top = `stack[1]["player"] ! E_RANGE')
+for item in ((typeof(top) == LIST) ? top | {top})
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+stack = {stack[1]:merge((typeof(item) == MAP) ? item | (["." -> item])), @stack};
+output = output ? {@output, 1} | output;
+output = {@output, "          <li><a id=\"disconnect\" href=\"/session/destroy\">Disconnect</a></li>"};
+output = output ? {@output, 0} | output;
+output = {@output, "        "};
+stack = stack[2..$];
+endfor
+endif
+output = output ? {@output, 1} | output;
+output = {@output, "        "};
+if (!(top = `stack[1]["player"] ! E_RANGE'))
+for item in ({""})
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+stack = {stack[1]:merge((typeof(item) == MAP) ? item | (["." -> item])), @stack};
+output = output ? {@output, 1} | output;
+output = {@output, "          <li><a href=\"/\">Connect</a></li>"};
+output = output ? {@output, 0} | output;
+output = {@output, "        "};
+stack = stack[2..$];
+endfor
+endif
+output = output ? {@output, 1} | output;
+output = {@output, "      </ul>"};
+output = output ? {@output, 0} | output;
+output = {@output, "    </div>"};
+output = output ? {@output, 0} | output;
+output = {@output, "  </div>"};
+output = output ? {@output, 0} | output;
+output = {@output, "</div>"};
+output = output ? {@output, 0} | output;
+out = {};
+acc = {};
+indent = "";
+while (output)
+{line, @output} = output;
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+if (typeof(line) == LIST)
+elseif (typeof(line) == INT)
+if (line > 0)
+if (match(acc = tostr(@acc), "[^ ]"))
+out = {@out, acc};
+endif
+else
+out = {@out, tostr(@acc)};
+endif
+acc = {};
+else
+acc = {@acc, line};
+endif
+endwhile
+return out;
+return;
+"<div class=\"navbar navbar-fixed-top\">";
+"  <div class=\"navbar-inner\">";
+"    <div class=\"container\">";
+"      <a class=\"brand\" href=\"/\">";
+"        {{page.title}}";
+"      </a>";
+"      <ul class=\"nav\">";
+"        {{#player}}";
+"          <li>";
+"            <a href=\"/\">Console</a>";
+"          </li>";
+"        {{/player}}";
+"        <li class=\"dropdown\">";
+"          <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Browse To<b class=\"caret\"></b></a>";
+"          <ul class=\"dropdown-menu\">";
+"            {{#links}}";
+"              <li><a rel=\"object\" data-object-number=\"{{id}}\" href=\"/objects/{{id}}\">{{name}}</a></li>";
+"            {{/links}}";
+"          </ul>";
+"        </li>";
+"      </ul>";
+"      <ul class=\"nav pull-right\">";
+"        {{#player}}";
+"          <li><a id=\"disconnect\" href=\"/session/destroy\">Disconnect</a></li>";
+"        {{/player}}";
+"        {{^player}}";
+"          <li><a href=\"/\">Connect</a></li>";
+"        {{/player}}";
+"      </ul>";
+"    </div>";
+"  </div>";
+"</div>";
+"";
+"chunk_length:32";
+"chunk_type:source";
+"content_type:application/x-mustache";
+"updated_at:Wed May  2 07:36:12 2012 EDT";
+"-=-=-mxyzptlk-=-=-";
+.
+#71:3
+stack = args;
+output = {};
+output = output ? {@output, 0} | output;
+output = {@output, "<!DOCTYPE html>"};
+output = output ? {@output, 0} | output;
+output = {@output, "<html lang=\"en\">"};
+output = output ? {@output, 0} | output;
+output = {@output, ""};
+verb = `this:_head(@stack) ! E_VERBNF => {}';
+output = {@output, verb};
+output = output ? {@output, 1} | output;
+output = {@output, "<body>"};
+output = output ? {@output, 0} | output;
+output = {@output, "  <style type=\"text/css\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "    body .container .mark {"};
+output = output ? {@output, 0} | output;
+output = {@output, "      font-weight: bold;"};
+output = output ? {@output, 0} | output;
+output = {@output, "    }"};
+output = output ? {@output, 0} | output;
+output = {@output, "    #logo {"};
+output = output ? {@output, 0} | output;
+output = {@output, "      width: 450px;"};
+output = output ? {@output, 0} | output;
+output = {@output, "      margin: 40px 10px;"};
+output = output ? {@output, 0} | output;
+output = {@output, "    }"};
+output = output ? {@output, 0} | output;
+output = {@output, "  </style>"};
+output = output ? {@output, 0} | output;
+output = {@output, "  <div class=\"container\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "    &nbsp;"};
+output = output ? {@output, 0} | output;
+output = {@output, "    <div class=\"row\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "      <div class=\"span12\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "        <h1>Welcome to Stunt | Improvise</h1>"};
+output = output ? {@output, 0} | output;
+output = {@output, "      </div>"};
+output = output ? {@output, 0} | output;
+output = {@output, "    </div>"};
+output = output ? {@output, 0} | output;
+output = {@output, "    &nbsp;"};
+output = output ? {@output, 0} | output;
+output = {@output, "    <div class=\"row\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "      <div class=\"span5\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "        <form class=\"well form-inline\" action=\"/session/create\" method=\"post\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "          <button type=\"submit\" name=\"submit\">Connect</button>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          <input class=\"span3\" type=\"text\" name=\"credentials\" placeholder=\"credentials, ex: &lt;player&gt; &lt;password&gt;\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "        </form>"};
+output = output ? {@output, 0} | output;
+output = {@output, "        <img id=\"logo\" src=\"/img/stunt.png\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "      </div>"};
+output = output ? {@output, 0} | output;
+output = {@output, "      <div class=\"span7\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "        <h2>Get Started</h2>"};
+output = output ? {@output, 0} | output;
+output = {@output, "        <p>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          &larr; Use the form on the left to connect to a specific player."};
+output = output ? {@output, 0} | output;
+output = {@output, "        </p>"};
+output = output ? {@output, 0} | output;
+output = {@output, "        <h2>About Stunt | Improvise</h2>"};
+output = output ? {@output, 0} | output;
+output = {@output, "        <p>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          <a href=\"https://github.com/toddsundsted/stunt\">Stunt</a>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          is a set of extensions to the <a href=\"http://sourceforge.net/projects/lambdamoo/\">LambdaMOO server</a>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          and <a href=\"https://github.com/toddsundsted/improvise\">Improvise</a>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          is an associated framework that uses those extensions."};
+output = output ? {@output, 0} | output;
+output = {@output, "        </p>"};
+output = output ? {@output, 0} | output;
+output = {@output, "        <p>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          <span class=\"mark\">Stunt | Improvise</span> is well suited"};
+output = output ? {@output, 0} | output;
+output = {@output, "          for building immersive, collaborative, Web-based"};
+output = output ? {@output, 0} | output;
+output = {@output, "          applications &mdash; specifically, applications where"};
+output = output ? {@output, 0} | output;
+output = {@output, "          every <em>user</em> is a <em>programmer</em>."};
+output = output ? {@output, 0} | output;
+output = {@output, "        </p>"};
+output = output ? {@output, 0} | output;
+output = {@output, "        <p>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          Together, <span class=\"mark\">Stunt | Improvise</span>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          comprise:"};
+output = output ? {@output, 0} | output;
+output = {@output, "        </p>"};
+output = output ? {@output, 0} | output;
+output = {@output, "        <ul>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          <li>a persistent, NoSQL object database with a simple JSON API</li>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          <li>an server-side HTTP-based MVC framework with support for HTML5 features like pushState</li>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          <li>a client-side RAI framework based on Backbone.js</li>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          <li>a framework for securely executing untrusted code</li>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          <li>a simple, embedded programming language</li>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          <li>integrated package management</li>"};
+output = output ? {@output, 0} | output;
+output = {@output, "        </ul>"};
+output = output ? {@output, 0} | output;
+output = {@output, "        <h2>Learn More</h2>"};
+output = output ? {@output, 0} | output;
+output = {@output, "        <p>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          To learn more, check out:"};
+output = output ? {@output, 0} | output;
+output = {@output, "        </p>"};
+output = output ? {@output, 0} | output;
+output = {@output, "        <ul>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          <li><a href=\"http://stunt.io/\">the Stunt.io website</a></li>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          <li><a href=\"https://github.com/toddsundsted/improvise/wiki\">the Improvise wiki</a></li>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          <li><a href=\"http://stunt.io/ProgrammersManual.html\">the LambdaMOO Programmers Manual</a></li>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          <li><a href=\"https://github.com/toddsundsted/stunt\">the Stunt GitHub project</a></li>"};
+output = output ? {@output, 0} | output;
+output = {@output, "          <li><a href=\"https://github.com/toddsundsted/improvise\">the Improvise GitHub project</a></li>"};
+output = output ? {@output, 0} | output;
+output = {@output, "        </ul>"};
+output = output ? {@output, 0} | output;
+output = {@output, "      </div>"};
+output = output ? {@output, 0} | output;
+output = {@output, "    </div>"};
+output = output ? {@output, 0} | output;
+output = {@output, "  </div>"};
+output = output ? {@output, 0} | output;
+output = {@output, ""};
+verb = `this:_foot(@stack) ! E_VERBNF => {}';
+output = {@output, verb};
+output = output ? {@output, 1} | output;
+output = {@output, "</body>"};
+output = output ? {@output, 0} | output;
+output = {@output, "</html>"};
+output = output ? {@output, 0} | output;
+out = {};
+acc = {};
+indent = "";
+while (output)
+{line, @output} = output;
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+if (typeof(line) == LIST)
+if (lines = line)
+if (length(lines) > 1)
+temp = {lines[1], 0};
+for line in (lines[2..$ - 1])
+temp = {@temp, indent + line, 0};
+endfor
+temp = {@temp, indent + lines[$]};
+output = {@temp, @output};
+else
+output = {lines[1], @output};
+endif
+endif
+elseif (typeof(line) == INT)
+if (line > 0)
+if (match(acc = tostr(@acc), "[^ ]"))
+out = {@out, acc};
+endif
+else
+out = {@out, tostr(@acc)};
+endif
+acc = {};
+indent = "";
+else
+if (!match(line, "[^ ]"))
+indent = line;
+endif
+acc = {@acc, line};
+endif
+endwhile
+return out;
+return;
 "<!DOCTYPE html>";
 "<html lang=\"en\">";
-"<head>";
-"<title>Stunt | Improvise</title>";
-"<link type=\"text/css\" rel=\"stylesheet\" href=\"/css/bootstrap-2.0.2.min.css\">";
-"<link type=\"text/css\" rel=\"stylesheet\" href=\"/css/bootstrap-responsive-2.0.2.min.css\">";
-"<link type=\"text/css\" rel=\"stylesheet\" href=\"/css/font-awesome-1.0.0-7.min.css\">";
-"<link type=\"text/css\" rel=\"stylesheet\" href=\"/css/moo-0.0.3.min.css\">";
-"<script type=\"text/javascript\" src=\"/js/swfobject-2.1.min.js\"></script>";
-"<script type=\"text/javascript\" src=\"/js/Socket.js\"></script>";
-"<script type=\"text/javascript\">";
-"var flashvars = {};";
-"var params = {menu: 'false', scale: 'noScale', allowScriptAccess: 'always', bgcolor: '#FFFFFF'};";
-"var attributes = {id: 'JavascriptSocket', name: 'JavascriptSocket'};";
-"swfobject.embedSWF('/flash/javascriptsocket.swf', 'flash-content', '100%', '100%', '9.0.0', null, flashvars, params, attributes);";
-"</script>";
-"<script type=\"text/javascript\" src=\"/js/jquery-1.7.1.min.js\"></script>";
-"<script type=\"text/javascript\" src=\"/js/jquery.ui.core-1.8.18.min.js\"></script>";
-"<script type=\"text/javascript\" src=\"/js/jquery.ui.widget-1.8.18.min.js\"></script>";
-"<script type=\"text/javascript\" src=\"/js/underscore-1.3.1.min.js\"></script>";
-"<script type=\"text/javascript\" src=\"/js/backbone-0.9.2.min.js\"></script>";
-"<script type=\"text/javascript\" src=\"/js/bootstrap-modal-2.0.2.js\"></script>";
-"<script type=\"text/javascript\" src=\"/js/bootstrap-transition-2.0.2.js\"></script>";
-"<script type=\"text/javascript\" src=\"/js/moo-0.0.3.min.js\"></script>";
-"<script type=\"text/javascript\" src=\"/js/moo-interactive-0.0.3.min.js\"></script>";
-"</head>";
+"{{> _head}}";
 "<body>";
-"  <div id=\"flash-content\"></div>";
+"  <style type=\"text/css\">";
+"    body .container .mark {";
+"      font-weight: bold;";
+"    }";
+"    #logo {";
+"      width: 450px;";
+"      margin: 40px 10px;";
+"    }";
+"  </style>";
 "  <div class=\"container\">";
 "    &nbsp;";
 "    <div class=\"row\">";
-"      <div class=\"span4\">";
-"        {{^player}}";
-"          <form class=\"well form-inline\" action=\"/session/create\" method=\"post\">";
-"            <input type=\"text\" name=\"credentials\" placeholder=\"player object number, e.g. #5\">";
-"            <button type=\"submit\" name=\"submit\">Connect</button>";
-"          </form>";
-"        {{/player}}";
-"        {{#player}}";
-"          <form class=\"well form-inline\" action=\"/session/destroy\" method=\"post\">";
-"            <button type=\"submit\" name=\"submit\">Disconnect</button>";
-"          </form>";
-"        {{/player}}";
-"      </div>";
-"      <div class=\"span8\">";
-"        {{^player}}";
-"          <h2>Welcome!</h2>";
-"          <p>&larr; Use the form on the left to connect to a specific player object by its object number.</p>";
-"        {{/player}}";
-"        {{#player}}";
-"          <h2>Welcome, {{player.name}}!</h2>";
-"          <p>";
-"            Start browsing by clicking on the object references to the right &rarr;";
-"            {{#links}}";
-"              <a rel=\"object\" data-object-number=\"{{id}}\" href=\"/objects/{{id}}\">{{name}}</a>";
-"            {{/links}}";
-"          </p>";
-"        {{/player}}";
+"      <div class=\"span12\">";
+"        <h1>Welcome to Stunt | Improvise</h1>";
 "      </div>";
 "    </div>";
-"    {{#player}}";
-"      <p id=\"browser\"></p>";
-"      <hr>";
-"      <p id=\"terminal\"></p>";
-"      <p>";
-"        &uarr; Send commands to the server by typing them in the input above (e.g. <code>; players()</code> or <code>; 5 + 3</code>).";
-"      </p>";
-"    {{/player}}";
+"    &nbsp;";
+"    <div class=\"row\">";
+"      <div class=\"span5\">";
+"        <form class=\"well form-inline\" action=\"/session/create\" method=\"post\">";
+"          <button type=\"submit\" name=\"submit\">Connect</button>";
+"          <input class=\"span3\" type=\"text\" name=\"credentials\" placeholder=\"credentials, ex: &lt;player&gt; &lt;password&gt;\">";
+"        </form>";
+"        <img id=\"logo\" src=\"/img/stunt.png\">";
+"      </div>";
+"      <div class=\"span7\">";
+"        <h2>Get Started</h2>";
+"        <p>";
+"          &larr; Use the form on the left to connect to a specific player.";
+"        </p>";
+"        <h2>About Stunt | Improvise</h2>";
+"        <p>";
+"          <a href=\"https://github.com/toddsundsted/stunt\">Stunt</a>";
+"          is a set of extensions to the <a href=\"http://sourceforge.net/projects/lambdamoo/\">LambdaMOO server</a>";
+"          and <a href=\"https://github.com/toddsundsted/improvise\">Improvise</a>";
+"          is an associated framework that uses those extensions.";
+"        </p>";
+"        <p>";
+"          <span class=\"mark\">Stunt | Improvise</span> is well suited";
+"          for building immersive, collaborative, Web-based";
+"          applications &mdash; specifically, applications where";
+"          every <em>user</em> is a <em>programmer</em>.";
+"        </p>";
+"        <p>";
+"          Together, <span class=\"mark\">Stunt | Improvise</span>";
+"          comprise:";
+"        </p>";
+"        <ul>";
+"          <li>a persistent, NoSQL object database with a simple JSON API</li>";
+"          <li>an server-side HTTP-based MVC framework with support for HTML5 features like pushState</li>";
+"          <li>a client-side RAI framework based on Backbone.js</li>";
+"          <li>a framework for securely executing untrusted code</li>";
+"          <li>a simple, embedded programming language</li>";
+"          <li>integrated package management</li>";
+"        </ul>";
+"        <h2>Learn More</h2>";
+"        <p>";
+"          To learn more, check out:";
+"        </p>";
+"        <ul>";
+"          <li><a href=\"http://stunt.io/\">the Stunt.io website</a></li>";
+"          <li><a href=\"https://github.com/toddsundsted/improvise/wiki\">the Improvise wiki</a></li>";
+"          <li><a href=\"http://stunt.io/ProgrammersManual.html\">the LambdaMOO Programmers Manual</a></li>";
+"          <li><a href=\"https://github.com/toddsundsted/stunt\">the Stunt GitHub project</a></li>";
+"          <li><a href=\"https://github.com/toddsundsted/improvise\">the Improvise GitHub project</a></li>";
+"        </ul>";
+"      </div>";
+"    </div>";
 "  </div>";
-"  <script type=\"text/javascript\">";
-"    $(function() {";
-"      Moo.Object.prototype.urlRoot = 'http://' + window.location.host + '///objects';";
-"";
-"      var $terminal = $('#terminal');";
-"      $terminal.commandPanel({host: window.location.hostname, port: window.location.port});";
-"";
-"      var $browser = $('#browser');";
-"      $browser.simpleObjectPanel();";
-"";
-"      Moo.Space = Backbone.Router.extend({";
-"        routes: {";
-"          'objects/:number': 'browse'";
-"        },";
-"        browse: function(number) {";
-"          var o = new Moo.Object({id: number});";
-"          o.fetch({";
-"            success: function(model, response) {";
-"              $browser.simpleObjectPanel({object: o});";
-"              $browser.get(0).scrollIntoView(true);";
-"            },";
-"            error: function(model, response) {";
-"              $browser.simpleObjectPanel({object: o});";
-"              $browser.get(0).scrollIntoView(true);";
-"            }";
-"          });";
-"        }";
-"      });";
-"      var moo = new Moo.Space;";
-"";
-"      $('body').on('click', 'a[rel*=object]', function(e) {";
-"        e.preventDefault();";
-"        var o = $(e.target).data('object-number');";
-"        moo.navigate('/objects/' + o, {trigger: true});";
-"      });";
-"";
-"      Backbone.history.start({pushState: true});";
-"";
-"      {{#id}}";
-"        moo.navigate('/objects/{{id}}');";
-"      {{/id}}";
-"    });";
-"  </script>";
+"{{> _foot}}";
 "</body>";
 "</html>";
 "";
-"chunk_length:114";
+"chunk_length:76";
 "chunk_type:source";
 "content_type:application/x-mustache";
-"updated_at:Sat Apr 28 16:52:23 2012 EDT";
+"updated_at:Wed May  2 08:04:14 2012 EDT";
+"-=-=-mxyzptlk-=-=-";
+.
+#71:4
+stack = args;
+output = {};
+output = output ? {@output, 0} | output;
+output = {@output, "<!DOCTYPE html>"};
+output = output ? {@output, 0} | output;
+output = {@output, "<html lang=\"en\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "  "};
+verb = `this:_head(@stack) ! E_VERBNF => {}';
+output = {@output, verb};
+output = output ? {@output, 1} | output;
+output = {@output, "  <body>"};
+output = output ? {@output, 0} | output;
+output = {@output, "    "};
+verb = `this:_nav(@stack) ! E_VERBNF => {}';
+output = {@output, verb};
+output = output ? {@output, 1} | output;
+output = {@output, "    <div id=\"top\" class=\"container\" style=\"padding-top: 60px;\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "      <div id=\"terminal\" class=\"terminal\" data-placeholder=\"Send commands to the server by typing them in the input above (e.g. <code>; players()</code> or <code>; 5 + 3</code>).\"></div>"};
+output = output ? {@output, 0} | output;
+output = {@output, "    </div>"};
+output = output ? {@output, 0} | output;
+output = {@output, "    <script type=\"text/javascript\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "      $(function() {"};
+output = output ? {@output, 0} | output;
+output = {@output, "        $('#terminal').commandPanel({"};
+output = output ? {@output, 0} | output;
+output = {@output, "          host: window.location.hostname,"};
+output = output ? {@output, 0} | output;
+output = {@output, "          port: window.location.port"};
+output = output ? {@output, 0} | output;
+output = {@output, "        });"};
+output = output ? {@output, 0} | output;
+output = {@output, "      });"};
+output = output ? {@output, 0} | output;
+output = {@output, "    </script>"};
+output = output ? {@output, 0} | output;
+output = {@output, "    "};
+verb = `this:_foot(@stack) ! E_VERBNF => {}';
+output = {@output, verb};
+output = output ? {@output, 1} | output;
+output = {@output, "  </body>"};
+output = output ? {@output, 0} | output;
+output = {@output, "</html>"};
+output = output ? {@output, 0} | output;
+out = {};
+acc = {};
+indent = "";
+while (output)
+{line, @output} = output;
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+if (typeof(line) == LIST)
+if (lines = line)
+if (length(lines) > 1)
+temp = {lines[1], 0};
+for line in (lines[2..$ - 1])
+temp = {@temp, indent + line, 0};
+endfor
+temp = {@temp, indent + lines[$]};
+output = {@temp, @output};
+else
+output = {lines[1], @output};
+endif
+endif
+elseif (typeof(line) == INT)
+if (line > 0)
+if (match(acc = tostr(@acc), "[^ ]"))
+out = {@out, acc};
+endif
+else
+out = {@out, tostr(@acc)};
+endif
+acc = {};
+indent = "";
+else
+if (!match(line, "[^ ]"))
+indent = line;
+endif
+acc = {@acc, line};
+endif
+endwhile
+return out;
+return;
+"<!DOCTYPE html>";
+"<html lang=\"en\">";
+"  {{> _head}}";
+"  <body>";
+"    {{> _nav}}";
+"    <div id=\"top\" class=\"container\" style=\"padding-top: 60px;\">";
+"      <div id=\"terminal\" class=\"terminal\" data-placeholder=\"Send commands to the server by typing them in the input above (e.g. <code>; players()</code> or <code>; 5 + 3</code>).\"></div>";
+"    </div>";
+"    <script type=\"text/javascript\">";
+"      $(function() {";
+"        $('#terminal').commandPanel({";
+"          host: window.location.hostname,";
+"          port: window.location.port";
+"        });";
+"      });";
+"    </script>";
+"    {{> _foot}}";
+"  </body>";
+"</html>";
+"";
+"chunk_length:19";
+"chunk_type:source";
+"content_type:application/x-mustache";
+"updated_at:Wed May  2 07:37:39 2012 EDT";
+"-=-=-mxyzptlk-=-=-";
+.
+#71:5
+stack = args;
+output = {};
+output = output ? {@output, 0} | output;
+output = {@output, "<!DOCTYPE html>"};
+output = output ? {@output, 0} | output;
+output = {@output, "<html lang=\"en\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "  "};
+verb = `this:_head(@stack) ! E_VERBNF => {}';
+output = {@output, verb};
+output = output ? {@output, 1} | output;
+output = {@output, "  <body>"};
+output = output ? {@output, 0} | output;
+output = {@output, "    "};
+verb = `this:_nav(@stack) ! E_VERBNF => {}';
+output = {@output, verb};
+output = output ? {@output, 1} | output;
+output = {@output, "    <div id=\"top\" class=\"container\" style=\"padding-top: 60px;\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "      <p id=\"browser\" class=\"browser\"></p>"};
+output = output ? {@output, 0} | output;
+output = {@output, "    </div>"};
+output = output ? {@output, 0} | output;
+output = {@output, "    <script type=\"text/javascript\">"};
+output = output ? {@output, 0} | output;
+output = {@output, "      $(function() {"};
+output = output ? {@output, 0} | output;
+output = {@output, "        Moo.Object.prototype.urlRoot = 'http://' + window.location.host + '///objects';"};
+output = output ? {@output, 0} | output;
+output = {@output, ""};
+output = output ? {@output, 0} | output;
+output = {@output, "        var $browser = $('#browser');"};
+output = output ? {@output, 0} | output;
+output = {@output, "        $browser.simpleObjectPanel();"};
+output = output ? {@output, 0} | output;
+output = {@output, ""};
+output = output ? {@output, 0} | output;
+output = {@output, "        Moo.Space = Backbone.Router.extend({"};
+output = output ? {@output, 0} | output;
+output = {@output, "          routes: {"};
+output = output ? {@output, 0} | output;
+output = {@output, "            'objects/:number': 'browse'"};
+output = output ? {@output, 0} | output;
+output = {@output, "          },"};
+output = output ? {@output, 0} | output;
+output = {@output, "          browse: function(number) {"};
+output = output ? {@output, 0} | output;
+output = {@output, "            var o = new Moo.Object({id: number});"};
+output = output ? {@output, 0} | output;
+output = {@output, "            o.fetch({"};
+output = output ? {@output, 0} | output;
+output = {@output, "              success: function(model, response) {"};
+output = output ? {@output, 0} | output;
+output = {@output, "                $browser.simpleObjectPanel({object: o});"};
+output = output ? {@output, 0} | output;
+output = {@output, "                $('#top').get(0).scrollIntoView(true);"};
+output = output ? {@output, 0} | output;
+output = {@output, "              },"};
+output = output ? {@output, 0} | output;
+output = {@output, "              error: function(model, response) {"};
+output = output ? {@output, 0} | output;
+output = {@output, "                $browser.simpleObjectPanel({object: o});"};
+output = output ? {@output, 0} | output;
+output = {@output, "                $('#top').get(0).scrollIntoView(true);"};
+output = output ? {@output, 0} | output;
+output = {@output, "              }"};
+output = output ? {@output, 0} | output;
+output = {@output, "            });"};
+output = output ? {@output, 0} | output;
+output = {@output, "          }"};
+output = output ? {@output, 0} | output;
+output = {@output, "        });"};
+output = output ? {@output, 0} | output;
+output = {@output, "        var moo = new Moo.Space;"};
+output = output ? {@output, 0} | output;
+output = {@output, ""};
+output = output ? {@output, 0} | output;
+output = {@output, "        $('body').on('click', 'a[rel*=object]', function(e) {"};
+output = output ? {@output, 0} | output;
+output = {@output, "          e.preventDefault();"};
+output = output ? {@output, 0} | output;
+output = {@output, "          var o = $(e.target).data('object-number');"};
+output = output ? {@output, 0} | output;
+output = {@output, "          moo.navigate('/objects/' + o, {trigger: true});"};
+output = output ? {@output, 0} | output;
+output = {@output, "        });"};
+output = output ? {@output, 0} | output;
+output = {@output, ""};
+output = output ? {@output, 0} | output;
+output = {@output, "        Backbone.history.start({pushState: true});"};
+output = output ? {@output, 0} | output;
+output = {@output, ""};
+output = output ? {@output, 0} | output;
+output = {@output, "        "};
+if (top = `stack[1]["id"] ! E_RANGE')
+for item in ((typeof(top) == LIST) ? top | {top})
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+stack = {stack[1]:merge((typeof(item) == MAP) ? item | (["." -> item])), @stack};
+output = output ? {@output, 1} | output;
+output = {@output, "          moo.navigate('/objects/"};
+output = {@output, strsub(strsub(strsub(strsub(`tostr(stack[1]["id"]) ! E_RANGE => ""', "&", "&amp;"), "<", "&lt;"), ">", "&gt;"), "\"", "&quot;")};
+output = {@output, "');"};
+output = output ? {@output, 0} | output;
+output = {@output, "        "};
+stack = stack[2..$];
+endfor
+endif
+output = output ? {@output, 1} | output;
+output = {@output, "      });"};
+output = output ? {@output, 0} | output;
+output = {@output, "    </script>"};
+output = output ? {@output, 0} | output;
+output = {@output, "    "};
+verb = `this:_foot(@stack) ! E_VERBNF => {}';
+output = {@output, verb};
+output = output ? {@output, 1} | output;
+output = {@output, "  </body>"};
+output = output ? {@output, 0} | output;
+output = {@output, "</html>"};
+output = output ? {@output, 0} | output;
+out = {};
+acc = {};
+indent = "";
+while (output)
+{line, @output} = output;
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+if (typeof(line) == LIST)
+if (lines = line)
+if (length(lines) > 1)
+temp = {lines[1], 0};
+for line in (lines[2..$ - 1])
+temp = {@temp, indent + line, 0};
+endfor
+temp = {@temp, indent + lines[$]};
+output = {@temp, @output};
+else
+output = {lines[1], @output};
+endif
+endif
+elseif (typeof(line) == INT)
+if (line > 0)
+if (match(acc = tostr(@acc), "[^ ]"))
+out = {@out, acc};
+endif
+else
+out = {@out, tostr(@acc)};
+endif
+acc = {};
+indent = "";
+else
+if (!match(line, "[^ ]"))
+indent = line;
+endif
+acc = {@acc, line};
+endif
+endwhile
+return out;
+return;
+"<!DOCTYPE html>";
+"<html lang=\"en\">";
+"  {{> _head}}";
+"  <body>";
+"    {{> _nav}}";
+"    <div id=\"top\" class=\"container\" style=\"padding-top: 60px;\">";
+"      <p id=\"browser\" class=\"browser\"></p>";
+"    </div>";
+"    <script type=\"text/javascript\">";
+"      $(function() {";
+"        Moo.Object.prototype.urlRoot = 'http://' + window.location.host + '///objects';";
+"";
+"        var $browser = $('#browser');";
+"        $browser.simpleObjectPanel();";
+"";
+"        Moo.Space = Backbone.Router.extend({";
+"          routes: {";
+"            'objects/:number': 'browse'";
+"          },";
+"          browse: function(number) {";
+"            var o = new Moo.Object({id: number});";
+"            o.fetch({";
+"              success: function(model, response) {";
+"                $browser.simpleObjectPanel({object: o});";
+"                $('#top').get(0).scrollIntoView(true);";
+"              },";
+"              error: function(model, response) {";
+"                $browser.simpleObjectPanel({object: o});";
+"                $('#top').get(0).scrollIntoView(true);";
+"              }";
+"            });";
+"          }";
+"        });";
+"        var moo = new Moo.Space;";
+"";
+"        $('body').on('click', 'a[rel*=object]', function(e) {";
+"          e.preventDefault();";
+"          var o = $(e.target).data('object-number');";
+"          moo.navigate('/objects/' + o, {trigger: true});";
+"        });";
+"";
+"        Backbone.history.start({pushState: true});";
+"";
+"        {{#id}}";
+"          moo.navigate('/objects/{{id}}');";
+"        {{/id}}";
+"      });";
+"    </script>";
+"    {{> _foot}}";
+"  </body>";
+"</html>";
+"";
+"chunk_length:51";
+"chunk_type:source";
+"content_type:application/x-mustache";
+"updated_at:Wed May  2 07:37:37 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #72:0
 $restrict_to_caller($dialog.server);
 {request, response} = args;
-player = `request:parameters()["credentials"] ! E_RANGE => $nothing';
-if (valid(player = toobj(player)))
+credentials = `request:parameters()["credentials"] ! E_RANGE => ""';
+if (valid(player = $authenticate(@credentials:split())))
 set_task_local(task_local():merge(["http" -> ["session" -> ["player" -> player]]]));
 endif
 response = response:set_status(302):set_location(request:parameters()["__base_uri__"] + "/"):set_body("");
@@ -20398,8 +26584,9 @@ return;
 "";
 "{request, response} = args;";
 "";
-"player = `request:parameters()[\"credentials\"] ! E_RANGE => $nothing';";
-"if (valid(player = toobj(player)))";
+"credentials = `request:parameters()[\"credentials\"] ! E_RANGE => \"\"';";
+"";
+"if (valid(player = $authenticate(@credentials:split())))";
 "  set_task_local(task_local():merge([\"http\" -> [\"session\" -> [\"player\" -> player]]]));";
 "endif";
 "";
@@ -20407,10 +26594,10 @@ return;
 "";
 "return {request, response};";
 "";
-"chunk_length:12";
+"chunk_length:13";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Sat Apr 28 15:56:00 2012 EDT";
+"updated_at:Wed May  2 08:04:16 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #72:1
@@ -20433,7 +26620,7 @@ return;
 "chunk_length:9";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Sat Apr 28 15:56:00 2012 EDT";
+"updated_at:Wed May  2 08:04:16 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #76:0
@@ -20443,7 +26630,7 @@ method = request:method();
 {host, ?port = 80} = `request:headers()["host"]:split(":") ! E_RANGE => {""}';
 parameters = ["__base_uri__" -> host ? tostr("http://", host, ":", port) | "", "__connection__" -> player];
 if ((!path) && (method == "get"))
-return {$lookup("home_controller"), "index", parameters};
+return {$lookup("home_controller"), "home", parameters};
 elseif (((length(path) == 2) && (path[1] == "objects")) && (method == "get"))
 return {$lookup("home_controller"), "browse", parameters:merge(["id" -> path[2]])};
 elseif ((path == {"session", "create"}) && (method == "post"))
@@ -20466,7 +26653,7 @@ return;
 "];";
 "";
 "if (!path && method == \"get\")";
-"  return {$lookup(\"home_controller\"), \"index\", parameters};";
+"  return {$lookup(\"home_controller\"), \"home\", parameters};";
 "elseif (length(path) == 2 && path[1] == \"objects\" && method == \"get\")";
 "  return {$lookup(\"home_controller\"), \"browse\", parameters:merge([\"id\" -> path[2]])};";
 "elseif (path == {\"session\", \"create\"} && method == \"post\")";
@@ -20480,8 +26667,12 @@ return;
 "chunk_length:23";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Sat Apr 28 16:08:08 2012 EDT";
+"updated_at:Wed May  2 07:33:23 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
+.
+#78:0
+$restrict_to_caller($system, "server_started");
+$lookup("server"):start(8888);
 .
 0 clocks
 0 queued tasks
