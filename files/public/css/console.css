@@ -1,0 +1,21 @@
+.console {
+  word-wrap: break-word;
+}
+.console .jquery-console-inner {
+  font-family: monospace;
+  background: #222;
+  padding: 0.5em;
+  overflow: auto;
+}
+.console .jquery-console-prompt-box {
+  font-family: monospace;
+  color: #fff;
+}
+.console .jquery-console-focus .jquery-console-cursor {
+  font-weight: bold;
+  background: #fefefe;
+  color: #222;
+}
+.console .jquery-console-message {
+  color: #ddd;
+}
