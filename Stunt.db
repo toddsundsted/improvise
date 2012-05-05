@@ -117,7 +117,7 @@ last_login_connection
 welcome_message
 dialog
 mustache
-player
+alt
 27
 1
 0
@@ -962,6 +962,16 @@ archive_base_uri
 10
 9
 2
+alt
+10
+1
+2
+0.0.1
+4
+1
+1
+62
+2
 application
 10
 1
@@ -1031,16 +1041,6 @@ persistent
 1
 1
 35
-2
-player
-10
-1
-2
-0.0.1
-4
-1
-1
-62
 2
 primitive
 10
@@ -1116,7 +1116,7 @@ primitive
 2
 0
 0
-1336184758
+1336185975
 2
 0
 10
@@ -22970,7 +22970,7 @@ hashed_password
 58
 4
 #62
-Player Package
+Alt, Player Package
 0
 62
 1
@@ -23008,7 +23008,7 @@ homepage
 license
 11
 2
-player
+alt
 62
 1
 2
@@ -23094,7 +23094,7 @@ install-namespace
 62
 1
 2
-The Player Package contains the basic player hierarchy and defines a basic set of VR verbs.
+The Alt Package contains the basic player hierarchy and defines a basic set of VR verbs.
 62
 1
 4
@@ -23104,7 +23104,7 @@ Todd Sundsted
 62
 1
 2
-http://stunt.io/packages/player
+http://stunt.io/packages/alt
 62
 1
 2
