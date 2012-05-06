@@ -190,7 +190,7 @@ Socket.prototype = {
 	 * Called when the flash socket has received data
 	 */
 	receive: function(data) {
-		this.events.receive.trigger([data]);
+		this.events.receive.trigger([unescape(data)]);
 	},
 	/**
 	 * Called when the flash socket encounters a securityError
