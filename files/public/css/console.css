@@ -1,5 +1,6 @@
 .console {
   word-wrap: break-word;
+  white-space: pre-wrap;
 }
 .console .jquery-console-inner {
   font-family: monospace;
