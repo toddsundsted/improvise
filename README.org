@@ -78,15 +78,15 @@
    - kernel, 1.0.7 (#2) Kernel Package
    - primitive, 0.0.2 (#20) Primitive Package
    - persistent, 0.0.1 (#35) Persistent Package
-   - dialog, 0.0.3 (#39) Dialog, Web Server Package
-   - dialog_extras, 0.0.2 (#49) Dialog, Extras
+   - dialog, 0.0.4 (#39) Dialog, Web Server Package
+   - dialog_extras, 0.0.3 (#49) Dialog, Extras
    - mustache, 0.0.1 (#54) Mustache Templating Language Package
    - identity, 0.0.1 (#58) Identity Package
-   - player, 0.0.1 (#62) Player Package
+   - alt, 0.0.1 (#62) Alt, Player Package
 
    And a starter package:
 
-   - application, 0.0.2 (#69) Application Package
+   - application, 0.0.6 (#69) Application Package
 
    Other packages [[http://stunt.io/][are available]].  The entirety of LambdaCore is
    available [[http://stunt.io/dated/hoisting-lambdacore][as a package]] if you want something a little more familiar
