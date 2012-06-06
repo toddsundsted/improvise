@@ -160,7 +160,7 @@ application/x-mustache
 2
 1
 1
--709
+-3
 2
 1
 2
@@ -334,7 +334,7 @@ kernel
 2
 1
 2
-1.0.7
+1.0.8
 2
 1
 4
@@ -536,9 +536,9 @@ Object
 1
 66
 1
-5
-1
 6
+1
+5
 0
 1
 aliases
@@ -574,7 +574,7 @@ huh
 passkey
 2
 2
-0F31D3D5C120F04B9177D01D8A152C09DDFFBCF2007099206DDC61A5CFBE02CF
+19C47609AD10F340445C00318AADB1F7458CFCE81834292BE6FFDB2207658D04
 5
 0
 5
@@ -599,7 +599,7 @@ Programmer
 passkey
 2
 2
-7390C633D590201FCC78386186675AE4FD1077379D2F8DF458086D409FE52139
+1D7DBA32DB56EC3CA328E47FF632F0110EEC86BDCF74883766C07C2EF7DBB644
 5
 0
 5
@@ -1016,7 +1016,7 @@ kernel
 10
 1
 2
-1.0.7
+1.0.8
 4
 1
 1
@@ -1082,7 +1082,7 @@ kernel
 10
 1
 2
-1.0.7
+1.0.8
 4
 7
 1
@@ -31794,12 +31794,12 @@ return package;
 #9:37
 $permit("wizard");
 `{pathname, ?options = []} = args ! E_ARGS => raise(E_ARGS, "Incorrect number of arguments:  pathname, ?options")';
-fh = 0;
+fh = -1;
 try
 fh = file_open(pathname, "r-tn");
 package = parse_json(file_readline(fh), "embedded-types");
 finally
-fh && file_close(fh);
+(fh > -1) && file_close(fh);
 endtry
 try
 package = this:import(package);
@@ -31812,12 +31812,12 @@ return;
 "";
 "`{pathname, ?options = []} = args ! E_ARGS => raise(E_ARGS, \"Incorrect number of arguments:  pathname, ?options\")';";
 "";
-"fh = 0;";
+"fh = -1;";
 "try";
 "  fh = file_open(pathname, \"r-tn\");";
 "  package = parse_json(file_readline(fh), \"embedded-types\");";
 "finally";
-"  fh && file_close(fh);";
+"  (fh > -1) && file_close(fh);";
 "endtry";
 "";
 "try";
@@ -31831,7 +31831,7 @@ return;
 "chunk_length:19";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 07:05:57 2012 EST";
+"updated_at:Wed Jun  6 14:00:43 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #9:38
@@ -31839,12 +31839,12 @@ $permit("wizard");
 `{identifier, version, pathname, ?options = []} = args ! E_ARGS => raise(E_ARGS, "Incorrect number of arguments:  identifier, version, pathname, ?options")';
 package = this:_match(identifier, version)[1];
 package = this:export(package, options);
-fh = 0;
+fh = -1;
 try
 fh = file_open(pathname, "w-tn");
 file_writeline(fh, generate_json(package, "embedded-types"));
 finally
-fh && file_close(fh);
+(fh > -1) && file_close(fh);
 endtry
 return package;
 return;
@@ -31856,12 +31856,12 @@ return;
 "";
 "package = this:export(package, options);";
 "";
-"fh = 0;";
+"fh = -1;";
 "try";
 "  fh = file_open(pathname, \"w-tn\");";
 "  file_writeline(fh, generate_json(package, \"embedded-types\"));";
 "finally";
-"  fh && file_close(fh);";
+"  (fh > -1) && file_close(fh);";
 "endtry";
 "";
 "return package;";
@@ -31869,7 +31869,7 @@ return;
 "chunk_length:17";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"updated_at:Wed Feb 22 07:05:57 2012 EST";
+"updated_at:Wed Jun  6 14:00:43 2012 EDT";
 "-=-=-mxyzptlk-=-=-";
 .
 #9:39
