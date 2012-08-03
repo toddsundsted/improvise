@@ -75,18 +75,21 @@
    The Improvise core database comes with the following library
    packages already installed:
 
-   - kernel, 1.0.7 (#2) Kernel Package
-   - primitive, 0.0.2 (#20) Primitive Package
-   - persistent, 0.0.1 (#35) Persistent Package
-   - dialog, 0.0.4 (#39) Dialog, Web Server Package
-   - dialog_extras, 0.0.3 (#49) Dialog, Extras
-   - mustache, 0.0.1 (#54) Mustache Templating Language Package
-   - identity, 0.0.1 (#58) Identity Package
-   - alt, 0.0.1 (#62) Alt, Player Package
+   - kernel, 1.1.0 (#2) Kernel Package
+   - primitive, 0.0.2 (#11) Primitive Package
+   - text_tools, 0.0.1 (#26) Text Tools
+   - ask, 0.0.1 (#29) Ask, Query Package
+   - model, 0.0.1 (#33) Model Package
+   - persistent, 0.0.2 (#43) Persistent Package
+   - dialog, 0.0.5 (#47) Dialog, Web Server Package
+   - dialog_extras, 0.0.4 (#57) Dialog, Extras
+   - mustache, 1.0.0 (#63) Mustache Templating Language Package
+   - identity, 0.0.2 (#67) Identity Package
+   - alt, 0.0.2 (#73) Alt, Player Package
 
    And a starter package:
 
-   - application, 0.0.6 (#69) Application Package
+   - application, 0.0.7 (#80) Application Package
 
    Other packages [[http://stunt.io/][are available]].  The entirety of LambdaCore is
    available [[http://stunt.io/dated/hoisting-lambdacore][as a package]] if you want something a little more familiar
@@ -172,15 +175,15 @@
    the following as a wizardly player:
 
    #+BEGIN_EXAMPLE
-   ; #73:start(<port>)
+   ; #83:start(<port>)
    #+END_EXAMPLE
 
-   ~#73~ is the object number of the HTTP server object built from the
+   ~#83~ is the object number of the HTTP server object built from the
    HTTP server prototype and a few objects from the "dialog_extras"
    package.  Stop the server with:
 
    #+BEGIN_EXAMPLE
-   ; #73:stop()
+   ; #83:stop()
    #+END_EXAMPLE
 
    Test the server by opening ~http://localhost:<port>/~ in a browser.
