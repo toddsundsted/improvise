@@ -1,10 +1,14 @@
-** LambdaMOO Database, Format Version 12 **
-90
-297
-0
+** LambdaMOO Database, Format Version 13 **
 2
 5
 6
+0 values pending finalization
+0 clocks
+0 queued tasks
+0 suspended tasks
+0 interrupted tasks
+0 active connections with listeners
+121
 #0
 System
 16
@@ -20,13 +24,13 @@ System
 1
 12
 1
-31
+62
 1
-45
+76
 1
-69
+100
 1
-82
+113
 4
 0
 22
@@ -47,11 +51,11 @@ authenticate
 172
 -1
 private
-2
+5
 172
 -1
 protected
-2
+5
 172
 -1
 restrict_to_server
@@ -67,7 +71,7 @@ restrict_to_caller
 172
 -1
 permit
-2
+5
 172
 -1
 check_create_permission
@@ -118,7 +122,7 @@ lookup*_reference
 5
 172
 -1
-14
+15
 system
 server_options
 nothing
@@ -129,11 +133,12 @@ disable_passkey_login
 external_compilers
 last_login_connection
 welcome_message
+plastic
 model
 dialog
 mustache
 alt
-31
+32
 1
 0
 2
@@ -171,7 +176,7 @@ alt
 2
 application/x-mustache
 1
-66
+97
 2
 1
 1
@@ -183,20 +188,24 @@ Welcome to Stunt!  For information about Stunt, check out http://stunt.io/.  To 
 2
 1
 1
-34
-33
-1
-1
-49
-47
+28
+26
 1
 1
 65
-63
+64
 1
 1
-75
-73
+80
+78
+1
+1
+96
+94
+1
+1
+106
+104
 1
 5
 2
@@ -233,30 +242,30 @@ Welcome to Stunt!  For information about Stunt, check out http://stunt.io/.  To 
 1
 22
 1
-32
+63
 1
-52
+83
 1
-53
+84
 11
 1
 5
 11
 1
 5
-29
+60
 1
 5
-29
+60
 1
 5
-43
+74
 1
 5
-67
+98
 1
 5
-67
+98
 1
 #1
 Server Options
@@ -360,7 +369,7 @@ kernel
 2
 1
 2
-1.1.0
+1.1.1
 2
 1
 4
@@ -529,7 +538,7 @@ Object
 1
 -1
 4
-16
+18
 1
 8
 1
@@ -537,31 +546,35 @@ Object
 1
 7
 1
-28
+30
 1
-36
+31
 1
-37
+59
 1
-46
+67
 1
-50
-1
-51
-1
-54
-1
-61
-1
-62
-1
-66
-1
-70
-1
-71
+68
 1
 77
+1
+81
+1
+82
+1
+85
+1
+92
+1
+93
+1
+97
+1
+101
+1
+102
+1
+108
 0
 1
 aliases
@@ -581,7 +594,7 @@ Wizard
 4
 1
 1
-79
+110
 4
 0
 2
@@ -595,11 +608,14 @@ huh
 -1
 1
 passkey
-2
-2
-648CE412086DB2992D8CD97CBD8F71ED1363EA67157E0138A9ED9D6A1D85EFBC
+3
+0
+0
 5
 0
+5
+5
+4
 5
 5
 4
@@ -614,17 +630,20 @@ Programmer
 4
 1
 1
-78
+109
 4
 0
 0
 1
 passkey
-2
-2
-1303B19B501D05DDF019D058A8DBEE57A343568268F74A66F0C7C3E9E729C6D8
+3
+0
+0
 5
 0
+5
+6
+4
 5
 6
 4
@@ -969,7 +988,7 @@ archive_port
 archive_base_uri
 10
 4
-12
+13
 1
 2
 1
@@ -977,37 +996,39 @@ archive_base_uri
 1
 26
 1
-29
-1
-33
-1
-43
-1
-47
-1
 57
 1
-63
+60
 1
-67
+64
 1
-73
+74
 1
-80
+78
+1
+88
+1
+94
+1
+98
+1
+104
+1
+111
 2
 0
 10
-12
+13
 2
 alt
 10
 1
 2
-0.0.2
+0.0.3
 4
 1
 1
-73
+104
 2
 application
 10
@@ -1017,7 +1038,7 @@ application
 4
 1
 1
-80
+111
 2
 ask
 10
@@ -1027,7 +1048,7 @@ ask
 4
 1
 1
-29
+60
 2
 dialog
 10
@@ -1037,7 +1058,7 @@ dialog
 4
 1
 1
-47
+78
 2
 dialog_extras
 10
@@ -1047,7 +1068,7 @@ dialog_extras
 4
 1
 1
-57
+88
 2
 identity
 10
@@ -1057,13 +1078,13 @@ identity
 4
 1
 1
-67
+98
 2
 kernel
 10
 1
 2
-1.1.0
+1.1.1
 4
 1
 1
@@ -1077,17 +1098,17 @@ model
 4
 1
 1
-33
+64
 2
 mustache
 10
 1
 2
-1.0.0
+1.0.1
 4
 1
 1
-63
+94
 2
 persistent
 10
@@ -1097,7 +1118,17 @@ persistent
 4
 1
 1
-43
+74
+2
+plastic
+10
+1
+2
+0.0.1
+4
+1
+1
+26
 2
 primitive
 10
@@ -1117,11 +1148,11 @@ text_tools
 4
 1
 1
-26
+57
 2
 0
 10
-6
+7
 2
 ask
 10
@@ -1131,7 +1162,7 @@ ask
 4
 1
 1
-33
+64
 2
 dialog
 10
@@ -1141,9 +1172,9 @@ dialog
 4
 2
 1
-57
+88
 1
-80
+111
 2
 dialog_extras
 10
@@ -1153,35 +1184,47 @@ dialog_extras
 4
 1
 1
-80
+111
 2
 kernel
 10
 1
 2
-1.1.0
+1.1.1
 4
-10
+11
 1
 11
 1
 26
 1
-29
-1
-33
-1
-43
-1
-47
-1
 57
 1
-63
+60
 1
-67
+64
 1
-73
+74
+1
+78
+1
+88
+1
+94
+1
+98
+1
+104
+2
+plastic
+10
+1
+2
+0.0.1
+4
+1
+1
+104
 2
 primitive
 10
@@ -1189,19 +1232,21 @@ primitive
 2
 0.0.2
 4
-6
+7
 1
 26
 1
-29
-1
-47
-1
 57
 1
-63
+60
 1
-73
+78
+1
+88
+1
+94
+1
+104
 2
 text_tools
 10
@@ -1211,15 +1256,499 @@ text_tools
 4
 1
 1
-73
+104
 2
 0
 0
-1343995416
+1355749135
 2
 0
 10
-0
+35
+2
+aloha
+10
+2
+2
+0.0.1
+2
+packages/4d0gc3mrdv.json
+2
+0.0.2
+2
+packages/83rpjnd7ng.json
+2
+alt
+10
+3
+2
+0.0.1
+2
+packages/alt_0_0_1.json
+2
+0.0.2
+2
+packages/alt_0_0_2.json
+2
+0.0.3
+2
+packages/alt_0.0.3.json
+2
+ask
+10
+1
+2
+0.0.1
+2
+packages/ask_0_0_1.json
+2
+ask_tests
+10
+1
+2
+0.0.1
+2
+packages/ask_tests_0_0_1.json
+2
+autoport
+10
+3
+2
+0.0.1
+2
+packages/dc2brcceev.json
+2
+0.0.2
+2
+packages/jfyf7t2wlf.json
+2
+0.0.3
+2
+packages/fd5jpcg8w7.json
+2
+bad
+10
+1
+2
+1.2.3
+2
+packages/bad.json
+2
+checkpointer
+10
+5
+2
+0.0.1
+2
+packages/lhr8cbgcr7.json
+2
+0.0.2
+2
+packages/ss1vlqdq1g.json
+2
+0.0.3
+2
+packages/o3dfn0dr7a.json
+2
+0.0.4
+2
+packages/lvid3c7ygf.json
+2
+0.0.5
+2
+packages/xuwxcs9icv.json
+2
+core
+10
+3
+2
+1.0.3
+2
+packages/edw48mlmar.json
+2
+1.0.4
+2
+packages/tvghx595ft.json
+2
+1.0.5
+2
+packages/nuc67gn3gu.json
+2
+core_tests
+10
+4
+2
+1.0.1
+2
+packages/t8qkzgowjr.json
+2
+1.0.2
+2
+packages/ra07w4xpvv.json
+2
+1.0.3
+2
+packages/56i6p1b5xu.json
+2
+1.0.4
+2
+packages/cijzlno0id.json
+2
+dialog
+10
+4
+2
+0.0.1
+2
+packages/dialog_0_0_1.json
+2
+0.0.3
+2
+packages/dialog_0_0_3.json
+2
+0.0.4
+2
+packages/dialog_0_0_4.json
+2
+0.0.5
+2
+packages/dialog_0_0_5.json
+2
+dialog_extras
+10
+4
+2
+0.0.1
+2
+packages/dialog_extras_0_0_1.json
+2
+0.0.2
+2
+packages/dialog_extras_0_0_2.json
+2
+0.0.3
+2
+packages/dialog_extras_0.0.3.json
+2
+0.0.4
+2
+packages/dialog_extras_0_0_4.json
+2
+dialog_tests
+10
+1
+2
+0.0.1
+2
+packages/dialog_tests_0.0.1.json
+2
+foobar
+10
+3
+2
+1.2.3
+2
+packages/foobar1.json
+2
+2.3.4
+2
+packages/foobar2.json
+2
+3.4.5
+2
+packages/foobar3.json
+2
+identity
+10
+2
+2
+0.0.1
+2
+packages/identity_0_0_1.json
+2
+0.0.2
+2
+packages/identity_0_0_2.json
+2
+kernel
+10
+8
+2
+1.0.3
+2
+packages/z8ztq1w6t5.json
+2
+1.0.4
+2
+packages/ok94lc4g38.json
+2
+1.0.5
+2
+packages/nodlg69qcb.json
+2
+1.0.6
+2
+packages/kernel_1_0_6.json
+2
+1.0.7
+2
+packages/kernel_1_0_7.json
+2
+1.0.8
+2
+packages/kernel_1_0_8.json
+2
+1.1.0
+2
+packages/kernel_1_1_0.json
+2
+1.1.1
+2
+packages/kernel_1.1.1.json
+2
+kernel_tests
+10
+4
+2
+1.0.6
+2
+packages/uxbi9txvay.json
+2
+1.0.7
+2
+packages/c7knvmn231.json
+2
+1.0.8
+2
+packages/ylkxeegnke.json
+2
+1.0.9
+2
+packages/kernel_tests_1_0_9.json
+2
+lambdacore
+10
+5
+2
+0.0.1
+2
+packages/rg8dm92s7y.json
+2
+0.0.2
+2
+packages/kdklzgfe1a.json
+2
+0.0.3
+2
+packages/nvnt0s221h.json
+2
+0.0.4
+2
+packages/2u1e6sdlih.json
+2
+0.0.5
+2
+packages/lambdacore_0_0_5.json
+2
+martian
+10
+1
+2
+0.0.1
+2
+packages/0bd9syaqvj.json
+2
+model
+10
+1
+2
+0.0.1
+2
+packages/model_0_0_1.json
+2
+model_tests
+10
+1
+2
+0.0.1
+2
+packages/model_tests_0_0_1.json
+2
+mustache
+10
+3
+2
+0.0.1
+2
+packages/mustache_0_0_1.json
+2
+1.0.0
+2
+packages/mustache_1_0_0.json
+2
+1.0.1
+2
+packages/mustache_1.0.1.json
+2
+mustache_tests
+10
+3
+2
+0.0.1
+2
+packages/mustache_tests_0_0_1.json
+2
+1.0.0
+2
+packages/mustache_tests_1_0_0.json
+2
+1.0.1
+2
+packages/mustache_tests_1.0.1.json
+2
+mysqlfrob
+10
+2
+2
+0.0.0
+2
+packages/mysqlfrob_0_0_0.json
+2
+0.0.1
+2
+packages/mysqlfrob_0_0_1.json
+2
+no_description
+10
+1
+2
+1.2.3
+2
+packages/no_description.json
+2
+persistent
+10
+2
+2
+0.0.1
+2
+packages/persistent_0_0_1.json
+2
+0.0.2
+2
+packages/persistent_0_0_2.json
+2
+plastic
+10
+2
+2
+0.0.0
+2
+packages/plastic_0_0_0.json
+2
+0.0.1
+2
+packages/plastic_0.0.1.json
+2
+plastic_tests
+10
+1
+2
+0.0.1
+2
+packages/plastic_tests_0.0.1.json
+2
+primitive
+10
+3
+2
+0.0.0
+2
+packages/primitive_0_0_0.json
+2
+0.0.1
+2
+packages/primitive_0_0_1.json
+2
+0.0.2
+2
+packages/primitive_0_0_2.json
+2
+primitive_tests
+10
+2
+2
+0.0.1
+2
+packages/primitive_tests_0_0_1.json
+2
+0.0.2
+2
+packages/primitive_tests_0_0_2.json
+2
+text_tools
+10
+1
+2
+0.0.1
+2
+packages/text_tools_0_0_1.json
+2
+text_tools_tests
+10
+1
+2
+0.0.1
+2
+packages/text_tools_tests_0_0_1.json
+2
+unit
+10
+4
+2
+1.0.2
+2
+packages/4thastwvyi.json
+2
+1.0.3
+2
+packages/el0h73p9zb.json
+2
+1.0.4
+2
+packages/unit_1_0_4.json
+2
+1.0.5
+2
+packages/unit_1_0_5.json
+2
+unit_test
+10
+1
+2
+1.0.1
+2
+packages/gb4sstekz2.json
+2
+wearable_app
+10
+2
+2
+0.0.1
+2
+packages/wearable_app_0_0_1.json
+2
+0.0.2
+2
+packages/wearable_app_0_0_2.json
+2
+wizard
+10
+1
+2
+0.0.0
+2
+packages/wizard.json
 2
 0
 10
@@ -1258,7 +1787,7 @@ log
 2
 172
 -1
-51
+54
 1311681611
 1311705199
 1313452513
@@ -1310,7 +1839,10 @@ log
 1341319605
 1341918651
 1341919633
-51
+1352859577
+1354716719
+1355401890
+54
 2
 Added code to disable login by passkey players.
 2
@@ -1513,6 +2045,18 @@ Handle errors fetching from the archive better.
 1
 2
 Lookup objects in an object's package even if the specified is explicit.
+2
+1
+2
+Give `$protected()' and `$private()' wiz-perms so that they can inspect anonymous objects.
+2
+1
+2
+Give `$permit()' wiz-perms so that it can inspect anonymous objects.
+2
+1
+2
+Changed the requirement for compiler output in `set_verb_code()'.
 2
 1
 #11
@@ -2218,17 +2762,2480 @@ Updated verbs to use the new for loop syntax.
 11
 1
 #26
-Text Tools
+Plastic, MOOcode Parser Toolkit Package
 0
 26
 1
 -1
 4
-2
+30
 1
 27
 1
 28
+1
+29
+1
+30
+1
+31
+1
+32
+1
+33
+1
+34
+1
+35
+1
+36
+1
+37
+1
+38
+1
+39
+1
+40
+1
+41
+1
+42
+1
+43
+1
+44
+1
+45
+1
+46
+1
+47
+1
+48
+1
+49
+1
+50
+1
+51
+1
+52
+1
+53
+1
+54
+1
+55
+1
+56
+1
+-1
+4
+0
+0
+11
+identifier
+version
+manifest
+relocate
+requires
+provides
+instructions
+description
+authors
+homepage
+license
+11
+2
+plastic
+26
+1
+2
+0.0.1
+26
+1
+4
+31
+4
+2
+1
+26
+2
+package
+4
+2
+1
+27
+2
+changelog
+4
+2
+1
+28
+2
+dictionary
+4
+2
+1
+29
+2
+utilities
+4
+2
+1
+30
+2
+compiler
+4
+2
+1
+31
+2
+printer
+4
+2
+1
+32
+2
+tokenizer_proto
+4
+2
+1
+33
+2
+parser_proto
+4
+2
+1
+34
+2
+symbol_proto
+4
+2
+1
+35
+2
+literal_proto
+4
+2
+1
+37
+2
+statement_proto
+4
+2
+1
+38
+2
+operator_proto
+4
+2
+1
+39
+2
+control_flow_statement_proto
+4
+2
+1
+41
+2
+assignment_operator_proto
+4
+2
+1
+42
+2
+prefix_operator_proto
+4
+2
+1
+40
+2
+infix_operator_proto
+4
+2
+1
+36
+2
+name_proto
+4
+2
+1
+43
+2
+bracket_operator_proto
+4
+2
+1
+44
+2
+brace_operator_proto
+4
+2
+1
+45
+2
+if_statement_proto
+4
+2
+1
+46
+2
+invocation_operator_proto
+4
+2
+1
+47
+2
+verb_selector_operator_proto
+4
+2
+1
+48
+2
+property_selector_operator_proto
+4
+2
+1
+49
+2
+error_catching_operator_proto
+4
+2
+1
+50
+2
+traditional_ternary_operator_proto
+4
+2
+1
+51
+2
+for_statement_proto
+4
+2
+1
+52
+2
+loop_statement_proto
+4
+2
+1
+53
+2
+fork_statement_proto
+4
+2
+1
+54
+2
+try_statement_proto
+4
+2
+1
+55
+2
+positional_symbol_proto
+4
+2
+1
+56
+2
+sign_operator_proto
+26
+1
+4
+34
+2
+dictionary.utilities
+2
+dictionary.compiler
+2
+dictionary.printer
+2
+dictionary.tokenizer_proto
+2
+dictionary.parser_proto
+2
+dictionary.symbol_proto
+2
+dictionary.literal_proto
+2
+dictionary.statement_proto
+2
+dictionary.operator_proto
+2
+dictionary.control_flow_statement_proto
+2
+dictionary.assignment_operator_proto
+2
+dictionary.prefix_operator_proto
+2
+dictionary.infix_operator_proto
+2
+dictionary.name_proto
+2
+dictionary.bracket_operator_proto
+2
+dictionary.brace_operator_proto
+2
+dictionary.if_statement_proto
+2
+dictionary.invocation_operator_proto
+2
+dictionary.verb_selector_operator_proto
+2
+dictionary.property_selector_operator_proto
+2
+dictionary.error_catching_operator_proto
+2
+dictionary.traditional_ternary_operator_proto
+2
+dictionary.for_statement_proto
+2
+dictionary.loop_statement_proto
+2
+dictionary.fork_statement_proto
+2
+dictionary.try_statement_proto
+2
+dictionary.positional_symbol_proto
+2
+dictionary.sign_operator_proto
+2
+utilities.plastic
+2
+compiler.plastic
+2
+printer.plastic
+2
+tokenizer_proto.plastic
+2
+parser_proto.plastic
+2
+symbol_proto.plastic
+26
+1
+4
+2
+4
+2
+2
+kernel
+2
+>= 1.1.1
+4
+2
+2
+primitive
+2
+>= 0.0.2
+26
+1
+4
+0
+26
+1
+4
+1
+2
+install-namespace
+26
+1
+2
+Plastic is the MOOcode parser toolkit.  It comprises an extended MOOcode language parser and compiler, and is compatible with the Stunt verb language extension mechanism.
+26
+1
+4
+1
+2
+Todd Sundsted
+26
+1
+2
+http://stunt.io/packages/plastic
+26
+1
+2
+FreeBSD License
+26
+1
+#27
+Changelog
+0
+26
+1
+26
+4
+0
+1
+-1
+4
+0
+0
+4
+1331063405
+1354983225
+1355404149
+1355712101
+4
+2
+Initial revision.
+26
+1
+2
+First-cut at migration from frobs to anonymous objects.
+26
+1
+2
+The first-cut is complete.
+26
+1
+2
+Added rudimentary traversal support.
+26
+1
+#28
+Dictionary
+0
+26
+1
+26
+4
+0
+1
+-1
+4
+0
+0
+28
+utilities
+tokenizer_proto
+parser_proto
+symbol_proto
+literal_proto
+statement_proto
+operator_proto
+control_flow_statement_proto
+assignment_operator_proto
+prefix_operator_proto
+infix_operator_proto
+name_proto
+bracket_operator_proto
+brace_operator_proto
+if_statement_proto
+invocation_operator_proto
+verb_selector_operator_proto
+property_selector_operator_proto
+error_catching_operator_proto
+traditional_ternary_operator_proto
+for_statement_proto
+loop_statement_proto
+positional_symbol_proto
+fork_statement_proto
+try_statement_proto
+sign_operator_proto
+compiler
+printer
+28
+1
+29
+26
+1
+1
+32
+26
+1
+1
+33
+26
+1
+1
+34
+26
+1
+1
+35
+26
+1
+1
+37
+26
+1
+1
+38
+26
+1
+1
+39
+26
+1
+1
+41
+26
+1
+1
+42
+26
+1
+1
+40
+26
+1
+1
+36
+26
+1
+1
+43
+26
+1
+1
+44
+26
+1
+1
+45
+26
+1
+1
+46
+26
+1
+1
+47
+26
+1
+1
+48
+26
+1
+1
+49
+26
+1
+1
+50
+26
+1
+1
+51
+26
+1
+1
+52
+26
+1
+1
+55
+26
+1
+1
+53
+26
+1
+1
+54
+26
+1
+1
+56
+26
+1
+1
+30
+26
+1
+1
+31
+26
+1
+#29
+Plastic Utilities
+0
+26
+1
+26
+4
+0
+1
+-1
+4
+0
+5
+parse_map_sequence
+26
+172
+-1
+parse_list_sequence
+26
+172
+-1
+validate_scattering_pattern
+26
+172
+-1
+children
+26
+172
+-1
+match
+26
+172
+-1
+1
+plastic
+1
+1
+28
+26
+0
+#30
+MOOcode Compiler
+0
+26
+1
+26
+4
+0
+4
+1
+1
+4
+4
+0
+1
+compile c
+26
+172
+-1
+1
+plastic
+2
+1
+28
+26
+0
+5
+26
+4
+#31
+Syntax Tree Pretty Printer
+0
+26
+1
+26
+4
+0
+4
+1
+1
+4
+4
+0
+2
+_print
+26
+172
+-1
+print p
+26
+172
+-1
+1
+plastic
+2
+1
+28
+26
+0
+5
+26
+4
+#32
+Tokenizer Prototype
+0
+26
+1
+26
+4
+0
+1
+-1
+4
+0
+4
+_ensure_instance
+26
+172
+-1
+create
+26
+172
+-1
+advance
+26
+172
+-1
+token
+26
+172
+-1
+6
+plastic
+errors
+row
+column
+source
+token
+6
+1
+28
+26
+0
+10
+19
+2
+E_ARGS
+3
+11
+2
+E_DIV
+3
+2
+2
+E_EXEC
+3
+17
+2
+E_FILE
+3
+16
+2
+E_FLOAT
+3
+15
+2
+E_INTRPT
+3
+18
+2
+E_INVARG
+3
+13
+2
+E_INVIND
+3
+7
+2
+E_MAXREC
+3
+9
+2
+E_NACC
+3
+12
+2
+E_NONE
+3
+0
+2
+E_PERM
+3
+3
+2
+E_PROPNF
+3
+4
+2
+E_QUOTA
+3
+14
+2
+E_RANGE
+3
+10
+2
+E_RECMOVE
+3
+8
+2
+E_TYPE
+3
+1
+2
+E_VARNF
+3
+6
+2
+E_VERBNF
+3
+5
+26
+0
+0
+1
+26
+1
+0
+1
+26
+1
+4
+0
+26
+0
+10
+0
+26
+0
+#33
+Parser Prototype
+0
+26
+1
+26
+4
+0
+1
+-1
+4
+0
+13
+_ensure_instance
+26
+172
+-1
+create
+26
+172
+-1
+symbol
+26
+172
+-1
+reserve_statement reserve_keyword
+26
+172
+-1
+make_identifier make_variable
+26
+172
+-1
+token
+26
+172
+-1
+advance
+26
+172
+-1
+expression
+26
+172
+-1
+statement
+26
+172
+-1
+statements
+26
+172
+-1
+variables
+26
+172
+-1
+push
+26
+172
+-1
+pop
+26
+172
+-1
+6
+plastic
+tokenizer
+symbols
+token
+loop_variables
+loop_depth
+6
+1
+28
+26
+0
+1
+-1
+26
+0
+10
+0
+26
+1
+0
+0
+26
+1
+4
+0
+26
+0
+0
+0
+26
+0
+#34
+Symbol Prototype
+0
+26
+1
+26
+4
+0
+1
+-1
+4
+6
+1
+35
+1
+36
+1
+38
+1
+43
+1
+44
+1
+55
+5
+create
+26
+172
+-1
+clone
+26
+172
+-1
+nud
+26
+172
+-1
+led
+26
+172
+-1
+p
+26
+172
+-1
+9
+plastic
+id
+value
+bp
+type
+reserved
+eol
+row
+column
+9
+1
+28
+26
+0
+0
+0
+26
+1
+0
+0
+26
+1
+0
+0
+26
+1
+0
+0
+26
+1
+0
+0
+26
+1
+0
+0
+26
+1
+0
+0
+26
+1
+0
+0
+26
+1
+#35
+Literal Prototype
+0
+26
+1
+26
+4
+0
+4
+1
+1
+34
+4
+0
+2
+nud
+26
+172
+-1
+p
+26
+172
+-1
+0
+9
+5
+26
+0
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+#36
+Name Prototype
+0
+26
+1
+26
+4
+0
+4
+1
+1
+34
+4
+1
+1
+37
+2
+nud
+26
+172
+-1
+p
+26
+172
+-1
+2
+reserved_names
+builtin_names
+11
+4
+19
+2
+if
+2
+else
+2
+elseif
+2
+endif
+2
+for
+2
+in
+2
+endfor
+2
+fork
+2
+endfork
+2
+return
+2
+while
+2
+endwhile
+2
+try
+2
+except
+2
+finally
+2
+endtry
+2
+ANY
+2
+break
+2
+continue
+26
+0
+4
+20
+2
+player
+2
+this
+2
+caller
+2
+verb
+2
+argstr
+2
+args
+2
+dobjstr
+2
+dobj
+2
+prepstr
+2
+iobjstr
+2
+iobj
+2
+err
+2
+num
+2
+int
+2
+float
+2
+str
+2
+obj
+2
+list
+2
+map
+2
+anon
+26
+0
+5
+26
+0
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+#37
+Statement Prototype
+0
+26
+1
+26
+4
+0
+4
+1
+1
+36
+4
+6
+1
+39
+1
+45
+1
+51
+1
+52
+1
+53
+1
+54
+1
+std
+26
+172
+-1
+0
+11
+5
+26
+0
+5
+26
+0
+5
+26
+0
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+#38
+Operator Prototype
+0
+26
+1
+26
+4
+0
+4
+1
+1
+34
+4
+8
+1
+40
+1
+42
+1
+46
+1
+47
+1
+48
+1
+49
+1
+50
+1
+56
+0
+0
+9
+5
+26
+0
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+#39
+Control Flow Statement Prototype
+0
+26
+1
+26
+4
+0
+4
+1
+1
+37
+4
+0
+2
+std
+26
+172
+-1
+p
+26
+172
+-1
+1
+first
+12
+0
+0
+26
+1
+5
+26
+0
+5
+26
+0
+5
+26
+0
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+#40
+Infix Operator Prototype
+0
+26
+1
+26
+4
+0
+4
+1
+1
+38
+4
+1
+1
+41
+2
+led
+26
+172
+-1
+p
+26
+172
+-1
+3
+right
+first
+second
+12
+0
+0
+26
+1
+0
+0
+26
+1
+0
+0
+26
+1
+5
+26
+0
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+#41
+Assignment Operator Prototype
+0
+26
+1
+26
+4
+0
+4
+1
+1
+40
+4
+0
+2
+led
+26
+172
+-1
+p
+26
+172
+-1
+0
+12
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+0
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+#42
+Prefix Operator Prototype
+0
+26
+1
+26
+4
+0
+4
+1
+1
+38
+4
+0
+2
+nud
+26
+172
+-1
+p
+26
+172
+-1
+1
+first
+10
+0
+0
+26
+1
+5
+26
+0
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+#43
+Bracket Operator Prototype
+0
+26
+1
+26
+4
+0
+4
+1
+1
+34
+4
+0
+3
+nud
+26
+172
+-1
+led
+26
+172
+-1
+p
+26
+172
+-1
+3
+first
+second
+third
+12
+0
+0
+26
+1
+0
+0
+26
+1
+0
+0
+26
+1
+5
+26
+0
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+#44
+Brace Operator Prototype
+0
+26
+1
+26
+4
+0
+4
+1
+1
+34
+4
+0
+2
+nud
+26
+172
+-1
+p
+26
+172
+-1
+1
+first
+10
+0
+0
+26
+1
+5
+26
+0
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+#45
+If Statement Prototype
+0
+26
+1
+26
+4
+0
+4
+1
+1
+37
+4
+0
+2
+std
+26
+172
+-1
+p
+26
+172
+-1
+0
+11
+5
+26
+0
+5
+26
+0
+5
+26
+0
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+#46
+Invocation Operator
+0
+26
+1
+26
+4
+0
+4
+1
+1
+38
+4
+0
+3
+nud
+26
+172
+-1
+led
+26
+172
+-1
+p
+26
+172
+-1
+3
+first
+second
+third
+12
+0
+0
+26
+1
+0
+0
+26
+1
+0
+0
+26
+1
+5
+26
+0
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+#47
+Verb Selector Operator
+0
+26
+1
+26
+4
+0
+4
+1
+1
+38
+4
+0
+1
+led
+26
+172
+-1
+2
+first
+second
+11
+0
+0
+26
+1
+0
+0
+26
+1
+5
+26
+0
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+#48
+Property Selector Operator
+0
+26
+1
+26
+4
+0
+4
+1
+1
+38
+4
+0
+2
+led
+26
+172
+-1
+p
+26
+172
+-1
+2
+first
+second
+11
+0
+0
+26
+1
+0
+0
+26
+1
+5
+26
+0
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+#49
+Error Catching Operator Prototype
+0
+26
+1
+26
+4
+0
+4
+1
+1
+38
+4
+0
+3
+nud
+26
+172
+-1
+led
+26
+172
+-1
+p
+26
+172
+-1
+3
+first
+second
+third
+12
+0
+0
+26
+1
+0
+0
+26
+1
+0
+0
+26
+1
+5
+26
+0
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+#50
+Traditional Ternary Operator Proto
+0
+26
+1
+26
+4
+0
+4
+1
+1
+38
+4
+0
+2
+led
+26
+172
+-1
+p
+26
+172
+-1
+3
+first
+second
+third
+12
+0
+0
+26
+1
+0
+0
+26
+1
+0
+0
+26
+1
+5
+26
+0
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+#51
+For Statement Prototype
+0
+26
+1
+26
+4
+0
+4
+1
+1
+37
+4
+0
+2
+std
+26
+172
+-1
+p
+26
+172
+-1
+1
+subtype
+12
+0
+0
+26
+1
+5
+26
+0
+5
+26
+0
+5
+26
+0
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+#52
+Loop Statement Prototype
+0
+26
+1
+26
+4
+0
+4
+1
+1
+37
+4
+0
+2
+std
+26
+172
+-1
+p
+26
+172
+-1
+0
+11
+5
+26
+0
+5
+26
+0
+5
+26
+0
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+#53
+Fork Statement Prototype
+0
+26
+1
+26
+4
+0
+4
+1
+1
+37
+4
+0
+2
+std
+26
+172
+-1
+p
+26
+172
+-1
+0
+11
+5
+26
+0
+5
+26
+0
+5
+26
+0
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+#54
+Try Statement Prototype
+0
+26
+1
+26
+4
+0
+4
+1
+1
+37
+4
+0
+2
+std
+26
+172
+-1
+p
+26
+172
+-1
+1
+subtype
+12
+0
+0
+26
+1
+5
+26
+0
+5
+26
+0
+5
+26
+0
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+#55
+Positional Symbol Prototype
+0
+26
+1
+26
+4
+0
+4
+1
+1
+34
+4
+0
+2
+nud
+26
+172
+-1
+p
+26
+172
+-1
+0
+9
+5
+26
+0
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+#56
+Sign Operator Prototype
+0
+26
+1
+26
+4
+0
+4
+1
+1
+38
+4
+0
+3
+nud
+26
+172
+-1
+led
+26
+172
+-1
+p
+26
+172
+-1
+2
+first
+second
+11
+0
+0
+26
+1
+0
+0
+26
+1
+5
+26
+0
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+5
+26
+1
+#57
+Text Tools
+0
+57
+1
+-1
+4
+2
+1
+58
+1
+59
 1
 -1
 4
@@ -2249,37 +5256,37 @@ license
 11
 2
 text_tools
-26
+57
 1
 2
 0.0.1
-26
+57
 1
 4
 3
 4
 2
 1
-26
+57
 2
 package
 4
 2
 1
-27
+58
 2
 changelog
 4
 2
 1
-28
+59
 2
 patience_diff
-26
+57
 1
 4
 0
-26
+57
 1
 4
 2
@@ -2293,40 +5300,40 @@ kernel
 primitive
 2
 >= 0.0.2
-26
+57
 1
 4
 0
-26
+57
 1
 4
 0
-26
+57
 1
 2
 The Text Tools package provides tools for working with text.  Currently it only provides an implementation of the patience diff algorithm.
-26
+57
 1
 4
 1
 2
 Todd Sundsted
-26
+57
 1
 2
 
-26
+57
 1
 2
 FreeBSD License
-26
+57
 1
-#27
+#58
 Changelog
 0
-26
+57
 1
-26
+57
 4
 0
 1
@@ -2339,14 +5346,14 @@ Changelog
 1
 2
 Added patience diff.
-26
+57
 1
-#28
+#59
 Patience Diff
 0
-26
+57
 1
-26
+57
 4
 0
 4
@@ -2357,27 +5364,27 @@ Patience Diff
 0
 6
 _suspend_if_necessary
-26
+57
 172
 -1
 _hash_lines
-26
+57
 172
 -1
 _find_common_unique_lines
-26
+57
 172
 -1
 _find_lcs
-26
+57
 172
 -1
 _generate_diff
-26
+57
 172
 -1
 diff
-26
+57
 172
 -1
 1
@@ -2385,25 +5392,25 @@ default_hash_algo
 2
 2
 md5
-26
+57
 1
 5
-26
+57
 4
-#29
+#60
 Ask, Query Package
 0
-29
+60
 1
 -1
 4
 3
 1
-30
+61
 1
-31
+62
 1
-32
+63
 1
 -1
 4
@@ -2432,45 +5439,45 @@ license
 11
 2
 ask
-29
+60
 1
 2
 0.0.1
-29
+60
 1
 4
 4
 4
 2
 1
-29
+60
 2
 package
 4
 2
 1
-30
+61
 2
 changelog
 4
 2
 1
-31
+62
 2
 dictionary
 4
 2
 1
-32
+63
 2
 ask_proto
-29
+60
 1
 4
 1
 2
 dictionary.ask_proto
-29
+60
 1
 4
 2
@@ -2484,42 +5491,42 @@ kernel
 primitive
 2
 >= 0.0.2
-29
+60
 1
 4
 0
-29
+60
 1
 4
 1
 2
 install-dictionary
-29
+60
 1
 2
 Ask implements queries based on relational algebra.
-29
+60
 1
 4
 1
 2
 Todd Sundsted
-29
+60
 1
 2
 
-29
+60
 1
 2
 FreeBSD License
-29
+60
 1
-#30
+#61
 Changelog
 0
-29
+60
 1
-29
+60
 4
 0
 1
@@ -2538,38 +5545,38 @@ Changelog
 7
 2
 First cut at `$ask'.
-29
+60
 1
 2
 Replaced magic string "#" with `$ask:id()'/`$ask_proto.id'.
-29
+60
 1
 2
 Instead of failing, return information about low-level (E_PERM, etc.) errors.
-29
+60
 1
 2
 Added support for predicates with objects numbers.
-29
+60
 1
 2
 Added support for predicates "is true"/"is false".
-29
+60
 1
 2
 Added support for more logical operators.
-29
+60
 1
 2
 Added support for the string matching operator.
-29
+60
 1
-#31
+#62
 Dictionary
 0
-29
+60
 1
-29
+60
 4
 0
 1
@@ -2588,19 +5595,19 @@ ask_proto
 2
 prototype
 1
-32
-29
+63
+60
 1
 1
-32
-29
+63
+60
 1
-#32
+#63
 Ask Prototype
 16
-29
+60
 1
-29
+60
 4
 0
 1
@@ -2617,47 +5624,47 @@ _query
 172
 -1
 _match_literal_or_identifier
-29
+60
 172
 -1
 _match_operator
-29
+60
 172
 -1
 _parse_predicate
-29
+60
 172
 -1
 from
-29
+60
 172
 -1
 select
-29
+60
 172
 -1
 where
-29
+60
 172
 -1
 count
-29
+60
 172
 -1
 all
-29
+60
 172
 -1
 one
-29
+60
 172
 -1
 id
-29
+60
 172
 -1
 errors
-29
+60
 172
 -1
 2
@@ -2666,38 +5673,38 @@ errors
 2
 1
 -7
-29
+60
 1
 1
 -11
-29
+60
 1
-#33
+#64
 Model Package
 0
-33
+64
 1
 -1
 4
 9
 1
-34
+65
 1
-35
+66
 1
-36
+67
 1
-37
+68
 1
-38
+69
 1
-39
+70
 1
-40
+71
 1
-41
+72
 1
-42
+73
 1
 -1
 4
@@ -2718,75 +5725,75 @@ license
 11
 2
 model
-33
+64
 1
 2
 0.0.1
-33
+64
 1
 4
 10
 4
 2
 1
-33
+64
 2
 package
 4
 2
 1
-34
+65
 2
 dictionary
 4
 2
 1
-35
+66
 2
 changelog
 4
 2
 1
-36
+67
 2
 model_proto
 4
 2
 1
-37
+68
 2
 constraint
 4
 2
 1
-38
+69
 2
 validates_presence_of
 4
 2
 1
-39
+70
 2
 validates_uniqueness_of
 4
 2
 1
-40
+71
 2
 validates_immutability_of
 4
 2
 1
-41
+72
 2
 validates_format_of
 4
 2
 1
-42
+73
 2
 validates_revision_of
-33
+64
 1
 4
 7
@@ -2804,7 +5811,7 @@ dictionary.validates_immutability_of
 dictionary.validates_format_of
 2
 dictionary.validates_revision_of
-33
+64
 1
 4
 2
@@ -2818,40 +5825,40 @@ kernel
 ask
 2
 >= 0.0.1
-33
+64
 1
 4
 0
-33
+64
 1
 4
 1
 2
 install-namespace
-33
+64
 1
 2
 
-33
+64
 1
 4
 0
-33
+64
 1
 2
 
-33
+64
 1
 2
 
-33
+64
 1
-#34
+#65
 Dictionary
 0
-33
+64
 1
-33
+64
 4
 0
 1
@@ -2880,7 +5887,7 @@ _before_* _after_*
 172
 -1
 find find_by_*
-33
+64
 172
 -1
 9
@@ -2895,47 +5902,47 @@ validates_format_of
 validates_revision_of
 9
 1
-36
-33
+67
+64
 1
 1
-37
-33
+68
+64
 1
 1
 -7
-33
+64
 1
 1
 -11
-33
+64
 1
 1
-38
-33
+69
+64
 1
 1
-39
-33
+70
+64
 1
 1
-40
-33
+71
+64
 1
 1
-41
-33
+72
+64
 1
 1
-42
-33
+73
+64
 1
-#35
+#66
 Changelog
 0
-33
+64
 1
-33
+64
 4
 0
 1
@@ -2966,86 +5973,86 @@ Changelog
 19
 2
 Added package installation instructions.
-33
+64
 1
 2
 Fixed validation breakage related to map operation changes.
-33
+64
 1
 2
 Model create/update now uses $shape to write values -- normalizes `location' et al.
-33
+64
 1
 2
 Verb `find_by_*' now uses $ask.
-33
+64
 1
 2
 Updated package information.
-33
+64
 1
 2
 Loosened the coupling between model actions and the model prototype object.  Added custom `respond_to()' verb.  Format validation now takes "pattern" instead of "regex".
-33
+64
 1
 2
 Renamed model verb `show()' to `read()'.
-33
+64
 1
 2
 Return the canonical representation on create/update.  Handle a few errors better.
-33
+64
 1
 2
 Major rewrite.  Fixed magic markers for errors and object number/id.  Removed custom `respond_to()' verb.
-33
+64
 1
 2
 Moved verbs from `$model.model' to `$model'.
-33
+64
 1
 2
 Renamed `$model.model' to `$model.model_proto'.
-33
+64
 1
 2
 Cleaned up `find()'.
-33
+64
 1
 2
 Added prototype and instance delegation.
-33
+64
 1
 2
 `update()' and `read()' now work with descendants and children.
-33
+64
 1
 2
 `$model.validates_presence_of' is now forgiving if the property is set.
-33
+64
 1
 2
 Added `$model.validates_revision_of'.
-33
+64
 1
 2
 `$model:find()' and `$model:find_by_*()' automatically select accessible properties.
-33
+64
 1
 2
 `validates_format_of()' handles the empty string correctly.
-33
+64
 1
 2
 Validations improvements/fixes.
-33
+64
 1
-#36
+#67
 Model Prototype
 128
-33
+64
 1
-33
+64
 4
 0
 4
@@ -3069,21 +6076,21 @@ constraints
 3
 4
 0
-33
+64
 5
 10
 0
-33
+64
 5
 5
-33
+64
 4
-#37
+#68
 Constraint Prototype
 0
-33
+64
 1
-33
+64
 4
 0
 4
@@ -3093,22 +6100,22 @@ Constraint Prototype
 4
 5
 1
-38
+69
 1
-39
+70
 1
-40
+71
 1
-41
+72
 1
-42
+73
 3
 validate
-33
+64
 172
 -1
 add_error
-33
+64
 172
 -1
 is_blank is_present
@@ -3118,20 +6125,20 @@ is_blank is_present
 0
 1
 5
-33
+64
 4
-#38
+#69
 Validates Presence Of
 0
-33
+64
 1
-33
+64
 4
 0
 4
 1
 1
-37
+68
 4
 0
 1
@@ -3142,20 +6149,20 @@ validate
 0
 1
 5
-33
+64
 4
-#39
+#70
 Validates Uniqueness Of
 0
-33
+64
 1
-33
+64
 4
 0
 4
 1
 1
-37
+68
 4
 0
 1
@@ -3166,20 +6173,20 @@ validate
 0
 1
 5
-33
+64
 4
-#40
+#71
 Validates Immutability Of
 0
-33
+64
 1
-33
+64
 4
 0
 4
 1
 1
-37
+68
 4
 0
 1
@@ -3190,44 +6197,44 @@ validate
 0
 1
 5
-33
+64
 4
-#41
+#72
 Validates Format Of
 0
-33
+64
 1
-33
+64
 4
 0
 4
 1
 1
-37
+68
 4
 0
 1
 validate
-33
+64
 172
 -1
 0
 1
 5
-33
+64
 4
-#42
+#73
 Validates Revision Of
 0
-33
+64
 1
-33
+64
 4
 0
 4
 1
 1
-37
+68
 4
 0
 1
@@ -3238,22 +6245,22 @@ validate
 0
 1
 5
-33
+64
 4
-#43
+#74
 Persistent Package
 0
-43
+74
 1
 -1
 4
 3
 1
-44
+75
 1
-45
+76
 1
-46
+77
 1
 -1
 4
@@ -3273,45 +6280,45 @@ license
 10
 2
 persistent
-43
+74
 1
 2
 0.0.2
-43
+74
 1
 4
 4
 4
 2
 1
-43
+74
 2
 package
 4
 2
 1
-44
+75
 2
 changelog
 4
 2
 1
-45
+76
 2
 dictionary
 4
 2
 1
-46
+77
 2
 attachable
-43
+74
 1
 4
 1
 2
 dictionary.attachable
-43
+74
 1
 4
 1
@@ -3321,38 +6328,38 @@ dictionary.attachable
 kernel
 2
 >= 1.0.6
-43
+74
 1
 4
 1
 2
 install-dictionary
-43
+74
 1
 2
 Persistent creates and manages the associated Stunt filesystem.  The package includes the $attachable mixin.
-43
+74
 1
 4
 1
 2
 Todd Sundsted
-43
+74
 1
 2
 http://stunt.io/packages/persistent
-43
+74
 1
 2
 FreeBSD License
-43
+74
 1
-#44
+#75
 Changelog
 0
-43
+74
 1
-43
+74
 4
 0
 1
@@ -3369,30 +6376,30 @@ Changelog
 5
 2
 Added $attachable/Attachable.
-43
+74
 1
 2
 Create directory structure under files/ on startup.
-43
+74
 1
 2
 Cleanup in $attachable.  Removed use of `call_function()'.  Deal with missing helper executables better.
-43
+74
 1
 2
 Updated code to use new `for' loop functionality.
-43
+74
 1
 2
 Massive rework on `$attachable'.
-43
+74
 1
-#45
+#76
 Dictionary
 0
-43
+74
 1
-43
+74
 4
 0
 1
@@ -3410,15 +6417,15 @@ server_started
 attachable
 1
 1
-46
-43
+77
+74
 1
-#46
+#77
 Attachable
 128
-43
+74
 1
-43
+74
 4
 0
 4
@@ -3429,7 +6436,7 @@ Attachable
 0
 11
 attachments
-43
+74
 172
 -1
 attachment
@@ -3469,7 +6476,7 @@ _thumbnail
 172
 -1
 _check_limit
-43
+74
 172
 -1
 3
@@ -3487,43 +6494,43 @@ private/app
 public
 2
 public/app
-43
+74
 0
 10
 0
-43
+74
 0
 0
 4
-43
+74
 1
 5
-43
+74
 4
-#47
+#78
 Dialog, Web Server Package
 0
-47
+78
 1
 -1
 4
 8
 1
-48
+79
 1
-49
+80
 1
-50
+81
 1
-51
+82
 1
-52
+83
 1
-53
+84
 1
-54
+85
 1
-55
+86
 1
 -1
 4
@@ -3551,69 +6558,69 @@ license
 10
 2
 dialog
-47
+78
 1
 2
 0.0.5
-47
+78
 1
 4
 9
 4
 2
 1
-47
+78
 2
 package
 4
 2
 1
-48
+79
 2
 changelog
 4
 2
 1
-49
+80
 2
 dictionary
 4
 2
 1
-50
+81
 2
 utilities
 4
 2
 1
-51
+82
 2
 server
 4
 2
 1
-52
+83
 2
 request_proto
 4
 2
 1
-53
+84
 2
 response_proto
 4
 2
 1
-54
+85
 2
 route_proto
 4
 2
 1
-55
+86
 2
 player_in_session
-47
+78
 1
 4
 10
@@ -3637,7 +6644,7 @@ server.request_proto
 server.response_proto
 2
 server.route_proto
-47
+78
 1
 4
 2
@@ -3653,38 +6660,38 @@ kernel
 primitive
 2
 >= 0.0.2
-47
+78
 1
 4
 1
 2
 install-namespace
-47
+78
 1
 2
 Dialog is the Stunt HTTP server.
-47
+78
 1
 4
 1
 2
 Todd Sundsted
-47
+78
 1
 2
 http://stunt.io/packages/dialog
-47
+78
 1
 2
 FreeBSD License
-47
+78
 1
-#48
+#79
 Changelog
 0
-47
+78
 1
-47
+78
 4
 0
 1
@@ -3738,178 +6745,178 @@ Changelog
 42
 2
 Added HTTP server framework (basic) including external file serving, routing to object/verb handlers and a database example.
-47
+78
 1
 2
 Unescape URL encoded POST data.
-47
+78
 1
 2
 Modified HTTP server `session()' verb to get session from task local value.
-47
+78
 1
 2
 Modified HTTP server `internal()' verb to properly set `player' and perms.
-47
+78
 1
 2
 Removed player()/set_player() from request; moved authenticated player persistence into task local storage.
-47
+78
 1
 2
 Refactored HTTP server chaining; support external chain steps; removed upgrade from default chain; added external log and upgrade steps.
-47
+78
 1
 2
 Removed internal dependency on storing the player in the HTTP session.
-47
+78
 1
 2
 The HTTP server `external()' verb looks up mime type by extension and by exec'ing `identify'.
-47
+78
 1
 2
 `_do_chain()' tries to be smarter about cleanup on error.
-47
+78
 1
 2
 Moved HTTP status codes into a property.
-47
+78
 1
 2
 Removed `external()' and renamed `internal()' to `serve()'.
-47
+78
 1
 2
 Added a configurable session cookie name.
-47
+78
 1
 2
 Fixed the ownership and perms of `key'.
-47
+78
 1
 2
 Handle too-large bodies in cleanup.
-47
+78
 1
 2
 Added better diagnostics in session validation.
-47
+78
 1
 2
 Added support for flash socket policy file requests.
-47
+78
 1
 2
 Fixed the handling of upgrade requests.
-47
+78
 1
 2
 Renamed "route" to "route_proto" in all the right places.
-47
+78
 1
 2
 Moved the flash socket policy logic back into `do_login_command()'.
-47
+78
 1
 2
 Explicitly send a content length of zero (0) when the body is empty.  Safari seems to want this on redirects.
-47
+78
 1
 2
 Package dictionary now has no parents.
-47
+78
 1
 2
 Limit parameters map to 1000 items to foil DOS attacks.
-47
+78
 1
 2
 Removed redundant code from `parse_query_string()'.
-47
+78
 1
 2
 Added support for a synchronizer-style authenticity token.  Refactored the session code.  Fixed tests.
-47
+78
 1
 2
 Roll the player step in the chain into the session step.
-47
+78
 1
 2
 More useful error messages when chaining fails.
-47
+78
 1
 2
 Broadened the 404/500 verb to handle (almost) any status.
-47
+78
 1
 2
 Added authenticity token and player information as convenience parameters.
-47
+78
 1
 2
 Handle bad requests more gracefully.
-47
+78
 1
 2
 Added Server header to response.
-47
+78
 1
 2
 Strip out query/body parameters that begin with "__".
-47
+78
 1
 2
 Added Date header.
-47
+78
 1
 2
 Force peeked-at input on the _front_ of the queue.
-47
+78
 1
 2
 Surround system/convenience parameters with double-underscores.
-47
+78
 1
 2
 Add `__xhr__' and `__url_base__' system/convenience parameters.
-47
+78
 1
 2
 Strip parameters that begin with double-underscores.
-47
+78
 1
 2
 Handle form data parameters more securely.
-47
+78
 1
 2
 Handle request media type parameters
-47
+78
 1
 2
 The session cookie must be http only.
-47
+78
 1
 2
 Add `__ssh__' and `__remote_client__' system/convenience parameters.
-47
+78
 1
 2
 Added timezone adjustments.
-47
+78
 1
 2
 Fixed error properly closing files.
-47
+78
 1
-#49
+#80
 Dialog Dictionary
 0
-47
+78
 1
-47
+78
 4
 0
 1
@@ -3926,35 +6933,35 @@ utilities
 player_in_session
 6
 1
-51
-47
+82
+78
 1
 1
-52
-47
+83
+78
 1
 1
-53
-47
+84
+78
 1
 1
-54
-47
+85
+78
 1
 1
-50
-47
+81
+78
 1
 1
-55
-47
+86
+78
 1
-#50
+#81
 Dialog Utilities
 0
-47
+78
 1
-47
+78
 4
 0
 4
@@ -3965,36 +6972,36 @@ Dialog Utilities
 0
 4
 generate_query_string
-47
+78
 172
 -1
 parse_query_string
-47
+78
 172
 -1
 escape
-47
+78
 172
 -1
 unescape
-47
+78
 172
 -1
 0
 1
 5
-47
+78
 4
-#51
+#82
 HTTP Server
 0
-47
+78
 1
-47
+78
 4
 1
 1
-56
+87
 4
 1
 1
@@ -4002,14 +7009,14 @@ HTTP Server
 4
 1
 1
-83
+114
 23
 _log
 5
 172
 -1
 _key
-47
+78
 172
 -1
 start
@@ -4033,15 +7040,15 @@ _session_cookie_name _flash_socket_policy
 172
 -1
 _read_from_connection
-47
+78
 172
 -1
 _write_to_connection
-47
+78
 172
 -1
 _do_request
-47
+78
 172
 -1
 do_login_command
@@ -4053,7 +7060,7 @@ session
 172
 -1
 route
-47
+78
 172
 -1
 parameters
@@ -4073,11 +7080,11 @@ cleanup
 172
 -1
 2* 3* 4* 5*
-47
+78
 172
 -1
 traceback
-47
+78
 172
 -1
 trampoline
@@ -4093,7 +7100,7 @@ _do_chain
 172
 -1
 _rfc1123_ctime
-47
+78
 172
 -1
 10
@@ -4110,11 +7117,11 @@ flash_socket_policy
 11
 0
 8888
-47
+78
 1
 0
 0
-47
+78
 0
 4
 7
@@ -4132,23 +7139,23 @@ serve
 cleanup
 2
 404
-47
+78
 4
 1
-50
-47
+81
+78
 1
 1
-52
-47
+83
+78
 1
 1
-53
-47
+84
+78
 1
 1
-54
-47
+85
+78
 1
 10
 13
@@ -4204,25 +7211,25 @@ Unprocessable Entity
 500
 2
 Server Error
-47
+78
 1
 2
 _stunt_session
-47
+78
 4
 0
 0
-47
+78
 4
 5
-47
+78
 4
-#52
+#83
 HTTP Request Prototype
 16
-47
+78
 1
-47
+78
 4
 0
 1
@@ -4231,43 +7238,43 @@ HTTP Request Prototype
 0
 12
 create
-47
+78
 172
 -1
 method uri headers body parameters handler exception
-47
+78
 172
 -1
 set_method set_uri set_headers set_body set_parameters set_handler set_exception
-47
+78
 172
 -1
 cookies
-47
+78
 172
 -1
 path
-47
+78
 172
 -1
 query
-47
+78
 172
 -1
 type
-47
+78
 172
 -1
 set_type
-47
+78
 172
 -1
 length
-47
+78
 172
 -1
 set_length
-47
+78
 172
 -1
 session
@@ -4280,12 +7287,12 @@ set_session
 -1
 0
 0
-#53
+#84
 HTTP Response Prototype
 16
-47
+78
 1
-47
+78
 4
 0
 1
@@ -4294,29 +7301,29 @@ HTTP Response Prototype
 0
 4
 create
-47
+78
 172
 -1
 status headers body
-47
+78
 172
 -1
 set_status set_headers set_body
-47
+78
 172
 -1
 set_type set_length set_location
-47
+78
 172
 -1
 0
 0
-#54
+#85
 HTTP Route Prototype
 0
-47
+78
 1
-47
+78
 4
 0
 4
@@ -4326,29 +7333,29 @@ HTTP Route Prototype
 4
 4
 1
-56
+87
 1
-59
+90
 1
-60
+91
 1
-89
+120
 1
 match
-47
+78
 172
 -1
 0
 1
 5
-47
+78
 4
-#55
+#86
 Player in Session Capability
 0
-47
+78
 1
-47
+78
 4
 0
 1
@@ -4371,52 +7378,52 @@ prototypes
 0
 5
 0
-#56
+#87
 It Works!
 0
-47
+78
 1
-51
+82
 4
 0
 4
 1
 1
-54
+85
 4
 0
 2
 match
-47
+78
 172
 -1
 it_works!
-47
+78
 172
 -1
 0
 1
 5
-47
+78
 4
-#57
+#88
 Dialog, Extras
 0
-57
+88
 1
 -1
 4
 5
 1
-58
+89
 1
-59
+90
 1
-60
+91
 1
-61
+92
 1
-62
+93
 1
 -1
 4
@@ -4436,55 +7443,55 @@ license
 10
 2
 dialog_extras
-57
+88
 1
 2
 0.0.4
-57
+88
 1
 4
 6
 4
 2
 1
-57
+88
 2
 package
 4
 2
 1
-58
+89
 2
 changelog
 4
 2
 1
-59
+90
 2
 file_server
 4
 2
 1
-60
+91
 2
 db_server
 4
 2
 1
-61
+92
 2
 streaming_handler
 4
 2
 1
-62
+93
 2
 logger
-57
+88
 1
 4
 0
-57
+88
 1
 4
 3
@@ -4506,36 +7513,36 @@ primitive
 dialog
 2
 >= 0.0.2
-57
+88
 1
 4
 0
-57
+88
 1
 2
 The Dialog Extras package contains objects that extend Dialog: file server, db object server, upgrade protocol handler, and logger.
-57
+88
 1
 4
 1
 2
 Todd Sundsted
-57
+88
 1
 2
 http://stunt.io/packages/dialog_extras
-57
+88
 1
 2
 FreeBSD License
-57
+88
 1
-#58
+#89
 Changelog
 0
-57
+88
 1
-57
+88
 4
 0
 1
@@ -4557,60 +7564,60 @@ Changelog
 10
 2
 Deal with a few more errors in static file routing.
-57
+88
 1
 2
 Deal with unparseable object numbers.
-57
+88
 1
 2
 Smartened up the database POST, PUT and DELETE verbs.
-57
+88
 1
 2
 Don't let invalid players create objects.
-57
+88
 1
 2
 Prevent `index.html' file serving from shadowing `///' (the database handler path prefix).
-57
+88
 1
 2
 Added last-modified and if-modified-since support.
-57
+88
 1
 2
 Support "swf" and "htm" extensions.
-57
+88
 1
 2
 Surround system/convenience parameters with double-underscores.
-57
+88
 1
 2
 Log the correct client IP address.
-57
+88
 1
 2
 Fixed error properly closing files.
-57
+88
 1
-#59
+#90
 HTTP File Server
 0
-57
+88
 1
-57
+88
 4
 0
 4
 1
 1
-54
+85
 4
 1
 1
-87
+118
 2
 match
 5
@@ -4623,35 +7630,35 @@ get
 0
 1
 5
-57
+88
 4
-#60
+#91
 HTTP Database Server
 0
-57
+88
 1
-57
+88
 4
 0
 4
 1
 1
-54
+85
 4
 1
 1
-88
+119
 7
 match
-57
+88
 172
 -1
 _match_uri
-57
+88
 172
 -1
 _toobj
-57
+88
 172
 -1
 get
@@ -4673,14 +7680,14 @@ delete
 0
 1
 5
-57
+88
 4
-#61
+#92
 HTTP Streaming Handler
 0
-57
+88
 1
-57
+88
 4
 0
 4
@@ -4690,7 +7697,7 @@ HTTP Streaming Handler
 4
 1
 1
-83
+114
 2
 do_socket
 5
@@ -4705,17 +7712,17 @@ description
 2
 2
 HTTP streaming handlers for player interaction.  Currently socket based and long-polling.
-57
+88
 1
 5
-57
+88
 4
-#62
+#93
 HTTP Logger
 0
-57
+88
 1
-57
+88
 4
 0
 4
@@ -4725,7 +7732,7 @@ HTTP Logger
 4
 1
 1
-83
+114
 1
 log
 5
@@ -4734,22 +7741,22 @@ log
 0
 1
 5
-57
+88
 4
-#63
+#94
 Mustache Templating Language Package
 0
-63
+94
 1
 -1
 4
 3
 1
-64
+95
 1
-65
+96
 1
-66
+97
 1
 -1
 4
@@ -4778,45 +7785,45 @@ license
 11
 2
 mustache
-63
+94
 1
 2
-1.0.0
-63
+1.0.1
+94
 1
 4
 4
 4
 2
 1
-63
+94
 2
 package
 4
 2
 1
-64
+95
 2
 changelog
 4
 2
 1
-65
+96
 2
 dictionary
 4
 2
 1
-66
+97
 2
 compiler
-63
+94
 1
 4
 1
 2
 dictionary.compiler
-63
+94
 1
 4
 2
@@ -4825,49 +7832,49 @@ dictionary.compiler
 2
 kernel
 2
->= 1.0.6
+>= 1.1.1
 4
 2
 2
 primitive
 2
 >= 0.0.2
-63
+94
 1
 4
 0
-63
+94
 1
 4
 1
 2
 install-namespace
-63
+94
 1
 2
 A MOO/Stunt port of the popular Mustache templating language (http://mustache.github.com/).
-63
+94
 1
 4
 1
 2
 Todd Sundsted
-63
+94
 1
 2
 http://stunt.io/packages/mustache
-63
+94
 1
 2
 FreeBSD License
-63
+94
 1
-#64
+#95
 Changelog
 0
-63
+94
 1
-63
+94
 4
 0
 1
@@ -4875,7 +7882,7 @@ Changelog
 4
 0
 0
-7
+9
 1317769370
 1317897840
 1319399411
@@ -4883,41 +7890,51 @@ Changelog
 1337553578
 1341406402
 1341407065
-7
+1355362911
+1355403901
+9
 2
 Initial release candidate.
-63
+94
 1
 2
 Fixed a bug in pushing/popping context frames.
-63
+94
 1
 2
 Fixed a bug in handling dotted notation.
-63
+94
 1
 2
 Emit syntax errors for invalid mustache.
-63
+94
 1
 2
 Improved the quality of the generated code.
-63
+94
 1
 2
 Emit a syntax error for an empty tag.
-63
+94
 1
 2
 Ensure `compile()' takes a list.
-63
+94
 1
-#65
+2
+Created new version: 1.0.1.
+94
+1
+2
+Compiler output is now compatible.
+94
+1
+#96
 Dictionary
 0
-63
+94
 1
-63
+94
 4
 0
 1
@@ -4929,15 +7946,15 @@ Dictionary
 compiler
 1
 1
-66
-63
+97
+94
 1
-#66
+#97
 Mustache Compiler
 0
-63
+94
 1
-63
+94
 4
 0
 4
@@ -4952,32 +7969,32 @@ _log
 172
 -1
 compile
-63
+94
 172
 -1
 0
 1
 5
-63
+94
 4
-#67
+#98
 Identity Package
 0
-67
+98
 1
 -1
 4
 5
 1
-68
+99
 1
-69
+100
 1
-70
+101
 1
-71
+102
 1
-72
+103
 1
 -1
 4
@@ -4998,51 +8015,51 @@ license
 11
 2
 identity
-67
+98
 1
 2
 0.0.2
-67
+98
 1
 4
 6
 4
 2
 1
-67
+98
 2
 package
 4
 2
 1
-68
+99
 2
 changelog
 4
 2
 1
-69
+100
 2
 dictionary
 4
 2
 1
-70
+101
 2
 authenticatable
 4
 2
 1
-71
+102
 2
 utilities
 4
 2
 1
-72
+103
 2
 namespace
-67
+98
 1
 4
 3
@@ -5052,7 +8069,7 @@ dictionary.authenticatable
 dictionary.identity
 2
 namespace.utilities
-67
+98
 1
 4
 1
@@ -5062,42 +8079,42 @@ namespace.utilities
 kernel
 2
 >= 1.0.4
-67
+98
 1
 4
 0
-67
+98
 1
 4
 1
 2
 install-dictionary
-67
+98
 1
 2
 The identity package provides mechanisms for establishing player/user identity.
-67
+98
 1
 4
 1
 2
 Todd Sundsted
-67
+98
 1
 2
 http://stunt.io/packages/identity
-67
+98
 1
 2
 FreeBSD License
-67
+98
 1
-#68
+#99
 Changelog
 0
-67
+98
 1
-67
+98
 4
 0
 1
@@ -5113,26 +8130,26 @@ Changelog
 4
 2
 Improved the fixed-time hash comparison in $authenticatable.
-67
+98
 1
 2
 Moved utility verbs from the `$authenticatable' prototype mixin.
-67
+98
 1
 2
 Updated `$authenticate()' to use the new utility verbs.
-67
+98
 1
 2
 Added the `@password' command verb.
-67
+98
 1
-#69
+#100
 Dictionary
 0
-67
+98
 1
-67
+98
 4
 0
 1
@@ -5151,19 +8168,19 @@ authenticatable
 identity
 2
 1
-70
-67
+101
+98
 1
 1
-72
-67
+103
+98
 1
-#70
+#101
 Authenticatable
 0
-67
+98
 1
-67
+98
 4
 0
 4
@@ -5185,14 +8202,14 @@ hashed_password
 5
 0
 5
-67
+98
 4
-#71
+#102
 Identity Utilities
 0
-67
+98
 1
-67
+98
 4
 0
 4
@@ -5203,24 +8220,24 @@ Identity Utilities
 0
 2
 verify_hashed_password
-67
+98
 172
 -1
 hash_password
-67
+98
 172
 -1
 0
 1
 5
-67
+98
 4
-#72
+#103
 Identity Namespace
 0
-67
+98
 1
-67
+98
 4
 0
 1
@@ -5232,29 +8249,29 @@ Identity Namespace
 utilities
 1
 1
-71
-67
+102
+98
 1
-#73
+#104
 Alt, Player Package
 0
-73
+104
 1
 -1
 4
 6
 1
-74
+105
 1
-75
+106
 1
-76
+107
 1
-77
+108
 1
-78
+109
 1
-79
+110
 1
 -1
 4
@@ -5275,57 +8292,57 @@ license
 11
 2
 alt
-73
+104
 1
 2
-0.0.2
-73
+0.0.3
+104
 1
 4
 7
 4
 2
 1
-73
+104
 2
 package
 4
 2
 1
-74
+105
 2
 changelog
 4
 2
 1
-75
+106
 2
 dictionary
 4
 2
 1
-76
+107
 2
 player_utilities
 4
 2
 1
-77
+108
 2
 player_proto
 4
 2
 1
-78
+109
 2
 programmer_proto
 4
 2
 1
-79
+110
 2
 wizard_proto
-73
+104
 1
 4
 3
@@ -5335,10 +8352,10 @@ dictionary.player_proto
 dictionary.programmer_proto
 2
 dictionary.wizard_proto
-73
+104
 1
 4
-3
+4
 4
 2
 2
@@ -5357,42 +8374,48 @@ primitive
 text_tools
 2
 >= 0.0.1
-73
+4
+2
+2
+plastic
+2
+>= 0.0.1
+104
 1
 4
 0
-73
+104
 1
 4
 1
 2
 install-namespace
-73
+104
 1
 2
 The Alt Package contains the basic player hierarchy and defines a basic set of VR verbs.
-73
+104
 1
 4
 1
 2
 Todd Sundsted
-73
+104
 1
 2
 http://stunt.io/packages/alt
-73
+104
 1
 2
 FreeBSD License
-73
+104
 1
-#74
+#105
 Changelog
 0
-73
+104
 1
-73
+104
 4
 0
 1
@@ -5400,7 +8423,7 @@ Changelog
 4
 0
 0
-12
+14
 1333837145
 1333839422
 1338036321
@@ -5413,61 +8436,71 @@ Changelog
 1341179018
 1341187815
 1343595533
-12
+1351446849
+1354988315
+14
 2
 `match_verb()'/`match_property()' now match on "me" and "here".
-73
+104
 1
 2
 Removed `utilities' property from `$player_proto'; using `$lookup()' instead.
-73
+104
 1
 2
 In `set_verb_code()', the fourth arg is the content type.
-73
+104
 1
 2
 Don't program verb if nothing changed.
-73
+104
 1
 2
 Added `@diff/@difference' command verb.
-73
+104
 1
 2
 Added argstr tail processing.
-73
+104
 1
 2
 Made `@inspect' output much more attractive.
-73
+104
 1
 2
 Improved property handling in `@list'/`@edit' and `@program'.
-73
+104
 1
 2
 Fixed the verb-not-found case in `@diff'.
-73
+104
 1
 2
 Added  `@commit' and `@revert'.
-73
+104
 1
 2
 `@program' snarfs lines early to avoid accidental commands.
-73
+104
 1
 2
 Fixed many usability problems with the `@inspect' command verb.
-73
+104
 1
-#75
+2
+A few tweaks to make `@inspect' et al work better with anonymous objects.
+104
+1
+2
+Major revamp of `evaluate'.
+104
+1
+#106
 Dictionary
 0
-73
+104
 1
-73
+104
 4
 0
 1
@@ -5481,23 +8514,23 @@ programmer_proto
 wizard_proto
 3
 1
-77
-73
+108
+104
 1
 1
-78
-73
+109
+104
 1
 1
-79
-73
+110
+104
 1
-#76
+#107
 Player Utilities
 0
-73
+104
 1
-73
+104
 4
 0
 1
@@ -5506,11 +8539,11 @@ Player Utilities
 0
 5
 match_verb match_property
-76
+5
 172
 -1
 match_object
-76
+5
 172
 -1
 _player_controls_verb _player_controls_property
@@ -5522,17 +8555,17 @@ _player_controls_object
 172
 -1
 extract_tail
-73
+104
 172
 -1
 0
 0
-#77
+#108
 Player Prototype
 16
-73
+104
 1
-73
+104
 4
 0
 4
@@ -5542,7 +8575,7 @@ Player Prototype
 4
 1
 1
-78
+109
 3
 huh
 5
@@ -5559,27 +8592,31 @@ notify tell
 0
 1
 5
-73
+104
 4
-#78
+#109
 Programmer Prototype
 16
-73
+104
 1
-73
+104
 4
 0
 4
 1
 1
-77
+108
 4
 2
 1
-79
+110
 1
 6
-6
+7
+_parse
+104
+172
+-1
 eval*uate
 5
 88
@@ -5604,47 +8641,55 @@ eval*uate
 5
 24
 -1
-0
 1
-5
-73
+alt_bindings
+2
+10
+0
+104
 4
-#79
+5
+104
+4
+#110
 Wizard Prototype
 0
-73
+104
 1
-73
+104
 4
 0
 4
 1
 1
-78
+109
 4
 1
 1
 5
 0
 0
-1
+2
 5
-73
+104
 4
-#80
+5
+104
+4
+#111
 Application Package
 0
-80
+111
 1
 -1
 4
 3
 1
-81
+112
 1
-82
+113
 1
-83
+114
 1
 -1
 4
@@ -5669,57 +8714,57 @@ license
 11
 2
 application
-80
+111
 1
 2
 0.0.7
-80
+111
 1
 4
 7
 4
 2
 1
-80
+111
 2
 package
 4
 2
 1
-81
+112
 2
 changelog
 4
 2
 1
-82
+113
 2
 dictionary
 4
 2
 1
-83
+114
 2
 server
 4
 2
 1
-84
+115
 2
 home_controller
 4
 2
 1
-85
+116
 2
 home_views
 4
 2
 1
-86
+117
 2
 session_controller
-80
+111
 1
 4
 2
@@ -5735,44 +8780,44 @@ dialog
 dialog_extras
 2
 >= 0.0.1
-80
+111
 1
 4
 0
-80
+111
 1
 4
 0
-80
+111
 1
 4
 1
 2
 install-dictionary
-80
+111
 1
 2
 
-80
+111
 1
 4
 0
-80
+111
 1
 2
 
-80
+111
 1
 2
 
-80
+111
 1
-#81
+#112
 Changelog
 0
-80
+111
 1
-80
+111
 4
 0
 1
@@ -5789,30 +8834,30 @@ Changelog
 5
 2
 Major refactoring.
-80
+111
 1
 2
 Updated the authentication.
-80
+111
 1
 2
 Autostart the web server.
-80
+111
 1
 2
 Use jquery.console.
-80
+111
 1
 2
 Handle multiline output correctly/better in the view.
-80
+111
 1
-#82
+#113
 Dictionary
 0
-80
+111
 1
-80
+111
 4
 0
 1
@@ -5828,43 +8873,43 @@ server_started
 -1
 0
 0
-#83
+#114
 HTTP Server
 0
-80
+111
 1
-80
+111
 4
 5
 1
-84
+115
 1
-86
+117
 1
-87
+118
 1
-88
+119
 1
-89
+120
 4
 3
 1
-51
+82
 1
-61
+92
 1
-62
+93
 4
 0
 0
 0
 12
 5
-47
+78
 1
-0
-0
-47
+2
+~04~16~B6P~EB~81~D7H~C0.~EFoa0~0D~D8~8E<u~00M~D5~D3F ~A3~12~09~CA~89~8Fh~E9~E1~D8~CA~C7~03~8B~C0~B0HD~E3q~93~AF~A7Z~E1~94@~DD~D3~8Ec~EA6~0D~D7~0CO~AE~B3~08~AA~E5H+~1B~B1~1Dq~D3|_wB~B9~B0~1E_d~A4~FFW~13~B6~99~F4~EA}~AA~9C~08~BF~DEP~F4~A2~11~0AI~C27~8E~BA~C1~E6~F8~A1~AF~8D~EE~B7~FF~D5~CF[~04~C8~FD~D1~8C~1Dt
+78
 0
 4
 10
@@ -5888,71 +8933,71 @@ cleanup
 404
 2
 log
-80
+111
 4
 5
-47
+78
 1
 5
-47
+78
 1
 5
-47
+78
 1
 5
-47
+78
 1
 5
-47
+78
 1
 5
-80
+111
 4
 2
 <?xml version="1.0"?><cross-domain-policy><allow-access-from domain="localhost" to-ports="*"/></cross-domain-policy>
-80
+111
 4
 5
-80
+111
 4
 5
-57
+88
 1
-#84
+#115
 Home Controller
 0
-80
+111
 1
-83
+114
 4
 1
 1
-85
+116
 1
 -1
 4
 0
 3
 _common
-80
+111
 172
 -1
 home
-80
+111
 172
 -1
 browse
-80
+111
 172
 -1
 0
 0
-#85
+#116
 Home Views
 0
-80
+111
 1
-84
+115
 4
 0
 1
@@ -5961,37 +9006,37 @@ Home Views
 0
 6
 _head
-80
+111
 172
 -1
 _foot
-80
+111
 172
 -1
 _nav
-80
+111
 172
 -1
 public
-80
+111
 172
 -1
 home
-80
+111
 172
 -1
 browse
-80
+111
 172
 -1
 0
 0
-#86
+#117
 Session Controller
 0
-80
+111
 1
-83
+114
 4
 0
 1
@@ -6009,70 +9054,72 @@ destroy
 -1
 0
 0
-#87
+#118
 File Server
 0
-80
+111
 1
-83
+114
 4
 0
 4
 1
 1
-59
+90
 4
 0
 0
 0
 1
 5
-80
+111
 4
-#88
+#119
 Database Server
 0
-80
+111
 1
-83
+114
 4
 0
 4
 1
 1
-60
+91
 4
 0
 0
 0
 1
 5
-80
+111
 4
-#89
+#120
 Routes
 0
-80
+111
 1
-83
+114
 4
 0
 4
 1
 1
-54
+85
 4
 0
 1
 match
-80
+111
 172
 -1
 0
 1
 5
-80
+111
 4
+0
+372
 #0:0
 $private();
 {e} = args;
@@ -6722,7 +9769,10 @@ source = code;
 content_type = this:_generate_content_type({type, attributes});
 if (type == "application/x-moocode")
 elseif (`valid(compiler = $external_compilers[type]) ! E_RANGE, E_TYPE')
-code = compiler:compile(code, attributes);
+{status, code} = compiler:compile(code, attributes);
+if (!status)
+return code;
+endif
 else
 return {tostr("Invalid content type:  ", type)};
 endif
@@ -6751,6 +9801,139 @@ code = this:_pack_verb_code({["code" -> code], ["metadata" -> metadata, "source"
 endif
 return set_verb_code(object, verb, code);
 return;
+"{object, verb, code, @options} = args;";
+"";
+"/* check arguments and permissions */";
+"valid(object) || raise(E_INVARG);";
+"`{owner, flags, name} = verb_info(object, verb) ! ANY' || raise(E_VERBNF);";
+"perms = caller_perms();";
+"perms.wizard || (perms == owner) || index(flags, \"w\") || raise(E_PERM);";
+"perms.programmer || raise(E_PERM);";
+"";
+"/* drop wiz-perms */";
+"set_task_perms(perms);";
+"";
+"/* interpret optional arguments */";
+"raw = 1;";
+"content_type = 0;";
+"do_not_version = 0;";
+"do_not_stamp = 0;";
+"if (options)";
+"  if (typeof(options[1]) == MAP)";
+"    raw = `options[1][\"raw\"] ! E_RANGE';";
+"    content_type = `options[1][\"content_type\"] ! E_RANGE' || `options[1][\"content-type\"] ! E_RANGE';";
+"    do_not_version = `options[1][\"do_not_version\"] ! E_RANGE' || `options[1][\"do-not-version\"] ! E_RANGE';";
+"    do_not_stamp = `options[1][\"do_not_stamp\"] ! E_RANGE' || `options[1][\"do-not-stamp\"] ! E_RANGE';";
+"  elseif (typeof(options[1]) == STR && options[1] == \"raw\")";
+"    raw = \"raw\";";
+"  elseif (typeof(options[1]) == STR)";
+"    raw = 0;";
+"    content_type = options[1];";
+"  endif";
+"  if (raw && content_type)";
+"    raise(E_INVARG);";
+"  endif";
+"endif";
+"";
+"chunks = {};";
+"if (temp = verb_code(object, verb))";
+"  chunks = this:_unpack_verb_code(temp);";
+"endif";
+"";
+"/* Iff no options are specified, use the content type of the verb";
+" * source as the content type.  This alternative exists only to support";
+" * legacy editors/tools.  It may be removed.";
+" */";
+"if (!options && !content_type)";
+"  if (`content_type = chunks[2][\"metadata\"][\"content_type\"] ! E_RANGE')";
+"    raw = 0;";
+"  endif";
+"endif";
+"";
+"/* Programmers can disable versioning (writing \"state\" and \"revision\")";
+" * and stamping (writing \"updated_at\" and \"updated_by\"), however this";
+" * only works the first time the verb code is set (the purpose of this";
+" * functionality is to support package loading and other kinds of";
+" * object migration).";
+" */";
+"do_not_version && chunks && raise(E_INVARG);";
+"do_not_stamp && chunks && raise(E_INVARG);";
+"";
+"if (raw && code && code[$] == \"\\\"-=-=-mxyzptlk-=-=-\\\";\")";
+"  return {\"Illegal use of marker\"};";
+"";
+"elseif (content_type)";
+"  source = code;";
+"";
+"  /* parse the content type to validate it, then generate it in canonical form */";
+"  {type, attributes} = this:_parse_content_type(content_type);";
+"  content_type = this:_generate_content_type({type, attributes});";
+"";
+"  /* natively supported... no external compilation necessary */";
+"  if (type == \"application/x-moocode\")";
+"    ;";
+"";
+"  /* find an external compiler and compile */";
+"  elseif (`valid(compiler = $external_compilers[type]) ! E_RANGE, E_TYPE')";
+"    {status, code} = compiler:compile(code, attributes);";
+"    if (!status)";
+"      return code;";
+"    endif";
+"";
+"  /* fail */";
+"  else";
+"    return {tostr(\"Invalid content type:  \", type)};";
+"  endif";
+"";
+"  /* If the most recent revision is clean, increment the revision and";
+"   * keep all prior revisions.  Else, replace the revision.";
+"   */";
+"  if (length(chunks) > 1)";
+"    if (`chunks[2][\"metadata\"][\"state\"] ! E_RANGE' == \"clean\")";
+"      revision = `toint(chunks[2][\"metadata\"][\"revision\"]) + 1 ! E_RANGE => 1';";
+"      keep = chunks[2..$];";
+"    else";
+"      revision = `toint(chunks[2][\"metadata\"][\"revision\"]) ! E_RANGE => 1';";
+"      keep = chunks[3..$];";
+"    endif";
+"  else";
+"    revision = 1;";
+"    keep = {};";
+"  endif";
+"";
+"  metadata = [";
+"    \"chunk_type\" -> \"source\",";
+"    \"chunk_length\" -> length(source),";
+"    \"content_type\" -> content_type,";
+"    \"sha1\" -> value_hash(source, \"sha1\")";
+"  ];";
+"  if (!do_not_version || chunks)";
+"    metadata[\"state\"] = \"dirty\";";
+"    metadata[\"revision\"] = revision;";
+"  endif";
+"  if (!do_not_stamp || chunks)";
+"    metadata[\"updated_at\"] = ctime(time());";
+"    metadata[\"updated_by\"] = perms;";
+"  endif";
+"";
+"  code = this:_pack_verb_code({[\"code\" -> code], [\"metadata\" -> metadata, \"source\" -> source], @keep});";
+"";
+"endif";
+"";
+"return set_verb_code(object, verb, code);";
+"";
+"/* security audit on Tue Sep 13 18:59:04 2011 EDT */";
+"/* security audit on Sat Oct  1 18:04:47 2011 EDT */";
+"";
+"chunk_length:123";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"revision:4";
+"sha1:331D0374823E49B367CF562E48625F45DD0F8066";
+"state:clean";
+"updated_at:Thu Dec 13 07:27:09 2012 EST";
+"updated_by:#50";
+"-=-=-mxyzptlk-=-=-";
 "{object, verb, code, @options} = args;";
 "";
 "/* check arguments and permissions */";
@@ -10219,7 +13402,7 @@ endtry
 set_connection_option(cnct, "hold-input", 1);
 set_connection_option(cnct, "binary", 1);
 notify(cnct, tostr("GET ", strsub(uri, "~", "~7E"), " HTTP/1.1~0D~0A"));
-notify(cnct, tostr("Host: ", host, ":", port, "~0D~0A"));
+notify(cnct, (port != 80) ? tostr("Host: ", host, ":", port, "~0D~0A") | tostr("Host: ", host, "~0D~0A"));
 notify(cnct, "~0D~0A");
 response = read_http("response", cnct);
 if (`reason = response["error"] ! E_RANGE')
@@ -12204,7 +15387,3608 @@ return;
 "sha1:8487D577477B3464C8E36F9AA0C8926B0A61EDB4";
 "-=-=-mxyzptlk-=-=-";
 .
-#28:0
+#29:0
+{parser, separator, infix, terminator, ?symbols = {}} = args;
+ids = {};
+for symbol in (symbols)
+ids = {@ids, parser:push(@symbol)};
+endfor
+if (terminator && (parser:token().id == terminator))
+return {};
+endif
+key = parser:expression(0);
+parser:advance(infix);
+value = parser:expression(0);
+MAP = {{key, value}};
+while (parser:token().id == separator)
+MAP && parser:advance(separator);
+key = parser:expression(0);
+parser:advance(infix);
+value = parser:expression(0);
+MAP = {@MAP, {key, value}};
+endwhile
+for id in (ids)
+parser:pop(id);
+endfor
+return MAP;
+return;
+"{parser, separator, infix, terminator, ?symbols = {}} = args;";
+"";
+"ids = {};";
+"for symbol in (symbols)";
+"  ids = {@ids, parser:push(@symbol)};";
+"endfor";
+"";
+"if (terminator && parser:token().id == terminator)";
+"  return {};";
+"endif";
+"";
+"key = parser:expression(0);";
+"parser:advance(infix);";
+"value = parser:expression(0);";
+"map = {{key, value}};";
+"";
+"while (parser:token().id == separator)";
+"  map && parser:advance(separator);";
+"  key = parser:expression(0);";
+"  parser:advance(infix);";
+"  value = parser:expression(0);";
+"  map = {@map, {key, value}};";
+"endwhile";
+"";
+"for id in (ids)";
+"  parser:pop(id);";
+"endfor";
+"";
+"return map;";
+"";
+"chunk_length:29";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:2D673EA421682598DCBFFE12CA9EC6ED818AE60D";
+"-=-=-mxyzptlk-=-=-";
+.
+#29:1
+{parser, separator, terminator, ?symbols = "defaults"} = args;
+if (symbols && (symbols == "defaults"))
+symbols = {{"@", 0, this.plastic.prefix_operator_proto}};
+endif
+ids = {};
+for symbol in (symbols)
+ids = {@ids, parser:push(@symbol)};
+endfor
+if (terminator && (parser:token().id == terminator))
+return {};
+endif
+expression = parser:expression(0);
+LIST = {expression};
+while (parser:token().id == separator)
+parser:advance(separator);
+expression = parser:expression(0);
+LIST = {@LIST, expression};
+endwhile
+for id in (ids)
+parser:pop(id);
+endfor
+return LIST;
+return;
+"{parser, separator, terminator, ?symbols = \"defaults\"} = args;";
+"";
+"/* enable defaults */";
+"if (symbols && symbols == \"defaults\")";
+"  symbols = {{\"@\", 0, this.plastic.prefix_operator_proto}};";
+"endif";
+"";
+"ids = {};";
+"for symbol in (symbols)";
+"  ids = {@ids, parser:push(@symbol)};";
+"endfor";
+"";
+"if (terminator && parser:token().id == terminator)";
+"  return {};";
+"endif";
+"";
+"expression = parser:expression(0);";
+"list = {expression};";
+"";
+"while (parser:token().id == separator)";
+"  parser:advance(separator);";
+"  expression = parser:expression(0);";
+"  list = {@list, expression};";
+"endwhile";
+"";
+"for id in (ids)";
+"  parser:pop(id);";
+"endfor";
+"";
+"return list;";
+"";
+"chunk_length:30";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:F81CBA9934A78648882412ADF140C5938CF5ABEF";
+"-=-=-mxyzptlk-=-=-";
+.
+#29:2
+{parser, pattern} = args;
+state = 1;
+for element in (pattern)
+if ((state == 1) && (element.type == "variable"))
+continue;
+elseif ((((state == 1) || (state == 2)) && (element.type == "binary")) && (element.id == "="))
+if (element.first.type == "variable")
+state = 2;
+continue;
+endif
+elseif ((((state == 1) || (state == 2)) && (element.type == "unary")) && (element.id == "@"))
+if (element.first.type == "variable")
+state = 3;
+continue;
+endif
+endif
+raise("Syntax error", "Illegal scattering pattern", parser);
+endfor
+return;
+"{parser, pattern} = args;";
+"";
+"state = 1;";
+"";
+"for element in (pattern)";
+"  if (state == 1 && element.type == \"variable\")";
+"    continue;";
+"  elseif ((state == 1 || state == 2) && element.type == \"binary\" && element.id == \"=\")";
+"    if (element.first.type == \"variable\")";
+"      state = 2;";
+"      continue;";
+"    endif";
+"  elseif ((state == 1 || state == 2) && element.type == \"unary\" && element.id == \"@\")";
+"    if (element.first.type == \"variable\")";
+"      state = 3;";
+"      continue;";
+"    endif";
+"  endif";
+"";
+"  raise(\"Syntax error\", \"Illegal scattering pattern\", parser);";
+"endfor";
+"";
+"chunk_length:21";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:6DC3B53967446EAB01EE576267459D8598505807";
+"-=-=-mxyzptlk-=-=-";
+.
+#29:3
+{node} = args;
+if (typeof(node) == LIST)
+return node;
+elseif (`typeof(value = node.value) == LIST ! ANY')
+return value;
+else
+children = {};
+for prop in ({"first", "second", "third"})
+if (`value = node.(prop) ! E_PROPNF => 0' != 0)
+children = {@children, value};
+endif
+endfor
+return children;
+endif
+return;
+"{node} = args;";
+"";
+"/* Intelligently gather children from various places.";
+" */";
+"";
+"if (typeof(node) == LIST)";
+"  return node;";
+"elseif (`typeof(value = node.value) == LIST ! ANY')";
+"  return value;";
+"else";
+"  children = {};";
+"  for prop in ({\"first\", \"second\", \"third\"})";
+"    if (`value = node.(prop) ! E_PROPNF => 0' != 0)";
+"      children = {@children, value};";
+"    endif";
+"  endfor";
+"  return children;";
+"endif";
+"";
+"chunk_length:18";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:F9D17E1580E0ABE09BCBB3C38E32B585B4A9FC58";
+"-=-=-mxyzptlk-=-=-";
+.
+#29:4
+{root, pattern} = args;
+matches = {};
+stack = {root};
+while (stack)
+{top, @stack} = stack;
+stack = {@stack, @this:children(top)};
+if (((typeof(top) == ANON) && isa(top, this.plastic.symbol_proto)) && (top.id == pattern))
+matches = {@matches, top};
+endif
+endwhile
+return matches;
+return;
+"{root, pattern} = args;";
+"";
+"/* depth first search for pattern */";
+"";
+"matches = {};";
+"stack = {root};";
+"";
+"while (stack)";
+"  {top, @stack} = stack;";
+"  stack = {@stack, @this:children(top)};";
+"  if (typeof(top) == ANON && isa(top, this.plastic.symbol_proto) && top.id == pattern)";
+"    matches = {@matches, top};";
+"  endif";
+"endwhile";
+"";
+"return matches;";
+"";
+"chunk_length:16";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:1C1961865CB075B1E8207A8301802A559E629EFE";
+"-=-=-mxyzptlk-=-=-";
+.
+#30:0
+{source, ?options = []} = args;
+tokenizer = this.plastic.tokenizer_proto:create(source);
+parser = this.plastic.parser_proto:create(tokenizer);
+try
+statements = parser:statements();
+except ex (ANY)
+return {0, {tostr("Line ", ex[3].tokenizer.row, ":  ", ex[2])}};
+endtry
+source = {};
+for statement in (statements)
+if (statement.type != "statement")
+source = {@source, tostr(statement:p(), ";")};
+else
+source = {@source, @statement:p()};
+endif
+endfor
+return {1, source};
+return;
+"{source, ?options = []} = args;";
+"";
+"tokenizer = this.plastic.tokenizer_proto:create(source);";
+"parser = this.plastic.parser_proto:create(tokenizer);";
+"";
+"try";
+"  statements = parser:statements();";
+"except ex (ANY)";
+"  return {0, {tostr(\"Line \", ex[3].tokenizer.row, \":  \", ex[2])}};";
+"endtry";
+"";
+"source = {};";
+"";
+"for statement in (statements)";
+"  if (statement.type != \"statement\")";
+"    source = {@source, tostr(statement:p(), \";\")};";
+"  else";
+"    source = {@source, @statement:p()};";
+"  endif";
+"endfor";
+"";
+"return {1, source};";
+"";
+"chunk_length:22";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:0270A24482DAA0150711EDF034EF205C2E123D27";
+"-=-=-mxyzptlk-=-=-";
+.
+#31:0
+{statement, ?indent = ""} = args;
+if (typeof(statement) == LIST)
+result = {tostr(indent, "-")};
+for item in (statement)
+result = {@result, @this:_print(item, indent + "  ")};
+endfor
+return result;
+endif
+if (`typeof(statement.value) == LIST ! ANY')
+result = {tostr(indent, statement.id, " : ", statement.type)};
+for value in (statement.value)
+result = {@result, @this:_print(value, indent + "  ")};
+endfor
+else
+result = {tostr(indent, (typeof(statement.value) == ERR) ? toliteral(statement.value) | statement.value, " : ", statement.type)};
+for prop in ({"first", "second", "third"})
+if ((`value = statement.(prop) ! E_PROPNF' != E_PROPNF) && (value != 0))
+result = {@result, @this:_print(value, indent + "  ")};
+endif
+endfor
+endif
+return result;
+return;
+"{statement, ?indent = \"\"} = args;";
+"";
+"if (typeof(statement) == LIST)";
+"  result = {tostr(indent, \"-\")};";
+"";
+"  for item in (statement)";
+"    result = {@result, @this:_print(item, indent + \"  \")};";
+"  endfor";
+"";
+"  return result;";
+"endif";
+"";
+"if (`typeof(statement.value) == LIST ! ANY')";
+"  result = {tostr(indent, statement.id, \" : \", statement.type)};";
+"";
+"  for value in (statement.value)";
+"    result = {@result, @this:_print(value, indent + \"  \")};";
+"  endfor";
+"else";
+"  result = {tostr(indent, typeof(statement.value) == ERR ? toliteral(statement.value) | statement.value, \" : \", statement.type)};";
+"";
+"  for prop in ({\"first\", \"second\", \"third\"})";
+"    if (`value = statement.(prop) ! E_PROPNF' != E_PROPNF && value != 0)";
+"      result = {@result, @this:_print(value, indent + \"  \")};";
+"    endif";
+"  endfor";
+"endif";
+"";
+"return result;";
+"";
+"chunk_length:29";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:67068C3DEAFED07576F5AE9A4A94AE664A9EF238";
+"-=-=-mxyzptlk-=-=-";
+.
+#31:1
+{source, ?options = []} = args;
+tokenizer = this.plastic.tokenizer_proto:create(source);
+parser = this.plastic.parser_proto:create(tokenizer);
+statements = parser:statements();
+source = {};
+for statement in (statements)
+source = {@source, @this:_print(statement)};
+endfor
+return source;
+return;
+"{source, ?options = []} = args;";
+"";
+"tokenizer = this.plastic.tokenizer_proto:create(source);";
+"parser = this.plastic.parser_proto:create(tokenizer);";
+"";
+"statements = parser:statements();";
+"";
+"source = {};";
+"";
+"for statement in (statements)";
+"  source = {@source, @this:_print(statement)};";
+"endfor";
+"";
+"return source;";
+"";
+"chunk_length:14";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:2A38FC7355668CD5D2C874FC93127BF0A0B9F786";
+"-=-=-mxyzptlk-=-=-";
+.
+#32:0
+(typeof(this) == ANON) || raise(E_INVARG, "Instances only");
+return;
+"(typeof(this) == ANON) || raise(E_INVARG, \"Instances only\");";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:14196681E0237855506783C838C9D8D194F00774";
+"-=-=-mxyzptlk-=-=-";
+.
+#32:1
+(this == $plastic.tokenizer_proto) || raise(E_PERM, "Call not allowed on instance");
+instance = create(this, 1);
+instance.row = 1;
+instance.column = 1;
+instance.source = ((length(args) == 1) && (typeof(args[1]) == LIST)) ? args[1] | args;
+return instance;
+return;
+"(this == $plastic.tokenizer_proto) || raise(E_PERM, \"Call not allowed on instance\");";
+"instance = create(this, 1);";
+"instance.row = 1;";
+"instance.column = 1;";
+"instance.source = (length(args) == 1 && typeof(args[1]) == LIST) ? args[1] | args;";
+"return instance;";
+"";
+"chunk_length:6";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:1D01BCCA56B3F461D5DE70912000A57FC725F515";
+"-=-=-mxyzptlk-=-=-";
+.
+#32:2
+this:_ensure_instance();
+this.token = 0;
+if (!this.source)
+return this;
+endif
+row = this.row;
+column = this.column;
+source = this.source;
+comment = 0;
+eol = 0;
+while loop (length(source) >= row)
+if (column > (len = length(source[row])))
+row = row + 1;
+column = 1;
+eol = 1;
+continue loop;
+endif
+if (((len > column) && comment) && (source[row][column..column + 1] == "*/"))
+comment = 0;
+column = column + 2;
+continue loop;
+elseif ((len > column) && (source[row][column..column + 1] == "/*"))
+comment = 1;
+column = column + 2;
+continue loop;
+endif
+if (comment)
+column = column + 1;
+continue loop;
+endif
+if ((len >= column) && (((c = source[row][column]) == "      ") || (c == " ")))
+column = column + 1;
+continue loop;
+endif
+if (this.token)
+this.token["eol"] = eol;
+eol = 0;
+break loop;
+endif
+if (`c = source[row][column] ! E_RANGE')
+if ((((c >= "a") && (c <= "z")) || (c == "_")) || (c == "$"))
+col1 = column;
+column = column + 1;
+while (`c = source[row][column] ! E_RANGE')
+if ((((c >= "a") && (c <= "z")) || ((c >= "0") && (c <= "9"))) || (c == "_"))
+column = column + 1;
+else
+break;
+endif
+endwhile
+col2 = column - 1;
+chars = source[row][col1..col2];
+if (index(chars, "E_") == 1)
+try
+this.token = ["type" -> "error", "value" -> this.errors[chars]];
+except ex (E_RANGE)
+this.token = ["type" -> "error", "value" -> chars, "error" -> tostr("Invalid error: ", chars)];
+endtry
+else
+this.token = ["type" -> "name", "value" -> chars];
+endif
+continue loop;
+elseif (c == "#")
+col1 = column;
+column = column + 1;
+if (`c = source[row][column] ! E_RANGE')
+if ((c == "+") || (c == "-"))
+column = column + 1;
+endif
+endif
+while (`c = source[row][column] ! E_RANGE')
+if ((c >= "0") && (c <= "9"))
+column = column + 1;
+else
+break;
+endif
+endwhile
+col2 = column - 1;
+chars = source[row][col1..col2];
+if ((chars[$] < "0") || (chars[$] > "9"))
+this.token = ["type" -> "object", "value" -> chars, "error" -> "Bad object number"];
+elseif ((c >= "a") && (c <= "z"))
+this.token = ["type" -> "object", "value" -> chars + c, "error" -> "Bad object number"];
+else
+this.token = ["type" -> "object", "value" -> toobj(chars)];
+endif
+continue loop;
+elseif ((c >= "0") && (c <= "9"))
+FLOAT = 0;
+col1 = column;
+column = column + 1;
+while (`c = source[row][column] ! E_RANGE')
+if ((c >= "0") && (c <= "9"))
+column = column + 1;
+else
+break;
+endif
+endwhile
+if ((c == ".") && ((cc = `source[row][column + 1] ! E_RANGE') != "."))
+FLOAT = 1;
+column = column + 1;
+while (`c = source[row][column] ! E_RANGE')
+if ((c >= "0") && (c <= "9"))
+column = column + 1;
+else
+break;
+endif
+endwhile
+endif
+if (c == "e")
+FLOAT = 1;
+column = column + 1;
+if (`c = source[row][column] ! E_RANGE' && (c in {"-", "+"}))
+column = column + 1;
+endif
+while (`c = source[row][column] ! E_RANGE')
+if ((c >= "0") && (c <= "9"))
+column = column + 1;
+else
+break;
+endif
+endwhile
+endif
+col2 = column - 1;
+chars = source[row][col1..col2];
+if (((chars[$] < "0") || (chars[$] > "9")) && (chars[$] != "."))
+this.token = ["type" -> "number", "value" -> chars, "error" -> "Bad number"];
+elseif ((c >= "a") && (c <= "z"))
+this.token = ["type" -> "number", "value" -> chars + c, "error" -> "Bad number"];
+else
+this.token = ["type" -> "number", "value" -> FLOAT ? tofloat(chars) | toint(chars)];
+endif
+continue loop;
+elseif ((c == "\"") || (c == "'"))
+esc = 0;
+chars = "";
+q = c;
+col1 = column;
+column = column + 1;
+while (`c = source[row][column] ! E_RANGE' && ((c != q) || esc))
+column = column + 1;
+if ((c != "\\") || esc)
+chars = tostr(chars, c);
+esc = 0;
+else
+esc = 1;
+endif
+endwhile
+column = column + 1;
+col2 = column - 1;
+if (c != q)
+this.token = ["type" -> "string", "value" -> source[row][col1..col2 - 1], "error" -> "Unterminated string"];
+continue loop;
+else
+this.token = ["type" -> "string", "value" -> chars];
+continue loop;
+endif
+elseif (index("-<>=*!|&.", c))
+col1 = column;
+column = column + 1;
+if (`c = source[row][column] ! E_RANGE' && index(">=*!|&.", c))
+column = column + 1;
+this.token = ["type" -> "operator", "value" -> source[row][col1..column - 1]];
+continue loop;
+else
+this.token = ["type" -> "operator", "value" -> source[row][col1]];
+continue loop;
+endif
+else
+column = column + 1;
+this.token = ["type" -> "operator", "value" -> c];
+continue loop;
+endif
+column = column + 1;
+endif
+endwhile
+this.row = row;
+this.column = column;
+this.source = source;
+if (comment)
+this.token = ["type" -> "comment", "value" -> "", "error" -> "Unterminated comment"];
+endif
+if ((this.token && (this.token["type"] == "name")) && (this.token["value"] == "$"))
+this.token["type"] = "operator";
+endif
+if ((row > length(source)) && this.token)
+this.token["eol"] = 1;
+endif
+return this;
+return;
+"this:_ensure_instance();";
+"";
+"this.token = 0;";
+"";
+"if (!this.source)";
+"  return this;";
+"endif";
+"";
+"row = this.row;";
+"column = this.column;";
+"source = this.source;";
+"";
+"comment = 0;";
+"eol = 0;";
+"";
+"while loop (length(source) >= row)";
+"";
+"  if (column > (len = length(source[row])))";
+"    row = row + 1;";
+"    column = 1;";
+"    eol = 1;";
+"    continue loop;";
+"  endif";
+"";
+"  if (len > column && comment && source[row][column..column + 1] == \"*/\")";
+"    comment = 0;";
+"    column = column + 2;";
+"    continue loop;";
+"  elseif (len > column && source[row][column..column + 1] == \"/*\")";
+"    comment = 1;";
+"    column = column + 2;";
+"    continue loop;";
+"  endif";
+"";
+"  if (comment)";
+"    column = column + 1;";
+"    continue loop;";
+"  endif";
+"";
+"  if (len >= column && ((c = source[row][column]) == \"      \" || c == \" \"))";
+"    column = column + 1;";
+"    continue loop;";
+"  endif";
+"";
+"  if (this.token)";
+"    this.token[\"eol\"] = eol;";
+"    eol = 0;";
+"    break loop;";
+"  endif";
+"";
+"  if (`c = source[row][column] ! E_RANGE')";
+"";
+"    /* name and error */";
+"    /* MOO error literals look like names but they're not.  Worse, a";
+"     * valid error like E_PERM is treated like a literal, while an";
+"     * invalid error like E_FOO is treated like a variable.  Any name";
+"     * that starts with the characters \"E_\" is *now* an error literal,";
+"     * but invalid errors are errors.";
+"     */";
+"    if ((c >= \"a\" && c <= \"z\") || c == \"_\" || c == \"$\")";
+"      col1 = column; /* mark the start */";
+"      column = column + 1;";
+"      while (`c = source[row][column] ! E_RANGE')";
+"        if ((c >= \"a\" && c <= \"z\") || (c >= \"0\" && c <= \"9\") || c == \"_\")";
+"          column = column + 1;";
+"        else";
+"          break;";
+"        endif";
+"      endwhile";
+"      col2 = column - 1;";
+"      chars = source[row][col1..col2];";
+"      if (index(chars, \"E_\") == 1)";
+"        try";
+"          this.token = [\"type\" -> \"error\", \"value\" -> this.errors[chars]];";
+"        except ex (E_RANGE)";
+"          this.token = [\"type\" -> \"error\", \"value\" -> chars, \"error\" -> tostr(\"Invalid error: \", chars)];";
+"        endtry";
+"      else";
+"        this.token = [\"type\" -> \"name\", \"value\" -> chars];";
+"      endif";
+"      continue loop;";
+"";
+"    /* object number */";
+"    elseif (c == \"#\")";
+"      col1 = column; /* mark the start */";
+"      column = column + 1;";
+"      if (`c = source[row][column] ! E_RANGE')";
+"        if (c == \"+\" || c == \"-\")";
+"          column = column + 1;";
+"        endif";
+"      endif";
+"      while (`c = source[row][column] ! E_RANGE')";
+"        if (c >= \"0\" && c <= \"9\")";
+"          column = column + 1;";
+"        else";
+"          break;";
+"        endif";
+"      endwhile";
+"      col2 = column - 1;";
+"      chars = source[row][col1..col2];";
+"      if (chars[$] < \"0\" || chars[$] > \"9\")";
+"        this.token = [\"type\" -> \"object\", \"value\" -> chars, \"error\" -> \"Bad object number\"];";
+"      elseif (c >= \"a\" && c <= \"z\")";
+"        this.token = [\"type\" -> \"object\", \"value\" -> chars + c, \"error\" -> \"Bad object number\"];";
+"      else";
+"        this.token = [\"type\" -> \"object\", \"value\" -> toobj(chars)];";
+"      endif";
+"      continue loop;";
+"";
+"    /* number */";
+"    elseif (c >= \"0\" && c <= \"9\")";
+"      float = 0;";
+"      col1 = column; /* mark the start */";
+"      column = column + 1;";
+"      while (`c = source[row][column] ! E_RANGE')";
+"        if (c >= \"0\" && c <= \"9\")";
+"          column = column + 1;";
+"        else";
+"          break;";
+"        endif";
+"      endwhile";
+"      if (c == \".\" && ((cc = `source[row][column + 1] ! E_RANGE') != \".\")) /* not `..' */";
+"        float = 1;";
+"        column = column + 1;";
+"        while (`c = source[row][column] ! E_RANGE')";
+"          if (c >= \"0\" && c <= \"9\")";
+"            column = column + 1;";
+"          else";
+"            break;";
+"          endif";
+"        endwhile";
+"      endif";
+"      if (c == \"e\")";
+"        float = 1;";
+"        column = column + 1;";
+"        if (`c = source[row][column] ! E_RANGE' && c in {\"-\", \"+\"})";
+"          column = column + 1;";
+"        endif";
+"        while (`c = source[row][column] ! E_RANGE')";
+"          if (c >= \"0\" && c <= \"9\")";
+"            column = column + 1;";
+"          else";
+"            break;";
+"          endif";
+"        endwhile";
+"      endif";
+"      col2 = column - 1;";
+"      chars = source[row][col1..col2];";
+"      if ((chars[$] < \"0\" || chars[$] > \"9\") && chars[$] != \".\")";
+"        this.token = [\"type\" -> \"number\", \"value\" -> chars, \"error\" -> \"Bad number\"];";
+"      elseif (c >= \"a\" && c <= \"z\")";
+"        this.token = [\"type\" -> \"number\", \"value\" -> chars + c, \"error\" -> \"Bad number\"];";
+"      else";
+"        this.token = [\"type\" -> \"number\", \"value\" -> float ? tofloat(chars) | toint(chars)];";
+"      endif";
+"      continue loop;";
+"";
+"    /* string */";
+"    elseif (c == \"\\\"\" || c == \"'\")";
+"      esc = 0;";
+"      chars = \"\";";
+"      q = c;";
+"      col1 = column; /* mark the start */";
+"      column = column + 1;";
+"      while (`c = source[row][column] ! E_RANGE' && (c != q || esc))";
+"        column = column + 1;";
+"        if (c != \"\\\\\" || esc)";
+"          chars = tostr(chars, c);";
+"          esc = 0;";
+"        else";
+"          esc = 1;";
+"        endif";
+"      endwhile";
+"      column = column + 1;";
+"      col2 = column - 1;";
+"      if (c != q)";
+"        this.token = [\"type\" -> \"string\", \"value\" -> source[row][col1..col2 - 1], \"error\" -> \"Unterminated string\"];";
+"        continue loop;";
+"      else";
+"        this.token = [\"type\" -> \"string\", \"value\" -> chars];";
+"        continue loop;";
+"      endif";
+"";
+"    /* possible multi-character operator */";
+"    elseif (index(\"-<>=*!|&.\", c))";
+"      col1 = column; /* mark the start */";
+"      column = column + 1;";
+"      if (`c = source[row][column] ! E_RANGE' && index(\">=*!|&.\", c))";
+"        column = column + 1;";
+"        this.token = [\"type\" -> \"operator\", \"value\" -> source[row][col1..column - 1]];";
+"        continue loop;";
+"      else";
+"        this.token = [\"type\" -> \"operator\", \"value\" -> source[row][col1]];";
+"        continue loop;";
+"      endif";
+"";
+"    /* operator */";
+"    else";
+"      column = column + 1;";
+"      this.token = [\"type\" -> \"operator\", \"value\" -> c];";
+"      continue loop;";
+"";
+"    endif";
+"";
+"    column = column + 1;";
+"  endif";
+"endwhile";
+"";
+"this.row = row;";
+"this.column = column;";
+"this.source = source;";
+"";
+"/* check for unterminated comment */";
+"if (comment)";
+"  this.token = [\"type\" -> \"comment\", \"value\" -> \"\", \"error\" -> \"Unterminated comment\"];";
+"endif";
+"";
+"/* dollar sign by itself is not a name */";
+"if (this.token && this.token[\"type\"] == \"name\" && this.token[\"value\"] == \"$\")";
+"  this.token[\"type\"] = \"operator\";";
+"endif";
+"";
+"/* catch the last token */";
+"if (row > length(source) && this.token)";
+"  this.token[\"eol\"] = 1;";
+"endif";
+"";
+"return this;";
+"";
+"chunk_length:228";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:C5FF8B6B188A762B219FF8DC0FEB30911A9397D4";
+"-=-=-mxyzptlk-=-=-";
+.
+#32:3
+this:_ensure_instance();
+return this.token;
+return;
+"this:_ensure_instance();";
+"";
+"return this.token;";
+"";
+"chunk_length:3";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:88791DF01E1D0711F700234B78C3BA4184A82F47";
+"-=-=-mxyzptlk-=-=-";
+.
+#33:0
+(typeof(this) == ANON) || raise(E_INVARG, "Instances only");
+return;
+"(typeof(this) == ANON) || raise(E_INVARG, \"Instances only\");";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:14196681E0237855506783C838C9D8D194F00774";
+"-=-=-mxyzptlk-=-=-";
+.
+#33:1
+{tokenizer, @options} = args;
+(this == $plastic.parser_proto) || raise(E_PERM, "Call not allowed on instance");
+instance = create(this, 1);
+instance.tokenizer = tokenizer;
+instance.symbols = [];
+plastic = this.plastic;
+instance:symbol("(end)");
+instance:symbol("(name)", 0, plastic.name_proto);
+instance:symbol("(literal)", 0, plastic.literal_proto);
+instance:symbol(";", 0, plastic.operator_proto);
+instance:symbol(",", 0, plastic.operator_proto);
+instance:symbol("]", 0, plastic.operator_proto);
+instance:symbol("}", 0, plastic.operator_proto);
+instance:symbol("->", 0, plastic.operator_proto);
+instance:symbol("=>", 0, plastic.operator_proto);
+instance:symbol("..", 0, plastic.operator_proto);
+instance:symbol("|", 0, plastic.operator_proto);
+instance:symbol("`", 0, plastic.operator_proto);
+instance:symbol("!", 0, plastic.prefix_operator_proto);
+instance:symbol("=", 100, plastic.assignment_operator_proto);
+instance:symbol("!!", 200, plastic.error_catching_operator_proto);
+instance:symbol("?", 200, plastic.traditional_ternary_operator_proto);
+instance:symbol("&&", 300, plastic.infix_operator_proto);
+instance:symbol("||", 300, plastic.infix_operator_proto);
+instance:symbol("!=", 400, plastic.infix_operator_proto);
+instance:symbol("==", 400, plastic.infix_operator_proto);
+instance:symbol("<", 400, plastic.infix_operator_proto);
+instance:symbol("<=", 400, plastic.infix_operator_proto);
+instance:symbol(">", 400, plastic.infix_operator_proto);
+instance:symbol(">=", 400, plastic.infix_operator_proto);
+instance:symbol("in", 400, plastic.infix_operator_proto);
+instance:symbol("+", 500, plastic.sign_operator_proto);
+instance:symbol("-", 500, plastic.sign_operator_proto);
+instance:symbol("*", 600, plastic.infix_operator_proto);
+instance:symbol("/", 600, plastic.infix_operator_proto);
+instance:symbol("%", 600, plastic.infix_operator_proto);
+instance:symbol("**", 650, plastic.infix_operator_proto);
+instance:symbol("[", 800, plastic.bracket_operator_proto);
+instance:symbol("{", 0, plastic.brace_operator_proto);
+instance:symbol("return", 0, plastic.control_flow_statement_proto);
+instance:symbol("break", 0, plastic.control_flow_statement_proto);
+instance:symbol("continue", 0, plastic.control_flow_statement_proto);
+instance:symbol("if", 0, plastic.if_statement_proto);
+instance:symbol("for", 0, plastic.for_statement_proto);
+instance:symbol("while", 0, plastic.loop_statement_proto);
+instance:symbol("until", 0, plastic.loop_statement_proto);
+instance:symbol("fork", 0, plastic.fork_statement_proto);
+instance:symbol("try", 0, plastic.try_statement_proto);
+instance:symbol(":", 800, plastic.verb_selector_operator_proto);
+instance:symbol(".", 800, plastic.property_selector_operator_proto);
+instance:symbol("(", 800, plastic.invocation_operator_proto);
+instance:symbol(")", 0, plastic.operator_proto);
+return instance;
+return;
+"{tokenizer, @options} = args;";
+"(this == $plastic.parser_proto) || raise(E_PERM, \"Call not allowed on instance\");";
+"instance = create(this, 1);";
+"instance.tokenizer = tokenizer;";
+"instance.symbols = [];";
+"";
+"plastic = this.plastic;";
+"";
+"/* `(end)' is required */";
+"instance:symbol(\"(end)\");";
+"instance:symbol(\"(name)\", 0, plastic.name_proto);";
+"instance:symbol(\"(literal)\", 0, plastic.literal_proto);";
+"instance:symbol(\";\", 0, plastic.operator_proto);";
+"instance:symbol(\",\", 0, plastic.operator_proto);";
+"instance:symbol(\"]\", 0, plastic.operator_proto);";
+"instance:symbol(\"}\", 0, plastic.operator_proto);";
+"instance:symbol(\"->\", 0, plastic.operator_proto);";
+"instance:symbol(\"=>\", 0, plastic.operator_proto);";
+"instance:symbol(\"..\", 0, plastic.operator_proto);";
+"instance:symbol(\"|\", 0, plastic.operator_proto);";
+"instance:symbol(\"`\", 0, plastic.operator_proto);";
+"instance:symbol(\"!\", 0, plastic.prefix_operator_proto);";
+"instance:symbol(\"=\", 100, plastic.assignment_operator_proto);";
+"instance:symbol(\"!!\", 200, plastic.error_catching_operator_proto);";
+"instance:symbol(\"?\", 200, plastic.traditional_ternary_operator_proto);";
+"instance:symbol(\"&&\", 300, plastic.infix_operator_proto);";
+"instance:symbol(\"||\", 300, plastic.infix_operator_proto);";
+"instance:symbol(\"!=\", 400, plastic.infix_operator_proto);";
+"instance:symbol(\"==\", 400, plastic.infix_operator_proto);";
+"instance:symbol(\"<\", 400, plastic.infix_operator_proto);";
+"instance:symbol(\"<=\", 400, plastic.infix_operator_proto);";
+"instance:symbol(\">\", 400, plastic.infix_operator_proto);";
+"instance:symbol(\">=\", 400, plastic.infix_operator_proto);";
+"instance:symbol(\"in\", 400, plastic.infix_operator_proto);";
+"instance:symbol(\"+\", 500, plastic.sign_operator_proto);";
+"instance:symbol(\"-\", 500, plastic.sign_operator_proto);";
+"instance:symbol(\"*\", 600, plastic.infix_operator_proto);";
+"instance:symbol(\"/\", 600, plastic.infix_operator_proto);";
+"instance:symbol(\"%\", 600, plastic.infix_operator_proto);";
+"instance:symbol(\"**\", 650, plastic.infix_operator_proto);";
+"instance:symbol(\"[\", 800, plastic.bracket_operator_proto);";
+"instance:symbol(\"{\", 0, plastic.brace_operator_proto); /* never bind left */";
+"instance:symbol(\"return\", 0, plastic.control_flow_statement_proto);";
+"instance:symbol(\"break\", 0, plastic.control_flow_statement_proto);";
+"instance:symbol(\"continue\", 0, plastic.control_flow_statement_proto);";
+"instance:symbol(\"if\", 0, plastic.if_statement_proto);";
+"instance:symbol(\"for\", 0, plastic.for_statement_proto);";
+"instance:symbol(\"while\", 0, plastic.loop_statement_proto);";
+"instance:symbol(\"until\", 0, plastic.loop_statement_proto);";
+"instance:symbol(\"fork\", 0, plastic.fork_statement_proto);";
+"instance:symbol(\"try\", 0, plastic.try_statement_proto);";
+"instance:symbol(\":\", 800, plastic.verb_selector_operator_proto);";
+"instance:symbol(\".\", 800, plastic.property_selector_operator_proto);";
+"/* the infix form is function/verb invocation */";
+"instance:symbol(\"(\", 800, plastic.invocation_operator_proto);";
+"instance:symbol(\")\", 0, plastic.operator_proto);";
+"";
+"return instance;";
+"";
+"chunk_length:58";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:8A51E1FDD3FB4F8F64660C79CDBBB3B022F337DB";
+"-=-=-mxyzptlk-=-=-";
+.
+#33:2
+this:_ensure_instance();
+{id, ?bp = 0, ?proto = $nothing, ?options = []} = args;
+proto = valid(proto) ? proto | this.plastic.symbol_proto;
+if ((symbol = `this.symbols[id] ! E_RANGE') == E_RANGE)
+symbol = proto:create(id, bp, options);
+endif
+this.symbols[id] = symbol;
+return symbol;
+return;
+"this:_ensure_instance();";
+"{id, ?bp = 0, ?proto = $nothing, ?options = []} = args;";
+"proto = valid(proto) ? proto | this.plastic.symbol_proto;";
+"if ((symbol = `this.symbols[id] ! E_RANGE') == E_RANGE)";
+"  symbol = proto:create(id, bp, options);";
+"endif";
+"this.symbols[id] = symbol;";
+"return symbol;";
+"";
+"chunk_length:8";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:9E52D6826BB4B9E6C3D3A83D7D7412877D54A67E";
+"-=-=-mxyzptlk-=-=-";
+.
+#33:3
+this:_ensure_instance();
+{symbol} = args;
+id = symbol.id;
+if ((((type = this.symbols[id].type) != "name") && (type != "statement")) && (type != "keyword"))
+an_or_a = index("aeiou", type[1]) ? "an" | "a";
+raise("Syntax error", tostr("`", id, "' is ", an_or_a, " ", type), this);
+endif
+symbol.reserved = 1;
+symbol.type = verb[9..$];
+this.symbols[id] = symbol;
+return;
+"this:_ensure_instance();";
+"";
+"{symbol} = args;";
+"";
+"id = symbol.id;";
+"";
+"/* raise error if this symbol is not a name, statement or keyword */";
+"if ((type = this.symbols[id].type) != \"name\" && type != \"statement\" && type != \"keyword\")";
+"  an_or_a = index(\"aeiou\", type[1]) ? \"an\" | \"a\";";
+"  raise(\"Syntax error\", tostr(\"`\", id, \"' is \", an_or_a, \" \", type), this);";
+"endif";
+"";
+"symbol.reserved = 1;";
+"symbol.type = verb[9..$];";
+"";
+"this.symbols[id] = symbol;";
+"";
+"chunk_length:16";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:30FF331C48ABA887B3E4EA3C3F504A11766557C7";
+"-=-=-mxyzptlk-=-=-";
+.
+#33:4
+this:_ensure_instance();
+{symbol} = args;
+id = symbol.id;
+if (this.symbols[id].reserved)
+raise("Syntax error", tostr("`", id, "' is reserved"), this);
+endif
+symbol.reserved = 0;
+symbol.type = verb[6..$];
+this.symbols[id] = symbol;
+return;
+"this:_ensure_instance();";
+"";
+"{symbol} = args;";
+"";
+"id = symbol.id;";
+"";
+"/* raise error if this symbol is reserved */";
+"if (this.symbols[id].reserved)";
+"  raise(\"Syntax error\", tostr(\"`\", id, \"' is reserved\"), this);";
+"endif";
+"";
+"symbol.reserved = 0;";
+"symbol.type = verb[6..$];";
+"";
+"this.symbols[id] = symbol;";
+"";
+"chunk_length:15";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:042DC6E0D3EBAFDB0EF12619B3D637CF3713DDB9";
+"-=-=-mxyzptlk-=-=-";
+.
+#33:5
+this:_ensure_instance();
+{?ttid = 0} = args;
+if (this.token == 0)
+this.tokenizer:advance();
+token = this.tokenizer.token;
+if (token)
+type = token["type"];
+value = token["value"];
+eol = token["eol"];
+if (`token["error"] ! E_RANGE')
+raise("Syntax error", token["error"], this);
+elseif ((((type == "number") || (type == "string")) || (type == "object")) || (type == "error"))
+symbol = this:symbol("(literal)");
+this.token = symbol:clone();
+this.token.type = type;
+this.token.value = value;
+this.token.eol = eol;
+elseif (type == "operator")
+if ((symbol = `this.symbols[value] ! E_RANGE') == E_RANGE)
+raise("Syntax error", tostr("Unknown operator:  `", value, "'"), this);
+endif
+this.token = symbol:clone();
+this.token.type = "operator";
+this.token.value = value;
+this.token.eol = eol;
+elseif (type == "name")
+id = value;
+if ((symbol = `this.symbols[id] ! E_RANGE') != E_RANGE)
+this.token = symbol:clone();
+this.symbols[id] = this.token;
+this.token.type = symbol.type || "name";
+this.token.id = id;
+this.token.value = value;
+this.token.eol = eol;
+else
+symbol = this:symbol("(name)");
+this.token = symbol:clone();
+this.symbols[id] = this.token;
+this.token.type = "name";
+this.token.id = id;
+this.token.value = value;
+this.token.eol = eol;
+endif
+else
+raise("Syntax error", "Unexpected token", this);
+endif
+else
+symbol = this:symbol("(end)");
+this.token = symbol:clone();
+endif
+endif
+if (ttid)
+this:advance(ttid);
+endif
+return this.token;
+return;
+"this:_ensure_instance();";
+"";
+"{?ttid = 0} = args;";
+"";
+"if (this.token == 0)";
+"  this.tokenizer:advance();";
+"  token = this.tokenizer.token;";
+"  if (token)";
+"    type = token[\"type\"];";
+"    value = token[\"value\"];";
+"    eol = token[\"eol\"];";
+"    if (`token[\"error\"] ! E_RANGE')";
+"      raise(\"Syntax error\", token[\"error\"], this);";
+"    elseif (type == \"number\" || type == \"string\" || type == \"object\" || type == \"error\")";
+"      symbol = this:symbol(\"(literal)\");";
+"      this.token = symbol:clone();";
+"      this.token.type = type;";
+"      this.token.value = value;";
+"      this.token.eol = eol;";
+"    elseif (type == \"operator\")";
+"      /* Update the symbol table itself and give the operator the";
+"       * initial type \"operator\" (the type will change to \"unary\",";
+"       * \"binary\" or \"ternary\" when we learn how this symbol is used in";
+"       * the program).";
+"       */";
+"      /* check the symbol table */";
+"      if ((symbol = `this.symbols[value] ! E_RANGE') == E_RANGE)";
+"        raise(\"Syntax error\", tostr(\"Unknown operator:  `\", value, \"'\"), this);";
+"      endif";
+"      this.token = symbol:clone();";
+"      this.token.type = \"operator\";";
+"      this.token.value = value;";
+"      this.token.eol = eol;";
+"    elseif (type == \"name\")";
+"      /* Update the symbol table itself and give the name the initial";
+"       * type \"name\" (the type will change to \"variable\", \"identifier\",";
+"       * \"statement\" or \"keyword\" when we learn how this symbol is used";
+"       * in the program).";
+"       */";
+"      id = value;";
+"      /* peek into the symbol table */";
+"      if ((symbol = `this.symbols[id] ! E_RANGE') != E_RANGE)";
+"        this.token = symbol:clone();";
+"        this.symbols[id] = this.token;";
+"        this.token.type = symbol.type || \"name\";";
+"        this.token.id = id;";
+"        this.token.value = value;";
+"        this.token.eol = eol;";
+"      else";
+"        symbol = this:symbol(\"(name)\");";
+"        this.token = symbol:clone();";
+"        this.symbols[id] = this.token;";
+"        this.token.type = \"name\";";
+"        this.token.id = id;";
+"        this.token.value = value;";
+"        this.token.eol = eol;";
+"      endif";
+"    else";
+"      raise(\"Syntax error\", \"Unexpected token\", this);";
+"    endif";
+"  else";
+"    symbol = this:symbol(\"(end)\");";
+"    this.token = symbol:clone();";
+"  endif";
+"endif";
+"";
+"if (ttid)";
+"  this:advance(ttid);";
+"endif";
+"";
+"return this.token;";
+"";
+"chunk_length:71";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:8990F10DAF5DAA9809246B0C80A84CB33D4B8A9C";
+"-=-=-mxyzptlk-=-=-";
+.
+#33:6
+this:_ensure_instance();
+{?id = 0} = args;
+if ((id && (this.token != 0)) && (this.token.id != id))
+raise("Syntax error", tostr("Expected `", id, "'"), this);
+endif
+this.token = 0;
+return this;
+return;
+"this:_ensure_instance();";
+"";
+"{?id = 0} = args;";
+"";
+"/* raise error if token doesn't match expectation */";
+"if (id && this.token != 0 && this.token.id != id)";
+"  raise(\"Syntax error\", tostr(\"Expected `\", id, \"'\"), this);";
+"endif";
+"";
+"this.token = 0;";
+"";
+"return this;";
+"";
+"chunk_length:12";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:B578DF8B4CC8A8272EE8533436189DC247950745";
+"-=-=-mxyzptlk-=-=-";
+.
+#33:7
+this:_ensure_instance();
+{?bp = 0} = args;
+token = this:token();
+this:advance();
+if (token.id == "(end)")
+return token;
+endif
+left = token:nud(this);
+while (bp < this:token().bp)
+token = this:token();
+this:advance();
+left = token:led(this, left);
+endwhile
+return left;
+return;
+"this:_ensure_instance();";
+"";
+"{?bp = 0} = args;";
+"";
+"token = this:token();";
+"this:advance();";
+"";
+"/* don't call `nud()' and/or `led()' on `(end)' */";
+"if (token.id == \"(end)\")";
+"  return token;";
+"endif";
+"";
+"left = token:nud(this);";
+"";
+"while (bp < this:token().bp)";
+"  token = this:token();";
+"  this:advance();";
+"  left = token:led(this, left);";
+"endwhile";
+"";
+"return left;";
+"";
+"chunk_length:21";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:4FCEE2BDC91003E3A441A305F2520E18330E0ECE";
+"-=-=-mxyzptlk-=-=-";
+.
+#33:8
+this:_ensure_instance();
+token = this:token();
+while (token.id == ";")
+this:advance();
+token = this:token();
+endwhile
+if (respond_to(token, "std"))
+this:advance();
+return token:std(this);
+else
+expression = this:expression();
+if (this:token().id == ";")
+this:advance();
+endif
+return expression;
+endif
+return;
+"this:_ensure_instance();";
+"";
+"token = this:token();";
+"";
+"/* disregarded naked semicolons */";
+"while (token.id == \";\")";
+"  this:advance();";
+"  token = this:token();";
+"endwhile";
+"";
+"/* either the beginning of a statement */";
+"/* or an expression with an optional semicolon */";
+"if (respond_to(token, \"std\"))";
+"  this:advance();";
+"  return token:std(this);";
+"else";
+"  expression = this:expression();";
+"  if (this:token().id == \";\")";
+"    this:advance();";
+"  endif";
+"  return expression;";
+"endif";
+"";
+"chunk_length:22";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:A633F2B8764F84393F61203601572D48B1D56CCE";
+"-=-=-mxyzptlk-=-=-";
+.
+#33:9
+this:_ensure_instance();
+terminals = args;
+statements = {};
+while (1)
+((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
+token = this:token();
+if ((token.id == "(end)") || ((token.type in {"name", "statement", "keyword"}) && (token.value in terminals)))
+break;
+endif
+statement = this:statement();
+if (statement.id == "(end)")
+break;
+endif
+statements = {@statements, statement};
+endwhile
+return statements;
+return;
+"this:_ensure_instance();";
+"";
+"terminals = args;";
+"";
+"statements = {};";
+"";
+"while (1)";
+"  ticks_left() < 10000 || seconds_left() < 2 && suspend(0);";
+"";
+"  token = this:token();";
+"  if (token.id == \"(end)\" || ((token.type in {\"name\", \"statement\", \"keyword\"}) && token.value in terminals))";
+"    break;";
+"  endif";
+"  statement = this:statement();";
+"  if (statement.id == \"(end)\")";
+"    break;";
+"  endif";
+"  statements = {@statements, statement};";
+"endwhile";
+"";
+"return statements;";
+"";
+"chunk_length:21";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:D0E8B44C7B2EDD26C2871780017456A1F7B79DDE";
+"-=-=-mxyzptlk-=-=-";
+.
+#33:10
+this:_ensure_instance();
+variables = {};
+for symbol in (this.symbols)
+if (symbol.type == "variable")
+variables = {@variables, symbol};
+endif
+endfor
+return variables;
+return;
+"this:_ensure_instance();";
+"";
+"variables = {};";
+"";
+"for symbol in (this.symbols)";
+"  if (symbol.type == \"variable\")";
+"    variables = {@variables, symbol};";
+"  endif";
+"endfor";
+"";
+"return variables;";
+"";
+"chunk_length:11";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:1EED890E1663FED99638C19E4E9B0FB268626A1F";
+"-=-=-mxyzptlk-=-=-";
+.
+#33:11
+this:_ensure_instance();
+definition = args;
+{id, @rest} = definition;
+new = 0;
+if (`this.symbols[id] ! E_RANGE' == E_RANGE)
+this:symbol(@definition);
+new = 1;
+endif
+return {new, id};
+return;
+"this:_ensure_instance();";
+"";
+"definition = args;";
+"{id, @rest} = definition;";
+"";
+"new = 0;";
+"";
+"if (`this.symbols[id] ! E_RANGE' == E_RANGE)";
+"  this:symbol(@definition);";
+"  new = 1;";
+"endif";
+"";
+"return {new, id};";
+"";
+"chunk_length:13";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:4781098C110B4FFF668FD2A18CBD3BD8AFB62823";
+"-=-=-mxyzptlk-=-=-";
+.
+#33:12
+this:_ensure_instance();
+{args} = args;
+{new, id} = args;
+if (new)
+this.symbols = this.symbols:delete(id);
+endif
+return;
+"this:_ensure_instance();";
+"";
+"{args} = args;";
+"{new, id} = args;";
+"";
+"if (new)";
+"  this.symbols = this.symbols:delete(id);";
+"endif";
+"";
+"chunk_length:8";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:0694833C1581AAE25EFCBB39D68E09A5C5EECD56";
+"-=-=-mxyzptlk-=-=-";
+.
+#34:0
+{id, ?bp = 0, ?opts = []} = args;
+(typeof(this) == OBJ) || raise(E_PERM, "Call not allowed on anonymous object");
+instance = create(this, 1);
+instance.id = id;
+instance.value = id;
+instance.bp = bp;
+return instance;
+return;
+"{id, ?bp = 0, ?opts = []} = args;";
+"(typeof(this) == OBJ) || raise(E_PERM, \"Call not allowed on anonymous object\");";
+"instance = create(this, 1);";
+"instance.id = id;";
+"instance.value = id;";
+"instance.bp = bp;";
+"return instance;";
+"";
+"chunk_length:7";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:8E35C831EFCD97C46451641720077F8ED2054720";
+"-=-=-mxyzptlk-=-=-";
+.
+#34:1
+(typeof(this) == OBJ) && raise(E_PERM, "Call not allowed on permanent object");
+parents = parents(this);
+instance = create(parents, 1);
+for ancestor in (ancestors(this))
+for property in (`properties(ancestor) ! E_PERM => {}')
+instance.(property) = this.(property);
+endfor
+endfor
+return instance;
+return;
+"(typeof(this) == OBJ) && raise(E_PERM, \"Call not allowed on permanent object\");";
+"parents = parents(this);";
+"instance = create(parents, 1);";
+"for ancestor in (ancestors(this))";
+"  for property in (`properties(ancestor) ! E_PERM => {}')";
+"    instance.(property) = this.(property);";
+"  endfor";
+"endfor";
+"return instance;";
+"";
+"chunk_length:9";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:4D2593BDDD8F59910175EAE7CB5A6545EF0EAFAD";
+"-=-=-mxyzptlk-=-=-";
+.
+#34:2
+{parser} = args;
+raise("Syntax error", tostr("Undefined: ", this.id), parser);
+return;
+"{parser} = args;";
+"raise(\"Syntax error\", tostr(\"Undefined: \", this.id), parser);";
+"";
+"chunk_length:2";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:68DC710F510F0E7CC805B4B86840E071693713E8";
+"-=-=-mxyzptlk-=-=-";
+.
+#34:3
+{parser, _} = args;
+raise("Syntax error", tostr("Missing operator: ", this.id), parser);
+return;
+"{parser, _} = args;";
+"raise(\"Syntax error\", tostr(\"Missing operator: \", this.id), parser);";
+"";
+"chunk_length:2";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:18A6698FEADF4FF80C0F7CAFE90F2DB32EC68A5F";
+"-=-=-mxyzptlk-=-=-";
+.
+#34:4
+raise("Unprintable");
+return;
+"raise(\"Unprintable\");";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:ADC54EDAAD2EFCC7897EAC67B6FC0AD7804CE016";
+"-=-=-mxyzptlk-=-=-";
+.
+#35:0
+return this;
+return;
+"return this;";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:58CFE4977A49A7695FEE4D2F29BB87606D70E92F";
+"-=-=-mxyzptlk-=-=-";
+.
+#35:1
+return toliteral(this.value);
+return;
+"return toliteral(this.value);";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:DB76997F4A00C9639DAF3A48D191DCC559BC0CB9";
+"-=-=-mxyzptlk-=-=-";
+.
+#36:0
+{parser} = args;
+parser:make_variable(this);
+return this;
+return;
+"{parser} = args;";
+"";
+"/* Assume the name is a variable.  Subsequent usage may modify this";
+" * assumption.";
+" */";
+"parser:make_variable(this);";
+"";
+"return this;";
+"";
+"chunk_length:8";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:F8A8CBE63AC0F570B02EEC72ABA071DFFC348D70";
+"-=-=-mxyzptlk-=-=-";
+.
+#36:1
+return (((this.type == "variable") && (!(this.value in this.builtin_names))) && (this.value[1] != "$")) ? tostr("_", this.value) | this.value;
+return;
+"return (this.type == \"variable\" && !(this.value in this.builtin_names) && this.value[1] != \"$\") ? tostr(\"_\", this.value) | this.value;";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:98F690E0415AAC471478E3F65580A0F2264A4EE3";
+"-=-=-mxyzptlk-=-=-";
+.
+#37:0
+{parser} = args;
+raise("Syntax error", "Undefined", parser);
+return;
+"{parser} = args;";
+"raise(\"Syntax error\", \"Undefined\", parser);";
+"";
+"chunk_length:2";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:F2A4DE7467B49F34B0185D83E9DB7CC26D24EBDE";
+"-=-=-mxyzptlk-=-=-";
+.
+#39:0
+{parser} = args;
+if ((this.id != "return") && (parser.loop_depth < 1))
+raise("Syntax error", tostr("No enclosing loop for ", this.id), parser);
+endif
+parser:reserve_statement(this);
+if ((!this.eol) && (parser:token().id != ";"))
+expression = parser:expression(0);
+this.first = expression;
+endif
+if ((this.id != "return") && (this.first != 0))
+if (this.first.type != "variable")
+raise("Syntax error", "Loop name must be a name", parser);
+endif
+if (!(this.first.value in parser.loop_variables))
+raise("Syntax error", tostr("Invalid loop name for ", this.id), parser);
+endif
+endif
+if (parser:token().id == ";")
+parser:advance(";");
+endif
+return this;
+return;
+"{parser} = args;";
+"";
+"if (this.id != \"return\" && parser.loop_depth < 1)";
+"  raise(\"Syntax error\", tostr(\"No enclosing loop for \", this.id), parser);";
+"endif";
+"";
+"/* update the symbol table */";
+"parser:reserve_statement(this);";
+"";
+"if (!this.eol && parser:token().id != \";\")";
+"  expression = parser:expression(0);";
+"  this.first = expression;";
+"endif";
+"";
+"if (this.id != \"return\" && this.first != 0)";
+"  if (this.first.type != \"variable\")";
+"    raise(\"Syntax error\", \"Loop name must be a name\", parser);";
+"  endif";
+"  if (!(this.first.value in parser.loop_variables))";
+"    raise(\"Syntax error\", tostr(\"Invalid loop name for \", this.id), parser);";
+"  endif";
+"endif";
+"";
+"if (parser:token().id == \";\")";
+"  parser:advance(\";\");";
+"endif";
+"";
+"return this;";
+"";
+"chunk_length:28";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:418293156AC1D9BE243C39A3EC9F3B7FFBE4CDD5";
+"-=-=-mxyzptlk-=-=-";
+.
+#39:1
+if (this.type == "variable")
+return tostr("_", this.id);
+endif
+if ((first = this.first) != 0)
+return {tostr(this.id, " ", first:p(), ";")};
+else
+return {tostr(this.id, ";")};
+endif
+return;
+"if (this.type == \"variable\")";
+"  return tostr(\"_\", this.id);";
+"endif";
+"";
+"if ((first = this.first) != 0)";
+"  return {tostr(this.id, \" \" , first:p(), \";\")};";
+"else";
+"  return {tostr(this.id, \";\")};";
+"endif";
+"";
+"chunk_length:9";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:0EFEDFDD5665B7BCE65D14F66A9B94F132DABBC6";
+"-=-=-mxyzptlk-=-=-";
+.
+#40:0
+{parser, first} = args;
+right = this.right && 1;
+second = parser:expression(this.bp - right);
+if (second.id == "(end)")
+raise("Syntax error", "Expected an expression", parser);
+endif
+this.type = "binary";
+this.first = first;
+this.second = second;
+return this;
+return;
+"{parser, first} = args;";
+"";
+"right = this.right && 1; /* does this operator associate to the right? */";
+"";
+"second = parser:expression(this.bp - right);";
+"";
+"if (second.id == \"(end)\")";
+"  raise(\"Syntax error\", \"Expected an expression\", parser);";
+"endif";
+"";
+"this.type = \"binary\";";
+"this.first = first;";
+"this.second = second;";
+"";
+"return this;";
+"";
+"chunk_length:15";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:5A90918D1650451B6F3F14F2AC74F67C25F382B2";
+"-=-=-mxyzptlk-=-=-";
+.
+#40:1
+value = this.value;
+value = (value != "**") ? value | "^";
+return tostr("(", this.first:p(), " ", value, " ", this.second:p(), ")");
+return;
+"value = this.value;";
+"value = (value != \"**\") ? value | \"^\";";
+"return tostr(\"(\", this.first:p(), \" \", value, \" \", this.second:p(), \")\");";
+"";
+"chunk_length:3";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:0D618688472E96C035B5CD501206B78B4AD56274";
+"-=-=-mxyzptlk-=-=-";
+.
+#41:0
+{parser, first} = args;
+if ((first.type == "unary") && (first.id == "{"))
+this.plastic.utilities:validate_scattering_pattern(parser, first.value);
+first.type = "pattern";
+endif
+if ((((first.type != "variable") && (first.type != "pattern")) && (first.id != ".")) && (first.id != "["))
+raise("Syntax error", "Illegal expression on left side of assignment", parser);
+endif
+second = parser:expression(this.bp - 1);
+if (second.id == "(end)")
+raise("Syntax error", "Expected an expression", parser);
+endif
+this.type = "binary";
+this.first = first;
+this.second = second;
+return this;
+return;
+"{parser, first} = args;";
+"";
+"if (first.type == \"unary\" && first.id == \"{\") /* scattering syntax */";
+"  this.plastic.utilities:validate_scattering_pattern(parser, first.value);";
+"  first.type = \"pattern\";";
+"endif";
+"";
+"if (first.type != \"variable\" && first.type != \"pattern\" && first.id != \".\" && first.id != \"[\")";
+"  raise(\"Syntax error\", \"Illegal expression on left side of assignment\", parser);";
+"endif";
+"";
+"second = parser:expression(this.bp - 1);";
+"";
+"if (second.id == \"(end)\")";
+"  raise(\"Syntax error\", \"Expected an expression\", parser);";
+"endif";
+"";
+"this.type = \"binary\";";
+"this.first = first;";
+"this.second = second;";
+"";
+"return this;";
+"";
+"chunk_length:22";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:F0969021843EDF73519565F7131A329F32CD2DF5";
+"-=-=-mxyzptlk-=-=-";
+.
+#41:1
+if (this.first.type == "pattern")
+res = "{";
+rest = 0;
+for v in (this.first.value)
+if (v.type == "unary")
+v = tostr("@", v.first:p());
+elseif (v.type == "binary")
+v = tostr("?", v.first:p(), " = ", v.second:p());
+else
+v = v:p();
+endif
+res = tostr(res, rest ? ", " | "", v);
+rest = 1;
+endfor
+res = tostr(res, "}");
+return tostr("(", res, " ", this.value, " ", this.second:p(), ")");
+else
+return pass(@args);
+endif
+return;
+"if (this.first.type == \"pattern\")";
+"  res = \"{\";";
+"  rest = 0;";
+"  for v in (this.first.value)";
+"    if (v.type == \"unary\")";
+"      v = tostr(\"@\", v.first:p());";
+"    elseif (v.type == \"binary\")";
+"      v = tostr(\"?\", v.first:p(), \" = \", v.second:p());";
+"    else";
+"      v = v:p();";
+"    endif";
+"    res = tostr(res, (rest ? \", \" | \"\"), v);";
+"    rest = 1;";
+"  endfor";
+"  res = tostr(res, \"}\");";
+"  return tostr(\"(\", res, \" \", this.value, \" \", this.second:p(), \")\");";
+"else";
+"  return pass(@args);";
+"endif";
+"";
+"chunk_length:19";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:BF8EBD521A958A28B4A47EBD44F50DF9F7CD6EF9";
+"-=-=-mxyzptlk-=-=-";
+.
+#42:0
+{parser} = args;
+first = parser:expression(700);
+if (first.id == "(end)")
+raise("Syntax error", "Expected an expression", parser);
+endif
+this.type = "unary";
+this.first = first;
+return this;
+return;
+"{parser} = args;";
+"";
+"first = parser:expression(700);";
+"";
+"if (first.id == \"(end)\")";
+"  raise(\"Syntax error\", \"Expected an expression\", parser);";
+"endif";
+"";
+"this.type = \"unary\";";
+"this.first = first;";
+"";
+"return this;";
+"";
+"chunk_length:12";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:71052EB9A64F517E3CBE29438E498136C830D190";
+"-=-=-mxyzptlk-=-=-";
+.
+#42:1
+return tostr(this.value, this.first:p());
+return;
+"return tostr(this.value, this.first:p());";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:9B63BA5327D89CED40BDFF25665737BD53142E9D";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:0
+{parser} = args;
+sequence = this.plastic.utilities:parse_map_sequence(parser, ",", "->", "]");
+parser:token("]");
+this.type = "unary";
+this.value = sequence;
+this.first = this;
+return this;
+return;
+"{parser} = args;";
+"";
+"sequence = this.plastic.utilities:parse_map_sequence(parser, \",\", \"->\", \"]\");";
+"parser:token(\"]\");";
+"";
+"this.type = \"unary\";";
+"this.value = sequence;";
+"this.first = this;";
+"";
+"return this;";
+"";
+"chunk_length:10";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:C58ADA1565060D3143B279910446F0D8F39D58CA";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:1
+{parser, first} = args;
+caret = parser:push("^", 0, $plastic.positional_symbol_proto);
+dollar = parser:push("$", 0, $plastic.positional_symbol_proto);
+second = parser:expression(0);
+if (parser:token().id == "..")
+parser:advance("..");
+third = parser:expression(0);
+parser:advance("]");
+this.type = "ternary";
+this.first = first;
+this.second = second;
+this.third = third;
+else
+parser:advance("]");
+this.type = "binary";
+this.first = first;
+this.second = second;
+endif
+parser:pop(caret);
+parser:pop(dollar);
+return this;
+return;
+"{parser, first} = args;";
+"";
+"caret = parser:push(\"^\", 0, $plastic.positional_symbol_proto);";
+"dollar = parser:push(\"$\", 0, $plastic.positional_symbol_proto);";
+"";
+"second = parser:expression(0);";
+"";
+"if (parser:token().id == \"..\")";
+"  parser:advance(\"..\");";
+"  third = parser:expression(0);";
+"  parser:advance(\"]\");";
+"  this.type = \"ternary\";";
+"  this.first = first;";
+"  this.second = second;";
+"  this.third = third;";
+"else";
+"  parser:advance(\"]\");";
+"  this.type = \"binary\";";
+"  this.first = first;";
+"  this.second = second;";
+"endif";
+"";
+"parser:pop(caret);";
+"parser:pop(dollar);";
+"";
+"return this;";
+"";
+"chunk_length:26";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:FB7CC9F8AFA671BDE463547C02D92587AF6EC603";
+"-=-=-mxyzptlk-=-=-";
+.
+#43:2
+if (this.type == "ternary")
+return tostr("(", this.first:p(), "[", this.second:p(), "..", this.third:p(), "])");
+elseif (this.type == "binary")
+return tostr("(", this.first:p(), "[", this.second:p(), "])");
+else
+res = "[";
+first = 1;
+for v in (this.value)
+res = tostr(res, first ? "" | ", ", v[1]:p(), " -> ", v[2]:p());
+first = 0;
+endfor
+res = tostr(res, "]");
+return res;
+return {res};
+endif
+return;
+"if (this.type == \"ternary\")";
+"  return tostr(\"(\", this.first:p(), \"[\", this.second:p(), \"..\", this.third:p(), \"])\");";
+"elseif (this.type == \"binary\")";
+"  return tostr(\"(\", this.first:p(), \"[\", this.second:p(), \"])\");";
+"else";
+"  res = \"[\";";
+"  first = 1;";
+"  for v in (this.value)";
+"    res = tostr(res, (first ? \"\" | \", \"), v[1]:p(), \" -> \", v[2]:p());";
+"    first = 0;";
+"  endfor";
+"  res = tostr(res, \"]\");";
+"  return res;";
+"  return {res};";
+"endif";
+"";
+"chunk_length:15";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:12B975B1409AE8C944A0D89C9058D62EF0DDC261";
+"-=-=-mxyzptlk-=-=-";
+.
+#44:0
+{parser} = args;
+sequence = this.plastic.utilities:parse_list_sequence(parser, ",", "}");
+parser:token("}");
+this.type = "unary";
+this.value = sequence;
+this.first = this;
+return this;
+return;
+"{parser} = args;";
+"";
+"sequence = this.plastic.utilities:parse_list_sequence(parser, \",\", \"}\");";
+"parser:token(\"}\");";
+"";
+"this.type = \"unary\";";
+"this.value = sequence;";
+"this.first = this;";
+"";
+"return this;";
+"";
+"chunk_length:10";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:687E36A53B89521FDC319DA7581CD449862A2BBF";
+"-=-=-mxyzptlk-=-=-";
+.
+#44:1
+res = "{";
+first = 1;
+for v in (this.value)
+res = tostr(res, first ? "" | ", ", v:p());
+first = 0;
+endfor
+res = tostr(res, "}");
+return res;
+return;
+"res = \"{\";";
+"first = 1;";
+"for v in (this.value)";
+"  res = tostr(res, (first ? \"\" | \", \"), v:p());";
+"  first = 0;";
+"endfor";
+"res = tostr(res, \"}\");";
+"return res;";
+"";
+"chunk_length:8";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:A0BEB6AA28D239CD26F390A5ED75A31A05E4933A";
+"-=-=-mxyzptlk-=-=-";
+.
+#45:0
+{parser} = args;
+parser:reserve_statement(this);
+a = {};
+parser:token("(");
+expression = parser:expression(0);
+a = {@a, expression};
+parser:token(")");
+statements = parser:statements("elseif", "else", "endif", "end");
+a = {@a, statements};
+while (parser:token().id == "elseif")
+parser:advance("elseif");
+parser:token("(");
+expression = parser:expression(0);
+a = {@a, expression};
+parser:token(")");
+statements = parser:statements("elseif", "else", "endif", "end");
+a = {@a, statements};
+symbol = parser.symbols["elseif"];
+parser:reserve_keyword(symbol);
+endwhile
+if (parser:token().id == "else")
+parser:advance("else");
+statements = parser:statements("endif", "end");
+a = {@a, statements};
+symbol = parser.symbols["else"];
+parser:reserve_keyword(symbol);
+endif
+if ((id = parser:token().id) == "endif")
+parser:advance("endif");
+else
+parser:advance("end");
+endif
+symbol = parser.symbols[id];
+parser:reserve_keyword(symbol);
+this.value = a;
+return this;
+return;
+"{parser} = args;";
+"";
+"/* update the symbol table */";
+"parser:reserve_statement(this);";
+"";
+"a = {};";
+"";
+"/* the predicate */";
+"parser:token(\"(\");";
+"expression = parser:expression(0);";
+"a = {@a, expression};";
+"parser:token(\")\");";
+"";
+"/* the consequent */";
+"statements = parser:statements(\"elseif\", \"else\", \"endif\", \"end\");";
+"a = {@a, statements};";
+"";
+"/* the alternatives */";
+"while (parser:token().id == \"elseif\")";
+"  parser:advance(\"elseif\");";
+"";
+"  /* predicate */";
+"  parser:token(\"(\");";
+"  expression = parser:expression(0);";
+"  a = {@a, expression};";
+"  parser:token(\")\");";
+"";
+"  /* consequent */";
+"  statements = parser:statements(\"elseif\", \"else\", \"endif\", \"end\");";
+"  a = {@a, statements};";
+"";
+"  /* update the symbol table */";
+"  symbol = parser.symbols[\"elseif\"];";
+"  parser:reserve_keyword(symbol);";
+"endwhile";
+"";
+"/* the final alternative */";
+"if (parser:token().id == \"else\")";
+"  parser:advance(\"else\");";
+"";
+"  statements = parser:statements(\"endif\", \"end\");";
+"  a = {@a, statements};";
+"";
+"  /* update the symbol table */";
+"  symbol = parser.symbols[\"else\"];";
+"  parser:reserve_keyword(symbol);";
+"endif";
+"";
+"/* the last token must be \"endif\" or \"end\" */";
+"if ((id = parser:token().id) == \"endif\")";
+"  parser:advance(\"endif\");";
+"else";
+"  parser:advance(\"end\");";
+"endif";
+"";
+"/* update the symbol table */";
+"symbol = parser.symbols[id];";
+"parser:reserve_keyword(symbol);";
+"";
+"/* store the parts in this token's `value' */";
+"this.value = a;";
+"";
+"return this;";
+"";
+"chunk_length:63";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:46F2D54F58E6B9C969243EEFCECA239D22FF4A45";
+"-=-=-mxyzptlk-=-=-";
+.
+#45:1
+if (this.type == "variable")
+return tostr("_", this.id);
+endif
+value = this.value;
+code = {tostr("if (", value[1]:p(), ")")};
+for s in (value[2])
+if (respond_to(s, "std"))
+code = {@code, @s:p()};
+else
+code = {@code, s:p() + ";"};
+endif
+endfor
+i = 3;
+while ((length(value) >= i) && (typeof(value[i]) != LIST))
+code = {@code, tostr("elseif (", value[i]:p(), ")")};
+i = i + 1;
+for s in (value[i])
+if (respond_to(s, "std"))
+code = {@code, @s:p()};
+else
+code = {@code, s:p() + ";"};
+endif
+endfor
+i = i + 1;
+endwhile
+if (length(value) == i)
+code = {@code, "else"};
+for s in (value[i])
+if (respond_to(s, "std"))
+code = {@code, @s:p()};
+else
+code = {@code, s:p() + ";"};
+endif
+endfor
+endif
+code = {@code, "endif"};
+return code;
+return;
+"if (this.type == \"variable\")";
+"  return tostr(\"_\", this.id);";
+"endif";
+"";
+"value =  this.value;";
+"";
+"code = {tostr(\"if (\", value[1]:p(), \")\")};";
+"";
+"for s in (value[2])";
+"  if (respond_to(s, \"std\"))";
+"    code = {@code, @s:p()};";
+"  else";
+"    code = {@code, s:p() + \";\"};";
+"  endif";
+"endfor";
+"";
+"i = 3;";
+"while (length(value) >= i && typeof(value[i]) != LIST)";
+"  code = {@code, tostr(\"elseif (\", value[i]:p(), \")\")};";
+"";
+"  i = i + 1;";
+"";
+"  for s in (value[i])";
+"    if (respond_to(s, \"std\"))";
+"      code = {@code, @s:p()};";
+"    else";
+"      code = {@code, s:p() + \";\"};";
+"    endif";
+"  endfor";
+"";
+"  i = i + 1;";
+"endwhile";
+"";
+"if (length(value) == i)";
+"  code = {@code, \"else\"};";
+"";
+"  for s in (value[i])";
+"    if (respond_to(s, \"std\"))";
+"      code = {@code, @s:p()};";
+"    else";
+"      code = {@code, s:p() + \";\"};";
+"    endif";
+"  endfor";
+"endif";
+"";
+"code = {@code, \"endif\"};";
+"";
+"return code;";
+"";
+"chunk_length:48";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:E9BB5B7F10C778B6BB4021BECD1F938ED636DF51";
+"-=-=-mxyzptlk-=-=-";
+.
+#46:0
+{parser} = args;
+expression = parser:expression(0);
+parser:token(")");
+this.type = "unary";
+this.first = expression;
+return this;
+return;
+"{parser} = args;";
+"";
+"expression = parser:expression(0);";
+"parser:token(\")\");";
+"";
+"this.type = \"unary\";";
+"this.first = expression;";
+"";
+"return this;";
+"";
+"chunk_length:9";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:1DDA7B523803C381657DBFCD1FEFBFBAD9085984";
+"-=-=-mxyzptlk-=-=-";
+.
+#46:1
+{parser, left} = args;
+sequence = this.plastic.utilities:parse_list_sequence(parser, ",", ")");
+parser:token(")");
+if (left.id == ".")
+raise("Syntax error", "Invalid application of invocation", parser);
+elseif (left.id == ":")
+first = left.first;
+second = left.second;
+this.type = "ternary";
+this.first = first;
+this.second = second;
+this.third = sequence;
+else
+if (left.type != "variable")
+raise("Syntax error", "Expected an identifier", parser);
+endif
+parser:make_identifier(left);
+this.type = "binary";
+this.first = left;
+this.second = sequence;
+endif
+return this;
+return;
+"{parser, left} = args;";
+"";
+"sequence =   this.plastic.utilities:parse_list_sequence(parser, \",\", \")\");";
+"parser:token(\")\");";
+"";
+"/* The invocation operator handles function and verb invocation, and";
+" * guards against use on properties.";
+" */";
+"if (left.id == \".\")";
+"  raise(\"Syntax error\", \"Invalid application of invocation\", parser);";
+"elseif (left.id == \":\")";
+"  first = left.first;";
+"  second = left.second;";
+"";
+"  /* the verb selector operator has our back */";
+"";
+"  this.type = \"ternary\";";
+"  this.first = first;";
+"  this.second = second;";
+"  this.third = sequence;";
+"else";
+"  if (left.type != \"variable\")";
+"    raise(\"Syntax error\", \"Expected an identifier\", parser);";
+"  endif";
+"";
+"  parser:make_identifier(left);";
+"";
+"  this.type = \"binary\";";
+"  this.first = left;";
+"  this.second = sequence;";
+"endif";
+"";
+"return this;";
+"";
+"chunk_length:33";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:1FADCE34D392572FBFB4DD2C02D498A9A0FA25FE";
+"-=-=-mxyzptlk-=-=-";
+.
+#46:2
+if (this.type == "ternary")
+a = {};
+for v in (this.third)
+a = {@a, v:p()};
+endfor
+if (this.second.type == "identifier")
+return tostr(this.first:p(), ":", this.second:p(), "(", a:join(", "), ")");
+else
+return tostr(this.first:p(), ":(", this.second:p(), ")(", a:join(", "), ")");
+endif
+elseif (this.type == "binary")
+a = {};
+for v in (this.second)
+a = {@a, v:p()};
+endfor
+return tostr(this.first:p(), "(", a:join(", "), ")");
+else
+return tostr(this.first:p());
+endif
+return;
+"if (this.type == \"ternary\")";
+"  a = {};";
+"  for v in (this.third)";
+"    a = {@a, v:p()};";
+"  endfor";
+"  if (this.second.type == \"identifier\")";
+"    return tostr(this.first:p(), \":\", this.second:p(), \"(\", a:join(\", \"), \")\");";
+"  else";
+"    return tostr(this.first:p(), \":(\", this.second:p(), \")(\", a:join(\", \"), \")\");";
+"  endif";
+"elseif (this.type == \"binary\")";
+"  a = {};";
+"  for v in (this.second)";
+"    a = {@a, v:p()};";
+"  endfor";
+"  return tostr(this.first:p(), \"(\", a:join(\", \"), \")\");";
+"else";
+"  return tostr(this.first:p());";
+"endif";
+"";
+"chunk_length:19";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:24B9D90139FDEAFEA1D9B4F6A0D3DC8880EC3E6A";
+"-=-=-mxyzptlk-=-=-";
+.
+#47:0
+{parser, first} = args;
+if (parser:token().id == "(")
+parser:advance("(");
+second = parser:expression(0);
+parser:advance(")");
+else
+second = parser:expression(this.bp);
+if (second.type != "variable")
+raise("Syntax error", "Expected an identifier", parser);
+endif
+parser:make_identifier(second);
+endif
+if (parser:token().id != "(")
+raise("Syntax error", "Expected `('", parser);
+endif
+this.type = "binary";
+this.first = first;
+this.second = second;
+return this;
+return;
+"{parser, first} = args;";
+"";
+"if (parser:token().id == \"(\")";
+"  parser:advance(\"(\");";
+"  second = parser:expression(0);";
+"  parser:advance(\")\");";
+"else";
+"  second = parser:expression(this.bp);";
+"  if (second.type != \"variable\")";
+"    raise(\"Syntax error\", \"Expected an identifier\", parser);";
+"  endif";
+"  parser:make_identifier(second);";
+"endif";
+"";
+"if (parser:token().id != \"(\")";
+"  raise(\"Syntax error\", \"Expected `('\", parser);";
+"endif";
+"";
+"this.type = \"binary\";";
+"this.first = first;";
+"this.second = second;";
+"";
+"return this;";
+"";
+"chunk_length:23";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:B9DFBD0CCD5EEDED7AC95EC7FAD47D65829DDBEE";
+"-=-=-mxyzptlk-=-=-";
+.
+#48:0
+{parser, first} = args;
+if (parser:token().id == "(")
+parser:advance("(");
+second = parser:expression(0);
+parser:advance(")");
+else
+second = parser:expression(this.bp);
+if (second.type != "variable")
+raise("Syntax error", "Expected an identifier", parser);
+endif
+parser:make_identifier(second);
+endif
+this.type = "binary";
+this.first = first;
+this.second = second;
+return this;
+return;
+"{parser, first} = args;";
+"";
+"if (parser:token().id == \"(\")";
+"  parser:advance(\"(\");";
+"  second = parser:expression(0);";
+"  parser:advance(\")\");";
+"else";
+"  second = parser:expression(this.bp);";
+"  if (second.type != \"variable\")";
+"    raise(\"Syntax error\", \"Expected an identifier\", parser);";
+"  endif";
+"  parser:make_identifier(second);";
+"endif";
+"";
+"this.type = \"binary\";";
+"this.first = first;";
+"this.second = second;";
+"";
+"return this;";
+"";
+"chunk_length:19";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:C3E0624F254D64CFCB9D8CE99CBFEA6B40E2E6B1";
+"-=-=-mxyzptlk-=-=-";
+.
+#48:1
+if (this.second.type == "identifier")
+return tostr(this.first:p(), ".", this.second:p());
+else
+return tostr(this.first:p(), ".(", this.second:p() + ")");
+endif
+return;
+"if (this.second.type == \"identifier\")";
+"  return tostr(this.first:p(), \".\", this.second:p());";
+"else";
+"  return tostr(this.first:p(), \".(\", this.second:p() + \")\");";
+"endif";
+"";
+"chunk_length:5";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:669AFC5702E3F357CCB3E91A9036DC5881549CE6";
+"-=-=-mxyzptlk-=-=-";
+.
+#49:0
+{parser} = args;
+first = parser:expression(700);
+if (first.id == "(end)")
+raise("Syntax error", "Expected an expression", parser);
+endif
+this.type = "unary";
+this.first = first;
+return this;
+return;
+"{parser} = args;";
+"";
+"first = parser:expression(700);";
+"";
+"if (first.id == \"(end)\")";
+"  raise(\"Syntax error\", \"Expected an expression\", parser);";
+"endif";
+"";
+"this.type = \"unary\";";
+"this.first = first;";
+"";
+"return this;";
+"";
+"chunk_length:12";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:71052EB9A64F517E3CBE29438E498136C830D190";
+"-=-=-mxyzptlk-=-=-";
+.
+#49:1
+{parser, first} = args;
+id = parser:push("@", 0, this.plastic.prefix_operator_proto);
+if ((token = parser:token()).id == "ANY")
+parser:advance("ANY");
+symbol = parser.symbols["ANY"];
+parser:reserve_keyword(symbol);
+second = {token};
+else
+second = this.plastic.utilities:parse_list_sequence(parser, ",", "");
+if (second[$].id == "(end)")
+raise("Syntax error", "Expected `ANY' or a list of expressions", parser);
+endif
+endif
+parser:pop(id);
+if ((token = parser:token()).id == "=>")
+parser:advance("=>");
+third = parser:expression(0);
+if (third.id == "(end)")
+raise("Syntax error", "Expected an expression", parser);
+endif
+this.type = "ternary";
+this.first = first;
+this.second = second;
+this.third = third;
+else
+this.type = "binary";
+this.first = first;
+this.second = second;
+endif
+return this;
+return;
+"{parser, first} = args;";
+"";
+"/* Error codes are either the keyword `ANY' or a list of expressions";
+" * (see 4.1.12 Catching Errors in Expressions).";
+" */";
+"id = parser:push(\"@\", 0, this.plastic.prefix_operator_proto);";
+"";
+"if ((token = parser:token()).id == \"ANY\")";
+"  parser:advance(\"ANY\");";
+"  symbol = parser.symbols[\"ANY\"];";
+"  parser:reserve_keyword(symbol);";
+"  second = {token};";
+"else";
+"  second = this.plastic.utilities:parse_list_sequence(parser, \",\", \"\");";
+"";
+"  if (second[$].id == \"(end)\")";
+"    raise(\"Syntax error\", \"Expected `ANY' or a list of expressions\", parser);";
+"  endif";
+"endif";
+"";
+"parser:pop(id);";
+"";
+"if ((token = parser:token()).id == \"=>\")";
+"  parser:advance(\"=>\");";
+"  third = parser:expression(0);";
+"";
+"  if (third.id == \"(end)\")";
+"    raise(\"Syntax error\", \"Expected an expression\", parser);";
+"  endif";
+"";
+"  this.type = \"ternary\";";
+"  this.first = first;";
+"  this.second = second;";
+"  this.third = third;";
+"else";
+"  this.type = \"binary\";";
+"  this.first = first;";
+"  this.second = second;";
+"endif";
+"";
+"return this;";
+"";
+"chunk_length:41";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:3F74393AE60842B8E06B0DEB07E005C4B0350E3B";
+"-=-=-mxyzptlk-=-=-";
+.
+#49:2
+if (this.type == "unary")
+return tostr(this.value, this.first:p());
+endif
+x = {};
+for s in (this.second)
+x = {@x, s:p()};
+endfor
+second = x:join(", ");
+if (this.type == "ternary")
+return tostr("`", this.first:p(), " ! ", second, " => ", this.third:p(), "'");
+else
+return tostr("`", this.first:p(), " ! ", second, "'");
+endif
+return;
+"if (this.type == \"unary\")";
+"  return tostr(this.value, this.first:p());";
+"endif";
+"";
+"x = {};";
+"for s in (this.second)";
+"  x = {@x, s:p()};";
+"endfor";
+"";
+"second = x:join(\", \");";
+"";
+"if (this.type == \"ternary\")";
+"  return tostr(\"`\", this.first:p(), \" ! \", second, \" => \", this.third:p(), \"'\");";
+"else";
+"  return tostr(\"`\", this.first:p(), \" ! \", second, \"'\");";
+"endif";
+"";
+"chunk_length:16";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:B2C16A49934AB4057F886E1D6C74703F96DF6C01";
+"-=-=-mxyzptlk-=-=-";
+.
+#50:0
+{parser, first} = args;
+second = parser:expression(0);
+parser:token("|");
+third = parser:expression(0);
+if ((second.id == "(end)") || (third.id == "(end)"))
+raise("Syntax error", "Expected an expression", parser);
+endif
+this.type = "ternary";
+this.first = first;
+this.second = second;
+this.third = third;
+return this;
+return;
+"{parser, first} = args;";
+"";
+"second = parser:expression(0);";
+"parser:token(\"|\");";
+"third = parser:expression(0);";
+"";
+"if (second.id == \"(end)\" || third.id == \"(end)\")";
+"  raise(\"Syntax error\", \"Expected an expression\", parser);";
+"endif";
+"";
+"this.type = \"ternary\";";
+"this.first = first;";
+"this.second = second;";
+"this.third = third;";
+"";
+"return this;";
+"";
+"chunk_length:16";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:5437C1BBEF59856CD0E8FF421B0C741D0AA42CE2";
+"-=-=-mxyzptlk-=-=-";
+.
+#50:1
+return tostr("(", this.first:p(), " ? ", this.second:p(), " | ", this.third:p(), ")");
+return;
+"return tostr(\"(\", this.first:p(), \" ? \", this.second:p(), \" | \", this.third:p(), \")\");";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:CA28B7EE1208C0A1C3A33C2E364ED030E2FBC869";
+"-=-=-mxyzptlk-=-=-";
+.
+#51:0
+{parser} = args;
+parser:reserve_statement(this);
+a = {};
+variables = {};
+variable = parser:token();
+parser:make_variable(variable);
+parser:advance();
+variables = {@variables, variable.id};
+a = {@a, variable};
+while (parser:token().id == ",")
+parser:advance(",");
+variable = parser:token();
+parser:make_variable(variable);
+parser:advance();
+variables = {@variables, variable.id};
+a = {@a, variable};
+endwhile
+parser:token("in");
+symbol = parser.symbols["in"];
+parser:reserve_keyword(symbol);
+if (parser:token().id == "[")
+this.subtype = "range";
+(length(a) < 2) || raise("Syntax error", "Too many loop variables", parser);
+parser:token("[");
+first = parser:expression(0);
+a = {@a, first};
+parser:token("..");
+second = parser:expression(0);
+a = {@a, second};
+parser:token("]");
+else
+this.subtype = "collection";
+(length(a) < 3) || raise("Syntax error", "Too many loop variables", parser);
+parser:token("(");
+expression = parser:expression(0);
+a = {@a, expression};
+parser:token(")");
+endif
+parser.loop_variables = {@parser.loop_variables, @variables};
+parser.loop_depth = parser.loop_depth + 1;
+statements = parser:statements("endfor", "end");
+a = {@a, statements};
+l = length(variables);
+parser.loop_variables = parser.loop_variables[1..$ - l];
+parser.loop_depth = parser.loop_depth - 1;
+if ((id = parser:token().id) == "endfor")
+parser:advance("endfor");
+else
+parser:advance("end");
+endif
+symbol = parser.symbols[id];
+parser:reserve_keyword(symbol);
+this.value = a;
+return this;
+return;
+"{parser} = args;";
+"";
+"/* update the symbol table */";
+"parser:reserve_statement(this);";
+"";
+"a = {};";
+"";
+"/* the index(s) */";
+"variables = {};";
+"";
+"variable = parser:token();";
+"parser:make_variable(variable);";
+"parser:advance();";
+"variables = {@variables, variable.id};";
+"a = {@a, variable};";
+"";
+"while (parser:token().id == \",\")";
+"  parser:advance(\",\");";
+"  variable = parser:token();";
+"  parser:make_variable(variable);";
+"  parser:advance();";
+"  variables = {@variables, variable.id};";
+"  a = {@a, variable};";
+"endwhile";
+"";
+"parser:token(\"in\");";
+"";
+"/* update the symbol table */";
+"symbol = parser.symbols[\"in\"];";
+"parser:reserve_keyword(symbol);";
+"";
+"/* could be a range or a collection */";
+"if (parser:token().id == \"[\")";
+"  /* range */";
+"  this.subtype = \"range\";";
+"  length(a) < 2 || raise(\"Syntax error\", \"Too many loop variables\", parser);";
+"  parser:token(\"[\");";
+"  first = parser:expression(0);";
+"  a = {@a, first};";
+"  parser:token(\"..\");";
+"  second = parser:expression(0);";
+"  a = {@a, second};";
+"  parser:token(\"]\");";
+"else";
+"  /* collection */";
+"  this.subtype = \"collection\";";
+"  length(a) < 3 || raise(\"Syntax error\", \"Too many loop variables\", parser);";
+"  parser:token(\"(\");";
+"  expression = parser:expression(0);";
+"  a = {@a, expression};";
+"  parser:token(\")\");";
+"endif";
+"";
+"/* the body */";
+"parser.loop_variables = {@parser.loop_variables, @variables};";
+"parser.loop_depth = parser.loop_depth + 1;";
+"";
+"statements = parser:statements(\"endfor\", \"end\");";
+"a = {@a, statements};";
+"";
+"l = length(variables);";
+"parser.loop_variables = parser.loop_variables[1..$ - l];";
+"parser.loop_depth = parser.loop_depth - 1;";
+"";
+"/* the last token must be \"endfor\" or \"end\" */";
+"if ((id = parser:token().id) == \"endfor\")";
+"  parser:advance(\"endfor\");";
+"else";
+"  parser:advance(\"end\");";
+"endif";
+"";
+"/* update the symbol table */";
+"symbol = parser.symbols[id];";
+"parser:reserve_keyword(symbol);";
+"";
+"/* store the parts in this token's `value' */";
+"this.value = a;";
+"";
+"return this;";
+"";
+"chunk_length:79";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:D763B63E02432BB0E44CAAE84BC22B8A142FD75C";
+"-=-=-mxyzptlk-=-=-";
+.
+#51:1
+if (this.type == "variable")
+return tostr("_", this.id);
+endif
+value = this.value;
+if (this.subtype == "range")
+code = {tostr("for ", value[1]:p(), " in [", value[2]:p(), "..", value[3]:p(), "]")};
+statements = value[4];
+elseif (length(value) == 4)
+code = {tostr("for ", value[1]:p(), ", ", value[2]:p(), " in (", value[3]:p(), ")")};
+statements = value[4];
+else
+code = {tostr("for ", value[1]:p(), " in (", value[2]:p(), ")")};
+statements = value[3];
+endif
+for s in (statements)
+if (respond_to(s, "std"))
+code = {@code, @s:p()};
+else
+code = {@code, s:p() + ";"};
+endif
+endfor
+code = {@code, "endfor"};
+return code;
+return;
+"if (this.type == \"variable\")";
+"  return tostr(\"_\", this.id);";
+"endif";
+"";
+"value =  this.value;";
+"";
+"if (this.subtype == \"range\")";
+"  code = {tostr(\"for \", value[1]:p(), \" in [\", value[2]:p(), \"..\", value[3]:p(), \"]\")};";
+"  statements = value[4];";
+"elseif (length(value) == 4)";
+"  code = {tostr(\"for \", value[1]:p(), \", \", value[2]:p(), \" in (\", value[3]:p(), \")\")};";
+"  statements = value[4];";
+"else";
+"  code = {tostr(\"for \", value[1]:p(), \" in (\", value[2]:p(), \")\")};";
+"  statements = value[3];";
+"endif";
+"";
+"for s in (statements)";
+"  if (respond_to(s, \"std\"))";
+"    code = {@code, @s:p()};";
+"  else";
+"    code = {@code, s:p() + \";\"};";
+"  endif";
+"endfor";
+"";
+"code = {@code, \"endfor\"};";
+"";
+"return code;";
+"";
+"chunk_length:28";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:53E81479D53DF5E419594453C4715AD4D6B93AEC";
+"-=-=-mxyzptlk-=-=-";
+.
+#52:0
+{parser} = args;
+parser:reserve_statement(this);
+end = tostr("end", this.id);
+a = {};
+variables = {};
+if (((type = parser:token().type) == "variable") || (type == "name"))
+variable = parser:token();
+parser:make_variable(variable);
+parser:advance();
+variables = {@variables, variable.id};
+a = {@a, variable};
+endif
+parser:token("(");
+expression = parser:expression(0);
+a = {@a, expression};
+parser:token(")");
+parser.loop_variables = {@parser.loop_variables, @variables};
+parser.loop_depth = parser.loop_depth + 1;
+statements = parser:statements(end, "end");
+a = {@a, statements};
+l = length(variables);
+parser.loop_variables = parser.loop_variables[1..$ - l];
+parser.loop_depth = parser.loop_depth - 1;
+if ((id = parser:token().id) == end)
+parser:advance(end);
+else
+parser:advance("end");
+endif
+symbol = parser.symbols[id];
+parser:reserve_keyword(symbol);
+this.value = a;
+return this;
+return;
+"{parser} = args;";
+"";
+"/* update the symbol table */";
+"parser:reserve_statement(this);";
+"";
+"end = tostr(\"end\", this.id);";
+"";
+"a = {};";
+"";
+"/* possible, optional loop name */";
+"variables = {};";
+"if ((type = parser:token().type) == \"variable\" || type == \"name\")";
+"  variable = parser:token();";
+"  parser:make_variable(variable);";
+"  parser:advance();";
+"  variables = {@variables, variable.id};";
+"  a = {@a, variable};";
+"endif";
+"";
+"/* the condition */";
+"parser:token(\"(\");";
+"expression = parser:expression(0);";
+"a = {@a, expression};";
+"parser:token(\")\");";
+"";
+"/* the body */";
+"parser.loop_variables = {@parser.loop_variables, @variables};";
+"parser.loop_depth = parser.loop_depth + 1;";
+"";
+"statements = parser:statements(end, \"end\");";
+"a = {@a, statements};";
+"";
+"l = length(variables);";
+"parser.loop_variables = parser.loop_variables[1..$ - l];";
+"parser.loop_depth = parser.loop_depth - 1;";
+"";
+"/* the last token must be \"endwhile/enduntil\" or \"end\" */";
+"if ((id = parser:token().id) == end)";
+"  parser:advance(end);";
+"else";
+"  parser:advance(\"end\");";
+"endif";
+"";
+"/* update the symbol table */";
+"symbol = parser.symbols[id];";
+"parser:reserve_keyword(symbol);";
+"";
+"/* store the parts in this token's `value' */";
+"this.value = a;";
+"";
+"return this;";
+"";
+"chunk_length:51";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:DC2BECAEBBED52539E7926D3C715C5F443673A8D";
+"-=-=-mxyzptlk-=-=-";
+.
+#52:1
+if (this.type == "variable")
+return tostr("_", this.id);
+endif
+value = this.value;
+i = 0;
+if (length(value) > 2)
+prefix = tostr("while ", value[i = i + 1]:p());
+else
+prefix = tostr("while");
+endif
+if (this.id == "while")
+code = {tostr(prefix, " (", value[i = i + 1]:p(), ")")};
+else
+code = {tostr(prefix, " (!(", value[i = i + 1]:p(), "))")};
+endif
+for s in (value[i = i + 1])
+if (respond_to(s, "std"))
+code = {@code, @s:p()};
+else
+code = {@code, s:p() + ";"};
+endif
+endfor
+code = {@code, "endwhile"};
+return code;
+return;
+"if (this.type == \"variable\")";
+"  return tostr(\"_\", this.id);";
+"endif";
+"";
+"value =  this.value;";
+"";
+"i = 0;";
+"";
+"if (length(value) > 2)";
+"  prefix = tostr(\"while \", value[i = i + 1]:p());";
+"else";
+"  prefix = tostr(\"while\");";
+"endif";
+"";
+"if (this.id == \"while\")";
+"  code = {tostr(prefix, \" (\", value[i = i + 1]:p(), \")\")};";
+"else";
+"  code = {tostr(prefix, \" (!(\", value[i = i + 1]:p(), \"))\")};";
+"endif";
+"";
+"for s in (value[i = i + 1])";
+"  if (respond_to(s, \"std\"))";
+"    code = {@code, @s:p()};";
+"  else";
+"    code = {@code, s:p() + \";\"};";
+"  endif";
+"endfor";
+"";
+"code = {@code, \"endwhile\"};";
+"";
+"return code;";
+"";
+"chunk_length:31";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:6C6CEEB81E8301156D7192E02A4FDC0D47D316D8";
+"-=-=-mxyzptlk-=-=-";
+.
+#53:0
+{parser} = args;
+parser:reserve_statement(this);
+a = {};
+if (((type = parser:token().type) == "variable") || (type == "name"))
+variable = parser:token();
+parser:make_variable(variable);
+parser:advance();
+a = {@a, variable};
+endif
+parser:token("(");
+expression = parser:expression(0);
+a = {@a, expression};
+parser:token(")");
+statements = parser:statements("endfork", "end");
+a = {@a, statements};
+if ((id = parser:token().id) == "endfork")
+parser:advance("endfork");
+else
+parser:advance("end");
+endif
+symbol = parser.symbols[id];
+parser:reserve_keyword(symbol);
+this.value = a;
+return this;
+return;
+"{parser} = args;";
+"";
+"/* update the symbol table */";
+"parser:reserve_statement(this);";
+"";
+"a = {};";
+"";
+"/* possible, optional task name */";
+"if ((type = parser:token().type) == \"variable\" || type == \"name\")";
+"  variable = parser:token();";
+"  parser:make_variable(variable);";
+"  parser:advance();";
+"  a = {@a, variable};";
+"endif";
+"";
+"/* the expression */";
+"parser:token(\"(\");";
+"expression = parser:expression(0);";
+"a = {@a, expression};";
+"parser:token(\")\");";
+"";
+"/* the body */";
+"statements = parser:statements(\"endfork\", \"end\");";
+"a = {@a, statements};";
+"";
+"/* the last token must be \"endfork\" or \"end\" */";
+"if ((id = parser:token().id) == \"endfork\")";
+"  parser:advance(\"endfork\");";
+"else";
+"  parser:advance(\"end\");";
+"endif";
+"";
+"/* update the symbol table */";
+"symbol = parser.symbols[id];";
+"parser:reserve_keyword(symbol);";
+"";
+"/* store the parts in this token's `value' */";
+"this.value = a;";
+"";
+"return this;";
+"";
+"chunk_length:40";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:0ED7146966275E0722F7F9DF4BD7F76C03BB0DDD";
+"-=-=-mxyzptlk-=-=-";
+.
+#53:1
+if (this.type == "variable")
+return tostr("_", this.id);
+endif
+value = this.value;
+i = 0;
+if (length(value) > 2)
+code = {tostr("fork ", value[i = i + 1]:p(), " (", value[i = i + 1]:p(), ")")};
+else
+code = {tostr("fork", " (", value[i = i + 1]:p(), ")")};
+endif
+for s in (value[i = i + 1])
+if (respond_to(s, "std"))
+code = {@code, @s:p()};
+else
+code = {@code, s:p() + ";"};
+endif
+endfor
+code = {@code, "endfork"};
+return code;
+return;
+"if (this.type == \"variable\")";
+"  return tostr(\"_\", this.id);";
+"endif";
+"";
+"value =  this.value;";
+"";
+"i = 0;";
+"";
+"if (length(value) > 2)";
+"  code = {tostr(\"fork \", value[i = i + 1]:p(), \" (\", value[i = i + 1]:p(), \")\")};";
+"else";
+"  code = {tostr(\"fork\", \" (\", value[i = i + 1]:p(), \")\")};";
+"endif";
+"";
+"for s in (value[i = i + 1])";
+"  if (respond_to(s, \"std\"))";
+"    code = {@code, @s:p()};";
+"  else";
+"    code = {@code, s:p() + \";\"};";
+"  endif";
+"endfor";
+"";
+"code = {@code, \"endfork\"};";
+"";
+"return code;";
+"";
+"chunk_length:25";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:CD3464D051311AF18068FF1F8719E0005E87E555";
+"-=-=-mxyzptlk-=-=-";
+.
+#54:0
+{parser} = args;
+parser:reserve_statement(this);
+a = {};
+body = parser:statements("except", "finally", "endtry", "end");
+a = {@a, body};
+if (parser:token().id == "finally")
+parser:advance("finally");
+b = parser:statements("endtry", "end");
+symbol = parser.symbols["finally"];
+parser:reserve_keyword(symbol);
+this.subtype = "finally";
+a = {@a, b};
+else
+b = {};
+id = parser:push("@", 0, this.plastic.prefix_operator_proto);
+while (parser:token().id == "except")
+parser:advance("except");
+if ((variable = parser:token()).id != "(")
+parser:advance();
+if ((variable.type != "name") && (variable.type != "variable"))
+raise("Syntax error", "Variable must be an identifier", parser);
+endif
+parser:make_variable(variable);
+parser:token("(");
+if ((token = parser:token()).id == "ANY")
+parser:advance("ANY");
+symbol = parser.symbols["ANY"];
+parser:reserve_keyword(symbol);
+codes = {token};
+else
+codes = this.plastic.utilities:parse_list_sequence(parser, ",", ")");
+endif
+parser:token(")");
+(!codes) && raise("Syntax error", "Codes may not be empty", parser);
+b = {variable, codes};
+else
+parser:token("(");
+if ((token = parser:token()).id == "ANY")
+parser:advance("ANY");
+symbol = parser.symbols["ANY"];
+parser:reserve_keyword(symbol);
+codes = {token};
+else
+codes = this.plastic.utilities:parse_list_sequence(parser, ",", ")");
+endif
+parser:token(")");
+(!codes) && raise("Syntax error", "Codes may not be empty", parser);
+b = {codes};
+endif
+handler = parser:statements("except", "finally", "endtry", "end");
+b = {@b, handler};
+symbol = parser.symbols["except"];
+parser:reserve_keyword(symbol);
+a = {@a, b};
+endwhile
+parser:pop(id);
+if (!b)
+raise("Syntax error", "Missing except", parser);
+endif
+this.subtype = "except";
+endif
+if ((id = parser:token().id) == "endtry")
+parser:advance("endtry");
+else
+parser:advance("end");
+endif
+symbol = parser.symbols[id];
+parser:reserve_keyword(symbol);
+this.value = a;
+return this;
+return;
+"{parser} = args;";
+"";
+"/* update the symbol table */";
+"parser:reserve_statement(this);";
+"";
+"a = {};";
+"";
+"/* the body */";
+"body = parser:statements(\"except\", \"finally\", \"endtry\", \"end\");";
+"a = {@a, body};";
+"";
+"if (parser:token().id == \"finally\")";
+"  parser:advance(\"finally\");";
+"";
+"  b = parser:statements(\"endtry\", \"end\");";
+"";
+"  /* update the symbol table */";
+"  symbol = parser.symbols[\"finally\"];";
+"  parser:reserve_keyword(symbol);";
+"";
+"  this.subtype = \"finally\";";
+"";
+"  a = {@a, b};";
+"";
+"else";
+"  b = {};";
+"";
+"  id = parser:push(\"@\", 0, this.plastic.prefix_operator_proto);";
+"";
+"  /* the exceptions */";
+"  while (parser:token().id == \"except\")";
+"    parser:advance(\"except\");";
+"";
+"    /* variable and codes */";
+"    if ((variable = parser:token()).id != \"(\")";
+"      parser:advance();";
+"";
+"      if (variable.type != \"name\" && variable.type != \"variable\")";
+"        raise(\"Syntax error\", \"Variable must be an identifier\", parser);";
+"      endif";
+"      parser:make_variable(variable);";
+"";
+"      parser:token(\"(\");";
+"      if ((token = parser:token()).id == \"ANY\")";
+"        parser:advance(\"ANY\");";
+"        symbol = parser.symbols[\"ANY\"];";
+"        parser:reserve_keyword(symbol);";
+"        codes = {token};";
+"      else";
+"        codes = this.plastic.utilities:parse_list_sequence(parser, \",\", \")\");";
+"      endif";
+"      parser:token(\")\");";
+"";
+"      !codes && raise(\"Syntax error\", \"Codes may not be empty\", parser);";
+"";
+"      b = {variable, codes};";
+"";
+"    /* just codes */";
+"    else";
+"      parser:token(\"(\");";
+"      if ((token = parser:token()).id == \"ANY\")";
+"        parser:advance(\"ANY\");";
+"        symbol = parser.symbols[\"ANY\"];";
+"        parser:reserve_keyword(symbol);";
+"        codes = {token};";
+"      else";
+"        codes = this.plastic.utilities:parse_list_sequence(parser, \",\", \")\");";
+"      endif";
+"      parser:token(\")\");";
+"";
+"      !codes && raise(\"Syntax error\", \"Codes may not be empty\", parser);";
+"";
+"      b = {codes};";
+"";
+"    endif";
+"";
+"    /* handler */";
+"    handler = parser:statements(\"except\", \"finally\", \"endtry\", \"end\");";
+"    b = {@b, handler};";
+"";
+"    /* update the symbol table */";
+"    symbol = parser.symbols[\"except\"];";
+"    parser:reserve_keyword(symbol);";
+"";
+"    a = {@a, b};";
+"";
+"  endwhile";
+"";
+"  parser:pop(id);";
+"";
+"  if (!b)";
+"    raise(\"Syntax error\", \"Missing except\", parser);";
+"  endif";
+"";
+"  this.subtype = \"except\";";
+"";
+"endif";
+"";
+"/* the last token must be \"endtry\" or \"end\" */";
+"if ((id = parser:token().id) == \"endtry\")";
+"  parser:advance(\"endtry\");";
+"else";
+"  parser:advance(\"end\");";
+"endif";
+"";
+"/* update the symbol table */";
+"symbol = parser.symbols[id];";
+"parser:reserve_keyword(symbol);";
+"";
+"/* store the parts in this token's `value' */";
+"this.value = a;";
+"";
+"return this;";
+"";
+"chunk_length:113";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:E35D0E704DAB84B635FDF374A2AE5B68C2A8A8EC";
+"-=-=-mxyzptlk-=-=-";
+.
+#54:1
+if (this.type == "variable")
+return tostr("_", this.id);
+endif
+value = this.value;
+code = {"try"};
+for s in (value[1])
+if (respond_to(s, "std"))
+code = {@code, @s:p()};
+else
+code = {@code, s:p() + ";"};
+endif
+endfor
+if (this.subtype == "finally")
+code = {@code, "finally"};
+for s in (value[2])
+if (respond_to(s, "std"))
+code = {@code, @s:p()};
+else
+code = {@code, s:p() + ";"};
+endif
+endfor
+else
+for value in (value[2..$])
+if (length(value) == 3)
+x = {};
+for s in (value[2])
+x = {@x, s:p()};
+endfor
+code = {@code, tostr("except ", value[1]:p(), " (", x:join(", "), ")")};
+statements = value[3];
+else
+x = {};
+for s in (value[1])
+x = {@x, s:p()};
+endfor
+code = {@code, tostr("except (", x:join(", "), ")")};
+statements = value[2];
+endif
+for s in (statements)
+if (respond_to(s, "std"))
+code = {@code, @s:p()};
+else
+code = {@code, s:p() + ";"};
+endif
+endfor
+endfor
+endif
+code = {@code, "endtry"};
+return code;
+return;
+"if (this.type == \"variable\")";
+"  return tostr(\"_\", this.id);";
+"endif";
+"";
+"value =  this.value;";
+"";
+"code = {\"try\"};";
+"";
+"for s in (value[1])";
+"  if (respond_to(s, \"std\"))";
+"    code = {@code, @s:p()};";
+"  else";
+"    code = {@code, s:p() + \";\"};";
+"  endif";
+"endfor";
+"";
+"if (this.subtype == \"finally\")";
+"  code = {@code, \"finally\"};";
+"";
+"  for s in (value[2])";
+"    if (respond_to(s, \"std\"))";
+"      code = {@code, @s:p()};";
+"    else";
+"      code = {@code, s:p() + \";\"};";
+"    endif";
+"  endfor";
+"";
+"else";
+"  for value in (value[2..$])";
+"    if (length(value) == 3)";
+"      x = {};";
+"      for s in (value[2])";
+"        x = {@x, s:p()};";
+"      endfor";
+"";
+"      code = {@code, tostr(\"except \", value[1]:p(), \" (\", x:join(\", \"), \")\")};";
+"      statements = value[3];";
+"";
+"    else";
+"      x = {};";
+"      for s in (value[1])";
+"        x = {@x, s:p()};";
+"      endfor";
+"";
+"      code = {@code, tostr(\"except (\", x:join(\", \"), \")\")};";
+"      statements = value[2];";
+"";
+"    endif";
+"";
+"    for s in (statements)";
+"      if (respond_to(s, \"std\"))";
+"        code = {@code, @s:p()};";
+"      else";
+"        code = {@code, s:p() + \";\"};";
+"      endif";
+"    endfor";
+"";
+"  endfor";
+"endif";
+"";
+"code = {@code, \"endtry\"};";
+"";
+"return code;";
+"";
+"chunk_length:63";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:DB053078427B4F741DC90CD05AD9EAD8F1B06D31";
+"-=-=-mxyzptlk-=-=-";
+.
+#55:0
+return this;
+return;
+"return this;";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:58CFE4977A49A7695FEE4D2F29BB87606D70E92F";
+"-=-=-mxyzptlk-=-=-";
+.
+#55:1
+return this.value;
+return;
+"return this.value;";
+"";
+"chunk_length:1";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:9CCA8704C93A791DA685CAE74B5398C5A6A25CB1";
+"-=-=-mxyzptlk-=-=-";
+.
+#56:0
+{parser} = args;
+first = parser:expression(700);
+if (first.id == "(end)")
+raise("Syntax error", "Expected an expression", parser);
+endif
+this.type = "unary";
+this.first = first;
+return this;
+return;
+"{parser} = args;";
+"";
+"first = parser:expression(700);";
+"";
+"if (first.id == \"(end)\")";
+"  raise(\"Syntax error\", \"Expected an expression\", parser);";
+"endif";
+"";
+"this.type = \"unary\";";
+"this.first = first;";
+"";
+"return this;";
+"";
+"chunk_length:12";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:71052EB9A64F517E3CBE29438E498136C830D190";
+"-=-=-mxyzptlk-=-=-";
+.
+#56:1
+{parser, first} = args;
+second = parser:expression(this.bp);
+if (second.id == "(end)")
+raise("Syntax error", "Expected an expression", parser);
+endif
+this.type = "binary";
+this.first = first;
+this.second = second;
+return this;
+return;
+"{parser, first} = args;";
+"";
+"second = parser:expression(this.bp);";
+"";
+"if (second.id == \"(end)\")";
+"  raise(\"Syntax error\", \"Expected an expression\", parser);";
+"endif";
+"";
+"this.type = \"binary\";";
+"this.first = first;";
+"this.second = second;";
+"";
+"return this;";
+"";
+"chunk_length:13";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:A9AE696659B56975F48F68AF477F92EB2084698F";
+"-=-=-mxyzptlk-=-=-";
+.
+#56:2
+if (this.type == "unary")
+return tostr((this.value == "-") ? "-" | "", this.first:p());
+else
+return tostr("(", this.first:p(), " ", this.value, " ", this.second:p(), ")");
+endif
+return;
+"if (this.type == \"unary\")";
+"  return tostr(this.value == \"-\" ? \"-\" | \"\", this.first:p());";
+"else";
+"  return tostr(\"(\", this.first:p(), \" \", this.value, \" \", this.second:p(), \")\");";
+"endif";
+"";
+"chunk_length:5";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:E7AD82C153CD93BD8B0745854F542F62CFE8F2BE";
+"-=-=-mxyzptlk-=-=-";
+.
+#59:0
 ((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
 return;
 "ticks_left() < 10000 || seconds_left() < 2 && suspend(0);";
@@ -12215,7 +18999,7 @@ return;
 "sha1:C3608BDA1ACF59B6AE2D36C8E3B873466464014B";
 "-=-=-mxyzptlk-=-=-";
 .
-#28:1
+#59:1
 {lines, ?intern = []} = args;
 algo = this.default_hash_algo;
 result = {};
@@ -12252,7 +19036,7 @@ return;
 "sha1:3B840B91F733C547C6F63B2420E85AD186EF1B0E";
 "-=-=-mxyzptlk-=-=-";
 .
-#28:2
+#59:2
 {lines1, lines2, intern} = args;
 for v, k in (intern)
 this:_suspend_if_necessary();
@@ -12310,7 +19094,7 @@ return;
 "sha1:BCF4FA5C1C969563D67684352B747F95260A8CAD";
 "-=-=-mxyzptlk-=-=-";
 .
-#28:3
+#59:3
 {items} = args;
 stacks = {};
 for item in (items)
@@ -12377,7 +19161,7 @@ return;
 "sha1:F2F39DE79F64CBBB7E604B1600CB04F108F937D1";
 "-=-=-mxyzptlk-=-=-";
 .
-#28:4
+#59:4
 {lines1, lines2, lcs} = args;
 last = {0, 0};
 lcs = {@lcs, {length(lines1) + 1, length(lines2) + 1}};
@@ -12471,7 +19255,7 @@ return;
 "sha1:878B1D1E76A186DC5F3F522323593AEC88D154FF";
 "-=-=-mxyzptlk-=-=-";
 .
-#28:5
+#59:5
 {lines1, lines2} = args;
 intern = [];
 {lines1, intern} = this:_hash_lines(lines1, intern);
@@ -12495,7 +19279,7 @@ return;
 "sha1:80A42BCA22606876E26013750C479B574B5A3CC5";
 "-=-=-mxyzptlk-=-=-";
 .
-#29:0
+#60:0
 $restrict_to_caller($composed);
 $lookup("dictionary").ask = ["prototype" -> $ask_proto];
 $frobs = setadd($frobs, $ask_proto);
@@ -12511,7 +19295,7 @@ return;
 "sha1:C5FB5F7668849783CA596B2F8DB229D467FFCF58";
 "-=-=-mxyzptlk-=-=-";
 .
-#29:1
+#60:1
 $restrict_to_caller($composed);
 $frobs = setremove($frobs, $ask_proto);
 return;
@@ -12525,7 +19309,7 @@ return;
 "sha1:A86B217C56A09E274DF767D4E0E109E1C3470BA1";
 "-=-=-mxyzptlk-=-=-";
 .
-#32:0
+#63:0
 $private();
 set_task_perms(caller_perms());
 {type, target, attr} = args;
@@ -12573,7 +19357,7 @@ return;
 "sha1:F0ED60C4383CE5E640826F01858F14F1E4DF5A6B";
 "-=-=-mxyzptlk-=-=-";
 .
-#32:1
+#63:1
 $private();
 set_task_perms(callers()[2][3]);
 {query, limit} = args;
@@ -12821,7 +19605,7 @@ return;
 "sha1:0A4FFF89C2D4A37C8A4A1D176D72146297E1DD56";
 "-=-=-mxyzptlk-=-=-";
 .
-#32:2
+#63:2
 {predicate} = args;
 if (!predicate)
 elseif (index("\"'", c = predicate[1]))
@@ -12868,7 +19652,7 @@ return;
 "sha1:D18CB68F0395F6706E1BE2B18C7023C08EFBFFD9";
 "-=-=-mxyzptlk-=-=-";
 .
-#32:3
+#63:3
 {predicate} = args;
 if (!predicate)
 elseif ((r = match(predicate, "^%(>=?%|<=?%|=[=~]?%|!=%|includes%|in%|is%) *")) && ((length(predicate) == r[2]) || (predicate[r[2]] == " ")))
@@ -12893,7 +19677,7 @@ return;
 "sha1:AC122D01FE3F4E7A7AFDC9FC85D8A569EDEE82A9";
 "-=-=-mxyzptlk-=-=-";
 .
-#32:4
+#63:4
 {predicate, @args} = args;
 predicate = predicate:trim();
 predicate || raise(E_INVARG, "Empty predicate");
@@ -12984,7 +19768,7 @@ return;
 "sha1:00E271FD5D4F40A399B0533C5F6804B487C21E6D";
 "-=-=-mxyzptlk-=-=-";
 .
-#32:5
+#63:5
 {from} = args;
 try
 caller["from"];
@@ -13009,7 +19793,7 @@ return;
 "sha1:86E5DD07CCE792C6192600C8AF06C0E8AF5E44A9";
 "-=-=-mxyzptlk-=-=-";
 .
-#32:6
+#63:6
 attributes = args;
 select = ["select" -> attributes];
 caller["operations"] = `{@caller["operations"], select} ! E_RANGE => {select}';
@@ -13026,7 +19810,7 @@ return;
 "sha1:F0EC594CB3C7D7668B5353A8D123413A8CDB6455";
 "-=-=-mxyzptlk-=-=-";
 .
-#32:7
+#63:7
 {predicate, @args} = args;
 where = ["where" -> $ask_proto:_parse_predicate(predicate, @args)];
 caller["operations"] = `{@caller["operations"], where} ! E_RANGE => {where}';
@@ -13043,7 +19827,7 @@ return;
 "sha1:8B2D947D7C3B4F67BDC1E2470D16EC2C5AF8B006";
 "-=-=-mxyzptlk-=-=-";
 .
-#32:8
+#63:8
 res = this:_query(caller, -1);
 return length(res);
 return;
@@ -13056,7 +19840,7 @@ return;
 "sha1:B56535CB5F5BC95101F0535B3743CDF4F204237D";
 "-=-=-mxyzptlk-=-=-";
 .
-#32:9
+#63:9
 res = this:_query(caller, -1);
 return res;
 return;
@@ -13069,7 +19853,7 @@ return;
 "sha1:0CE8D254009C1FED0A6BDD9EA3788FF8DD02F26E";
 "-=-=-mxyzptlk-=-=-";
 .
-#32:10
+#63:10
 res = this:_query(caller, 1);
 return res;
 return;
@@ -13082,7 +19866,7 @@ return;
 "sha1:0C70EEF9D363A4513D41661F0561FC0AC924A4C0";
 "-=-=-mxyzptlk-=-=-";
 .
-#32:11
+#63:11
 return this.id;
 return;
 "/* conveniently, the same value as `$model.id' */";
@@ -13094,7 +19878,7 @@ return;
 "sha1:D46C57E31A682E5D0D6E54B1C72C46F6056D2E31";
 "-=-=-mxyzptlk-=-=-";
 .
-#32:12
+#63:12
 return this.errors;
 return;
 "/* conveniently, the same value as `$model.errors' */";
@@ -13106,7 +19890,7 @@ return;
 "sha1:18698E421D2654AB626BCC5FC3477F92700476F5";
 "-=-=-mxyzptlk-=-=-";
 .
-#34:0
+#65:0
 set_task_perms(caller_perms());
 {prototype, instance, properties, ?loud = 0} = args;
 properties = this:_before_validate(prototype, instance, properties);
@@ -13178,7 +19962,7 @@ return;
 "sha1:996C4D4E8FE6299445840AC49953FAB4F54BE917";
 "-=-=-mxyzptlk-=-=-";
 .
-#34:1
+#65:1
 set_task_perms(caller_perms());
 {prototype, properties, ?loud = 0} = args;
 (typeof(properties) == MAP) || raise(E_INVARG, "properties must be a map");
@@ -13283,7 +20067,7 @@ return;
 "sha1:9094A3498D54EE7FBAD3193E9D686292F3FDA546";
 "-=-=-mxyzptlk-=-=-";
 .
-#34:2
+#65:2
 set_task_perms(caller_perms());
 {prototype, instance, properties, ?loud = 0} = args;
 (typeof(properties) == MAP) || raise(E_INVARG, "properties must be a map");
@@ -13367,7 +20151,7 @@ return;
 "sha1:C8EF776DD7FC71F04B9E9471BEF542BE23ECB42E";
 "-=-=-mxyzptlk-=-=-";
 .
-#34:3
+#65:3
 set_task_perms(caller_perms());
 {prototype, instance} = args;
 if (((typeof(prototype) != OBJ) || (!valid(prototype))) || (!isa(instance, prototype)))
@@ -13412,7 +20196,7 @@ return;
 "sha1:3DEBDE00FB50329462550C19FC51CD38CC9B1634";
 "-=-=-mxyzptlk-=-=-";
 .
-#34:4
+#65:4
 $private();
 set_task_perms(caller_perms());
 {prototype, instance, properties} = args;
@@ -13447,7 +20231,7 @@ return;
 "sha1:2E339CD45EAA1B9296CA5424A2EBB4F7F5B16833";
 "-=-=-mxyzptlk-=-=-";
 .
-#34:5
+#65:5
 {prototype, @values} = args;
 accessible = setadd(`prototype.accessible ! E_PROPNF => {}', $model.id);
 if (verb == "find")
@@ -13479,7 +20263,7 @@ return;
 "sha1:397C76FC5D8E9E8B0EC0BE361357B9E01171E880";
 "-=-=-mxyzptlk-=-=-";
 .
-#36:0
+#67:0
 set_task_perms(caller_perms());
 return $model:(verb)(this, @args);
 return;
@@ -13497,7 +20281,7 @@ return;
 "sha1:9B45952FF2F2F705E3135AB046B4F2DB06AF1C86";
 "-=-=-mxyzptlk-=-=-";
 .
-#36:1
+#67:1
 set_task_perms(caller_perms());
 if (args && (typeof(args[1]) == OBJ))
 return $model:(verb)(this, @args);
@@ -13533,7 +20317,7 @@ return;
 "sha1:B4E95A4D90B448D4686BF0A59C7B0EFA9FA2F2AA";
 "-=-=-mxyzptlk-=-=-";
 .
-#37:0
+#68:0
 {prototype, instance, properties, name, ?options = []} = args;
 return properties;
 return;
@@ -13547,7 +20331,7 @@ return;
 "sha1:67FE5D7C3F0338E4E7C76CB2951354635A13F833";
 "-=-=-mxyzptlk-=-=-";
 .
-#37:1
+#68:1
 {properties, name, message} = args;
 if (errors = properties:value_by_path({$model.errors, name}))
 properties = properties:set_value_by_path({$model.errors, name}, (typeof(errors) == LIST) ? {@errors, message} | {errors, message});
@@ -13572,7 +20356,7 @@ return;
 "sha1:C12EC174BC809275A4A14E90F5178CEFD8303C3D";
 "-=-=-mxyzptlk-=-=-";
 .
-#37:2
+#68:2
 set_task_perms(caller_perms());
 {h, k} = args;
 if (typeof(h) == MAP)
@@ -13604,7 +20388,7 @@ return;
 "sha1:5D3B24A96E58FE63A1849C19C223D4F65011F313";
 "-=-=-mxyzptlk-=-=-";
 .
-#38:0
+#69:0
 set_task_perms(caller_perms());
 {prototype, instance, properties, name, ?options = []} = args;
 if (this:is_blank(properties, name) && (!(valid(instance) && this:is_present(instance, name))))
@@ -13628,7 +20412,7 @@ return;
 "sha1:B646EB67CE2967ABDF993394C5B736CBF6119220";
 "-=-=-mxyzptlk-=-=-";
 .
-#39:0
+#70:0
 set_task_perms(caller_perms());
 {prototype, instance, properties, name, ?options = []} = args;
 if ((`properties[name] ! E_RANGE' != E_RANGE) && (!(valid(instance) && (properties[name] == instance.(name)))))
@@ -13656,7 +20440,7 @@ return;
 "sha1:63D90B2847224BDDA7400772E0D7BC9D74207EA1";
 "-=-=-mxyzptlk-=-=-";
 .
-#40:0
+#71:0
 set_task_perms(caller_perms());
 {prototype, instance, properties, name, ?options = []} = args;
 if ((`properties[name] ! E_RANGE' != E_RANGE) && (valid(instance) && (properties[name] != instance.(name))))
@@ -13680,7 +20464,7 @@ return;
 "sha1:38D76B88B8BD9959CC3564E753DFC10D4D8C97EE";
 "-=-=-mxyzptlk-=-=-";
 .
-#41:0
+#72:0
 {prototype, instance, properties, name, ?options = []} = args;
 pattern = `options["pattern"] ! E_RANGE => "^$"';
 message = `options["message"] ! E_RANGE => "is not valid"';
@@ -13706,7 +20490,7 @@ return;
 "sha1:52898C132056483AE48A3E3D89923F6E938A81A6";
 "-=-=-mxyzptlk-=-=-";
 .
-#42:0
+#73:0
 set_task_perms(caller_perms());
 {prototype, instance, properties, name, ?options = []} = args;
 if (valid(instance))
@@ -13749,7 +20533,7 @@ return;
 "sha1:00949BFF81FF829D374CB54CF26FAF20FC2A09FA";
 "-=-=-mxyzptlk-=-=-";
 .
-#45:0
+#76:0
 $restrict_to_caller($system, "server_started");
 try
 file_stat(".");
@@ -13786,7 +20570,7 @@ return;
 "sha1:494FB4EEE91B453CA651336A969FA2E47144B1ED";
 "-=-=-mxyzptlk-=-=-";
 .
-#46:0
+#77:0
 $permit("wizard", "owner");
 {?full = 1} = args;
 if (full)
@@ -13811,7 +20595,7 @@ return;
 "sha1:4B94E55E2C7EDCD795795DEA27557075D64CDF49";
 "-=-=-mxyzptlk-=-=-";
 .
-#46:1
+#77:1
 $permit("wizard", "owner");
 {attachment, ?option = 0} = args;
 if (!option)
@@ -13870,7 +20654,7 @@ return;
 "sha1:09868DF21A3E53C9FD1CE92F4F523BA1F8857827";
 "-=-=-mxyzptlk-=-=-";
 .
-#46:2
+#77:2
 $permit("wizard", "owner");
 {attachment} = args;
 `this.attachments[attachment] ! E_RANGE => raise(E_INVARG, tostr("No such attachment: ", attachment), attachment)';
@@ -13895,7 +20679,7 @@ return;
 "sha1:6E03C948540B6FB85C955A0034BC4B4C6152EFD7";
 "-=-=-mxyzptlk-=-=-";
 .
-#46:3
+#77:3
 $restrict_to_builtin("recycle");
 args && raise(E_ARGS);
 for attachment in (this.attachments)
@@ -13916,7 +20700,7 @@ return;
 "sha1:11679240172E789BD6A0031B98447E9A887C2E2F";
 "-=-=-mxyzptlk-=-=-";
 .
-#46:4
+#77:4
 $private();
 {name, pool, ?mkdir = 1} = args;
 name || raise(E_INVARG, name);
@@ -13960,7 +20744,7 @@ return;
 "sha1:5011167A064F72953458E0B2BC00F33F0591576A";
 "-=-=-mxyzptlk-=-=-";
 .
-#46:5
+#77:5
 $permit("wizard", "owner");
 {data, attachment, pool, type, ?processors = []} = args;
 this:_check_limit();
@@ -14032,7 +20816,7 @@ return;
 "sha1:43B5B4F10D7EC1F96065734938CB29BF72D8D077";
 "-=-=-mxyzptlk-=-=-";
 .
-#46:6
+#77:6
 $permit("wizard", "owner");
 {filename, attachment, pool, type, ?processors = []} = args;
 this:_check_limit();
@@ -14107,7 +20891,7 @@ return;
 "sha1:E8D005C377A1CF4345A68C85CEAEBEC971958B9D";
 "-=-=-mxyzptlk-=-=-";
 .
-#46:7
+#77:7
 $permit("wizard", "owner");
 {attachment} = args;
 `this.attachments[attachment] ! E_RANGE' || raise(E_INVARG, tostr("No such attachment: ", attachment), attachment);
@@ -14133,7 +20917,7 @@ return;
 "sha1:2A1E791398FFB08044F57E069C493272A8E0377E";
 "-=-=-mxyzptlk-=-=-";
 .
-#46:8
+#77:8
 $private();
 {path} = args;
 try
@@ -14164,7 +20948,7 @@ return;
 "sha1:CBC9E169942E62FE158B7341C7A667DB5A5CE85F";
 "-=-=-mxyzptlk-=-=-";
 .
-#46:9
+#77:9
 $private();
 {attachment, path, pool, type, sizes} = args;
 if (!this:_identify(tostr("files/", path)))
@@ -14206,7 +20990,7 @@ return;
 "sha1:92B08D48B59BD0224852AC07FB4E283C90FE84E9";
 "-=-=-mxyzptlk-=-=-";
 .
-#46:10
+#77:10
 $private();
 (length(this.attachments) < this.attachment_limit) || raise(E_QUOTA);
 return;
@@ -14220,7 +21004,7 @@ return;
 "sha1:2605769F71081BDE86193A8F286D9AD2D2F1270A";
 "-=-=-mxyzptlk-=-=-";
 .
-#47:0
+#78:0
 $restrict_to_caller($composed);
 $frobs = setadd($frobs, $dialog.request_proto);
 $frobs = setadd($frobs, $dialog.response_proto);
@@ -14236,7 +21020,7 @@ return;
 "sha1:5117D37A847185B7404DEEF25D40FB17E3B456C3";
 "-=-=-mxyzptlk-=-=-";
 .
-#47:1
+#78:1
 $restrict_to_caller($composed);
 $frobs = setremove($frobs, $dialog.request_proto);
 $frobs = setremove($frobs, $dialog.response_proto);
@@ -14252,7 +21036,7 @@ return;
 "sha1:7E3D89A2E3AE481EDBA7F957A5D6614A713B015E";
 "-=-=-mxyzptlk-=-=-";
 .
-#50:0
+#81:0
 {h, ?p = ""} = args;
 q = "";
 for vl, k in (h)
@@ -14267,7 +21051,7 @@ endfor
 endfor
 return q;
 .
-#50:1
+#81:1
 {s, ?c = 0} = args;
 if (!s)
 return [];
@@ -14298,7 +21082,7 @@ endif
 endfor
 return h;
 .
-#50:2
+#81:2
 {uri} = args;
 new = "";
 while (uri)
@@ -14313,7 +21097,7 @@ endif
 endwhile
 return new;
 .
-#50:3
+#81:3
 {uri} = args;
 new = "";
 while (uri)
@@ -14328,7 +21112,7 @@ endif
 endwhile
 return new;
 .
-#51:0
+#82:0
 $private();
 server_log(tostr(@args));
 return;
@@ -14342,7 +21126,7 @@ return;
 "sha1:650D9D9FCADD450749A1A67E616832EAFF78DC8D";
 "-=-=-mxyzptlk-=-=-";
 .
-#51:1
+#82:1
 $private();
 bytes = {};
 for i in [1..128 / 3]
@@ -14373,7 +21157,7 @@ return;
 "sha1:BE0F8436461794647C35BFCB578C81BDC32E0C55";
 "-=-=-mxyzptlk-=-=-";
 .
-#51:2
+#82:2
 $permit("owner", "wizard");
 `{port} = args ! E_ARGS => raise(E_ARGS, "Incorrect number of arguments:  port")';
 this.key = this:_key();
@@ -14396,7 +21180,7 @@ return;
 "sha1:7F76AD640411783E10EA4C1E47BEFF625870BD6F";
 "-=-=-mxyzptlk-=-=-";
 .
-#51:3
+#82:3
 $permit("owner", "wizard");
 args && raise(E_ARGS);
 port = 0;
@@ -14435,7 +21219,7 @@ return;
 "sha1:3BDA0CFA5F590ECE040EEEA832C47E8AFDE9836E";
 "-=-=-mxyzptlk-=-=-";
 .
-#51:4
+#82:4
 $private();
 return read_http("request", @args);
 return;
@@ -14450,7 +21234,7 @@ return;
 "sha1:00D751116B2CEA7C7EF4819AF89A1BA8E462315E";
 "-=-=-mxyzptlk-=-=-";
 .
-#51:5
+#82:5
 $private();
 return notify(@args);
 return;
@@ -14465,7 +21249,7 @@ return;
 "sha1:EA8C0826FC0A7CFF737A580317BDF00143C24910";
 "-=-=-mxyzptlk-=-=-";
 .
-#51:6
+#82:6
 $private();
 if (verb == "_session_cookie_name")
 return this.session_cookie_name;
@@ -14488,7 +21272,7 @@ return;
 "sha1:41E5EEE5DB4FEB501050CBE720AC9ED755B7C38C";
 "-=-=-mxyzptlk-=-=-";
 .
-#51:7
+#82:7
 $private();
 {connection, request} = args;
 return this:_read_http(connection):merge(request);
@@ -14505,7 +21289,7 @@ return;
 "sha1:8A6177211E21B9F04B26D483C7D887D5FC3AFCEE";
 "-=-=-mxyzptlk-=-=-";
 .
-#51:8
+#82:8
 $private();
 {connection, response} = args;
 status_codes = this.status_codes;
@@ -14572,7 +21356,7 @@ return;
 "sha1:DB748D8D8C5AC6023EEF06939CDE38ABF5472F90";
 "-=-=-mxyzptlk-=-=-";
 .
-#51:9
+#82:9
 $private();
 {connection, chain} = args;
 request = this.request_proto:create();
@@ -14612,7 +21396,7 @@ return;
 "sha1:A76D5E6296204E8E6B26B12797BD0DE957107140";
 "-=-=-mxyzptlk-=-=-";
 .
-#51:10
+#82:10
 $restrict_to_server();
 set_connection_option(player, "hold-input", 1);
 set_connection_option(player, "disable-oob", 1);
@@ -14675,7 +21459,7 @@ return;
 "sha1:60C47FCCDA2F5078D4BC25D74E6BFC3A69F8BB8C";
 "-=-=-mxyzptlk-=-=-";
 .
-#51:11
+#82:11
 $private();
 {request, response, chain} = args;
 try
@@ -14803,7 +21587,7 @@ return;
 "sha1:15AB144A52452936167909CBE136B94E014A3C0B";
 "-=-=-mxyzptlk-=-=-";
 .
-#51:12
+#82:12
 {request, response, chain} = args;
 $private();
 for item in (this.contents)
@@ -14841,7 +21625,7 @@ return;
 "sha1:4D54E4ABBFEE9D7B0330F92ED66848FF6D4407F8";
 "-=-=-mxyzptlk-=-=-";
 .
-#51:13
+#82:13
 {request, response, chain} = args;
 $private();
 try
@@ -15179,7 +21963,7 @@ return;
 "sha1:A90A4AF557C649CD48FA4C14DC18C317D67EA006";
 "-=-=-mxyzptlk-=-=-";
 .
-#51:14
+#82:14
 {request, response, chain} = args;
 $private();
 try
@@ -15223,7 +22007,7 @@ return;
 "sha1:C5DF7CF9EC949511A65E24946CD6BB66EE5E6547";
 "-=-=-mxyzptlk-=-=-";
 .
-#51:15
+#82:15
 {request, response, chain} = args;
 $private();
 if (`handler = request:handler() ! E_RANGE')
@@ -15262,7 +22046,7 @@ return;
 "sha1:D90007B74D3CD48B6039FF61A8C55F4C74D19647";
 "-=-=-mxyzptlk-=-=-";
 .
-#51:16
+#82:16
 {request, response, chain} = args;
 $private();
 try
@@ -15368,7 +22152,7 @@ return;
 "sha1:DCAE637AE4A4F36A02AE28F1B49337D4ECD6B195";
 "-=-=-mxyzptlk-=-=-";
 .
-#51:17
+#82:17
 $private();
 {request, response, chain} = args;
 try
@@ -15418,7 +22202,7 @@ return;
 "sha1:0B52F53CCFC46208D5C43BF16F2BA2BEC5BFB623";
 "-=-=-mxyzptlk-=-=-";
 .
-#51:18
+#82:18
 {ex} = args;
 $private();
 {l, @r} = ex[4];
@@ -15431,7 +22215,7 @@ tb = tostr(tb, "<li><code>(End of traceback)</code></li>");
 tb = tostr(tb, "</ol>");
 return tb;
 .
-#51:19
+#82:19
 {verb, @args} = args;
 $permit("wizard");
 set_task_perms(caller_perms());
@@ -15450,7 +22234,7 @@ return;
 "sha1:CD7E4970FACB9D0130ACEEDDE6A3CD618FBBE8E6";
 "-=-=-mxyzptlk-=-=-";
 .
-#51:20
+#82:20
 {object, verb, request, response} = args;
 $private();
 set_task_perms(player);
@@ -15467,7 +22251,7 @@ return;
 "sha1:AD341614B9E0B7291611EE45B616F9B05953BDDD";
 "-=-=-mxyzptlk-=-=-";
 .
-#51:21
+#82:21
 $private();
 {request, response, chain} = args;
 set_task_perms($nothing);
@@ -15557,7 +22341,7 @@ return;
 "sha1:E06C52C1D9541FAA362F8ABEFEE46817BCAC4768";
 "-=-=-mxyzptlk-=-=-";
 .
-#51:22
+#82:22
 t = args ? args[1] | time();
 tz = ctime(t):split()[6];
 adj = `(["PST" -> 28800, "PDT" -> 25200, "MST" -> 25200, "MDT" -> 21600, "CST" -> 21600, "CDT" -> 18000, "EST" -> 18000, "EDT" -> 14400])[tz] ! E_RANGE => 0';
@@ -15585,18 +22369,18 @@ return;
 "sha1:BAD3CDBA1025FAAC03311053A780F6C26ACAA0BF";
 "-=-=-mxyzptlk-=-=-";
 .
-#52:0
+#83:0
 return ["prototype" -> this];
 .
-#52:1
+#83:1
 return caller[verb];
 .
-#52:2
+#83:2
 {value} = args;
 caller[verb[5..$]] = value;
 return caller;
 .
-#52:3
+#83:3
 cookies = [];
 cookie = `caller["headers"]["cookie"] ! ANY => ""';
 for cookie in (cookie:split(";"))
@@ -15607,15 +22391,15 @@ cookies[key] = value;
 endfor
 return cookies;
 .
-#52:4
+#83:4
 i = caller["uri"]:index("?");
 return i ? caller["uri"][1..i - 1] | caller["uri"];
 .
-#52:5
+#83:5
 i = caller["uri"]:index("?");
 return i ? caller["uri"][i + 1..$] | "";
 .
-#52:6
+#83:6
 {?full = 0} = args;
 {type, ?parameters = ""} = caller["headers"]["Content-Type"]:split(";");
 if (full)
@@ -15650,7 +22434,7 @@ return;
 "sha1:4CE45976AE5D41C5A0BB59256B3512746132A0A3";
 "-=-=-mxyzptlk-=-=-";
 .
-#52:7
+#83:7
 {type, ?parameters = []} = args;
 `caller["headers"] ! E_RANGE' || (caller["headers"] = []);
 if (parameters)
@@ -15686,7 +22470,7 @@ return;
 "sha1:856523DF718870F5510F63F0A45CB32BB0BE7706";
 "-=-=-mxyzptlk-=-=-";
 .
-#52:8
+#83:8
 args && raise(E_ARGS);
 return caller["headers"]["Content-Length"];
 return;
@@ -15700,7 +22484,7 @@ return;
 "sha1:823041CE2AC45EA2790CCE216E4260153A56175A";
 "-=-=-mxyzptlk-=-=-";
 .
-#52:9
+#83:9
 {length} = args;
 `caller["headers"] ! E_RANGE' || (caller["headers"] = []);
 caller["headers"]["Content-Length"] = length;
@@ -15720,7 +22504,7 @@ return;
 "sha1:6626802FA7F72A0010F30936907C8B64E83DCF37";
 "-=-=-mxyzptlk-=-=-";
 .
-#52:10
+#83:10
 $permit("wizard");
 args && raise(E_ARGS);
 local = task_local();
@@ -15739,7 +22523,7 @@ return;
 "sha1:00425D608E5B64D713EF1A776E4E6FCFD4701923";
 "-=-=-mxyzptlk-=-=-";
 .
-#52:11
+#83:11
 $permit("wizard");
 {session} = args;
 local = task_local();
@@ -15768,18 +22552,18 @@ return;
 "sha1:CB4E62F1C5D3754E8340C180B74EA101C5F780B1";
 "-=-=-mxyzptlk-=-=-";
 .
-#53:0
+#84:0
 return ["prototype" -> this];
 .
-#53:1
+#84:1
 return caller[verb];
 .
-#53:2
+#84:2
 {value} = args;
 caller[verb[5..$]] = value;
 return caller;
 .
-#53:3
+#84:3
 {value} = args;
 headers = `caller["headers"] ! E_RANGE => []';
 fields = ["set_type" -> "Content-Type", "set_length" -> "Content-Length", "set_location" -> "Location"];
@@ -15787,7 +22571,7 @@ headers[fields[verb]] = value;
 caller["headers"] = headers;
 return caller;
 .
-#54:0
+#85:0
 return {};
 return;
 "/* A route can match on anything in a request -- common criteria are";
@@ -15810,7 +22594,7 @@ return;
 "sha1:4BD935C3BDE051C54B2484EC2D8E80EEFD6205EC";
 "-=-=-mxyzptlk-=-=-";
 .
-#55:0
+#86:0
 $permit("owner", "wizard");
 `{player} = args ! E_ARGS => raise(E_ARGS, "Incorrect number of arguments:  OBJ player")';
 (valid(player) || (player == $nothing)) || raise(E_INVARG, tostr("Invalid argument:  ", player), player);
@@ -15857,7 +22641,7 @@ return;
 "sha1:814FF22027A715A9CAD5EA24FE58C09A5F1BB069";
 "-=-=-mxyzptlk-=-=-";
 .
-#55:1
+#86:1
 $permit("owner", "wizard");
 args && raise(E_ARGS);
 return task_local()["http"]["session"]["player"];
@@ -15874,7 +22658,7 @@ return;
 "sha1:3299BC691A040E829C91ACFA12DB56C3B9FBD536";
 "-=-=-mxyzptlk-=-=-";
 .
-#56:0
+#87:0
 $restrict_to_caller(this.location);
 {request} = args;
 if (request:uri() == "/")
@@ -15899,7 +22683,7 @@ return;
 "sha1:A6E84615B5830C99BB92F0E9B74261FE0C9CCD95";
 "-=-=-mxyzptlk-=-=-";
 .
-#56:1
+#87:1
 $restrict_to_caller(this.location);
 {request, response} = args;
 body = {"<html>", "<head>", "<title>It Works!</title>", "</head>", "<body>", "<h1>It Works!</h1>", "<p>Welcome to Stunt!  For information about Stunt, check out <a href='http://stunt.io/'>http://stunt.io/</a>.</p>", "", "</body>", "</html>"};
@@ -15933,7 +22717,7 @@ return;
 "sha1:444FAB43211D401DF8E2E521CC7F2370F0474719";
 "-=-=-mxyzptlk-=-=-";
 .
-#59:0
+#90:0
 $restrict_to_caller($dialog.server, "route");
 {request} = args;
 uri = request:uri();
@@ -15983,7 +22767,7 @@ return;
 "sha1:E3D5D93459DAE9506EC7E795ED4F70840ED8BDEC";
 "-=-=-mxyzptlk-=-=-";
 .
-#59:1
+#90:1
 $restrict_to_caller($dialog.server, "_drop_perms_and_call_verb", "serve");
 {request, response} = args;
 try
@@ -16156,7 +22940,7 @@ return;
 "sha1:6BA76902E8036E49E6376305651E8B4F712E04E8";
 "-=-=-mxyzptlk-=-=-";
 .
-#60:0
+#91:0
 $restrict_to_caller($dialog.server, "route");
 {request} = args;
 uri = request:uri();
@@ -16199,7 +22983,7 @@ return;
 "sha1:0875C635816E12E580F8E3B06EE9A208AA17D102";
 "-=-=-mxyzptlk-=-=-";
 .
-#60:1
+#91:1
 $private();
 {uri} = args;
 if ((uri:index("///") == 1) && ((r = uri:split("/")):length() < 5))
@@ -16234,7 +23018,7 @@ return;
 "sha1:7F7443E20EE530973234647DC499BE53D981636E";
 "-=-=-mxyzptlk-=-=-";
 .
-#60:2
+#91:2
 {o} = args;
 if (match(o, "^#?-?[0-9]+$"))
 return toobj(o);
@@ -16255,7 +23039,7 @@ return;
 "sha1:0FA2F2DA5428FB786F77073FE5616CAA57888902";
 "-=-=-mxyzptlk-=-=-";
 .
-#60:3
+#91:3
 $restrict_to_caller($dialog.server, "_drop_perms_and_call_verb", "serve");
 set_task_perms(caller_perms());
 {request, response} = args;
@@ -16349,7 +23133,7 @@ return;
 "sha1:40DF01BD0DCE5EABC26CFD68538904B0F49DD264";
 "-=-=-mxyzptlk-=-=-";
 .
-#60:4
+#91:4
 $restrict_to_caller($dialog.server, "_drop_perms_and_call_verb", "serve");
 set_task_perms(caller_perms());
 {request, response} = args;
@@ -16418,7 +23202,7 @@ return;
 "sha1:5FC18E0AD92A5A2A1C47D188D6EDB39CBFBFCDF0";
 "-=-=-mxyzptlk-=-=-";
 .
-#60:5
+#91:5
 $restrict_to_caller($dialog.server, "_drop_perms_and_call_verb", "serve");
 set_task_perms(caller_perms());
 {request, response} = args;
@@ -16483,7 +23267,7 @@ return;
 "sha1:288A263C496C67358B7D74A1B9E53A74DE4FACD0";
 "-=-=-mxyzptlk-=-=-";
 .
-#60:6
+#91:6
 $restrict_to_caller($dialog.server, "_drop_perms_and_call_verb", "serve");
 set_task_perms(caller_perms());
 {request, response} = args;
@@ -16547,7 +23331,7 @@ return;
 "sha1:D63893C8EA33B24FE5D829B1FE0A95154BC6377C";
 "-=-=-mxyzptlk-=-=-";
 .
-#61:0
+#92:0
 $restrict_to_caller($dialog.server, "_do_chain");
 {request, response, chain} = args;
 if (`request["upgrade"] ! E_RANGE')
@@ -16601,7 +23385,7 @@ return;
 "sha1:3FF3EBF549505BB4B459FF4AEF4E5C9D70EDC245";
 "-=-=-mxyzptlk-=-=-";
 .
-#61:1
+#92:1
 $restrict_to_caller($dialog.server, "_do_chain");
 {request, response, chain} = args;
 if (request:path() == "/__long_poll")
@@ -16676,7 +23460,7 @@ return;
 "sha1:6C6BA21E08D39BBB94251072DE31A052F31BA2E1";
 "-=-=-mxyzptlk-=-=-";
 .
-#62:0
+#93:0
 $restrict_to_caller($dialog.server, "_do_chain");
 {request, response, chain} = args;
 client = `request:parameters()["__remote_client__"] ! E_RANGE => "NA"';
@@ -16703,7 +23487,7 @@ return;
 "sha1:12566891C42881F41128653FCB1BEEA38161867A";
 "-=-=-mxyzptlk-=-=-";
 .
-#63:0
+#94:0
 $restrict_to_caller($composed);
 $external_compilers["application/x-mustache"] = $mustache.compiler;
 return;
@@ -16717,7 +23501,7 @@ return;
 "sha1:20B0254B84F3C85A0B3F9FBD3FA91AB168AEDFAE";
 "-=-=-mxyzptlk-=-=-";
 .
-#63:1
+#94:1
 $restrict_to_caller($composed);
 $external_compilers = $external_compilers:delete("application/x-mustache");
 return;
@@ -16731,7 +23515,7 @@ return;
 "sha1:28F56276ABB1EBEE63718214A624DBB6D74EE42C";
 "-=-=-mxyzptlk-=-=-";
 .
-#66:0
+#97:0
 $private();
 server_log(tostr(@args));
 return;
@@ -16744,7 +23528,7 @@ return;
 "sha1:5C711D4BD9B9002572DB2CFAFFD7E9106FB3C119";
 "-=-=-mxyzptlk-=-=-";
 .
-#66:1
+#97:1
 {source, ?options = []} = args;
 (typeof(source) == LIST) || raise(E_TYPE, "Source must be a list");
 code = {"stack = args;", "output = {};"};
@@ -16914,11 +23698,11 @@ endif
 tag_count = tag_count + 1;
 elseif (end_context)
 if (!tag_stack)
-return {tostr("Line ", linec, ":  dangling end tag:  ", tag)};
+return {0, {tostr("Line ", linec, ":  dangling end tag:  ", tag)}};
 endif
 {top, @tag_stack} = tag_stack;
 if (top != tag)
-return {tostr("Line ", linec, ":  mismatched end tag:  ", tag)};
+return {0, {tostr("Line ", linec, ":  mismatched end tag:  ", tag)}};
 endif
 code = {@code, "stack = stack[2..$];", "endfor", "endif"};
 if ((l = length(original_tag_list)) > 1)
@@ -16933,7 +23717,7 @@ code = {@code, "stack = {typeof(top) == MAP ? top | [], @stack};"};
 endfor
 endif
 if (!original_tag_list)
-return {tostr("Line ", linec, ":  empty tag")};
+return {0, {tostr("Line ", linec, ":  empty tag")}};
 endif
 tag = original_tag_list[$];
 if (escaped)
@@ -16952,7 +23736,7 @@ code = {@code, tostr("output = {@output, ", tag_count, "};")};
 endif
 endfor
 if (tag_stack)
-return {tostr("Line ", linec, ":  missing end tag:  ", tag_stack[1])};
+return {0, {tostr("Line ", linec, ":  missing end tag:  ", tag_stack[1])}};
 endif
 code = {@code, "out = {}; acc = {}; indent = \"\";"};
 code = {@code, "while (output)"};
@@ -16995,7 +23779,7 @@ code = {@code, "acc = {@acc, line};"};
 code = {@code, "endif"};
 code = {@code, "endwhile"};
 code = {@code, "return out;"};
-return code;
+return {1, code};
 return;
 "{source, ?options = []} = args;";
 "";
@@ -17232,11 +24016,11 @@ return;
 "";
 "    elseif (end_context)";
 "      if (!tag_stack)";
-"        return {tostr(\"Line \", linec, \":  dangling end tag:  \", tag)};";
+"        return {0, {tostr(\"Line \", linec, \":  dangling end tag:  \", tag)}};";
 "      endif";
 "      {top, @tag_stack} = tag_stack;";
 "      if (top != tag)";
-"        return {tostr(\"Line \", linec, \":  mismatched end tag:  \", tag)};";
+"        return {0, {tostr(\"Line \", linec, \":  mismatched end tag:  \", tag)}};";
 "      endif";
 "      code = {@code, \"stack = stack[2..$];\", \"endfor\", \"endif\"};";
 "      if ((l = length(original_tag_list)) > 1)";
@@ -17252,7 +24036,7 @@ return;
 "        endfor";
 "      endif";
 "      if (!original_tag_list)";
-"        return {tostr(\"Line \", linec, \":  empty tag\")};";
+"        return {0, {tostr(\"Line \", linec, \":  empty tag\")}};";
 "      endif";
 "      tag = original_tag_list[$];";
 "      if (escaped)";
@@ -17277,7 +24061,7 @@ return;
 "endfor";
 "";
 "if (tag_stack)";
-"  return {tostr(\"Line \", linec, \":  missing end tag:  \", tag_stack[1])};";
+"  return {0, {tostr(\"Line \", linec, \":  missing end tag:  \", tag_stack[1])}};";
 "endif";
 "";
 "/* Clean up and render.";
@@ -17327,15 +24111,15 @@ return;
 "code = {@code, \"endwhile\"};";
 "code = {@code, \"return out;\"};";
 "";
-"return code;";
+"return {1, code};";
 "";
 "chunk_length:331";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"sha1:B805181588DFE316ADD8AB3948BF582C77298E3D";
+"sha1:D953F0592C90A9BFFA80F4BA168484FAD6A98E5E";
 "-=-=-mxyzptlk-=-=-";
 .
-#69:0
+#100:0
 $restrict_to_caller($system, "authenticate");
 if (length(args) == 2)
 {name, password} = args;
@@ -17372,7 +24156,7 @@ return;
 "sha1:CDEDBE61D3FCD123CEA0CFD54FE546F9150ABC83";
 "-=-=-mxyzptlk-=-=-";
 .
-#70:0
+#101:0
 if (player != this)
 notify(player, "I couldn't understand that.");
 return;
@@ -17483,7 +24267,7 @@ return;
 "sha1:8DBF0ACBC439BF88839CCEDB52B304930BF3BCCB";
 "-=-=-mxyzptlk-=-=-";
 .
-#71:0
+#102:0
 {password, hashed_password} = args;
 try
 algo = hashed_password["algo"];
@@ -17533,7 +24317,7 @@ return;
 "sha1:41112376E5760A2247C86287362A042A8FEC11D9";
 "-=-=-mxyzptlk-=-=-";
 .
-#71:1
+#102:1
 {password} = args;
 algo = "sha256";
 salt = string_hash(tostr(random(), time()), algo);
@@ -17552,8 +24336,9 @@ return;
 "sha1:15DD175E1035003708BEFB2AF757479D9FA8D806";
 "-=-=-mxyzptlk-=-=-";
 .
-#76:0
+#107:0
 {target} = args;
+set_task_perms(caller_perms());
 regexp = ("match_verb" == verb) ? "^%(me%|here%|#[0-9]+%|%$[a-z0-9_%.]+%)%:%([^ ]+%)$" | "^%(me%|here%|#[0-9]+%|%$[a-z0-9_%.]+%)%.%([^ ]+%)$";
 if (m = match(target, regexp))
 if (m[4][m[3][1][1]..m[3][1][2]] == "me")
@@ -17581,8 +24366,9 @@ return {o, m[4][m[3][2][1]..m[3][2][2]]};
 endif
 return {$failed_match, ""};
 .
-#76:1
+#107:1
 {target} = args;
+set_task_perms(caller_perms());
 if ("me" == target)
 return player;
 elseif ("here" == target)
@@ -17609,18 +24395,18 @@ return o;
 endif
 return $failed_match;
 .
-#76:2
+#107:2
 {o, v} = args;
 set_task_perms(caller_perms());
 info_function = (verb == "_player_controls_verb") ? "verb_info" | "property_info";
 return player.wizard || (player == `call_function(info_function, o, v)[1] ! ANY');
 .
-#76:3
+#107:3
 {o} = args;
 set_task_perms(caller_perms());
 return player.wizard || (player == `o.owner ! ANY');
 .
-#76:4
+#107:4
 {STR} = args;
 if (r = match(STR, "%( +[+-][a-z]+%)+ *$"))
 cmd = STR[^..r[1] - 1];
@@ -17646,7 +24432,7 @@ return;
 "sha1:E9E120C913299D9B89F717C31631D48503BFF77D";
 "-=-=-mxyzptlk-=-=-";
 .
-#77:0
+#108:0
 callers() && raise(E_PERM, "Server task");
 set_task_perms(player);
 "very simple, really primitive matching";
@@ -17662,14 +24448,47 @@ endif
 endif
 notify(player, "I couldn't understand that.");
 .
-#77:1
+#108:1
 $permit("wizard", "owner");
 notify(this, tostr(@args));
 .
-#77:2
+#108:2
 boot_player(player);
 .
-#78:0
+#109:0
+$private();
+{prog} = args;
+t = $plastic.tokenizer_proto:create(prog);
+p = $plastic.parser_proto:create(t);
+try
+statements = p:statements();
+except ex ("Syntax error")
+return {0, t.row, t.column, {ex[2]}, t, p};
+endtry
+return {1, statements, t, p};
+return;
+"$private();";
+"";
+"{prog} = args;";
+"";
+"t = $plastic.tokenizer_proto:create(prog);";
+"p = $plastic.parser_proto:create(t);";
+"";
+"try";
+"  statements = p:statements();";
+"except ex (\"Syntax error\")";
+"  return {0, t.row, t.column, {ex[2]}, t, p};";
+"endtry";
+"";
+"return {1, statements, t, p};";
+"";
+"chunk_length:14";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:9E113350BE941E9C9A13782D8B1C905A268BF807";
+"-=-=-mxyzptlk-=-=-";
+.
+#109:1
 if (player != this)
 notify(player, "I couldn't understand that.");
 return;
@@ -17677,19 +24496,315 @@ elseif (!player.programmer)
 notify(player, "You need to be a programmer to evaluate code.");
 return;
 endif
-set_task_perms(player);
-if (!(args[1] in {";", "if", "for", "while", "fork", "return"}))
-retval = eval(("return " + argstr) + ";")[2];
-else
-retval = eval(argstr + ";")[2];
+try
+prog = {argstr};
+set_connection_option(player, "hold-input", 1);
+while (((({retval, @rest} = this:_parse(prog)) && (!retval)) && ({row, column, errors, t, p} = rest)) && (row > length(prog)))
+if (argstr)
+player:tell("Enter lines of code.  Enter a single period (\".\") to abort editing.");
+argstr = 0;
 endif
-if ((typeof(retval) == OBJ) && valid(retval))
+if ((line = read(player)) == ".")
+player:tell("(aborted)");
+return;
+endif
+prog = {@prog, line};
+endwhile
+finally
+set_connection_option(player, "hold-input", 0);
+endtry
+if (!retval)
+for error in (errors)
+player:tell("Line ", row, ":  ", error);
+endfor
+return;
+endif
+{statements, t, p} = rest;
+if ((length(statements) == 1) && (statements[1].type != "statement"))
+ret = $plastic.control_flow_statement_proto:create("return");
+ret.type = "statement";
+ret.first = statements[1];
+statements = {ret};
+endif
+if (statements && (!((statements[$].type == "statement") && (statements[$].id == "return"))))
+ret = $plastic.control_flow_statement_proto:create("return");
+ret.type = "statement";
+ret.first = 0;
+statements = {@statements, ret};
+endif
+ret = $plastic.bracket_operator_proto:create("[");
+ret.type = "unary";
+ret.value = {};
+for variable in (p:variables())
+if ((variable.id[1] != "$") && (!(variable.id in $plastic.name_proto.builtin_names)))
+key = $plastic.literal_proto:create("");
+key.type = "string";
+key.value = variable.id;
+value = $plastic.error_catching_operator_proto:create("!!");
+value.type = "binary";
+value.first = variable;
+value.second = {$plastic.name_proto:create("ANY")};
+value.second[1].type = "keyword";
+value.second[1].value = "ANY";
+ret.value = {@ret.value, {key, value}};
+endif
+endfor
+for statement in ($plastic.utilities:match(statements, "return"))
+if (statement.first == 0)
+statement.first = $plastic.literal_proto:create("");
+statement.first.type = "number";
+statement.first.value = 0;
+endif
+first = $plastic.brace_operator_proto:create("{");
+first.type = "unary";
+first.value = {statement.first, ret};
+statement.first = first;
+endfor
+prefix = $plastic.assignment_operator_proto:create("=");
+prefix.type = "binary";
+prefix.first = $plastic.name_proto:create("__");
+prefix.first.type = "variable";
+prefix.first.value = "__";
+prefix.second = $plastic.property_selector_operator_proto:create(".");
+prefix.second.type = "binary";
+prefix.second.first = $plastic.name_proto:create("player");
+prefix.second.first.type = "variable";
+prefix.second.first.value = "player";
+prefix.second.second = $plastic.name_proto:create("alt_bindings");
+prefix.second.second.type = "identifier";
+prefix.second.second.value = "alt_bindings";
+prefix = {prefix};
+for v, k in (player.alt_bindings)
+assignment = $plastic.assignment_operator_proto:create("=");
+assignment.type = "binary";
+assignment.first = $plastic.name_proto:create(k);
+assignment.first.type = "variable";
+assignment.first.value = k;
+assignment.second = $plastic.bracket_operator_proto:create("[");
+assignment.second.type = "binary";
+assignment.second.first = $plastic.name_proto:create("__");
+assignment.second.first.type = "variable";
+assignment.second.first.value = "__";
+assignment.second.second = $plastic.literal_proto:create("");
+assignment.second.second.type = "string";
+assignment.second.second.value = k;
+prefix = {@prefix, assignment};
+endfor
+statements = {@prefix, @statements};
+source = {};
+for statement in (statements)
+if (statement.type != "statement")
+source = {@source, statement:p(), ";"};
+else
+source = {@source, @statement:p()};
+endif
+endfor
+if (!source)
+source = {""};
+endif
+set_task_perms(player);
+{code, retval} = eval(@source);
+if (code)
+variables = [];
+if (typeof(retval) == LIST)
+{retval, ?variables = []} = retval;
+endif
+variables["_"] = retval;
+player.alt_bindings = player.alt_bindings:merge(variables);
+t = typeof(retval);
+if (((t == OBJ) || (t == ANON)) && valid(retval))
 player:tell(toliteral(retval), " ", toliteral(retval.name));
+elseif (t == ERR)
+player:tell(toliteral(retval), " ", toliteral(tostr(retval)));
 else
 player:tell(toliteral(retval));
 endif
+else
+for line in (retval)
+player:tell(line);
+endfor
+endif
+return;
+"if (player != this)";
+"  notify(player, \"I couldn't understand that.\");";
+"  return;";
+"elseif (!player.programmer)";
+"  notify(player, \"You need to be a programmer to evaluate code.\");";
+"  return;";
+"endif";
+"";
+"/* The strategy is to add lines until we either have a chunk of code";
+" * that parses without error (in which case we compile it and evaluate";
+" * the result) or is uncorrectable (in which case we output the syntax";
+" * errors).  \"Uncorrectable\" means that adding more lines will not";
+" * result in a valid chunk of code.";
+"*/";
+"";
+"try";
+"  prog = {argstr};";
+"";
+"  set_connection_option(player, \"hold-input\", 1);";
+"";
+"  while (({retval, @rest} = this:_parse(prog)) && !retval &&";
+"         ({row, column, errors, t, p} = rest) &&";
+"         row > length(prog))";
+"    if (argstr)";
+"      player:tell(\"Enter lines of code.  Enter a single period (\\\".\\\") to abort editing.\");";
+"      argstr = 0;";
+"    endif";
+"    if ((line = read(player)) == \".\")";
+"      player:tell(\"(aborted)\");";
+"      return;";
+"    endif";
+"    prog = {@prog, line};";
+"  endwhile";
+"finally";
+"  set_connection_option(player, \"hold-input\", 0);";
+"endtry";
+"";
+"if (!retval)";
+"  for error in (errors)";
+"    player:tell(\"Line \", row, \":  \", error);";
+"  endfor";
+"  return;";
+"endif";
+"";
+"{statements, t, p} = rest;";
+"";
+"/* if it's not a statement, make it a return statement */";
+"if (length(statements) == 1 && statements[1].type != \"statement\")";
+"  ret = $plastic.control_flow_statement_proto:create(\"return\");";
+"  ret.type = \"statement\";";
+"  ret.first = statements[1];";
+"  statements = {ret};";
+"endif";
+"";
+"/* if it doesn't end in a return statement, tack on a return statement */";
+"if (statements && !(statements[$].type == \"statement\" && statements[$].id == \"return\"))";
+"  ret = $plastic.control_flow_statement_proto:create(\"return\");";
+"  ret.type = \"statement\";";
+"  ret.first = 0;";
+"  statements = {@statements, ret};";
+"endif";
+"";
+"/* build code to return the variables */";
+"ret = $plastic.bracket_operator_proto:create(\"[\");";
+"ret.type = \"unary\";";
+"ret.value = {};";
+"for variable in (p:variables())";
+"  if (variable.id[1] != \"$\" && !(variable.id in $plastic.name_proto.builtin_names))";
+"    key = $plastic.literal_proto:create(\"\");";
+"    key.type = \"string\";";
+"    key.value = variable.id;";
+"    value = $plastic.error_catching_operator_proto:create(\"!!\");";
+"    value.type = \"binary\";";
+"    value.first = variable;";
+"    value.second = {$plastic.name_proto:create(\"ANY\")};";
+"    value.second[1].type = \"keyword\";";
+"    value.second[1].value = \"ANY\";";
+"    ret.value = {@ret.value, {key, value}};";
+"  endif";
+"endfor";
+"";
+"/* look for and fix up return statements */";
+"for statement in ($plastic.utilities:match(statements, \"return\"))";
+"  if (statement.first == 0)";
+"    statement.first = $plastic.literal_proto:create(\"\");";
+"    statement.first.type = \"number\";";
+"    statement.first.value = 0;";
+"  endif";
+"  first = $plastic.brace_operator_proto:create(\"{\");";
+"  first.type = \"unary\";";
+"  first.value = {statement.first, ret};";
+"  statement.first = first;";
+"endfor";
+"";
+"/* prefix with bindings */";
+"prefix = $plastic.assignment_operator_proto:create(\"=\");";
+"prefix.type = \"binary\";";
+"prefix.first = $plastic.name_proto:create(\"__\");";
+"prefix.first.type = \"variable\";";
+"prefix.first.value = \"__\";";
+"prefix.second = $plastic.property_selector_operator_proto:create(\".\");";
+"prefix.second.type = \"binary\";";
+"prefix.second.first = $plastic.name_proto:create(\"player\");";
+"prefix.second.first.type = \"variable\";";
+"prefix.second.first.value = \"player\";";
+"prefix.second.second = $plastic.name_proto:create(\"alt_bindings\");";
+"prefix.second.second.type = \"identifier\";";
+"prefix.second.second.value = \"alt_bindings\";";
+"prefix = {prefix};";
+"";
+"for v, k in (player.alt_bindings)";
+"  assignment = $plastic.assignment_operator_proto:create(\"=\");";
+"  assignment.type = \"binary\";";
+"  assignment.first = $plastic.name_proto:create(k);";
+"  assignment.first.type = \"variable\";";
+"  assignment.first.value = k;";
+"  assignment.second = $plastic.bracket_operator_proto:create(\"[\");";
+"  assignment.second.type = \"binary\";";
+"  assignment.second.first = $plastic.name_proto:create(\"__\");";
+"  assignment.second.first.type = \"variable\";";
+"  assignment.second.first.value = \"__\";";
+"  assignment.second.second = $plastic.literal_proto:create(\"\");";
+"  assignment.second.second.type = \"string\";";
+"  assignment.second.second.value = k;";
+"  prefix = {@prefix, assignment};";
+"endfor";
+"";
+"statements = {@prefix, @statements};";
+"";
+"/* generate the code to eval */";
+"source = {};";
+"";
+"for statement in (statements)";
+"  if (statement.type != \"statement\")";
+"    source = {@source, statement:p(), \";\"};";
+"  else";
+"    source = {@source, @statement:p()};";
+"  endif";
+"endfor";
+"";
+"if (!source)";
+"  source = {\"\"};";
+"endif";
+"";
+"/* and evaluate...! */";
+"set_task_perms(player);";
+"";
+"{code, retval} = eval(@source);";
+"";
+"if (code)";
+"  variables = [];";
+"  if (typeof(retval) == LIST)";
+"    {retval, ?variables = []} = retval;";
+"  endif";
+"";
+"  variables[\"_\"] = retval;";
+"";
+"  player.alt_bindings = player.alt_bindings:merge(variables);";
+"";
+"  t = typeof(retval);";
+"  if ((t == OBJ || t == ANON) && valid(retval))";
+"    player:tell(toliteral(retval), \" \", toliteral(retval.name));";
+"  elseif (t == ERR)";
+"    player:tell(toliteral(retval), \" \", toliteral(tostr(retval)));";
+"  else";
+"    player:tell(toliteral(retval));";
+"  endif";
+"else";
+"  for line in (retval)";
+"    player:tell(line);";
+"  endfor";
+"endif";
+"";
+"chunk_length:172";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"sha1:AC07CE1ACFA64719F42021C112EF4521D5A78D68";
+"-=-=-mxyzptlk-=-=-";
 .
-#78:1
+#109:2
 if (player != this)
 player:notify("I couldn't understand that.");
 return;
@@ -17865,7 +24980,7 @@ return;
 "sha1:9E3190397CF8BA52EAC3D1B9F599AA8A2ED4A87F";
 "-=-=-mxyzptlk-=-=-";
 .
-#78:2
+#109:3
 if (player != this)
 player:notify("I couldn't understand that.");
 return;
@@ -18055,7 +25170,7 @@ return;
 "sha1:1C4EEFFC1C20EF733CE277B783006D6199A4BD5E";
 "-=-=-mxyzptlk-=-=-";
 .
-#78:3
+#109:4
 if (player != this)
 player:notify("I couldn't understand that.");
 return;
@@ -18079,8 +25194,9 @@ p = n = "";
 dobj.r ? p = p + "r" | (n = n + "r");
 dobj.w ? p = p + "w" | (n = n + "w");
 dobj.f ? p = p + "f" | (n = n + "f");
+dobj.a ? p = p + "a" | (n = n + "a");
 t = {};
-is_player(dobj) && (t = {@t, "player"});
+`is_player(dobj) ! E_TYPE' && (t = {@t, "player"});
 dobj.programmer && (t = {@t, "programmer"});
 dobj.wizard && (t = {@t, "wizard"});
 t = t:join(", ");
@@ -18199,9 +25315,10 @@ return;
 "dobj.r ? (p = p + \"r\") | (n = n + \"r\");";
 "dobj.w ? (p = p + \"w\") | (n = n + \"w\");";
 "dobj.f ? (p = p + \"f\") | (n = n + \"f\");";
+"dobj.a ? (p = p + \"a\") | (n = n + \"a\");";
 "";
 "t = {};";
-"is_player(dobj) && (t = {@t, \"player\"});";
+"`is_player(dobj) ! E_TYPE' && (t = {@t, \"player\"});";
 "dobj.programmer && (t = {@t, \"programmer\"});";
 "dobj.wizard && (t = {@t, \"wizard\"});";
 "t = t:join(\", \");";
@@ -18301,13 +25418,13 @@ return;
 "player:notify();";
 "player:notify(\"(done)\");";
 "";
-"chunk_length:134";
+"chunk_length:135";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"sha1:CB65F7E8E52EB71C5E3E0F8BA0A4EBF3236DFD38";
+"sha1:7C0962940168BA3D034518A88EB186A7FCE7B040";
 "-=-=-mxyzptlk-=-=-";
 .
-#78:4
+#109:5
 if (player != this)
 player:notify("I couldn't understand that.");
 return;
@@ -18465,7 +25582,7 @@ return;
 "sha1:A47BE42A7D9589E8326AF92033ABEF72EE381BFD";
 "-=-=-mxyzptlk-=-=-";
 .
-#78:5
+#109:6
 if (player != this)
 player:notify("I couldn't understand that.");
 return;
@@ -18552,7 +25669,7 @@ return;
 "sha1:39BA28E527A97FD9B68E40D9EC05118E1BE8A11E";
 "-=-=-mxyzptlk-=-=-";
 .
-#80:0
+#111:0
 $restrict_to_caller($composed);
 chparents(#5, {$alt.wizard_proto});
 chparents(#6, {$alt.programmer_proto});
@@ -18568,11 +25685,11 @@ return;
 "sha1:47625885FC0B925292089EDE0ACD5F175697BDC2";
 "-=-=-mxyzptlk-=-=-";
 .
-#82:0
+#113:0
 $restrict_to_caller($system, "server_started");
 $lookup("server"):start(8888);
 .
-#84:0
+#115:0
 $private();
 {?parameters = []} = args;
 if (valid(player))
@@ -18610,7 +25727,7 @@ return;
 "sha1:8EA0088393B6703B267559CBB18092ABDDE672A4";
 "-=-=-mxyzptlk-=-=-";
 .
-#84:1
+#115:1
 $restrict_to_caller($dialog.server);
 {request, response} = args;
 parameters = this:_common(request:parameters());
@@ -18646,7 +25763,7 @@ return;
 "sha1:1F45EF1CB2EF68DAA28970CBED1035D3805E2EC8";
 "-=-=-mxyzptlk-=-=-";
 .
-#84:2
+#115:2
 $restrict_to_caller($dialog.server);
 {request, response} = args;
 parameters = this:_common(request:parameters());
@@ -18669,7 +25786,7 @@ return;
 "sha1:777A0606BD3B75404A03C8DD6FD3CEF9D4BC6DBE";
 "-=-=-mxyzptlk-=-=-";
 .
-#85:0
+#116:0
 stack = args;
 output = {};
 output = {@output, "<head>", 0};
@@ -18785,7 +25902,7 @@ return;
 "sha1:CD6D0B6F34A532741F2F60BD478CE85CBB7B7072";
 "-=-=-mxyzptlk-=-=-";
 .
-#85:1
+#116:1
 stack = args;
 output = {};
 output = {@output, ""};
@@ -18870,7 +25987,7 @@ return;
 "sha1:9F3D0B2DEE4CB78C3D159EFEFFEA556046D6BAC2";
 "-=-=-mxyzptlk-=-=-";
 .
-#85:2
+#116:2
 stack = args;
 output = {};
 output = {@output, "<div class=\"navbar navbar-fixed-top\">", 0};
@@ -19013,7 +26130,7 @@ return;
 "sha1:BB81418E9CDC9537A706F603B5475A95D2ACB503";
 "-=-=-mxyzptlk-=-=-";
 .
-#85:3
+#116:3
 stack = args;
 output = {};
 output = {@output, "<!DOCTYPE html>", 0};
@@ -19223,7 +26340,7 @@ return;
 "sha1:8F784715A251BE01FF08E30991DD524727A25074";
 "-=-=-mxyzptlk-=-=-";
 .
-#85:4
+#116:4
 stack = args;
 output = {};
 output = {@output, "<!DOCTYPE html>", 0};
@@ -19352,7 +26469,7 @@ return;
 "sha1:56345025A8BE60097FE7DFF597125FA592E0528C";
 "-=-=-mxyzptlk-=-=-";
 .
-#85:5
+#116:5
 stack = args;
 output = {};
 output = {@output, "<!DOCTYPE html>", 0};
@@ -19522,7 +26639,7 @@ return;
 "sha1:DF0E9237C2D63F33AABC361455BB1D682EC3C596";
 "-=-=-mxyzptlk-=-=-";
 .
-#86:0
+#117:0
 $restrict_to_caller($dialog.server);
 {request, response} = args;
 credentials = `request:parameters()["credentials"] ! E_RANGE => ""';
@@ -19553,7 +26670,7 @@ return;
 "sha1:DAC9458114344DEAB4B92F9B49BDC1366C09400B";
 "-=-=-mxyzptlk-=-=-";
 .
-#86:1
+#117:1
 $restrict_to_caller($dialog.server);
 {request, response} = args;
 set_task_local(task_local():merge(["http" -> ["session" -> ["player" -> $nothing]]]));
@@ -19577,7 +26694,7 @@ return;
 "sha1:8E330B8306793720181DC1854F85CC058D806C87";
 "-=-=-mxyzptlk-=-=-";
 .
-#89:0
+#120:0
 $restrict_to_caller($dialog.server);
 {request} = args;
 path = request:path():split("/");
@@ -19627,8 +26744,3 @@ return;
 "sha1:79918BB91D0319737CE40A30069282AA30854424";
 "-=-=-mxyzptlk-=-=-";
 .
-0 clocks
-0 queued tasks
-0 suspended tasks
-0 interrupted tasks
-0 active connections with listeners
