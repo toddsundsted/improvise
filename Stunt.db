@@ -21973,7 +21973,7 @@ return;
 {request, response, chain} = args;
 $private();
 try
-if (((!(request:method() in {"GET", "HEAD"})) && ((token = `task_local()["http"]["session"]["authenticity_token"] ! E_RANGE') != `request:parameters()["_authenticity_token"] ! E_RANGE')) && (token != `request:headers()["X-Authenticity-Token"] ! E_RANGE'))
+if (((!(request:method() in {"GET", "HEAD"})) && ((token = `task_local()["http"]["session"]["authenticity_token"] ! E_RANGE') != `request:parameters()["__authenticity_token__"] ! E_RANGE')) && (token != `request:headers()["X-Authenticity-Token"] ! E_RANGE'))
 return {request, response, {"cleanup", "422"}};
 else
 return {request, response, chain};
@@ -21995,7 +21995,7 @@ return;
 "";
 "try";
 "  if (!(request:method() in {\"GET\", \"HEAD\"}) &&";
-"      (token = `task_local()[\"http\"][\"session\"][\"authenticity_token\"] ! E_RANGE') != `request:parameters()[\"_authenticity_token\"] ! E_RANGE' &&";
+"      (token = `task_local()[\"http\"][\"session\"][\"authenticity_token\"] ! E_RANGE') != `request:parameters()[\"__authenticity_token__\"] ! E_RANGE' &&";
 "      token != `request:headers()[\"X-Authenticity-Token\"] ! E_RANGE')";
 "    return {request, response, {\"cleanup\", \"422\"}};";
 "  else";
