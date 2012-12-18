@@ -21629,6 +21629,7 @@ return;
 {request, response, chain} = args;
 $private();
 try
+connection = player;
 parameters = [];
 plen = 0;
 parameters = parameters:merge(this.utilities:parse_query_string(this.utilities:unescape(request:query()), plen));
@@ -21758,7 +21759,7 @@ endif
 if (`clients = headers["X-Forwarded-For"] ! E_RANGE')
 parameters["__remote_client__"] = clients:split(",")[$]:trim(" ");
 else
-parameters["__remote_client__"] = connection_name(player):split(" ")[4]:trim(",");
+parameters["__remote_client__"] = connection_name(connection):split(" ")[4]:trim(",");
 endif
 request = request:set_parameters(parameters);
 return {request, response, chain};
@@ -21775,6 +21776,11 @@ return;
 "$private();";
 "";
 "try";
+"  /* Save the player/connection.  This may be trounced";
+"   * by the session, later.";
+"   */";
+"  connection = player;";
+"";
 "  /* Parameters derived from the query string and from the body are";
 "   * under the control of an external user and therefore we can't";
 "   * trust them.  Therefore, add them first, and then add all other";
@@ -21941,7 +21947,7 @@ return;
 "  if (`clients = headers[\"X-Forwarded-For\"] ! E_RANGE')";
 "    parameters[\"__remote_client__\"] = clients:split(\",\")[$]:trim(\" \");";
 "  else";
-"    parameters[\"__remote_client__\"] = connection_name(player):split(\" \")[4]:trim(\",\");";
+"    parameters[\"__remote_client__\"] = connection_name(connection):split(\" \")[4]:trim(\",\");";
 "  endif";
 "";
 "  request = request:set_parameters(parameters);";
