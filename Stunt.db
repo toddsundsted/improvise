@@ -613,7 +613,8 @@ passkey
 0
 5
 0
-5
+10
+0
 5
 4
 5
@@ -641,7 +642,8 @@ passkey
 0
 5
 0
-5
+10
+0
 6
 4
 5
@@ -1034,7 +1036,7 @@ application
 10
 1
 2
-0.0.7
+0.0.8
 4
 1
 1
@@ -8717,7 +8719,7 @@ application
 111
 1
 2
-0.0.7
+0.0.8
 111
 1
 4
@@ -8825,13 +8827,15 @@ Changelog
 4
 0
 0
-5
+7
 1335958995
 1335960351
 1335961601
 1336184517
 1336230042
-5
+1355917473
+1355919225
+7
 2
 Major refactoring.
 111
@@ -8850,6 +8854,14 @@ Use jquery.console.
 1
 2
 Handle multiline output correctly/better in the view.
+111
+1
+2
+Created new version: 0.0.8.
+111
+1
+2
+Long polling is now the default.  `socket_or_long_poll' changes this behavior.
 111
 1
 #113
@@ -8904,11 +8916,12 @@ HTTP Server
 0
 0
 12
-5
+0
+8888
 78
 1
 2
-~04~16~B6P~EB~81~D7H~C0.~EFoa0~0D~D8~8E<u~00M~D5~D3F ~A3~12~09~CA~89~8Fh~E9~E1~D8~CA~C7~03~8B~C0~B0HD~E3q~93~AF~A7Z~E1~94@~DD~D3~8Ec~EA6~0D~D7~0CO~AE~B3~08~AA~E5H+~1B~B1~1Dq~D3|_wB~B9~B0~1E_d~A4~FFW~13~B6~99~F4~EA}~AA~9C~08~BF~DEP~F4~A2~11~0AI~C27~8E~BA~C1~E6~F8~A1~AF~8D~EE~B7~FF~D5~CF[~04~C8~FD~D1~8C~1Dt
+%XDA~E6n~B3~A8~C4~9Ds~D0~93~E4~BE~DC~143w4~D2~9E8~B5~C1~CA~18~8E~FF~BA~84T}|~0A~F2>E_~A0~81~EFF~1E~BAwC>~F6KS~FB^~98y~93i<~F2v~85~FB~A0~09U~D1~14@~E4~C9~BC~9F~BC|@~8A~AA~1B~B1~CC~AB~BF~AF~90~09~FA~F6~03~11~19~BEm3~8C~9B3~AF~B2~ED`~A4~E0o~82~D5~92~11o~E7~F4x~04~0B~F1~04~9D~DBY~D3~AC~F8L~EA~E9~AD~CE
 78
 0
 4
@@ -8990,7 +9003,12 @@ browse
 111
 172
 -1
-0
+1
+socket_or_long_poll
+1
+2
+long_poll
+111
 0
 #116
 Home Views
@@ -25738,7 +25756,8 @@ $restrict_to_caller($dialog.server);
 {request, response} = args;
 parameters = this:_common(request:parameters());
 if (valid(player))
-parameters = parameters:merge(["page" -> ["title" -> "Stunt | Improvise", "swf" -> 1]]);
+swf = (this.socket_or_long_poll == "socket") ? request:headers()["Cookie"] | 0;
+parameters = parameters:merge(["page" -> ["title" -> "Stunt | Improvise", "swf" -> swf]]);
 view = "home";
 else
 view = "public";
@@ -25753,7 +25772,8 @@ return;
 "parameters = this:_common(request:parameters());";
 "";
 "if (valid(player))";
-"  parameters = parameters:merge([ \"page\" -> [\"title\" -> \"Stunt | Improvise\", \"swf\" -> 1]]);";
+"  swf = (this.socket_or_long_poll == \"socket\") ? request:headers()[\"Cookie\"] | 0;";
+"  parameters = parameters:merge([\"page\" -> [\"title\" -> \"Stunt | Improvise\", \"swf\" -> swf]]);";
 "  view = \"home\";";
 "else";
 "  view = \"public\";";
@@ -25763,10 +25783,10 @@ return;
 "";
 "return {request, response};";
 "";
-"chunk_length:16";
+"chunk_length:17";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"sha1:1F45EF1CB2EF68DAA28970CBED1035D3805E2EC8";
+"sha1:48627F4A99AC2B5F415504B3A156BD124904DE71";
 "-=-=-mxyzptlk-=-=-";
 .
 #115:2
@@ -25818,6 +25838,9 @@ for item in ((typeof(top) == LIST) ? top | {top})
 ((ticks_left() < 10000) || (seconds_left() < 2)) && suspend(0);
 stack = {(typeof(item) == MAP) ? item | (["." -> item]), @stack};
 output = {@output, 1};
+output = {@output, "    <meta name=\"session_state\" content=\""};
+output = {@output, strsub(strsub(strsub(strsub(`tostr(stack[1]["."]) ! E_RANGE => ""', "&", "&amp;"), "<", "&lt;"), ">", "&gt;"), "\"", "&quot;")};
+output = {@output, "\"/>", 1};
 output = {@output, "    <script type=\"text/javascript\" src=\"/js/Socket.js\"></script>", 0};
 output = {@output, "    <script type=\"text/javascript\" src=\"/js/swfobject-2.1.min.js\"></script>", 0};
 output = {@output, "    <script type=\"text/javascript\">", 0};
@@ -25875,6 +25898,7 @@ return;
 "  <title>{{page.title}}</title>";
 "  <meta name=\"authenticity_token\" content=\"{{__authenticity_token__}}\"/>";
 "  {{#page.swf}}";
+"    <meta name=\"session_state\" content=\"{{.}}\"/>";
 "    <script type=\"text/javascript\" src=\"/js/Socket.js\"></script>";
 "    <script type=\"text/javascript\" src=\"/js/swfobject-2.1.min.js\"></script>";
 "    <script type=\"text/javascript\">";
@@ -25902,10 +25926,10 @@ return;
 "  <script type=\"text/javascript\" src=\"/js/moo-interactive-0.0.3.min.js\"></script>";
 "</head>";
 "";
-"chunk_length:30";
+"chunk_length:31";
 "chunk_type:source";
 "content_type:application/x-mustache";
-"sha1:CD6D0B6F34A532741F2F60BD478CE85CBB7B7072";
+"sha1:C42ED09B3D3551B304C3EA17A976D15DEB132D86";
 "-=-=-mxyzptlk-=-=-";
 .
 #116:1
@@ -26379,6 +26403,7 @@ output = {@output, "           }", 0};
 output = {@output, "        });", 0};
 output = {@output, "        $('#console .jquery-console-inner').height($(window).height() - 140);", 0};
 output = {@output, "        var interactive = new Moo.Interactive(window.location.hostname, window.location.port, {", 0};
+output = {@output, "          session_state: $('meta[name=session_state]').attr('content'),", 0};
 output = {@output, "          callback: function(message) {", 0};
 output = {@output, "            message = message.split('\\n');", 0};
 output = {@output, "            message = _.select(message, function(v) { return v; });", 0};
@@ -26456,6 +26481,7 @@ return;
 "        });";
 "        $('#console .jquery-console-inner').height($(window).height() - 140);";
 "        var interactive = new Moo.Interactive(window.location.hostname, window.location.port, {";
+"          session_state: $('meta[name=session_state]').attr('content'),";
 "          callback: function(message) {";
 "            message = message.split('\\n');";
 "            message = _.select(message, function(v) { return v; });";
@@ -26469,10 +26495,10 @@ return;
 "  </body>";
 "</html>";
 "";
-"chunk_length:36";
+"chunk_length:37";
 "chunk_type:source";
 "content_type:application/x-mustache";
-"sha1:56345025A8BE60097FE7DFF597125FA592E0528C";
+"sha1:3BFE4586E2B1E31D5BA0BCEAEE213BE69F52B845";
 "-=-=-mxyzptlk-=-=-";
 .
 #116:5

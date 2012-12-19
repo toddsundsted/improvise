@@ -8,6 +8,7 @@ if (!window.Moo && !document.Moo)
   Moo.Interactive = function(host, port, options) {
     var interactive = this;
 
+    var session_state = options.session_state; /* may be undefined */
     var callback = options.callback;
     var force = options.force;
 
@@ -26,7 +27,7 @@ if (!window.Moo && !document.Moo)
           connected: function() {
             socket.send('GET / HTTP/1.1\n');
             socket.send('Host: ' + host + ':' + port + '\n');
-            socket.send('Cookie: ' + document.cookie + '\n');
+            socket.send('Cookie: ' + session_state + '\n');
             socket.send('X-Break-A-Leg: stunt\n');
             socket.send('Upgrade: moo\n');
             socket.send('\n\n');
