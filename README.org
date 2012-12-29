@@ -75,21 +75,22 @@
    The Improvise core database comes with the following library
    packages already installed:
 
-   - kernel, 1.1.0 (#2) Kernel Package
+   - kernel, 1.1.1 (#2) Kernel Package
    - primitive, 0.0.2 (#11) Primitive Package
-   - text_tools, 0.0.1 (#26) Text Tools
-   - ask, 0.0.1 (#29) Ask, Query Package
-   - model, 0.0.1 (#33) Model Package
-   - persistent, 0.0.2 (#43) Persistent Package
-   - dialog, 0.0.5 (#47) Dialog, Web Server Package
-   - dialog_extras, 0.0.4 (#57) Dialog, Extras
-   - mustache, 1.0.0 (#63) Mustache Templating Language Package
-   - identity, 0.0.2 (#67) Identity Package
-   - alt, 0.0.2 (#73) Alt, Player Package
+   - plastic, 0.0.1 (#26) Plastic, MOOcode Parser Toolkit Package
+   - text_tools, 0.0.1 (#57) Text Tools
+   - ask, 0.0.1 (#60) Ask, Query Package
+   - model, 0.0.1 (#64) Model Package
+   - persistent, 0.0.2 (#74) Persistent Package
+   - dialog, 0.0.5 (#78) Dialog, Web Server Package
+   - dialog_extras, 0.0.4 (#88) Dialog, Extras
+   - mustache, 1.0.1 (#94) Mustache Templating Language Package
+   - identity, 0.0.2 (#98) Identity Package
+   - alt, 0.0.3 (#104) Alt, Player Package
 
    And a starter package:
 
-   - application, 0.0.7 (#80) Application Package
+   - application, 0.0.8 (#111) Application Package
 
    Other packages [[http://stunt.io/][are available]].  The entirety of LambdaCore is
    available [[http://stunt.io/dated/hoisting-lambdacore][as a package]] if you want something a little more familiar
@@ -175,15 +176,15 @@
    the following as a wizardly player:
 
    #+BEGIN_EXAMPLE
-   ; #83:start(<port>)
+   ; #114:start(<port>)
    #+END_EXAMPLE
 
-   ~#83~ is the object number of the HTTP server object built from the
+   ~#114~ is the object number of the HTTP server object built from the
    HTTP server prototype and a few objects from the "dialog_extras"
    package.  Stop the server with:
 
    #+BEGIN_EXAMPLE
-   ; #83:stop()
+   ; #114:stop()
    #+END_EXAMPLE
 
    Test the server by opening ~http://localhost:<port>/~ in a browser.
