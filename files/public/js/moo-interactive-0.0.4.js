@@ -7,8 +7,8 @@ if (!window.Moo && !document.Moo)
 
   Moo.Interactive = function(host, port, options) {
     var interactive = this;
-
-    var session_state = options.session_state; /* may be undefined */
+    var authenticity_token = options.authenticity_token; // may be undefined
+    var session_state = options.session_state; // may be undefined
     var callback = options.callback;
     var force = options.force;
 
@@ -86,6 +86,7 @@ if (!window.Moo && !document.Moo)
           xhr.open("POST", "/__long_poll");
         else
           xhr.open("GET", "/__long_poll");
+        xhr.setRequestHeader('X-Authenticity-Token', authenticity_token);
         xhr.setRequestHeader("X-Break-A-Leg", 'stunt');
         xhr.send(cmd);
       }
