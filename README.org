@@ -75,22 +75,23 @@
    The Improvise core database comes with the following library
    packages already installed:
 
-   - kernel, 1.1.2 - Kernel Package
-   - primitive, 0.0.2 - Primitive Package
-   - plastic, 0.0.2 - Plastic, MOOcode Parser Toolkit Package
+   - kernel, 1.1.3 - Kernel Package
+   - core, 0.0.2 - Core Package
+   - primitive, 0.0.4 - Primitive Package
+   - plastic, 0.0.3 - Plastic, MOOcode Parser Toolkit Package
    - text_tools, 0.0.1 - Text Tools
-   - ask, 0.0.1 - Ask, Query Package
+   - ask, 0.0.2 - Ask, Query Package
    - model, 0.0.1 - Model Package
    - persistent, 0.0.2 - Persistent Package
-   - dialog, 0.0.5 - Dialog, Web Server Package
-   - dialog_extras, 0.0.4 - Dialog, Extras
+   - dialog, 0.1.1 - Dialog, Web Server Package
+   - dialog_extras, 0.0.5 - Dialog, Extras
    - mustache, 1.0.1 - Mustache Templating Language Package
    - identity, 0.0.2 - Identity Package
    - alt, 0.0.3 - Alt, Player Package
 
    And a starter package:
 
-   - application, 0.0.8 - Application Package
+   - application, 0.0.9 - Application Package
 
    Other packages [[http://stunt.io/][are available]].  The entirety of LambdaCore is
    available [[http://stunt.io/dated/hoisting-lambdacore][as a package]] if you want something a little more familiar
@@ -115,7 +116,7 @@
    ./configure
    make
    cd <path-to-improvise-repo>
-   <path-to-stunt-repo>/moo Stunt.db Stunt.db.new 7777
+   <path-to-stunt-repo>/moo Improvise.db Improvise.db.new 7777
    #+END_EXAMPLE
 
 ** How do I connect as a player?
@@ -176,15 +177,15 @@
    the following as a wizardly player:
 
    #+BEGIN_EXAMPLE
-   ; #124:start(<port>)
+   ; #131:start(<port>)
    #+END_EXAMPLE
 
-   ~#124~ is the object number of the HTTP server object built from the
+   ~#131~ is the object number of the HTTP server object built from the
    HTTP server prototype and a few objects from the "dialog_extras"
    package.  Stop the server with:
 
    #+BEGIN_EXAMPLE
-   ; #124:stop()
+   ; #131:stop()
    #+END_EXAMPLE
 
    Test the server by opening ~http://localhost:<port>/~ in a browser.
