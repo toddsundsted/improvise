@@ -479,7 +479,7 @@ kernel
 2
 1
 2
-1.1.3
+1.1.4
 2
 1
 4
@@ -715,8 +715,6 @@ Wizard
 7
 4
 0
-4
-1
 1
 127
 4
@@ -737,12 +735,7 @@ passkey
 0
 5
 0
-10
-1
-2
-_
-0
-0
+5
 5
 4
 5
@@ -756,8 +749,6 @@ Programmer
 7
 4
 0
-4
-1
 1
 126
 4
@@ -769,11 +760,6 @@ passkey
 0
 0
 5
-0
-10
-1
-2
-_
 0
 5
 6
@@ -936,7 +922,7 @@ _log
 -1
 _move
 5
-164
+172
 -1
 _suspend_if_necessary
 2
@@ -1236,7 +1222,7 @@ kernel
 10
 1
 2
-1.1.3
+1.1.4
 4
 1
 1
@@ -1358,7 +1344,7 @@ kernel
 10
 1
 2
-1.1.3
+1.1.4
 4
 12
 1
@@ -1473,7 +1459,7 @@ log
 2
 172
 -1
-68
+71
 1311681611
 1311705199
 1313452513
@@ -1542,7 +1528,10 @@ log
 1358784518
 1358785509
 1360437901
-68
+1360668144
+1360897124
+1360897245
+71
 2
 Added code to disable login by passkey players.
 2
@@ -1813,6 +1802,18 @@ Added `$epoch' to track restarts.
 1
 2
 Give `$restrict_to_caller()' wiz-perms.
+2
+1
+2
+Created new version: 1.1.4.
+2
+1
+2
+Fixed handling of "~" in archive sources.
+2
+1
+2
+Swallow errors raised when moving objects during installation.
 2
 1
 #11
@@ -6460,9 +6461,11 @@ query_utilities
 75
 1
 4
-3
+4
 2
 dictionary.ask_proto
+2
+dictionary.ask
 2
 ask_proto.query_utilities
 2
@@ -6587,8 +6590,8 @@ Dictionary
 0
 0
 2
-ask
 ask_proto
+ask
 2
 1
 78
@@ -15644,8 +15647,25 @@ return;
 #9:1
 $private();
 {what, where} = args;
-move(what, where);
+`move(what, where) ! ANY';
 return;
+"$private();";
+"";
+"{what, where} = args;";
+"";
+"/* Move `what' to `where'.  Runs with wiz-perms.  Won't raise an error. */";
+"";
+"`move(what, where) ! ANY';";
+"";
+"chunk_length:7";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"revision:2";
+"sha1:D8E4C8B1FC542890503A041C595CD6A7507E8CF3";
+"state:clean";
+"updated_at:Thu Feb 14 21:59:46 2013 EST";
+"updated_by:#50";
+"-=-=-mxyzptlk-=-=-";
 "$private();";
 "";
 "{what, where} = args;";
@@ -16759,6 +16779,7 @@ $private();
 while redirect (1)
 try
 connection = 0;
+url = strsub(url, "~", "~7E");
 if (r = this:_parse_url(url))
 {host, port, path} = r;
 else
@@ -16788,8 +16809,8 @@ except (E_RANGE)
 raise(E_INVARG, "Fetch failed: missing HTTP header: Location");
 endtry
 endif
+json = strsub(response["body"], "~7E", "~");
 try
-json = response["body"];
 return parse_json(json, "embedded-types");
 except (E_RANGE, E_INVARG)
 raise(E_INVARG, "Bad JSON");
@@ -16799,6 +16820,83 @@ finally
 endtry
 endwhile
 return;
+"$private();";
+"";
+"{url} = args;";
+"";
+"/* Attempt an HTTP connection; handle success, follow redirects and";
+" * raise errors on everything else.  Note: this verb is optimized for";
+" * fetching package lists/packages, and takes a few short-cuts.  In";
+" * particular, it simply uses `strsub()' to encode/decode the MOO";
+" * binary string representation of tilde (\"~\"), relying on the fact";
+" * that packages _should not have_ any binary (non-printable)";
+" * characters in them.";
+" */";
+"";
+"while redirect (1)";
+"  try";
+"    connection = 0;";
+"";
+"    url = strsub(url, \"~\", \"~7E\");";
+"";
+"    if ((r = this:_parse_url(url)))";
+"      {host, port, path} = r;";
+"    else";
+"      raise(E_INVARG, \"Bad URL\");";
+"    endif";
+"";
+"    try";
+"      connection = open_network_connection(host, port);";
+"    except (E_INVARG)";
+"      raise(E_INVARG, \"Open network connection failed\");";
+"    endtry";
+"";
+"    set_connection_option(connection, \"hold-input\", 1);";
+"    set_connection_option(connection, \"binary\", 1);";
+"";
+"    notify(connection, tostr(\"GET \", path, \" HTTP/1.1~0D~0A\"));";
+"    notify(connection, (port != 80) ? tostr(\"Host: \", host, \":\", port, \"~0D~0A\") | tostr(\"Host: \", host, \"~0D~0A\"));";
+"    notify(connection, \"Accept: application/json~0D~0A\");";
+"    notify(connection, \"~0D~0A\");";
+"";
+"    response = read_http(\"response\", connection);";
+"";
+"    if (`reason = response[\"error\"] ! E_RANGE')";
+"      raise(E_INVARG, tostr(\"Fetch failed: \", reason[2]));";
+"    elseif (!((status = response[\"status\"]) in {200, 301, 302, 303, 307}))";
+"      raise(E_INVARG, tostr(\"Fetch failed: invalid HTTP status: \", status));";
+"    elseif (status / 100 == 3)";
+"      try";
+"        url = response[\"headers\"][\"location\"];";
+"        continue redirect;";
+"      except (E_RANGE)";
+"        raise(E_INVARG, \"Fetch failed: missing HTTP header: Location\");";
+"      endtry";
+"    endif";
+"";
+"    json = strsub(response[\"body\"], \"~7E\", \"~\");";
+"";
+"    try";
+"      return parse_json(json, \"embedded-types\");";
+"    except (E_RANGE, E_INVARG)";
+"      raise(E_INVARG, \"Bad JSON\");";
+"    endtry";
+"";
+"  finally";
+"    `boot_player(connection) ! ANY';";
+"  endtry";
+"";
+"endwhile";
+"";
+"chunk_length:67";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"revision:4";
+"sha1:D83D736F33D7938C27F62A0AD910A718DA0CE0BF";
+"state:clean";
+"updated_at:Tue Feb 12 06:36:06 2013 EST";
+"updated_by:#50";
+"-=-=-mxyzptlk-=-=-";
 "$private();";
 "";
 "{url} = args;";
@@ -18261,7 +18359,7 @@ try
 try
 old = connection_option(player, "binary");
 set_connection_option(player, "binary", 1);
-notify(player, tostr("  ", source, " ... "));
+notify(player, tostr("  ", strsub(source, "~", "~7E"), " ... "));
 finally
 set_connection_option(player, "binary", old);
 endtry
@@ -18302,6 +18400,78 @@ notify(player, tostr("   ", identifier, versions));
 endfor
 notify(player, "(done)");
 return;
+"if (callers() && caller_perms() != player)";
+"  raise(E_PERM);";
+"endif";
+"if (!player.wizard)";
+"  notify(player, \"Only wizards can do that!\");";
+"  return;";
+"endif";
+"if (dobjstr != \"packages\")";
+"  notify(player, tostr(\"Correct usage is:  @list packages with $composed\"));";
+"  return;";
+"endif";
+"";
+"notify(player, \"Updating index from sources...\");";
+"";
+"for source in (this.archive_sources)";
+"  try";
+"    try";
+"      old = connection_option(player, \"binary\");";
+"      set_connection_option(player, \"binary\", 1);";
+"      notify(player, tostr(\"  \", strsub(source, \"~\", \"~7E\"), \" ... \"));";
+"    finally";
+"      set_connection_option(player, \"binary\", old);";
+"    endtry";
+"    this:fetch_index();";
+"    notify(player, \"done\");";
+"  except ex (E_INVARG)";
+"    notify(player, ex[2]);";
+"  endtry";
+"endfor";
+"";
+"cached = this.cached;";
+"archived = this.archived;";
+"";
+"notify(player, \"Installed packages\");";
+"for _, identifier in (this.provides_cache)";
+"  for _, version in (this.provides_cache[identifier])";
+"    if (version in `mapkeys(cached[identifier]) ! E_RANGE => {}' || version in `mapkeys(archived[identifier]) ! E_RANGE => {}')";
+"      flags = \"   \";";
+"    else";
+"      flags = \" ! \";";
+"    endif";
+"    notify(player, tostr(flags, identifier, \", \", version, \" (\", objnum = this.provides_cache[identifier][version][1], \") \", objnum.name));";
+"  endfor";
+"endfor";
+"notify(player, \"Cached packages\");";
+"for _, identifier in (this.cached)";
+"  versions = \"\";";
+"  for _, version in (this.cached[identifier])";
+"    versions = versions + \", \" + version;";
+"  endfor";
+"  notify(player, tostr(\"   \", identifier, versions));";
+"endfor";
+"notify(player, msg = tostr(\"Archived packages\"));";
+"for _, identifier in (this.archived)";
+"  versions = \"\";";
+"  for _, version in (this.archived[identifier])";
+"    versions = versions + \", \" + version;";
+"  endfor";
+"  notify(player, tostr(\"   \", identifier, versions));";
+"endfor";
+"";
+"notify(player, \"(done)\");";
+"";
+"chunk_length:62";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"revision:4";
+"sha1:1A6D08D51B53666B19195D0BBBA2F5A895DF74E7";
+"state:clean";
+"updated_at:Thu Feb 14 21:36:24 2013 EST";
+"updated_by:#50";
+"-=-=-mxyzptlk-=-=-";
 "if (callers() && caller_perms() != player)";
 "  raise(E_PERM);";
 "endif";
@@ -26860,7 +27030,7 @@ return;
 #78:1
 {predicate} = args;
 if (!predicate)
-elseif ((r = match(predicate, "^%(>=?%|<=?%|=[=~7E]?%|!=%|includes%|in%|is%) *")) && ((length(predicate) == r[2]) || (predicate[r[2]] == " ")))
+elseif ((r = match(predicate, "^%(>=?%|<=?%|=[=~]?%|!=%|includes%|in%|is%) *")) && ((length(predicate) == r[2]) || (predicate[r[2]] == " ")))
 return {predicate[r[3][1][1]..r[3][1][2]], predicate[r[2] + 1..$]};
 endif
 raise(E_INVARG, tostr("Unmatched operator:  ", predicate));
@@ -26870,7 +27040,7 @@ return;
 "/* the predicate string must _not_ start with whitespace */";
 "if (!predicate)";
 "  ;";
-"elseif ((r = match(predicate, \"^%(>=?%|<=?%|=[=~7E]?%|!=%|includes%|in%|is%) *\")) && (length(predicate) == r[2] || predicate[r[2]] == \" \"))";
+"elseif ((r = match(predicate, \"^%(>=?%|<=?%|=[=~]?%|!=%|includes%|in%|is%) *\")) && (length(predicate) == r[2] || predicate[r[2]] == \" \"))";
 "  return {predicate[r[3][1][1]..r[3][1][2]], predicate[r[2] + 1..$]};";
 "endif";
 "";
@@ -26879,7 +27049,7 @@ return;
 "chunk_length:10";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"sha1:4F556DC5E10D43861AB7B47813EA3CB1333C8C5E";
+"sha1:AC122D01FE3F4E7A7AFDC9FC85D8A569EDEE82A9";
 "-=-=-mxyzptlk-=-=-";
 .
 #78:2
@@ -28370,7 +28540,7 @@ return;
 new = "";
 while (uri)
 if (r = match(uri, "%%[a-fA-F0-9][a-fA-F0-9]%|%+"))
-chr = (uri[r[1]] != "+") ? "~7E" + uri[r[1] + 1..r[2]] | "~7E20";
+chr = (uri[r[1]] != "+") ? "~" + uri[r[1] + 1..r[2]] | "~20";
 new = (new + uri[1..r[1] - 1]) + ((typeof(c = decode_binary(chr)[1]) == INT) ? chr | c);
 uri[1..r[2]] = "";
 else
@@ -28386,7 +28556,7 @@ return;
 "";
 "while (uri)";
 "  if (r = match(uri, \"%%[a-fA-F0-9][a-fA-F0-9]%|%+\"))";
-"    chr = uri[r[1]] != \"+\" ? \"~7E\" + uri[r[1] + 1..r[2]] | \"~7E20\";";
+"    chr = uri[r[1]] != \"+\" ? \"~\" + uri[r[1] + 1..r[2]] | \"~20\";";
 "    new = new + uri[1..r[1] - 1] + (typeof(c = decode_binary(chr)[1]) == INT ? chr | c);";
 "    uri[1..r[2]] = \"\";";
 "  else";
@@ -28400,7 +28570,7 @@ return;
 "chunk_length:16";
 "chunk_type:source";
 "content_type:application/x-moocode;version=0.0.2";
-"sha1:1D56B58120554050FF71E7794D97795CDF79F4A5";
+"sha1:AD204C72D983E85A556094E75B2A8AF3B8E702FA";
 "-=-=-mxyzptlk-=-=-";
 .
 #97:0
@@ -30382,10 +30552,10 @@ return;
 "-=-=-mxyzptlk-=-=-";
 .
 #103:1
-_2044814269 = this;
+_2134902771 = this;
 $restrict_to_caller(parent(this).location);
 {parameters} = args;
-_2044814269:ok({"<html>", "<head>", "<title>Welcome to Stunt!</title>", "</head>", "<body>", "<h1>Welcome to Stunt!</h1>", "<p>It works!  For information about Stunt, check out <a href=\"http://stunt.io/\">http://stunt.io/</a>.</p>", ("<!-- " + this.name) + " -->", "</body>", "</html>"});
+_2134902771:ok({"<html>", "<head>", "<title>Welcome to Stunt!</title>", "</head>", "<body>", "<h1>Welcome to Stunt!</h1>", "<p>It works!  For information about Stunt, check out <a href=\"http://stunt.io/\">http://stunt.io/</a>.</p>", ("<!-- " + this.name) + " -->", "</body>", "</html>"});
 return;
 "from this use ok";
 "";
@@ -30756,7 +30926,7 @@ status = o["Meta"]["status"];
 status = (status == "invalid") ? 404 | ((status == "denied") ? 403 | 200);
 response = response:set_status(status);
 response = response:set_type("application/json");
-response = response:set_body(generate_json(o, "embedded-types"):strsub("~7E", "~7E7E"));
+response = response:set_body(generate_json(o, "embedded-types"):strsub("~", "~7E"));
 else
 response = response:set_status(404);
 response = response:set_type("application/json");
@@ -30794,7 +30964,7 @@ return;
 "    status = (status == \"invalid\" ? 404 | (status == \"denied\" ? 403 | 200));";
 "    response = response:set_status(status);";
 "    response = response:set_type(\"application/json\");";
-"    response = response:set_body(generate_json(o, \"embedded-types\"):strsub(\"~7E\", \"~7E7E\"));";
+"    response = response:set_body(generate_json(o, \"embedded-types\"):strsub(\"~\", \"~7E\"));";
 "  /*";
 "  elseif (\"objects\" == a1 && a2 && \"attributes\" == b1 && b2)";
 "    response = response:set_status(200);";
@@ -30825,7 +30995,7 @@ return;
 "chunk_length:52";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"sha1:6A79A96EFBA81F10F153AC5379A597F9E09C3152";
+"sha1:40DF01BD0DCE5EABC26CFD68538904B0F49DD264";
 "-=-=-mxyzptlk-=-=-";
 .
 #107:4
@@ -31927,16 +32097,16 @@ if (!first_time)
 notify(player, "          Old Password: ");
 while (!(((old_password = read()) && (old_password = decode_binary(old_password))) && (typeof(old_password = old_password[1]) == STR)))
 endwhile
-notify(player, "~7E0A~7E0D");
+notify(player, "~0A~0D");
 endif
 notify(player, "          New Password: ");
 while (!(((new_password = read()) && (new_password = decode_binary(new_password))) && (typeof(new_password = new_password[1]) == STR)))
 endwhile
-notify(player, "~7E0A~7E0D");
+notify(player, "~0A~0D");
 notify(player, "  Confirm New Password: ");
 while (!(((confirm_password = read()) && (confirm_password = decode_binary(confirm_password))) && (typeof(confirm_password = confirm_password[1]) == STR)))
 endwhile
-notify(player, "~7E0A~7E0D");
+notify(player, "~0A~0D");
 finally
 set_connection_option(player, "binary", 0);
 set_connection_option(player, "hold-input", 0);
@@ -31978,18 +32148,18 @@ return;
 "    notify(player, \"          Old Password: \");";
 "    while (!((old_password = read()) && (old_password = decode_binary(old_password)) && (typeof(old_password = old_password[1]) == STR)))";
 "    endwhile";
-"    notify(player, \"~7E0A~7E0D\");";
+"    notify(player, \"~0A~0D\");";
 "  endif";
 "";
 "  notify(player, \"          New Password: \");";
 "  while (!((new_password = read()) && (new_password = decode_binary(new_password)) && (typeof(new_password = new_password[1]) == STR)))";
 "  endwhile";
-"  notify(player, \"~7E0A~7E0D\");";
+"  notify(player, \"~0A~0D\");";
 "";
 "  notify(player, \"  Confirm New Password: \");";
 "  while (!((confirm_password = read()) && (confirm_password = decode_binary(confirm_password)) && (typeof(confirm_password = confirm_password[1]) == STR)))";
 "  endwhile";
-"  notify(player, \"~7E0A~7E0D\");";
+"  notify(player, \"~0A~0D\");";
 "";
 "finally";
 "  set_connection_option(player, \"binary\", 0);";
@@ -32016,7 +32186,7 @@ return;
 "chunk_length:58";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"sha1:46861CBD6B8965024B9ED55AE1DB2BFA95BCBA40";
+"sha1:8DBF0ACBC439BF88839CCEDB52B304930BF3BCCB";
 "-=-=-mxyzptlk-=-=-";
 .
 #119:0
@@ -33635,17 +33805,17 @@ return;
 #134:1
 $restrict_to_caller($dialog.server);
 {parameters} = args;
-_1193293106 = this;
-_2088165849 = $lookup("home_views");
+_343639275 = this;
+_281805987 = $lookup("home_views");
 request = this.request;
 response = this.response;
-parameters = _1193293106:_common_parameters(parameters);
+parameters = _343639275:_common_parameters(parameters);
 if (valid(player))
 swf = (this.socket_or_long_poll == "socket") ? request:headers()["Cookie"] | 0;
 parameters = parameters:merge(["page" -> ["title" -> "Stunt | Improvise", "swf" -> swf]]);
-_1193293106:ok(_2088165849:home(parameters));
+_343639275:ok(_281805987:home(parameters));
 else
-_1193293106:ok(_2088165849:public(parameters));
+_343639275:ok(_281805987:public(parameters));
 endif
 return;
 "$restrict_to_caller($dialog.server)";
@@ -33676,10 +33846,10 @@ return;
 #134:2
 $restrict_to_caller($dialog.server);
 {parameters} = args;
-_335209142 = this;
-_572558359 = $lookup("home_views");
-parameters = _335209142:_common_parameters(parameters);
-_335209142:ok(_572558359:browse(parameters));
+_198012228 = this;
+_136517732 = $lookup("home_views");
+parameters = _198012228:_common_parameters(parameters);
+_198012228:ok(_136517732:browse(parameters));
 return;
 "$restrict_to_caller($dialog.server)";
 "";
@@ -34754,7 +34924,7 @@ elseif (op == "is")
 if ((o1 && (!o2)) || ((!o1) && o2))
 continue o;
 endif
-elseif (op == "=~7E")
+elseif (op == "=~")
 if (!match(o1, o2))
 continue o;
 endif
@@ -34882,7 +35052,7 @@ return;
 "        if ((o1 && !o2) || (!o1 && o2))";
 "          continue o;";
 "        endif";
-"      elseif (op == \"=~7E\")";
+"      elseif (op == \"=~\")";
 "        if (!match(o1, o2))";
 "          continue o;";
 "        endif";
@@ -34922,7 +35092,7 @@ return;
 "chunk_length:131";
 "chunk_type:source";
 "content_type:application/x-moocode";
-"sha1:9B35FEEF9296CDF2D9748A0F5ACA56010DF09EC4";
+"sha1:E181326A5B6DCB6DAFB810C95DE78A3536E4F5BD";
 "-=-=-mxyzptlk-=-=-";
 .
 #138:1
