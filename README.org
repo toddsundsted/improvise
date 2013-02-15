@@ -75,7 +75,7 @@
    The Improvise core database comes with the following library
    packages already installed:
 
-   - kernel, 1.1.3 - Kernel Package
+   - kernel, 1.1.4 - Kernel Package
    - core, 0.0.2 - Core Package
    - primitive, 0.0.4 - Primitive Package
    - plastic, 0.0.3 - Plastic, MOOcode Parser Toolkit Package
