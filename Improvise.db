@@ -2446,7 +2446,7 @@ Sat
 11
 1
 10
-9
+10
 2
 CDT
 0
@@ -2483,6 +2483,10 @@ PDT
 PST
 0
 8
+2
+UTC
+0
+0
 11
 1
 4
@@ -13069,19 +13073,55 @@ server_log("WARNING:   and for good measure:");
 for player in ($passkey_players)
 server_log(tostr("WARNING:     ; set_player_flag(", player, ", 0)"));
 endfor
-i = random(100000) + 100000;
 for player in ($passkey_players)
-passkey = string_hash((tostr(random()) + ctime(time())) + player.name);
-while (i)
-((!(i % 100)) && ((ticks_left() < 2000) || (seconds_left() < 2))) && suspend(0);
-passkey = string_hash(passkey);
-i = i - 1;
-endwhile
-server_log(tostr("PASSKEY for \"", player.name, "\" (", player, ("): " + passkey) + " (keep it secret)"));
+if (passkey = getenv(tostr("Stunt_Passkey_", player.name)))
 player.passkey = passkey;
+else
+player.passkey = 0;
+endif
 endfor
 endif
 return;
+"$restrict_to_caller($system, \"server_started\");";
+"";
+"$epoch = $epoch + 1;";
+"$last_login_connection = #-1;";
+"";
+"if (!$disable_passkey_login)";
+"  server_log(tostr(\"WARNING: Log-in via passkey is enabled for the following players (specified in $passkey_players):\"));";
+"  for player in ($passkey_players)";
+"    server_log(tostr(\"WARNING:   \\\"\", player.name, \"\\\" (\", player, \")\"));";
+"  endfor";
+"  server_log(\"WARNING: This is a severe security vulnerability.  In a secure environment you should:\");";
+"  server_log(\"WARNING:   disable passkey login:\");";
+"  server_log(\"WARNING:     ; $disable_passkey_login = 1\");";
+"  server_log(\"WARNING:     ; $passkey_players = {}\");";
+"  server_log(\"WARNING:   disable existing passkeys:\");";
+"  for player in ($passkey_players)";
+"    server_log(tostr(\"WARNING:     ; \", player, \".passkey = 0\"));";
+"  endfor";
+"  server_log(\"WARNING:   and for good measure:\");";
+"  for player in ($passkey_players)";
+"    server_log(tostr(\"WARNING:     ; set_player_flag(\", player, \", 0)\"));";
+"  endfor";
+"  for player in ($passkey_players)";
+"    if ((passkey = getenv(tostr(\"Stunt_Passkey_\", player.name))))";
+"      player.passkey = passkey;";
+"    else";
+"      player.passkey = 0;";
+"    endif";
+"  endfor";
+"endif";
+"";
+"chunk_length:30";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"revision:2";
+"sha1:526E7583141D236A47891532CDEB51E5FD607115";
+"state:dirty";
+"updated_at:Wed May 22 08:41:00 2013 EDT";
+"updated_by:#5";
+"-=-=-mxyzptlk-=-=-";
 "$restrict_to_caller($system, \"server_started\");";
 "";
 "$epoch = $epoch + 1;";
@@ -33762,7 +33802,49 @@ return;
 .
 #130:0
 $restrict_to_caller($system, "server_started");
-$lookup("server"):start(8888);
+server = $lookup("server");
+if ((port = toint(getenv("PORT"))) >= 1024)
+server_log(tostr("APPLICATION: Environment specifies port ", port));
+for listener in (listeners())
+if (listener[1..2] == {$system, port})
+unlisten(port);
+break;
+endif
+endfor
+else
+port = server.port;
+endif
+server:start(port);
+return;
+"$restrict_to_caller($system, \"server_started\");";
+"";
+"server = $lookup(\"server\");";
+"";
+"if ((port = toint(getenv(\"PORT\"))) >= 1024)";
+"  server_log(tostr(\"APPLICATION: Environment specifies port \", port));";
+"  /* there can be only one... */";
+"  for listener in (listeners())";
+"    if (listener[1..2] == {$system, port})";
+"      /* ...only one...! */";
+"      unlisten(port);";
+"      break;";
+"    endif";
+"  endfor";
+"else";
+"  port = server.port;";
+"endif";
+"";
+"server:start(port);";
+"";
+"chunk_length:19";
+"chunk_type:source";
+"content_type:application/x-moocode";
+"revision:1";
+"sha1:99DB63473B121BBB86A8E9BC8F7B722050386460";
+"state:dirty";
+"updated_at:Wed May 22 22:48:31 2013 EDT";
+"updated_by:#5";
+"-=-=-mxyzptlk-=-=-";
 .
 #134:0
 $private();
