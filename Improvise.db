@@ -28868,8 +28868,12 @@ $private();
 try
 request = create(this.request_proto, 1);
 response = create(this.response_proto, 1);
+try
 raw_request = this:_read_from_connection(connection);
 raw_response = [];
+except (E_INVARG)
+return 0;
+endtry
 if (`raw_request["error"] ! E_RANGE')
 this:_log("DIALOG: ", player, " bad request: ", raw_request["error"][1], ": ", raw_request["error"][2]);
 return 0;
