@@ -18108,7 +18108,12 @@ notify(player, tostr("Version \"", version, "\" of package \"", identifier, "\" 
 sep = "";
 line = "  ";
 for require in (requires)
-line = tostr(line, sep, require[1], " ", require[2]);
+{idspec, ?verspec = ""} = require;
+if (verspec)
+line = tostr(line, sep, idspec, " ", verspec);
+else
+line = tostr(line, sep, idspec);
+endif
 sep = ", ";
 endfor
 notify(player, line);
