@@ -75,23 +75,24 @@
    The Improvise core database comes with the following library
    packages already installed:
 
-   - kernel, 1.1.4 - Kernel Package
-   - core, 0.0.2 - Core Package
-   - primitive, 0.0.4 - Primitive Package
-   - plastic, 0.0.3 - Plastic, MOOcode Parser Toolkit Package
+   - kernel, 1.1.5 - Kernel Package
+   - primitive, 0.0.6 - Primitive Package
+   - core, 0.0.4 - Core Package
    - text_tools, 0.0.1 - Text Tools
+   - plastic, 1.0.1 - Plastic, MOOcode Parser Toolkit Package
+   - blink, 0.0.1 - Blink, Structured Document Package
+   - alt, 0.0.4 - Alt, Player Package
+   - identity, 0.0.3 - Identity Package
    - ask, 0.0.2 - Ask, Query Package
-   - model, 0.0.1 - Model Package
    - persistent, 0.0.2 - Persistent Package
-   - dialog, 0.1.1 - Dialog, Web Server Package
-   - dialog_extras, 0.0.5 - Dialog, Extras
+   - model, 0.0.1 - Model Package
+   - dialog, 0.1.2 - Dialog, Web Server Package
+   - dialog_extras, 0.0.7 - Dialog, Extras
    - mustache, 1.0.1 - Mustache Templating Language Package
-   - identity, 0.0.2 - Identity Package
-   - alt, 0.0.3 - Alt, Player Package
 
    And a starter package:
 
-   - application, 0.0.9 - Application Package
+   - application, 0.0.10 - Application Package
 
    Other packages [[http://stunt.io/][are available]].  The entirety of LambdaCore is
    available [[http://stunt.io/dated/hoisting-lambdacore][as a package]] if you want something a little more familiar
