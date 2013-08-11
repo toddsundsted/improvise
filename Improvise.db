@@ -1546,7 +1546,7 @@ log
 2
 172
 -1
-85
+86
 1311681611
 1311705199
 1313452513
@@ -1632,7 +1632,8 @@ log
 1373099164
 1373685265
 1375669101
-85
+1376234886
+86
 2
 Added code to disable login by passkey players.
 2
@@ -1971,6 +1972,10 @@ Added suspend to `$composed:fetch_index()'.
 1
 2
 `lookup_reference()' can start from where the verb was used instead of defined.
+2
+1
+2
+The verbs `read/write_verb()' in `$shapes' handle empty verbs correctly.
 2
 1
 #11
@@ -17308,7 +17313,7 @@ vd = $verb_detail(o, v);
 code = verb_code(o, v);
 doc = $verb_doc(o, v);
 d = ["owner" -> vd["owner"], "perms" -> vd["perms"], "names" -> vd["names"], "dobj" -> vd["dobj"], "prep" -> vd["prep"], "iobj" -> vd["iobj"]];
-code && (d["code"] = code);
+d["code"] = code;
 doc && (d["documentation"] = doc);
 `d["content_type"] = vd["content_type"] ! E_RANGE';
 p = (index(d["perms"], "w") || this:_controls_verb(caller_perms(), o, v)) ? "rw" | "r";
@@ -17348,7 +17353,7 @@ return;
 "";
 "  d = [\"owner\" -> vd[\"owner\"], \"perms\" -> vd[\"perms\"], \"names\" -> vd[\"names\"], \"dobj\" -> vd[\"dobj\"], \"prep\" -> vd[\"prep\"], \"iobj\" -> vd[\"iobj\"]];";
 "";
-"  code && (d[\"code\"] = code);";
+"  d[\"code\"] = code;";
 "  doc && (d[\"documentation\"] = doc);";
 "";
 "  `d[\"content_type\"] = vd[\"content_type\"] ! E_RANGE';";
@@ -17371,9 +17376,9 @@ return;
 "chunk_type:source";
 "content_type:application/x-moocode";
 "revision:1";
-"sha1:9334467B80DD4047D136E2C97BE470B24C4913E7";
+"sha1:52580BB302E80CD6D053ABBA8E02368124868D18";
 "state:clean";
-"updated_at:Fri Mar 29 15:33:41 2013 EDT";
+"updated_at:Sun Aug 11 10:17:05 2013 EDT";
 "updated_by:#50";
 "-=-=-mxyzptlk-=-=-";
 .
@@ -17518,9 +17523,9 @@ return;
 "chunk_type:source";
 "content_type:application/x-moocode";
 "revision:1";
-"sha1:1127C3C0C08FAE8E1F4D67CD89FC3C57A22091AD";
+"sha1:1E74FD0137192222D717768B6859517C8C2831B3";
 "state:clean";
-"updated_at:Fri Mar 29 13:43:16 2013 EDT";
+"updated_at:Sun Aug 11 10:17:05 2013 EDT";
 "updated_by:#50";
 "-=-=-mxyzptlk-=-=-";
 .
@@ -29785,19 +29790,19 @@ return;
 .
 #79:0
 $restrict_to_caller($blink.utilities, "traverse");
-_1400878867 = $lookup("utilities");
+_1228983399 = $lookup("utilities");
 {schema, line} = args;
 valid_tags = "any";
 if (this.parent)
-{parent, _, _} = _1400878867:parse_element(this.parent);
-if (rule = _1400878867:lookup_element(parent, schema))
+{parent, _, _} = _1228983399:parse_element(this.parent);
+if (rule = _1228983399:lookup_element(parent, schema))
 {_, _, valid_tags} = rule;
 endif
 endif
 saved_parent = this.parent;
 this.parent = line;
-{tag, attributes, body} = _1400878867:parse_element(line);
-if (rule = _1400878867:lookup_element(tag, schema))
+{tag, attributes, body} = _1228983399:parse_element(line);
+if (rule = _1228983399:lookup_element(tag, schema))
 {_, valid_attributes, _} = rule;
 if ((valid_tags == "any") || (tag in valid_tags))
 if ((attributes == 0) || ((diff = attributes:keys():difference(valid_attributes)) == {}))
@@ -29883,19 +29888,19 @@ return;
 .
 #80:0
 $restrict_to_caller($blink.utilities, "traverse");
-_607365909 = $lookup("utilities");
+_178476469 = $lookup("utilities");
 {schema, line} = args;
 valid_tags = "any";
 if (this.parent)
-{parent, _, _} = _607365909:parse_element(this.parent);
-if (rule = _607365909:lookup_element(parent, schema))
+{parent, _, _} = _178476469:parse_element(this.parent);
+if (rule = _178476469:lookup_element(parent, schema))
 {_, _, valid_tags} = rule;
 endif
 endif
 saved_parent = this.parent;
 this.parent = line;
-{tag, attributes, body} = _607365909:parse_element(line);
-if (rule = _607365909:lookup_element(tag, schema))
+{tag, attributes, body} = _178476469:parse_element(line);
+if (rule = _178476469:lookup_element(tag, schema))
 {_, valid_attributes, _} = rule;
 if ((valid_tags == "any") || (tag in valid_tags))
 if (attributes != 0)
@@ -30517,11 +30522,11 @@ return;
 #85:1
 {element} = args;
 {tag, @body} = element;
-_1915288075 = $core.utility.regexp;
+_1729615197 = $core.utility.regexp;
 tags = {};
 while (r = tag:rmatch("%(#%|%.%).*$"))
-tags = {_1915288075:matched(r), @tags};
-tag = _1915288075:pre_match(r);
+tags = {_1729615197:matched(r), @tags};
+tag = _1729615197:pre_match(r);
 endwhile
 xtra = [];
 for t in (tags)
@@ -30661,9 +30666,9 @@ return;
 .
 #85:4
 {lines, ?schema = 0} = args;
-_1983698486 = this;
+_888857869 = this;
 try
-_1983698486:traverse(lines, create(this.validator_context_proto, 1), schema);
+_888857869:traverse(lines, create(this.validator_context_proto, 1), schema);
 except ex ("-*-invalid-*-")
 return ex[2];
 endtry
@@ -30697,8 +30702,8 @@ return;
 .
 #85:5
 {lines, ?schema = 0} = args;
-_706626964 = this;
-_706626964:traverse(lines, context = create(this.sanitizer_context_proto, 1), schema);
+_38697927 = this;
+_38697927:traverse(lines, context = create(this.sanitizer_context_proto, 1), schema);
 return context.lines;
 return;
 "{lines, schema = 0} = args";
@@ -36108,10 +36113,10 @@ return;
 "-=-=-mxyzptlk-=-=-";
 .
 #127:1
-_418662321 = this;
+_2095175818 = this;
 $restrict_to_caller(parent(this).location);
 {parameters} = args;
-_418662321:ok({"<html>", "<head>", "<title>Welcome to Stunt!</title>", "</head>", "<body>", "<h1>Welcome to Stunt!</h1>", "<p>It works!  For information about Stunt, check out <a href=\"http://stunt.io/\">http://stunt.io/</a>.</p>", ("<!-- " + this.name) + " -->", "</body>", "</html>"});
+_2095175818:ok({"<html>", "<head>", "<title>Welcome to Stunt!</title>", "</head>", "<body>", "<h1>Welcome to Stunt!</h1>", "<p>It works!  For information about Stunt, check out <a href=\"http://stunt.io/\">http://stunt.io/</a>.</p>", ("<!-- " + this.name) + " -->", "</body>", "</html>"});
 return;
 "from this use ok";
 "";
@@ -37744,17 +37749,17 @@ return;
 #145:1
 $restrict_to_caller($dialog.server);
 {parameters} = args;
-_562825532 = this;
-_678556382 = $lookup("home_views");
+_1538169645 = this;
+_1877675954 = $lookup("home_views");
 request = this.request;
 response = this.response;
-parameters = _562825532:_common_parameters(parameters);
+parameters = _1538169645:_common_parameters(parameters);
 if (valid(player))
 swf = (this.socket_or_long_poll == "socket") ? request:headers()["Cookie"] | 0;
 parameters = parameters:merge(["page" -> ["title" -> "Stunt | Improvise", "swf" -> swf]]);
-_562825532:ok(_678556382:home(parameters));
+_1538169645:ok(_1877675954:home(parameters));
 else
-_562825532:ok(_678556382:public(parameters));
+_1538169645:ok(_1877675954:public(parameters));
 endif
 return;
 "$restrict_to_caller($dialog.server)";
@@ -37785,10 +37790,10 @@ return;
 #145:2
 $restrict_to_caller($dialog.server);
 {parameters} = args;
-_355173404 = this;
-_853115422 = $lookup("home_views");
-parameters = _355173404:_common_parameters(parameters);
-_355173404:ok(_853115422:browse(parameters));
+_1897393334 = this;
+_1191048313 = $lookup("home_views");
+parameters = _1897393334:_common_parameters(parameters);
+_1897393334:ok(_1191048313:browse(parameters));
 return;
 "$restrict_to_caller($dialog.server)";
 "";
