@@ -334,7 +334,7 @@ Server Options
 4
 0
 0
-25
+26
 support_numeric_verbname_strings
 protect_verb_code
 protect_set_verb_code
@@ -360,7 +360,8 @@ redirect_from_msg
 redirect_to_msg
 server_full_msg
 timeout_msg
-25
+player_huh
+26
 0
 0
 2
@@ -463,6 +464,10 @@ timeout_msg
 0
 2
 *** Timed-out waiting for login. ***
+2
+0
+0
+1
 2
 0
 #2
